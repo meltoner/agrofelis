@@ -1,6 +1,6 @@
 # Agrofelis
 
-Open source low cost agriculture robotic design plans and open source code repository.
+Open source low cost agriculture robotic design plans and open source code repository. www.agrofelis.com
 
 ## The Problem 
 
