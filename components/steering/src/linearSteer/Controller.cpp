@@ -10,20 +10,24 @@
 
 
 /*
-
-  <11, 1>
-  <12, 1>
+ 
+  <11, 1> start left at initialisation mode
+  <12, 1> start right at initialisation mode
   
-  <15, 1>
-  <16, -10>
+  <15, 1> make both left and right at initialisation mode
+  
+  <16, -10> Steer 10 points on the left side
   <16, -20>
-  <16, -50>
-  <16, -250>
+  <16, -50> Steer 50 % left
+  <16, -70>
+  <16, -100>
   <16, 10>
   <16, 40>
   <16, 50>
+  <16, 80>
+  <16, 20>
   <16, 0>
-
+  <16, 100>
 */
 
 #include "Controller.h" 

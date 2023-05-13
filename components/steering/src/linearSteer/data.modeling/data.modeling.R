@@ -1,6 +1,7 @@
 library(data.table)
 library(ggplot2)
 library(magrittr)
+library(scales)
 # 
 #' measure raw value leading to wheel positions following the Ackerman geometry
 #' measurement followed steps of 5 units of increment
@@ -45,7 +46,9 @@ ratios[, diff := (L-R) / 2]
 ratios[, id := 1:.N]
 ratios[, keep := (id %% 2 == 0 | mean == 50) ]
 
-# ratios <- ratios[keep == TRUE]
+ratios <- ratios[keep == TRUE]
+
+ratios[,  angle := round(rescale(angle, c(-100, 100)), 1) ]
 
 #' separate the associations in three vectors
 
@@ -61,24 +64,24 @@ paste0("int outputRight[", length(inputValue),"] = {", paste(outputRight, collap
 
 ######
 
-# float inputValue[11] = {-42, -33, -25, -15.5, -7, 0, 4.5, 18.5, 26.5, 34, 42};
+# float inputValue[11] = {-100, -78.6, -59.5, -36.9, -16.7, 0, 10.7, 44, 63.1, 81, 100};
 # int outputLeft[11] = {5, 15, 25, 35, 45, 50, 54, 67, 73, 78, 84};
 # int outputRight[11] = {11, 19, 25, 34, 41, 50, 55, 70, 80, 90, 100};
- 
+
 "
 ratios
-     L   R id mean angle diff
- 1:  5  11  2  8.0 -42.0 -3.0
- 2: 15  19  4 17.0 -33.0 -2.0
- 3: 25  25  6 25.0 -25.0  0.0
- 4: 35  34  8 34.5 -15.5  0.5
- 5: 45  41 10 43.0  -7.0  2.0
- 6: 50  50 11 50.0   0.0  0.0
- 7: 54  55 12 54.5   4.5 -0.5
- 8: 67  70 14 68.5  18.5 -1.5
- 9: 73  80 16 76.5  26.5 -3.5
-10: 78  90 18 84.0  34.0 -6.0
-11: 84 100 20 92.0  42.0 -8.0
+     L   R mean  angle diff id keep
+ 1:  5  11  8.0 -100.0 -3.0  2 TRUE
+ 2: 15  19 17.0  -78.6 -2.0  4 TRUE
+ 3: 25  25 25.0  -59.5  0.0  6 TRUE
+ 4: 35  34 34.5  -36.9  0.5  8 TRUE
+ 5: 45  41 43.0  -16.7  2.0 10 TRUE
+ 6: 50  50 50.0    0.0  0.0 11 TRUE
+ 7: 54  55 54.5   10.7 -0.5 12 TRUE
+ 8: 67  70 68.5   44.0 -1.5 14 TRUE
+ 9: 73  80 76.5   63.1 -3.5 16 TRUE
+10: 78  90 84.0   81.0 -6.0 18 TRUE
+11: 84 100 92.0  100.0 -8.0 20 TRUE
 
 " %>% invisible
 
@@ -96,7 +99,7 @@ ggplot(ratios, aes(L, R, color= keep)) +
 
 melt(ratios[keep == T, .(angle, L, R)], id.var = "angle") %>%
   ggplot(aes(angle, value, color = variable)) +
-    geom_vline(xintercept = 0) + 
-    geom_point() + geom_line() + theme_minimal()  
+  geom_vline(xintercept = 0) + 
+  geom_point() + geom_line() + theme_minimal()  
 
 
