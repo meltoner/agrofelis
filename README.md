@@ -2,6 +2,8 @@
 
 Open source low cost agriculture robotic design plans and open source code repository. www.agrofelis.com
 
+![Robotic Vehicle](introduction/figures/figureA.jpg)
+
 ## The Problem 
 
 The declining demographics in the West, climate change, economic disparity, energy cost inflation, and supply chain disruptions have created a dangerous mix of factors for the world’s agriculture. 
