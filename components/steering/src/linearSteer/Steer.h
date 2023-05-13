@@ -26,9 +26,11 @@ class Steer{
   private:
 
     const byte mappingSize = 11;
+
     float inputValue[11] = {-42, -33, -25, -15.5, -7, 0, 4.5, 18.5, 26.5, 34, 42};
     int outputLeft[11] = {5, 15, 25, 35, 45, 50, 54, 67, 73, 78, 84};
     int outputRight[11] = {11, 19, 25, 34, 41, 50, 55, 70, 80, 90, 100};
+    
     Interpolate leftMap  = Interpolate::Interpolate(mappingSize, inputValue, outputLeft);
     Interpolate rightMap = Interpolate::Interpolate(mappingSize, inputValue, outputRight);
 

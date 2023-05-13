@@ -13,14 +13,29 @@ class Sensor{
   public:
     Sensor();
     void setup(int pin_);
+
+    /*
+    * Reads the sensor read value, calls the process function computing the sensor value, records the values as the previous value for the next call.
+    * The function moreover determines if the sensor value has sufficient difference to mark the sensor as moving.
+    */
     int apply();
+
+    /*
+    * The function read raw value, updates the sensor value, determines if its moving and upldates the previous value variable.
+    * Default implementation determines how much change to keep based on the previous value recorded and their difference.
+    */
+    
+    void processValue();
+
     void print();
-    bool moving = false;
+    
+    int read = 0;
     int value = 0;
     int prevValue = 0;
-    int read = 0;
-  private:
+    bool moving = false;
+
     int _pin;
+  private:
     
 };
 

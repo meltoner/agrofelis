@@ -1,17 +1,6 @@
 /*
   Linear.h - Library for wrapping the functions controlling and sensing a linear actuator.
   Author - Konstantinos L. Papageorgiou / mail kp at rei.gr - 2023
-
-  The class is initialised with the following board port mappings. 
-  The first two control the direction and speed of the [DRV8871 H-Bridge Brushed DC Motor Driver] using two pwm ports. 
-  The next the analogue [Linear Potentiometer B10K Ohm] and the analogue [ACS712 5A  Range Hall Current Sensor Module].
-
-  The module operates based on 4 states dictating its function. On states one and two, the min and max potentiometer bounds are identified.
-  On state three, the minimum throttle leading to a movement is derived. On state four the object enters when its objective position has been achieved. 
-  On state five, the object reaches to the target position. States 10 and 11 correspond to erroneous states, such when an 
-  actuation is not detected when its expected or when the sensor value reads values close to its physical values.
-
-  The module's regular update frequency is 100 ms
 */
 
 #include "Linear.h" 
@@ -50,7 +39,8 @@ void Linear::setup(Context &_context){
   move(0);
   pinMode(pinA, OUTPUT);
   pinMode(pinB, OUTPUT);
-  sensor.setup(pinC);
+  potentiometerSensor.setup(pinC);
+  currentSensor.setup(pinD);
 }
 
 void Linear::changeState(int _state){
@@ -58,19 +48,13 @@ void Linear::changeState(int _state){
   stateChanged = millis();
 }
 
-/*
-  The module operates based on 4 states dictating its function. On states one and two, the min and max potentiometer bounds are identified.
-  On state three, the minimum throttle leading to a movement is derived. On state four the object enters when its objective position has been achieved. 
-  On state five, the object reaches to the target position. States 10 and 11 correspond to erroneous states, such when an 
-  actuation is not detected when its expected or when the sensor value reads values close to its physical values.
-*/
-
 void Linear::apply(){
 
-  potentiometer = sensor.apply();
+  potentiometer = potentiometerSensor.apply();
+
   timeSinceStateChange = millis() - stateChanged;
 
-  // Check if the sensor has reached its physical limits 
+  // Check if the potentiometerSensor has reached its physical limits 
   if(potentiometer < 10 || potentiometer > 1010)
     state = 11;
 
@@ -81,36 +65,33 @@ void Linear::apply(){
         targetPotentiometer = 512;
         potentiometerStarting = 0;
       break;
+
     case 1: // find bounds A potentiometer  
-      if(timeSinceStateChange < 3000 || sensor.moving == 1){
+      if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
         move(-direction * initialSpeed);
       }else{
 
         if(direction == 1)
-          minPot = sensor.value + direction * 5;
+          minPot = potentiometerSensor.value + direction * 5;
         else
-          maxPot = sensor.value - direction * 5;
+          maxPot = potentiometerSensor.value - direction * 5;
 
         changeState(state + 1);
-        
         move(direction * initialSpeed);
-
       }
       break;
 
     case 2: // find bounds B potentiometer  
-      if(timeSinceStateChange < 3000 || sensor.moving == 1){
+      if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
       }else{
 
         if(direction == 1)
-          maxPot = sensor.value - direction * 10;
+          maxPot = potentiometerSensor.value - direction * 10;
         else
-          minPot = sensor.value + direction * 10;
+          minPot = potentiometerSensor.value + direction * 10;
 
         changeState(state + 1);
-
         targetPotentiometer = potentiometer;
-
       }
     break;
 
@@ -158,11 +139,9 @@ void Linear::apply(){
           weight = timeDistance / 3000.0;
         
         // initial speed based on distance hard limited to 10-90
-
         int speed = constrain(absdiff, 10, 100);
 
         // reduce weight when surpassing half way
- 
         if(absdiff < 80)
           weight = weight / 2;
 
@@ -192,14 +171,16 @@ void Linear::apply(){
       break;
 
     case 11:
-      //Serial.print("Error : Reached sensor limits");
+      //Serial.print("Error : Reached potentiometerSensor limits");
       throttle(0);
       break;
   }
   applyMove();
+  current = currentSensor.apply();
+  current = currentSensor.apply();
 } 
 
-// Controls the direction and raw speed of the linear motor constrained to +/- 255
+
 void Linear::move(int speed){
   appliedSpeed = constrain(speed, -maxSpeed, maxSpeed);
 }
@@ -223,20 +204,14 @@ void Linear::applyMove(){
   }  
 }
 
-// Actuates the a speed value by inputting a 0 to 100 range. 
-//The raw value is mapped based on the min speed that lead to a feedback sensor difference.
 void Linear::throttle(int speed){  
-  //normSpeed = abs(speed);
   int mappedSpeed = 0;
-
   if(abs(speed) > 1)
     mappedSpeed = map(abs(speed), 0, 100, minSpeed-20, maxSpeed) * (speed > 0 ? 1: -1);
 
   move( mappedSpeed );  
 }
 
-// Sets the target potentiometer value, by inputting a 0 to 100 range mapped 
-// based on the min and max value of the feedback sensor detected at boot up.
 void Linear::position(int pos){
   normPosition = pos;  
   int offseted = constrain(pos + offset, 0, 100);
@@ -248,9 +223,12 @@ void Linear::print(){
   Serial.print(F("<Linear:")); 
   Serial.print(identifier);
   Serial.print(F(";"));
-  Serial.print(state);
+  Serial.print(state);  
 
-  if(state<4){
+  if(state < 4){
+
+    Serial.print(F(";"));
+    Serial.print(currentSensor.current);
 
   }else{
     Serial.print(F(";"));
@@ -259,7 +237,8 @@ void Linear::print(){
     Serial.print(normDistance);
     Serial.print(F(";"));
     Serial.print(normSpeed);
-    //sensor.print();    
+    Serial.print(F(";"));
+    Serial.print(currentSensor.current);    
   }
 
   Serial.print(F(">"));
