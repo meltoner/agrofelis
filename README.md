@@ -20,7 +20,7 @@ The majority of technical solutions proposed for agricultural robotic systems ai
 
 In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use and in the case of LIDAR that can be combined with Odometers Cameras and IMUs add a considerable cost to the system that makes sense only for bigger heavier vehicles. On top of that repairing a vehicle of high technological complexity can be a challenge for the average farmer across the world.
 
-A remote control system with the ability to automate certain functions can offer a cheaper alternative suitable for smaller platforms positioning such systems between handheld tools and modern tractors , offering a considerably cheaper increase in productivity  
+A remote control system with the ability of automating certain functions can offer a cheaper alternative suitable for smaller platforms positioning such systems between handheld tools and modern tractors, offering a considerably cheaper increase in productivity. 
 
 
 ## The Project 
