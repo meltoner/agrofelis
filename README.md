@@ -13,7 +13,7 @@ Farmers are having increasing difficulties finding seasonal farm workers while a
 The problem is even more intense for small orchard farms of less than 5 Hectares. The need of increasing a farm worker’s productivity with a platform that is affordable and can be amortized relatively fast is essential for small farmers in order to maintain existing plant capital. The 3 basic jobs in an orchard are Grass Cutting, Spraying, Fertiliser Casting comprise 35% of the cultivation cost , the remaining 65% being fruit picking and pruning . 
 
 A low cost, small footprint, energy dense agile robotic vehicle system is designed, protoyped and open sourced, to lay the foundations, to draw attention, attract skills, towards mitigating the identified problems.
-  
+
 ## The Technology 
 
 The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS , Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.   
