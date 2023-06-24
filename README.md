@@ -8,24 +8,38 @@ Energy dense, multipurpuse agile agricultural robot design plans and system sour
 
 The declining demographics in the West, climate change, economic disparity, energy cost inflation, and supply chain disruptions have created a dangerous mix of factors for the world’s agriculture. 
 
-Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. In the case of Orchards the realized loss of an abandoned orchard is multifold compared to seasonal plants since an orchard needs 10+ years to reach full production capability with a break even period of 4-5 years. 
+Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. 
 
-The problem is even more intense for small orchard farms of less than 5 Hectares. The need of increasing a farm worker’s productivity with a platform that is affordable and can be amortized relatively fast is essential for small farmers in order to maintain existing plant capital. The 3 basic jobs in an orchard are Grass Cutting, Spraying, Fertiliser Casting comprise 35% of the cultivation cost , the remaining 65% being fruit picking and pruning . 
+The problem is even more intense for small farms. The need of increasing a farm worker’s productivity with a platform that is affordable and can be amortized relatively fast is essential for small farmers in order to maintain existing plant capital. 
 
-A low cost, small footprint, energy dense agile robotic vehicle system is designed, protoyped and open sourced, to lay the foundations, to draw attention, attract skills, towards mitigating the identified problems.
+Farming automation in the above frame will need a Base Vehicle that is low cost, has a small footprint, is energy dense and agile. The robotic vehicle system that is proposed, prototyped and open sourced, aims to answer those needs.
 
-## The Technology 
+## The Chosen Technology 
 
 The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS , Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.   
 
 In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use and in the case of LIDAR that can be combined with Odometers Cameras and IMUs add a considerable cost to the system that makes sense only for bigger heavier vehicles. On top of that repairing a vehicle of high technological complexity can be a challenge for the average farmer across the world.
 
-A remote control system with the ability of automating certain functions can offer a cheaper alternative suitable for smaller platforms positioning such systems between handheld tools and modern tractors, offering a considerably cheaper increase in productivity. 
+A remote control system with the ability of automating certain functions can offer a cheaper alternative suitable for smaller platforms positioning such systems between handheld tools and modern tractors, offering a considerably cheaper increase in productivity. Also the availability of electrical 
+components like motors and LiFePO4 batteries offer a simpler solution. 
 
+## The Potential
+
+The technologies that could be incorporated on such a Vehicle could include implements such as 
+- Grass Cutter/lawn mower a frequent and necessary application in Orchards 
+- Turbine Sprayers usefull both in orchards and veggetable cultivations for either pesticide or water soluble fertilizer
+- Fog Sprayers for greater reach in dense folliage and also antifreeze protection with glycerin oil   
+- Fertilizer Casting, a copious job that must be done in both orchards and vegetables 
+- Sensor Suite for Plant disease diagnosis 
+- Robotic Picking Arm Base & Energy Hub, for low cultivations and also Green houses  
+- Tethered Drone Base & Energy Hub, fruit picking for trees (see Tevel as an example)
+
+The potential of having the ability to produce an open soursed Base Robotic Vehicle for a variety of Farming applications and tools has a significant 
+value for our increasingly troubled agro-sector.
 
 ## The Project 
 
-The purpose of the project is to create an open source programmable remote control system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the possibility for precision farming applications
+As stated above the purpose of the project is to create an open source programmable remote control system, however we have to clarify that the Vehicle's chassis design is not proposed as ideal for the use since it is assumed that different users might choose different chassis designs, it is rather the open source programmable remote control system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the possibility for precision farming applications.
 
 The robotic vehicle prototype is an iron bar welded chassis with detachable components, which is capable of carrying 250 kilos of payload, has energy autonomy of 8.8 Kwh and fits within a 1 sqm. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically controlled using feadback sensors in real time. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors. The power system is composed of 8 element LiFePO4 batteries of 320 amps, paired with an intelligent Battery Management System at 300 Amp max discharge rate capacity and a data link enabling the utilization of energy related indicators. 
 
