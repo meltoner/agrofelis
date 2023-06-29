@@ -26,8 +26,11 @@ Context context = Context();
 Controller controller = Controller();
 Invoker invoker = Invoker();
 
-const char* ssid = "xxxx-Change-me";
-const char* password = "xxxx-Change-me";
+// const char* ssid = "xxxx-Change-me";
+// const char* password = "xxxx-Change-me";
+
+const char* ssid = "COSMOTE-452aps";
+const char* password = "5g5v2vp2kb26besv";
 
 
 // Create AsyncWebServer object on port 80
@@ -44,6 +47,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 <link rel="icon" href="data:,">
 </head>
 <body>
+open https://github.com/meltoner/agrofelis/blob/main/components/mobility/src/web-app/index.html
 </body>
 </html>)rawliteral";
 
@@ -108,6 +112,7 @@ void setup(){
 }
 
 void apply_interval_0(){
+  
 
 }
 

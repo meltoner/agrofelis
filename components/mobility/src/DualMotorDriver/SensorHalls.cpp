@@ -11,31 +11,27 @@
 */
 
 #include "SensorHalls.h" 
-#include "Context.h"
 
-SensorHalls::SensorHalls(){
-}
 
-void SensorHalls::setup(byte _pin1, byte _pin2, byte _pin3){
+SensorHalls::SensorHalls(){}
+
+void SensorHalls::setup(Context &_context, byte _pin1, byte _pin2, byte _pin3){
+  context = &_context;
   pin1 = _pin1;
   pin2 = _pin2;
   pin3 = _pin3;
-
-  pinMode(pin1, INPUT);
-  pinMode(pin2, INPUT);
-  pinMode(pin3, INPUT);
-
   apply();
 }
 
 void SensorHalls::processValue(){
   //print();
+  //Serial.println("");
 }
 
 void SensorHalls::apply(){
-  a = analogRead(pin1);
-  b = analogRead(pin2);
-  c = analogRead(pin3);
+  a = context->adac.get(pin1);
+  b = context->adac.get(pin2);
+  c = context->adac.get(pin3);
   processValue();
 }
 

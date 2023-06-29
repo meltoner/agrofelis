@@ -12,8 +12,8 @@
 class Sensor{
   public:
     Sensor();
-    void setup(int pin_);
-
+    void setup(byte _pin);
+    virtual void readSensor();
     /*
     * Reads the sensor read value, calls the process function computing the sensor value, records the values as the previous value for the next call.
     * The function moreover determines if the sensor value has sufficient difference to mark the sensor as moving.
@@ -34,7 +34,7 @@ class Sensor{
     int prevValue = 0;
     bool moving = false;
 
-    int _pin;
+    byte pin;
   private:
     
 };

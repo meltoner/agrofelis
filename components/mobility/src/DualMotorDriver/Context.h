@@ -13,6 +13,7 @@
 #include "Arduino.h" 
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include "Adac.h"
 
 class Context{
   public:
@@ -24,8 +25,10 @@ class Context{
     void reflectSensor(float value, byte precission);
     void appendMessage(String part);
     void sendMessage();
+    
     void updateTemperatures();
     // Invoker variables - execution functions frequencies
+    
     int intervals[6] = {10, 52, 104, 500, 1008, 5000};    
     float temperatures[2] = {0.0, 0.0};
     unsigned long now = millis();
@@ -34,6 +37,8 @@ class Context{
     OneWire oneWire = OneWire(4);
     DallasTemperature dallasTemp = DallasTemperature(&oneWire);
     unsigned long lastTempRequest = 0;
+
+    Adac adac = Adac();
 
   private:
 

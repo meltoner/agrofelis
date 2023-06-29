@@ -8,13 +8,13 @@
 
 #include "Arduino.h" 
 #include "Context.h"
-#include "SensorCurrent.h" 
+#include "SensorADACCurrent.h" 
 #include "SensorHalls.h" 
 
 class Motor{
   public:
-    // power, direction, speed, current, onewire temperature index, hall a, hall b , hall c
-    Motor(byte _pin1, byte _pin2, byte _pin3, byte pin4, byte _temperatureIndex, byte pin5, byte pin6, byte pin7 );
+    // power, direction, speed, current, onewire temperature index, and hall a, hall b , hall c accessed via a multiplexer
+    Motor(byte _pin1, byte _pin2, byte _pin3, byte pin4, byte _temperatureIndex, byte _pin5, byte _pin6, byte _pin7 );
     void setup(Context &_context);
     void apply();
     void print();
@@ -26,7 +26,7 @@ class Motor{
     // Set speed input value 0-100. the value is the mapped to the range 0-255
     void setSpeed(int value);
 
-    SensorCurrent currentSensor = SensorCurrent();
+    SensorADACCurrent currentSensor = SensorADACCurrent();
     SensorHalls hallsSensor = SensorHalls();
     
     int power, direction, speed = 0;
@@ -40,6 +40,10 @@ class Motor{
     byte pin2;
     byte pin3;
     byte temperatureIndex;
+    byte pin4;
+    int pin5;
+    int pin6;
+    int pin7;
 
 };
 
