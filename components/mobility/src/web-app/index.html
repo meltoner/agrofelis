@@ -26,6 +26,8 @@
       .disconnected{
         opacity: 0.4;
       }
+      a{text-decoration: none;}
+      .topnav a{color:#fff}
       textarea{
         width: 100%;
         text-align: center;
@@ -75,52 +77,14 @@
     <div class="topnav">
       <h1>AGROFELIS - Motors module control</h1>
       <input type="text" id="ip" value="192.168.1.2">
-    </div>
-    <div class="content" id="Motor13">
-        <h2>Motor A</h2>
-        <div>
-          <div class="card">
-            <h3>Power</h3>
-            <input type="range" class="command" id="c1" min="0" max="1" value="0">
-          </div>
-          <div class="card">
-            <h3>Direction</h3>      
-            <input type="range" class="command" id="c2" min="0" max="1" value="0">
-          </div>
-          <div class="card">
-            <h3>Speed</h3>
-            <input type="range" class="command" id="c3" min="0" max="100" value="0">
-          </div>
-        </div>
-        <div>
-          <div class="card">
-            <h3>Current</h3>
-            <input type="text" class="sensor" class="s1" disabled value="0">
-          </div>
-          <div class="card">
-            <h3>Temperature</h3>
-            <input type="text" class="sensor" class="s2" disabled value="0">
-          </div>
-        </div>
-        <div>
-          <div class="card">
-            <h3>Hall 1</h3>
-            <input type="text" class="sensor" class="s3" disabled value="0">
-          </div>
-          <div class="card">
-            <h3>Hall 2</h3>
-            <input type="text" class="sensor" class="s4" disabled value="0">
-          </div>
-          <div class="card">
-            <h3>Hall 3</h3>
-            <input type="text" class="sensor" class="s5" disabled value="0">
-          </div>
-        </div>
-
+      <a href="javascript:window.location = 'http://'+$('#ip').val()+'/update'">[Firmware update]</a>
     </div>
 
-    <div class="content" id="Motor19">
+ 
+
+    <div class="content" id="Motor32">
       <h2>Motor B</h2>
+	     // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4
       <div>
         <div class="card">
           <h3>Power</h3>      
@@ -144,6 +108,48 @@
           <h3>Temperature</h3>
           <input type="text" class="sensor" class="s2" disabled value="0">
         </div> 
+      </div>
+      <div>
+        <div class="card">
+          <h3>Hall 1</h3>
+          <input type="text" class="sensor" class="s3" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Hall 2</h3>
+          <input type="text" class="sensor" class="s4" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Hall 3</h3>
+          <input type="text" class="sensor" class="s5" disabled value="0">
+        </div>
+      </div>
+    </div>
+   <div class="content" id="Motor13">
+      <h2>Motor A</h2>
+      // POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7
+      <div>
+        <div class="card">
+          <h3>Power</h3>
+          <input type="range" class="command" id="c1" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>      
+          <input type="range" class="command" id="c2" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="range" class="command" id="c3" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor" class="s1" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Temperature</h3>
+          <input type="text" class="sensor" class="s2" disabled value="0">
+        </div>
       </div>
       <div>
         <div class="card">
