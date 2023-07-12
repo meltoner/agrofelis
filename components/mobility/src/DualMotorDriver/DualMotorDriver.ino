@@ -29,9 +29,6 @@ Invoker invoker = Invoker();
 // const char* ssid = "xxxx-Change-me";
 // const char* password = "xxxx-Change-me";
 
-const char* ssid = "COSMOTE-452aps";
-const char* password = "5g5v2vp2kb26besv";
-
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -121,11 +118,12 @@ void apply_interval_1(){
 }
 
 void apply_interval_2(){
+
   //controller.steer.apply();
 }
 
 void apply_interval_3(){ 
- controller.print();
+     controller.print();
 }
 
 void apply_interval_4(){

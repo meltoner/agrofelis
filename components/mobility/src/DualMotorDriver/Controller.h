@@ -23,15 +23,8 @@ class Controller : public CommandParser{
     void print();
     void actionParsedCommand();
 
-// That means you can't use the ADC on any of the ADC2 channels while WiFi is on: 
-//GPIO 4, GPIO 0, GPIO 2, GPIO 15, GPIO 13, GPIO 12, GPIO [14], GPIO [27], GPIO 25 and GPIO 26.
-//But you can use ADC1, which uses pins GPIO 36, GPIO [37], GPIO [38], GPIO 39, GPIO 32, GPIO 33, GPIO 34 and GPIO 35.
-
-//    Motor motorA = Motor(13, 12, 26, 36, 0, 4, 5, 6); // POWER 13, DIRECTION 12, SPEED 26, CURRENT 33, TEMPINDEX0, HALL A 39, B 34, C 35
-//    Motor motorB = Motor(19, 21, 25, 33, 1, 1, 2, 3); // POWER 19, DIRECTION 21, SPEED 25, CURRENT 14, TEMPINDEX1, HALL A 32, B 33, C 27
-
-    Motor motorA = Motor(13, 12, 26, 0, 0, 2, 3, 4); // POWER 13, DIRECTION 12, SPEED 26, (adac)CURRENT 0, TEMPINDEX0, HALL A 2, B 3, C 4
-    Motor motorB = Motor(32, 21, 25, 1, 1, 5, 6, 7); // POWER 32, DIRECTION 21, SPEED 25, (adac)CURRENT 1, TEMPINDEX1, HALL A 5, B 6, C 7
+    Motor motorA = Motor(13, 12, 26, 1, 1, 5, 6, 7); // POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7
+    Motor motorB = Motor(32, 21, 25, 0, 0, 2, 3, 4); // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4
 
   private:
     Context *context;
