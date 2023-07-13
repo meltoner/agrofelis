@@ -1,0 +1,71 @@
+<head>
+<title>	Gcode line to holes drilling conversion - kp at rei 2022</title>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	/* fork from https://github.com/meltoner/g-code-plasma-cutting */
+	textarea{
+		width:100%;
+		min-height: 300px;
+	}
+	.textareas{
+		display: inline-block;
+		width: 49%;
+	}
+	button{
+		width: 100%;
+		min-height: 40px;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Gcode line to holes drilling conversion</h1>
+
+	<p>
+	The following application enhances an existing gcode sequence such that each point in the line corresponds to a hole to be cut.
+	The drill is lift at 10mm and on its position it is lift down at -2mm and then backup at 10mm.
+	</p>
+
+	 
+	
+	<br>
+	<div class="textareas">
+		<label>Input G-CODE</label>
+		<textarea id="nc"></textarea>	
+	</div>
+
+	<div class="textareas">
+		<label>Output G-CODE</label>
+		<textarea id="result"></textarea>
+	</div>
+
+	<button>Update</button>
+	<br>
+
+	<p>Konstantinos L. Papageorgiou - 2023</p>
+</body>
+
+<script>
+$=jQuery
+
+//--------------------
+
+var before="\nG1 Z4 F150\n";
+var after="\nS10000\nG1 Z0.5 F100\nG1 Z-1 F30\nG1 Z1 F40\nS0\nG1 Z4 F100"
+ 
+
+var prepend = "G1 X0 Y0 Z4"
+var append = "\nG1 X0 Y0 Z4"
+
+//--------------------
+
+$("button").click(function(){
+	var input = $("#nc").val().split("\n")
+	var result = ""
+	for(var i = 0;i<input.length;i++)
+		result += before+input[i]+after
+	result = prepend + result + append
+	$("#result").val(result)
+})
+
+</script>
