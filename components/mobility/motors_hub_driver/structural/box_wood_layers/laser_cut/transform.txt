@@ -1,0 +1,19 @@
+End layer dimensions 204.83 X 119.67
+
+From rhino svg export 1:1 A4 landscape 
+Open in illustrator
+Select all and enlarge the width by 1.33
+Pt in illustrator = 772.209
+Move schema in to the left lower corner
+Save
+
+Open the svg laserGRBL and cut the five layers
+
+----
+
+On laser GRBL use 150 mm/min
+M3 constant power 100%
+
+append return to home
+
+G01 X0Y0
