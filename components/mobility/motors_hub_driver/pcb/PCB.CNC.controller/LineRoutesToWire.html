@@ -1,0 +1,77 @@
+<head>
+<title>	Gcode z-axis PCB wire cut gcode enhancer - kp at rei 2023</title>	
+<style>
+	/* fork from https://github.com/meltoner/g-code-plasma-cutting */
+	body{
+	  font-family: arial;
+	}
+	textarea{
+		width:100%;
+		min-height: 300px;
+	}
+	.textareas{
+		display: inline-block;
+		width: 49%;
+	}
+	button{
+		width: 100%;
+		min-height: 40px;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<h1>G-code PCB board wire cut gcode enhancer</h1>
+
+	<p>The following application enhances an existing laser cutting g-code sequence, such that on each <strong>On</strong> signal, of 1000 value, z-axis movements are incorporated, facilitating a pcb board making.</p>
+
+	<p>More specifically the input sequence is enhanced by pre-pending and appending code and by wrapping the On and Off commands with additional. The pre-pending commands set the X,Y,Z axis at current position as the zero position. The appending commands, add a return to home command, allowing the reproducibility of experiments. </p> <p>The Off signal is replaced by an Off signal and a z-axis movement raising the head for clear path movement. The on signal is replaced by an On signal, followed by lowering the head.</p>
+	
+
+	<br>
+	<div class="textareas">
+		<label>Input G-CODE</label>
+		<textarea id="nc"></textarea>	
+	</div>
+
+	<div class="textareas">
+		<label>Output G-CODE</label>
+		<textarea id="result"></textarea>
+	</div>
+
+	<button>Update</button>
+	<br>
+
+	<p>Konstantinos L. Papageorgiou, 2023</p>
+</body>
+
+<script>
+
+bootApp = function(){
+	convert = function(){
+		var replacements = [
+			{find:/\nS0/g, replace: "\nG01 Z4 F80\nS0" },
+			{find:/S10000/g, replace: "\nS10000\nG01 Z1 F80\nG01 Z-0.2 F30" }	
+		]
+
+		var prepend = "G01 X0 Y0 Z4\n"
+		var append = "G01 X0 Y0 Z4\n"
+	
+		var result = $("#nc").val()
+		for(var i = 0;i<replacements.length;i++)
+			result = result.replace(replacements[i].find, replacements[i].replace)
+		result = prepend + result + append
+		$("#result").val(result)
+
+	}
+
+	$("button").click(convert)
+}
+</script>
+
+<script>
+$=jQuery
+bootApp()
+</script>
