@@ -1,3 +1,5 @@
+### Motor hub power module
+
 This sub-module of the Motors Hub Driver decomposes the functionality of powering, sensing the current and reversing the direction of a motor hub driver. 
 
 The Motors Hub Power Driver is composed of the following components :
@@ -21,5 +23,5 @@ Remarks :
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, thus interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB interfacing with the PCB of the module.
     
-/agrofelis/components/mobility/motors_hub_driver/pcb/power.md
+Document location :  /agrofelis/components/mobility/motors_hub_driver/pcb/power.md
  
