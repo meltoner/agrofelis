@@ -19,3 +19,7 @@ Remarks
 - The first and second channel of the MPC3004 Adac are connected to the current sensors of the power module.
 - The remaining channels of the ADAC are connected to the hall sensors of the motor. the 3d to fifth channels follow the yellow, green, blue connection and so on.
 - The ground of the halls sensors is connected to the ground of the Motors hub ADAC module.
+
+
+
+Document location : /agrofelis/components/mobility/motors_hub_driver/pcb/adac.md
