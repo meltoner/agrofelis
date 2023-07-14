@@ -20,6 +20,7 @@ The Motors Hub controller is composed of the following components :
 13. Two temperature sensors DS18B20 connected via one wire.
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
 15. Two Agrofelis Motors Hub Power Drivers and an ADAC module. 
+16. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
 Remarks 
 
