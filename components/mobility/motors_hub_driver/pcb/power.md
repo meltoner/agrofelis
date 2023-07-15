@@ -15,6 +15,7 @@ The Motors Hub Power Driver is composed of the following components :
 9. 3 pin headers for connecting the PCB with the 20 amp relay.
 10. 4 cm high current wire.
 11. Female high current connector.
+12. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 
 This sub-module is used twice, within the Motors hub driver module.
 
@@ -22,6 +23,7 @@ Remarks :
 
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, thus interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB interfacing with the PCB of the module.
+- It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp of the esp32.  During test the diferentiating factor wast that these operated, were triggerable with less voltage like 1.8v, while others required at least 2v.
     
 Document location :  /agrofelis/components/mobility/motors_hub_driver/pcb/power.md
  

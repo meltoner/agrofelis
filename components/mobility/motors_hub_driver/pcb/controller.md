@@ -23,7 +23,9 @@ The Motors Hub controller is composed of the following components :
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-17. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
+17. Non mandatory connectors, two 2 pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
+18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
+19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
 Remarks :
 

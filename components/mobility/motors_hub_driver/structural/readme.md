@@ -9,5 +9,9 @@ The Motors Hub structure is composed of the following components :
 2. Four 3d printed elements guiding the air flow along both sides of the analog motor drivers as well as supporting the elements.
 3. Wood glue
 4. A spray paint 
+5. Capton tape to secure the temperature sensors in the top wood layer slot.
+6. Eight Standoff, Bolts and screws 2m or 2.5m to mount the controller and adac into the wooden layer
+7. Two 2.8mm X 16mm screws securing the top layer with the outer fins.
+
 
 The schematics folder document the procedure to re-create the end CNC and 3d print instructions in their respective folders.

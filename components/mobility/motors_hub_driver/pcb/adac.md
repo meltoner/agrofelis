@@ -13,12 +13,13 @@ The Motors Hub controller is composed of the following components :
 6. One four pin male header for connecting with the Agrofelis controller
 7. One 8 pin female header
 8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
+9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 
 Remarks :
 
 - The first and second channel of the MPC3004 Adac are connected to the current sensors of the power module.
 - The remaining channels of the ADAC are connected to the hall sensors of the motor. the 3d to fifth channels follow the yellow, green, blue connection and so on.
 - The ground of the halls sensors is connected to the ground of the Motors hub ADAC module.
-- The one ping from the 8 pin female header is trimmed off.
+- The one pin from the 8 pin female header is trimmed off.
 
 Document location : /agrofelis/components/mobility/motors_hub_driver/pcb/adac.md
