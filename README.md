@@ -8,11 +8,11 @@ Energy dense, multipurpuse agile agricultural robot design plans and system sour
 
 The declining demographics in the West, economic disparity, energy cost inflation, supply chain disruptions and climate change have created a dangerous mix of factors for the world and particular for Agriculture and Public Safety.  
 
-Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker’s productivity with an affordable platform that is between a Traktor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
+Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker’s productivity with an affordable platform that is between a Tractor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
 
 The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an intergrated role with firefighting units in non-urban environments that reduces the work load and reduces the risk of exposure to heat due to proximity to the fire front can also become essential. 
 
-The above problems in agriculture and public safety both need a Base Vehicle that is low cost, has a small footprint, is energy dense and agile and can be manufactured at a local machine shop. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for a variety of applications.
+The above problems in agriculture and public safety both need a Base Vehicle that is low cost, has a small footprint, is energy dense and agile and can be manufactured at a local machine shop in small volumes or even in single units. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields.
 
 ## The Chosen Technology 
 
@@ -36,14 +36,15 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 The technologies that could be incorporated on an Public Safety Vehicle could include applications like 
 - Fire fighting Gear Carrier 
 - Water Cannon Base
-- Tethered Drone Base & Power Hub, for Survailance and Communications in large area fires
+- Tethered Drone Base & Power Hub, for Surveilance and Communications in large area fires
+- Sensor Suite for patrolling and surveilance 
 
 The potential of having the ability to produce an open soursed Base Robotic Vehicle for a variety of applications and tools offers significant versatility.
 
 ## The Project 
 
 The Chassis of the vehicle should be designed according to the specifications of the job at hand, carrying capacity, choise of suspension and wheels, and 
-of course size is expected to vary, so the project's focus is the open source programmable remote control system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the possibility for precision farming applications. 
+of course size is expected to vary, so the project doesn't focus on the chassis since it is assumed that there will be different designs rather it is the open source programmable system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the possibility for precision applications that is the core. 
 
 The chassis implemented for the project is an iron bar welded chassis with detachable components, which is capable of carrying 250 kilos of payload with 
 no suspension for cost reduction. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically controlled using feadback sensors in real time. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
