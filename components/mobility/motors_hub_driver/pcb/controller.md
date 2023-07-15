@@ -5,7 +5,6 @@ The controller decomposes the functionality of processing the signals, of broadc
 
 The module establishes the means of individual and synchronized motion of motors. Moreover, the module meets the micro-controlling mechanisms necessary in precision farming and the safety mechanisms for protecting dynamically the various components of the system, based on excessive current or temperature sensed to alert and cut off the power.
 
-
 The Motors Hub controller is composed of the following components :
 
 1. A PCB board, with its schematics located within PCB.CNC.controller\ folder.
@@ -18,12 +17,13 @@ The Motors Hub controller is composed of the following components :
 8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
 9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
 10. Two five wire ribbon cable 7 cm, used to connect the power modules.
-11. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
-12. Two temperature sensors DS18B20 connected via one wire.
-13. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
-14. A case cooler 8 cm LogiLink FAN101 at 12V
-15. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-16. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
+11. Two five ping female headers used to connect the power modules at the end of ribbon cable.
+12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
+13. Two temperature sensors DS18B20 connected via one wire.
+14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
+15. A case cooler 8 cm LogiLink FAN101 at 12V
+16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
+17. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
 Remarks :
 
