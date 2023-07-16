@@ -97,6 +97,7 @@ This sub-module of the Motors Hub Driver integrates all components of the overal
 17. Non mandatory connectors, two 2 pin terminal, high current red & black wire, male & female connectors to power the analog motor drivers.
 
 C) The Motors Hub Power Driver 
+
 This sub-module is used twice, within the Motors hub driver module. It consists of the following components:
 
 1.	A PCB board, with its schematics located within PCB.CNC.power\ folder.
