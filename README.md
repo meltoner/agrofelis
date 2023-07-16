@@ -55,7 +55,9 @@ The processing elements of the system are modularised systems composed of Arduin
 
 ## The Technical Stuff
 
-The Motors Hub controller is composed of the following components
+A) The Motors Hub ADAC
+
+This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v. By doing so, it expands the number of channels the ESP32 can handle. Using this submodule the two current sensors and the six hall sensors of the two motors can be interfaced. It consists of the following components:
 
 1) One MCP3008 8-channel 10 bit ADC
 2) One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
@@ -71,7 +73,11 @@ The remaining 3rd, 4th and 5th channels of the ADAC are connected to the hall se
 
 The module establishes the means of individual and synchronised motion of motors. Moreover, the module meets the needs for micro-controlling mechanisms necessary in precision farming. It also includes safety mechanisms with dynamic protection of various system components based on sensing excessive current or temperature to alert and cut off the power.
 
-The Motors Hub controller is composed of the following components :
+
+B) The Motors Hub controller 
+
+This sub-module of the Motors Hub Driver integrates all components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power and spin direction of the motors. It consists of the following components:
+
 1. A PCB board, with its schematics located within PCB.CNC.controller\ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. One ESP32 with 38 pins.
@@ -82,19 +88,28 @@ The Motors Hub controller is composed of the following components :
 8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
 9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
 10. Two five wire ribbon cable 7 cm, used to connect the power modules.
-11. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
-12. Two temperature sensors DS18B20 connected via one wire.
-13. Pieces of wire for the implementing the PCB bridges as indicated by the yellow colour in the PCB.PRINT.Stickers schematic.
-14. A case cooler 8 cm LogiLink FAN101 at 12V
-15. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module.
-16. The software
 11. Two five ping female headers used to connect the power modules at the end of ribbon cable.
 12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
-14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
+14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow colour in the PCB.PRINT.Stickers schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V
-16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-17. The software
+16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module.
+17. Non mandatory connectors, two 2 pin terminal, high current red & black wire, male & female connectors to power the analog motor drivers.
+
+C) The Motors Hub Power Driver 
+This sub-module is used twice, within the Motors hub driver module. It consists of the following components:
+
+1.	A PCB board, with its schematics located within PCB.CNC.power\ folder.
+2.	The PCB top side printed cover located within PCB.PRINT.Stickers.
+3.	Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin]
+4.	One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
+5.	An [ACS712] 20 amp current Sensor.
+6.	One 5 pin male header.
+7.	A JST-SM 2pin connector, connecting with the motor driver reverse function.
+8.	One small wire for connecting the PCB with the 20 amp relay.
+9.	3 pin headers for connecting the PCB with the 20 amp relay.
+10.	4 cm high current wire.
+11.	Female high current connector.
 
 The system, in addition to its wire-full infrastructure, supports bluetooth connectivity for closeby wireless attachments, WiFi for nearby controllers, mobile phones and / or modules, as well as a 2km digital wireless transceiver. A long range digital remote control / transceiver is also developed powered by an ESP32, a TFT monitor, joysticks and a lipo rechargeable battery. 
 
