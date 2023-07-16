@@ -53,6 +53,50 @@ The power system has energy autonomy of 8.8 Kwh and fits within an 1 sqm.  It is
 
 The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
 
+## The Technical Stuff
+
+The Motors Hub controller is composed of the following components
+
+1) One MCP3008 8-channel 10 bit ADC
+2) One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
+3) One Seven pin ribbon cable for connecting with the ADAC module.
+4) One four pin male header
+5) One six pin female header
+6) One four pin male header for connecting with the Agrofelis controller
+7) One 8 pin female header
+8) Two 7 cm wire cables connecting the ADAC with the current sensors of the Motor Power driver
+
+The 1st and 2nd channel of the MPC3004 ADAC are connected to the current sensors of the power module.
+The remaining 3rd, 4th and 5th channels of the ADAC are connected to the hall sensors of the motor following the yellow, green, blue connection and so on. The ground of the hall sensors is connected to the ground of the Motors hub ADAC module. The one ping from the 8 pin female header was trimmed off.
+
+The module establishes the means of individual and synchronised motion of motors. Moreover, the module meets the needs for micro-controlling mechanisms necessary in precision farming. It also includes safety mechanisms with dynamic protection of various system components based on sensing excessive current or temperature to alert and cut off the power.
+
+The Motors Hub controller is composed of the following components :
+1. A PCB board, with its schematics located within PCB.CNC.controller\ folder.
+2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+3. One ESP32 with 38 pins.
+4. Two twenty pin female headers.
+5. One two pin female header.
+6. One four pin female header.
+7. One 2 pin JST male connector for the 5v supply.
+8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
+9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
+10. Two five wire ribbon cable 7 cm, used to connect the power modules.
+11. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
+12. Two temperature sensors DS18B20 connected via one wire.
+13. Pieces of wire for the implementing the PCB bridges as indicated by the yellow colour in the PCB.PRINT.Stickers schematic.
+14. A case cooler 8 cm LogiLink FAN101 at 12V
+15. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module.
+16. The software
+11. Two five ping female headers used to connect the power modules at the end of ribbon cable.
+12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
+13. Two temperature sensors DS18B20 connected via one wire.
+14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
+15. A case cooler 8 cm LogiLink FAN101 at 12V
+16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
+17. The software
+
 The system, in addition to its wire-full infrastructure, supports bluetooth connectivity for closeby wireless attachments, WiFi for nearby controllers, mobile phones and / or modules, as well as a 2km digital wireless transceiver. A long range digital remote control / transceiver is also developed powered by an esp32, a TFT monitor, joysticks and a lipo rechargeable battery. 
 
 Additional sensors employed by the system include GPS, accelerometer, compass, temperature, distance, current, voltage, sensors as well as servos, stepper drivers and power modules. An underlying IOT service allows the deployment of new firmware for the system’s individual components and its behavioral functions, access to its real time and recorded data.
+
