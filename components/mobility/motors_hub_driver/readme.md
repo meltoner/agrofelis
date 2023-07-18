@@ -20,13 +20,13 @@ This component of the Agrofelis Motors hub driver, deals with the structural ele
 The structural component is formed by two parts enclosing and mounting the related sub elements. Moreover the structural component  serves for guiding the air flow efficiently to 
 cool down the electronics during their operation. The structure body, is composed of layers of ply-wood and 3d printed air fins, glued and painted.
 
-The individual elements forming the structural are illustrated by the following figure.
+The individual elements forming the structural body is illustrated by the following figure.
 
 ![motors_hub_driver_2.png](_figures/motors_hub_driver_2.png)
 
 The top part of the structural body, creates sockets to host two temperature sensors, sockets to host the two power modules vertically, sockets to attach the analog drivers, as well as holes indicating exactly where the PCB boards are mounted and a socket for an 80mm fan.
 
-Bellow find photos showcasing the top and bottom parts of the structure, manufactured using a low end CNC, equipped with with laser.
+The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with with laser.
 
 ![motors_hub_structure_laser](_figures/structure_laser.jpg)
 
@@ -37,7 +37,7 @@ The 3d printed air fins glued on the bottom part of the structure are illustrate
 
 ![motors_hub_structure_fins_1.jpg)](_figures/structure_fins_1.jpg)
 
-The bottom and top part and how these fit together using the motor drivers as building blocks, is captured by the following photo.
+The bottom and top part, and how these fit together using the motor drivers as building blocks, is captured by the following photo.
 
 ![motors_hub_structure_fins_2.jpg](_figures/structure_fins_2.jpg)
 
