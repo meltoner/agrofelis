@@ -76,10 +76,18 @@ In the following sections the three type of modules are documented in further de
 
 ### Motors hub controller
 
-This sub-module of the Motors Hub Driver integrates all components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power and spin direction of the motors. It consists of the following components:
+This sub-module of the Motors Hub Driver integrates all electronics components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power and spin direction of the motors. 
+
+The PCB is illustrated by the following figure.
+
+![pcb-controller.png](_figures/pcb-controller.png)
+
+Lines with green indicate a connection between the two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper creating the end routes between points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board. Lines in red indicate components or connectors of the board.
+
+The Motors Hub controller is composed of the following elements :
  
-1. A PCB board, with its schematics located within PCB.CNC.controller\ folder.
-2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+1. A PCB board 
+2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
 3. One ESP32 with 38 pins. 
 4. Two twenty pin female headers.
 5. One two pin female header.
@@ -98,9 +106,32 @@ This sub-module of the Motors Hub Driver integrates all components of the overal
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
+
+Various elements of the controller are layout by the following photo.
+
+![pcb-controller_parts.jpg](_figures/pcb-controller_parts.jpg)
+
+Bellow, the module with most of its elements established is illustrated.
+
+![pcb-controller_assemble.jpg](_figures/pcb-controller_assemble.jpg)
+
+The temperature sensors as positioned and secured using capton tape in the top part of the structural component are presented bellow.
+
+![pcb-controller_temperature.jpg](_figures/pcb-controller_temperature.jpg)
+![pcb-controller_temperature2.jpg](_figures/pcb-controller_temperature2.jpg)
+
+After the functionality of the board has been verified the copper side of the PCB is shielded using hot glue, to prevent corrosion or accidentally short critiquing something during maintenance.
+
+![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
+
 Remarks :
 
 - One pin is trimmed off the twenty pin female headers.
 - The temperature sensor male headers are removed and connected with the 3 wire ribbon cable, to keep a lower profile.
 
+
+The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
+
+- structural\box_wood_layers\laser_cut
+- structural\box_fins\3d_print
  
