@@ -125,12 +125,12 @@ The temperature sensors as positioned and secured using capton tape in the top p
 ![pcb-controller_temperature.jpg](_figures/pcb-controller_temperature.jpg)
 ![pcb-controller_temperature2.jpg](_figures/pcb-controller_temperature2.jpg)
 
-After the functionality of the board has been verified the copper side of the PCB is shielded using hot glue, to prevent corrosion or accidentally short critiquing something during maintenance.
+After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
 ![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
 
 
-The schematics and source files to manufacture parts 1. using a regular CNC equipped with drill are located within
+The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
 
 - pcb\PCB.CNC.controller
 
@@ -147,7 +147,7 @@ Within the Folder the following respective files encode the desired movements to
 - 2.CURVE.svg
 
 The SVGs are converted into CNC instructions using the open source laserGRBL software
-Consequently using the following respective javascript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
+Consequently using the following respective JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
@@ -164,7 +164,7 @@ The first pattern indicating the paths visiting each drill to make and the secon
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb is stored in the following folder.
 
--  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-controller
+-  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-controller.pdf
 
 ![motors_hub_driver-sticker-pcb-controller.png](_figures/motors_hub_driver-sticker-pcb-controller.png)
 
@@ -202,7 +202,7 @@ This sub-module is used twice, within the Motors hub driver module.
 Remarks :
 
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, thus interfacing with the PCB with only the utilised pins.
-- The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB interfacing with the PCB of the module.
+- The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
 - It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage like 1.8v, while others required at least 2v. This issue can be mitigated by using a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC which could be integrated in either the power module or the controller module. 
 
 
@@ -217,10 +217,57 @@ Bellow, the module and details while establishing its parts is illustrated.
 ![pcb-powe_parts_details2.jpg](_figures/pcb-powe_parts_details2.jpg)
 
 
-The assembled module and its bottom/copper side is illustrated by the following photos.
+![pcb-powe_parts_details3.jpg](_figures/pcb-powe_parts_details3.jpg)
 
-![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
+
+The bottom/copper side and assembled module is captured bellow.
+
 ![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg)
+![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
+
+![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg)
+
+
+After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
 
 
+The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
+
+- pcb\PCB.CNC.power
+
+
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into twp SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+
+- PCB.CNC.power\readme.md
+
+The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+
+Within the Folder the following respective files encode the desired movements to perform.
+
+- 1.drill.svg
+- 2.curve.svg
+
+The SVGs are converted into CNC instructions using the open source laserGRBL software
+Consequently using the following respective JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
+
+- LineRoutesToHoles.html
+- LineRoutesToWire.html
+ 
+The end instructions to reproduce the board are the :
+
+- 1.drill.normalised.enhanced.nc
+- 2.curve.normalised.enhanced.nc
+
+The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+
+![pcb-power_NC.png](_figures/pcb-power_NC.png)
+
+
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder:
+
+-  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power
+
+![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power.png)
+
+ 
