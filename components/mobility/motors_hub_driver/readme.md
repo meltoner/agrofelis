@@ -130,8 +130,41 @@ After the functionality of the board has been verified the copper side of the PC
 ![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
 
 
-The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
+The schematics and source files to manufacture parts 1. using a regular CNC equipped with drill are located within
 
-- structural\box_wood_layers\laser_cut
-- structural\box_fins\3d_print
+- pcb\PCB.CNC.controller
+
+
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into twp SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+
+- PCB.CNC.controller\readme.md
+
+The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+
+Within the Folder the following respective files encode the desired movements to perform.
+
+- 1.DRILL.svg
+- 2.CURVE.svg
+
+The SVGs are converted into CNC instructions using the open source laserGRBL software
+Consequently using the following respective javascript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
+
+- LineRoutesToHoles.html
+- LineRoutesToWire.html
  
+The end instructions to reproduce the board are the :
+
+- 1.DRILL.ENHANCED.nc
+- 2.CURVE.ENHANCED.NC
+
+The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+
+![pcb-controller_NC.png](_figures/pcb-controller_NC.png)
+
+
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb is stored in the following folder.
+
+-  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-controller
+
+![motors_hub_driver-sticker-pcb-controller.png](_figures/motors_hub_driver-sticker-pcb-controller.png)
+
