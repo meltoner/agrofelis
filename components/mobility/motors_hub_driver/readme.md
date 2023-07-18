@@ -82,7 +82,7 @@ The PCB is illustrated by the following figure.
 
 ![pcb-controller.png](_figures/pcb-controller.png)
 
-Lines with green indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper creating the end routes between points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
+Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
 
 The Motors Hub controller is composed of the following elements :
  
@@ -167,4 +167,60 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-controller
 
 ![motors_hub_driver-sticker-pcb-controller.png](_figures/motors_hub_driver-sticker-pcb-controller.png)
+
+
+### Motor hub power module
+
+This sub-module of the Motors Hub Driver decomposes the functionality of powering, sensing the current and reversing the direction of a motor hub driver. 
+Two identical are modules are used for the first and second motor driver on the left and right side of the structural component of the module.
+The power modules interface with the Motors hub controller using a five wire ribbon cable caring 12v, 5v, gnd and signal for activating two relays one controlling the direction of the moter and another one chained with a large relay supplying power to the motor driver. The module interface indirectly with the controller module via the ADAC module capable of monitoring 5v signal and more specifically the current sensor of the module.
+
+The PCB is illustrated by the following figure.
+
+![pcb-controller.png](_figures/pcb-controller.png)
+
+Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
+
+
+The Motors Hub Power Driver is composed of the following components :
+
+1. A PCB board, with its schematics located within PCB.CNC.power\ folder.
+2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin]
+4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
+5. An [ACS712] 20 amp current Sensor.
+6. One 5 pin male header.
+7. A JST-SM 2pin connector, connecting with the motor driver reverse function.
+8. One small wire for connecting the PCB with the 20 amp relay.
+9. 3 pin headers for connecting the PCB with the 20 amp relay.
+10. One 4 cm high current wire.
+11. One 6.2 mm female connector.
+12. Glue gun to secure the copper side of the pcb from corrosion
+
+This sub-module is used twice, within the Motors hub driver module.
+
+Remarks :
+
+- Two pins of the 3v relays are trimmed as illustrated in the schematics, thus interfacing with the PCB with only the utilised pins.
+- The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB interfacing with the PCB of the module.
+- It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage like 1.8v, while others required at least 2v. This issue can be mitigated by using a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC which could be integrated in either the power module or the controller module. 
+
+
+
+Various elements of the controller are layout by the following photo.
+
+![pcb-power_parts.jpg](_figures/pcb-powe_parts.jpg)
+
+Bellow, the module and details while establishing its parts is illustrated.
+
+![pcb-powe_parts_details.jpg](_figures/pcb-powe_parts_details.jpg)
+![pcb-powe_parts_details2.jpg](_figures/pcb-powe_parts_details2.jpg)
+
+
+The assembled module and its bottom/copper side is illustrated by the following photos.
+
+![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
+![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg)
+
+
 
