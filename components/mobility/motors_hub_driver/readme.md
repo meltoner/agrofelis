@@ -135,7 +135,7 @@ The schematics and source files to manufacture parts 1. using a regular CNC equi
 - pcb\PCB.CNC.controller
 
 
-More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into twp SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
 
 - PCB.CNC.controller\readme.md
 
@@ -146,8 +146,8 @@ Within the Folder the following respective files encode the desired movements to
 - 1.DRILL.svg
 - 2.CURVE.svg
 
-The SVGs are converted into CNC instructions using the open source laserGRBL software
-Consequently using the following respective JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
+The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
+Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
@@ -177,7 +177,7 @@ The power modules interface with the Motors hub controller using a five wire rib
 
 The PCB is illustrated by the following figure.
 
-![pcb-controller.png](_figures/pcb-controller.png)
+![pcb-power.png](_figures/pcb-power.png)
 
 Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
 
@@ -237,7 +237,7 @@ The schematics and source files to manufacture parts 1. using a regular CNC equi
 - pcb\PCB.CNC.power
 
 
-More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into twp SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
 
 - PCB.CNC.power\readme.md
 
@@ -248,8 +248,8 @@ Within the Folder the following respective files encode the desired movements to
 - 1.drill.svg
 - 2.curve.svg
 
-The SVGs are converted into CNC instructions using the open source laserGRBL software
-Consequently using the following respective JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions to drilling and routing.
+The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
+Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
