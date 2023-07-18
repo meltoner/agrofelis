@@ -192,7 +192,7 @@ The Motors Hub Power Driver is composed of the following components :
 6. One 5 pin male header.
 7. A JST-SM 2pin connector, connecting with the motor driver reverse function.
 8. One small wire for connecting the PCB with the 20 amp relay.
-9. 3 pin headers for connecting the PCB with the 20 amp relay.
+9. One 3 pin headers for connecting the PCB with the 20 amp relay.
 10. One 4 cm high current wire.
 11. One 6.2 mm female connector.
 12. Glue gun to secure the copper side of the pcb from corrosion
@@ -269,5 +269,45 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power
 
 ![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
+
+ ### Motors hub ADAC
+
+This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v using level shifting.
+Moreover, using an external ADAC the module can handle additionally 4 analog channels such that one ESP32 can operate two motor drivers.
+The module interfaces with the two current sensors signals of power modules as well as into the six hall sensors tracking the rotation of the motors hubs.
+
+
+The PCB is illustrated by the following figure.
+
+![pcb-power.png](_figures/pcb-adac.png)
+
+Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
+
+
+The Motors Hub controller is composed of the following components :
+
+1. A PCB board, with its schematics located within PCB.CNC.adac\ folder.
+2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+3. One MCP3008 8-channel 10 bit ADC
+4. One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
+5. One Seven pin ribbon cable for connecting with the ADAC module.
+6. One four pin male header for connecting with the Agrofelis controller
+7. One 8 pin female header
+8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
+9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
+
+Remarks :
+
+- The first and second channel of the MPC3004 Adac are connected to the current sensors of the power module.
+- The remaining channels of the ADAC are connected to the hall sensors of the motor. the 3d to fifth channels follow the yellow, green, blue connection and so on.
+- The ground of the halls sensors is connected to the ground of the Motors hub ADAC module.
+- The one pin from the 8 pin female header is trimmed off.
+
+ 
+Various elements of the controller are layout by the following photo.
+
+![pcb-adac_parts.jpg](_figures/pcb-adac_parts.jpg)
+
+![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg)
 
  
