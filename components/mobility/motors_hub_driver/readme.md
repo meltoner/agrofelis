@@ -268,6 +268,6 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power
 
-![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power.png)
+![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
 
  
