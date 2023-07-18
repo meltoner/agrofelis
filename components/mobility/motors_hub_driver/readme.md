@@ -177,7 +177,7 @@ The power modules interface with the Motors hub controller using a five wire rib
 
 The PCB is illustrated by the following figure.
 
-![pcb-power.png](_figures/pcb-power.png)
+![pcb_power.png](_figures/pcb_power.png)
 
 Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
 
