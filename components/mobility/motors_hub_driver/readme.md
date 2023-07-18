@@ -82,15 +82,15 @@ The PCB is illustrated by the following figure.
 
 ![pcb-controller.png](_figures/pcb-controller.png)
 
-Lines with green indicate a connection between the two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper creating the end routes between points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board. Lines in red indicate components or connectors of the board.
+Lines with green indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper creating the end routes between points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
 
 The Motors Hub controller is composed of the following elements :
  
 1. A PCB board 
 2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
 3. One ESP32 with 38 pins. 
-4. Two twenty pin female headers.
-5. One two pin female header.
+4. Two twenty pin female headers allowing to remove the ESP32.
+5. One two pin female header for connecting the 12v fan.
 6. One four pin female header.
 7. One 2 pin JST male connector for the 5v supply.
 8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
@@ -105,6 +105,11 @@ The Motors Hub controller is composed of the following elements :
 17. Non mandatory connectors, two 2 pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
+
+Remarks :
+
+- One pin is trimmed off the twenty pin female headers to match the 19 pins of the ESP32.
+- The temperature sensor male headers are removed and connected with the 3 wire ribbon cable, to keep a lower profile.
 
 
 Various elements of the controller are layout by the following photo.
@@ -123,11 +128,6 @@ The temperature sensors as positioned and secured using capton tape in the top p
 After the functionality of the board has been verified the copper side of the PCB is shielded using hot glue, to prevent corrosion or accidentally short critiquing something during maintenance.
 
 ![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
-
-Remarks :
-
-- One pin is trimmed off the twenty pin female headers.
-- The temperature sensor male headers are removed and connected with the 3 wire ribbon cable, to keep a lower profile.
 
 
 The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
