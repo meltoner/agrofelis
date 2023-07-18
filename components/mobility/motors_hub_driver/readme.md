@@ -231,7 +231,6 @@ The bottom/copper side and assembled module is captured bellow.
 After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
 
-
 The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
 
 - pcb\PCB.CNC.power
@@ -266,7 +265,7 @@ The first pattern indicating the paths visiting each drill to make and the secon
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder:
 
--  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power
+-  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power.pdf
 
 ![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
 
@@ -311,3 +310,59 @@ Various elements of the controller are layout by the following photo.
 ![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg)
 
  
+
+After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
+
+
+The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
+
+- pcb\PCB.CNC.adac
+
+
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+
+- PCB.CNC.adac\readme.md
+
+The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+
+Within the Folder the following respective files encode the desired movements to perform.
+
+- 1_DRILL.svg
+- 2_CURVE.svg
+
+The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
+Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
+
+- LineRoutesToHoles.html
+- LineRoutesToWire.html
+ 
+The end instructions to reproduce the board are the :
+
+- 1_DRILL.normalised.enhanced.nc
+- 2_CURVE.normalised.enhanced.nc
+
+The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+
+![pcb-adac_NC.png](_figures/pcb-adac_NC.png)
+
+
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover eight pcb, is stored in the following folder:
+
+-  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-adac.pdf
+
+![motors_hub_driver-sticker-pcb-adac.png](motors_hub_driver-sticker-pcb-adac.png)
+
+### Software 
+
+The software of the module is contained within src folder. The software is composed of a C++ application and web application reflecting and controlling the internal state of the micro controller. The software is elaborated in further detail in the chapter of the documentation. [add]
+
+### Power distribution module
+
+The module receives power of the power distribution module documented in the X chapter of the documentation. [add]
+
+### Conclusion
+
+The rational of the module, its sub components, and their elements were elaborated. Photos outlining details of the different phases of the manufacturing were provided. The source code files, schematics, instructions and printout to reconstruct the Agrofelis motors hub driver module have been documented.
+
+![motors_hub_driver_real2.jpg](motors_hub_driver_real2.jpg)
+
