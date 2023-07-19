@@ -1,3 +1,7 @@
+# Abstract
+
+The following document presents the details of manufacturing a composite module for controlling and sensing a pair of motors digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. The rational of each component and its integration with its counterparts is elaborated. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with indicative suppliers to purchase the different parts. 
+
 ## Motors Hub Driver
 
 The Agrofelis Motors Hub Driver module purpose is to digitally control over the air, a pair of motors via two drivers, to monitor their thermal, current and positional indicators as well as to guide the air flow cooling the electronic components, to actuate their power, speed and direction. The module is composed by structural elements, PCB boards separating the different functionalities into simpler standalone sub modules and the software running on the micro controller. 
