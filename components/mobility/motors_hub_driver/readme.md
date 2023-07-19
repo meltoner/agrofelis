@@ -35,7 +35,7 @@ The following photos showcase the top and bottom parts of the structure, manufac
 
 The 3d printed air fins glued on the bottom part of the structure are illustrated below.
 
-![motors_hub_structure_fins_1.jpg){width=80%}](_figures/structure_fins_1.jpg){width=80%}
+![motors_hub_structure_fins_1.jpg](_figures/structure_fins_1.jpg){width=80%}
 
 The bottom and top part and how these fit together using the motor drivers as building blocks, are captured by the following photo.
 
