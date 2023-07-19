@@ -6,21 +6,21 @@ Two such modules are employed in the Agrofelis robot, to achieve four wheel driv
 
 ![motors_hub_driver](_figures/motors_hub_driver_1.png)
 
-Find below is a photo of the implemented module positioned within the front and the back part of the vehicle.
+Find below a photo of the implemented module, positioned within the front and the back enclosures of the vehicle.
 
 ![motors_hub_driver](_figures/motors_hub_driver_1_real.jpg)
 
 
-In the following sections the structural and electronics sub-component of the module are documented.
+In the following sections the structural and electronics sub-component of the unit, are documented.
 
 
-### Structural
+### Structural component
 
 This component of the Agrofelis Motors hub driver, deals with the structural elements of the composite module.
-The structural component is formed by two parts enclosing and mounting the related sub elements. Moreover the structural component  serves for guiding the air flow efficiently to 
-cool down the electronics during their operation. The structure body, is composed of layers of ply-wood and 3d printed air fins, glued and painted.
+The structural component is formed by two parts enclosing and mounting the related sub elements. Moreover the structural component  serves for guiding the air flow to efficiently cool down the electronics during their operation. 
+The structure body, is composed of layers of ply-wood and 3d printed air fins, glued and painted.
 
-The individual elements forming the structural body is illustrated by the following figure.
+The individual elements forming the structural body are illustrated by the following figure.
 
 ![motors_hub_driver_2.png](_figures/motors_hub_driver_2.png)
 
@@ -37,7 +37,7 @@ The 3d printed air fins glued on the bottom part of the structure are illustrate
 
 ![motors_hub_structure_fins_1.jpg)](_figures/structure_fins_1.jpg)
 
-The bottom and top part, and how these fit together using the motor drivers as building blocks, is captured by the following photo.
+The bottom and top part and how these fit together using the motor drivers as building blocks, are captured by the following photo.
 
 ![motors_hub_structure_fins_2.jpg](_figures/structure_fins_2.jpg)
 
@@ -48,20 +48,20 @@ The Motors Hub structure sub-module, is implemented using of the following parts
 3. Wood glue
 4. A spray paint
 5. Capton tape to secure the temperature sensors in the top wood layer slot.
-6. Eight Standoff, Bolts and screws 2m to mount the controller and ADAC into the wooden layer
-7. Two 2.8mm X 16mm screws securing the top layer with the outer fins.
+6. Eight Standoff, Bolts and screws 2m to mount the Controller and ADAC sub-modules, into the wooden top layer.
+7. Two 2.8mm X 16mm screws, securing the top layer with the outer fins.
 
 The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
 
 - structural\box_wood_layers\laser_cut
 - structural\box_fins\3d_print
 
-More specifically the laser cut folder, documents the procedure for exporting and transforming the Rhino diagrams into five SVG files and consequently to five NC instructions used to cut the related parts. The 3d print folder contains two stl files and two gcode instruction files for the inner and outer fins structural elements.
+More specifically, the laser cut folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The 3d print folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
 
 
-### Electronics
+### Electronic sub-modules
 
-The electronics sub modules of the Agrofelis Motors hub driver sum into four PCB sub-modules, namely the :
+The electronics sub-modules of the Agrofelis Motors hub driver, sum into four PCB sub-modules namely the :
 
 1. Motors hub controller module.
 2. Motors hub power module (A).
@@ -76,17 +76,17 @@ In the following sections the three type of modules are documented in further de
 
 ### Motors hub controller
 
-This sub-module of the Motors Hub Driver integrates all electronics components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power and spin direction of the motors. 
+This sub-module of the Motors Hub Driver integrates all electronics components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power, the speed and spin direction of the motors. 
 
 The PCB is illustrated by the following figure.
 
 ![pcb-controller.png](_figures/pcb-controller.png)
 
-Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 The Motors Hub controller is composed of the following elements :
  
-1. A PCB board 
+1. A PCB board.
 2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
 3. One ESP32 with 38 pins. 
 4. Two twenty pin female headers allowing to remove the ESP32.
@@ -100,7 +100,7 @@ The Motors Hub controller is composed of the following elements :
 12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
-15. A case cooler 8 cm LogiLink FAN101 at 12V
+15. A case cooler 8 cm LogiLink FAN101 at 12V.
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
 17. Non mandatory connectors, two 2 pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
@@ -108,19 +108,18 @@ The Motors Hub controller is composed of the following elements :
 
 Remarks :
 
-- One pin is trimmed off the twenty pin female headers to match the 19 pins of the ESP32.
-- The temperature sensor male headers are removed and connected with the 3 wire ribbon cable, to keep a lower profile.
+- One pin is trimmed off the twenty pin female headers, to match each side of the 19 pins of the ESP32.
+- The temperature sensor male headers, are removed and connected with the 3 wire ribbon cable, to lower their height profile.
 
-
-Various elements of the controller are layout by the following photo.
+Various listed elements of the controller, are layout by the following photo.
 
 ![pcb-controller_parts.jpg](_figures/pcb-controller_parts.jpg)
 
-Bellow, the module with most of its elements established is illustrated.
+Bellow, the module with most of its elements established, is illustrated.
 
 ![pcb-controller_assemble.jpg](_figures/pcb-controller_assemble.jpg)
 
-The temperature sensors as positioned and secured using capton tape in the top part of the structural component are presented bellow.
+The temperature sensors as positioned and secured using capton tape in the top part of the structural component, are presented bellow.
 
 ![pcb-controller_temperature.jpg](_figures/pcb-controller_temperature.jpg)
 ![pcb-controller_temperature2.jpg](_figures/pcb-controller_temperature2.jpg)
@@ -130,24 +129,24 @@ After the functionality of the board has been verified, the copper side of the P
 ![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
 
 
-The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
+The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
 
 - pcb\PCB.CNC.controller
 
 
-More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+More specifically, the folder documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
 - PCB.CNC.controller\readme.md
 
-The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+The PCB board is developed in two phases. The first phase handles the drilling aspect using a drill bit, specifically for this purpose. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
-Within the Folder the following respective files encode the desired movements to perform.
+Within the aforementioned folder, the following respective files encode the desired movements to perform.
 
 - 1.DRILL.svg
 - 2.CURVE.svg
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
-Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
+Consequently, using the following JavaScript applications the NC files are enhanced to incorporate Z axis movements based on the continuity and the coordinates of the schematics and the scope of the instructions (drilling or routing).
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
@@ -155,14 +154,14 @@ Consequently using the following JavaScript application the NC files are enhance
 The end instructions to reproduce the board are the :
 
 - 1.DRILL.ENHANCED.nc
-- 2.CURVE.ENHANCED.NC
+- 2.CURVE.ENHANCED.nc
 
-The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
 ![pcb-controller_NC.png](_figures/pcb-controller_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb is stored in the following folder.
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb, is stored in the following folder.
 
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-controller.pdf
 
@@ -172,14 +171,14 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 ### Motor hub power module
 
 This sub-module of the Motors Hub Driver decomposes the functionality of powering, sensing the current and reversing the direction of a motor hub driver. 
-Two identical are modules are used for the first and second motor driver on the left and right side of the structural component of the module.
-The power modules interface with the Motors hub controller using a five wire ribbon cable caring 12v, 5v, gnd and signal for activating two relays one controlling the direction of the moter and another one chained with a large relay supplying power to the motor driver. The module interface indirectly with the controller module via the ADAC module capable of monitoring 5v signal and more specifically the current sensor of the module.
+
+Two identical modules are employed for the first and second motor driver mounted on the left and right side of the structural component of the module, vertically within the curved slots. The power modules interfaces with the Motors hub controller using a five wire ribbon cable caring 12v, 5v, gnd and the signals for activating two relays, one controlling the direction of the motor and another chained with a large relay supplying high current power to the motor driver. The module interfaces indirectly with the controller module via the ADAC module capable of monitoring 5v signal and more specifically with the current sensor of the power module.
 
 The PCB is illustrated by the following figure.
 
 ![pcb_power.png](_figures/pcb_power.png)
 
-Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 
 The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
@@ -191,32 +190,32 @@ The Motors Hub Power Driver is composed of the following elements :
 
 1. A PCB board, with its schematics located within PCB.CNC.power\ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
-3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin]
+3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
 4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
 5. An [ACS712] 20 amp current Sensor.
 6. One 5 pin male header.
-7. A JST-SM 2pin connector, connecting with the motor driver reverse function.
+7. A JST-SM 2 pin connector, connecting with the motor driver reverse function.
 8. One small wire for connecting the PCB with the 20 amp relay.
 9. One 3 pin headers for connecting the PCB with the 20 amp relay.
 10. One 4 cm high current wire.
 11. One 6.2 mm female connector.
-12. Glue gun to secure the copper side of the pcb from corrosion
+12. Glue gun to secure the copper side of the pcb from corrosion.
+13. Two  40v 1amp diodes, protecting the digital GPIO of the ESP32 from the back voltage, potentially generated by the Relay coils.
 
 This sub-module is used twice, within the Motors hub driver module.
 
 Remarks :
 
-- Two pins of the 3v relays are trimmed as illustrated in the schematics, thus interfacing with the PCB with only the utilised pins.
+- Two pins of the 3v relays are trimmed as illustrated in the schematics, interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
-- It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage like 1.8v, while others required at least 2v. This issue can be mitigated by using a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC which could be integrated in either the power module or the controller module. 
-
-
+- It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage, 1.8v, while the non trigger-able ones required at least 2v. This issue can be mitigated by employing a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC, which could be integrated in either the power module or the controller module. 
+- A diode not depicted by the photos is installed in parallel with with relay triggering pins.
 
 Various elements of the controller are layout by the following photo.
 
 ![pcb-power_parts.jpg](_figures/pcb-powe_parts.jpg)
 
-Bellow, the module and details while establishing its parts is illustrated.
+Bellow, the module and details for establishing its components, are provided.
 
 ![pcb-powe_parts_details.jpg](_figures/pcb-powe_parts_details.jpg)
 ![pcb-powe_parts_details2.jpg](_figures/pcb-powe_parts_details2.jpg)
@@ -225,53 +224,53 @@ Bellow, the module and details while establishing its parts is illustrated.
 ![pcb-powe_parts_details3.jpg](_figures/pcb-powe_parts_details3.jpg)
 
 
-The bottom/copper side of the assembled module is captured bellow.
+The bottom/copper side of the assembled module, is captured bellow.
 
 ![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg)
 
-The assembled module with its counterpart are captured by the following photos.
+The assembled module with its counterpart, are captured by the following photos.
 
 ![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
 
 ![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg)
 
 
-After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
+After the functionality of the board has been verified, the copper side of the PCB can / is shielded using hot glue to prevent corrosion and improve its longevity.
 
 
-The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, is located within the following folder :
+The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
 
 - pcb\PCB.CNC.power
 
 
-More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+More specifically. the folder documents the procedures for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
 - PCB.CNC.power\readme.md
 
-The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit appropriate for drilling. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
-Within the folder, the following respective files encode the related movements to be performed.
+Within the folder, the following respective files encode the related movements to be followed by the CNC.
 
 - 1.drill.svg
 - 2.curve.svg
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
-Consequently using the following JavaScript applications developed, the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions (drilling or routing).
+Consequently, using the following JavaScript applications developed, the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions (drilling or routing).
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
  
-The end instructions to reproduce the board are the :
+The end instructions to reproduce the board, are the :
 
 - 1.drill.normalised.enhanced.nc
 - 2.curve.normalised.enhanced.nc
 
-The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
 ![pcb-power_NC.png](_figures/pcb-power_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder:
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder :
 
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-power.pdf
 
@@ -279,85 +278,83 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
  ### Motors hub ADAC
 
-This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v using level shifting.
-Moreover, using an external ADAC the module can handle additionally 4 analog channels such that one ESP32 can operate two motor drivers.
-The module interfaces with the two current sensors signals of the power modules as well as into the six hall sensors tracking the rotation of the motors hubs.
+This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v via a bidirectional logic level conditioner.
+Moreover, using an external ADAC the module can handle additionally 4 analog channels, enough so an ESP32 can operate and sense two motor drivers simultaneously.
+
+The module interfaces with the two current sensors signals of the power modules as well as with the six hall sensors, tracking the rotation of the motors hubs.
 
 
 The PCB is illustrated by the following figure.
 
 ![pcb-power.png](_figures/pcb-adac.png)
 
-Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
-
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 The Motors Hub controller is composed of the following components :
 
 1. A PCB board, with its schematics located within PCB.CNC.adac\ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
-3. One MCP3008 8-channel 10 bit ADC
+3. One MCP3008 8-channel 10 bit ADC.
 4. One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
 5. One Seven pin ribbon cable for connecting with the ADAC module.
-6. One four pin male header for connecting with the Agrofelis controller
-7. One 8 pin female header
+6. One four pin male header for connecting with the Agrofelis controller.
+7. One 8 pin female header.
 8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
 9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 
 Remarks :
 
-- The first and second channel of the MPC3004 Adac are connected to the current sensors of the power module.
-- The remaining channels of the ADAC are connected to the hall sensors of the motor. the 3d to fifth channels follow the yellow, green, blue connection and so on.
-- The ground of the halls sensors is connected to the ground of the Motors hub ADAC module.
-- The one pin from the 8 pin female header is trimmed off.
+- The first and second channels of the MPC3004 ADAC are connected to the current sensors of the power module.
+- The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected with between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with their ground,
+- The ground of the halls sensors outlet, is connected with the ground pin of the Motors hub ADAC module.
+- One pin from the 8 pin female header, is trimmed off to much the 7 input pins of the module.
 
- 
-Various elements of the controller are layout by the following photo.
+ Various listed elements of the sub-module, are layout by the following photo.
 
 ![pcb-adac_parts.jpg](_figures/pcb-adac_parts.jpg)
 
 ![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg)
 
-The module interfaces with the controller module via the SPI interface as depicted by the following photo.
+The module interfaces with the controller module via the SPI interface, as depicted by the following photo.
 
 ![pcb-adac_details.jpg](_figures/pcb-adac_details.jpg)
 
 
-After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
+After the functionality of the board has been verified, the copper side of the PCB is/can be shielded using hot glue to prevent corrosion and improve its hardness.
 
-
-The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
+The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill, are located within the following folder :
 
 - pcb\PCB.CNC.adac
 
 
-More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files enhanced using two JavaScript applications. 
+More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
 - PCB.CNC.adac\readme.md
 
-The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
+The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit appropriate for drilling. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
-Within the Folder the following respective files encode the desired movements to perform.
+Within the folder, the following respective files encode the desired movements to be action-ed.
 
 - 1_DRILL.svg
 - 2_CURVE.svg
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
-Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
+Consequently, using the following JavaScript applications the NC files are enhanced to incorporate Z axis movements based on the continuity, the coordinates of the schematics and the scope of the instructions, as drilling or routing.
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
  
-The end instructions to reproduce the board are the :
+The end instructions to reproduce the board, are the :
 
 - 1_DRILL.normalised.enhanced.nc
 - 2_CURVE.normalised.enhanced.nc
 
-The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route are illustrated by the following figure.
+The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
 ![pcb-adac_NC.png](_figures/pcb-adac_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover eight pcb, is stored in the following folder:
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight pcbs, is stored in the following folder:
 
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-adac.pdf
 
@@ -365,15 +362,15 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ### Software 
 
-The software of the module is contained within src folder. The software is composed of a C++ application and web application reflecting and controlling the internal state of the micro controller. The software is elaborated in further detail in the chapter of the documentation. [add]
+The software of the module is contained within src folder. The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. The software is elaborated in further detail in a dedicated chapter of the documentation. [add]
 
 ### Power distribution module
 
-The module receives power of the power distribution module documented in the X chapter of the documentation. [add]
+The module receives power from the Power distribution module, documented in the related chapter of the documentation. [add]
 
 ### Conclusion
 
-The rational of the module, its sub components, and their elements were elaborated. Photos outlining details of the different phases of the manufacturing were provided. The source code files, schematics, instructions and printout to reconstruct the Agrofelis motors hub driver module have been documented.
+The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process were provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
 
 ![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
