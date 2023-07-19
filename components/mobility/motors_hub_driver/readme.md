@@ -24,9 +24,9 @@ The individual elements forming the structural body are illustrated by the follo
 
 ![motors_hub_driver_2.png](_figures/motors_hub_driver_2.png)
 
-The top part of the structural body, creates sockets to host two temperature sensors, sockets to host the two power modules vertically, sockets to attach the analog drivers, as well as holes indicating exactly where the PCB boards are mounted and a socket for an 80mm fan.
+The top part of the structural body, creates sockets to host two temperature sensors, sockets to host the two power modules vertically, sockets to attach the analog drivers, as well as holes indicating exactly where the PCB boards are mounted and a socket for an 80 mm fan.
 
-The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with with laser.
+The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with laser.
 
 ![motors_hub_structure_laser](_figures/structure_laser.jpg)
 
@@ -209,7 +209,7 @@ Remarks :
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
 - It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage, 1.8v, while the non trigger-able ones required at least 2v. This issue can be mitigated by employing a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC, which could be integrated in either the power module or the controller module. 
-- A diode not depicted by the photos is installed in parallel with with relay triggering pins.
+- A diode not depicted by the photos is installed in parallel with relay triggering pins.
 
 Various elements of the controller are layout by the following photo.
 
@@ -370,7 +370,7 @@ The module receives power from the Power distribution module, documented in the 
 
 ### Conclusion
 
-The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process were provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
+The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
 
 ![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
