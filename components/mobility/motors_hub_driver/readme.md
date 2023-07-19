@@ -4,11 +4,11 @@ The Agrofelis Motors Hub Driver module purpose is to digitally control over the 
 
 Two such modules are employed in the Agrofelis robot, to achieve four wheel drive and precision control. The following figure illustrates the schematics of the overall module.
 
-![motors_hub_driver](_figures/motors_hub_driver_1.png){width=80%}
+![motors_hub_driver](_figures/motors_hub_driver_1.png)
 
 Find below a photo of the implemented module, positioned within the front and the back enclosures of the vehicle.
 
-![motors_hub_driver](_figures/motors_hub_driver_1_real.jpg){width=80%}
+![motors_hub_driver](_figures/motors_hub_driver_1_real.jpg)
 
 
 In the following sections the structural and electronics sub-component of the unit, are documented.
@@ -21,25 +21,25 @@ The structure body, is composed of layers of ply-wood and 3d printed air fins, g
 
 The individual elements forming the structural body are illustrated by the following figure.
 
-![motors_hub_driver_2.png](_figures/motors_hub_driver_2.png){width=80%}
+![motors_hub_driver_2.png](_figures/motors_hub_driver_2.png)
 
 The top part of the structural body, creates sockets to host two temperature sensors, sockets to host the two power modules vertically, sockets to attach the analog drivers, as well as holes indicating exactly where the PCB boards are mounted and a socket for an 80 mm fan.
 
 The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with laser.
 
-![motors_hub_structure_laser](_figures/structure_laser.jpg){width=80%}
+![motors_hub_structure_laser](_figures/structure_laser.jpg)
 
-![motors_hub_structure_body_bottom.jpg](_figures/structure_body_bottom.jpg){width=80%}
+![motors_hub_structure_body_bottom.jpg](_figures/structure_body_bottom.jpg)
 
-![motors_hub_structure_body_top.jpg](_figures/structure_body_top.jpg){width=80%}
+![motors_hub_structure_body_top.jpg](_figures/structure_body_top.jpg)
 
 The 3d printed air fins glued on the bottom part of the structure are illustrated below.
 
-![motors_hub_structure_fins_1.jpg](_figures/structure_fins_1.jpg){width=80%}
+![motors_hub_structure_fins_1.jpg](_figures/structure_fins_1.jpg)
 
 The bottom and top part and how these fit together using the motor drivers as building blocks, are captured by the following photo.
 
-![motors_hub_structure_fins_2.jpg](_figures/structure_fins_2.jpg){width=80%}
+![motors_hub_structure_fins_2.jpg](_figures/structure_fins_2.jpg)
 
 The Motors Hub structure sub-module, is implemented using of the following parts in detail :
 
@@ -70,7 +70,7 @@ The electronics sub-modules of the Agrofelis Motors hub driver, sum into four PC
 
 Their compilation is illustrated by the following diagram.
 
-![motors_hub_driver_3.png](_figures/motors_hub_driver_3.png){width=80%}
+![motors_hub_driver_3.png](_figures/motors_hub_driver_3.png)
 
 In the following sections the three type of modules are documented in further detail.
 
@@ -80,7 +80,7 @@ This sub-module of the Motors Hub Driver integrates all electronics components o
 
 The PCB is illustrated by the following figure.
 
-![pcb-controller.png](_figures/pcb-controller.png){width=80%}
+![pcb-controller.png](_figures/pcb-controller.png)
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
@@ -113,21 +113,21 @@ Remarks :
 
 Various listed elements of the controller, are layout by the following photo.
 
-![pcb-controller_parts.jpg](_figures/pcb-controller_parts.jpg){width=80%}
+![pcb-controller_parts.jpg](_figures/pcb-controller_parts.jpg)
 
 Bellow, the module with most of its elements established, is illustrated.
 
-![pcb-controller_assemble.jpg](_figures/pcb-controller_assemble.jpg){width=80%}
+![pcb-controller_assemble.jpg](_figures/pcb-controller_assemble.jpg)
 
 The temperature sensors as positioned and secured using capton tape in the top part of the structural component, are presented bellow.
 
-![pcb-controller_temperature.jpg](_figures/pcb-controller_temperature.jpg){width=80%}
+![pcb-controller_temperature.jpg](_figures/pcb-controller_temperature.jpg)
 
-![pcb-controller_temperature2.jpg](_figures/pcb-controller_temperature2.jpg){width=80%}
+![pcb-controller_temperature2.jpg](_figures/pcb-controller_temperature2.jpg)
 
 After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
-![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg){width=80%}
+![pcb-controller_hotglue.jpg](_figures/pcb-controller_hotglue.jpg)
 
 
 The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
@@ -159,14 +159,14 @@ The end instructions to reproduce the board are the :
 
 The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
-![pcb-controller_NC.png](_figures/pcb-controller_NC.png){width=80%}
+![pcb-controller_NC.png](_figures/pcb-controller_NC.png)
 
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb, is stored in the following folder.
 
 -  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf
 
-![motors_hub_driver-sticker-pcb-controller.png](_figures/motors_hub_driver-sticker-pcb-controller.png){width=80%}
+![motors_hub_driver-sticker-pcb-controller.png](_figures/motors_hub_driver-sticker-pcb-controller.png)
 
 
 ### Motor hub power module
@@ -177,14 +177,14 @@ Two identical modules are employed for the first and second motor driver mounted
 
 The PCB is illustrated by the following figure.
 
-![pcb_power.png](_figures/pcb_power.png){width=80%}
+![pcb_power.png](_figures/pcb_power.png)
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 
 The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
 
-![pcb-power_cnc.jpg](_figures/pcb-power_cnc.jpg){width=80%}
+![pcb-power_cnc.jpg](_figures/pcb-power_cnc.jpg)
 
 
 The Motors Hub Power Driver is composed of the following elements :
@@ -214,27 +214,27 @@ Remarks :
 
 Various elements of the controller are layout by the following photo.
 
-![pcb-power_parts.jpg](_figures/pcb-powe_parts.jpg){width=80%}
+![pcb-power_parts.jpg](_figures/pcb-powe_parts.jpg)
 
 Bellow, the module and details for establishing its components, are provided.
 
-![pcb-powe_parts_details.jpg](_figures/pcb-powe_parts_details.jpg){width=80%}
+![pcb-powe_parts_details.jpg](_figures/pcb-powe_parts_details.jpg)
 
-![pcb-powe_parts_details2.jpg](_figures/pcb-powe_parts_details2.jpg){width=80%}
+![pcb-powe_parts_details2.jpg](_figures/pcb-powe_parts_details2.jpg)
 
 
-![pcb-powe_parts_details3.jpg](_figures/pcb-powe_parts_details3.jpg){width=80%}
+![pcb-powe_parts_details3.jpg](_figures/pcb-powe_parts_details3.jpg)
 
 
 The bottom/copper side of the assembled module, is captured bellow.
 
-![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg){width=80%}
+![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg)
 
 The assembled module with its counterpart, are captured by the following photos.
 
-![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg){width=80%}
+![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
 
-![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg){width=80%}
+![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg)
 
 
 After the functionality of the board has been verified, the copper side of the PCB can / is shielded using hot glue to prevent corrosion and improve its longevity.
@@ -269,14 +269,14 @@ The end instructions to reproduce the board, are the :
 
 The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
-![pcb-power_NC.png](_figures/pcb-power_NC.png){width=80%}
+![pcb-power_NC.png](_figures/pcb-power_NC.png)
 
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder :
 
 -  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power.pdf
 
-![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png){width=80%}
+![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
 
 ### Motors hub ADAC
 
@@ -288,7 +288,7 @@ The module interfaces with the two current sensors signals of the power modules 
 
 The PCB is illustrated by the following figure.
 
-![pcb-power.png](_figures/pcb-adac.png){width=80%}
+![pcb-power.png](_figures/pcb-adac.png)
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
@@ -313,13 +313,13 @@ Remarks :
 
  Various listed elements of the sub-module, are layout by the following photo.
 
-![pcb-adac_parts.jpg](_figures/pcb-adac_parts.jpg){width=80%}
+![pcb-adac_parts.jpg](_figures/pcb-adac_parts.jpg)
 
-![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg){width=80%}
+![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg)
 
 The module interfaces with the controller module via the SPI interface, as depicted by the following photo.
 
-![pcb-adac_details.jpg](_figures/pcb-adac_details.jpg){width=80%}
+![pcb-adac_details.jpg](_figures/pcb-adac_details.jpg)
 
 
 After the functionality of the board has been verified, the copper side of the PCB is/can be shielded using hot glue to prevent corrosion and improve its hardness.
@@ -353,14 +353,14 @@ The end instructions to reproduce the board, are the :
 
 The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
-![pcb-adac_NC.png](_figures/pcb-adac_NC.png){width=80%}
+![pcb-adac_NC.png](_figures/pcb-adac_NC.png)
 
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight pcbs, is stored in the following folder:
 
 -  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf
 
-![motors_hub_driver-sticker-pcb-adac.png](_figures/motors_hub_driver-sticker-pcb-adac.png){width=80%}
+![motors_hub_driver-sticker-pcb-adac.png](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
 ### Software 
 
@@ -374,5 +374,5 @@ The module receives power from the Power distribution module, documented in the 
 
 The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
 
-![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg){width=80%}
+![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
