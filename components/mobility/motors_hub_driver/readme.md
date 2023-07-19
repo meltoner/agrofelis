@@ -225,9 +225,12 @@ Bellow, the module and details while establishing its parts is illustrated.
 ![pcb-powe_parts_details3.jpg](_figures/pcb-powe_parts_details3.jpg)
 
 
-The bottom/copper side and assembled module is captured bellow.
+The bottom/copper side of the assembled module is captured bellow.
 
 ![pcb-powe_parts_copper.jpg](_figures/pcb-powe_parts_copper.jpg)
+
+The assembled module with its counterpart are captured by the following photos.
+
 ![pcb-powe_parts_assembled.jpg](_figures/pcb-powe_parts_assembled.jpg)
 
 ![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg)
@@ -236,7 +239,7 @@ The bottom/copper side and assembled module is captured bellow.
 After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
 
-The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill are located within the following folder :
+The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, is located within the following folder :
 
 - pcb\PCB.CNC.power
 
@@ -247,13 +250,13 @@ More specifically the folder, documents the procedure for exporting and transfor
 
 The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit specifically for this purpose. In the second phase the drill bit is changed into one appropriate for curving the copper of the PCB.
 
-Within the Folder the following respective files encode the desired movements to perform.
+Within the folder, the following respective files encode the related movements to be performed.
 
 - 1.drill.svg
 - 2.curve.svg
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
-Consequently using the following JavaScript application the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions, to drilling or routing.
+Consequently using the following JavaScript applications developed, the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions (drilling or routing).
 
 - LineRoutesToHoles.html
 - LineRoutesToWire.html
@@ -278,7 +281,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v using level shifting.
 Moreover, using an external ADAC the module can handle additionally 4 analog channels such that one ESP32 can operate two motor drivers.
-The module interfaces with the two current sensors signals of power modules as well as into the six hall sensors tracking the rotation of the motors hubs.
+The module interfaces with the two current sensors signals of the power modules as well as into the six hall sensors tracking the rotation of the motors hubs.
 
 
 The PCB is illustrated by the following figure.
