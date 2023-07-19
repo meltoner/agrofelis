@@ -29,7 +29,7 @@ The individual elements forming the structural body are illustrated by the follo
 
 The top part of the structural body, creates sockets to host two temperature sensors, sockets to host the two power modules vertically, sockets to attach the analog drivers, as well as holes indicating exactly where the PCB boards are mounted and a socket for an 80 mm fan.
 
-The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with laser.
+The following photos showcase the top and bottom parts of the structure, manufactured using a low end CNC, equipped with a laser.
 
 ![motors_hub_structure_laser](_figures/structure_laser.jpg)
 
@@ -47,7 +47,7 @@ The bottom and top part and how these fit together using the motor drivers as bu
 
 The Motors Hub structure sub-module, is implemented using of the following parts in detail :
 
-1. Five 4 mm ply-wood layers cut using a laser cutter into 204.83 mm X 119.67 mm parts. The layers 1-3 layers form the bottom part and the remaining the top part. 
+1. Five 4 mm ply-wood layers cut using a laser cutter into 204.83 mm X 119.67 mm parts. The layers 1-3 form the bottom part and the remaining the top part. 
 2. Four 3d printed elements guiding the air flow across the sides of the analog motor drivers as well providing extra support to the top layer.
 3. Wood glue
 4. A spray paint
@@ -86,34 +86,34 @@ The PCB is illustrated by the following figure.
 
 ![pcb-controller.png](_figures/pcb-controller.png)
 
-Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 The Motors Hub controller is composed of the following elements :
  
 1. A PCB board.
 2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
 3. One ESP32 with 38 pins. 
-4. Two twenty pin female headers allowing to remove the ESP32.
-5. One two pin female header for connecting the 12v fan.
-6. One four pin female header.
-7. One 2 pin JST male connector for the 5v supply.
-8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
+4. Two 20-pin female headers allowing to remove the ESP32.
+5. One 2-pin female header for connecting the 12v fan.
+6. One 4-pin female header.
+7. One 2-pin JST male connector for the 5v supply.
+8. One 3-pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
 9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
-10. Two five wire ribbon cable 7 cm, used to connect the power modules.
-11. Two five ping female headers used to connect the power modules at the end of ribbon cable.
-12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
+10. Two 5-wire ribbon cable 7 cm, used to connect the power modules.
+11. Two 5-pin female headers used to connect the power modules at the end of ribbon cable.
+12. One 3-wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V.
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-17. Non mandatory connectors, two 2 pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
+17. Non mandatory connectors, two 2-pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
 Remarks :
 
 - One pin is trimmed off the twenty pin female headers, to match each side of the 19 pins of the ESP32.
-- The temperature sensor male headers, are removed and connected with the 3 wire ribbon cable, to lower their height profile.
+- The temperature sensor male headers, are removed and connected with the 3-wire ribbon cable, to lower their height profile.
 
 Various listed elements of the controller, are layout by the following photo.
 
@@ -145,7 +145,7 @@ More specifically, the folder documents the procedure for exporting and transfor
 
 The PCB board is developed in two phases. The first phase handles the drilling aspect using a drill bit, specifically for this purpose. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
-Within the aforementioned folder, the following respective files encode the desired movements to perform.
+Within the aforementioned folder, the following respective files encode the desired movements to be perform.
 
 - 1.DRILL.svg
 - 2.CURVE.svg
@@ -177,13 +177,13 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 This sub-module of the Motors Hub Driver decomposes the functionality of powering, sensing the current and reversing the direction of a motor hub driver. 
 
-Two identical modules are employed for the first and second motor driver mounted on the left and right side of the structural component of the module, vertically within the curved slots. The power modules interfaces with the Motors hub controller using a five wire ribbon cable caring 12v, 5v, gnd and the signals for activating two relays, one controlling the direction of the motor and another chained with a large relay supplying high current power to the motor driver. The module interfaces indirectly with the controller module via the ADAC module capable of monitoring 5v signal and more specifically with the current sensor of the power module.
+Two identical modules are employed for the first and second motor driver mounted on the left and right side of the structural component of the module, vertically within the curved slots. The power modules interfaces with the Motors hub controller using a 5-wire ribbon cable carrying 12v, 5v, and the signals for activating two relays, one controlling the direction of the motor and another chained with a large relay supplying high current power to the motor driver. The module interfaces indirectly with the controller module via the ADAC module capable of monitoring a 5v signal and more specifically with the current sensor of the power module.
 
 The PCB is illustrated by the following figure.
 
 ![pcb_power.png](_figures/pcb_power.png)
 
-Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper, creating the end routes between connected points in the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 
 The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
@@ -198,10 +198,10 @@ The Motors Hub Power Driver is composed of the following elements :
 3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
 4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
 5. An [ACS712] 20 amp current Sensor.
-6. One 5 pin male header.
-7. A JST-SM 2 pin connector, connecting with the motor driver reverse function.
+6. One 5-pin male header.
+7. A JST-SM 2-pin connector, connecting with the motor driver reverse function.
 8. One small wire for connecting the PCB with the 20 amp relay.
-9. One 3 pin headers for connecting the PCB with the 20 amp relay.
+9. One 3-pin header for connecting the PCB with the 20 amp relay.
 10. One 4 cm high current wire.
 11. One 6.2 mm female connector.
 12. Glue gun to secure the copper side of the pcb from corrosion.
@@ -212,8 +212,8 @@ This sub-module is used twice, within the Motors hub driver module.
 Remarks :
 
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, interfacing with the PCB with only the utilised pins.
-- The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are solder from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
-- It was noticed that not all HK4100F-DC 3V were operational with esp32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the esp32. During tests these found to operate with the ESP32, were triggerable with less voltage, 1.8v, while the non trigger-able ones required at least 2v. This issue can be mitigated by employing a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC, which could be integrated in either the power module or the controller module. 
+- The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are soldered from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
+- It was noticed that not all HK4100F-DC 3V were operational with ESP32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the ESP32. During tests these found to operate with the ESP32, were triggerable with less voltage, 1.8v, while the non trigger-able ones required at least 2v. This issue can be mitigated by employing a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC, which could be integrated in either the power module or the controller module. 
 - A diode not depicted by the photos is installed in parallel with relay triggering pins.
 
 Various elements of the controller are layout by the following photo.
@@ -241,7 +241,7 @@ The assembled module with its counterpart, are captured by the following photos.
 ![pcb-powe_parts_assembled2.jpg](_figures/pcb-powe_parts_assembled2.jpg)
 
 
-After the functionality of the board has been verified, the copper side of the PCB can / is shielded using hot glue to prevent corrosion and improve its longevity.
+After the functionality of the board was verified, the copper side of the PCB was shielded using hot glue to prevent corrosion and improve its longevity.
 
 
 The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
@@ -276,7 +276,7 @@ The first pattern indicating the paths visiting each hole to make and the second
 ![pcb-power_NC.png](_figures/pcb-power_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcb, is stored in the following folder :
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcbs, is stored in the following folder :
 
 -  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power.pdf
 
@@ -294,7 +294,7 @@ The PCB is illustrated by the following figure.
 
 ![pcb-power.png](_figures/pcb-adac.png)
 
-Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
+Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 The Motors Hub controller is composed of the following components :
 
@@ -302,9 +302,9 @@ The Motors Hub controller is composed of the following components :
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. One MCP3008 8-channel 10 bit ADC.
 4. One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
-5. One Seven pin ribbon cable for connecting with the ADAC module.
-6. One four pin male header for connecting with the Agrofelis controller.
-7. One 8 pin female header.
+5. One 7-pin ribbon cable for connecting with the ADAC module.
+6. One 4-pin male header for connecting with the Agrofelis controller.
+7. One 8-pin female header.
 8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
 9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 
@@ -313,7 +313,7 @@ Remarks :
 - The first and second channels of the MPC3004 ADAC are connected to the current sensors of the power module.
 - The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected with between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with their ground,
 - The ground of the halls sensors outlet, is connected with the ground pin of the Motors hub ADAC module.
-- One pin from the 8 pin female header, is trimmed off to much the 7 input pins of the module.
+- One pin from the 8-pin female header, is trimmed off to much the 7 input pins of the module.
 
  Various listed elements of the sub-module, are layout by the following photo.
 
@@ -326,7 +326,7 @@ The module interfaces with the controller module via the SPI interface, as depic
 ![pcb-adac_details.jpg](_figures/pcb-adac_details.jpg)
 
 
-After the functionality of the board has been verified, the copper side of the PCB is/can be shielded using hot glue to prevent corrosion and improve its hardness.
+After the functionality of the board was verified, the copper side of the PCB was shielded using hot glue to prevent corrosion and improve its hardness.
 
 The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill, are located within the following folder :
 
