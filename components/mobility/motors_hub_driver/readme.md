@@ -214,7 +214,7 @@ Remarks :
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are soldered from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
 - It was noticed that not all HK4100F-DC 3V were operational with ESP32. About 45% of these relays are manufactured more efficiently and are triggerable by the low amp digital output of the ESP32. During tests these found to operate with the ESP32, were triggerable with less voltage, 1.8v, while the non trigger-able ones required at least 2v. This issue can be mitigated by employing a [ULN2003](https://microcontrollerslab.com/relay-driver-circuit-using-uln2003/) relay driver circuit IC, which could be integrated in either the power module or the controller module. 
-- A diode not depicted by the photos is installed in parallel with relay triggering pins.
+- A diode not depicted by the photos is installed in parallel with the relay's triggering pins.
 
 Various elements of the controller are layout by the following photo.
 
