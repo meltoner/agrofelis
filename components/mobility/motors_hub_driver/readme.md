@@ -278,7 +278,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ![motors_hub_driver-sticker-pcb-power.png](_figures/motors_hub_driver-sticker-pcb-power_driver.png){width=80%}
 
- ### Motors hub ADAC
+### Motors hub ADAC
 
 This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v via a bidirectional logic level conditioner.
 Moreover, using an external ADAC the module can handle additionally 4 analog channels, enough so an ESP32 can operate and sense two motor drivers simultaneously.
