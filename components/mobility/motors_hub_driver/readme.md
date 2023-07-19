@@ -182,7 +182,12 @@ The PCB is illustrated by the following figure.
 Lines in green, indicate the connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the cooper, creating the end routes between connected points in the board. Lines in yellow indicate bridges connecting two points from to top side of the board via a wire. Lines in red, indicate components or connectors of the board.
 
 
-The Motors Hub Power Driver is composed of the following components :
+The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
+
+![pcb-power_cnc.jpg](_figures/pcb-power_cnc.jpg)
+
+
+The Motors Hub Power Driver is composed of the following elements :
 
 1. A PCB board, with its schematics located within PCB.CNC.power\ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -309,7 +314,10 @@ Various elements of the controller are layout by the following photo.
 
 ![pcb-adac_assembled.jpg](_figures/pcb-adac_assembled.jpg)
 
- 
+The module interfaces with the controller module via the SPI interface as depicted by the following photo.
+
+![pcb-adac_details.jpg](_figures/pcb-adac_details.jpg)
+
 
 After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
@@ -350,7 +358,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 -  PCB.PRINT.Stickers\motors_hub_driver-sticker-pcb-adac.pdf
 
-![motors_hub_driver-sticker-pcb-adac.png](motors_hub_driver-sticker-pcb-adac.png)
+![motors_hub_driver-sticker-pcb-adac.png](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
 ### Software 
 
@@ -364,5 +372,5 @@ The module receives power of the power distribution module documented in the X c
 
 The rational of the module, its sub components, and their elements were elaborated. Photos outlining details of the different phases of the manufacturing were provided. The source code files, schematics, instructions and printout to reconstruct the Agrofelis motors hub driver module have been documented.
 
-![motors_hub_driver_real2.jpg](motors_hub_driver_real2.jpg)
+![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
