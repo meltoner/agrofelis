@@ -12,7 +12,7 @@ Farmers are having increasing difficulties finding seasonal farm workers while a
 
 The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an intergrated role with firefighting units in non-urban environments that reduces the work load and reduces the risk of exposure to heat due to proximity to the fire front can also become essential. 
 
-The above problems in agriculture and public safety both need a Base Vehicle that is low cost, has a small footprint, is energy dense and agile and can be manufactured at a local machine shop in small volumes or even in single units. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields.
+Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can adress local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
 
 ## The Chosen Technology 
 
@@ -20,7 +20,7 @@ The majority of technical solutions proposed for agricultural robotic systems ai
 
 In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use and in the case of LIDAR that can be combined with Odometers Cameras and IMUs add a considerable cost to the system that makes sense only for bigger heavier vehicles. On top of that repairing a vehicle of high technological complexity can be a challenge for the average person across the world.
 
-The purpose here is to offer a technology accesible to a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions can offer a cheaper alternative suitable for smaller platforms , offering a considerably cheaper increase in productivity. Also the availability of electrical components like motors and LiFePO4 batteries offer a simpler solution. 
+The purpose here is to offer a technology accesible to non technical users like a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions can offer a cheaper alternative suitable for smaller platforms , offering a considerably cheaper increase in productivity. Also the availability of electrical components like motors and LiFePO4 batteries offer a simpler solution. 
 
 ## The Potential
 
@@ -35,7 +35,7 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 
 The technologies that could be incorporated on an Public Safety Vehicle could include applications like 
 - Fire fighting Gear Carrier 
-- Water Cannon Base
+- Standoff Water Cannon Base
 - Tethered Drone Base & Power Hub, for Surveilance and Communications in large area fires
 - Sensor Suite for patrolling and surveilance 
 
@@ -44,7 +44,7 @@ The potential of having the ability to produce an open soursed Base Robotic Vehi
 ## The Project 
 
 The Chassis of the vehicle should be designed according to the specifications of the job at hand, carrying capacity, choise of suspension and wheels, and 
-of course size is expected to vary, so the project doesn't focus on the chassis since it is assumed that there will be different designs rather it is the open source programmable system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the possibility for precision applications that is the core. 
+of course size is expected to vary, so the project doesn't focus on the chassis since it is assumed that there will be different designs. The Project core is the open source programmable system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the capability for precision applications and AI readiness. 
 
 The chassis implemented for the project is an iron bar welded chassis with detachable components, which is capable of carrying 250 kilos of payload with 
 no suspension for cost reduction. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically controlled using feadback sensors in real time. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
