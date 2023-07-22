@@ -16,6 +16,7 @@ class Motor{
     // power, direction, speed, current, onewire temperature index, and hall a, hall b , hall c accessed via a multiplexer
     Motor(byte _pin1, byte _pin2, byte _pin3, byte pin4, byte _temperatureIndex, byte _pin5, byte _pin6, byte _pin7 );
     void setup(Context &_context);
+    void fastApply();
     void apply();
     void print();
 

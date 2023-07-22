@@ -26,8 +26,8 @@ Context context = Context();
 Controller controller = Controller();
 Invoker invoker = Invoker();
 
-// const char* ssid = "xxxx-Change-me";
-// const char* password = "xxxx-Change-me";
+const char* ssid = "xxxx-Change-me";
+const char* password = "xxxx-Change-me";
 
 
 // Create AsyncWebServer object on port 80
@@ -109,16 +109,13 @@ void setup(){
 }
 
 void apply_interval_0(){
-  
-
 }
 
-void apply_interval_1(){
-   controller.apply();
+void apply_interval_1(){ 
 }
 
 void apply_interval_2(){
-
+  controller.apply();
   //controller.steer.apply();
 }
 
@@ -148,7 +145,7 @@ void run_invoker(int i){
 
 void loop() {
   ws.cleanupClients();
-
+  controller.fastApply();
  int actionIndex = invoker.apply();
   while(actionIndex != 100){
     run_invoker(actionIndex);

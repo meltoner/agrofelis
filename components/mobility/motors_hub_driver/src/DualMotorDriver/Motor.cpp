@@ -40,8 +40,11 @@ void Motor::setSpeed(int value){
   speed = value;
 }
 
-void Motor::apply(){
+void Motor::fastApply(){
   hallsSensor.apply();  
+}
+
+void Motor::apply(){  
   currentSensor.apply();
   temperature = context->temperatures[temperatureIndex];
 }
@@ -49,7 +52,13 @@ void Motor::apply(){
 void Motor::print(){
   String result = "<Motor";
   context->appendMessage(
-    result + pin1 + ";" + power + ";" + direction + ";" + speed + ";" + currentSensor.current + ";" + temperature + ";" + hallsSensor.a + ";" + hallsSensor.b + ";" + hallsSensor.c + "" + ">"
+    result + pin1 + ";" + power + ";" + direction + ";" + speed + ";" +
+      currentSensor.current + ";" + temperature + ";" +
+
+      hallsSensor.a + ";" + hallsSensor.b + ";" + hallsSensor.c + ";" +
+      
+      hallsSensor.position + ";" +
+      hallsSensor.error + ">"
   );
 
 }

@@ -47,6 +47,7 @@ void Controller::actionParsedCommand() {
       motorA.setSpeed(commandInt);
       break; 
 
+
     case 4:
       motorB.setPower(commandInt);
       break;
@@ -56,14 +57,28 @@ void Controller::actionParsedCommand() {
       break; 
 
     case 6:
-      motorB.setSpeed(commandInt);    
+      motorB.setSpeed(commandInt);
       break; 
 
     ////////////////////////
     
+    case 7:
+      motorA.setPower(commandInt);
+      motorB.setPower(commandInt);
+      break;
+
+    case 8:
+      motorA.setPower(commandInt);
+      motorB.setDirection(commandInt);
+      break;
+
+    case 9:
+      motorA.setPower(commandInt);
+      motorB.setSpeed(commandInt);
+      break;
 
     case 11: 
-     
+      
       break;
     case 12: 
  
@@ -80,6 +95,11 @@ void Controller::actionParsedCommand() {
   }
   command = 0;
 
+}
+
+void Controller::fastApply(){
+  motorA.fastApply();
+  motorB.fastApply();
 }
 
 void Controller::apply(){

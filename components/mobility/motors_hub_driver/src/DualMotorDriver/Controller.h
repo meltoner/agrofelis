@@ -19,6 +19,7 @@ class Controller : public CommandParser{
   public:
     Controller();
     void setup(Context &_context);
+    void fastApply();
     void apply();
     void print();
     void actionParsedCommand();

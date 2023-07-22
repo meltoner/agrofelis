@@ -23,16 +23,49 @@ void SensorHalls::setup(Context &_context, byte _pin1, byte _pin2, byte _pin3){
   apply();
 }
 
-void SensorHalls::processValue(){
-  //print();
-  //Serial.println("");
+void SensorHalls::processValue(){  
+  currentOrderedHall = mapping[intHall - 1];
+  if(currentOrderedHall != previousOrderedHall){
+    int difference = currentOrderedHall - previousOrderedHall;
+
+    if(difference == 1)
+      position--;
+    else 
+      if(difference == -1)
+        position++;
+      else
+        if(difference < -5)
+          position--;
+        else
+          error = 3;
+
+    previousOrderedHall = currentOrderedHall;    
+  }
+
 }
 
 void SensorHalls::apply(){
+  // Get Readings
   a = context->adac.get(pin1);
   b = context->adac.get(pin2);
   c = context->adac.get(pin3);
-  processValue();
+
+  if(a > 1200 || b > 1200 || c > 1200){
+    error = 1; // "out of range problem with adac"
+  }else{
+    // Threshold binary to int
+    intHall = 0;
+    if(a > 100)intHall += 4;
+    if(b > 100)intHall += 2;
+    if(c > 100)intHall += 1;
+
+    if(intHall == 0 || intHall == 7){
+      error = 2; // invalid reading to account
+    }else{
+      error = 0;
+      processValue();
+    }
+  }
 }
 
 void SensorHalls::print(){
@@ -45,5 +78,7 @@ void SensorHalls::print(){
   Serial.print(b);
   Serial.print(F(";"));
   Serial.print(c);
+  Serial.print(F(";"));
+  Serial.print(position);
   Serial.print(F(">"));
 }

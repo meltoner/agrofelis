@@ -25,11 +25,29 @@ class SensorHalls{
     void processValue();
 
     void print();
+    int rotations = 0;
     
+    // hall sensor readings
     int a = 0;
     int b = 0;
     int c = 0;
-    
+    int position = 0;
+
+    // hall binary to int one direction moving sequence 4 6 2 3 1 5 4
+    // mapping of that sequence to order such that the forth item coresponds to the 1st position.
+    byte mapping[7] = {5, 3, 4, 1, 6, 2};
+
+    // binnary to int conversion based on hall sensor values
+    int intHall = 0;
+    byte currentOrderedHall = 0;
+    byte previousOrderedHall = 0;
+
+    // error 1 out of range problem with adac"
+    // error 2 invalid reading to account
+    // error 0 no problem
+    // error 3 skipping steps
+    byte error = 0;
+
   private:
     Context *context;
     byte pin1;
