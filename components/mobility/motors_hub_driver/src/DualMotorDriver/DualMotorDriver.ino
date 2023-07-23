@@ -120,7 +120,8 @@ void apply_interval_2(){
 }
 
 void apply_interval_3(){ 
-     controller.print();
+
+  controller.print();
 }
 
 void apply_interval_4(){

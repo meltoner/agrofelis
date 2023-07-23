@@ -24,8 +24,10 @@ class Controller : public CommandParser{
     void print();
     void actionParsedCommand();
 
-    Motor motorA = Motor(13, 12, 26, 1, 1, 5, 6, 7); // POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7
-    Motor motorB = Motor(32, 21, 25, 0, 0, 2, 3, 4); // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4
+    //back left
+    Motor motorA = Motor(13, 12, 26, 1, 1, 5, 6, 7, false, 250); // POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7, ReverseSping false
+    //back right
+    Motor motorB = Motor(32, 21, 25, 0, 0, 2, 3, 4, true, 255); // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4, ReverSpin true
 
   private:
     Context *context;

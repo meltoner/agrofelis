@@ -68,12 +68,12 @@ void Controller::actionParsedCommand() {
       break;
 
     case 8:
-      motorA.setPower(commandInt);
+      motorA.setDirection(commandInt);
       motorB.setDirection(commandInt);
       break;
 
     case 9:
-      motorA.setPower(commandInt);
+      motorA.setSpeed(commandInt);
       motorB.setSpeed(commandInt);
       break;
 
@@ -103,8 +103,13 @@ void Controller::fastApply(){
 }
 
 void Controller::apply(){
+  motorA.applySpeed();
+  motorB.applySpeed();
+
   motorA.apply();
   motorB.apply();
+  // Test for temperature or current peak and pause
+
 }
 
 void Controller::print(){

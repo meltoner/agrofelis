@@ -15,29 +15,37 @@
 
 SensorHalls::SensorHalls(){}
 
-void SensorHalls::setup(Context &_context, byte _pin1, byte _pin2, byte _pin3){
+void SensorHalls::setup(Context &_context, byte _pin1, byte _pin2, byte _pin3, bool _opositeSpin ){
   context = &_context;
   pin1 = _pin1;
   pin2 = _pin2;
-  pin3 = _pin3;
+  pin3 = _pin3;  
+  opositeSpin = _opositeSpin;
   apply();
 }
 
 void SensorHalls::processValue(){  
   currentOrderedHall = mapping[intHall - 1];
   if(currentOrderedHall != previousOrderedHall){
+
     int difference = currentOrderedHall - previousOrderedHall;
 
+    int tik = 0;
     if(difference == 1)
-      position--;
+      tik = -1;
     else 
       if(difference == -1)
-        position++;
+        tik = 1;
       else
         if(difference < -5)
-          position--;
+          tik = -1;
         else
           error = 3;
+
+    if(opositeSpin)
+      tik = tik * -1;
+
+    position += tik;
 
     previousOrderedHall = currentOrderedHall;    
   }
