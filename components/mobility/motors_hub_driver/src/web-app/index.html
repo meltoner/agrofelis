@@ -80,7 +80,7 @@
       <a href="javascript:window.location = 'http://'+$('#ip').val()+'/update'">[Firmware update]</a>
     </div>
 
- 
+   
 
     <div class="content" id="Motor32">
       <h2>Motor B</h2>
@@ -88,15 +88,15 @@
       <div>
         <div class="card">
           <h3>Power</h3>      
-          <input type="range" class="command" id="c4"  min="0" max="1" value="0">
+          <input type="range" class="command" id="c7"  min="0" max="1" value="0">
         </div>
         <div class="card">
           <h3>Direction</h3>      
-          <input type="range" class="command" id="c5"  min="0" max="1" value="0">
+          <input type="range" class="command" id="c8"  min="0" max="1" value="0">
         </div>
         <div class="card">
           <h3>Speed</h3>      
-          <input type="range" class="command" id="c6" min="0" max="100" value="0">
+          <input type="range" class="command" id="c9" min="0" max="100" value="0">
         </div>
       </div>
       <div>
@@ -132,6 +132,10 @@
         <div class="card">
           <h3>Error</h3>
           <input type="text" class="sensor" class="s7" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Intermediate speed</h3>
+          <input type="text" class="sensor" class="s8" disabled value="0">
         </div>
       </div>
 
@@ -188,6 +192,10 @@
           <h3>Error</h3>
           <input type="text" class="sensor" class="s7" disabled value="0">
         </div>
+        <div class="card">
+          <h3>Intermediate speed</h3>
+          <input type="text" class="sensor" class="s8" disabled value="0">
+        </div>
       </div>
 
     </div>
@@ -199,6 +207,7 @@
     var gateway = "ws://ip/ws";
     var websocket;
     var $console;
+    var previousMessage = "";
 
     window.addEventListener('load', onLoad);
 
@@ -232,29 +241,32 @@
     }
 
     function onMessage(event) {
-      var truncated = event.data + "\n"+ $console.val();      
-      $console.val(truncated.substring(0, 1000))
 
-      var result = event.data;
-      result = result.replaceAll("<","").replaceAll(":","").split(">")
-      result.forEach(function(element){
-        if(element != ""){
-          var atribs = element.split(";");
+      if(previousMessage != event.data){
+        previousMessage = event.data;
+        var truncated = event.data + "\n"+ $console.val();      
+        $console.val(truncated.substring(0, 1000))
 
-          var $module = $("#"+atribs[0])
+        var result = event.data;
+        result = result.replaceAll("<","").replaceAll(":","").split(">")
+        result.forEach(function(element){
+          if(element != ""){
+            var atribs = element.split(";");
 
-          var $commands = $module.find(".command");
-          for(var i = 0; i<$commands.length;i++)
-            $($module.find("#"+$($commands[i]).attr("id") + ":not(:focus)")).val(atribs[i+1])
+            var $module = $("#"+atribs[0])
 
-          var $sensors = $module.find(".sensor");
-          for(var i = 0; i<$sensors.length;i++)
-              $($sensors[i]).val(atribs[i+$commands.length+1])
+            var $commands = $module.find(".command");
+            for(var i = 0; i<$commands.length;i++)
+              $($module.find("#"+$($commands[i]).attr("id") + ":not(:focus)")).val(atribs[i+1])
 
-        }
-        
-      }, Element)
-      console.log(event.data)      
+            var $sensors = $module.find(".sensor");
+            for(var i = 0; i<$sensors.length;i++)
+                $($sensors[i]).val(atribs[i+$commands.length+1])
+
+          }
+        }, Element)
+      }
+      console.log(event.data)
     }
   </script>
   </body>
