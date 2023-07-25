@@ -1,6 +1,6 @@
 # Abstract
 
-This document presents the details of manufacturing a composite module for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. The rational of each component and its integration with its counterparts is elaborated. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with indicative suppliers to purchase the different parts. 
+This document presents the details of manufacturing a composite module for digitally controlling and sensing a pair of in-wheel motor hubs, over the air. The documentation decomposes the different aspects involved into sub-modules, into their sub elements in an organized and progressive manner. Each component's rationale and integration with its counterparts is presented. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document describes the structural elements of the unit, the three types of PCB sub-components, the software operating on the microcontroller, important equipment used, key tools employed in the manufacturing process and concludes with indicative suppliers to purchase the various parts. 
 
 ## Motors Hub Driver
 
@@ -376,7 +376,7 @@ The module receives power from the Power distribution module, documented in the 
 
 ### Conclusion
 
-The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
+The module's rationale, subcomponents, and elements were elaborated. Photos outlining details of the stages of the manufacturing process are provided. The Agrofelis motors hub driver module's source code files, schematics, instructions, and printouts have all been documented.
 
 ![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
