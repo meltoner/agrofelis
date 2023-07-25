@@ -50,7 +50,9 @@ The chassis implemented for the project is an iron bar welded chassis with detac
 
 The power system has energy autonomy of 8.8 Kwh and fits within an 1 sqm.  It is composed of 8 element LiFePO4 batteries of 320 amps, paired with an intelligent Battery Management System at 300 Amp max discharge rate capacity and a data link enabling the utilization of energy related indicators. 
 
-The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
+The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and Web Sockets allowing implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
+
+The Project finally implements a Thermal Fogger on top of the robotic vehicle using a two degrees of freedom rotating base as an example.
 
 ## The Technical Stuff
 
@@ -80,15 +82,15 @@ This sub-module of the Motors Hub Driver integrates all components of the overal
 1. A PCB board, with its schematics located within PCB.CNC.controller\ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. One ESP32 with 38 pins.
-4. Two twenty pin female headers.
-5. One two pin female header.
-6. One four pin female header.
+4. Two 20 pin female headers.
+5. One 2 pin female header.
+6. One 4 pin female header.
 7. One 2 pin JST male connector for the 5v supply.
 8. One 3 pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
 9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
-10. Two five wire ribbon cable 7 cm, used to connect the power modules.
-11. Two five ping female headers used to connect the power modules at the end of ribbon cable.
-12. One three wire ribbon cable 7 cm, used to connect the temperature sensors.
+10. Two 5 wire ribbon cable 7 cm, used to connect the power modules.
+11. Two 5 ping female headers used to connect the power modules at the end of ribbon cable.
+12. One 3 wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow colour in the PCB.PRINT.Stickers schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V
