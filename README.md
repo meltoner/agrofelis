@@ -52,7 +52,7 @@ The power system has energy autonomy of 8.8 Kwh and fits within an 1 sqm.  It is
 
 The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and Web Sockets allowing implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
 
-The Project finally implements a Thermal Fogger on top of the robotic vehicle using a two degrees of freedom rotating base as an example.
+The Project finally implements a Thermal Fogger on top of the robotic vehicle using a two degrees of freedom rotating base as an example .
 
 ## The Technical Stuff
 
