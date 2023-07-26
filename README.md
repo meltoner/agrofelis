@@ -24,20 +24,20 @@ The purpose here is to offer a technology accesible to non highly technical user
 
 ## The Potential
 
-The technologies that could be incorporated on an Agricultural Vehicle could include implements such as 
-- Grass Cutter/lawn mower a frequent and necessary application in Orchards 
-- Turbine Sprayers usefull both in orchards and veggetable cultivations for either pesticide or water soluble fertilizer
-- Fog Sprayers for greater reach in dense folliage and also antifreeze protection with glycerin oil   
-- Fertilizer Casting, a copious job that must be done in both orchards and vegetables 
-- Sensor Suite for Plant disease diagnosis 
-- Robotic Picking Arm Base & Power Hub, for low cultivations and also Green houses  
+The technologies that could be incorporated on an Agricultural Vehicle could include implements such as
+- Grass Cutter/lawn mower a frequent and necessary application in Orchards
+- Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
+- Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
+- Fertilizer Casting, a copious job that must be done in both orchards and vegetables
+- Sensor Suite for Plant disease diagnosis
+- Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
 - Tethered Drone Base & Power Hub, fruit picking for trees (see Tevel as an example)
-
-The technologies that could be incorporated on an Public Safety Vehicle could include applications like 
-- Fire fighting Gear Carrier 
+ 
+The technologies that could be incorporated on an Public Safety Vehicle could include applications like
+- Fire fighting Gear Carrier
 - Standoff Water Cannon Base
-- Tethered Drone Base & Power Hub, for Surveilance and Communications in large area fires
-- Sensor Suite for patrolling and surveilance 
+- Tethered Drone Base & Power Hub, for Surveillance and Communications in large area fires
+- Sensor Suite for patrolling and surveillance
 
 The potential of having the ability to produce an open soursed Base Robotic Vehicle for a variety of applications and tools offers significant versatility.
 
