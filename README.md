@@ -12,7 +12,7 @@ Farmers are having increasing difficulties finding seasonal farm workers while a
 
 The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an intergrated role with firefighting units in non-urban environments that reduces the work load and reduces the risk of exposure to heat due to proximity to the fire front is also essential. 
 
-Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can adress local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
+Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can address local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
 
 ## The Technology Considerations
 
