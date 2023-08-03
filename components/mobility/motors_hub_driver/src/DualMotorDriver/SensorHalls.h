@@ -31,10 +31,11 @@ class SensorHalls{
     int a = 0;
     int b = 0;
     int c = 0;
-    int position = 0;
+    // One full revolutions is approximately 200 ticks
+    long position = 0;
 
     // hall binary to int one direction moving sequence 4 6 2 3 1 5 4
-    // mapping of that sequence to order such that the forth item coresponds to the 1st position.
+    // mapping of that sequence to order such that the forth item corresponds to the 1st position.
     byte mapping[7] = {5, 3, 4, 1, 6, 2};
 
     // binnary to int conversion based on hall sensor values

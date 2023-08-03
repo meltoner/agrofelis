@@ -28,7 +28,7 @@ void Context::reflectSensor(float value, byte precission){
 
 void Context::apply(){
   updateTemperatures();
-  Serial.println(F("")); 
+  //Serial.println(F("")); 
 }
 
 void Context::appendMessage(String part){

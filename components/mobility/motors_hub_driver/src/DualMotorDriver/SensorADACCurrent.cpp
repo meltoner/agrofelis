@@ -25,6 +25,10 @@ int SensorADACCurrent::apply(){
   if(current < 0.3)
     current = 0;
 
-  current = value;
+  if(maxCurrent < current)
+    maxCurrent = current;
+  else
+    maxCurrent *= 0.98;  
+
   return value;
 }

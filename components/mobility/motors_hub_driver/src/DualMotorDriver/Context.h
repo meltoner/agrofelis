@@ -27,8 +27,8 @@ class Context{
     void sendMessage();
     
     void updateTemperatures();
-    // Invoker variables - execution functions frequencies
     
+    // Invoker variables - execution functions frequencies    
     int intervals[6] = {10, 52, 104, 500, 1008, 5000};    
     float temperatures[2] = {0.0, 0.0};
     unsigned long now = millis();

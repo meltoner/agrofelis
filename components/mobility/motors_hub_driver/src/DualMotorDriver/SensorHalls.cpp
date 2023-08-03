@@ -12,7 +12,6 @@
 
 #include "SensorHalls.h" 
 
-
 SensorHalls::SensorHalls(){}
 
 void SensorHalls::setup(Context &_context, byte _pin1, byte _pin2, byte _pin3, bool _opositeSpin ){
@@ -40,7 +39,7 @@ void SensorHalls::processValue(){
         if(difference < -5)
           tik = -1;
         else
-          error = 3;
+          error = 3; // loosing steps
 
     if(opositeSpin)
       tik = tik * -1;
@@ -53,13 +52,15 @@ void SensorHalls::processValue(){
 }
 
 void SensorHalls::apply(){
+
   // Get Readings
   a = context->adac.get(pin1);
   b = context->adac.get(pin2);
   c = context->adac.get(pin3);
 
   if(a > 1200 || b > 1200 || c > 1200){
-    error = 1; // "out of range problem with adac"
+    // "out of range problem with adac"
+    error = 1; 
   }else{
     // Threshold binary to int
     intHall = 0;
@@ -77,10 +78,10 @@ void SensorHalls::apply(){
 }
 
 void SensorHalls::print(){
+  // high speed print out, activated for debugging only.
   Serial.print(F("<SensorHalls")); 
   Serial.print(pin1);
   Serial.print(F(";"));
-
   Serial.print(a);
   Serial.print(F(";"));
   Serial.print(b);

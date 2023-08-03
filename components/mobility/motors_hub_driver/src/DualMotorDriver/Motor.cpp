@@ -11,16 +11,16 @@ Motor::Motor(
     bool _opositeSpin,
     unsigned int _maxSpeed
   ){
-  pin1 = _pin1;
-  pin2 = _pin2;
-  pin3 = _pin3;
-  temperatureIndex = _temperatureIndex;
-  pin4 = _pin4;
-  pin5 = _pin5;
-  pin6 = _pin6;
-  pin7 = _pin7;
-  opositeSpin = _opositeSpin;
-  maxSpeed = _maxSpeed;
+    pin1 = _pin1;
+    pin2 = _pin2;
+    pin3 = _pin3;
+    temperatureIndex = _temperatureIndex;
+    pin4 = _pin4;
+    pin5 = _pin5;
+    pin6 = _pin6;
+    pin7 = _pin7;
+    opositeSpin = _opositeSpin;
+    maxSpeed = _maxSpeed;
 }
 
 void Motor::setup(Context &_context){
@@ -40,13 +40,23 @@ void Motor::setup(Context &_context){
   apply();
 }
 
-void Motor::setPower(int value){
-  digitalWrite(pin1, value>0?HIGH:LOW);
-  power = value;
+bool Motor::isRunnable(){
+  return ! (
+    power == 0 ||
+    //hallsSensor.error == 2 || // TODO should be lenient if its once every n times instead of disabling the check
+    //hallsSensor.error == 1 || // problematic if for few ms there is an error all will be powered off. 
+    temperature > thresholdMaxTemperature ||
+    currentSensor.maxCurrent > thresholdMaxCurrent);
 }
 
-void Motor::setDirection(int value){
-  
+void Motor::setPower(int value){
+  setSpeed(0);
+  status = 0;
+  power = value;
+  digitalWrite(pin1, power > 0 ? HIGH : LOW);
+}
+
+void Motor::setDirection(int value){  
   if(!opositeSpin)
     digitalWrite(pin2, value > 0 ? HIGH:LOW);
   else
@@ -56,11 +66,16 @@ void Motor::setDirection(int value){
 }
 
 void Motor::setSpeed(int value){
-  if(hallsSensor.error != 0)
-    value = 0;
-
+  
   speedStart = intermediateSpeed;
   speedDiff = value - speedStart;
+
+  applyWithin = abs(speedDiff) * 30; //(100 diff in 3000ms )
+
+  // if braking do it faster
+  if(speedDiff < 0)
+    applyWithin = applyWithin * 0.4;
+  
   targetSet = millis();
 
   speed = value;
@@ -71,40 +86,133 @@ void Motor::applySpeed(){
   // here we impose any change to be applied progressivelly over a time span that will
   // always be followed by the motor driver and the motor.
 
+  hallsSpeed = previousPosition - hallsSensor.position;
+  previousPosition = hallsSensor.position;
+
   if(speed != intermediateSpeed ){
     unsigned long timePassed = (millis() - targetSet);
-    
-    if(timePassed > applyWithin){
+    if(timePassed > applyWithin)
       intermediateSpeed = speed;     
-    }else{
-      intermediateSpeed = speedStart + (int)(((float)(speedDiff)) * ((float)timePassed/(float)applyWithin));
-    }
-    analogWrite(pin3, map(intermediateSpeed, 0, 100, 0, maxSpeed));
+    else
+      intermediateSpeed = speedStart + (int)(((float)(speedDiff)) * ((float)timePassed / (float)applyWithin));
   }
-  
+
+  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.7 )
+    intermediateSpeed *= 0.8;
+
+  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.5 )
+    intermediateSpeed *= 0.9;
+
+  rawSpeed = intermediateSpeed;
+
+  // add motors synchronisation factor externally set
+  if(intermediateSpeed > 0)
+    rawSpeed += topOnSpeed;
+
+  rawSpeed = constrain(rawSpeed, 0, 100);
+
+  // set voltage just before motor begin to rotate. 255 should be 3.3v 90 should be 1.16v
+  rawSpeed = map(rawSpeed, 0, 100, 90, maxSpeed);
+  analogWrite(pin3, rawSpeed);
+
+}
+
+void Motor::moveToPosition(long position){
+  hallsSensor.position = 0;  
+  targetPosition = position;
+  boostSpeed = 0;
+
+  //retain the direction of the motor before asking to reach a particular position
+  if(status == 0)
+    initialDirection = direction;
+
+  // change statis of motor to reach a particular position
+  status = 1;
+}
+
+void Motor::applyPosition(){
+  if(status == 1 && (context->now - positionChecked) > 300){        
+    positionChecked = context->now;
+
+// todo should account in the predicted value the asked speed since we know it
+// or could account what was the previous predicted value and how far it was off.
+// to weight accordingly. currently static 0.8
+
+    targetPositionDiff = -(targetPosition - hallsSensor.position);    
+    
+    predicted = (targetPositionDiff - previousTargetPositionDiff) * 0.8;
+
+    if(predicted < 2)
+      boostSpeed += 2;
+
+    if(currentSensor.maxCurrent>(thresholdMaxCurrent * 0.7))
+      boostSpeed *= 0.7;
+    
+    previousTargetPositionDiff = targetPositionDiff;
+
+    targetPositionDiff = constrain(targetPositionDiff + predicted, -500, 500);
+
+    if(((direction == 0 ? 1 : -1) * targetPositionDiff) < 0){
+      // must change direction
+      if(intermediateSpeed > 0 || hallsSpeed != 0 ){
+        if(speed != 0)
+          setSpeed(0);
+        corretiveSpeed = 0;
+        return; // exit
+      }else{
+        boostSpeed = 0;
+        setDirection(direction == 0 ?1:0);
+      }     
+    }
+    
+    if(abs(targetPositionDiff) > 10)
+      corretiveSpeed = 8 + boostSpeed + (int)((float)abs(targetPositionDiff) / 8)  ;
+    else 
+      corretiveSpeed = 0;
+
+     corretiveSpeed = constrain(corretiveSpeed, 0, 60);
+    
+    if(corretiveSpeed > 0){
+      setSpeed( corretiveSpeed );
+    }else{
+      // reached position
+      corretiveSpeed = 0;
+      status = 0;
+      boostSpeed = 0;
+      setSpeed(0);
+      setDirection(initialDirection);
+    }
+  }
 }
 
 void Motor::fastApply(){
-  hallsSensor.apply();  
+  if(power == 1)
+    hallsSensor.apply();  
 }
 
 void Motor::apply(){
+  applyPosition();
   currentSensor.apply();
   temperature = context->temperatures[temperatureIndex];
-
 }
 
 void Motor::print(){
   String result = "<Motor";
   context->appendMessage(
     result + pin1 + ";" + power + ";" + direction + ";" + speed + ";" +
-      currentSensor.current + ";" + temperature + ";" +
-
-      hallsSensor.a + ";" + hallsSensor.b + ";" + hallsSensor.c + ";" +
-      
+      currentSensor.current + ";" + currentSensor.maxCurrent + ";"+ temperature + ";" +
+      //hallsSensor.a + ";" + hallsSensor.b + ";" + hallsSensor.c + ";" +      
+      intermediateSpeed + ";" +
+      hallsSpeed + ";" +
       hallsSensor.position + ";" +
       hallsSensor.error + ";" +
-      intermediateSpeed + ">"
+      topOnSpeed + ";" +
+      rawSpeed + ";" +
+      status + ";" +
+      targetPositionDiff + ";" +
+      corretiveSpeed + ";" +
+      applyWithin + ";" +
+      ">"
   );
 
 }

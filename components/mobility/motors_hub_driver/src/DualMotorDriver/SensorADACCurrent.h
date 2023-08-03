@@ -16,15 +16,20 @@ class SensorADACCurrent : public Sensor
 {
   public:
 
-    /* The function applies the following formula (2.5 - ((float)value * (5.0 / 1024.0) ) ) / 0.066 to the float value. 
+    /* 
+    * The function applies the following formula (2.5 - ((float)value * (5.0 / 1024.0) ) ) / 0.066 to the float value. 
     * The function moreover add and offset based on the maximoum negative read out after the formula has been applied.
     * Last the formula considers values less than 0.2 amper as zero to exlude the noise while on rest.    
-    */    
+    */
     int apply();
     void setup(Context &_context, byte _pin);
     void readSensor();
 
     float current = 0;
+    float maxCurrent = 0;
+
+    unsigned long lowestSince = millis();
+
   private:
     Context *context;
     float negativeOffset = 0;

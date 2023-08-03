@@ -14,7 +14,7 @@
 #include "Context.h"
 #include "Invoker.h"
 
-#include "Controller.h"
+#include "MotorsHubController.h"
 
 #include <WiFi.h>
 #include <AsyncTCP.h>
@@ -23,12 +23,11 @@
 #include <AsyncElegantOTA.h>
 
 Context context = Context();
-Controller controller = Controller();
+MotorsHubController controller = MotorsHubController();
 Invoker invoker = Invoker();
 
 const char* ssid = "xxxx-Change-me";
 const char* password = "xxxx-Change-me";
-
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -126,7 +125,6 @@ void apply_interval_3(){
 
 void apply_interval_4(){
   context.apply();
- // blink.apply();
 }
 
 void apply_interval_5(){
@@ -147,6 +145,7 @@ void run_invoker(int i){
 void loop() {
   ws.cleanupClients();
   controller.fastApply();
+  
  int actionIndex = invoker.apply();
   while(actionIndex != 100){
     run_invoker(actionIndex);
