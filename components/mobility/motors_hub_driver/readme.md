@@ -57,7 +57,7 @@ The Motors Hub structure sub-module, is implemented using of the following parts
 
 The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
 
-- structural/box_wood_layers/laser_cut
+- [structural/box_wood_layers/laser_cut](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_wood_layers/laser_cut)
 - structural/box_fins/3d_print
 
 More specifically, the laser cut folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The 3d print folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
