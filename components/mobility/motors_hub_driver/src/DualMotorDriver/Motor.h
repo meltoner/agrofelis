@@ -80,11 +80,12 @@ class Motor{
     int hallsSpeed = 0;
     long previousPosition = 0;
 
-    int targetPositionDiff, previousTargetPositionDiff, predicted, boostSpeed = 0;
+    int targetPositionDiff, previousTargetPositionDiff, predictedDifference, boostSpeed = 0;
+    float predictionError = 0;
     int corretiveSpeed = 0;
     
     const int thresholdMaxCurrent  = 15;
-    const int thresholdMaxTemperature = 38;
+    const int thresholdMaxTemperature = 50;
 
   private:
     Context *context;

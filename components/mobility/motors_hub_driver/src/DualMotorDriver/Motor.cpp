@@ -134,23 +134,16 @@ void Motor::applyPosition(){
   if(status == 1 && (context->now - positionChecked) > 300){        
     positionChecked = context->now;
 
-// todo should account in the predicted value the asked speed since we know it
-// or could account what was the previous predicted value and how far it was off.
+// todo should account in the predictedDifference value the asked speed since we know it
+// or could account what was the previous predictedDifference value and how far it was off.
 // to weight accordingly. currently static 0.8
 
     targetPositionDiff = -(targetPosition - hallsSensor.position);    
-    
-    predicted = (targetPositionDiff - previousTargetPositionDiff) * 0.8;
-
-    if(predicted < 2)
-      boostSpeed += 2;
-
-    if(currentSensor.maxCurrent>(thresholdMaxCurrent * 0.7))
-      boostSpeed *= 0.7;
-    
+    predictedDifference = (targetPositionDiff - previousTargetPositionDiff);
     previousTargetPositionDiff = targetPositionDiff;
 
-    targetPositionDiff = constrain(targetPositionDiff + predicted, -500, 500);
+    targetPositionDiff = constrain(targetPositionDiff, -500, 500);
+    targetPositionDiff += predictedDifference * constrain(targetPositionDiff, -100, 100) / 50.0;
 
     if(((direction == 0 ? 1 : -1) * targetPositionDiff) < 0){
       // must change direction
@@ -161,12 +154,18 @@ void Motor::applyPosition(){
         return; // exit
       }else{
         boostSpeed = 0;
-        setDirection(direction == 0 ?1:0);
+        setDirection(direction == 0 ? 1 : 0);
       }     
     }
     
-    if(abs(targetPositionDiff) > 10)
-      corretiveSpeed = 8 + boostSpeed + (int)((float)abs(targetPositionDiff) / 8)  ;
+    if(abs(predictedDifference) < 2)
+      boostSpeed += 2;
+      
+    if(currentSensor.maxCurrent > (thresholdMaxCurrent * 0.7))
+      boostSpeed *= 0.7;
+
+    if(abs(targetPosition - hallsSensor.position) > 6)
+      corretiveSpeed = 5 + boostSpeed + (int)((float)abs(targetPositionDiff) / 9)  ;
     else 
       corretiveSpeed = 0;
 
