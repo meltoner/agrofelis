@@ -301,7 +301,7 @@ The Motors Hub controller is composed of the following components :
 1. A PCB board, with its schematics located within PCB.CNC.adac/ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. One MCP3008 8-channel 10 bit ADC.
-4. One 4-channel I2C-safe Bi-directional Logic Level Converter between 5V and 3.3V.
+4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
 5. One 7-pin ribbon cable for connecting with the ADAC module.
 6. One 4-pin male header for connecting with the Agrofelis controller.
 7. One 8-pin female header.
@@ -313,7 +313,7 @@ Remarks :
 - The first and second channels of the MPC3004 ADAC are connected to the current sensors of the power module.
 - The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected with between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with their ground,
 - The ground of the halls sensors outlet, is connected with the ground pin of the Motors hub ADAC module.
-- One pin from the 8-pin female header, is trimmed off to much the 7 input pins of the module.
+- One pin from the 8-pin female header, is trimmed off to match the 7 input pins of the module.
 
  Various listed elements of the sub-module, are layout by the following photo.
 
