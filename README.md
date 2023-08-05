@@ -10,15 +10,16 @@ The declining demographics in the West, economic disparity, energy cost inflatio
 
 Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker's productivity with an affordable platform that is between a Tractor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
 
-The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and reduces the risk of exposure to heat due to proximity to the fire front is also essential. 
+The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
 
 Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can address local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
 
 ## The Technology Considerations
 
-The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS , Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.   
+The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS , Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.  
 
-In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use. However LIDAR that can be combined with Odometers Cameras and IMUs has a considerably lower cost and potential robustness. On top of that repairing a vehicle of high technological complexity can be a challenge for the average person across the world.
+In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use. However LIDAR that can be combined with Odometers Cameras and IMUs has a considerably lower cost and potential robustness. On top of that repairing a vehicle of high technological complexity can be a challenge for the average user across the world. The choise of LiFePO4 batteries offers endurance in high temperatures , incombustibility , nontoxic
+materials , they can work unevenly charged and have a slow rate of self dishcharge.
 
 The purpose here is to offer a technology accessible to non highly technical users like a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions through recording and replaying can offer a cheaper alternative suitable for smaller platforms , while having a wider applicability and offering a considerably cheaper increase in productivity.
 
