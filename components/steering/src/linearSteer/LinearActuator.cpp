@@ -108,9 +108,9 @@ void LinearActuator::apply(){
          move(-direction * minSpeed);
        }else{
            changeState(state + 1);
-           throttle(0);           
+           throttle(0);
            //position(direction>0?0:100);
-           position(50);
+           setPosition(50);
        }
     break;
 
@@ -127,7 +127,7 @@ void LinearActuator::apply(){
       diff = targetPotentiometer - potentiometer;
       int absdiff = abs(diff);
 
-      normDistance = ((float)absdiff/(float)(maxPot-minPot))*100.0;//map(absdiff, 0, (maxPot-minPot), 0, 100);
+      normDistance = ((float)absdiff/(float)(maxPot-minPot)) * 100.0;
       
       if( absdiff >= 11 ){        
 
@@ -212,7 +212,7 @@ void LinearActuator::throttle(int speed){
   move( mappedSpeed );  
 }
 
-void LinearActuator::position(int pos){
+void LinearActuator::setPosition(int pos){
   normPosition = pos;  
   int offseted = constrain(pos + offset, 0, 100);
   targetPotentiometer = map(offseted, 0, 100, minPot, maxPot );

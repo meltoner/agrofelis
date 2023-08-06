@@ -95,7 +95,7 @@ class LinearActuator{
     * Sets the target potentiometer value, by inputting a 0 to 100 range mapped 
     * based on the min and max value of the feedback sensor detected at boot up. 
     */
-    void position(int pos);
+    void setPosition(int pos);
 
     Sensor potentiometerSensor = Sensor::Sensor();
     SensorCurrent currentSensor = SensorCurrent::SensorCurrent();
@@ -108,6 +108,8 @@ class LinearActuator{
     int normSpeed = 0;
     int normDistance = 0;
     int offset = 0;
+    
+    int potentiometer = 0;
 
   private:
     int identifier;
@@ -121,7 +123,6 @@ class LinearActuator{
     unsigned long stateChanged = millis();
     unsigned long timeSinceStateChange = 0;
 
-    int potentiometer = 0;
     int current = 0;
     int targetPotentiometer = 512;
     int potentiometerStarting = 512;

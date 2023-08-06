@@ -1,6 +1,31 @@
+/** 
+ * The SteeringController Class maintains the objects intended to be controlled externally via the Serial link
+ * 
+ * It uses a Serial parser to listen for external commands such as setting the desired position of some actuator
+ * This SteeringController expects two pieces of data - an int, and an int
+ * Examples involve initialising the two submoldules <15|1> or set the desired steering hard left and hard right with <16|-100> or <16|100>
+ * 
+ * @Author - Konstantinos L. Papageorgiou / mail kp at rei.gr - 2023 agrofelis
+ * 
+ */
+
 /*
-  SteeringController.h - Library for wraping the functions controling the SteeringController 
-  Author - Konstantinos L. Papageorgiou / mail kp at rei.gr - 2023
+  Teting examples
+  <11|1> start left at initialisation mode
+  <12|1> start right at initialisation mode  
+  <15|1> make both left and right at initialisation mode  
+  <16|-10> SteeringDriver 10 points on the left side
+  <16|-20>
+  <16|-50> SteeringDriver 50 % left
+  <16|-70>
+  <16|-100>
+  <16|10>
+  <16|40>
+  <16|50>
+  <16|80>
+  <16|20>
+  <16|0>
+  <16|100>
 */
 
 #ifndef SteeringController_h
@@ -11,7 +36,7 @@
 #include "SteeringDriver.h"
 #include "SerialCommandParser.h" 
 
-class SteeringController{
+class SteeringController : public SerialCommandParser{
   public:
     SteeringController();
     void setup(Context &_context);
@@ -20,7 +45,6 @@ class SteeringController{
     SteeringDriver steer = SteeringDriver::SteeringDriver();
   private:
     Context *context;
-    SerialCommandParser parser = SerialCommandParser();
 };
 
 #endif

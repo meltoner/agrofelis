@@ -38,7 +38,7 @@ void SerialCommandParser::parseData() {
     commandInt = atoi(strtokIndx);        // convert this part to an integer
 }
 
-void SerialCommandParser::apply(){
+void SerialCommandParser::parse(){
   recvWithStartEndMarkers();
   if (newData == true) {    
     commandInt = 0;

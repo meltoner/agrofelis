@@ -13,7 +13,7 @@
 class SerialCommandParser{
   public:
     SerialCommandParser();
-    void apply();
+    void parse();
     // variables to hold the parsed data
     int command = 0;
     int commandInt = 0;
