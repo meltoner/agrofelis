@@ -15,11 +15,15 @@
 
 Sensor::Sensor(){}
 
-void Sensor::setup(int pin_){
-  _pin = pin_;
-  pinMode(_pin, INPUT);
-  read = analogRead(_pin);
+void Sensor::setup(byte _pin){
+  pin = _pin;
+  pinMode(pin, INPUT);
+  readSensor();
   apply();
+}
+
+void Sensor::readSensor(){
+  read = analogRead(pin);
 }
 
 void Sensor::processValue(){
@@ -36,7 +40,7 @@ void Sensor::processValue(){
 }
 
 int Sensor::apply(){
-  read = analogRead(_pin);
+  readSensor();
   processValue();
   moving = abs(read - prevValue) > 2;
   prevValue = value;
@@ -44,8 +48,8 @@ int Sensor::apply(){
 }
 
 void Sensor::print(){
-  Serial.print(F("<Sensor:")); 
-  Serial.print(_pin);
+  Serial.print(F("<Sensor")); 
+  Serial.print(pin);
   Serial.print(F(";"));
   Serial.print(value);
   Serial.print(F(";"));
