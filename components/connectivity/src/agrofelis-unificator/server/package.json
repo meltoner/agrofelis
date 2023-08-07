@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "serialport": "^11.0.1",
+    "websocket": "^1.0.34"
+  }
+}
