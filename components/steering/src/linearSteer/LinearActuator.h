@@ -97,6 +97,30 @@ class LinearActuator{
     */
     void setPosition(int pos);
 
+    /*
+    * Derives the distance from target position and adjusts according the direction and throttle to reach it.
+    */
+    void seekPosition();
+    
+    /*
+    * Tracks the distance from the target, to be within a small threshold otherwises changes the state of the module to seek it
+    */
+    void maintainPosition();
+
+    /*
+    * Progressively raises the speed leading to a 40 positional difference thus finding the minimum value required to move the actuator.
+    */
+    void determineMinimumSpeed();
+    
+    /*
+    * Determines the min or max potentiometer value according to the orientation / direction of the actuator.
+    */
+    void findPositionalBoundsFirst();
+    /*
+    * Determines the min or max potentiometer value according to the orientation / direction of the actuator.
+    */
+    void findPositionalBoundsSecond();
+
     Sensor potentiometerSensor = Sensor::Sensor();
     SensorCurrent currentSensor = SensorCurrent::SensorCurrent();
 

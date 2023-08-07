@@ -37,8 +37,6 @@ void LinearActuator::setTarget(int target){
 void LinearActuator::setup(Context &_context){
   context = &_context;
   move(0);
-  pinMode(pinA, OUTPUT);
-  pinMode(pinB, OUTPUT);
   potentiometerSensor.setup(pinC);
   currentSensor.setup(pinD);
 }
@@ -49,15 +47,11 @@ void LinearActuator::changeState(int _state){
 }
 
 void LinearActuator::apply(){
-
   potentiometer = potentiometerSensor.apply();
-
   timeSinceStateChange = millis() - stateChanged;
-
   // Check if the potentiometerSensor has reached its physical limits 
   if(potentiometer < 10 || potentiometer > 1010)
     state = 11;
-
   switch(state){
     case 0: 
       // standby uninitialized
@@ -66,118 +60,38 @@ void LinearActuator::apply(){
         potentiometerStarting = 0;
       break;
 
-    case 1: // find bounds A potentiometer  
-      if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
-        move(-direction * initialSpeed);
-      }else{
-
-        if(direction == 1)
-          minPot = potentiometerSensor.value + direction * 5;
-        else
-          maxPot = potentiometerSensor.value - direction * 5;
-
-        changeState(state + 1);
-        move(direction * initialSpeed);
-      }
+    case 1: // find bounds A potentiometer
+      findPositionalBoundsFirst();
       break;
-
-    case 2: // find bounds B potentiometer  
-      if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
-      }else{
-
-        if(direction == 1)
-          maxPot = potentiometerSensor.value - direction * 10;
-        else
-          minPot = potentiometerSensor.value + direction * 10;
-
-        changeState(state + 1);
-        targetPotentiometer = potentiometer;
-      }
+    case 2: // find bounds B potentiometer
+      findPositionalBoundsSecond();
     break;
-
-    case 3: // Find minimum speed leading to 40 value difference
-       if(abs(targetPotentiometer - potentiometer) < 30){
-
-         minSpeed = minSpeed + 5;
-         // Protection no movement detected at sufficient speed
-         if(minSpeed > 200){
-            changeState(10);            
-            move(0);
-            break;
-         }
-         move(-direction * minSpeed);
-       }else{
-           changeState(state + 1);
-           throttle(0);
-           //position(direction>0?0:100);
-           setPosition(50);
-       }
+    case 3:
+      determineMinimumSpeed();       
     break;
-
     case 4: //if target has been reached
-      if(abs(targetPotentiometer - potentiometer) < 11){
-        normDistance = 0;
-        throttle(0);
-      }else{
-          changeState(state + 1);       
-      }
+      maintainPosition();
     break;
-
     case 5: // go to target
-      diff = targetPotentiometer - potentiometer;
-      int absdiff = abs(diff);
-
-      normDistance = ((float)absdiff/(float)(maxPot-minPot)) * 100.0;
-      
-      if( absdiff >= 11 ){        
-
-        long timeDistance = millis() - stateChanged;
-        double weight = 1.0;
-
-        // Fade in first 2000 ms
-        if(timeDistance < 2000)
-          weight = timeDistance / 3000.0;
-        
-        // initial speed based on distance hard limited to 10-90
-        int speed = constrain(absdiff, 10, 100);
-
-        // reduce weight when surpassing half way
-        if(absdiff < 80)
-          weight = weight / 2;
-
-        // Expand weight as time pass
-        if(timeDistance > 3000)
-          weight = weight + (double)(timeDistance-3000) / 15000.0;
-
-        weight = constrain(weight, 0.1, 3);
-
-        speed = (double)speed * weight;
-        
-        if(diff > 0)
-          throttle(speed);
-        else
-          throttle(-speed);
-
-      }else{
-        throttle(0);
-        changeState(state - 1);     
-      }
-
+      seekPosition();
       break;
-
     case 10:
       //Serial.print("Error : Not moving on sufficient throttle");
       throttle(0);
       break;
-
     case 11:
       //Serial.print("Error : Reached potentiometerSensor limits");
       throttle(0);
       break;
   }
+
+  if(state < 4){
+    normPosition = 0;
+    normDistance = 0;
+    normSpeed = 0;
+  }
   applyMove();
-  current = currentSensor.apply();
-  current = currentSensor.apply();
+  current = currentSensor.apply();  
 } 
 
 
@@ -208,7 +122,6 @@ void LinearActuator::throttle(int speed){
   int mappedSpeed = 0;
   if(abs(speed) > 1)
     mappedSpeed = map(abs(speed), 0, 100, minSpeed-20, maxSpeed) * (speed > 0 ? 1: -1);
-
   move( mappedSpeed );  
 }
 
@@ -219,27 +132,122 @@ void LinearActuator::setPosition(int pos){
   potentiometerStarting = potentiometer;
 }
 
+void LinearActuator::seekPosition(){
+  diff = targetPotentiometer - potentiometer;
+  int absdiff = abs(diff);
+  normDistance = ((float)absdiff/(float)(maxPot-minPot)) * 100.0;
+  
+  if( absdiff >= 11 ){        
+    long timeDistance = millis() - stateChanged;
+    double weight = 1.0;
+
+    // Fade in first 2000 ms
+    if(timeDistance < 2000)
+      weight = timeDistance / 3000.0;
+    
+    // initial speed based on distance hard limited to 10-90
+    int speed = constrain(absdiff, 10, 100);
+
+    // reduce weight when surpassing half way
+    if(absdiff < 80)
+      weight = weight / 2;
+
+    // Expand weight as time pass
+    if(timeDistance > 3000)
+      weight = weight + (double)(timeDistance-3000) / 15000.0;
+
+    weight = constrain(weight, 0.1, 3);
+
+    speed = (double)speed * weight;
+    
+    if(diff > 0)
+      throttle(speed);
+    else
+      throttle(-speed);
+
+  }else{
+    throttle(0);
+    changeState(state - 1);     
+  }
+}
+
+void LinearActuator::maintainPosition(){
+  if(abs(targetPotentiometer - potentiometer) < 11){
+    normDistance = 0;
+    throttle(0);
+  }else{
+    changeState(state + 1);       
+  }
+}
+
+void LinearActuator::determineMinimumSpeed(){
+  // Find minimum speed leading to 40 value difference
+   if(abs(targetPotentiometer - potentiometer) < 30){
+     minSpeed = minSpeed + 5;
+     // Protection no movement detected at sufficient speed
+     if(minSpeed > 200){
+        changeState(10);            
+        move(0);
+        return;
+     }
+     move(-direction * minSpeed);
+   }else{
+       changeState(state + 1);
+       throttle(0);
+       //position(direction>0?0:100);
+       setPosition(50);
+   }
+}
+
+void LinearActuator::findPositionalBoundsFirst(){
+  if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
+    move(-direction * initialSpeed);
+  }else{
+    if(direction == 1)
+      minPot = potentiometerSensor.value + direction * 5;
+    else
+      maxPot = potentiometerSensor.value - direction * 5;
+
+    changeState(state + 1);
+    move(direction * initialSpeed);
+  }
+}
+
+void LinearActuator::findPositionalBoundsSecond(){
+  if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
+  }else{
+    if(direction == 1)
+      maxPot = potentiometerSensor.value - direction * 10;
+    else
+      minPot = potentiometerSensor.value + direction * 10;
+
+    changeState(state + 1);
+    targetPotentiometer = potentiometer;
+  }
+}
+
 void LinearActuator::print(){
-  Serial.print(F("<LinearActuator:")); 
+  Serial.print(F("<LinearActuator")); 
   Serial.print(identifier);
   Serial.print(F(";"));
   Serial.print(state);  
 
-  if(state < 4){
-
-    Serial.print(F(";"));
-    Serial.print(currentSensor.current);
-
-  }else{
-    Serial.print(F(";"));
-    Serial.print(normPosition);
-    Serial.print(F(";"));
-    Serial.print(normDistance);
-    Serial.print(F(";"));
-    Serial.print(normSpeed);
-    Serial.print(F(";"));
-    Serial.print(currentSensor.current);    
-  }
-
+  Serial.print(F(";"));
+  Serial.print(normPosition);
+  Serial.print(F(";"));
+  Serial.print(normDistance);
+  Serial.print(F(";"));
+  Serial.print(normSpeed);
+  Serial.print(F(";"));
+  Serial.print(minSpeed);
+  Serial.print(F(";"));
+  Serial.print(currentSensor.current); 
+  Serial.print(F(";"));
+  Serial.print(currentSensor.maxCurrent);
+  Serial.print(F(";"));
+  Serial.print(minPot);
+  Serial.print(F(";"));
+  Serial.print(maxPot);
   Serial.print(F(">"));
+  
 }

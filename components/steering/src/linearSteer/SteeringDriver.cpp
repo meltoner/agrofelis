@@ -50,13 +50,15 @@ void SteeringDriver::apply(){
   linearLeft.apply();
   linearRight.apply();
 
+  status = (linearLeft.state + linearRight.state)/2;
+
   // should measure the speed
   // should know how distant is each each actuator based on Ackerman
 }
  
 
 void SteeringDriver::print(){
-  Serial.print(F("<SteeringDriver:1"));  
+  Serial.print(F("<SteeringDriver1"));  
   Serial.print(F(";"));
   Serial.print(status);
 

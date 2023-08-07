@@ -22,6 +22,8 @@ class SensorCurrent : public Sensor
     int apply();
 
     float current = 0;
+    float maxCurrent = 0;
+    
   private:
     float negativeOffset = 0;
 };

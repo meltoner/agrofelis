@@ -16,5 +16,10 @@ int SensorCurrent::apply(){
   if(current < 0.3)
     current = 0;
 
+  if(maxCurrent < current)
+    maxCurrent = current;
+  else
+    maxCurrent *= 0.98;
+  
   return value;
 }

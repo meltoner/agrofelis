@@ -36,10 +36,10 @@ class SteeringDriver{
 
     int status = 0;
 
-    // Left wheel // IN1 | IN2 | potentiometer | current | direction | offset
-    LinearActuator linearLeft = LinearActuator::LinearActuator(1, 12, 13, A0, A1,  1,  12);
+    // Left wheel // identifier | IN1 1 | IN2 8 | potentiometer 13 | current A0 | direction A1 | direction | offset
+    LinearActuator linearLeft = LinearActuator::LinearActuator(1, 12, 8, A0, A1,  1,  12);
 
-    // Right wheel // IN1 | IN2 | potentiometer | current | direction | offset
+    // Right wheel // identifier | IN1 2 | IN2 10 | potentiometer 11 | current A2 | direction | offset
     LinearActuator linearRight = LinearActuator::LinearActuator(2, 10, 11, A2, A3, -1, -5);
 
   private:
