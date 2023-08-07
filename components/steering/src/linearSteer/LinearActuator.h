@@ -121,20 +121,41 @@ class LinearActuator{
     */
     void findPositionalBoundsSecond();
 
+    /*
+    * Sets the minimum maximum potentiometer values as well as the minimum speed to achieve movement.
+    * These settings are auto-derived using the initialization sequence, but can also be preset using this function.
+    */
+    void setBoundSettings(int _minPot, int _maxPot, int _minSpeed);
+    
+    /*
+    * The function calculates the difference between the target potentiometer and the actual.
+    * It moreover calculates the absolute difference and its projection to 0-100 based on the min and max potentiometer values.
+    */
+    void computeDistance();
+
     Sensor potentiometerSensor = Sensor::Sensor();
     SensorCurrent currentSensor = SensorCurrent::SensorCurrent();
 
-    // Writable and readable    
     int state = 0;    
     int normPosition = 0;
+    
+    float accumulatedSpeed=0;
+    float completion = 0;
 
-    // readable only
     int normSpeed = 0;
     int normDistance = 0;
     int offset = 0;
     
-    int potentiometer = 0;
+    int potentiometer, previousPotentiometer, potentiometerSpeed, rawSpeed  = 0;    
+    float boostSpeed = 1;
 
+    int minPot = 0;
+    int maxPot = 0;
+
+    int minSpeed = 0;
+    int maxSpeed = 255;
+
+    unsigned long timeSinceStateChange = 0;
   private:
     int identifier;
     int pinA;
@@ -143,23 +164,16 @@ class LinearActuator{
     int pinD;
     int direction;
     Context *context;
-
+    
+    double gate = 1.0;
     unsigned long stateChanged = millis();
-    unsigned long timeSinceStateChange = 0;
 
     int current = 0;
     int targetPotentiometer = 512;
     int potentiometerStarting = 512;
-    int diff = 0; 
- 
-    int minPot = 0;
-    int maxPot = 0;
-
-    int minSpeed = 0;
-    int maxSpeed = 255;
+    int diff,absdiff = 0;
 
     int initialSpeed = 150;
-    int appliedSpeedPrevious = 0;
     int appliedSpeed = 0;
 
 };

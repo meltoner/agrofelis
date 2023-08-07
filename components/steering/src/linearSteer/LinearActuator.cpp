@@ -30,8 +30,15 @@ LinearActuator::LinearActuator(int _identifier, int _pinA, int _pinB, int _pinC,
   offset = _offset;
 }
 
+void LinearActuator::setBoundSettings(int _minPot, int _maxPot, int _minSpeed){
+  minPot = _minPot;
+  maxPot = _maxPot;
+  minSpeed = _minSpeed;
+}
+
 void LinearActuator::setTarget(int target){
   targetPotentiometer = target;
+  stateChanged = millis();
 } 
 
 void LinearActuator::setup(Context &_context){
@@ -44,35 +51,44 @@ void LinearActuator::setup(Context &_context){
 void LinearActuator::changeState(int _state){
   state = _state;
   stateChanged = millis();
+  
+  if(state == 3){
+    targetPotentiometer = potentiometer;
+    minSpeed = 0;
+  }
 }
 
 void LinearActuator::apply(){
+
   potentiometer = potentiometerSensor.apply();
   timeSinceStateChange = millis() - stateChanged;
+  potentiometerSpeed = potentiometer - previousPotentiometer;
+  previousPotentiometer = potentiometer;
+
   // Check if the potentiometerSensor has reached its physical limits 
   if(potentiometer < 10 || potentiometer > 1010)
     state = 11;
   switch(state){
     case 0: 
       // standby uninitialized
-        potentiometer = 0;
-        targetPotentiometer = 512;
-        potentiometerStarting = 0;
+      potentiometer = 0;
+      targetPotentiometer = 512;
+      potentiometerStarting = 0;
+      appliedSpeed = 0;
       break;
-
-    case 1: // find bounds A potentiometer
+    case 1:      
       findPositionalBoundsFirst();
       break;
-    case 2: // find bounds B potentiometer
+    case 2:
       findPositionalBoundsSecond();
     break;
-    case 3:
+    case 3:      
       determineMinimumSpeed();       
     break;
-    case 4: //if target has been reached
+    case 4:
       maintainPosition();
     break;
-    case 5: // go to target
+    case 5:
       seekPosition();
       break;
     case 10:
@@ -95,76 +111,62 @@ void LinearActuator::apply(){
 } 
 
 
+// Based on the desired speed, applies incremental changes to reach it.
+void LinearActuator::applyMove(){
+  if(appliedSpeed == 0)
+    normSpeed = 0;
+  else
+    normSpeed = map(abs(appliedSpeed), minSpeed, maxSpeed, 0, 100);    
+  
+  if(appliedSpeed >= 0){
+    digitalWrite(pinA, LOW);
+    analogWrite(pinB, abs(appliedSpeed));
+  }else{
+    digitalWrite(pinB, LOW);
+    analogWrite(pinA, abs(appliedSpeed));
+  }  
+}
+
 void LinearActuator::move(int speed){
   appliedSpeed = constrain(speed, -maxSpeed, maxSpeed);
 }
 
-// Based on the desired speed, applies incremental changes to reach it.
-void LinearActuator::applyMove(){
-
-  if(appliedSpeed == 0)
-    appliedSpeedPrevious = 0;
-  else
-    appliedSpeedPrevious = ((float)appliedSpeed  * 0.5 + (float)appliedSpeedPrevious * 0.5) ;
-
-  normSpeed = map(abs(appliedSpeedPrevious), 0, maxSpeed, 0, 100);
-
-  if(appliedSpeedPrevious >= 0){
-    digitalWrite(pinA, LOW);
-    analogWrite(pinB, abs(appliedSpeedPrevious));
-  }else{
-    digitalWrite(pinB, LOW);
-    analogWrite(pinA, abs(appliedSpeedPrevious));
-  }  
-}
-
-void LinearActuator::throttle(int speed){  
-  int mappedSpeed = 0;
+void LinearActuator::throttle(int speed){    
   if(abs(speed) > 1)
-    mappedSpeed = map(abs(speed), 0, 100, minSpeed-20, maxSpeed) * (speed > 0 ? 1: -1);
-  move( mappedSpeed );  
+    move(map(abs(speed), 0, 100, minSpeed, maxSpeed) * (speed > 0 ? 1: -1));
+  else
+  move( 0 );  
 }
 
 void LinearActuator::setPosition(int pos){
-  normPosition = pos;  
+  normPosition = pos;
   int offseted = constrain(pos + offset, 0, 100);
   targetPotentiometer = map(offseted, 0, 100, minPot, maxPot );
-  potentiometerStarting = potentiometer;
+  potentiometerStarting = potentiometer;  
+  accumulatedSpeed = 0;
+}
+
+void LinearActuator::computeDistance(){
+  diff = targetPotentiometer - potentiometer;
+  normDistance = ((float)abs(diff) / (float)(maxPot - minPot)) * 100.0;  
+  completion = 1.0 - (abs( (float)(targetPotentiometer - potentiometer - potentiometerSpeed) / (float)(targetPotentiometer - potentiometerStarting)) );
+  if(completion < 0) completion = 1;
 }
 
 void LinearActuator::seekPosition(){
-  diff = targetPotentiometer - potentiometer;
-  int absdiff = abs(diff);
-  normDistance = ((float)absdiff/(float)(maxPot-minPot)) * 100.0;
-  
-  if( absdiff >= 11 ){        
-    long timeDistance = millis() - stateChanged;
-    double weight = 1.0;
+  computeDistance();  
+  accumulatedSpeed += boostSpeed;
 
-    // Fade in first 2000 ms
-    if(timeDistance < 2000)
-      weight = timeDistance / 3000.0;
+  if( abs(diff) >= 11 ){        
+    gate = (timeSinceStateChange < 500) ? (timeSinceStateChange / 500):1;
+
+    if(completion > 0.5 && potentiometerSpeed > 1)
+      gate = 1 - completion;
     
-    // initial speed based on distance hard limited to 10-90
-    int speed = constrain(absdiff, 10, 100);
-
-    // reduce weight when surpassing half way
-    if(absdiff < 80)
-      weight = weight / 2;
-
-    // Expand weight as time pass
-    if(timeDistance > 3000)
-      weight = weight + (double)(timeDistance-3000) / 15000.0;
-
-    weight = constrain(weight, 0.1, 3);
-
-    speed = (double)speed * weight;
+    int speed = constrain(accumulatedSpeed, 0, 70);
+    speed = speed * gate;
     
-    if(diff > 0)
-      throttle(speed);
-    else
-      throttle(-speed);
-
+    throttle(speed * (diff > 0?1:-1));    
   }else{
     throttle(0);
     changeState(state - 1);     
@@ -180,26 +182,19 @@ void LinearActuator::maintainPosition(){
   }
 }
 
-void LinearActuator::determineMinimumSpeed(){
-  // Find minimum speed leading to 40 value difference
-   if(abs(targetPotentiometer - potentiometer) < 30){
-     minSpeed = minSpeed + 5;
-     // Protection no movement detected at sufficient speed
-     if(minSpeed > 200){
-        changeState(10);            
-        move(0);
-        return;
-     }
-     move(-direction * minSpeed);
-   }else{
-       changeState(state + 1);
-       throttle(0);
-       //position(direction>0?0:100);
-       setPosition(50);
-   }
+void LinearActuator::findPositionalBoundsFirst(){
+  if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
+    move(direction * initialSpeed);
+  }else{
+    if(direction == 1)
+      maxPot = potentiometerSensor.value - direction * 10;
+    else
+      minPot = potentiometerSensor.value + direction * 10;
+    changeState(state + 1);
+  }
 }
 
-void LinearActuator::findPositionalBoundsFirst(){
+void LinearActuator::findPositionalBoundsSecond(){
   if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
     move(-direction * initialSpeed);
   }else{
@@ -207,23 +202,24 @@ void LinearActuator::findPositionalBoundsFirst(){
       minPot = potentiometerSensor.value + direction * 5;
     else
       maxPot = potentiometerSensor.value - direction * 5;
-
-    changeState(state + 1);
-    move(direction * initialSpeed);
+    changeState(state + 1);    
   }
 }
 
-void LinearActuator::findPositionalBoundsSecond(){
-  if(timeSinceStateChange < 3000 || potentiometerSensor.moving == 1){
-  }else{
-    if(direction == 1)
-      maxPot = potentiometerSensor.value - direction * 10;
-    else
-      minPot = potentiometerSensor.value + direction * 10;
-
-    changeState(state + 1);
-    targetPotentiometer = potentiometer;
-  }
+void LinearActuator::determineMinimumSpeed(){  
+   if(abs(targetPotentiometer - potentiometer) < 30){
+     minSpeed = minSpeed + 5;  
+     if(minSpeed > 200){        
+        changeState(10);// no movement detected            
+        move(0);
+        return;
+     }
+     move(direction * minSpeed);
+   }else{
+       changeState(state + 1);
+       throttle(0);       
+       setPosition(50);
+   }
 }
 
 void LinearActuator::print(){
@@ -234,13 +230,19 @@ void LinearActuator::print(){
 
   Serial.print(F(";"));
   Serial.print(normPosition);
+
   Serial.print(F(";"));
   Serial.print(normDistance);
+  Serial.print(F(";"));  
+  Serial.print(completion);
+
   Serial.print(F(";"));
   Serial.print(normSpeed);
   Serial.print(F(";"));
-  Serial.print(minSpeed);
+  Serial.print(potentiometerSpeed);
   Serial.print(F(";"));
+
+  
   Serial.print(currentSensor.current); 
   Serial.print(F(";"));
   Serial.print(currentSensor.maxCurrent);
@@ -248,6 +250,9 @@ void LinearActuator::print(){
   Serial.print(minPot);
   Serial.print(F(";"));
   Serial.print(maxPot);
+  Serial.print(F(";"));  
+  Serial.print(minSpeed);
+    
   Serial.print(F(">"));
   
 }

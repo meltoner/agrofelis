@@ -46,7 +46,7 @@ class SteeringDriver{
     // requested synced position to apply
     int syncedPosition = 0;
     // Position of left and right module based on the ackerman geometry
-    float leftPosistion = 0;
+    float leftPosition = 0;
     float rightPosition = 0;
     float distanceRatio = 0;
 
