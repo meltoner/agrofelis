@@ -58,7 +58,7 @@ The Motors Hub structure sub-module, is implemented using of the following parts
 The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
 
 - [structural/box_wood_layers/laser_cut](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_wood_layers/laser_cut)
-- structural/box_fins/3d_print
+- [structural/box_fins/3d_print](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_fins/3d_print)
 
 More specifically, the laser cut folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The 3d print folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
 
@@ -136,30 +136,30 @@ After the functionality of the board has been verified, the copper side of the P
 
 The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
 
-- pcb/PCB.CNC.controller
+- [pcb/PCB.CNC.controller](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller)
 
 
 More specifically, the folder documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
-- PCB.CNC.controller/readme.md
+- [PCB.CNC.controller/readme.md](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/readme.md)
 
 The PCB board is developed in two phases. The first phase handles the drilling aspect using a drill bit, specifically for this purpose. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
 Within the aforementioned folder, the following respective files encode the desired movements to be perform.
 
-- 1.DRILL.svg
-- 2.CURVE.svg
+- [1.DRILL.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/1.DRILL.svg)
+- [2.CURVE.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/2.CURVE.svg)
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
 Consequently, using the following JavaScript applications the NC files are enhanced to incorporate Z axis movements based on the continuity and the coordinates of the schematics and the scope of the instructions (drilling or routing).
 
-- LineRoutesToHoles.html
-- LineRoutesToWire.html
+- [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/LineRoutesToHoles.html)
+- [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/LineRoutesToWire.html)
  
 The end instructions to reproduce the board are the :
 
-- 1.DRILL.ENHANCED.nc
-- 2.CURVE.ENHANCED.nc
+- [1.DRILL.ENHANCED.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/1.DRILL.ENHANCED.nc)
+- [2.CURVE.ENHANCED.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/2.CURVE.ENHANCED.nc)
 
 The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
@@ -186,7 +186,7 @@ The PCB is illustrated by the following figure.
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper, creating the end routes between connected points in the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 
-The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
+The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vevor.com/wood-engraving-machine-c_11142/3018-pro-cnc-router-3-axis-w-offline-controller-laser-engraver-machine-10000rpm-p_010521182027)
 
 ![A low cost CNC mounted with a drill, curving an one side copper plated PCB fabricating the Motor hub power module](_figures/pcb-power_cnc.jpg)
 
@@ -246,30 +246,30 @@ After the functionality of the board was verified, the copper side of the PCB wa
 
 The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
 
-- pcb/PCB.CNC.power
+- [pcb/PCB.CNC.power](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power)
 
 
 More specifically. the folder documents the procedures for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
-- PCB.CNC.power/readme.md
+- [PCB.CNC.power/readme.md](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/readme.md)
 
 The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit appropriate for drilling. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
 Within the folder, the following respective files encode the related movements to be followed by the CNC.
 
-- 1.drill.svg
-- 2.curve.svg
+- [1.drill.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/1.drill.svg)
+- [2.curve.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/2.curve.svg)
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
 Consequently, using the following JavaScript applications developed, the NC files are enhanced to incorporate Z axis movements based on the continuity and coordinates of the schematics and the scope of the instructions (drilling or routing).
 
-- LineRoutesToHoles.html
-- LineRoutesToWire.html
+- [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/LineRoutesToHoles.html)
+- [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/LineRoutesToWire.html)
  
 The end instructions to reproduce the board, are the :
 
-- 1.drill.normalised.enhanced.nc
-- 2.curve.normalised.enhanced.nc
+- [1.drill.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/1.drill.normalised.enhanced.nc)
+- [2.curve.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/2.curve.normalised.enhanced.nc)
 
 The first pattern indicating the paths visiting each hole to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
@@ -330,30 +330,30 @@ After the functionality of the board was verified, the copper side of the PCB wa
 
 The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill, are located within the following folder :
 
-- pcb/PCB.CNC.adac
+- [pcb/PCB.CNC.adac](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac)
 
 
 More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
-- PCB.CNC.adac/readme.md
+- [PCB.CNC.adac/readme.md](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/readme.md)
 
 The PCB board is developed in two phases. The first phase handles the drilling, using a drill bit appropriate for drilling. In the second phase, the drill bit is changed into one appropriate for curving the copper of the PCB.
 
 Within the folder, the following respective files encode the desired movements to be action-ed.
 
-- 1_DRILL.svg
-- 2_CURVE.svg
+- [1_DRILL.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/1_DRILL.svg)
+- [2_CURVE.svg](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/2_CURVE.svg)
 
 The SVGs are converted into CNC instructions using the open source [laserGRBL](https://lasergrbl.com/) software.
 Consequently, using the following JavaScript applications the NC files are enhanced to incorporate Z axis movements based on the continuity, the coordinates of the schematics and the scope of the instructions, as drilling or routing.
 
-- LineRoutesToHoles.html
-- LineRoutesToWire.html
+- [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/LineRoutesToHoles.html)
+- [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/LineRoutesToWire.html)
  
 The end instructions to reproduce the board, are the :
 
-- 1_DRILL.normalised.enhanced.nc
-- 2_CURVE.normalised.enhanced.nc
+- [1_DRILL.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/1_DRILL.normalised.enhanced.nc)
+- [2_CURVE.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/2_CURVE.normalised.enhanced.nc)
 
 The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
