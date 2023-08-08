@@ -25,20 +25,19 @@ The purpose here is to offer a technology accessible to non highly technical use
 
 ## The Potential
 
-The technologies that could be incorporated on an Agricultural Vehicle could include implements such as
+The technologies that could be incorporated on an Agricultural Vehicle could include implements such as :
 - Grass Cutter/lawn mower a frequent and necessary application in Orchards
 - Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
 - Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
 - Fertilizer Casting, a copious job that must be done in both orchards and vegetables
 - Sensor Suite for Plant disease diagnosis
 - Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
-- Tethered Drone Base for situational awareness (see elistair)
-- Power Hub, fruit picking for trees (see Tevel as an example)
+- Power Hub, fruit picking for trees (see Tevel)
  
-The technologies that could be incorporated on an Public Safety Vehicle could include applications like
+The technologies that could be incorporated on an Public Safety Vehicle could include applications like :
 - Fire fighting Gear Carrier
 - Standoff Water Cannon Base
-- Tethered Drone Base & Power Hub, for Surveillance and Communications in large area fires
+- Tethered Drone Base for situational awareness (see Elistair)
 - Sensor Suite for patrolling and surveillance
 
 The potential of having the ability to produce an open sourced Base Robotic Vehicle for a variety of applications and tools offers significant versatility.
