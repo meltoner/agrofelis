@@ -45,7 +45,7 @@ The bottom and top part and how these fit together using the motor drivers as bu
 
 ![A front view focusing on the 3d printed air fins guiding the airflow on both sides of the motor drivers](_figures/structure_fins_2.jpg)
 
-The Motors Hub structure sub-module, is implemented using of the following parts in detail :
+The Motors Hub structure sub-module, is implemented using of the following parts in detail:
 
 1. Five 4 mm ply-wood layers cut using a laser cutter into 204.83 mm X 119.67 mm parts. The layers 1-3 form the bottom part and the remaining the top part. 
 2. Four 3d printed elements guiding the air flow across the sides of the analog motor drivers as well providing extra support to the top layer.
@@ -55,7 +55,7 @@ The Motors Hub structure sub-module, is implemented using of the following parts
 6. Eight Standoff, Bolts and screws 2mm to mount the Controller and ADAC sub-modules, into the wooden top layer.
 7. Two 2.8mm X 16mm screws, securing the top layer with the outer fins.
 
-The schematics and source files to cut and 3d print the parts 1. and 2. are located within the following folders respectively.
+The schematics and source files to cut and 3d print the *parts 1* and *2* are located within the following folders respectively.
 
 - [structural/box_wood_layers/laser_cut](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_wood_layers/laser_cut)
 - [structural/box_fins/3d_print](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_fins/3d_print)
@@ -65,7 +65,7 @@ More specifically, the laser cut folder documents the procedure for exporting an
 
 ### Electronic sub-modules
 
-The electronics sub-modules of the Agrofelis Motors hub driver, sum into four PCB sub-modules namely the :
+The electronics sub-modules of the Agrofelis Motors hub driver, sum into four PCB sub-modules namely the:
 
 1. Motors hub controller module.
 2. Motors hub power module (A).
@@ -88,7 +88,7 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-The Motors Hub controller is composed of the following elements :
+The Motors Hub controller is composed of the following elements:
  
 1. A PCB board.
 2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
@@ -110,7 +110,7 @@ The Motors Hub controller is composed of the following elements :
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
-Remarks :
+Remarks:
 
 - One pin is trimmed off the twenty pin female headers, to match each side of the 19 pins of the ESP32.
 - The temperature sensor male headers, are removed and connected with the 3-wire ribbon cable, to lower their height profile.
@@ -134,7 +134,7 @@ After the functionality of the board has been verified, the copper side of the P
 ![The copper side of the PCB, shielded using hot glue](_figures/pcb-controller_hotglue.jpg)
 
 
-The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
+The schematics and source files to manufacture *part 1* using a regular CNC equipped with a drill, are located within the following folder:
 
 - [pcb/PCB.CNC.controller](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller)
 
@@ -156,7 +156,7 @@ Consequently, using the following JavaScript applications the NC files are enhan
 - [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/LineRoutesToHoles.html)
 - [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/LineRoutesToWire.html)
  
-The end instructions to reproduce the board are the :
+The end instructions to reproduce the board are the:
 
 - [1.DRILL.ENHANCED.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/1.DRILL.ENHANCED.nc)
 - [2.CURVE.ENHANCED.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.controller/2.CURVE.ENHANCED.nc)
@@ -168,7 +168,7 @@ The first pattern indicating the paths visiting each hole to make and the second
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover four pcb, is stored in the following folder.
 
--  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf
+- [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf)
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-controller.png)
 
@@ -191,7 +191,7 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 ![A low cost CNC mounted with a drill, curving an one side copper plated PCB fabricating the Motor hub power module](_figures/pcb-power_cnc.jpg)
 
 
-The Motors Hub Power Driver is composed of the following elements :
+The Motors Hub Power Driver is composed of the following elements:
 
 1. A PCB board, with its schematics located within PCB.CNC.power/ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -209,7 +209,7 @@ The Motors Hub Power Driver is composed of the following elements :
 
 This sub-module is used twice, within the Motors hub driver module.
 
-Remarks :
+Remarks:
 
 - Two pins of the 3v relays are trimmed as illustrated in the schematics, interfacing with the PCB with only the utilised pins.
 - The ACS712 20 amp current sensor pins/connectors are de-soldered and pins are soldered from the bottom side of the sensor's PCB, interfacing with the PCB of the module.
@@ -244,7 +244,7 @@ The assembled module with its counterpart, are captured by the following photos.
 After the functionality of the board was verified, the copper side of the PCB was shielded using hot glue to prevent corrosion and improve its longevity.
 
 
-The schematics and source files to manufacture part 1. using a regular CNC equipped with a drill, are located within the following folder :
+The schematics and source files to manufacture *part 1* using a regular CNC equipped with a drill, are located within the following folder:
 
 - [pcb/PCB.CNC.power](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power)
 
@@ -266,7 +266,7 @@ Consequently, using the following JavaScript applications developed, the NC file
 - [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/LineRoutesToHoles.html)
 - [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/LineRoutesToWire.html)
  
-The end instructions to reproduce the board, are the :
+The end instructions to reproduce the board, are the:
 
 - [1.drill.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/1.drill.normalised.enhanced.nc)
 - [2.curve.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power/2.curve.normalised.enhanced.nc)
@@ -276,9 +276,9 @@ The first pattern indicating the paths visiting each hole to make and the second
 ![The PCB’s drilling and curving patterns](_figures/pcb-power_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcbs, is stored in the following folder :
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcbs, is stored in the following folder:
 
--  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power.pdf
+- [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf)
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
 
@@ -296,7 +296,7 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-The Motors Hub controller is composed of the following components :
+The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within PCB.CNC.adac/ folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -308,7 +308,7 @@ The Motors Hub controller is composed of the following components :
 8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
 9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 
-Remarks :
+Remarks:
 
 - The first and second channels of the MPC3004 ADAC are connected to the current sensors of the power module.
 - The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected with between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with their ground,
@@ -328,7 +328,7 @@ The module interfaces with the controller module via the SPI interface, as depic
 
 After the functionality of the board was verified, the copper side of the PCB was shielded using hot glue to prevent corrosion and improve its hardness.
 
-The schematics and source files to manufacture parts 1. using a regular CNC equipped with a drill, are located within the following folder :
+The schematics and source files to manufacture *part 1* using a regular CNC equipped with a drill, are located within the following folder:
 
 - [pcb/PCB.CNC.adac](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac)
 
@@ -350,7 +350,7 @@ Consequently, using the following JavaScript applications the NC files are enhan
 - [LineRoutesToHoles.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/LineRoutesToHoles.html)
 - [LineRoutesToWire.html](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/LineRoutesToWire.html)
  
-The end instructions to reproduce the board, are the :
+The end instructions to reproduce the board, are the:
 
 - [1_DRILL.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/1_DRILL.normalised.enhanced.nc)
 - [2_CURVE.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/2_CURVE.normalised.enhanced.nc)
@@ -362,7 +362,7 @@ The first pattern indicating the paths visiting each drill to make and the secon
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight pcbs, is stored in the following folder:
 
--  PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf
+- [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf)
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
