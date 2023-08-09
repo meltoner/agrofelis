@@ -1,10 +1,10 @@
-This folder acomodates the development of a networking server running on docker
-uppon which all modules are connected to brodcast their data and receive their commands.
-The server uses the Serial interface the http and the web sockets interfaces and is able to 
-record, route, and brodcast the combined information to recepients of interst. 
+This folder accommodates the development of a networking server running on docker 
+upon which all modules are connected to broadcast their data and receive their commands. 
+The server uses the Serial interface the HTTP and the web sockets interfaces and is able to 
+record, route, and broadcast the combined information to recipients of interest.
 
 
-consider node js as it apears more fit for the job
+Consider node js, which appears to be more suitable for the job.
 - https://gist.github.com/gabonator/3fae3e455c9d7518af71
 
 - https://snyk.io/blog/choosing-the-best-node-js-docker-image/
@@ -18,7 +18,7 @@ node:16.17.0-bullseye-slim.
 
 
 # obsolete. 
-The server is implemented in the R language and makes uses the following libraries.
+The server is implemented in the R language and makes use of the following libraries.
 
 https://github.com/rstudio/httpuv
 https://www.losant.com/blog/how-to-access-serial-devices-in-docker
