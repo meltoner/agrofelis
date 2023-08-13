@@ -60,7 +60,7 @@ The schematics and source files to cut and 3d print the *parts 1* and *2* are lo
 - [structural/box_wood_layers/laser_cut](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_wood_layers/laser_cut)
 - [structural/box_fins/3d_print](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_fins/3d_print)
 
-More specifically, the laser cut folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The 3d print folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
+More specifically, the *laser cut* folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The *3d print* folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
 
 
 ### Electronic sub-modules
@@ -193,7 +193,7 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 
 The Motors Hub Power Driver is composed of the following elements:
 
-1. A PCB board, with its schematics located within PCB.CNC.power/ folder.
+1. A PCB board, with its schematics located within [PCB.CNC.power/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power) folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
 4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
@@ -298,7 +298,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 
 The Motors Hub controller is composed of the following components:
 
-1. A PCB board, with its schematics located within PCB.CNC.adac/ folder.
+1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
 3. One MCP3008 8-channel 10 bit ADC.
 4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
@@ -368,7 +368,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ### Software 
 
-The software of the module is contained within src folder. The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. The software is elaborated in further detail in a dedicated chapter of the documentation. [add]
+The software of the module is contained within [src folder](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src). The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. The software is elaborated in further detail in a dedicated chapter of the documentation. [add]
 
 ### Power distribution module
 
