@@ -26,7 +26,7 @@ The Motors Hub structure sub-module, is implemented using of the following compo
 3. Wood glue.
 4. A spray paint .
 5. Capton tape to secure the temperature sensors in the top wood layer slot.
-6. Eight Standoff, Bolts and screws 2m to mount the controller and ADAC into the wooden layer.
+6. Eight Standoff, Bolts and screws 2mm to mount the controller and ADAC into the wooden layer.
 7. Two 2.8mm X 16mm screws securing the top layer with the outer fins.
 
 The schematics and source files to cut and 3d print the *parts 1* and *2* are located within the following folders respectively.
