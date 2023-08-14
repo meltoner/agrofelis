@@ -374,6 +374,27 @@ The software of the module is contained within [src folder](https://github.com/m
 
 The module receives power from the Power distribution module, documented in the related chapter of the documentation. [add]
 
+### Indicative Suppliers
+
+In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of crucial supplier information not only showcases the parts acquired and supplier names but also includes product type, IDs and URLs for direct reference, along with pertinent notes where necessary. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
+
+The following table provides an overview of indicative suppliers associated with various parts described in the *motors hub controller module*.
+
+[Add table]
+
+The subsequent table presents indicative suppliers for the necessary components detailed within the *motors hub power module*.
+
+[Add table]
+
+Finally, the ensuing table outlines the constituents comprising the *motors hub ADAC module*.
+
+| Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
+|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
+| PCB board    | PCB board    | [supplier.com](http://www.supplier.com)      | 00-00000000     | [PCB board](http://www.supplier.com/pcp_board)     | -  |
+| Copper board    | Copper board    | [GRobotronics](https://grobotronics.com/)  | 05-00029758    | [Copper board 420x297mm](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | Multiple boards can be cutted from this. | 
+| MCP3008 - 8-Channel 10-Bit ADC  | Microcontroller   | [Hellas Digital](https://www.hellasdigital.gr/)  | 078.0038    | [MCP3008 - 8-Channel 10-Bit ADC With SPI Interface](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | - | 
+
+
 ### Conclusion
 
 The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
