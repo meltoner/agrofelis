@@ -296,7 +296,7 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-<a id="adac_components"></a>The Motors Hub controller is composed of the following components:
+The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -387,11 +387,10 @@ The subsequent table presents indicative suppliers for the necessary components 
 [Add table]
 
 Finally, the ensuing table outlines the constituents comprising the components of the *motors hub ADAC module*.
-Finally, the ensuing table outlines the constituents comprising the [components of the motors hub ADAC module](https://github.com/bj97301/project/blob/main/README.md#adac_components).
 
 | Index | Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
 |---------------|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
-| [#1](#adac_comp1) | PCB board    | PCB board    | [supplier.com](http://www.supplier.com)      | 00-00000000     | [PCB board](http://www.supplier.com/pcp_board)     | -  |
+| #1 | PCB board    | PCB board    | [supplier.com](http://www.supplier.com)      | 00-00000000     | [PCB board](http://www.supplier.com/pcp_board)     | -  |
 | #2 | Copper board    | Copper board    | [GRobotronics](https://grobotronics.com/)  | 05-00029758    | [Copper board 420x297mm](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | Multiple boards can be cutted from this. | 
 | #3 | MCP3008 - 8-Channel 10-Bit ADC  | Microcontroller   | [Hellas Digital](https://www.hellasdigital.gr/)  | 078.0038    | [MCP3008 - 8-Channel 10-Bit ADC With SPI Interface](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | - | 
 
