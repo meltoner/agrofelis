@@ -119,11 +119,11 @@ Various listed elements of the controller, are layout by the following photo.
 
 ![Components composing the Motors hub controller](_figures/pcb-controller_parts.jpg)
 
-Bellow, the module with most of its elements established, is illustrated.
+Below, the module with most of its elements established, is illustrated.
 
 ![Photo of the assembled motors hub controller](_figures/pcb-controller_assemble.jpg)
 
-The temperature sensors as positioned and secured using capton tape in the top part of the structural component, are presented bellow.
+The temperature sensors as positioned and secured using capton tape in the top part of the structural component, are presented below.
 
 ![Closeup of the two temperature sensors located in the laser cut slots of the top body of the structural component.](_figures/pcb-controller_temperature.jpg)
 
@@ -220,7 +220,7 @@ Various elements of the controller are layout by the following photo.
 
 ![A photo of the parts composing the Motors hub driver module](_figures/pcb-powe_parts.jpg)
 
-Bellow, the module and details for establishing its components, are provided.
+Below, the module and details for establishing its components, are provided.
 
 ![Close up of the pins and wire used to mount the 20 amp Relay on the PCB](_figures/pcb-powe_parts_details.jpg)
 
@@ -230,7 +230,7 @@ Bellow, the module and details for establishing its components, are provided.
 ![Close up photo of the current sensor, mounted on the PCB](_figures/pcb-powe_parts_details3.jpg)
 
 
-The bottom/copper side of the assembled module, is captured bellow.
+The bottom/copper side of the assembled module, is captured below.
 
 ![The copper side of the implemented PCB](_figures/pcb-powe_parts_copper.jpg)
 
