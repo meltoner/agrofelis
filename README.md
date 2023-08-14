@@ -66,3 +66,17 @@ Additional sensors employed by the system include GPS, accelerator, compass, tem
 This [Motors hub driver document](components/mobility/motors_hub_driver), presents the details of manufacturing a composite module for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. The rational of each component and its integration with its counterparts is elaborated. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with indicative suppliers to purchase the different parts. 
 
 - [Motors hub driver document](components/mobility/motors_hub_driver)
+
+The electronic sub-modules consist of motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
+The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
+An illustration of the aforementioned sub-modules is presented in the following figureσ.
+
+<p float="left">
+  <img src="components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg" height="300" width="48%" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="components/mobility/motors_hub_driver/_figures/pcb-power_cnc.jpg" height="300" width="48%" />
+ <br><img src="components/mobility/motors_hub_driver/_figures/pcb-adac_assembled.jpg" height="300" width="48%" />
+ &nbsp;&nbsp;&nbsp;
+<img src="components/mobility/motors_hub_driver/_figures/motors_hub_driver_real2.jpg" height="300" width="48%" />
+</p>
+
