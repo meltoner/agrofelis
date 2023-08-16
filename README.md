@@ -7,6 +7,7 @@ Energy dense, multipurpose agile agricultural robot design plans and system sour
 ## The Problem 
 
 The declining demographics in the West, economic disparity, energy cost inflation, supply chain disruptions and climate change have created a dangerous mix of factors for the world and particular for Agriculture and Public Safety.  
+## <a name="anchortextbeta" />The Project
 
 Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker's productivity with an affordable platform that is between a Tractor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
 
@@ -71,7 +72,7 @@ The complete documentation for the motors hub driver module is provided below.
 In a nutshell, the *Motors Hub Driver module* goes over the electronic sub-modules, which include the motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
 The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
 A representative depiction of the progression in crafting the motor hub driver is showcased in the following figures.
-
+[text](#anchortextbeta)
 [Change Image, to image collage]
 ![Views of constructing the motor hub driver](components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg)
 
