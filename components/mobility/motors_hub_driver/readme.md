@@ -190,8 +190,6 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 
 ![A low cost CNC mounted with a drill, curving an one side copper plated PCB fabricating the Motor hub power module](_figures/pcb-power_cnc.jpg)
 
-<a name="anchortexttrial" />The Motors Hub controller is composed of the following components:
-1. <a name="component-a"></a> Component A
 The Motors Hub Power Driver is composed of the following elements:
 
 1. A PCB board, with its schematics located within [PCB.CNC.power/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power) folder.
@@ -298,6 +296,7 @@ The PCB is illustrated by the following figure.
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
 The Motors Hub controller is composed of the following components:
+<a name="motors-hub-adac-components" />The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -388,6 +387,7 @@ The subsequent table presents indicative suppliers for the necessary components 
 [Add table]
 
 Finally, the ensuing table outlines the constituents comprising the components of the *motors hub ADAC module*.
+[motors hub ADAC module](#motors-hub-adac-components)
 
 | Index | Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
 |---------------|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
@@ -399,8 +399,6 @@ Finally, the ensuing table outlines the constituents comprising the components o
 ### Conclusion
 
 The rational of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
-[Link to Component A](#component-a)
-[text](#anchortexttrial)
 
 ![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
 
