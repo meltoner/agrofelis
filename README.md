@@ -70,7 +70,10 @@ The complete documentation for the motors hub driver module is provided below.
 
 In a nutshell, the *Motors Hub Driver module* goes over the electronic sub-modules, which include the motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
 The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
-A representative depiction of the progression in crafting the motors hub driver is showcased in the following figures.
+A representative depiction of the progression in crafting the motor hub driver is showcased in the following figures.
+
+[Change Image, to image collage]
+![Views of constructing the motor hub driver](components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg)
 
 <p float="left">
   <img src="components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg" height="300" width="48%" />
@@ -80,4 +83,3 @@ A representative depiction of the progression in crafting the motors hub driver 
  &nbsp;&nbsp;&nbsp;
 <img src="components/mobility/motors_hub_driver/_figures/motors_hub_driver_real2.jpg" height="300" width="48%" />
 </p>
-
