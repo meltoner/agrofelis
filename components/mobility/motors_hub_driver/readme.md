@@ -88,7 +88,7 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines indicate curves cutting the copper surface, creating the end routes between the connect coordinates in the board. Lines in yellow indicate bridges, connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-The Motors Hub controller is composed of the following elements:
+<a name="motors-hub-controller-components" />The Motors Hub controller is composed of the following elements:
  
 1. A PCB board.
 2. The printed schematic glued on top of the PCB, indicating the location of components and the underlying routes of the PCB.
@@ -190,7 +190,7 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 
 ![A low cost CNC mounted with a drill, curving an one side copper plated PCB fabricating the Motor hub power module](_figures/pcb-power_cnc.jpg)
 
-The Motors Hub Power Driver is composed of the following elements:
+<a name="motors-hub-power-components" />The Motors Hub Power Driver is composed of the following elements:
 
 1. A PCB board, with its schematics located within [PCB.CNC.power/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power) folder.
 2. The PCB top side printed cover located within PCB.PRINT.Stickers.
@@ -295,7 +295,6 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-The Motors Hub controller is composed of the following components:
 <a name="motors-hub-adac-components" />The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
@@ -378,16 +377,15 @@ The module receives power from the Power distribution module, documented in the 
 
 In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of crucial supplier information not only showcases the parts acquired and supplier names but also includes product type, IDs and URLs for direct reference, along with pertinent notes where necessary. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
 
-The following table provides an overview of indicative suppliers associated with various parts described in the *motors hub controller module*.
+The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
 [Add table]
 
-The subsequent table presents indicative suppliers for the necessary components detailed within the *motors hub power module*.
+The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
 
 [Add table]
 
-Finally, the ensuing table outlines the constituents comprising the components of the *motors hub ADAC module*.
-[motors hub ADAC module](#motors-hub-adac-components)
+Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
 | Index | Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
 |---------------|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
