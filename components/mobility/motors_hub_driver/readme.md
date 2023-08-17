@@ -394,7 +394,7 @@ Finally, the ensuing table outlines the constituents comprising the components o
 | #1 | PCB board   | [supplier.com](http://www.supplier.com)  |      00-00000000     |      [PCB board](http://www.supplier.com/pcp_board)     |    1  | 25.00 | 25.00  | -  |
 | #2 | Copper board 420x297mm    | [GRobotronics](https://grobotronics.com/)     |    05-00029758    | [Copper board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | 3 | 15.00 | 45.00  | Multiple boards can be cutted from this. | 
 | #3 | MCP3008 - 8-Channel 10-Bit ADC   | [Hellas Digital](https://www.hellasdigital.gr/)     |     078.0038    | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)  | 2  | 50.00 | 100.00 | - | 
-| **Total** |      |    |     |      |     |     |    |  **175.00**  |   |
+| **Total** |      |    |     |      |     |    |  **175.00**  |   |
 
 </div>
 
