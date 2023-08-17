@@ -411,9 +411,9 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Part   | Sub-Total (€) |
 |---------------------|---------------|
-| Part 1   | 200.00   |
-| Part 2   | 300.00   |
-| Part 3   | 400.00   |
+| Μotors hub controller   | 200.00   |
+| Μotors hub power   | 300.00   |
+| Μotors hub ADAC   | 400.00   |
 |          |          |
 | **Grand Total**   | **900.00**   |
 
