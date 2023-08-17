@@ -103,7 +103,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 11. Two 5-pin female headers used to connect the power modules at the end of ribbon cable.
 12. One 3-wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
-14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
+14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf) schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V.
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
 17. Non mandatory connectors, two 2-pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
@@ -193,7 +193,7 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 <a name="motors-hub-power-components" />The Motors Hub Power Driver is composed of the following elements:
 
 1. A PCB board, with its schematics located within [PCB.CNC.power/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power) folder.
-2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf).
 3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
 4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
 5. An [ACS712] 20 amp current Sensor.
@@ -298,7 +298,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 <a name="motors-hub-adac-components" />The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
-2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf).
 3. One MCP3008 8-channel 10 bit ADC.
 4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
 5. One 7-pin ribbon cable for connecting with the ADAC module.
