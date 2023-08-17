@@ -387,12 +387,37 @@ The subsequent table presents indicative suppliers for the necessary components 
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
-| Index | Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
-|---------------|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
-| #1 | PCB board    | PCB board    | [supplier.com](http://www.supplier.com)      | 00-00000000     | [PCB board](http://www.supplier.com/pcp_board)     | -  |
-| #2 | Copper board    | Copper board    | [GRobotronics](https://grobotronics.com/)  | 05-00029758    | [Copper board 420x297mm](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | Multiple boards can be cutted from this. | 
-| #3 | MCP3008 - 8-Channel 10-Bit ADC  | Microcontroller   | [Hellas Digital](https://www.hellasdigital.gr/)  | 078.0038    | [MCP3008 - 8-Channel 10-Bit ADC With SPI Interface](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | - | 
+<div align="center">
 
+| No.  | Part | Supplier | Product ID     | Product URL         | Quantity        |  Cost/Item (€)  |  Subtotal (€)  | Note |
+|------|---------------|---------------|-----------|------------|-------------|-----------------------------------|---------------------|--------------------|
+| #1 | PCB board   | [supplier.com](http://www.supplier.com)  |      00-00000000     |      [PCB board](http://www.supplier.com/pcp_board)     |    1  | 25.00 | 25.00  | -  |
+| #2 | Copper board 420x297mm    | [GRobotronics](https://grobotronics.com/)     |    05-00029758    | [Copper board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | 3 | 15.00 | 45.00  | Multiple boards can be cutted from this. | 
+| #3 | MCP3008 - 8-Channel 10-Bit ADC   | [Hellas Digital](https://www.hellasdigital.gr/)     |     078.0038    | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)  | 2  | 50.00 | 100.00 | - | 
+| **Total** |      |    |     |      |     |     |    |  **175.00**  |   |
+
+</div>
+
+
+### Cost estimation overview
+
+This section outlines the indicative costs associated with constructing the agricultural robot. These figures are derived from estimated costs per item discussed in the [indicative suppliers section](#indicative-suppliers), encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the cost estimation provided in this section incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
+
+The values provided here are based on information gathered from indicative suppliers and are intended to provide a rough estimate of the project's financial requirements. In this estimation, we have focused solely on the intrinsic value of each component and have excluded supplementary expenses such as transportation, customs clearance, and unforeseen charges. These figures are the initial step in budget assessment and lay the foundation for more detailed financial planning. 
+
+The table showcased below provides a detailed breakdown of components and their indicative costs, enhancing comprehension for informed decision-making and budget formulation. 
+
+<div align="center">
+
+| Construction Part   | Sub-Total (€) |
+|---------------------|---------------|
+| Part 1   | 200.00   |
+| Part 2   | 300.00   |
+| Part 3   | 400.00   |
+|          |          |
+| **Grand Total**   | **900.00**   |
+
+</div>
 
 ### Conclusion
 
