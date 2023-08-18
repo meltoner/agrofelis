@@ -1,6 +1,6 @@
 # agrofelis.os unificator server - 2023
 FROM agrofelis.os:core
-MAINTAINER "Konstantinos Papageorgiou" kp@eworx.gr
+MAINTAINER "Konstantinos Papageorgiou"
 
 RUN apt-get update && apt-get install -y --no-install-recommends\
 	libxt-dev libxml2-dev gdebi-core r-base r-base-dev;\	

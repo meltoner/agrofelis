@@ -21,7 +21,7 @@ class SteeringDriver{
     void apply();
     // Reflects the internal state of the module and its sub modules
     void print();
-    // Set the desired abstract position of the motors to be derived to Ackerman positions
+    // Set the desired position of the steering / linear actuators to be derived to Ackerman positions
     void setPosition(int position);
     // Alters the state of the left module
     void setLeftState(int state);
@@ -48,7 +48,6 @@ class SteeringDriver{
     // Position of left and right module based on the ackerman geometry
     float leftPosition = 0;
     float rightPosition = 0;
-    float distanceRatio = 0;
 
     // The length of the input ouput mappings samples
     const byte mappingSize = 11;

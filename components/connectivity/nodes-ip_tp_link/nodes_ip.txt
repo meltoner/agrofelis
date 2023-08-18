@@ -1,0 +1,16 @@
+MAC Address     IP Address  
+48:B0:2D:2F:25:FA   192.168.0.50
+60:01:94:7D:1C:BF   192.168.0.52
+A0:20:A6:2E:C8:8C   192.168.0.51
+24:0A:C4:1F:CF:50   192.168.0.60
+A0:B7:65:61:53:84   192.168.0.55
+A0:B7:65:61:7D:7C   192.168.0.56
+
+
+
+tplinkWR802N_conf configures as wireless router instead
+the benefit is that the wifi network is stable when no wifi access point is availables
+the sideeffect is that we can't have internet connectivity via an access point and jetson needs to connect via a wifi card instead of ethernet with tplink.
+
+Since mobile on the go is not gurranteed at all times the wireless router is used instead for stability.
+

@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>AGROFELIS - Unificator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" media="screen" href="assets/styles.css"/>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/motorsHubController.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+  </head>
+  <body class="disconnected">
+    <div class="topnav">
+      <image src="assets/agrofelis_logo_white_web.svg" height="36px" alt="AGROFELIS"></img><h1>Agrofelis Unificator</h1>
+      <input type="text" id="ip" value="192.168.0.50:8080">
+
+      <button id="unhide">Reveal All</button>
+    </div>
+    
+    <label>Send message</label><input class="msg"></input><br>
+
+    <div class="content layer2" id="SteeringDriver1">
+      <h2>SteeringDriver</h2>
+      <div>
+        <div class="card">
+          <h3>Status</h3>      
+          <input type="text" class="command horizontal" id="c25"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>      
+          <input type="range" class="command horizontal" id="c26"  min="-100" max="100" value="0">
+        </div>
+      </div>
+    </div>
+<br>
+    <div class="content layer3" id="LinearActuator1">
+      <h2>Linear Actuator1</h2>
+      <div>
+        <div class="card">
+          <h3>Status</h3>      
+          <input type="text" class="command" id="c21"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>      
+          <input type="range" class="command horizontal" id="c23"  min="-0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Distance</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Completion</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Potentiometer Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Min pos</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max pos</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Min speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+ 
+      </div> 
+    </div>
+
+    <div class="content layer3" id="LinearActuator2">
+      <h2>Linear Actuator2</h2>
+      <div>
+        <div class="card">
+          <h3>Status</h3>      
+          <input type="text" class="command" id="c22"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>      
+          <input type="range" class="command horizontal" id="c24"  min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Distance</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Completion</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Potentiometer Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Min pos</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max pos</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Min speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div> 
+      </div> 
+    </div>
+    
+    <div>
+
+      <div class="content layer2" id="Brakes1">
+        <h2>Brakes</h2>
+        <div>
+          <div class="card">
+            <h3>Position</h3>      
+            <input type="range" class="command horizontal" id="c29"  min="0" max="100" value="0">
+          </div> 
+        </div>
+      </div>
+<br>
+      <div class="content layer3" id="Brake6">
+        <h2>Brake Left</h2>
+        <div>
+          <div class="card">
+            <h3>Position</h3>      
+            <input type="range" class="command horizontal" id="c27"  min="0" max="100" value="0">
+          </div> 
+        </div>
+      </div>
+      <div class="content layer3" id="Brake7">
+        <h2>Brake Right</h2>
+        <div>
+          <div class="card">
+            <h3>Position</h3>      
+            <input type="range" class="command horizontal" id="c28"  min="0" max="100" value="0">
+          </div> 
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="content layer3" id="MotorB32">
+      <h2>MotorB B</h2>
+       <!-- // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4-->
+      <div>
+        <div class="card">
+          <h3>Power</h3>      
+          <input type="range" class="command" id="c4"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>      
+          <input type="range" class="command" id="c5"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>      
+          <input type="range" class="command" id="c6" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Temperature</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div> 
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Applied speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Positional speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Error</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Top On <br >Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Raw <br>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Target Diff</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>C Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Within</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content layer3" id="MotorsHubControllerB">
+      <h2>MotorsHubControllerB</h2>       
+      <div>
+        <div class="card">
+          <h3>Power</h3>
+          <input type="range" class="command" id="c7"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>
+          <input type="range" class="command" id="c8"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="range" class="command" id="c9" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Motors Speed <br>Difference</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Accumulated <br>Difference</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+      <div style="background:#143642;margin:15px;"><image style="padding:30px 15px 30px 15px" src="assets/agrofelis_logo_white_web.svg" height="100px" alt="AGROFELIS"></div>
+    </div>
+
+
+   <div class="content layer3" id="MotorB13">
+      <h2>MotorB A</h2>
+      <!--// POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7-->
+      <div>
+        <div class="card">
+          <h3>Power</h3>
+          <input type="range" class="command" id="c1" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>      
+          <input type="range" class="command" id="c2" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="range" class="command" id="c3" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor"  disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Temperature</h3>
+          <input type="text" class="sensor"  disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Applied speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Positional speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Error</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Top On <br >Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Raw <br>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Target Diff</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>C Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Within</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="content layer3" id="MotorF32">
+      <h2>MotorF B</h2>
+       <!-- // POWER 32, DIRECTION 21, SPEED 25, (adac) CURRENT 1, onewire TEMPERATURE INDEX0, HALL A (yellow) 2, B (green) 3, C (blue) 4-->
+      <div>
+        <div class="card">
+          <h3>Power</h3>      
+          <input type="range" class="command" id="c4"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>      
+          <input type="range" class="command" id="c5"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>      
+          <input type="range" class="command" id="c6" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Temperature</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div> 
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Applied speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Positional speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Error</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Top On <br >Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Raw <br>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Target Diff</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>C Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Within</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content layer3" id="MotorsHubControllerF">
+      <h2>Motors Hub ControllerFront</h2>       
+      <div>
+        <div class="card">
+          <h3>Power</h3>
+          <input type="range" class="command" id="c7"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>
+          <input type="range" class="command" id="c8"  min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="range" class="command" id="c9" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Motors Speed <br>Difference</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Accumulated <br>Difference</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+      <div style="background:#143642;margin:15px;"><image style="padding:30px 15px 30px 15px" src="assets/agrofelis_logo_white_web.svg" height="100px" alt="AGROFELIS"></div>
+    </div>
+
+
+   <div class="content layer3" id="MotorF13">
+      <h2>MotorF A</h2>
+      <!--// POWER 13, DIRECTION 12, SPEED 26, (adac) CURRENT 1, onewire TEMPERATURE INDEX1, HALL A (yellow) 5, B (green) 6, C (blue) 7-->
+      <div>
+        <div class="card">
+          <h3>Power</h3>
+          <input type="range" class="command" id="c1" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Direction</h3>      
+          <input type="range" class="command" id="c2" min="0" max="1" value="0">
+        </div>
+        <div class="card">
+          <h3>Speed</h3>
+          <input type="range" class="command" id="c3" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Current</h3>
+          <input type="text" class="sensor"  disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Max Current</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Temperature</h3>
+          <input type="text" class="sensor"  disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Applied speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Positional speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Position</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Error</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Top On <br >Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Raw <br>Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Status</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Target Diff</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>C Speed</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+        <div class="card">
+          <h3>Within</h3>
+          <input type="text" class="sensor" disabled value="0">
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+    <p><textarea id="console"></textarea></p>
+
+  </body>
+</html>

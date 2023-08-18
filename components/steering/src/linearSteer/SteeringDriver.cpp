@@ -43,13 +43,10 @@ void SteeringDriver::setRightPosition(int position){
 void SteeringDriver::setPosition(int position){
   syncedPosition = leftMap.constrainInput((float)position);
   inputIndex = leftMap.findInputIndex(syncedPosition);
-
   leftPosition = leftMap.interpolate(syncedPosition, inputIndex);
   rightPosition = rightMap.interpolate(syncedPosition, inputIndex);
-
   linearLeft.setPosition(leftPosition);
   linearRight.setPosition(rightPosition);
-
 }
 
 void SteeringDriver::apply(){
@@ -81,11 +78,7 @@ void SteeringDriver::print(){
   Serial.print(F(";"));
   Serial.print(syncedPosition);
   Serial.print(F(";"));
-  Serial.print(leftPosition);
-  Serial.print(F(";"));
-  Serial.print(rightPosition);
-  Serial.print(F(";"));
-  Serial.print(distanceRatio);
+  
   Serial.print(F(">"));
 
   linearLeft.print();

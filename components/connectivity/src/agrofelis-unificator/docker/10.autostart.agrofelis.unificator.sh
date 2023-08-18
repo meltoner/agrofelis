@@ -1,20 +1,24 @@
 #!/bin/bash
 # @author Konstantinos Papageorgiou 2023
-dockerName="agrofelis.os"
+dockerName="agrofelis.unificator"
 instance=${1:-1}
 dockerIP="172.20.35."$instance
 dockerNetwork="agrofelis-network"
-rinstanceImageKey="agrofelis.os:core"
+rinstanceImageKey="agrofelis.unificator:core"
 dockerNameInstance=$dockerName$instance
 ####################################
 echo 'KERNEL=="ttyACM[0-9]*",MODE="0666"'>/etc/udev/rules.d/99-serial.rules
+
 rinstanceInstance=$(\
-	docker run -d -it --rm --privileged --name $dockerNameInstance \
-	-v /web-pub/:/web-pub/ \
+#	docker run -d -it --rm --privileged --name $dockerNameInstance \
+	docker run -d -it --restart unless-stopped --privileged --name $dockerNameInstance \
+	-v /web-pub/connectivity/src/agrofelis-unificator/server/:/project/ \
 	-v /dev/ttyACM0:/dev/ttyACM0 \
-	-w /web-pub/ \
+	-p 8080:8080 \
+	-w /project/ \
 	-e dockerIP=$dockerIP -e dockerNameInstance=$dockerNameInstance -e rinstanceInstance=$rinstanceInstance \
-	$rinstanceImageKey /bin/bash \
+	$rinstanceImageKey /usr/local/bin/node serial-ws.js \
 )
-docker network connect --ip $dockerIP $dockerNetwork $rinstanceInstance
+#/bin/bash
+#docker network connect --ip $dockerIP $dockerNetwork $rinstanceInstance
 docker attach $rinstanceInstance

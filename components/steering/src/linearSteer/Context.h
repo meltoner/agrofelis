@@ -18,9 +18,8 @@ class Context{
     // Invoker variables - execution functions frequencies
     int intervals[6] = {10, 52, 85, 500, 1008, 5000};
     unsigned long now = millis();
-    unsigned long timers[8] = {now, now, now, now};
-    // exposed variables 
-
+    unsigned long timers[8] = {now, now, now, now};    
+    String identifier = "";
   private:
     byte _pin;
 };

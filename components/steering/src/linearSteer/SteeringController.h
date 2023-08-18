@@ -33,16 +33,25 @@
 
 #include "Arduino.h" 
 #include "Context.h"
+#include "Brakes.h"
 #include "SteeringDriver.h"
 #include "SerialCommandParser.h" 
 
 class SteeringController : public SerialCommandParser{
   public:
+    // Create a new steering module controller
     SteeringController();
+    // Passes the context
     void setup(Context &_context);
+    // applies the parsing and the apply methods of its objects
     void apply();
+    // Remote invocations via the parser
     void actionParsedCommand();
+    //calls the print methods of its objects
+    void print();
+    // The steering module
     SteeringDriver steer = SteeringDriver::SteeringDriver();
+    Brakes brakes = Brakes::Brakes();
   private:
     Context *context;
 };

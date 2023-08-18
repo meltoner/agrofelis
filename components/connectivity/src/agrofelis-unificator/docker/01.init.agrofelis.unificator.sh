@@ -19,5 +19,6 @@ rinstanceInstance=$(\
 	$rinstanceImageKey /usr/local/bin/node serial-ws.js \
 )
 #/bin/bash
+#/usr/local/bin/node serial-ws.js \
 #docker network connect --ip $dockerIP $dockerNetwork $rinstanceInstance
 docker attach $rinstanceInstance

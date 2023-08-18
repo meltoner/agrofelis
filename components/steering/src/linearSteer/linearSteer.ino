@@ -51,7 +51,7 @@ void apply_interval_2(){
 
 void apply_interval_3(){
   Serial.println();
-  controller.steer.print();
+  controller.print();
 }
 
 void apply_interval_4(){
