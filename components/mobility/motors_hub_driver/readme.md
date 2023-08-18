@@ -375,7 +375,7 @@ The module receives power from the Power distribution module, documented in the 
 
 ### Indicative suppliers
 
-In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of crucial supplier information not only showcases the parts acquired and supplier names but also includes product type, IDs and URLs for direct reference, along with pertinent notes where necessary. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
+In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. The table also includes details about quantities, cost per item, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
 
 The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
@@ -389,14 +389,15 @@ Finally, the ensuing table outlines the constituents comprising the components o
 
 <div align="center">
 
-| No.  | Part | Supplier | Product ID     | Product URL         | Quantity        |  Cost/Item (€)  |  Subtotal (€)  | Note |
-|------|---------------|---------------|-----------|------------|-------------|-----------------------------------|---------------------|--------------------|
-| #1 | PCB board   | [supplier.com](http://www.supplier.com)  |      00-00000000     |      [PCB board](http://www.supplier.com/pcp_board)     |    1  | 25.00 | 25.00  | -  |
-| #2 | Copper board 420x297mm    | [GRobotronics](https://grobotronics.com/)     |    05-00029758    | [Copper board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | 3 | 15.00 | 45.00  | Multiple boards can be cutted from this. | 
-| #3 | MCP3008 - 8-Channel 10-Bit ADC   | [Hellas Digital](https://www.hellasdigital.gr/)     |     078.0038    | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)  | 2  | 50.00 | 100.00 | - | 
+| No.  | Product     | Product URL        | Supplier   | Quantity        |  Cost/Item (€)  |  Subtotal (€)   | Note |
+|------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
+| #1 | Copper board 420x297mm    |      [Copper Board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Multiple boards can be cutted from this.  |
+| #2 | MCP3008 8-Channel 10-Bit ADC  | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 5.87 | 5.87 | - | 
+| #3 | 4-channel I2C-safe Bi-directional  | [Level Converter](https://grobotronics.com/4-channel-i2c-safe-bi-directional-logic-level-converter-bss138.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 4.90 | 4.90 | - | 
 | **Total** |      |    |     |      |     |    |  **175.00**  |   |
 
 </div>
+
 
 
 ### Cost estimation overview
