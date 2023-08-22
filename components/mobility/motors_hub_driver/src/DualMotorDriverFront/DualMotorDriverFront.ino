@@ -47,7 +47,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 <link rel="icon" href="data:,">
 </head>
 <body>
-open https://github.com/meltoner/agrofelis/blob/main/components/mobility/src/web-app/index.html
+Agrofelis - Front - Motors hub controller. Open related control application - https://github.com/meltoner/agrofelis/
 </body>
 </html>)rawliteral";
 

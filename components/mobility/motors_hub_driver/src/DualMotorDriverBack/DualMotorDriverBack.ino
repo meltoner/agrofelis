@@ -47,7 +47,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 <link rel="icon" href="data:,">
 </head>
 <body>
-open Related application / Agrogelis Unifier
+Agrofelis - Back - Motors hub controller. Open related control application - https://github.com/meltoner/agrofelis/
 </body>
 </html>)rawliteral";
 
@@ -118,8 +118,7 @@ void apply_interval_1(){
 }
 
 void apply_interval_2(){
-  controller.apply();
-  //controller.steer.apply();
+  controller.apply(); 
 }
 
 void apply_interval_3(){ 

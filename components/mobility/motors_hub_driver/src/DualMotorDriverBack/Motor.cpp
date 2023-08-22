@@ -86,22 +86,33 @@ void Motor::applySpeed(){
   // here we impose any change to be applied progressivelly over a time span that will
   // always be followed by the motor driver and the motor.
 
+  if(status != 0)
+    return;
+  
   hallsSpeed = previousPosition - hallsSensor.position;
   previousPosition = hallsSensor.position;
 
-  if(speed != intermediateSpeed ){
-    unsigned long timePassed = (millis() - targetSet);
-    if(timePassed > applyWithin)
-      intermediateSpeed = speed;     
-    else
-      intermediateSpeed = speedStart + (int)(((float)(speedDiff)) * ((float)timePassed / (float)applyWithin));
+  if(speed > 10 && abs(hallsSpeed) < map(speed, 11, 100, 2, 10)){
+    intermediateSpeed++;
+  }else{
+    if(speed == 0)
+      intermediateSpeed = intermediateSpeed * 0.5;
   }
+  
+  intermediateSpeed = constrain(intermediateSpeed, 0, 100);
+//  if(speed != intermediateSpeed ){
+//    unsigned long timePassed = (millis() - targetSet);
+//    if(timePassed > applyWithin)
+//      intermediateSpeed = speed;     
+//    else
+//      intermediateSpeed = speedStart + (int)(((float)(speedDiff)) * ((float)timePassed / (float)applyWithin));
+//  }
 
-  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.7 )
-    intermediateSpeed *= 0.8;
-
-  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.5 )
-    intermediateSpeed *= 0.9;
+//  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.7 )
+//    intermediateSpeed *= 0.8;
+//
+//  if(currentSensor.maxCurrent > thresholdMaxCurrent * 0.5 )
+//    intermediateSpeed *= 0.9;
 
   rawSpeed = intermediateSpeed;
 
