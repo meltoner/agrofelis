@@ -1,6 +1,6 @@
 # Abstract
 
-This document presents the details of manufacturing a composite module for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. The rational of each component and its integration with its counterparts is elaborated. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with indicative suppliers to purchase the different parts. 
+This document delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
 ## Motors Hub Driver
 
@@ -103,7 +103,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 11. Two 5-pin female headers used to connect the power modules at the end of ribbon cable.
 12. One 3-wire ribbon cable 7 cm, used to connect the temperature sensors.
 13. Two temperature sensors DS18B20 connected via one wire.
-14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the PCB.PRINT.Stickers schematic.
+14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf) schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V.
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
 17. Non mandatory connectors, two 2-pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
@@ -193,7 +193,7 @@ The PCB is manufactured using a low budget [VEVOR CNC 3018 Pro.](https://eur.vev
 <a name="motors-hub-power-components" />The Motors Hub Power Driver is composed of the following elements:
 
 1. A PCB board, with its schematics located within [PCB.CNC.power/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power) folder.
-2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf).
 3. Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
 4. One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
 5. An [ACS712] 20 amp current Sensor.
@@ -298,7 +298,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 <a name="motors-hub-adac-components" />The Motors Hub controller is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
-2. The PCB top side printed cover located within PCB.PRINT.Stickers.
+2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf).
 3. One MCP3008 8-channel 10 bit ADC.
 4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
 5. One 7-pin ribbon cable for connecting with the ADAC module.
@@ -375,7 +375,7 @@ The module receives power from the Power distribution module, documented in the 
 
 ### Indicative suppliers
 
-In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of crucial supplier information not only showcases the parts acquired and supplier names but also includes product type, IDs and URLs for direct reference, along with pertinent notes where necessary. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
+In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. Furthermore, the table presents information about quantities, VAT-inclusive prices, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
 
 The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
@@ -387,12 +387,38 @@ The subsequent table presents indicative suppliers for the necessary components 
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
-| Index | Part Supplied | Part Type | Supplier Name       | Product ID     | Product URL         | Note |
-|---------------|---------------|---------------|--------------------------|--------------------|-------------------------|-----------|
-| #1 | PCB board    | PCB board    | [supplier.com](http://www.supplier.com)      | 00-00000000     | [PCB board](http://www.supplier.com/pcp_board)     | -  |
-| #2 | Copper board    | Copper board    | [GRobotronics](https://grobotronics.com/)  | 05-00029758    | [Copper board 420x297mm](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | Multiple boards can be cutted from this. | 
-| #3 | MCP3008 - 8-Channel 10-Bit ADC  | Microcontroller   | [Hellas Digital](https://www.hellasdigital.gr/)  | 078.0038    | [MCP3008 - 8-Channel 10-Bit ADC With SPI Interface](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)    | - | 
+<div align="center">
 
+| No.  | Product     | Product URL        | Supplier   | Quantity        |  VAT Price (€)  |  Subtotal (€)   | Note |
+|------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
+| #1 | Copper board 420x297mm    |      [Copper Board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Multiple boards can be cutted from this.  |
+| #2 | MCP3008 8-Channel 10-Bit ADC  | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 5.87 | 5.87 | - | 
+| #3 | 4-channel I2C-safe Bi-directional  | [Level Converter](https://grobotronics.com/4-channel-i2c-safe-bi-directional-logic-level-converter-bss138.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 4.90 | 4.90 | - | 
+| **Total** |      |    |     |      |     |  **175.00**  |   |
+
+</div>
+
+
+
+### Cost estimation overview
+
+This section outlines the indicative costs associated with constructing the agricultural robot. These figures are derived from estimated costs per item discussed in the [indicative suppliers section](#indicative-suppliers), encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the cost estimation provided in this section incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
+
+The values provided here are based on information gathered from indicative suppliers and are intended to provide a rough estimate of the project's financial requirements. In this estimation, we have focused solely on the intrinsic value of each component and have excluded supplementary expenses such as transportation, customs clearance, and unforeseen charges. These figures are the initial step in budget assessment and lay the foundation for more detailed financial planning. 
+
+The table showcased below provides a detailed breakdown of components and their indicative costs, enhancing comprehension for informed decision-making and budget formulation. 
+
+<div align="center">
+
+| Construction Part   | Sub-Total (€) |
+|---------------------|---------------|
+| Μotors hub controller   | 200.00   |
+| Μotors hub power   | 300.00   |
+| Μotors hub ADAC   | 400.00   |
+|          |          |
+| **Grand Total**   | **900.00**   |
+
+</div>
 
 ### Conclusion
 

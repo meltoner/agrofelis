@@ -16,16 +16,16 @@ Existing vehicles in the market that could serve as a platform for various tools
 
 ## The Technology Considerations
 
-The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS , Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.  
+The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS, Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.  
 
-In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use. However LIDAR that can be combined with Odometers Cameras and IMUs has a considerably lower cost and potential robustness. On top of that repairing a vehicle of high technological complexity can be a challenge for the average user across the world. The choise of LiFePO4 batteries offers endurance in high temperatures , incombustibility , nontoxic
-materials , they can work unevenly charged and have a slow rate of self dishcharge.
+In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use. However LIDAR that can be combined with Odometers Cameras and IMUs has a considerably lower cost and potential robustness. On top of that repairing a vehicle of high technological complexity can be a challenge for the average user across the world. The choice of LiFePO4 batteries offers endurance in high temperatures, incombustibility, nontoxic
+materials, they can work unevenly charged and have a slow rate of self dishcharge.
 
-The purpose here is to offer a technology accessible to non highly technical users like a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions through recording and replaying can offer a cheaper alternative suitable for smaller platforms , while having a wider applicability and offering a considerably cheaper increase in productivity.
+The purpose here is to offer a technology accessible to non highly technical users like a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions through recording and replaying can offer a cheaper alternative suitable for smaller platforms, while having a wider applicability and offering a considerably cheaper increase in productivity.
 
 ## The Potential
 
-The technologies that could be incorporated on an Agricultural Vehicle could include implements such as :
+The technologies that could be incorporated on an Agricultural Vehicle could include implements such as:
 - Grass Cutter/lawn mower a frequent and necessary application in Orchards
 - Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
 - Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
@@ -34,7 +34,7 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 - Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
 - Power Hub, fruit picking for trees (see Tevel)
  
-The technologies that could be incorporated on an Public Safety Vehicle could include applications like :
+The technologies that could be incorporated on an Public Safety Vehicle could include applications like:
 - Fire fighting Gear Carrier
 - Standoff Water Cannon Base
 - Tethered Drone Base for situational awareness (see Elistair)
@@ -63,7 +63,7 @@ Additional sensors employed by the system include GPS, accelerator, compass, tem
 
 ## Motors hub driver
 
-This [Motors hub driver document](components/mobility/motors_hub_driver), presents the details of manufacturing a composite module for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. The rational of each component and its integration with its counterparts is elaborated. Details of the design plans followed by photos of the actual implementation are provided. The locations of the source files in the Agrofelis repository, as well as how these were produced to manufacture the Agrofelis Motors hub driver, are presented. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with indicative suppliers to purchase the different parts. 
+This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
 The complete documentation for the motors hub driver module is provided below.
 - [Motors hub driver document](components/mobility/motors_hub_driver)
