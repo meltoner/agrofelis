@@ -48,7 +48,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 <link rel="icon" href="data:,">
 </head>
 <body>
-open https://github.com/meltoner/agrofelis/blob/main/components/connectivity/remote/src/web-app/index.html
+Remote controller / open https://github.com/meltoner/agrofelis/blob/main/components/connectivity/remote/src/web-app/index.html
 </body>
 </html>)rawliteral";
 

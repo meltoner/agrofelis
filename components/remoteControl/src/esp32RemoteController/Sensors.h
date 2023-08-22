@@ -25,7 +25,10 @@ class Sensors{
     int prev_values[7] = {0, 0, 0, 0, 0, 0, 0};
     int compare_prev_values[7] = {0, 0, 0, 0, 0, 0, 0};
     bool togglePower = false;
-    bool toggleSteeringMax = false;
+    bool toggleSteeringMax = true;
+    int joysticButtonAces = 0;
+    int powerButtonAces = 0;
+
 
   private:
     Context *context;

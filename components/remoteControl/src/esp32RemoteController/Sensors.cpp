@@ -26,20 +26,29 @@ void Sensors::readSensor(){
   for(int i = 0; i < 5;i++){
     values[i] = map( analogRead(potentiometerPins[i]), 0, 4095, i < 2 ?-100:0, 100 );    
     
-    // joystic x,y erase small deviation or ofset
-    if(i < 2 && abs(values[i]) < 15)
+    // joystic x,y erase deviation or ofset
+    if(i < 2 && abs(values[i]) < 90)
         values[i] = 0;
     
-    if(i == 4) // joystic button
+    if(i == 4){
+      // Joystic button // prolonged press 
       values[i] = values[i] == 0 ? 1:0;
-    else
-      values[i] = values[i] * 0.4 + prev_values[i] * 0.6;
+      joysticButtonAces += values[i] == 1 ? 1: -joysticButtonAces;
+      values[i] = joysticButtonAces>14?1:0;
+    }else{      
+      values[i] = values[i] ;//* 0.4 + prev_values[i] * 0.6;
+    }
 
     prev_values[i] = values[i];
   }
   
   for(int i = 0; i < 2;i++){
     values[5 + i] = digitalRead(togglePins[i]);
+    if(i==0){
+      powerButtonAces += values[5 + i] == 1 ? 1: -powerButtonAces;
+      values[5 + i] = powerButtonAces>14?1:0;
+    }
+
     prev_values[5 + i] = values[5 + i];
   } 
 }
@@ -50,7 +59,10 @@ void Sensors::apply(){
 
 void Sensors::detectChange(){
   for(int i = 0; i < 7; i++){
-    if(compare_prev_values[i] != values[i]){
+    if(
+      (i>3 && compare_prev_values[i] != values[i]) ||
+      (i<=3 && abs(compare_prev_values[i] - values[i])>5)
+    ){
 
       switch(i){
         case 0: // X                          
@@ -87,16 +99,16 @@ void Sensors::detectChange(){
           break;
 
         case 4: // Joystic button
-          if(values[i]==1)
+          if(values[i] == 1)
             toggleSteeringMax = !toggleSteeringMax;
           break;
 
         case 5: // 1st button
-          context->appendMessage("<25|5>");          
+          context->appendMessage("<25|4>");          
           context->sendMessage();
-          if(values[i]==1){
-            togglePower =! togglePower;          
-            context->appendMessage(togglePower?"powerOn":"powerOff");
+          if(values[i] == 1){
+            togglePower = !togglePower;          
+            context->appendMessage(togglePower ? "powerOn":"powerOff");
             context->sendMessage();
 
             context->appendMessage(togglePower?"<7|1>":"<7|0>");

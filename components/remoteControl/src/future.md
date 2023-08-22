@@ -1,4 +1,4 @@
-I see. According to the product description1, your board uses an ILI9341 display controller and an XPT2046 touch controller. You can find the pinout diagram for your board on the product page1. You can also use the lvgl_esp32_drivers library2 to configure the display and touch drivers for LVGL. You can follow the instructions on the LVGL Arduino documentation3 to get started with LVGL on Arduino. I hope this helps.😊
+I see. According to the product description1, your board uses an ILI9341 display controller and an XPT2046 touch controller. You can find the pinout diagram for your board on the product page1. You can also use the lvgl_esp32_drivers library2 to configure the display and touch drivers for LVGL. You can follow the instructions on the LVGL Arduino documentation3 to get started with LVGL on Arduino. I hope this helps.
 
 ESP32 Arduino LVGL WIFI&Bluetooth Development Board 2.8" 240*320 Smart Display Screen 2.8inch LCD TFT Module With Touch WROOM pinout
 
