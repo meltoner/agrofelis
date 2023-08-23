@@ -1,6 +1,8 @@
 # Abstract
 
-This document delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
+This document delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. 
+
+The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
 ## Motors Hub Driver
 
@@ -98,7 +100,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 6. One 4-pin female header.
 7. One 2-pin JST male connector for the 5v supply.
 8. One 3-pin JST male and female connector used to connect two temperature sensors via the one wire protocol.
-9. Two Green 5 mm Screw terminal PCB Connector, one for the speed link of both motors and one for the 12v input.
+9. Two Green 5 mm Screw terminal PCB Connectors, one for the speed link of both motors and one for the 12v input.
 10. Two 5-wire ribbon cable 7 cm, used to connect the power modules.
 11. Two 5-pin female headers used to connect the power modules at the end of ribbon cable.
 12. One 3-wire ribbon cable 7 cm, used to connect the temperature sensors.
@@ -106,7 +108,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf) schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V.
 16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-17. Non mandatory connectors, two 2-pin terminal, high current red an black wire, male and female connectors to power the analog motor drivers with.
+17. Non mandatory connectors, two 2-pin terminal, high current red and black wire, male and female connectors to power the analog motor drivers with.
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
 19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
 
@@ -275,7 +277,7 @@ The first pattern indicating the paths visiting each hole to make and the second
 ![The PCB’s drilling and curving patterns](_figures/pcb-power_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine pcbs, is stored in the following folder:
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine PCBs, is stored in the following folder:
 
 - [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf)
 
@@ -305,7 +307,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 6. One 4-pin male header for connecting with the Agrofelis controller.
 7. One 8-pin female header.
 8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
-9. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
+9. Glue gun to secure the copper side of the PCB from extrernal factors applied after its function has been verified.
 
 Remarks:
 
@@ -359,7 +361,7 @@ The first pattern indicating the paths visiting each drill to make and the secon
 ![The PCB’s drilling and curving patterns](_figures/pcb-adac_NC.png)
 
 
-The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight pcbs, is stored in the following folder:
+The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight PCBs, is stored in the following folder:
 
 - [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf)
 
@@ -375,7 +377,7 @@ The module receives power from the Power distribution module, documented in the 
 
 ### Indicative suppliers
 
-In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. This section provides an in-depth look at the suppliers that have played a crucial role in our endeavors to build state-of-the-art robotic systems. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. Furthermore, the table presents information about quantities, VAT-inclusive prices, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
+In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. Furthermore, the table presents information about quantities, VAT-inclusive prices, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
 
 The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
