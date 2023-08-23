@@ -108,5 +108,6 @@ A 5 mm compressible foam is moreover glued to the external sides of the frame in
 
 ## Summary
 
+The development process, the components, the key dimensions for reproducing the Agrofelis chassis has been documented in a progressive manner. A photo of the vehicle with some covers removed exposing details of the end frame is illustrated by the following closing figure.
 
 ![Close up view of the frame](_figures/vehicle-frame-05_actual.jpg)
