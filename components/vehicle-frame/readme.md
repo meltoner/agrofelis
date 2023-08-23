@@ -21,9 +21,19 @@ The frame with its components arranged in an exploded view, is presented bellow.
 
 ![Exploded components of the frame](_figures/vehicle-frame-03-exploded.png)
 
+Within the diagram the multiple sub pars of the frame are being numbered :
+
+1. The bottom part
+2. The bottom batteries cover part
+3. The middle bars
+4. The top part
+5. The back wheel mounting points part
+6. The front wheel mounting points part
+
+
 ## Step wise fabrication of the frame
 
-In this section, the chassis fabrication is decomposed into seven steps and along with the schematics, photos of the fabricated frame is provided for convenience. 
+In this section, the chassis fabrication is decomposed into seven steps and along with the schematics, photos of the fabricated frame are provided for convenience. 
 
 ### Step 01
 
