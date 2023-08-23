@@ -50,7 +50,7 @@ In the second step, in the bottom part of the frame, a 3 mm thick iron sheet fol
 
 ### Step 03
 
-The top part implemented in step 3 along with its bottom part are being showcased by the following diagram.
+In the third step of the fabrication, the top part is being implemented. The part along with its bottom part are being showcased by the following diagram.
 
 ![Manufacturing the frame step 3, bottom and top parts](_figures/vehicle-frame-04-step-03-01.png)
 
@@ -62,7 +62,7 @@ The bottom and top part of the frame as fabricated are snapshot-ed, by the follo
 
 ### Step 04
 
-In step 4 of the fabrication, the middle bars are MIG welded, connecting the top and bottom parts implemented in the previous steps, as presented by the following figure.
+In the forth step of the fabrication, the middle bars are MIG welded, connecting the top and bottom parts implemented in the previous steps, as presented by the following figure.
 
 ![Manufacturing the frame step 4, middle bars](_figures/vehicle-frame-04-step-04-01.png)
 
@@ -75,7 +75,7 @@ The following photos showcase the fabricated top, bottom and middle parts of the
 
 ### Step 05
 
-In step 05, the back wheel attachment point are being fabricated as seen by the next figure. The back wheel attachment points, enable to dismantle the related modules or to interchange the steering wheels according the the scope of the problem.
+In the fifth step of the fabrication, the back wheel attachment point are being fabricated as seen by the next figure. The back wheel attachment points, enable to dismantle the related modules or to interchange the steering wheels according the the scope of the problem.
 
 ![Manufacturing the frame step 5, back wheels attachment](_figures/vehicle-frame-04-step-05-01.png)
 
@@ -93,7 +93,7 @@ In the sixth step, of the chassis fabrication the front wheel attachments, using
 
 ### Step 07
 
-In the last step of the chassis fabrication, a plethora of nuts are being welded in all corners formed by the iron bards to allow to mount the protecting covers of the frame as well as establish multiple mounting points for tools and extensions of the Agrofelis Robot.  The grid like mounting sockets locations in the fabricated chassis, are visualised by the following figure.
+In the last, seventh step of the chassis fabrication, a plethora of nuts are being welded in all corners formed by the iron bards to allow to mount the protecting covers of the frame as well as establish multiple mounting points for tools and extensions of the Agrofelis Robot. The grid like mounting sockets locations in the fabricated chassis are visualised by the following figure.
 
 ![Manufacturing the frame step 7, Nuts forming multiple attach points](_figures/vehicle-frame-04-step-07-01.png)
 
