@@ -61,25 +61,21 @@ Additional sensors employed by the system include GPS, accelerator, compass, tem
 
 # Documentation
 
+In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being overviewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative supliers and total cost estimations.
+
+
 ## Motors hub driver
 
 This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
 The complete documentation for the motors hub driver module is provided below.
+
 - [Motors hub driver document](components/mobility/motors_hub_driver)
 
 In a nutshell, the *Motors Hub Driver module* goes over the electronic sub-modules, which include the motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
 The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
-A representative depiction of the progression in crafting the motor hub driver is showcased in the following figures.
 
-[Change Image, to image collage]
-![Views of constructing the motor hub driver](components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg)
+A representative depiction of the progression in crafting the motor hub driver is showcased by the following highlights figure.
 
-<p float="left">
-  <img src="components/mobility/motors_hub_driver/_figures/pcb-controller_assemble.jpg" height="300" width="48%" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="components/mobility/motors_hub_driver/_figures/pcb-power_cnc.jpg" height="300" width="48%" />
- <br><img src="components/mobility/motors_hub_driver/_figures/pcb-adac_assembled.jpg" height="300" width="48%" />
- &nbsp;&nbsp;&nbsp;
-<img src="components/mobility/motors_hub_driver/_figures/motors_hub_driver_real2.jpg" height="300" width="48%" />
-</p>
+
+![Motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
