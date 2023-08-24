@@ -85,7 +85,6 @@ Further insight into the manufactured part can be seen in the following image.
 ![Manufacturing the frame step 5, back wheels attachment fabricated](_figures/vehicle-frame-04-step-05-02-acual.jpg)
 
 > Although not crucial, these vertical bars can be offset-ed by 30 mm, something that is performed by the prototype frame using some additional drilled bars and washers, meticulously documented in the  dedicated document presenting the steering wheels module.
-> => [Add reference???]
 
 ### Step 06
 
