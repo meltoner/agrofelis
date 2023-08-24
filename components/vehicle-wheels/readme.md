@@ -33,7 +33,7 @@ The four wheels supporting the vehicle, are arranged into a near square arrangem
 
 ### Wheels compilation
 
-To minimize costs and although it was quite laborious, the motor hubs were purchased without their rims so these could reserve less volume, approximately 1/4, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers the wheel spokes, the disc brakes and the brakes were purchased from a foreign supplier, while the 16 inch aluminum rims, the inner tubes and tires, from local suppliers. 
+To minimize costs and although it was quite laborious, the motor hubs were purchased without their rims so these could reserve less volume, approximately 1/4, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers, the wheel spokes, the disc brakes and the fork brakes, were purchased from a foreign supplier. The 16 inch aluminum rims, the inner tubes and tires, were purchased from local suppliers. 
 
 The approach of purchasing the wheels un-assembled provides the option to decrease or increase the wheel size subject that the spokes length are adapted accordingly. The wheels spokes, connecting the motors with the rim, were knitted and aligned manually. 
 
@@ -45,7 +45,7 @@ The following picture showcases the 250w, 24v in-wheel brush-less motor hub.
 
 After communicating with various suppliers and evaluating the applicability of their products, the SR250D 250W brush-less hub motor  from Suringmax were chosen because of their geared feature (1:4.4), their waterproof IP54 IP grade, their max torque power at 38 Nm, their compatibility with a wide range of rim sizes including a 16 inch rim and their compatibility with a 24v system. The provider was also able to manufacture and provide custom spokes, according to the requested length such that they fit a 16 inch rim, something that played an important role for selecting them. Depending on the problem the Agrofelis robot is aimed to address, larger motors and / or rims / tires can be selected by following the equivalent procedure presented in this document.
 
-The in-wheel motor hubs, were equipped with disc brakes as seen in the following photo.
+The in-wheel motor hubs, were equipped with disc brakes as shown in the following photo.
 
 ![wheels brake](_figures/vehicle-wheels-06-disc-brake.jpg)
 
