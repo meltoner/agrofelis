@@ -96,14 +96,14 @@ The motor hubs are connected with their motor drivers via a cable supplied with 
 The following table lists the individual components employed for manufacturing four Agrofelis wheels, along with their unit price,  an indicative supplier link and indicative total cost.
 
 | No.|  Product | URL | Supplier | Quantity | Unit price (€) | Amount (€)  |
-|----|-----------------------|-----|----|-----|
-| #1 | SR250D Suringmax Motors |  http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=97 | [Suringmax](http://www.suringmax.com/) | 70 | 280 |
-| #2 | 36 spokes to fit the inner dimensions of the rims of 28 cm length |  http://www.suringmax.com | [Suringmax](http://www.suringmax.com/) | 3 | 12 |
+|----|--------------|------------|-----|---|---|---|
+| #1 | SR250D Suringmax Motors |  http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=97 | [Suringmax](http://www.suringmax.com/) | 4 | 70 | 280 |
+| #2 | 36 spokes to fit the inner dimensions of the rims of 28 cm length |  http://www.suringmax.com | [Suringmax](http://www.suringmax.com/) | 4 | 3 | 12 |
 | #3 | Disk brakes | http://www.suringmax.com | [Suringmax](http://www.suringmax.com/) | 20 | 5 |
-| #4 | Motor drivers at 24v with forward and reverse driving and no display connection | http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=139 | [Suringmax](http://www.suringmax.com/) | 15 |  60 |
-| #5 | Viper tires 16 X 3.00 |  https://podilatada.gr/product/viper-elastiko-16x3-00-gia-e-bike-e-scooter/ | [Podilatada](https://podilatada.gr) | 26 | 104 | 
-| #6 | SHINKO Tube 16X2.50/3.0 |  https://podilatada.gr/product/shinko-16x2-50-3-0-aerothalamos-ilektrikou-podilatou-valvida-tr87-stravi/ | [Podilatada](https://podilatada.gr) | 10 | 40 | 
-| #7 | 16 inch aluminum rims |  https://www.podilatis.gr/troxos-podilatou-asimi-alouminiou-0-016-175.html | [Podilatis](https://www.podilatis.gr) | 15 | 60 |
+| #4 | Motor drivers at 24v with forward and reverse driving and no display connection | http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=139 | [Suringmax](http://www.suringmax.com/) | 4 | 15 |  60 |
+| #5 | Viper tires 16 X 3.00 |  https://podilatada.gr/product/viper-elastiko-16x3-00-gia-e-bike-e-scooter/ | [Podilatada](https://podilatada.gr) | 4 | 26 | 104 | 
+| #6 | SHINKO Tube 16X2.50/3.0 |  https://podilatada.gr/product/shinko-16x2-50-3-0-aerothalamos-ilektrikou-podilatou-valvida-tr87-stravi/ | [Podilatada](https://podilatada.gr) | 4 | 10 | 40 | 
+| #7 | 16 inch aluminum rims |  https://www.podilatis.gr/troxos-podilatou-asimi-alouminiou-0-016-175.html | [Podilatis](https://www.podilatis.gr) | 4 | 15 | 60 |
 
 The total cost to manufacture four wheels excluding shipping and assembly work costs, sums to approximately 576 euros.
 
