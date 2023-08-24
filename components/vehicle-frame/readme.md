@@ -102,7 +102,7 @@ The subsequent figure showcases two perspectives of the painted fabricated frame
 
 ![Views of the fabricated frame](_figures/vehicle-frame-04-step-07-02-actual.jpg)
 
-## Concluding fabrication steps
+## Finalization steps
 
 As with all metallic parts of the Agrofelis robot, the frame is being coated with a two-layer primer application, followed by a double coating of oil paint.
 Additionally, a 5 mm compressible foam is glued to the external surfaces of the frame. This measure ensures almost air-tight protection when the covers are attached, effectively safeguarding internal components against dust and water.
