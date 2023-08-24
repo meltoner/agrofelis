@@ -107,6 +107,31 @@ The subsequent figure showcases two perspectives of the painted fabricated frame
 As with all metallic parts of the Agrofelis robot, the frame is being coated with a two-layer primer application, followed by a double coating of oil paint.
 Additionally, a 5 mm compressible foam is glued to the external surfaces of the frame. This measure ensures almost air-tight protection when the covers are attached, effectively safeguarding internal components against dust and water.
 
+
+## The chassis components and indicative suppliers
+ 
+The following table lists the individual components employed for manufacturing the Agrofelis chassis frame. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
+
+
+<div align="center">
+
+
+| No.|  Product | Product URL | Supplier | Quantity | VAT Price (€) | Subtotal (€)  | Note |
+|----|--------------|------------|-----|---|---|---|
+| #1 | 6 meters black iron square bar 20mm X 20mm X 2mm | [square bar](https://e-iron.gr/product/6-11/) | [QOOP Metalworks](https://www.qoop.gr) | 2 | 7 | 14 | Four meters remain from the batch that can utilised for others parts |
+| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 1 | 74 | 74 | A significant area of the product can be reused to fabricate other components |
+| #3 | 1 meter black iron T bar 25 x 3 | [T bar])(https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 6 | 6 | |
+| #4 | 100 Nuts 8mm xxx| | | | |
+| #5 | Self-adhesive foam | [Adhesive sealing foam](https://egarbis.gr/doorado-autokolito-afrodes-prostteutiko-megalou-mikous-gia-toixous-gkaraz-maurou-xromatos-se-rolo-park-flwp20020b) | [egarbis](https://egarbis.gr) | 2 | 5 | 10 | | 
+| #6 |  750ml Vitex Metal Primer | [Primer](https://www.stereotiki.gr/store4/vitex-metal-primer-astari-metallon.html) | 1 | 7 | 7 |
+| #7 | Orange oil paint 1kg | | | | |
+
+
+</div>
+
+The total cost to manufacture four wheels excluding shipping and assembly work costs, sums to approximately **576** euros.
+
+
 ## Summary
 
 The development process, component details and essential dimensions for reproducing the Agrofelis chassis has been documented in a progressive manner. A photograph of the vehicle with some covers removed, exposing details of the end frame, is presented in the closing image below.
@@ -114,4 +139,4 @@ The development process, component details and essential dimensions for reproduc
 ![Close up view of the frame](_figures/vehicle-frame-05_actual.jpg)
 
 
-https://egarbis.gr/doorado-autokolito-afrodes-prostteutiko-megalou-mikous-gia-toixous-gkaraz-maurou-xromatos-se-rolo-park-flwp20020b
+

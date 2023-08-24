@@ -8,7 +8,7 @@ This document describes the details of manufacturing the active 4 wheel drive sy
 
 Finding an elegant solution for the mobility requirements of a low speed robotic vehicle such as the Agrofelis robot, proved to be a time consuming research process. 
 
-After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total NM, operable at 24v with less than 1000 watt total power consumption, tolerance to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the necessary characteristics of the needed solution. A four wheel drive active system instead for example of a 2WD drive was concluded necessary, in order to maximize the traction and distribute the load of the vehicle. In the following sections the details of the active wheels, their components and the indicative suppliers to purchase the sub-components, are documented.
+After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption, tolerance to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the necessary characteristics of the needed solution. A four wheel drive active system instead for example of a 2WD drive was concluded necessary, in order to maximize the traction and distribute the load of the vehicle. In the following sections the details of the active wheels, their components and the indicative suppliers to purchase the sub-components, are documented.
 
 ## The Agrofelis wheels
 
@@ -93,12 +93,12 @@ The motor hubs are connected with their motor drivers via a cable supplied with 
 
 ## The wheels components and indicative suppliers
  
-The following table lists the individual components employed for manufacturing four Agrofelis wheels, along with their unit price,  an indicative supplier link and indicative total cost.
-
+ 
+The following table lists the individual components employed for manufacturing four Agrofelis wheels. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total amount.
 
 <div align="center">
 
-| No.|  Product | Product URL | Supplier | Quantity | VAT Price (€) | Amount (€)  |
+| No.|  Product | Product URL | Supplier | Quantity | VAT Price (€) | Subtotal (€)  |
 |----|--------------|------------|-----|---|---|---|
 | #1 | SR250D Suringmax Motor | [Motor Hub](http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=97) | [Suringmax](http://www.suringmax.com/) | 4 | 70 | 280 |
 | #2 | 36 spokes to fit the inner dimensions of the rims with inner diameter of 28 cm |  | [Suringmax](http://www.suringmax.com/) | 4 | 3 | 12 |
