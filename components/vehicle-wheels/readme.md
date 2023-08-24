@@ -95,7 +95,8 @@ The motor hubs are connected with their motor drivers via a cable supplied with 
  
 The following table lists the individual components employed for manufacturing four Agrofelis wheels, along with their unit price,  an indicative supplier link and indicative total cost.
 
-<center>
+
+<div align="center">
 
 | No.|  Product | Product URL | Supplier | Quantity | VAT Price (€) | Amount (€)  |
 |----|--------------|------------|-----|---|---|---|
@@ -107,7 +108,7 @@ The following table lists the individual components employed for manufacturing f
 | #6 | SHINKO Tube 16X2.50/3.0 | [Tire tube](https://podilatada.gr/product/shinko-16x2-50-3-0-aerothalamos-ilektrikou-podilatou-valvida-tr87-stravi/) | [Podilatada](https://podilatada.gr) | 4 | 10 | 40 | 
 | #7 | 16 inch aluminum rims | [Rim](https://www.podilatis.gr/troxos-podilatou-asimi-alouminiou-0-016-175.html) | [Podilatis](https://www.podilatis.gr) | 4 | 15 | 60 |
 
-</center>
+</div>
 
 The total cost to manufacture four wheels excluding shipping and assembly work costs, sums to approximately **576** euros.
 
