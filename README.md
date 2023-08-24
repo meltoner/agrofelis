@@ -78,13 +78,17 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 
 
-## Agrofelis robot wheels
+## Agrofelis robot wheels fabrication
 
 This [Agrofelis robot wheels fabrication document] describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
 
+The complete documentation of the Agrofelis robot wheels fabrication, is refernced bellow.
 
+- [Chassis frame design and fabrication](components/mobility/motors_hub_driver)
 
+A figure listing the four most representative figures from the document is summarised below.
 
+![Agrofelis Robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
 
 
 ## Agrofelis Motors hub driver
