@@ -24,12 +24,54 @@ The dimensions of the individual components composing the wheel are documented b
 
 ![Wheel dimensions](_figures/vehicle-wheels-03-dimensions.png)
 
+After contacting various suppliers and evaluating the applicability of their products, the SR250D 250W brush-less hub motor  from Suringmax were chosen because of their geared feature (1:4.4), their waterproof IP54 IP grade, their max torque power at 38 Nm, their compatibility with a wide range of rim sizes including a 16 inch rim and their compatibility with a 24v system. The provider was also able to manufacture and provide custom spokes, according to the requested length such that they fit a 16 inch rim. 
+
+### Wheels compilation
+
+To minimize costs and although it was more laborious, the motor hubs were purchased without their rims so these could reserve less volume, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers the wheel spokes, the disc brakes and the brakes were purchased from a foreign supplier, while the 16 inch aluminum rims, the inner tubes and tires, from local suppliers. 
+
+In order to match number of spokes supported by the motors (36) and the usual number of spokes provided by rims of this size, additional holes where annotated and drilled. A repeating pattern, printable in regular size printer papers was designed. The PDF asset file is referenced below.
+
+- [36 drilling pattern for 16 inch rims](assets/36holes-16-inch-pattern.pdf)
+
+
+The pattern is printed 4 times and connected using transparent tape on the annotated remark line. Consequently the pattern is glued within the inner top surface of the rim. On the annotated circles the rims are drilled to make up the appropriate connection points.
+
+The following figure showcases the printed pattern depicting the locations where the related rim, should be drilled.
+
+![wheels pattern](_figures/vehicle-wheels-09-26-drill-pattern.jpg)
+
+The approach of purchasing the wheels un-assembled provides the option to allows to decrease or increase the wheel size subject that the spokes length are adapted accordingly. The wheels spokes, connecting the motors with the rim, were knitted and aligned manually. 
+
+
+Four wheel modules were developed with disc brakes, inflatable tubes and fat tires to maximize the traction for this kind of wheel size, and by employing off the self available components. 
+
+The following picture showcases the 250w, 24v in wheel brush-less motor hub.
+
+![wheels motor](_figures/vehicle-wheels-05-motor.jpg)
+
+Below, the disc brake mountable to the motor hub photographed.
+
+![wheels brake](_figures/vehicle-wheels-06-disc-brake.jpg)
+
+The 144 custom spokes provided by the vendor are shown below.
+
+![wheels spokes](_figures/vehicle-wheels-07-spokes.jpg)
+
+A close up view of the spokes along with their securing nuts (nipples) can be seen by the following photo.
+
+![wheels spokes](_figures/vehicle-wheels-08-spokes.jpg)
 
 
 
-Although it was more laborious, the motor hubs were purchased without their rims so these could reserve less volume, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers the wheel spokes, the disc brakes and the brakes were purchased from a foreign supplier, while the 16 inch aluminum rims, the inner tubes and tires, from local suppliers. 
 
-In order to match number of spokes supported by the motors (36) and the usual number of spokes provided by rims of this size (16), additional holes where annotated and drilled. The approach allows to decrease or increase the wheel size subject that the spokes length is adapted accordingly. The wheels spokes, connecting the motors with the rim, where knitted and aligned manually. Four wheel modules were developed with disc brakes, inflatable tubes and fat tires to maximize the traction for this kind of wheel size, and by employing off the self available components. 
+
+![wheels drilling](_figures/vehicle-wheels-10-drilling.jpg)
+![wheels drill holes difference](_figures/vehicle-wheels-11-holes-difference.jpg)
+![wheels selection](_figures/vehicle-wheels-12-holes-selection.jpg)
+![wheels completed](_figures/vehicle-wheels-13-completed.jpg)
+![wheels completed with tires](_figures/vehicle-wheels-14-completed.jpg)
+
 
 The active wheels of the vehicle interface with the Agrofelis Motors hub driver modules, enabling to digitally monitor and perform precise adaptive coordinated movements, at very low RPM. 
 
@@ -41,8 +83,6 @@ The active wheels of the vehicle interface with the Agrofelis Motors hub driver 
 
 
 
-After contacting various suppliers and evaluating the applicability of their products, the SR250D 250W brush-less hub motor  from Suringmax were chosen because of their geared feature (1:4.4), their waterproof IP54 IP grade, their max torque power at 38 Nm, their compatibility with a wide range of rim sizes including a 16 inch rim and their compatibility with a 24v system. The provider was also able to manufacture and provide custom spokes, according to the requested length such that they fit a 16 inch rim. This was a decisive factors because it allowed to ship the motors without the rims which occupy a lot of space and thus reducing the shipping costs to a considerable amount. 
-
 
 ### The Rims
 
@@ -50,18 +90,8 @@ After contacting various suppliers and evaluating the applicability of their pro
 
 
 
-![wheels dimensions](_figures/vehicle-wheels-04-arrangement-dimensions.png)
-![wheels motor](_figures/vehicle-wheels-05-motor.jpg)
-![wheels brake](_figures/vehicle-wheels-06-disc-brake.jpg)
-![wheels spokes](_figures/vehicle-wheels-07-spokes.jpg)
-![wheels spokes](_figures/vehicle-wheels-08-spokes.jpg)
-![wheels pattern](_figures/vehicle-wheels-09-26-drill-pattern.jpg)
-![wheels drilling](_figures/vehicle-wheels-10-drilling.jpg)
-![wheels drill holes difference](_figures/vehicle-wheels-11-holes-difference.jpg)
-![wheels selection](_figures/vehicle-wheels-12-holes-selection.jpg)
-![wheels completed](_figures/vehicle-wheels-13-completed.jpg)
-![wheels completed with tires](_figures/vehicle-wheels-14-completed.jpg)
 
+![wheels dimensions](_figures/vehicle-wheels-04-arrangement-dimensions.png)
 
 
 | Units | Product | Unit price | Link |
