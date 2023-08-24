@@ -3,7 +3,7 @@
 # Abstract 
 
 The current document focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. 
-The frame implemented using regular square iron bars of 20 mm width, establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables to mount anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials.
+The frame was implemented using a total of 6.92 meters of 20X20 mm regular square iron bars , it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials.
 
 The documentation presents the frame fabrication by decomposing it into its individual elements and fabrication steps.
 
@@ -94,7 +94,7 @@ In the sixth step of the chassis fabrication, the front wheel attachments, using
 
 ### Step 07
 
-Concluding with the seventh step of the chassis fabrication, a plethora of nuts are welded into the all corners formed by the iron bards. These nuts serve dual purposes, allowing to mount the protecting covers of the frame and establishing multiple mounting points for tools and extensions of the Agrofelis Robot. The arrangement of grid-like mounting socket locations in the fabricated chassis is depicted in the following image.
+Concluding with the seventh step of the chassis fabrication, 76 nuts are welded into every corner formed by the iron bars. These nuts serve dual purposes, allowing to mount the protecting covers of the frame and establishing multiple mounting points for tools and extensions of the Agrofelis Robot. The arrangement of grid-like mounting socket locations in the fabricated chassis is depicted in the following image.
 
 ![Manufacturing the frame step 7, Nuts forming multiple attach points](_figures/vehicle-frame-04-step-07-01.png)
 
