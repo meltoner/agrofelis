@@ -74,7 +74,7 @@ The complete documentation of the Agrofelis chassis frame is provided bellow.
 An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarised by the following  figure. 
 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
+![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
 
 ## Agrofelis Motors hub driver
