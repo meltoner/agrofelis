@@ -1,8 +1,8 @@
-# Agrofelis Robot wheels
+# Agrofelis Robot wheels fabrication
 
 # Abstract
 
-This document describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. 
+This document describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
 
 # Introduction
 
