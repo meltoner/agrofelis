@@ -3,7 +3,7 @@
 # Abstract 
 
 The current document focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. 
-The frame was implemented using a total of 6.92 meters of 20X20 mm regular square iron bars , it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials.
+The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars , it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials.
 
 The documentation presents the frame fabrication by decomposing it into its individual elements and fabrication steps.
 
