@@ -34,7 +34,7 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 - Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
 - Power Hub, fruit picking for trees (see Tevel)
  
-The technologies that could be incorporated on an Public Safety Vehicle could include applications like:
+The technologies that could be incorporated on a Public Safety Vehicle could include applications like:
 - Fire fighting Gear Carrier
 - Standoff Water Cannon Base
 - Tethered Drone Base for situational awareness (see Elistair)
