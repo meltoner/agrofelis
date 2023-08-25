@@ -297,7 +297,7 @@ The PCB is illustrated by the following figure.
 
 Lines in green, indicate a connection between two points in the board. Lines in black offsetting the green lines, indicate curves cutting the cooper, creating the end routes between connected points of the board. Lines in yellow, indicate bridges connecting two points from the top side of the board via a wire. Lines in red, indicate components or connectors of the board and their orientation.
 
-<a name="motors-hub-adac-components" />The Motors Hub controller is composed of the following components:
+<a name="motors-hub-adac-components" />The Motors Hub ADAC is composed of the following components:
 
 1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
 2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf).
@@ -381,17 +381,106 @@ In the pursuit of crafting a resilient and high-performing robot, the selection 
 
 The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
+<div align="center">
+
+| No.  | Product     | Product URL        | Supplier   | Used Quantity   |  VAT Price (€)  |  Subtotal (€)   | Note |
+|------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
+| #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Reused many times.  |
+| #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 12.00 | 12.00 | Reused in all such cases | 
+| #3 | ESP32 with 38 pins  | [Development Board](https://www.aliexpress.com/item/1005001636295529.html#29:~:text=Store%20Coupon-,Color%3A%20ESP%2D32%2038Pin,-More%20price%20information)   | [GRobotronics](https://grobotronics.com/)  | 1  | 3.62 | 3.62 | - | 
+| #4 | 20-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 9.90 | 9.90 | Reused. |
+| #5 | 2-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Common kit. |
+| #6 | 4-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Common kit. |
+| #7 | 2-pin JST male connector | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 6.20 | 6.20 | Reused for all JST. |
+| #8 | 3-pin JST male and female connector  | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.00 | 0.00 | Common kit. |
+| #9 | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 |  |
+
+| #10 | Two 5-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.50  | 1.00 | 0.50 | Reused for making all ribbon cables. |
+| #11 | 5-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 0.00 | 0.00 | Common kit. |
+| #12 | One 3-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.15  | 1.00 | 0.15 | Reused. |
+
+| #13 | DS18B20 temperature sensors  | [DS18B20 Temperature Sensor](https://nettop.gr/index.php/eksartimata/aisthitires/humidity-temperature/ds18b20-temperature-sensor-module.html)   | [Nettop](https://www.nettop.gr/)  | 2  | 2.20 | 4.40 | |
+
+| #14 | Wire pieces for PCB bridges  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.05  | 1.00 | 0.05 | Reused. |
+
+| **Total** |      |    |     |      |     |  **175.00**  |   |
+
+</div>
+
+
+
+15 A case cooler 8 cm LogiLink FAN101 at 12V.
+- https://www.mgmanager.gr/anavathmisi-ypologisti-2/koutia-ypologiston/axesouar-cases/logilink-logilink-pc-case-cooler-80mm-black-fan101-_237833/
+  
+16 Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module.
+- reference the related sections?
+  
+17 Non mandatory connectors, two 2-pin terminal, high current red and black wire, male and female connectors to power the analog motor drivers with.
+- https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html
+- https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en
+- https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html
+  
+18 Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
+- https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html
+  
+19 The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
+- no need to product its source code
+
+
 [Add table]
 
 The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
+
+The Motors Hub Power Driver is composed of the following elements:
+
+1 A PCB board, with its schematics located within PCB.CNC.power/ folder.
+- reused many times - https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html
+2 The PCB top side printed cover located within PCB.PRINT.Stickers.
+- reused in all such cases https://www.bitprice.gr/index.php?option=com_virtuemart
+3 Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
+- https://www.hellasdigital.gr/electronics/relays/hk4100f-dc-3v-shg-relay-6pin/
+4 One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
+- product https://www.amazon.co.uk/Meat-Doria-73232300-Microrele/dp/B07RC82TB9
+- supplier https://soulis-niaos.business.site/
+5 An [ACS712] 20 amp current Sensor.
+- https://www.aliexpress.com/item/32348760733.html
+6 One 5-pin male header.
+- reuse https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/
+7 A JST-SM 2-pin connector, connecting with the motor driver reverse function.
+- https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en
+8 One small wire for connecting the PCB with the 20 amp relay.
+- use one make all ribbon cables - specify 0 unit price for others ? https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html
+9 One 3-pin header for connecting the PCB with the 20 amp relay.
+- reuse https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/
+10 One 4 cm high current wire.
+- https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html
+11 One 6.2 mm female connector.
+- https://www.e-wireless.gr/150pcs-crimp-wire-connectors-terminals-crimp-female-male-spade-terminals-with-transparent-insulating-sleeves/
+- Supplier https://soulis-niaos.business.site/
+12 Glue gun to secure the copper side of the pcb from corrosion.
+- https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html
+13 Two 40v 1amp diodes, protecting the digital GPIO of the ESP32 from the back voltage, potentially generated by the Relay coils.
+- https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/
 
 [Add table]
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
+<a name="motors-hub-adac-components" />The Motors Hub ADAC is composed of the following components:
+
+1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
+2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf).
+3. One MCP3008 8-channel 10 bit ADC.
+4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
+5. One 7-pin ribbon cable for connecting with the ADAC module.
+6. One 4-pin male header for connecting with the Agrofelis controller.
+7. One 8-pin female header.
+8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
+9. Glue gun to secure the copper side of the PCB from extrernal factors applied after its function has been verified.
+
 <div align="center">
 
-| No.  | Product     | Product URL        | Supplier   | Quantity        |  VAT Price (€)  |  Subtotal (€)   | Note |
+| No.  | Product     | Product URL        | Supplier   | Used Quantity   |  VAT Price (€)  |  Subtotal (€)   | Note |
 |------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
 | #1 | Copper board 420x297mm    |      [Copper Board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Multiple boards can be cutted from this.  |
 | #2 | MCP3008 8-Channel 10-Bit ADC  | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 5.87 | 5.87 | - | 
