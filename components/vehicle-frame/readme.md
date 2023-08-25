@@ -129,7 +129,7 @@ The following table lists the individual components employed for manufacturing t
 </div>
 
 
-The total cost to manufacture Agrofelis frame excluding shipping, cutting, welding, and painting  costs, sums to approximately **134** euros.
+The total cost to manufacture the Agrofelis frame excluding shipping, cutting, welding and painting costs, sums to approximately **134** euros.
 
 
 ## Summary
