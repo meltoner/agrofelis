@@ -385,26 +385,26 @@ The following table provides an overview of indicative suppliers associated with
 
 | No.  | Product     | Product URL        | Supplier   | Used Quantity   |  VAT Price (€)  |  Subtotal (€)   | Note |
 |------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
-| #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Reused many times.  |
+| #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Reused many times  |
 | #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 12.00 | 12.00 | Reused in all such cases | 
-| #3 | ESP32 with 38 pins  | [Development Board](https://www.aliexpress.com/item/1005001636295529.html#29:~:text=Store%20Coupon-,Color%3A%20ESP%2D32%2038Pin,-More%20price%20information)   | [GRobotronics](https://grobotronics.com/)  | 1  | 3.62 | 3.62 | - | 
-| #4 | 20-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 9.90 | 9.90 | Reused. |
-| #5 | 2-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Common kit. |
-| #6 | 4-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Common kit. |
-| #7 | 2-pin JST male connector | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 6.20 | 6.20 | Reused for all JST. |
-| #8 | 3-pin JST male and female connector  | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.00 | 0.00 | Common kit. |
+| #3 | ESP32 with 38 pins  | [Development Board](https://www.aliexpress.com/item/1005001636295529.html#29:~:text=Store%20Coupon-,Color%3A%20ESP%2D32%2038Pin,-More%20price%20information)   | [AliExpress](https://www.aliexpress.com/?spm=a2g0o.detail.1000002.1.21e1578bwcz0II)  | 1  | 3.62 | 3.62 | - | 
+| #4 | 20-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 9.90 | 9.90 | Reused |
+| #5 | 2-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Pre-billed as Common Kit |
+| #6 | 4-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Pre-billed as Common Kit |
+| #7 | 2-pin JST male connector | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 6.20 | 6.20 | Reused for all JST |
+| #8 | 3-pin JST male and female connector  | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.00 | 0.00 | Pre-billed and Common Kit |
 | #9 | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 |  |
-| #10 | Two 5-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.50  | 1.00 | 0.50 | Reused. |
-| #11 | 5-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 0.00 | 0.00 | Common kit. |
-| #12 | One 3-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.15  | 1.00 | 0.15 | Reused. |
+| #10 | Two 5-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.50  | 1.00 | 0.50 | Reused |
+| #11 | 5-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 0.00 | 0.00 | Pre-billed as Common Kit |
+| #12 | One 3-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.15  | 1.00 | 0.15 | Reused |
 | #13 | DS18B20 temperature sensors  | [DS18B20 Temperature Sensor](https://nettop.gr/index.php/eksartimata/aisthitires/humidity-temperature/ds18b20-temperature-sensor-module.html)   | [Nettop](https://www.nettop.gr/)  | 2  | 2.20 | 4.40 | |
 | #14 | Wire pieces for PCB bridges  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.05  | 1.00 | 0.05 | Reused. |
 | #15 | 8 cm case cooler  | [Case Cooler](https://www.mgmanager.gr/anavathmisi-ypologisti-2/koutia-ypologiston/axesouar-cases/logilink-logilink-pc-case-cooler-80mm-black-fan101-_237833/)   | [MG Manager](https://www.mgmanager.gr/) | 1  | 2.83 | 2.83 |  |
 | #16 | Agrofelis Motor Hub Power Driver modules| [Driver modules](#motor-hub-power-module) | Agrofelis | 1  | TBD | TBD |  |
 |  | Agrofelis Motors Hub ADAC module | [ADAC module](#motors-hub-adac) | Agrofelis | 1  | TBD | TBD |  |
-| #17 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 8.00 | Non-Mandatory. |
-|  | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 | Non-Mandatory. |
-|  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | Non-Mandatory. |
+| #17 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 8.00 | Non-Mandatory |
+|  | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 | Non-Mandatory |
+|  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | Non-Mandatory |
 | #18 | Glue gun | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | |
 | #19   | In-House Developed Software | Dual Motor Driver Software | In-House   | 1             | 0.00               | 0.00         |   |
 | **Total** |      |    |     |      |     |  **64.05**  |   |
@@ -413,36 +413,42 @@ The following table provides an overview of indicative suppliers associated with
 
 The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
 
-The Motors Hub Power Driver is composed of the following elements:
+| No.  | Product     | Product URL        | Supplier   | Used Quantity   |  VAT Price (€)  |  Subtotal (€)   | Note |
+|------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
+| #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 0.00 | 0.00 | Pre-billed with Reuse |
+| #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 12.00 | 12.00 | Pre-billed with Reuse | 
+| #3 | 3V SHG Relay 6Pin | [Relay](https://www.hellasdigital.gr/electronics/relays/hk4100f-dc-3v-shg-relay-6pin/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 2  | 0.50 | 1.00 |  | 
+| #4 | 12V Car Relay 20A | [Microrele](https://www.amazon.co.uk/Meat-Doria-73232300-Microrele/dp/B07RC82TB9)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | TBD | TBD |  | 
+| #5 | ACS712 20A Current Sensor Module | [Current Sensor](https://www.aliexpress.com/item/32348760733.html)   | [AliExpress](https://www.aliexpress.com/?spm=a2g0o.detail.1000002.1.21e1578bwcz0II)  | 1  | 1.02 | 1.02 |  | 
 
-1 A PCB board, with its schematics located within PCB.CNC.power/ folder.
-- reused many times - https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html
-2 The PCB top side printed cover located within PCB.PRINT.Stickers.
-- reused in all such cases https://www.bitprice.gr/index.php?option=com_virtuemart
-3 Two relays trigger/able with 3v [HK4100F-DC 3V SHG Relay 6Pin].
-- https://www.hellasdigital.gr/electronics/relays/hk4100f-dc-3v-shg-relay-6pin/
-4 One car relay, trigger/able with 12v with 20 amp capacity [6770718 - 12v 20A].
-- product https://www.amazon.co.uk/Meat-Doria-73232300-Microrele/dp/B07RC82TB9
-- supplier https://soulis-niaos.business.site/
-5 An [ACS712] 20 amp current Sensor.
-- https://www.aliexpress.com/item/32348760733.html
+| **Total** |      |    |     |      |     |  **64.05**  |   |
+
+
 6 One 5-pin male header.
 - reuse https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/
+  
 7 A JST-SM 2-pin connector, connecting with the motor driver reverse function.
 - https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en
+  
 8 One small wire for connecting the PCB with the 20 amp relay.
 - use one make all ribbon cables - specify 0 unit price for others ? https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html
+  
 9 One 3-pin header for connecting the PCB with the 20 amp relay.
 - reuse https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/
+  
 10 One 4 cm high current wire.
 - https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html
+  
 11 One 6.2 mm female connector.
 - https://www.e-wireless.gr/150pcs-crimp-wire-connectors-terminals-crimp-female-male-spade-terminals-with-transparent-insulating-sleeves/
 - Supplier https://soulis-niaos.business.site/
+  
 12 Glue gun to secure the copper side of the pcb from corrosion.
 - https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html
+  
 13 Two 40v 1amp diodes, protecting the digital GPIO of the ESP32 from the back voltage, potentially generated by the Relay coils.
 - https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/
+  
 
 [Add table]
 
