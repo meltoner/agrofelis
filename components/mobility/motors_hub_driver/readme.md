@@ -407,7 +407,7 @@ The following table provides an overview of indicative suppliers associated with
 |  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | Non-Mandatory. |
 | #18 | Glue gun | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | |
 | #19   | In-House Developed Software | Dual Motor Driver Software | In-House   | 1             | 0.00               | 0.00         |   |
-| **Total** |      |    |     |      |     |  **175.00**  |   |
+| **Total** |      |    |     |      |     |  **64.05**  |   |
 
 </div>
 
