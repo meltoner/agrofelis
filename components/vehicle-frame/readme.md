@@ -125,7 +125,7 @@ The following table lists the individual components employed for manufacturing t
 | #6 | 750ml Vitex Metal Primer | [Primer](https://www.stereotiki.gr/store4/vitex-metal-primer-astari-metallon.html) | [stereotiki](https://www.stereotiki.gr) | 1 | 7 | 7 | |
 | #7 | Gray oil paint 0,375 kg | [Metal Paint](https://vrontinos.gr/el/Product/0001A515.aspx) | [vrontinos](https://vrontinos.gr) | 1 | 6 | 6 |  |
 | #8 | brushes, white spirit, paper sheet | [brush](https://nova-ceramica.gr/products/morris-39253) [white spirit](https://www.rigatos-shop.gr/dialytika-diavrwtika-spray/2381-white-spirit-%CE%B4%CE%B9%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C-500ml.html) [paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | | 1 | 15 |15 | |
-| #9 | 100 pack Allen screws DIN 912 8.8 M 8 x 25 | [Screws M8X25](http://www.sinter-hellas.gr/index.php/products/eidh-vidopoiias/vides-me-speirwma-gia-perikoxlio/93-allen/din912-88-mavr) | |[Sinter Hellas](www.sinter-hellas.gr) | 1 | 20 | 20 | |
+| #9 | 100 pack Allen screws DIN 912 8.8 M 8 x 25 | [Screws M8X25](http://www.sinter-hellas.gr/index.php/products/eidh-vidopoiias/vides-me-speirwma-gia-perikoxlio/93-allen/din912-88-mavr)  |[Sinter Hellas](www.sinter-hellas.gr) | 1 | 20 | 20 | |
 
 </div>
 
