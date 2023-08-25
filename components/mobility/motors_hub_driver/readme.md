@@ -107,10 +107,10 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 13. Two temperature sensors DS18B20 connected via one wire.
 14. Pieces of wire for the implementing the PCB bridges as indicated by the yellow color in the [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-controller.pdf) schematic.
 15. A case cooler 8 cm LogiLink FAN101 at 12V.
-16. Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module. 
-17. Non mandatory connectors, two 2-pin terminal, high current red and black wire, male and female connectors to power the analog motor drivers with.
+16. The Agrofelis Motor Hub Power Driver modules and the Agrofelis Motors hub ADAC module.
+17. Non-mandatory connectors, two 2-pin terminal, high current red and black wire, male and female connectors to power the analog motor drivers with.
 18. Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
-19. The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
+19. The software for the [back](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriverBack) and [front](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriverFront) dual motor driver. 
 
 Remarks:
 
@@ -394,40 +394,22 @@ The following table provides an overview of indicative suppliers associated with
 | #7 | 2-pin JST male connector | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 6.20 | 6.20 | Reused for all JST. |
 | #8 | 3-pin JST male and female connector  | [XH Connector Kit](https://grobotronics.com/jst-xh-connector-assortment-kit-2.5mm-230pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.00 | 0.00 | Common kit. |
 | #9 | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 |  |
-
 | #10 | Two 5-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.50  | 1.00 | 0.50 | Reused for making all ribbon cables. |
 | #11 | 5-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 2  | 0.00 | 0.00 | Common kit. |
 | #12 | One 3-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.15  | 1.00 | 0.15 | Reused. |
-
 | #13 | DS18B20 temperature sensors  | [DS18B20 Temperature Sensor](https://nettop.gr/index.php/eksartimata/aisthitires/humidity-temperature/ds18b20-temperature-sensor-module.html)   | [Nettop](https://www.nettop.gr/)  | 2  | 2.20 | 4.40 | |
-
 | #14 | Wire pieces for PCB bridges  | [Ribbon cable 28AWG](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 0.05  | 1.00 | 0.05 | Reused. |
-
+| #15 | 8 cm case cooler  | [Case Cooler](https://www.mgmanager.gr/anavathmisi-ypologisti-2/koutia-ypologiston/axesouar-cases/logilink-logilink-pc-case-cooler-80mm-black-fan101-_237833/)   | [MG Manager](https://www.mgmanager.gr/) | 1  | 2.83 | 2.83 |  |
+| #16 | Agrofelis Motor Hub Power Driver modules| [Driver modules](#motor-hub-power-module) | Agrofelis | 1  | TBD | TBD |  |
+|  | Agrofelis Motors Hub ADAC module | [ADAC module](#motors-hub-adac) | Agrofelis | 1  | TBD | TBD |  |
+| #17 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 8.00 | Non-Mandatory. |
+|  | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 | Non-Mandatory. |
+|  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | Non-Mandatory. |
+| #18 | Glue gun | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | |
+| #19   | In-House Developed Software | Dual Motor Driver Software | In-House   | 1             | 0.00               | 0.00         |   |
 | **Total** |      |    |     |      |     |  **175.00**  |   |
 
 </div>
-
-
-
-15 A case cooler 8 cm LogiLink FAN101 at 12V.
-- https://www.mgmanager.gr/anavathmisi-ypologisti-2/koutia-ypologiston/axesouar-cases/logilink-logilink-pc-case-cooler-80mm-black-fan101-_237833/
-  
-16 Two Agrofelis Motor Hub Power Drivers and the Agrofelis Motors hub ADAC module.
-- reference the related sections?
-  
-17 Non mandatory connectors, two 2-pin terminal, high current red and black wire, male and female connectors to power the analog motor drivers with.
-- https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html
-- https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en
-- https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html
-  
-18 Glue gun to secure the copper side of the pcb from extrernal factors applied after its function has been verified.
-- https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html
-  
-19 The software https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriver
-- no need to product its source code
-
-
-[Add table]
 
 The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
 
