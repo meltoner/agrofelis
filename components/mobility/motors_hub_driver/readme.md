@@ -433,30 +433,22 @@ The subsequent table presents indicative suppliers for the necessary components 
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
-<a name="motors-hub-adac-components" />The Motors Hub ADAC is composed of the following components:
-
-1. A PCB board, with its schematics located within [PCB.CNC.adac/](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac) folder.
-2. The PCB top side printed cover located within [PCB.PRINT.Stickers](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-adac.pdf).
-3. One MCP3008 8-channel 10 bit ADC.
-4. One 4-channel I2C safe Bi-directional Logic Level Converter between 5V and 3.3V.
-5. One 7-pin ribbon cable for connecting with the ADAC module.
-6. One 4-pin male header for connecting with the Agrofelis controller.
-7. One 8-pin female header.
-8. Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.
-9. Glue gun to secure the copper side of the PCB from extrernal factors applied after its function has been verified.
-
 <div align="center">
 
 | No.  | Product     | Product URL        | Supplier   | Used Quantity   |  VAT Price (€)  |  Subtotal (€)   | Note |
 |------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
-| #1 | Copper board 420x297mm    |      [Copper Board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 9.90 | 9.90 | Multiple boards can be cutted from this.  |
-| #2 | MCP3008 8-Channel 10-Bit ADC  | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 5.87 | 5.87 | - | 
-| #3 | 4-channel I2C-safe Bi-directional  | [Level Converter](https://grobotronics.com/4-channel-i2c-safe-bi-directional-logic-level-converter-bss138.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 4.90 | 4.90 | - | 
+| #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 0.00 | 0.00 | Pre-billed with Reuse |
+| #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 0.00 | 0.00 | Pre-billed with Reuse |
+| #3 | MCP3008 8-Channel 10-Bit ADC  | [Microcontroller](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 5.87 | 5.87 | - | 
+| #4 | 4-channel I2C-safe Bi-directional  | [Level Converter](https://grobotronics.com/4-channel-i2c-safe-bi-directional-logic-level-converter-bss138.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 4.90 | 4.90 | - | 
+| #5 | 7-pin ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | |
+| #6 |  4-pin male header | [Male Pin Header](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.00 | 0.00 | Reused | 
+| #7 | 8-pin female header | [Female Pin Header Kit](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-female-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.20 | 0.04 | To Be Reused |
+| #8 | Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | |
+| #9 | Glue stick | [Hot Melt Glue Stick](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.00 | 4.00 | |
 | **Total** |      |    |     |      |     |  **175.00**  |   |
 
 </div>
-
-
 
 ### Cost estimation overview
 
