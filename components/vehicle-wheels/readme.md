@@ -2,17 +2,17 @@
 
 # Abstract
 
-This document describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
+This document describes the details of manufacturing the 4WD system of the Agrofelis robotic vehicle. The  requirements set are being documented followed by the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed with their unit price and total cost along with references to indicative suppliers.
 
 # Introduction
 
 Finding an elegant solution for the mobility requirements of a low speed robotic vehicle such as the Agrofelis robot, proved to be a time consuming research process. 
 
-After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption, tolerance to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the necessary characteristics of the needed solution. A four wheel drive active system instead for example of a 2WD drive was concluded necessary, in order to maximize the traction and distribute the load of the vehicle. In the following sections the details of the active wheels, their components and the indicative suppliers to purchase the sub-components, are documented.
+After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption, tolerance to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the needed solution. A 4WD active system instead a 2WD drive was deemed  necessary in order to maximize traction , steering and weight distribution. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
 
 ## The Agrofelis wheels
 
-The market research concluded to the most optimal solution overly, would be to employ four geared in-wheel hub motors of 250 watt each delivering 38 NM each, summing to 152 NM of total torque power, matching all requirements set for the Agrofelis robot. The wheel is assembled from individual parts allowing to variate according the problem focusing on. In the following sections the particular composition evaluated and employed is presented.
+The requirements analysis concluded to an optimal solution employing four geared in-wheel hub motors of 250 Watt (0.33 HP) and 38 NM of torque each, summing up to 152 NM of torque and 1.32 HP of power, meeting all field requirements set for the Agrofelis robot. The wheel is assembled from individual parts allowing to variate according to the problem focused on. In the following sections the particular composition evaluated and employed is presented.
 
 Bellow, the wheel with its motor, the spokes, the spokes lacing pattern and the 16 inch rim, are photographed.
 
@@ -33,7 +33,7 @@ The four wheels supporting the vehicle, are arranged into a near square arrangem
 
 ### Wheels compilation
 
-To minimize costs and although it was quite laborious, the motor hubs were purchased without their rims so these could reserve less volume, approximately 1/4, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers, the wheel spokes, the disc brakes and the fork brakes, were purchased from a foreign supplier. The 16 inch aluminum rims, the inner tubes and tires, were purchased from local suppliers. 
+To minimize costs and although it was quite laborious to knit the wheels by hand , the motor hubs were purchased without their rims so these could reserve less volume, approximately 1/4, leading to significantly lower shipping costs. Along with the motors, their respective motor drivers, the wheel spokes, the disc brakes and the fork brakes, were purchased from a foreign supplier. The 16 inch aluminum rims, the inner tubes and tires, were purchased from local suppliers. 
 
 The approach of purchasing the wheels un-assembled provides the option to decrease or increase the wheel size subject that the spokes length are adapted accordingly. The wheels spokes, connecting the motors with the rim, were knitted and aligned manually. 
 
