@@ -12,7 +12,7 @@ After researching various solutions and vendors, for the uncommon case of low rp
 
 ## The Agrofelis wheels
 
-The requirements analysis concluded to an optimal solution employing four geared in-wheel hub motors of 250 Watt (0.33 HP) and 38 NM of torque each, summing up to 152 NM of torque and 1.32 HP of power, meeting all field requirements set for the Agrofelis robot. The wheel is assembled from individual parts allowing to variate according to the problem focused on. In the following sections the particular composition evaluated and employed is presented.
+The requirements analysis concluded to an optimal solution employing four geared in-wheel hub motors of 250 Watt (0.33 HP) and 38 NM of torque each, summing up to 152 NM of torque and 1 KW (1.32 HP) of power, meeting all field requirements set for the Agrofelis robot. The wheel is assembled from individual parts allowing to variate according to the problem focused on. In the following sections the particular composition evaluated and employed is presented.
 
 Bellow, the wheel with its motor, the spokes, the spokes lacing pattern and the 16 inch rim, are photographed.
 
