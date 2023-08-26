@@ -10,7 +10,7 @@ The declining demographics in the West, economic disparity, energy cost inflatio
 
 Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker's productivity with an affordable platform that is between a Tractor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
 
-The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
+Climate change though has also increased the probability of fires and floods. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
 
 Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can address local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
 
@@ -30,8 +30,8 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 - Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
 - Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
 - Fertilizer Casting, a copious job that must be done in both orchards and vegetables
-- Sensor Suite for Plant disease diagnosis
-- Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
+- Sensor Suite for Plant Data collection , e.g. Plant disease diagnosis
+- Robotic Picking Arm Base & Power Hub, for low plant cultivation and also Green houses
 - Power Hub, fruit picking for trees (see Tevel)
  
 The technologies that could be incorporated on a Public Safety Vehicle could include applications like:
