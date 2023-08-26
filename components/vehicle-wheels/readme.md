@@ -8,7 +8,7 @@ This document describes the details of manufacturing the 4WD system of the Agrof
 
 Finding an elegant solution for the mobility requirements of a low speed robotic vehicle such as the Agrofelis robot, proved to be a time consuming research process. 
 
-After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption, tolerance to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the needed solution. A 4WD active system instead a 2WD drive was deemed  necessary in order to maximize traction , steering and weight distribution. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
+After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption and ability to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the designed solution. A 4WD active system instead a 2WD drive was deemed  necessary in order to maximize traction , steering and load distribution. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
 
 ## The Agrofelis wheels
 
