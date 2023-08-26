@@ -31,6 +31,7 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 - Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
 - Fertilizer Casting, a copious job that must be done in both orchards and vegetables
 - Sensor Suite for Plant Data collection , e.g. Plant disease diagnosis
+- Mechanical , Laser or Microwave weed killing platform 
 - Robotic Picking Arm Base & Power Hub, for low plant cultivation and also Green houses
 - Power Hub, fruit picking for trees (see Tevel)
  
