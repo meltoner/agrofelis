@@ -95,7 +95,7 @@ The motor hubs are connected to their motor drivers via a cable supplied with th
 The following table lists the individual components used for manufacturing four Agrofelis wheels. The index table also includes the product URL, the indicative supplier, as well as the unit price total amount.
 <div align="center">
 
-| No.|  Product | Product URL | Supplier | Quantity | VAT Price (€) | Subtotal (€)  |
+| No.|  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  |
 |----|--------------|------------|-----|---|---|---|
 | #1 | SR250D Suringmax Motor | [Motor Hub](http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=97) | [Suringmax](http://www.suringmax.com/) | 4 | 70 | 280 |
 | #2 | 36 spokes to fit the inner dimensions of the rims with inner diameter of 28 cm |  | [Suringmax](http://www.suringmax.com/) | 4 | 3 | 12 |
