@@ -451,9 +451,9 @@ Finally, the ensuing table outlines the constituents comprising the components o
 | #9 | Glue stick | [Hot Melt Glue Stick](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.00 | 4.00 | - |
 | **Total** |      |    |     |      |     |  **18.49**  |   |
 
-So, we observe that the estimated cost for producing the motor hub ADAC amounts to approximately **18** euros, excluding shipping and assembly charges.
-
 </div>
+
+So, we observe that the estimated cost for producing the motor hub ADAC amounts to approximately **18** euros, excluding shipping and assembly charges.
 
 ### Cost estimation overview
 
