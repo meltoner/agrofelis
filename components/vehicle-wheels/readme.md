@@ -1,14 +1,14 @@
-# Agrofelis Robot wheels fabrication
+# Agrofelis Robot Wheel Fabrication
 
 # Abstract
 
-This document describes the details of manufacturing the 4WD system of the Agrofelis robotic vehicle. The  requirements set are being documented followed by the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed with their unit price and total cost along with references to indicative suppliers.
+This document outlines the manufacturing process for the 4WD system of the Agrofelis robotic vehicle. It begins by detailing the specific requirements and then progresses to the completed fabricated solution. The design plans, compilation procedures, assistance assets and images taken throughout development are presented in a step-by-step manner. The sub-components composing four Agrofelis wheels are indexed with their unit prices and overall cost, along with references to indicative suppliers.
 
 # Introduction
 
-Finding an elegant solution for the mobility requirements of a low speed robotic vehicle such as the Agrofelis robot, proved to be a time consuming research process. 
+Finding an elegant solution for the mobility requirements of a low speed robotic vehicle such as the Agrofelis robot proved to be a time-consuming procedure requiring extensive research and consideration.
 
-After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption and ability to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the designed solution. A 4WD active system instead a 2WD drive was deemed  necessary in order to maximize traction , steering and load distribution. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
+After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption and ability to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the designed solution. In order to maximise traction, steering, and load distribution, a 4WD active system rather than a 2WD drive was deemed necessary. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
 
 ## The Agrofelis wheels
 
@@ -92,8 +92,7 @@ The four fully completed wheels are snapshot-ed by the following photograph.
 The motor hubs are connected with their motor drivers via a cable supplied with motors. Consequently, the active wheels of the vehicle interface with the [Agrofelis Motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver) modules, which enhances their functionality by enabling to digitally monitor and control the motors to perform precise and adaptive coordinated movements at near constant low RPM, independent of the ground slope.
 
 ## The wheels components and indicative suppliers
- 
- 
+
 The following table lists the individual components employed for manufacturing four Agrofelis wheels. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total amount.
 
 <div align="center">
