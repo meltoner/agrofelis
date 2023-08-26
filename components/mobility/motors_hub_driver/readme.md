@@ -407,7 +407,7 @@ The following table provides an overview of indicative suppliers associated with
 |  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | - |
 | #18 | Glue gun | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | - |
 | #19   | In-House Developed Software | Dual Motor Driver Software | In-House   | 1             | 0.00               | 0.00         | - |
-| **Total** |      |    |     |      |     |  **64.05**  |   |
+| **Total** |      |    |     |      |     |  **56.63**  |   |
 
 </div>
 
@@ -429,7 +429,7 @@ The subsequent table presents indicative suppliers for the necessary components 
 | #11 | 6.2 mm female connector | [Crimp Wire Connectors](https://www.e-wireless.gr/150pcs-crimp-wire-connectors-terminals-crimp-female-male-spade-terminals-with-transparent-insulating-sleeves/)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | 0.20 | 0.20 | |
 | #12 | Glue stick | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | - |
 | #13 | 1A 40V Schottky Diode | [Schottky Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/)   | [Hellas Digital](https://www.hellasdigital.gr/) | 1  | 0.08 | 0.08 | - |
-| **Total** |      |    |     |      |     |  **3.09**  |   |
+| **Total** |      |    |     |      |     |  **14.24**  |   |
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
@@ -446,7 +446,7 @@ Finally, the ensuing table outlines the constituents comprising the components o
 | #7 | 8-pin female header | [Female Pin Header Kit](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-female-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.20 | 0.04 | Base Component |
 | #8 | One wire cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | - |
 | #9 | Glue stick | [Hot Melt Glue Stick](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.00 | 4.00 | - |
-| **Total** |      |    |     |      |     |  **175.00**  |   |
+| **Total** |      |    |     |      |     |  **18.49**  |   |
 
 </div>
 
@@ -462,11 +462,11 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Part   | Sub-Total (€) |
 |---------------------|---------------|
-| Μotors hub controller   | 200.00   |
-| Μotors hub power   | 300.00   |
-| Μotors hub ADAC   | 400.00   |
+| Μotors hub controller   | 56.63   |
+| Μotors hub power driver   | 14.24   |
+| Μotors hub ADAC   | 18.49   |
 |          |          |
-| **Grand Total**   | **900.00**   |
+| **Grand Total**   | **89.36**   |
 
 </div>
 
