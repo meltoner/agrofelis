@@ -411,6 +411,7 @@ The following table provides an overview of indicative suppliers associated with
 
 </div>
 
+So, the cost for manufacturing the motors hub controller, excluding expenses related to shipping and assembly, amounts to approximately **56** euros.
 
 The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
 
@@ -431,6 +432,8 @@ The subsequent table presents indicative suppliers for the necessary components 
 | #13 | 1A 40V Schottky Diode | [Schottky Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/)   | [Hellas Digital](https://www.hellasdigital.gr/) | 1  | 0.08 | 0.08 | - |
 | **Total** |      |    |     |      |     |  **14.24**  |   |
 
+In terms of fabricating the motor hub power driver, the overall cost, excluding shipping and assembly expenses, sums to around **14** euros.
+
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 
 <div align="center">
@@ -447,6 +450,8 @@ Finally, the ensuing table outlines the constituents comprising the components o
 | #8 | One wire cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | - |
 | #9 | Glue stick | [Hot Melt Glue Stick](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.00 | 4.00 | - |
 | **Total** |      |    |     |      |     |  **18.49**  |   |
+
+So, we observe that the estimated cost for producing the motor hub ADAC amounts to approximately **18** euros, excluding shipping and assembly charges.
 
 </div>
 
@@ -469,6 +474,8 @@ The table showcased below provides a detailed breakdown of components and their 
 | **Grand Total**   | **89.36**   |
 
 </div>
+
+Consequently, we observe that the total manufacturing cost for the motor hub controller, power driver, and ADAC is approximately **90** euros, exclusive of shipping and assembly costs.
 
 ### Conclusion
 
