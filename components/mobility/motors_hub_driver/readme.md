@@ -419,14 +419,14 @@ The subsequent table presents indicative suppliers for the necessary components 
 | #1 | Copper board 420x297mm    |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    1  | 0.00 | 0.00 | Pre-billed with Reuse |
 | #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 0.00 | 0.00 | Pre-billed with Reuse | 
 | #3 | 3V SHG relay 6Pin | [Relay](https://www.hellasdigital.gr/electronics/relays/hk4100f-dc-3v-shg-relay-6pin/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 2  | 0.50 | 1.00 | - |
-| #4 | 12V car relay 20A | [Microrele](https://www.amazon.co.uk/Meat-Doria-73232300-Microrele/dp/B07RC82TB9)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | TBD | TBD | - |
+| #4 | 12V car relay 20A | [Microrele](https://www.amazon.co.uk/Meat-Doria-73232300-Microrele/dp/B07RC82TB9)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | 6.00 | 6.00 | - |
 | #5 | ACS712 20A current sensor module | [Current Sensor](https://www.aliexpress.com/item/32348760733.html)  | [AliExpress](https://www.aliexpress.com/?spm=a2g0o.detail.1000002.1.21e1578bwcz0II)  | 1 | 1.02 | 1.02 | - | 
 | #6 |  5-pin male header | [Male Pin Header](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.24 | 0.24 | To Be Reused | 
 | #7 | Green screw terminal 2P 2.54mm  | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.30 | 0.30 | - |
 | #8 | Small wire for PCB  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.05  | 1.00 | 0.05 | Reused |
 | #9 |  3-pin male header | [Male Pin Header](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.00 | 0.00 | Reused | 
 | #10 | 4 cm high current wire | [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 0.00 | 0.00 | Reused |
-| #11 | 6.2 mm female connector | [Crimp Wire Connectors](https://www.e-wireless.gr/150pcs-crimp-wire-connectors-terminals-crimp-female-male-spade-terminals-with-transparent-insulating-sleeves/)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | TBD | TBD | Reused |
+| #11 | 6.2 mm female connector | [Crimp Wire Connectors](https://www.e-wireless.gr/150pcs-crimp-wire-connectors-terminals-crimp-female-male-spade-terminals-with-transparent-insulating-sleeves/)   | [Soulis Niaos](https://soulis-niaos.business.site/)  | 1  | 0.20 | 0.20 | Reused |
 | #12 | Glue stick | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | - |
 | #13 | 1A 40V Schottky Diode | [Schottky Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/)   | [Hellas Digital](https://www.hellasdigital.gr/) | 1  | 0.08 | 0.08 | - |
 | **Total** |      |    |     |      |     |  **3.09**  |   |
@@ -444,7 +444,7 @@ Finally, the ensuing table outlines the constituents comprising the components o
 | #5 | 7-pin ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | - |
 | #6 |  4-pin male header | [Male Pin Header](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-male-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.00 | 0.00 | Reused | 
 | #7 | 8-pin female header | [Female Pin Header Kit](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/40pin-2.54mm-single-row-female-pin-header/)   | [Hellas Digital](https://www.hellasdigital.gr/)  | 1  | 0.20 | 0.04 | To Be Reused |
-| #8 | Two one wire cable of 7 cm connecting the ADAC with the current sensors of the Agrogelis Motor Power driver.  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | - |
+| #8 | One wire cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-10-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.60 | 0.60 | - |
 | #9 | Glue stick | [Hot Melt Glue Stick](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.00 | 4.00 | - |
 | **Total** |      |    |     |      |     |  **175.00**  |   |
 
