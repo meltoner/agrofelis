@@ -68,31 +68,29 @@ In the following sections, the detailed documentation of all developed modules c
 
 The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
 
-The complete documentation of the Agrofelis chassis frame is provided bellow.
+The complete documentation of the Agrofelis chassis frame is provided below.
 
-- [Chassis frame design and fabrication](components/mobility/motors_hub_driver)
+- [Chassis frame design and fabrication](components/vehicle-frame)
 
 An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarised by the following  figure. 
-
 
 ![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
 
-
 ## Agrofelis robot wheels fabrication
 
-This [Agrofelis robot wheels fabrication document] describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
+This [Agrofelis robot wheels fabrication document](components/vehicle-wheels) describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
 
-The complete documentation of the Agrofelis robot wheels fabrication, is refernced bellow.
+The complete documentation of the Agrofelis robot wheels fabrication, is refernced below.
 
-- [Chassis frame design and fabrication](components/mobility/motors_hub_driver)
+- [Agrofelis robot wheels fabrication](components/vehicle-wheels)
 
 A figure listing the four most representative figures from the document is summarised below.
 
 ![Agrofelis Robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
 
 
-## Agrofelis Motors hub driver
+## Agrofelis motors hub driver
 
 This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
