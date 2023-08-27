@@ -117,9 +117,9 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Component   | Sub-Total (€) |
 |---------------------|---------------|
-| Agrofelis Chassis Frame   | 134   |
-| Agrofelis Wheels   | 576  |
-| Agrofelis Motors Hub Driver   | 90 |
+| Chassis Frame   | 134   |
+| Wheels   | 576  |
+| Motors Hub Driver   | 90 |
 |          |          |
 | **Total Construction Cost**   | **800**   |
 
