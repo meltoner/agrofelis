@@ -117,18 +117,6 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Component   | Sub-Total (€) |
 |---------------------|---------------|
-| [Chassis Frame](components/vehicle-frame#chassis-components-and-indicative-suppliers)   | 134   |
-| [Wheels](components/vehicle-wheels#wheel-components-and-indicative-suppliers)   | 576  |
-| [Motors Hub Driver](components/mobility/motors_hub_driver#motors-hub-components-and-indicative-suppliers)   | 90 |
-|          |          |
-| **Total Construction Cost**   | **800**   |
-
-</div>
-
-<div align="center">
-
-| Construction Component   | Sub-Total (€) |
-|---------------------|---------------|
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 134   |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 576  |
 | [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 90 |
