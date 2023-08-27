@@ -117,9 +117,9 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Component   | Sub-Total (€) |
 |---------------------|---------------|
-| Chassis Frame   | 134   |
-| Wheels   | 576  |
-| Motors Hub Driver   | 90 |
+| [Chassis Frame](components/vehicle-frame#chassis-components-and-indicative-suppliers)   | 134   |
+| [Wheels](components/vehicle-wheels#wheel-components-and-indicative-suppliers)   | 576  |
+| [Motors Hub Driver](components/mobility/motors_hub_driver#motors-hub-components-and-indicative-suppliers)   | 90 |
 |          |          |
 | **Total Construction Cost**   | **800**   |
 
@@ -129,14 +129,12 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Component   | Sub-Total (€) |
 |---------------------|---------------|
-| [Chassis Frame](components/vehicle-frame#chassis-components-and-indicative-suppliers)   | 134   |
-| [Wheels](components/vehicle-wheels#wheel-components-and-indicative-suppliers)   | 576  |
-| [Motors Hub Driver](components/mobility/motors_hub_driver#motors-hub-components-and-indicative-suppliers)   | 90 |
+| [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 134   |
+| [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 576  |
+| [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 90 |
 |          |          |
 | **Total Construction Cost**   | **800**   |
 
 </div>
-
-[Link Text](path/to/other/document.md#your-anchor-name)
 
 Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **800** euros, exclusive of shipping and assembly costs.
