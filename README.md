@@ -111,7 +111,7 @@ This sub-section outlines the indicative costs associated with constructing the 
 
 The values provided here are based on information gathered from indicative suppliers and are intended to provide a rough estimate of the project's financial requirements. In this estimation, we have focused solely on the intrinsic value of each component and have excluded supplementary expenses such as transportation, customs clearance, and unforeseen charges. These figures are the initial step in budget assessment and lay the foundation for more detailed financial planning. 
 
-The table showcased below provides a detailed breakdown of components and their indicative costs, enhancing comprehension for informed decision-making and budget formulation. 
+The table showcased below provides a breakdown of the necessary construction components along with their associated indicative costs, enhancing comprehension for informed decision-making and budget formulation. Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
 <div align="center">
 
