@@ -1,4 +1,4 @@
-# Agrofelis chassis frame design and fabrication
+# Agrofelis Chassis Frame Design and Fabrication
 
 # Abstract 
 
@@ -32,7 +32,7 @@ In the preceding diagram, numerical annotations are used to indicate various sub
 5. The back wheel mounting points part
 6. The front wheel mounting points part
 
-## Stepwise frame fabrication
+## Stepwise Frame Fabrication
 
 This section delves into the systematic fabrication of the chassis, which unfolds across seven distinct steps. In addition, for each step, we provide accompanying images to aid comprehension and ease of reference.
 
@@ -108,14 +108,13 @@ As with all metallic parts of the Agrofelis robot, the frame is being coated wit
 Additionally, a 5 mm compressible adhesive foam is glued to the external surfaces of the frame. This measure ensures almost air-tight protection when the covers are attached, effectively safeguarding internal components against dust and water.
 
 
-## The chassis components and indicative suppliers
+## Chassis Components and Indicative Suppliers
  
 The following table lists the individual components employed for manufacturing the Agrofelis chassis frame. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
-
 <div align="center">
 
-| No. |  Product | Product URL | Supplier | Quantity | VAT Price (€) | Subtotal (€)  | Note |
+| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
 | #1 | 6 meters black iron square bar 20mm X 20mm X 2mm | [Square bar](https://e-iron.gr/product/6-11/) | [QOOP Metalworks](https://www.qoop.gr) | 2 | 7 | 14 | Few meters remain from the batch that can utilised for others parts |
 | #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 1 | 74 | 74 | A significant area of the product can be reused to fabricate other components |
@@ -129,15 +128,10 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
 
-
 The total cost to manufacture the Agrofelis frame excluding shipping, cutting, welding and painting costs, sums to approximately **134** euros.
-
 
 ## Summary
 
 The development process, component details and essential dimensions for reproducing the Agrofelis chassis has been documented in a progressive manner. A photograph of the vehicle with some covers removed, exposing details of the end frame, is presented in the closing image below.
 
 ![Close up view of the frame](_figures/vehicle-frame-05_actual.jpg)
-
-
-
