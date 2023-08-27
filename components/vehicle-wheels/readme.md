@@ -90,7 +90,7 @@ The four fully completed wheels are captured in the following photograph.
 
 The motor hubs are connected to their motor drivers via a cable supplied with the motors. Consequently, the active wheels of the vehicle interface with the [Agrofelis Motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver) modules, which enhances their functionality by enabling to digitally monitor and control the motors to perform precise and adaptive coordinated movements at near constant low RPM, regardless of ground slope.
 
-## The wheels components and indicative suppliers
+## Wheel Components and Indicative Suppliers
 
 The following table lists the individual components used for manufacturing four Agrofelis wheels. The index table also includes the product URL, the indicative supplier, as well as the unit price total amount.
 <div align="center">
