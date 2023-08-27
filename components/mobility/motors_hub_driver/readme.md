@@ -375,7 +375,7 @@ The software of the module is contained within [src folder](https://github.com/m
 
 The module receives power from the Power distribution module, documented in the related chapter of the documentation. [add]
 
-### Indicative suppliers
+### Motors Hub Components and Indicative Suppliers
 
 In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. Furthermore, the table presents information about quantities, VAT-inclusive prices, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
 
