@@ -98,8 +98,8 @@ The following table lists the individual components used for manufacturing four 
 | No.|  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  |
 |----|--------------|------------|-----|---|---|---|
 | #1 | SR250D Suringmax Motor | [Motor Hub](http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=97) | [Suringmax](http://www.suringmax.com/) | 4 | 70 | 280 |
-| #2 | 36 spokes to fit the inner dimensions of the rims with inner diameter of 28 cm |  | [Suringmax](http://www.suringmax.com/) | 4 | 3 | 12 |
-| #3 | Disk brakes |  | [Suringmax](http://www.suringmax.com/) |4 | 5 | 20 |
+| #2 | 36 spokes to fit the inner dimensions of the rims with inner diameter of 28 cm | - | [Suringmax](http://www.suringmax.com/) | 4 | 3 | 12 |
+| #3 | Disk brakes | - | [Suringmax](http://www.suringmax.com/) |4 | 5 | 20 |
 | #4 | Motor drivers at 24v with forward and reverse driving and no display connection | [Motor driver](http://www.suringmax.com/index.php?m=home&c=View&a=index&aid=139) | [Suringmax](http://www.suringmax.com/) | 4 | 15 |  60 |
 | #5 | Viper tires 16 X 3.00 |  [Fat tire](https://podilatada.gr/product/viper-elastiko-16x3-00-gia-e-bike-e-scooter/) | [Podilatada](https://podilatada.gr) | 4 | 26 | 104 | 
 | #6 | SHINKO Tube 16X2.50/3.0 | [Tire tube](https://podilatada.gr/product/shinko-16x2-50-3-0-aerothalamos-ilektrikou-podilatou-valvida-tr87-stravi/) | [Podilatada](https://podilatada.gr) | 4 | 10 | 40 | 
