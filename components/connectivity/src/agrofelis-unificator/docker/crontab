@@ -1,0 +1,1 @@
+*/2 * * * * bash -lc /web-pub/cron/test.unificator.running.sh

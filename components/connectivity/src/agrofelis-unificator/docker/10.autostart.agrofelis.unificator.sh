@@ -8,12 +8,14 @@ rinstanceImageKey="agrofelis.unificator:core"
 dockerNameInstance=$dockerName$instance
 ####################################
 echo 'KERNEL=="ttyACM[0-9]*",MODE="0666"'>/etc/udev/rules.d/99-serial.rules
+echo 'KERNEL=="ttyUSB[0-9]*",MODE="0666"'>>/etc/udev/rules.d/99-serial.rules
 
 rinstanceInstance=$(\
-#	docker run -d -it --rm --privileged --name $dockerNameInstance \
 	docker run -d -it --restart unless-stopped --privileged --name $dockerNameInstance \
 	-v /web-pub/connectivity/src/agrofelis-unificator/server/:/project/ \
+	-v /web-pub/data/:/data/ \
 	-v /dev/ttyACM0:/dev/ttyACM0 \
+	-v /dev/ttyUSB1:/dev/ttyUSB1 \
 	-p 8080:8080 \
 	-w /project/ \
 	-e dockerIP=$dockerIP -e dockerNameInstance=$dockerNameInstance -e rinstanceInstance=$rinstanceInstance \

@@ -4,51 +4,17 @@ The server uses the Serial interface the HTTP and the web sockets interfaces and
 record, route, and broadcast the combined information to recipients of interest.
 
 
-Consider node js, which appears to be more suitable for the job.
-- https://gist.github.com/gabonator/3fae3e455c9d7518af71
+Agrofelis unificator. The node js software server unifies all modules coming from usb / serial and wifi. There are two usb modules the software integrates the arduino mega running the linear steer module controlling the brakes and the steering of the vehicle and the Front sensors module controlling the lidar data and its tilt mechanism.
+The unficator software moreover integrates modules via wifi and the http protocol employing in the two wifi power relay modules as via websockets the two dual motor hub driver modules.
+The unificator software is responsible for routing appropriately the data across the different modules as well as records and rotates the data received from all modules.
 
+The application will rotate and compress the lidar and module data and maintain the last 50 compressed data logs corresponding to approximately 50 minutes and 125 mb of data.
+
+
+Using node js, which appears to be more suitable for the job.
+
+
+- https://gist.github.com/gabonator/3fae3e455c9d7518af71
 - https://snyk.io/blog/choosing-the-best-node-js-docker-image/
 - https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/
 
-node:16.17.0-bullseye-slim.
-
-
-
-
-
-
-# obsolete. 
-The server is implemented in the R language and makes use of the following libraries.
-
-https://github.com/rstudio/httpuv
-https://www.losant.com/blog/how-to-access-serial-devices-in-docker
-https://cran.r-project.org/web/packages/serial/index.html
-https://www.rdocumentation.org/packages/serial/versions/3.0/topics/serial
-
-https://github.com/me-no-dev/ESPAsyncWebServer/issues/23
-
-https://github.com/hallard/WebSocketToSerial
-
-
-library(serial)
-
-con <- serialConnection(
-	name = "amega",port = "ttyACM0",
-    mode = "9600,n,8,1",
- 
-    translation = "crlf"
-)
-open(con)
-
-write.serialConnection(con, "<15, 1>") 
-write.serialConnection(con, "<16, 0>") 
-
-write.serialConnection(con, "<16, 100>") 
-while(T)
-	if((message = read.serialConnection(con))!="")
-		print(message)
-
-summary(con)
-close(con)
-
- 

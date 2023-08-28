@@ -1,0 +1,3 @@
+ * The project uses an ESPR32, due to it compact size to intergrate sensors installed in the front location of the robot providing information aiding the awareness of the robots enviroment.
+ * More specifically the module utilises a servo motor to be able to tilt a lidar and a gyroscope in order to be able to take a 3d scann of its front. 
+ * The module moreover intergrates a gps module and establishes a serial link over usb with the the backbone of system.

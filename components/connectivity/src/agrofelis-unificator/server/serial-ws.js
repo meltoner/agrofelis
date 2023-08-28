@@ -1,8 +1,73 @@
+// 
+//  Agrofelis unificator. The node js software server unifies all modules coming from usb / serial and wifi. There are two usb modules the software integrates the arduino mega running the linear steer
+//  module controlling the brakes and the steering of the vehicle and the Front sensors module controlling the lidar data and its tilt mechanism.
+//  The unficator software moreover integrates modules via wifi and the http protocol employing in the two wifi power relay modules as via websockets the two dual motor hub driver modules.
+//  The unificator software is responsible for routing appropriately the data across the different modules as well as records and rotates the data received from all modules.
+//
+//  The application will rotate and compress the lidar and module data and maintain the last 50 compressed data logs corresponding to approximately 50 minutes and 125 mb of data.
+// 
+//  Author : Konstantinos L. Papageorgiou mail kp at rei.gr
+//  Agrofelis 2023
+// 
+// Dependencies of the server // apt-get update;apt-get install python3;npm install http serialport websocket axios
+// 
+
+
+// Logs and rotation start
+
 "use strict";
 process.title = 'node-serial-ws';
 
-// apt-get update;apt-get install python3;npm install http serialport websocket axios
+var fs = require('fs');
+var util = require('util');
+const { exec } = require("child_process");
 
+var log_file = -1; 
+var log_fileLidar = -1;
+var logsCreated = false;
+
+    
+
+function rotateLogs(){
+
+    exec("cp /data/*.log /data/archive/;")
+
+    if( logsCreated ){
+        log_file.close()
+        log_fileLidar.close()
+    }
+
+    exec("echo '' /data/unificator.log;echo '' /data/lidar.log; DATE=$(date +%Y-%m-%d--%H-%M-%S); tar -zcvf /data/archive/data.$DATE.log.tar.gz /data/archive/*.log;rm /data/archive/*.log;ls -d -1tr /data/archive/*.gz | head -n -50 | xargs -d '\\n' rm -f");
+
+    log_file = fs.createWriteStream('/data/unificator.log', {flags : 'w'});
+    log_fileLidar = fs.createWriteStream('/data/lidar.log', {flags : 'w'});
+    logsCreated = true;
+}
+
+rotateLogs()
+
+var log_stdout = process.stdout;
+var logEntries = 0;
+
+function unificatorLog(d){
+    logEntries ++ ;    
+    log_file.write(util.format(d) + '\n'); 
+    if(logEntries > 400){
+        rotateLogs()
+        logEntries = 0;
+    }
+}
+
+function lidarLog(d){
+    log_fileLidar.write(util.format(d) + '\n');
+}
+
+console.log = function(d) { 
+  unificatorLog(d);
+  log_stdout.write(util.format(d) + '\n');
+};
+
+// Logs and rotation end
 
 var vocabulary = ["exit", "powerOn", "powerOff"]
 var nodes = [
@@ -58,40 +123,67 @@ function onReceive(msg){
 
         var command = parseInt(msg.utf8Data.substring(1, msg.utf8Data.indexOf("|")))
         
-        if( command <= 20){   
+        if( command <= 20 ){   
             for(var i = 0; i < 2;i++)
               if(nodes[i][2] != -1){
                 nodes[i][2].send(msg.utf8Data)
               }
                 
-        }else{            
-            serialPort.write(msg.utf8Data);
+        }else{
+            if( command > 40 )
+                frontSensorsSerialPort.write(msg.utf8Data);    
+            else
+                steerSerialPort.write(msg.utf8Data);
         }
     }
 }
 
 function onSerial(msg){
-  console.log("Serial msg:" + msg);
+  console.log(msg);
+  // broadcast uart message to ws clients
+  // is this necessary ? only if clients need to know the steering mechanism
 
-  //broadcast uart messate to ws clients
   for (var i = 0; i < clients.length; i++) 
     clients[i].sendUTF(msg);
 }
 
 // Serial port
 var SerialPort = require("serialport").SerialPort
-var buffer = "";
+var steerSerialBuffer = "";
 
-var serialPort = new SerialPort({ path: '/dev/ttyACM0', baudRate: 9600 })
-serialPort.on("open", function () {  
-    serialPort.on('data', function(data) {
-      buffer += new String(data);
-      var lines = buffer.split("\n");
+var steerSerialPort = new SerialPort({ path: '/dev/ttyACM0', baudRate: 9600 })
+steerSerialPort.on("open", function () {  
+    steerSerialPort.on('data', function(data) {
+      steerSerialBuffer += new String(data);
+      var lines = steerSerialBuffer.split("\n");
       while ( lines.length > 1 )
         onSerial( lines.shift() );
-      buffer = lines.join("\n");
+      steerSerialBuffer = lines.join("\n");
   });  
 });
+
+///////////////////////////////////////////
+
+function onFrontSensorsSerial(msg){
+  lidarLog(msg);  
+  //broadcast uart messate to ws clients
+  //for (var i = 0; i < clients.length; i++) 
+  //  clients[i].sendUTF(msg);
+}
+
+var frontSensorsSerialPort = new SerialPort({ path: '/dev/ttyUSB1', baudRate: 115200 })
+var frontSensorsBuffer = "";
+
+frontSensorsSerialPort.on("open", function () {  
+    frontSensorsSerialPort.on('data', function(data) {
+      frontSensorsBuffer += new String(data);
+      var lines = frontSensorsBuffer.split("\n");
+      while ( lines.length > 1 )
+        onFrontSensorsSerial( lines.shift() );
+      frontSensorsBuffer = lines.join("\n");
+  });  
+});
+
 
 function createNewConnection(index){
     var ip = nodes[index][1]

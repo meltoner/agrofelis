@@ -119,7 +119,6 @@ void apply_interval_1(){
 
 void apply_interval_2(){
   controller.apply();
-  //controller.steer.apply();
 }
 
 void apply_interval_3(){ 
