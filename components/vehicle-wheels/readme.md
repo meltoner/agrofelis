@@ -104,7 +104,7 @@ The following table lists the individual components used for manufacturing four 
 | #5 | Viper tires 16 X 3.00 |  [Fat tire](https://podilatada.gr/product/viper-elastiko-16x3-00-gia-e-bike-e-scooter/) | [Podilatada](https://podilatada.gr) | 4 | 25.90 | 103.60 | 
 | #6 | SHINKO Tube 16X2.50/3.0 | [Tire tube](https://podilatada.gr/product/shinko-16x2-50-3-0-aerothalamos-ilektrikou-podilatou-valvida-tr87-stravi/) | [Podilatada](https://podilatada.gr) | 4 | 9.90 | 39.60 | 
 | #7 | 16 inch aluminum rims | [Rim](https://www.podilatis.gr/troxos-podilatou-asimi-alouminiou-0-016-175.html) | [Podilatis](https://www.podilatis.gr) | 4 | 15.00 | 60.00 |
-| **Total** |      |    |     |      |     |  **575.20**  |   |
+| **Total** |      |    |     |      |     |  **575.20**  | 
 
 </div>
 
