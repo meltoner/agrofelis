@@ -1,4 +1,4 @@
-# Agrofelis chassis frame design and fabrication
+# Agrofelis Chassis Frame Design and Fabrication
 
 # Abstract 
 
@@ -32,7 +32,7 @@ In the preceding diagram, numerical annotations are used to indicate various sub
 5. The back wheel mounting points part
 6. The front wheel mounting points part
 
-## Stepwise frame fabrication
+## Stepwise Frame Fabrication
 
 This section delves into the systematic fabrication of the chassis, which unfolds across seven distinct steps. In addition, for each step, we provide accompanying images to aid comprehension and ease of reference.
 
@@ -108,36 +108,32 @@ As with all metallic parts of the Agrofelis robot, the frame is being coated wit
 Additionally, a 5 mm compressible adhesive foam is glued to the external surfaces of the frame. This measure ensures almost air-tight protection when the covers are attached, effectively safeguarding internal components against dust and water.
 
 
-## The chassis components and indicative suppliers
+## Chassis Components and Indicative Suppliers
  
 The following table lists the individual components employed for manufacturing the Agrofelis chassis frame. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
-
 <div align="center">
 
-| No. |  Product | Product URL | Supplier | Quantity | VAT Price (€) | Subtotal (€)  | Note |
+| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | 6 meters black iron square bar 20mm X 20mm X 2mm | [Square bar](https://e-iron.gr/product/6-11/) | [QOOP Metalworks](https://www.qoop.gr) | 2 | 7 | 14 | Few meters remain from the batch that can utilised for others parts |
-| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 1 | 74 | 74 | A significant area of the product can be reused to fabricate other components |
-| #3 | 1 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 6 | 6 | |
-| #4 | 100 pack nut connector M08X24mm | [Nut M08X24mm](https://droutsas.gr/shop/%ce%b5%ce%af%ce%b4%ce%b7-%ce%ba%ce%b9%ce%b3%ce%ba%ce%b1%ce%bb%ce%b5%cf%81%ce%af%ce%b1%cf%82/sidirika/%ce%b2%ce%af%ce%b4%ce%b5%cf%82/%ce%bc%ce%bf%cf%85%cf%86%ce%b5%cf%83-%ce%bd%cf%84%ce%b9%ce%b6%cf%89%ce%bd-%ce%b5%ce%be%ce%b1%ce%b3%cf%89%ce%bd%ce%b5%cf%83-%ce%b3%ce%b1%ce%bb%ce%b2%ce%b1%ce%bd%ce%b9%ce%b6%ce%b5-din-6334-m08x24-ff/) | [Δroutsas](https://droutsas.gr)| 1 | 15 | 15 |  |
-| #5 | Self-adhesive foam | [Adhesive sealing foam](https://egarbis.gr/doorado-autokolito-afrodes-prostteutiko-megalou-mikous-gia-toixous-gkaraz-maurou-xromatos-se-rolo-park-flwp20020b) | [egarbis](https://egarbis.gr) | 2 | 5 | 10 | | 
-| #6 | 750ml Vitex Metal Primer | [Primer](https://www.stereotiki.gr/store4/vitex-metal-primer-astari-metallon.html) | [stereotiki](https://www.stereotiki.gr) | 1 | 7 | 7 | |
-| #7 | Gray oil paint 0,375 kg | [Metal Paint](https://vrontinos.gr/el/Product/0001A515.aspx) | [vrontinos](https://vrontinos.gr) | 1 | 6 | 6 |  |
-| #8 | brushes, white spirit, paper sheet | [brush](https://nova-ceramica.gr/products/morris-39253) [white spirit](https://www.rigatos-shop.gr/dialytika-diavrwtika-spray/2381-white-spirit-%CE%B4%CE%B9%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C-500ml.html) [paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | | 1 | 15 |15 | |
-| #9 | 100 pack Allen screws DIN 912 8.8 M 8 x 25 | [Screws M8X25](http://www.sinter-hellas.gr/index.php/products/eidh-vidopoiias/vides-me-speirwma-gia-perikoxlio/93-allen/din912-88-mavr)  |[Sinter Hellas](www.sinter-hellas.gr) | 1 | 20 | 20 | |
-
+| #1 | 6 meters black iron square bar 20mm X 20mm X 2mm | [Square bar](https://e-iron.gr/product/6-11/) | [QOOP Metalworks](https://www.qoop.gr) | 2 | 7.00 | 14.00 | Few meters remain from the batch that can utilised for others parts |
+| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 1 | 73.85 | 73.85 | A significant area of the product can be reused to fabricate other components |
+| #3 | 1 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 6.00 | 6.00 | - |
+| #4 | 100 pack nut connector M08X24mm | [Nut M08X24mm](https://droutsas.gr/shop/%ce%b5%ce%af%ce%b4%ce%b7-%ce%ba%ce%b9%ce%b3%ce%ba%ce%b1%ce%bb%ce%b5%cf%81%ce%af%ce%b1%cf%82/sidirika/%ce%b2%ce%af%ce%b4%ce%b5%cf%82/%ce%bc%ce%bf%cf%85%cf%86%ce%b5%cf%83-%ce%bd%cf%84%ce%b9%ce%b6%cf%89%ce%bd-%ce%b5%ce%be%ce%b1%ce%b3%cf%89%ce%bd%ce%b5%cf%83-%ce%b3%ce%b1%ce%bb%ce%b2%ce%b1%ce%bd%ce%b9%ce%b6%ce%b5-din-6334-m08x24-ff/) | [Droutsas](https://droutsas.gr)| 1 | 13.00 | 13.00 | - |
+| #5 | Self-adhesive foam | [Adhesive sealing foam](https://egarbis.gr/doorado-autokolito-afrodes-prostteutiko-megalou-mikous-gia-toixous-gkaraz-maurou-xromatos-se-rolo-park-flwp20020b) | [Egarbis](https://egarbis.gr) | 2 | 4.70 | 9.40 | - | 
+| #6 | 750ml Vitex Metal Primer | [Primer](https://www.stereotiki.gr/store4/vitex-metal-primer-astari-metallon.html) | [Stereotiki](https://www.stereotiki.gr) | 1 | 6.50 | 6.50 | - |
+| #7 | Gray oil paint 0,375 kg | [Metal paint](https://vrontinos.gr/el/Product/0001A515.aspx) | [Vrontinos](https://vrontinos.gr) | 1 | 5.60 | 5.60 | - |
+| #8 | Brushes| [Brush](https://nova-ceramica.gr/products/morris-39253) | [Nova Ceramica](https://nova-ceramica.gr/) | 1 | 15.00 | 15.00 | - |
+| | White spirit| [White spirit](https://www.rigatos-shop.gr/dialytika-diavrwtika-spray/2381-white-spirit-%CE%B4%CE%B9%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C-500ml.html)  | [Rigatos Shop](https://www.rigatos-shop.gr/) | 1 | 0.00 | 0.00 | - |
+| | Paper sheet | [Paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | [Xromagora](https://xromagora.gr/) | 1 | 0.00 | 0.00 | - |
+| #9 | 100 pack Allen screws DIN 912 8.8 M 8 x 25 | [Screws M8X25](http://www.sinter-hellas.gr/index.php/products/eidh-vidopoiias/vides-me-speirwma-gia-perikoxlio/93-allen/din912-88-mavr)  |[Sinter Hellas](http://www.sinter-hellas.gr/) | 1 | 18.62 | 18.62 | - |
+| **Total** |      |    |     |      |     |  **134.00**  | | 
 </div>
 
-
 The total cost to manufacture the Agrofelis frame excluding shipping, cutting, welding and painting costs, sums to approximately **134** euros.
-
 
 ## Summary
 
 The development process, component details and essential dimensions for reproducing the Agrofelis chassis has been documented in a progressive manner. A photograph of the vehicle with some covers removed, exposing details of the end frame, is presented in the closing image below.
 
 ![Close up view of the frame](_figures/vehicle-frame-05_actual.jpg)
-
-
-

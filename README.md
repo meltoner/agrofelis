@@ -10,7 +10,7 @@ The declining demographics in the West, economic disparity, energy cost inflatio
 
 Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker's productivity with an affordable platform that is between a Tractor and Handheld tools is essential for small farmers in order to maintain existing plant capital. 
 
-The probability of fires and floods has increased considerably. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
+Climate change though has also increased the probability of fires and floods. Fire Services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
 
 Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low cost Base Vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can address local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Coops, fire departments, municipalities etc.
 
@@ -30,8 +30,9 @@ The technologies that could be incorporated on an Agricultural Vehicle could inc
 - Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
 - Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
 - Fertilizer Casting, a copious job that must be done in both orchards and vegetables
-- Sensor Suite for Plant disease diagnosis
-- Robotic Picking Arm Base & Power Hub, for low cultivation and also Green houses
+- Sensor Suite for Plant Data collection , e.g. Plant disease diagnosis
+- Mechanical , Laser or Microwave weed killing platform 
+- Robotic Picking Arm Base & Power Hub, for low plant cultivation and also Green houses
 - Power Hub, fruit picking for trees (see Tevel)
  
 The technologies that could be incorporated on a Public Safety Vehicle could include applications like:
@@ -63,35 +64,7 @@ Additional sensors employed by the system include GPS, accelerator, compass, tem
 
 In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being overviewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative supliers and total cost estimations.
 
-## Agrofelis chassis frame design and fabrication
-
-The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
-
-The complete documentation of the Agrofelis chassis frame is provided bellow.
-
-- [Chassis frame design and fabrication](components/mobility/motors_hub_driver)
-
-An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarised by the following  figure. 
-
-
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
-
-
-
-## Agrofelis robot wheels fabrication
-
-This [Agrofelis robot wheels fabrication document] describes the details of manufacturing the active 4 wheel drive system equipping the Agrofelis robotic vehicle. The  requirements specifications set are being documented followed with the end fabricated solution. The design plans, compilation procedures, assistive assets and photographs taken during the development, are being presented following a stepwise progression. The sub components composing four Agrofelis wheels are being indexed along with their unit price, their total cost along with references to indicative suppliers.
-
-The complete documentation of the Agrofelis robot wheels fabrication, is refernced bellow.
-
-- [Chassis frame design and fabrication](components/mobility/motors_hub_driver)
-
-A figure listing the four most representative figures from the document is summarised below.
-
-![Agrofelis Robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
-
-
-## Agrofelis Motors hub driver
+## Agrofelis motors hub driver
 
 This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
@@ -105,3 +78,51 @@ The motors hub power module handle motor hub drivers, incorporating relays, curr
 A representative depiction of the progression in crafting the motor hub driver is showcased by the following highlights figure.
 
 ![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
+
+## Agrofelis robot wheels fabrication
+
+This [Agrofelis robot wheels fabrication document](components/vehicle-wheels) presents a comprehensive overview of the manufacturing process behind the four-wheel drive (4WD) system of the Agrofelis robotic vehicle. It begins by detailing the specific requirements and then progresses to the completed fabricated solution. The design plans, compilation procedures, assistance assets and images taken throughout development are presented in a step-by-step manner. The sub-components composing four Agrofelis wheels are indexed with their unit prices and overall cost, along with references to indicative suppliers.
+
+The complete documentation of the Agrofelis robot wheels fabrication is referenced below.
+
+- [Agrofelis robot wheels fabrication](components/vehicle-wheels)
+
+In the figure below, we showcase a condensed compilation of the four most illustrative images extracted from the document, highlighting the process of manufacturing the four-wheel drive system.
+
+![Agrofelis robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
+
+## Agrofelis chassis frame design and fabrication
+
+The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
+
+The complete documentation of the Agrofelis chassis frame is provided below.
+
+- [Chassis frame design and fabrication](components/vehicle-frame)
+
+An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarised by the following figure. 
+
+![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
+
+## Cost estimation overview
+
+This sub-section outlines the indicative costs associated with constructing the Agrofelis robot. These figures are derived from estimated costs per item discussed in the relevant *indicative suppliers section* within each of the aforementioned documents, encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the presented cost estimation incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
+
+The values provided here are based on information gathered from indicative suppliers and are intended to provide a rough estimate of the project's financial requirements. In this estimation, we have focused solely on the intrinsic value of each component and have excluded supplementary expenses such as transportation, customs clearance, and unforeseen charges. These figures are the initial step in budget assessment and lay the foundation for more detailed financial planning. 
+
+The table showcased below provides a breakdown of the necessary construction components along with their associated indicative costs, enhancing comprehension for informed decision-making and budget formulation. 
+
+<div align="center">
+
+| Construction Component   | Sub-Total (€) |
+|---------------------|---------------|
+| [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 90.00 |
+| [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 576.00 |
+| [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 134.00 |
+|          |          |
+| **Total Cost**   | **800.00**   |
+
+</div>
+
+Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
+
+Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **800** euros, exclusive of shipping and assembly costs.
