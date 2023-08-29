@@ -45,7 +45,7 @@ The potential of having the ability to produce an open sourced Base Robotic Vehi
 
 ## The Project 
 
-The Chassis of the vehicle should be designed according to the specifications of the job at hand, carrying capacity, choice of suspension and wheels, and 
+The chassis of the vehicle should be designed according to the specifications of the job at hand, carrying capacity, choice of suspension and wheels, and 
 of course size is expected to vary, so the project proposes the particular chassis as a baseline since it is assumed that there will be different designs. The Project core is the open source programmable system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the capability for precision applications and AI readiness. 
 
 The chassis implemented for the project is an iron bar welded chassis with detachable components, with a maximum carrying capacity of 250 kilos of payload with no suspension for cost reduction. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically controlled using feedback sensors in real time. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
@@ -54,9 +54,9 @@ The power system has energy autonomy of 8.8 Kwh and fits within an 1 sqm.  It is
 
 The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and Web Sockets allowing implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
 
-The Project implements moreover a two degrees of freedom actuator rotating base, for attaching a thermal pulse jet fogger, attached on top of the robotic vehicle.
+The project implements moreover a two degrees of freedom actuator rotating base, for attaching a thermal pulse jet fogger, attached on top of the robotic vehicle.
 
-The system, in addition to its wire-full infrastructure, supports Bluetooth connectivity for closeby wireless attachments, WiFi for nearby controllers, mobile phones and / or modules, as well as a 2km digital wireless transceiver. A long range digital remote control / transceiver is also developed powered by an ESP32, a TFT monitor, joysticks and a lipo rechargeable battery. 
+The system, in addition to its wire-full infrastructure, supports bluetooth connectivity for closeby wireless attachments, Wi-Fi for nearby controllers, mobile phones and/or modules, as well as a 2km digital wireless transceiver. A long range digital remote control/transceiver is also developed powered by an ESP32, a TFT monitor, joysticks and a lipo rechargeable battery. 
 
 Additional sensors employed by the system include GPS, accelerator, compass, temperature, distance, current, voltage, sensors as well as servos, stepper drivers and power modules. An underlying IOT service allows the deployment of new firmware for the system's individual components and its behavioral functions, access to its real time and recorded data.
 
