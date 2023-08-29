@@ -471,7 +471,7 @@ The table showcased below provides a detailed breakdown of components and their 
 | Μotors hub power driver   | 14.24   |
 | Μotors hub ADAC   | 18.49   |
 |          |          |
-| **Grand Total**   | **89.39**   |
+| **Grand Total**   | **89.33**   |
 
 </div>
 
