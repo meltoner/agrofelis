@@ -1,8 +1,8 @@
-# Agrofelis Robot Forks Design and Fabrication
+# Agrofelis Robot Wheels Forks Design and Fabrication
 
 # Abstract
 
-The document, present the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks serve the function of securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling their steering and for installing their feedback rotating mechanisms. Two types of forks being employed, these installed in the front and these in the back. Most of the fork design is common and their differentiating factor is their mounting mechanism aimed fixed or for steering. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels and via the motor hub shaft. The design schematics, the plasma cut patterns, and images of the fabricated components are presented. The document concludes with a list of indicative suppliers where the raw materials where acquired, enriched with bill and material information.
+The document, present the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks serve the function of securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling their steering and for installing their feedback rotating mechanisms. Two types of forks are being employed, these installed in the front and these in the back. Most of the fork design is common and their differentiating factor is their mounting mechanism aimed fixed or for steering. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels via the motors hub shaft. The design schematics, the plasma cut patterns, as well as images of the fabrication progression are documented. The document concludes with a list of indicative suppliers where the raw materials where acquired, enriched with bill and material information.
 
 
 # Introduction
@@ -10,6 +10,8 @@ The document, present the fabrication details of the forks mounting the four whe
 In order to minimize the footprint of the vehicle, to have a sturdier front structure where mechanisms could be mounted, to minimize the fabrication complexity and manufacturing costs, the front wheels were designed with a fixed function in mind while the back wheels with a dynamic function implementing the steering of the vehicle. The forks utilised existing profile characteristics found in the bicycle industry and more specifically for the fork drop out and brakes mounting points, so disk brakes could be employed. The forks and their mounting mechanism are fabricated using regular 25 mm T shaped rods, two plasma cut elements, which are cut, drilled and MIG welded. All forks were designed so they are detachable in order to support future revisions or variations of the forks.
 
 In the following sections the Agrofelis forks are being decomposed into their sub elements, showcasing their fabrication details.
+
+## Forks arrangement
 
 The following schematic illustrates the four wheel forks of the vehicle.
 
