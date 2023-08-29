@@ -47,15 +47,15 @@ The following part designed and fabricated, has a vertical socket allowing to sl
 
 Two of these elements are fabricated per fork and are welded in each of its bottom sides. The component accommodates for mounting the wheels as well as for mounting disk brakes mechanism. The NC files used to fabricated them are provided in the following directory in the open source repository.
 
-- [assets/forks_dropout](assets/forks_dropout)
+- [assets/forks_dropout](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/forks_dropout)
 
 The directory contains the scalable vector graphics design plan of the component, offset-ed by 1 mm, accounting for the plasma torch diameter.
 
-- [forks_dropout_1mm_offset.svg](assets/forks_dropout/forks_dropout_1mm_offset.svg)
+- [forks_dropout_1mm_offset.svg](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/forks_dropout/forks_dropout_1mm_offset.svg)
 
 Moreover the NC (Numerical Control) instructions file sent to the CNC are provided by the following file
 
-- [forks_dropout_1mm_offset.nc](assets/forks_dropout/forks_dropout_1mm_offset.nc)
+- [forks_dropout_1mm_offset.nc](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/forks_dropout/forks_dropout_1mm_offset.nc)
 
 The SVG to NC conversion was accomplished by the [Laser GRBL](https://lasergrbl.com/) free laser engraving software and its outcome was converted for a plasma cutter (z axis actuation) using the open source software developed to drive a custom DIY plasma cutter created for this purpose. 
 
@@ -85,15 +85,15 @@ The back fork, is connected with the frame using a custom plasma cut part and a 
 
 Two of these elements are fabricated for the back forks and are drilled and connected to the frame using 12 mm bolt and nuts.The NC files used to fabricated them are provided in the following directory in the open source repository.
 
-- [assets/back_wheel_mount](assets/back_wheel_mount)
+- [assets/back_wheel_mount](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/back_wheel_mount)
 
 The directory contains the scalable vector graphics design plan of the component, offset-ed by 1 mm, accounting for the plasma torch diameter.
 
-- [back_wheel_mount.svg](assets/back_wheel_mount/back_wheel_mount.svg)
+- [back_wheel_mount.svg](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/back_wheel_mount/back_wheel_mount.svg)
 
 Moreover the NC (Numerical Control) instructions file sent to the CNC are provided by the following file
 
-- [back_wheel_mount.nc](assets/back_wheel_mount/back_wheel_mount.nc)
+- [back_wheel_mount.nc](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/back_wheel_mount/back_wheel_mount.nc)
 
 The SVG to NC conversion was accomplished by the [Laser GRBL](https://lasergrbl.com/) free laser engraving software and its outcome was converted for a plasma cutter (z axis actuation) using the open source software developed to drive a custom DIY plasma cutter created for this purpose. 
 
