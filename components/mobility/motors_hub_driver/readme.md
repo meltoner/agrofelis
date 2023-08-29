@@ -387,7 +387,7 @@ The following table provides an overview of indicative suppliers associated with
 |------|---------------|---------------|------------|-------------|-----------------------------------|---------------------|--------------------|
 | #1 | Copper board   |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    0.25  | 9.90 | 2.48 | Base Component  |
 | #2 | A4 paper | [Paper](https://www.bitprice.gr/%CE%B5%CE%BA%CF%84%CF%85%CF%80%CF%89%CF%84%CE%AD%CF%82-%CF%83%CE%B1%CF%81%CF%89%CF%84%CE%AD%CF%82/xartika/epson-photo-quality-inkjet-paper-a4--10-sh.-167g-selfadh.-s041106-123849-detail)   | [Bitprice](https://www.bitprice.gr/)  | 1  | 12.00 | 12.00 | Base Component | 
-| #3 | ESP32 with 38 pins  | [Development Board](https://www.aliexpress.com/item/1005001636295529.html#29:~:text=Store%20Coupon-,Color%3A%20ESP%2D32%2038Pin,-More%20price%20information)   | [AliExpress](https://www.aliexpress.com/?spm=a2g0o.detail.1000002.1.21e1578bwcz0II)  | 1  | 3.62 | 3.62 | - | 
+| #3 | ESP32 with 38 pins  | [Development Board](https://www.aliexpress.com/item/1005001636295529.html#29:~:text=Store%20Coupon-,Color%3A%20ESP%2D32%2038Pin,-More%20price%20information)   | [AliExpress](https://www.aliexpress.com/?spm=a2g0o.detail.1000002.1.21e1578bwcz0II)  | 1  | 3.65 | 3.65 | - | 
 | #4 | 20-pin female headers  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 9.90 | 9.90 | Base Component |
 | #5 | 2-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #6 | 4-pin female header  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
@@ -407,7 +407,7 @@ The following table provides an overview of indicative suppliers associated with
 |  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | - |
 | #18 | Glue gun | [Hot Glue Stick](https://grobotronics.com/rabdos-thermokollas-20cm-f11-leyko.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 0.40 | 0.40 | - |
 | #19   | In-House Developed Software | Dual Motor Driver Software | In-House   | 1             | 0.00               | 0.00         | - |
-| **Total** |      |    |     |      |     |  **56.63**  |   |
+| **Total** |      |    |     |      |     |  **56.66**  |   |
 
 </div>
 
@@ -467,11 +467,11 @@ The table showcased below provides a detailed breakdown of components and their 
 
 | Construction Part   | Sub-Total (€) |
 |---------------------|---------------|
-| Μotors hub controller   | 56.63   |
+| Μotors hub controller   | 56.66   |
 | Μotors hub power driver   | 14.24   |
 | Μotors hub ADAC   | 18.49   |
 |          |          |
-| **Grand Total**   | **89.36**   |
+| **Grand Total**   | **89.39**   |
 
 </div>
 
