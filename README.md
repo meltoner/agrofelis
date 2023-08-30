@@ -118,6 +118,19 @@ An indicative selection of figures from the Agrofelis forks design and fabricati
 ![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
 
 
+## Agrofelis steering system design and fabrication
+
+The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the details making up the steering system of the Agrofelis vehicle. The logic behind the design, the structural elements composing it, the feedback mechanisms, the custom PCB board are presented and documented. The source code files, key design metrics, schematics, 3D printed assets, laser cut NC files, and photographs present the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight turn within 1 meter and its design minimizes the overall foot print of the vehicle. The document concludes with a list of components and indicative suppliers forming the bill and material information of the steering module.
+
+The omplete documentation of the Agrofelis wheels forks is provided below.
+
+- [Steering system design and fabrication](components/vehicle-steering)
+
+A cherry picked selection of figures from the Agrofelis steering system design and fabrication documentation, is presetned by the following figure. 
+
+![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
+
+
 ## Cost estimation overview
 
 This sub-section outlines the indicative costs associated with constructing the Agrofelis robot. These figures are derived from estimated costs per item discussed in the relevant *indicative suppliers section* within each of the aforementioned documents, encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the presented cost estimation incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
@@ -134,11 +147,12 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
 | [Wheel forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 50.5 |
+| [Steering system](components/vehicle-steering#steering-pcb-components)   | 136  |
 |          |          |
-| **Total Cost**   | **870.50**   |
+| **Total Cost**   | **1,006.5**   |
 
 </div>
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **820** euros, exclusive of shipping and assembly costs.
+Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **1,006.5** euros, exclusive of shipping and assembly costs.
