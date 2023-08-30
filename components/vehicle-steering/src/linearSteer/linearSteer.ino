@@ -14,6 +14,8 @@
  * The module provides an interface to make both linear actuators seek and reach the desired position. 
  * Last the module moves the linear actuators such that at any point in time the Ackerman geometry is met, requiring to move the motors in different speeds
  * to accommodate for their distance differences. With this feature the vehicle can move while the steering module actuates to the desired position.
+ *
+ * The software moreover establishes the braking system of the vehicle by driving two servos linked to the disc brakes.
  * 
  * @Author - Konstantinos L. Papageorgiou / mail kp at rei.gr - 2023 Agrofelis project 
  */

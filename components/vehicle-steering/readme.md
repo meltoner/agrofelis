@@ -243,14 +243,65 @@ The total cost to manufacture the Agrofelis steering structural and actuators el
 
 ## Steering driver software 
 
-The Agrofelis software source code developed, managing the steering system via its actuators and sensors running on an Arduino mega, is located within the following path :
+The Agrofelis software source code developed, managing the steering system via its actuators and sensors running on an Arduino mega, containing 23 source code files and 3 supportive and is located within the following path :
 
 - [src/linearSteer](src/linearSteer)
 
+The source code contains an ino file initiating the application and series of h and cpp files encoding the declarations and implementations of the classes of the application. 
+
+The project uses an Arduino mega and few components to sense and control two linear actuators, to establish a steering system.
+The module utilises Serial interface to share the internal state of the components as well as to control them.
+The module consist of custom PCB that hosts two current sensors, two motor drivers and two inlets for two potentiometer used a feedback 
+sensor to sense the steer degree of the wheels. The software enables to control each linear actuator individually as well as in a synchronized 
+manner based on the Ackerman geometry and the physical orientation of the vehicle. The valid ratios of the wheels are measured in fine steps 
+and persisted in an association map than can interpolate the values within these steps. 
+
+The module status can be set so the linear actuators are driven to reach the minimum and maximal points in order to dynamically derive the center and the bounds of
+applicable movement. Moreover, the minimum voltage needed to achieve a movement can be moreover derived as the lowest applicable speed. 
+
+The module provides an interface to make both linear actuators seek and reach the desired position. The application moreover implements the functionality so the linear actuators are operated to meet the Ackerman geometry, requiring to move the motors in different speeds
+to accommodate for their distance differences. With this feature the vehicle can move while the steering module actuates to the desired position.
+
+The software moreover establishes the braking system of the vehicle by driving two servos linked to the disc brakes.
 
 
+### Application structure
 
 
+This Agrofelis steering and braking software follows a common baseline pattern established in nearly all Agrofelis modules. This baseline establishes a context class passed to nearly all classes as a common ground enabling instances to share information when necessary. The second baseline pattern establishing relates with the frequencies of execution providing the facilities to trigger functionalities at the desired intervals. For example an gyroscope may need to be triggered far more frequently than a GPS sensor or a potentiometer sensor. As a bootstrap template the software provide 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach delays, blocking the execution are avoided and the different calls can be organized according to their responsiveness requirement. 
+
+The software encodes easy to follow concrete implementations such as current sensor or brake and brakes making an one to one mapping of the physical element and their respective software counter part
+
+The following table indexes and summarizes the implemented classes of the Agrofelis steering and braking controller.
 
 
+| Class | Description | 
+|----|------------------|
+|linearSteer.ino | Boots the application, initialises the top classes, encodes the triggering frequencies of various functional elements |
+|Context | Provides a common ground the share information, encodes the triggering frequencies, helpfull functions and a unique identifier of the model |
+|Invoker | Tracks the execution frequencies such these are called at the right time |
+|Brake | Object representing a wheel brake actuating a servo motor. The object can be initialised with a limited target range, as much as to lift the brake. The class was used with a TIANKONGRC RDS-8120 20KG ROBOT DIGITAL SERVO. The class can be instantiated by providing the desired GPIO as well an the desired range to actuate mapped commonly fro 0 to 100  |
+|Brakes | The class can drive two or more brakes simultaneously |
+|Sensor | Base class wrapping the functions conveying a sensor. Reads an analogue port when apply is called. Maintains a gated smoothing read out of a sensor by comparing the previous mean with with current read value. Moreover, maintains a boolean flag, when a movement is being detected based on the absolute difference of the first derivative. Last, it prints out the object internal state, on print() reflecting the sensor's port, its smoothed value, its un-smoothed sensor value and last if the sensor is detecting a movement.|
+|SensorCurrent | Class extending the Sensor class implementing the specialties of a current sensor. The class translates the raw sensor value to amperage. Moreover, because the current sensor reads rapid spikes that can be missed, maintains a decaying max current sensor that is renewed based on the maximum value read within a time window.  |
+|LinearActuator | The class implements an object to control a linear actuator via an DRV8871 H-Bridge Brushed DC Motor Driver. The class is instantiated with the following board port mappings enabling to reuse it. The first two control the direction and speed of the [DRV8871 H-Bridge Brushed DC Motor Driver] using two pwm ports. Next the analogue [LinearActuator Potentiometer B10K Ohm] and the analogue [ACS712 5A  Range Hall Current Sensor Module]. The module operates based on 4 states dictating its function. On states one and two, the min and max potentiometer bounds are identified. On state three, the minimum throttle leading to a movement is derived. On state four the object enters when its objective position has been achieved. On state five, the object reaches to the target position. States 10 and 11 correspond to erroneous states, such when an actuation is not detected when its expected or when the sensor value reads values close to its physical values. The applicable bounds can be moreover persisted so these do not have to be re-resolved when booting the Agrofelis vehicle. |
+|Interpolate | Class for interpolating a value based on an input/output mapping pairs. The interpolation object enables to map an input non linearly across an input range and linearly within its sub bounds. The class is employed by initializing it with measurement mappings such that the ackerman geometry is followed based on the physical orientation, and the raw potentiometer values by performing incremental movement to both wheel of the vehicle |
+|SteeringDriver | The class holds the linear actuator references, their Ackerman mappings steps and the means to interpolate their ratios from a -100 to 100 positioning. The object moreover enables to change the state of the system to seek its movement bounds and minimum voltage leading to a movement. The class moreover can dynamically derive and apply more voltage if the expected movement hasn't been observed as well as fade in or fade out depending on the time that has passed, the progress of the distance asked to accomplish, and its difference with its counterpart. |
+|SerialCommandParser | Base class for monitoring and parsing the serial interface. It parses compact commands, of the form <1|1> where the first parameter corresponds to the update action to apply and the next an int value used by the related function. |
+|SteeringController | The steeringController extends the SerialCommandParser and defines the applicable commands driving the actuators. The class moreover, reflects the internal state of the brakes and linear actuators so other external modules of the system are aware of their state |
+
+The repository moreover, holds supportive files used while measuring and adapting the left and right linear actuators such that an end to end Ackerman geometry is met, accounting for the non linearity of the potentiometer and subtle construction deviation, stored in the following folder :
+
+- [src/linearSteer/data.modeling](src/linearSteer/data.modeling)
+
+The file data.modeling.R was moreover developed to study and reflect the end difference between the left and right sensors. 
+
+The following plot, visualizes the raw values sensor difference needed between the left and right sensors by meeting the ackerman geometry, when steering to the most left and to the most right, represented by the values -100 and 100.
+
+![End to end Ackerman geometry differences between the Left and Right input sensors](_figures/vehicle-steering-25-R-left-right-ackerman-differences.png)
+
+
+# Summary 
+
+The details of this important mobility module of the Agrofelis robots have been documented. All source code files, schematics, Numerical control files and patterns involved in the fabrication have been presented along with photographic material showcasing the progress of the manufacturing progress. The list of components, raw material and indicative suppliers and cost information enabling to reproduce the overall steering system have been presented. References to the Agrofelis steering application source code running on the micro-controller have been referenced along with a description per implemented class.
 
