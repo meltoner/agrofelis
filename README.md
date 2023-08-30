@@ -120,7 +120,8 @@ An indicative selection of figures from the Agrofelis forks design and fabricati
 
 ## Agrofelis steering system design and fabrication
 
-The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the details making up the steering system of the Agrofelis vehicle. The logic behind the design, the structural elements composing it, the feedback mechanisms, the custom PCB board are presented and documented. The source code files, key design metrics, schematics, 3D printed assets, laser cut NC files, and photographs present the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight turn within 1 meter and its design minimizes the overall foot print of the vehicle. The document concludes with a list of components and indicative suppliers forming the bill and material information of the steering module.
+The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the details making up the steering system of the Agrofelis vehicle. The logic behind the design, the structural elements composing it, the feedback mechanisms, the custom PCB board are presented and documented. The source code files, key design metrics, schematics, 3D printed assets, laser cut NC files, and photographs present the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight turn within 1 meter and its design minimizes the overall foot print of the vehicle. The document provides the list of components and indicative suppliers forming the bill and material information of the steering module. Last, the documentation presents an overview of the implemented driver software its classes and their relations.
+
 
 The omplete documentation of the Agrofelis wheels forks is provided below.
 
