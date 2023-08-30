@@ -239,6 +239,7 @@ The following table lists the components employed for manufacturing the Agrofeli
 | **Total** |      |    |     |      |     |  **103.72**  | | 
 
 The total cost to manufacture the Agrofelis steering structural and actuators elements excluding shipping and assembly charges, sums to approximately **104** euros.
+The total cost to fabricate the Agrofelis steering structural, actuators and electronics sums to approximately **136** euros.
 
 
 ## Steering driver software 
