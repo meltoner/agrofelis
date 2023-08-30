@@ -115,6 +115,10 @@ A bottom side focused view of the related mechanism after it has been painted is
 
 ![Hinge mount fabricated view d](_figures/vehicle-forks-14-hinge-mount-actual.jpg)
 
+A close up photo of the dropout element of the fork with a disk brake attached to it is displayed by the following photo.
+
+![Hinge mount fabricated view d](_figures/vehicle-forks-15-dropout_brake.jpg)
+
 
 # Forks components and indicative suppliers
 
@@ -143,4 +147,4 @@ The total cost to manufacture four Agrofelis forks excluding shipping, excluding
 
 The development process, component details, essential dimensions and Numerical Control source files for reproducing the Agrofelis wheels forks has been documented in a progressive manner. A photograph of the vehicle focusing on its front and back forks, is presented in the closing image below.
 
-![Vehicle with focus on the forks ](_figures/vehicle-forks-15.jpg)
+![Vehicle with focus on the forks ](_figures/vehicle-forks-16.jpg)
