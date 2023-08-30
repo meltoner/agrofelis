@@ -32,9 +32,9 @@ More specifically, the diagram illustrates the following elements.
 
 ## Steering plates
 
-The steering plates are two detachable 2 mm horizontal plates with welded nuts mounted into the vehicle frame via relevant holes made in the frame and bolts. The steering plates provides sufficient headroom to enclose the two linear actuators and provide fixed push point via two 6mm rods pierced vertically. The steering plates moreover create three compartments within the vehicle's frame. The bottom compartment hosting the Agrofelis Motors hub driver, the middle one hosting the steering linear actuators and the top compartment hosting the steering micro-controller and the Jetson Nano embedded computer. 
+The steering plates are two detachable 2 mm horizontal plates with welded nuts mounted into the vehicle frame via relevant holes made in the frame. The steering plates provide sufficient headroom to enclose the two linear actuators and provide fixed push points via two 6 mm rods piercing vertically the plates. The steering plates moreover, create three compartments within the vehicle's frame. The bottom compartment hosting the [Agrofelis Motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver), the middle one hosting the steering linear actuators and the top compartment hosting the steering micro-controller and the Jetson Nano embedded computer. 
 
-The following diagram illustrates the described steering plates annotated with key dimension metrics. 
+The following diagram illustrates the described steering plates, annotated with key dimension metrics. 
 
 ![Steering mounting plates diagram](_figures/vehicle-steering-03-mounting-plates-1.png)
 
@@ -65,16 +65,16 @@ The assembled mounting point is moreover snapshot-ed by the following photo.
 
 Because the linear actuators extend from within the frame, pass through the vehicle covers to the external environment, they and the frame internals are subject to dust and other unwanted elements. Using an outdoor stretchable waterproof cloth, cut and rolled into a cilinder using the following pattern, protective covers were fabricated isolating linear actuators and the frame internals from the environment, while effortlessly following the movements of the actuators.
 
-![cloth-cover-actuators](_figures/vehicle-steering-09-cloth-cover-actuatrors.png)
+![cloth-cover-actuators](_figures/vehicle-steering-09-cloth-cover-actuators.png)
 
 The waterproof cloth cut using a scissor to the presented pattern is snapshot-ed by the following photo. 
 
-![cloth-cover-linear-actuators-1](_figures/vehicle-steering-10-cloth-cover-linear-actuaros-1.jpg)
+![cloth-cover-linear-actuators-1](_figures/vehicle-steering-10-cloth-cover-linear-actuators-1.jpg)
 
 Sufficient offset has been built into the pattern, which is forgiving to imprecise manual cutting.
 The cloth piece rolled into a cylinder with its waterproof side in its outer side, is glued using common electrical tape with its ending sides and vehicle cover as seen by the following photograph.
 
-![cloth-cover-linear-actuators-2](_figures/vehicle-steering-11-cloth-cover-linear-actuaros-2.jpg)
+![cloth-cover-linear-actuators-2](_figures/vehicle-steering-11-cloth-cover-linear-actuators-2.jpg)
 
 ## Feedback mechanism
 
