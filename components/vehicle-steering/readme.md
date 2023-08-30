@@ -72,7 +72,7 @@ The waterproof cloth cut using a scissor to the presented pattern is snapshot-ed
 ![cloth-cover-linear-actuators-1](_figures/vehicle-steering-10-cloth-cover-linear-actuators-1.jpg)
 
 Sufficient offset has been built into the pattern, which is forgiving to imprecise manual cutting.
-The cloth piece rolled into a cylinder with its waterproof side in its outer side, is glued using common electrical black tape and the vehicle's cover plates, as seen by the following photograph.
+The cloth piece rolled into a cylinder with its waterproof side in its outer side, is glued using common electrical black tape with the vehicle's cover plates, as seen by the following photograph.
 
 ![cloth-cover-linear-actuators-2](_figures/vehicle-steering-11-cloth-cover-linear-actuators-2.jpg)
 
