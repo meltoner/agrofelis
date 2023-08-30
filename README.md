@@ -114,7 +114,7 @@ The complete documentation of the Agrofelis chassis frame is provided below.
 
 An indicative selection of figures from the Agrofelis forks design and fabrication document, is provided by the consequent image. 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg
+![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
 
 
 ## Cost estimation overview
@@ -132,8 +132,9 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
+| [Wheel forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 50.5 |
 |          |          |
-| **Total Cost**   | **820.00**   |
+| **Total Cost**   | **870.50**   |
 
 </div>
 
