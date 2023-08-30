@@ -2,13 +2,12 @@
 
 # Abstract
 
-This document delves into the details making up the steering system of the Agrofelis vehicle. The logic behind the design, the structural elements composing it, the feedback mechanisms, the custom PCB board are presented and documented. The source code files, key design metrics, schematics, 3D printed assets, laser cut NC files, and photographs present the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight turn within 1 meter and its design minimizes the overall foot print of the vehicle. The document conclude with a list of components and indicative suppliers forming the bill and material information of the module.
-
+This document delves into the details making up the steering system of the Agrofelis vehicle. The logic behind the design, the structural elements composing it, the feedback mechanisms, the custom PCB board are presented and documented. The source code files, key design metrics, schematics, 3D printed assets, laser cut NC files, and photographs present the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight turn within 1 meter and its design minimizes the overall foot print of the vehicle. The document concludes with a list of components and indicative suppliers forming the bill and material information of the steering module.
 
 
 # Introduction
 
-The key design factors of the steering system of the Agrofelis vehicle, was the space minimization, sufficient torque to steer the wheels on uneven terrains, sufficient turning speed, feedback motion sensors enabling to precisely move the wheels, and monitoring capacities to observe the current drawn by each wheel while turning. Although a passive system is usually employed implementing the Ackerman geometry, the Agrofelis steering system implements the rations dynamically via software and two independent linear actuators. This decision although perhaps harder to implement, leads to a more compact footprint, promotes the modular mentality and potentially allows for a wider range of wheel alignments worth researching. 
+The key design factors of the steering system of the Agrofelis vehicle, were space minimization, sufficient torque to steer the wheels on uneven terrains, sufficient turning speed, feedback motion sensors enabling to precisely move the wheels, and monitoring capacities to observe the current drawn by each wheel while turning. Although a passive system is usually employed implementing the [Ackerman steering geometry](https://en.wikipedia.org/wiki/Ackermann_steering_geometry), the Agrofelis steering system implements the ratios dynamically via software and two independent linear actuators. This decision although perhaps harder to implement, leads to a more compact footprint, promotes the modular mentality and potentially allows for a wider range of wheel alignments worth researching. 
 
 In the following sections, the various sub-modules employed for the steering system of the Agrofelis robot, are being documented. More specifically the overall schematic is being presented and is decomposed into the steering plates, the linear actuators and their protective covers, the feedback mechanism, the custom gears developed using a laser cutter, 3d printed protection covers of the feedback mechanism, the Agrofelis Linear actuators steering driver PCB and its software. 
 
@@ -23,13 +22,13 @@ The next view diagram, depicts the key sub-elements of the steering system.
 
 ![Steering system sub elements](_figures/vehicle-steering-02-steering2.png)
 
-More specifically, the diagram illustrate the following elements.
+More specifically, the diagram illustrates the following elements.
 
-- 1. The feedback mechanism, enabling to monitor the actual position of the wheel.
-- 2. The linear actuators mounting into the steering plate and the forks lever.
-- 3. The steering plate providing fixed points to the linear actuators to turn the wheels.
-- 4. The custom PCB shield hosting the actuators drivers, current sensors and sensor inputs.
-- 5. The Arduino mega micro-controller processing the related signals and controlling the steering actuators.
+1. The feedback mechanism, enabling to monitor the actual position of the wheel.
+2. The linear actuators mounting into the steering plate and the forks lever.
+3. The steering plate providing fixed points to the linear actuators to turn the wheels.
+4. The custom PCB shield hosting the actuators drivers, current sensors and sensor inputs.
+5. The Arduino mega micro-controller processing the related signals and controlling the steering actuators.
 
 ## Steering plates
 
