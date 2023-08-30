@@ -220,7 +220,7 @@ The following table lists the individual components employed for manufacturing t
 
 The total cost to manufacture the Agrofelis steering driver shield excluding shipping and assembly charges, sums to approximately **32** euros.
 
-## Steering structural components
+## Steering actuators and structural components
 
 The following table lists the components employed for manufacturing the Agrofelis steering structural elements. The index table includes the product URL, the indicative supplier, as well as the unit price total amount.
 
@@ -232,11 +232,13 @@ The following table lists the components employed for manufacturing the Agrofeli
 | #3 | 10 Allen bolts 5mm  | [Bolt 8mm](https://ironhorses.gr/product/m5-x-40mm-allen-bolt-25-pack/) | [QOOP Metalworks](https://www.qoop.gr) | 10 | 0.2 | 2 | - |
 | #4 | Mini Plane Axial Thrust Ball Bearing  F7-17M 7 x 17 x 6mm | [ball bearing](https://www.aliexpress.com/item/1005005502256552.html) | [Ali Express](www.aliexpress.com) | 2 | 1.31 | 2.62 | - |
 | #5 | Linear actuator 24V 500N 20mm/s, Stroke 100mm | [Linear Actuator](https://www.aliexpress.com/item/1005003897869232.html) | [Ali Express](https://www.aliexpress.com) | 2 | 36.7 | 73.6 | - |
-| #6 | Powerful Round Magnets 5x3mm | [Round Magnets](https://www.hellasdigital.gr/electronics/magnets/powerful-round-magnets-5x3mm/) | (Hellas Digital)[https://www.hellasdigital.gr] | 4 | 0.1 | 0.4 | - |
-| #7 | Powerful Magnets Block 20X5X3mm | [block magnet](https://www.hellasdigital.gr/electronics/magnets/powerful-magnets-block-20x5x3mm/)  | (Hellas Digital)[https://www.hellasdigital.gr] | 2 | 0.15 | 0.3 | - |
+| #6 | Powerful Round Magnets 5x3mm | [Round Magnets](https://www.hellasdigital.gr/electronics/magnets/powerful-round-magnets-5x3mm/) | [Hellas Digital](https://www.hellasdigital.gr) | 4 | 0.1 | 0.4 | - |
+| #7 | Powerful Magnets Block 20X5X3mm | [block magnet](https://www.hellasdigital.gr/electronics/magnets/powerful-magnets-block-20x5x3mm/)  | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 0.15 | 0.3 | - |
 | #8 | Waterproof fabric 1 sqm | [waterproof fabric](https://www.yfasmatakesidis.gr/adiavroxo-sea-150cm-mayro-p-4905.html) | [Yfasmatakesidis](www.yfasmatakesidis.gr) | 1 | 5 | 5 | - |
 | #9 | 6 mm rod | [6 mm rod](https://www.amazon.co.uk/Glarks-Stainless-Straight-Helicopter-Airplane/dp/B07KJ4NWNG/) | [QOOP Metalworks](https://www.qoop.gr)  | 2 | 2 | 4 | - |
-| **Total** |      |    |     |      |     |  **32.06**  | | 
+| **Total** |      |    |     |      |     |  **103.72**  | | 
+
+The total cost to manufacture the Agrofelis steering structural and actuators elements excluding shipping and assembly charges, sums to approximately **104** euros.
 
 
 ## Software 
