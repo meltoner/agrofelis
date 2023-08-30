@@ -243,26 +243,26 @@ The total cost to manufacture the Agrofelis steering structural and actuators el
 
 ## Steering driver software 
 
-The Agrofelis software source code developed, managing the steering system via its actuators and sensors running on an Arduino mega, containing 23 source code files and 3 supportive and is located within the following path :
+The Agrofelis software source code developed, managing the steering system via its actuators and sensors running on an Arduino mega, containing 23 source code files and 3 supportive is referenced bellow :
 
 - [src/linearSteer](src/linearSteer)
 
 The source code contains an ino file initiating the application and series of h and cpp files encoding the declarations and implementations of the classes of the application. 
 
-The project uses an Arduino mega and few components to sense and control two linear actuators, to establish a steering system.
-The module utilises Serial interface to share the internal state of the components as well as to control them.
-The module consist of custom PCB that hosts two current sensors, two motor drivers and two inlets for two potentiometer used a feedback 
-sensor to sense the steer degree of the wheels. The software enables to control each linear actuator individually as well as in a synchronized 
-manner based on the Ackerman geometry and the physical orientation of the vehicle. The valid ratios of the wheels are measured in fine steps 
-and persisted in an association map than can interpolate the values within these steps. 
+The project uses an Arduino Mega and few components to sense and control two linear actuators, establishing the steering system.
+The module utilises the Serial interface to share the internal state of the components, as well as to control them.
 
-The module status can be set so the linear actuators are driven to reach the minimum and maximal points in order to dynamically derive the center and the bounds of
-applicable movement. Moreover, the minimum voltage needed to achieve a movement can be moreover derived as the lowest applicable speed. 
+The module consist of custom PCB that hosts two current sensors, two motor drivers and two inlets for two potentiometer used as feedback 
+sensor, to readout the steering degree of the wheels. The software enables to control each linear actuator individually as well as in a synchronized 
+manner, based on the Ackerman geometry and the physical orientation of the vehicle. The valid ratios of the wheels are measured in fine steps 
+and persisted in an association map that is interpolated. 
 
-The module provides an interface to make both linear actuators seek and reach the desired position. The application moreover implements the functionality so the linear actuators are operated to meet the Ackerman geometry, requiring to move the motors in different speeds
-to accommodate for their distance differences. With this feature the vehicle can move while the steering module actuates to the desired position.
+The module status can be set remotely, so the linear actuators are driven to reach the minimum and maximal points in order to dynamically derive the center and the bounds of
+applicable movement. Moreover, the minimum voltage needed to achieve a movement can be derived, as the lowest applicable speed. 
 
-The software moreover establishes the braking system of the vehicle by driving two servos linked to the disc brakes.
+The module provides an interface to make both linear actuators seek and reach the desired position. The application implements the functionality so the linear actuators are operated asynchronously moving the motors in different speeds, to meet the Ackerman geometry based on the observed resistance and the distance have to cover respectively. 
+
+The software moreover, establishes the braking system of the vehicle by driving two servos linked to the disc brakes.
 
 
 ### Application structure
@@ -301,7 +301,11 @@ The following plot, visualizes the raw values sensor difference needed between t
 ![End to end Ackerman geometry differences between the Left and Right input sensors](_figures/vehicle-steering-25-R-left-right-ackerman-differences.png)
 
 
+The steering application runtime information and its modules can be also accessed and controlled via the Agrofelis Unificator software able to unify multiple Agrofelis module connected from different interfaces (Serial, Wifi, Websockets, USB). Lightweight single page web applications can easily map and bind and monitor the internal state of the steering actuators and sensors as seen by the following figure. The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
+
+![Steering Agrofelis Unificator](_figures/vehicle-steering-26-AgrofelisUnificator-snapshot.jpg)
+
 # Summary 
 
-The details of this important mobility module of the Agrofelis robots have been documented. All source code files, schematics, Numerical control files and patterns involved in the fabrication have been presented along with photographic material showcasing the progress of the manufacturing progress. The list of components, raw material and indicative suppliers and cost information enabling to reproduce the overall steering system have been presented. References to the Agrofelis steering application source code running on the micro-controller have been referenced along with a description per implemented class.
+The details of this important mobility module of the Agrofelis robot, have been documented. All source code files, schematics, Numerical control files and patterns involved in the fabrication have been presented along with photographic material showcasing the progress of the manufacturing progress. The list of components, raw material and indicative suppliers and cost information enabling to reproduce the overall steering system have been presented. References to the Agrofelis steering application source code running on the micro-controller have been referenced along with a description per implemented class.
 
