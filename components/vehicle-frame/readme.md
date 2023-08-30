@@ -1,4 +1,4 @@
-# Agrofelis Chassis Frame Design and Fabrication
+# Agrofelis chassis frame design and fabrication
 
 # Abstract 
 
@@ -32,7 +32,7 @@ In the preceding diagram, numerical annotations are used to indicate various sub
 5. The back wheel mounting points part
 6. The front wheel mounting points part
 
-## Stepwise Frame Fabrication
+## Stepwise frame fabrication
 
 This section delves into the systematic fabrication of the chassis, which unfolds across seven distinct steps. In addition, for each step, we provide accompanying images to aid comprehension and ease of reference.
 
@@ -108,7 +108,7 @@ As with all metallic parts of the Agrofelis robot, the frame is being coated wit
 Additionally, a 5 mm compressible adhesive foam is glued to the external surfaces of the frame. This measure ensures almost air-tight protection when the covers are attached, effectively safeguarding internal components against dust and water.
 
 
-## Chassis Components and Indicative Suppliers
+## Chassis components and indicative suppliers
  
 The following table lists the individual components employed for manufacturing the Agrofelis chassis frame. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 

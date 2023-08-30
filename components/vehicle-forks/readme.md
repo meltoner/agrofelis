@@ -116,7 +116,7 @@ A bottom side focused view of the related mechanism after it has been painted is
 ![Hinge mount fabricated view d](_figures/vehicle-forks-14-hinge-mount-actual.jpg)
 
 
-# Forks components and indicative Suppliers
+# Forks components and indicative suppliers
 
 The following table lists the individual components employed for manufacturing the four Agrofelis forks and their mounting mechanism. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
@@ -132,6 +132,10 @@ The following table lists the individual components employed for manufacturing t
 | #5 | 30 Nuts pack 12mm | [Nuts 12mm](https://www.flextools.gr/index.php?route=product/product&path=260&product_id=1077) | [flextools](https://www.flextools.gr) | 1 | 1.5 | 1.5 | - |
 | #6 | Welded Hinge with 3 winds | [Hinge](https://www.schmiedekult.de/Hinges-for-welding-with-3-wings-and-removable-pin) |[QOOP Metalworks](https://www.qoop.gr) | 2 | 5 | 10 | - |
 | **Total** |      |    |     |      |     |  **50.5**  | | 
+
+
+The total cost to manufacture four Agrofelis forks excluding shipping, excluding shipping and assembly charges, sums to approximately **50.5** euros.
+
 
 </div>
  
