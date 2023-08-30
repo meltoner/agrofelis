@@ -295,9 +295,9 @@ The repository moreover, holds supportive files used while measuring and adaptin
 
 - [src/linearSteer/data.modeling](src/linearSteer/data.modeling)
 
-The file data.modeling.R was moreover developed to study and reflect the end difference between the left and right sensors. 
+The file data.modeling.R was moreover developed with the R language, to study and reflect the end to end differences between the left and right sensors and actuators. 
 
-The following plot, visualizes the raw values sensor difference needed between the left and right sensors by meeting the ackerman geometry, when steering to the most left and to the most right, represented by the values -100 and 100.
+The following plot, visualizes the raw values sensor difference needed between the left and right sensors by meeting the Ackerman geometry, when steering to the most left and to the most right, represented by the values -100 and 100.
 
 ![End to end Ackerman geometry differences between the Left and Right input sensors](_figures/vehicle-steering-25-R-left-right-ackerman-differences.png)
 
