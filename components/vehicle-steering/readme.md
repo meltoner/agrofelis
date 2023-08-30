@@ -72,15 +72,15 @@ The waterproof cloth cut using a scissor to the presented pattern is snapshot-ed
 ![cloth-cover-linear-actuators-1](_figures/vehicle-steering-10-cloth-cover-linear-actuators-1.jpg)
 
 Sufficient offset has been built into the pattern, which is forgiving to imprecise manual cutting.
-The cloth piece rolled into a cylinder with its waterproof side in its outer side, is glued using common electrical tape with its ending sides and vehicle cover as seen by the following photograph.
+The cloth piece rolled into a cylinder with its waterproof side in its outer side, is glued using common electrical black tape and the vehicle's cover plates, as seen by the following photograph.
 
 ![cloth-cover-linear-actuators-2](_figures/vehicle-steering-11-cloth-cover-linear-actuators-2.jpg)
 
 ## Feedback mechanism
 
-Without verifying an actuation in robotics acting in external environments its very common to find divination of what has actually happened from what the system expects to have happened. The steering system employs various indicator sensors to be able to verify the movement and be able to observe out of the ordinary metrics and detect that something unexpected has happened. 
+Without verifying an actuation in robotics acting in external environments its very common to find deviation of what has actually happened from what the system expects to have happened. The steering system employs various indicator sensors to be able to verify the movement and be able to observe out of the ordinary metrics and detect that something unexpected has happened. 
 
-For the motion aspect, two custom gears were designed, one attached permanently to fork's hinge element and the second to a potentiometer attached to the fork's vehicle mounting mechanism. A feedback sensors was decided to be installed exactly at the rotation point of the fork, compared to the rotation point of the linear actuator, to minimize the translation distance between the measurement and the actual rotation of the wheel. 
+For the motion aspect, two custom gears were designed, one attached permanently to fork's hinge element and the second to a potentiometer attached to the fork's vehicle mounting mechanism. The feedback sensor was decided to be installed exactly at the rotation point of the fork, compared to the internal rotation point of the linear actuator, to minimize the translation distance between the measurement and the actual rotation of the wheel. 
 
 The feedback mechanism schematic view is illustrated by following figure depicting the two gears, the potentiometer secured on a small corner plate that is attached using two screws into the vehicle's fork mounting mechanism. 
 
@@ -123,7 +123,7 @@ In order to provide some protection of the feedback mechanism, from plants or ot
 
 ![Gears protection cover](_figures/vehicle-steering-17-gears-covers.png)
 
-The 3d printed fabricated covers, having the magnets embedded into their structured can be seen by the following photo.
+The 3d printed fabricated covers, having the magnets embedded into their structure, can be seen in the following photo.
 
 ![gear-covers-1](_figures/vehicle-steering-18-gear-covers-1.jpg)
 
@@ -140,8 +140,8 @@ More specifically the folder contains the following source files.
 
 - [potensiometerCoversL.stl](assets/3d-print-feedback-potensiometer-covers/potensiometerCoversL.stl)
 - [potensiometerCoversR.stl](assets/3d-print-feedback-potensiometer-covers/potensiometerCoversR.stl)
-- [potensiometerCoversL.gcode](assets/3d-print-feedback-potensiometer-covers/potensiometerCoversL)
-- [potensiometerCoversR.gcode](assets/3d-print-feedback-potensiometer-covers/feedback-gear-A-Offset.nc)
+- [potensiometerCoversL.gcode](assets/3d-print-feedback-potensiometer-covers/potensiometerCoversL.gcode)
+- [potensiometerCoversR.gcode](assets/3d-print-feedback-potensiometer-covers/potensiometerCoversR.gcode)
  
 The end mechanism without the protective covers is pictured by the following photo.
 
