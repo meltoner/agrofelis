@@ -109,13 +109,13 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 The [wheels forks design and fabrication](components/vehicle-forks), present the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks serve the function of securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling their steering and for installing their feedback rotating mechanisms. Two types of forks are being employed, these installed in the front and these in the back. Most of the fork design is common and their differentiating factor is their mounting mechanism aimed fixed or for steering. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels via the motors hub shaft. The design schematics, the plasma cut patterns, as well as images of the fabrication progression are documented. The document concludes with a list of indicative suppliers where the raw materials where acquired, enriched with bill and material information.
 
-The complete documentation of the Agrofelis chassis frame is provided below.
+The complete documentation of the Agrofelis wheels forks is provided below.
 
-- [Chassis frame design and fabrication](components/vehicle-forks)
+- [Wheels forks design and fabrication](components/vehicle-forks)
 
 An indicative selection of figures from the Agrofelis forks design and fabrication document, is provided by the consequent image. 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
+![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
 
 
 ## Cost estimation overview
