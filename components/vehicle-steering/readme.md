@@ -301,9 +301,11 @@ The following plot, visualizes the raw values sensor difference needed between t
 ![End to end Ackerman geometry differences between the Left and Right input sensors](_figures/vehicle-steering-25-R-left-right-ackerman-differences.png)
 
 
-The steering application runtime information and its modules can be also accessed and controlled via the Agrofelis Unificator software able to unify multiple Agrofelis module connected from different interfaces (Serial, Wifi, Websockets, USB). Lightweight single page web applications can easily map and bind and monitor the internal state of the steering actuators and sensors as seen by the following figure. The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
+The steering application runtime information and its modules can be also accessed and controlled via the Agrofelis Unificator software able to unify multiple Agrofelis module connected from different interfaces (Serial, Wifi, Websockets, USB). Lightweight single page web applications can easily map and bind and monitor the internal state of the steering actuators and their sensors as seen by the following figure. 
 
 ![Steering Agrofelis Unificator](_figures/vehicle-steering-26-AgrofelisUnificator-snapshot.jpg)
+
+The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
 
 # Summary 
 
