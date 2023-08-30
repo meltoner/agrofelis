@@ -159,6 +159,16 @@ The designed PCB indicating the components it hosts, the input and output pins a
 
 ![STEERING_DRIVER](_figures/vehicle-steering-23_STEERING_DRIVER.png)
 
+
+The PCB board scalable vector graphic design plan can be found in the following path :
+
+- [driver-board/laser-cut-nc/linear_trails.svg](driver-board/laser-cut-nc/linear_trails.svg)
+
+Its Numerical Control (NC) derivative driving a CNC router is provided bellow :
+
+- [driver-board/laser-cut-nc/linear_trails.nc](driver-board/laser-cut-nc/linear_trails.nc)
+
+
 The following figure, encodes the PCB board input / output connected into the Arduino Mega board pins.
 
 ![STEERING_DRIVER_connections](_figures/vehicle-steering-23_STEERING_DRIVER_connections.png)
