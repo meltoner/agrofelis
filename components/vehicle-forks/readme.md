@@ -137,11 +137,10 @@ The following table lists the individual components employed for manufacturing t
 | #6 | Welded Hinge with 3 winds | [Hinge](https://www.schmiedekult.de/Hinges-for-welding-with-3-wings-and-removable-pin) |[QOOP Metalworks](https://www.qoop.gr) | 2 | 5 | 10 | - |
 | **Total** |      |    |     |      |     |  **50.5**  | | 
 
+</div>
 
 The total cost to manufacture four Agrofelis forks excluding shipping, excluding shipping and assembly charges, sums to approximately **50.5** euros.
 
-
-</div>
  
 # Summary
 
