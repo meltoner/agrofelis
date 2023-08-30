@@ -177,18 +177,18 @@ The following figure snapshots the underside (copper side) of the manufactured P
 
 ![pcbdriver-1](_figures/vehicle-steering-24-pcbdriver-1.jpg)
 
-Although latter in the project we discovered better ways to fabricated PCBs, this board was fabricated by spray painting the copper side of the board, burning the designed pattern using a laser engraver and etching the board in acid. The board's holes were manually made by hand. Other PCB found in the Agrofelis project have improved this process by curving the board and drilling the holes in a computerized manner.
+Although latter in the project we discovered better ways to fabricated PCBs, this board was fabricated by spray painting the copper side of the board, burning the designed pattern using a laser engraver and etching the board in acid. The board's holes were manually made by hand. Other PCB found in the Agrofelis project have improved this process by curving the board and drilling the holes in a completely computerized manner.
 
-The following figure illustrates a supportive file prepared for cable management and more specifically by print label used to mark the cables functionality and / or voltage level.
+The following figure illustrates a supportive file prepared for cable management and more specifically by printing the related labels, cutting them and gluing them using transparent tape, denoting the cables functionality and / or voltage level.
 
 ![STEERING_DRIVER_CABLES_LABELS](_figures/vehicle-steering-24-STEERING_DRIVER_CABLES_LABELS.png)
 
-The editable vector file can be found in the following location:
+The editable vector file, can be found in the following location :
 
 - [driver-board/STEERING_DRIVER_CABLES_LABELS.pdf](driver-board/STEERING_DRIVER_CABLES_LABELS.pdf)
 
 
-The following picture highlights the location of the PCB shield next to its micro controller, on top side of the steering plate on the back side of the Agrofelis vehicle.
+The following picture highlights the location of the PCB shield next to its micro controller, on the top side of the steering plate, on the back side of the Agrofelis vehicle frame.
 
 ![pcb-driver-2](_figures/vehicle-steering-25-pcb-driver-2.jpg)
 
