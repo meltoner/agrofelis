@@ -1,4 +1,4 @@
-# Agrofelis steering system
+# Agrofelis steering system design and fabrication
 
 # Abstract
 
@@ -153,7 +153,7 @@ The end mechanism with the protective covers can be compared via the following i
 
 ## Steering PCB driver
 
-In order to drive the linear actuators, sense how much these have been moved in relation to the voltage applied and the friction of the wheel with the ground, as well as sense how much current is being drawn indicating high resistance or no resistance a custom board was designed to organize the various electronic elements as well as tidy the cables per actuator and sensor. The shield was designed so it can be independent of the micro controller and for example instead of an Arduino mega be able to employ an Arduino mega pro or an esp32. The PCB board was designed in such a way that it can be cut in half and serve two individual linear actuators, on other part of the system.
+In order to drive the linear actuators, sense how much these have been moved in relation to the voltage applied and the friction of the wheel with the ground, as well as sense how much current is being drawn indicating high resistance or no resistance a custom board was designed to organize the various electronic elements as well as tidy the cables per actuator and sensor. The shield was designed so it can be independent of the micro controller and for example instead of an Arduino mega be able to employ an Arduino mega pro or an esp32. The PCB board was designed in such a way that it can be cut in half and drive two individual linear actuators, on another alike part in the system.
 
 The designed PCB indicating the components it hosts, the input and output pins and their function is attached next.
 
