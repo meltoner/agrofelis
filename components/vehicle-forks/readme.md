@@ -118,19 +118,23 @@ A bottom side focused view of the related mechanism after it has been painted is
 
 # Forks Components and Indicative Suppliers
 
-The following table lists the individual components employed for manufacturing the Agrofelis forks. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
+The following table lists the individual components employed for manufacturing the four Agrofelis forks and their mounting mechanism. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
 
 <div align="center">
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | 1 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 6.00 | 6.00 | - |
+| #1 | 4 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 24.00 | 24.00 | - |
+| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0 | 0 | 0 | Already accounted in the Frame bill and material  |
+| #3 | Black iron metal sheet 600x400x4mm  | [4mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x4mm) | [QOOP Metalworks](https://www.qoop.gr)  | 1 | 15 | 15 | - |
+| #4 | Bolt 12mm X 50mm | [Bolt 12mm X 50mm ](https://www.vida.gr/exagones-vides-olopasses-m8-galvanize-metrikes-din-933/) | [Vida](https://www.vida.gr) | 4 | 0.7 | 2.8 | - |
+| #5 | 30 Nuts pack 12mm | [Nuts 12mm](https://www.flextools.gr/index.php?route=product/product&path=260&product_id=1077) | [flextools](https://www.flextools.gr) | 1 | 1.5 | 1.5 | - |
+| #6 | Welded Hinge with 3 winds | [Hinge](https://www.schmiedekult.de/Hinges-for-welding-with-3-wings-and-removable-pin) |[QOOP Metalworks](https://www.qoop.gr) | 2 | 5 | 10 | - |
+| **Total** |      |    |     |      |     |  **50.5**  | | 
 
-
-| **Total** |      |    |     |      |     |  **155.47**  | | 
 </div>
-
+ 
 
 # Summary
 
