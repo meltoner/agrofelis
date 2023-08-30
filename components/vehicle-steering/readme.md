@@ -195,19 +195,46 @@ The following picture highlights the location of the PCB shield next to its micr
 
 ## Steering PCB components
 
-The following table lists the components for manufacturing the Steering controller driver.
+
+The following table lists the individual components employed for manufacturing the Agrofelis steering controller. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
 
-Linear Potentiometer B10K Ohm (COM-09939) 
-ACS712 5A  Range Hall Current Sensor Module
-DRV8871 H-Bridge Brushed DC Motor Driver
-6-wire ribbon cable 120mm
-3 wire cable 350 mm (salvaged from an old mouse) connecting the potentiometer
-6-pin header female
-6-pin header male
-3-pin header female
-3-pin header male
-1 x 2 pin PCB Terminal 
+<div align="center">
+
+| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
+|----|--------------|------------|-----|---|---|---|---|
+| #2 | Black iron metal sheet 1000x2000x2mm  | [2mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x2mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0.25 | 50 | 13 | - |
+
+
+| #4 | 8 Bolt 5mm X 30mm | [Bolt 12mm X 50mm ](https://www.vida.gr/exagones-vides-olopasses-m8-galvanize-metrikes-din-933/) | [Vida](https://www.vida.gr) | 4 | 0.7 | 2.8 | - |
+
+| #5 | 30 Nuts pack 12mm | [Nuts 12mm](https://www.flextools.gr/index.php?route=product/product&path=260&product_id=1077) | [flextools](https://www.flextools.gr) | 1 | 1.5 | 1.5 | - |
+
+
+| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
+|----|--------------|------------|-----|---|---|---|---|
+| #1 | Copper board |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    0.25  | 9.90 | 2.48 | Shared Resource |
+| #2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [cableworks](https://www.cableworks.gr) | 2 | 6 | 12 | - |
+| #3 | Linear Potentiometer B10K Ohm | [Metal potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/rotary-potentiometer-10k-ohm-linear-com-09939/) | [hellasdigital](https://www.hellasdigital.gr) | 2 | 1.24 | 2.48 | - |
+| #4 | ACS712 5A Range Hall Current Sensor Module | [5A Current sensor](https://www.aliexpress.com/item/32348760733.html) | [alli express](https://www.aliexpress.com) | 2 | 1.10 | 2.20 | - |
+| #5 |6-wire ribbon cable 120mm  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.25  | 1.00 | 0.3| Shared Resource |
+| #6 | 3 wire cable 350 mm connecting the potentiometers | [3wire cable](https://www.hellasdigital.gr/computers/cables/sound-cables/roline-3-5mm-audio-cable-m-m-2m-11-09-4502/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 2.6 | 2.6 | - |
+| #7 | 6-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
+| #8 | 3-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
+| #9 | 3-pin header male  | [Male Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
+| #10 | 3-pin header male  | [Male Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
+
+
+| **Total** |      |    |     |      |     |  **50.5**  | | 
+
+</div>
+
+The total cost to manufacture the Agrofelis steering driver shield excluding shipping, and assembly charges, sums to approximately **50.5** euros.
+
+ 
+ 
+
+
 
 
 ## Steering structural components
