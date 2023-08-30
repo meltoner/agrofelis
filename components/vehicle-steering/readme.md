@@ -9,7 +9,7 @@ This document delves into the details making up the steering system of the Agrof
 
 The key design factors of the steering system of the Agrofelis vehicle, were space minimization, sufficient torque to steer the wheels on uneven terrains, sufficient turning speed, feedback motion sensors enabling to precisely move the wheels, and monitoring capacities to observe the current drawn by each wheel while turning. Although a passive system is usually employed implementing the [Ackerman steering geometry](https://en.wikipedia.org/wiki/Ackermann_steering_geometry), the Agrofelis steering system implements the ratios dynamically via software and two independent linear actuators. This decision although perhaps harder to implement, leads to a more compact footprint, promotes the modular mentality and potentially allows for a wider range of wheel alignments worth researching. 
 
-In the following sections, the various sub-modules employed for the steering system of the Agrofelis robot, are being documented. More specifically the overall schematic is being presented and is decomposed into the steering plates, the linear actuators and their protective covers, the feedback mechanism, the custom gears developed using a laser cutter, 3d printed protection covers of the feedback mechanism, the Agrofelis Linear actuators steering driver PCB and its software. 
+In the following sections, the various sub-modules employed for the steering system of the Agrofelis robot, are being documented. More specifically the overall schematic is being presented and is decomposed into the steering plates, the linear actuators and their protective covers, the feedback mechanism, the custom gears developed using a laser cutter, 3D printed protection covers of the feedback mechanism, the Agrofelis Linear actuators steering driver PCB and its software. 
 
 
 ## Steering module
@@ -63,7 +63,7 @@ The assembled mounting point is moreover snapshot-ed by the following photo.
 
 ## Linear actuators protection
 
-Because the linear actuators extend from within the frame, pass through the vehicle covers to the external environment, they and the frame internals are subject to dust and other unwanted elements. Using an outdoor stretchable waterproof cloth, cut and rolled into a cilinder using the following pattern, protective covers were fabricated isolating linear actuators and the frame internals from the environment, while effortlessly following the movements of the actuators.
+Because the linear actuators extend from within the frame, pass through the vehicle covers to the external environment, they and the frame internals are subject to dust and other unwanted elements. Using an outdoor stretchable waterproof cloth, cut and rolled into a cylinder using the following pattern, protective covers were fabricated isolating linear actuators and the frame internals from the environment, while effortlessly following the movements of the actuators.
 
 ![cloth-cover-actuators](_figures/vehicle-steering-09-cloth-cover-actuators.png)
 
@@ -132,7 +132,7 @@ The protective covers painted using a gray paint are snapshot-ed by the conseque
 ![gear-covers-2](_figures/vehicle-steering-19-gear-covers-2.jpg)
 
 
-The following folder contains the left and right protective covers symmetric design stereolithography (stl) plans and their Geometric Code (gcode) derivatives, driving a 3d printer.
+The following folder contains the left and right protective covers symmetric design stereo-lithography (STL) plans and their Geometric Code (GCODE) derivatives, driving a 3D printer.
 
 - [assets/3d-print-feedback-potensiometer-covers](assets/3d-print-feedback-potensiometer-covers)
 
@@ -157,7 +157,7 @@ In order to drive the linear actuators, sense how much these have been moved in 
 
 The designed PCB indicating the components it hosts, the input and output pins and their function is attached next.
 
-![STEERING_DRIVER](_figures/vehicle-steering-23_STEERING_DRIVER.png)
+![Steering PCB driver schematic](_figures/vehicle-steering-23_STEERING_DRIVER.png)
 
 
 The PCB board scalable vector graphic design plan can be found in the following path :
@@ -175,7 +175,7 @@ The following figure, encodes the PCB board input / output connected into the Ar
 
 The following figure snapshots the underside (copper side) of the manufactured PCB board. 
 
-![pcbdriver-1](_figures/vehicle-steering-24-pcbdriver-1.jpg)
+![PCB Driver copper side](_figures/vehicle-steering-24-pcbdriver-1.jpg)
 
 Although latter in the project we discovered better ways to fabricated PCBs, this board was fabricated by spray painting the copper side of the board, burning the designed pattern using a laser engraver and etching the board in acid. The board's holes were manually made by hand. Other PCB found in the Agrofelis project have improved this process by curving the board and drilling the holes in a completely computerized manner.
 
@@ -204,11 +204,11 @@ The following table lists the individual components employed for manufacturing t
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
 | #1 | Copper board |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    0.25  | 9.90 | 2.48 | Shared Resource |
-| #2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [cableworks](https://www.cableworks.gr) | 2 | 6 | 12 | - |
+| #2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [Cableworks](https://www.cableworks.gr) | 2 | 6 | 12 | - |
 | #3 | Linear Potentiometer B10K Ohm | [Metal potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/rotary-potentiometer-10k-ohm-linear-com-09939/) | [hellasdigital](https://www.hellasdigital.gr) | 2 | 1.24 | 2.48 | - |
-| #4 | ACS712 5A Range Hall Current Sensor Module | [5A Current sensor](https://www.aliexpress.com/item/32348760733.html) | [alli express](https://www.aliexpress.com) | 2 | 1.10 | 2.20 | - |
-| #5 |6-wire ribbon cable 120mm  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.25  | 1.00 | 0.3| Shared Resource |
-| #6 | 3 wire cable 350 mm connecting the potentiometers | [3wire cable](https://www.hellasdigital.gr/computers/cables/sound-cables/roline-3-5mm-audio-cable-m-m-2m-11-09-4502/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 2.6 | 2.6 | - |
+| #4 | ACS712 5A Range Hall Current Sensor Module | [5A Current sensor](https://www.aliexpress.com/item/32348760733.html) | [Ali express](https://www.aliexpress.com) | 2 | 1.10 | 2.20 | - |
+| #5 |6-wire ribbon cable 120 mm  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.25  | 1.00 | 0.3| Shared Resource |
+| #6 | 3 wire cable 350 mm connecting the potentiometer | [3 wire cable](https://www.hellasdigital.gr/computers/cables/sound-cables/roline-3-5mm-audio-cable-m-m-2m-11-09-4502/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 2.6 | 2.6 | - |
 | #7 | 6-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #8 | 3-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #9 | 3-pin header male  | [Male Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
@@ -279,19 +279,19 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 | Class | Description | 
 |----|------------------|
 |linearSteer.ino | Boots the application, initialises the top classes, encodes the triggering frequencies of various functional elements |
-|Context | Provides a common ground the share information, encodes the triggering frequencies, helpfull functions and a unique identifier of the model |
+|Context | Provides a common ground the share information, encodes the triggering frequencies, helpful functions and a unique identifier of the model |
 |Invoker | Tracks the execution frequencies such these are called at the right time |
 |Brake | Object representing a wheel brake actuating a servo motor. The object can be initialised with a limited target range, as much as to lift the brake. The class was used with a TIANKONGRC RDS-8120 20KG ROBOT DIGITAL SERVO. The class can be instantiated by providing the desired GPIO as well an the desired range to actuate mapped commonly fro 0 to 100  |
 |Brakes | The class can drive two or more brakes simultaneously |
 |Sensor | Base class wrapping the functions conveying a sensor. Reads an analogue port when apply is called. Maintains a gated smoothing read out of a sensor by comparing the previous mean with with current read value. Moreover, maintains a boolean flag, when a movement is being detected based on the absolute difference of the first derivative. Last, it prints out the object internal state, on print() reflecting the sensor's port, its smoothed value, its un-smoothed sensor value and last if the sensor is detecting a movement.|
 |SensorCurrent | Class extending the Sensor class implementing the specialties of a current sensor. The class translates the raw sensor value to amperage. Moreover, because the current sensor reads rapid spikes that can be missed, maintains a decaying max current sensor that is renewed based on the maximum value read within a time window.  |
-|LinearActuator | The class implements an object to control a linear actuator via an DRV8871 H-Bridge Brushed DC Motor Driver. The class is instantiated with the following board port mappings enabling to reuse it. The first two control the direction and speed of the [DRV8871 H-Bridge Brushed DC Motor Driver] using two pwm ports. Next the analogue [LinearActuator Potentiometer B10K Ohm] and the analogue [ACS712 5A  Range Hall Current Sensor Module]. The module operates based on 4 states dictating its function. On states one and two, the min and max potentiometer bounds are identified. On state three, the minimum throttle leading to a movement is derived. On state four the object enters when its objective position has been achieved. On state five, the object reaches to the target position. States 10 and 11 correspond to erroneous states, such when an actuation is not detected when its expected or when the sensor value reads values close to its physical values. The applicable bounds can be moreover persisted so these do not have to be re-resolved when booting the Agrofelis vehicle. |
-|Interpolate | Class for interpolating a value based on an input/output mapping pairs. The interpolation object enables to map an input non linearly across an input range and linearly within its sub bounds. The class is employed by initializing it with measurement mappings such that the ackerman geometry is followed based on the physical orientation, and the raw potentiometer values by performing incremental movement to both wheel of the vehicle |
+|LinearActuator | The class implements an object to control a linear actuator via an DRV8871 H-Bridge Brushed DC Motor Driver. The class is instantiated with the following board port mappings enabling to reuse it. The first two control the direction and speed of the [DRV8871 H-Bridge Brushed DC Motor Driver] using two pulse width modulation (PWM) ports. Next the analogue [LinearActuator Potentiometer B10K Ohm] and the analogue [ACS712 5A  Range Hall Current Sensor Module]. The module operates based on 4 states dictating its function. On states one and two, the min and max potentiometer bounds are identified. On state three, the minimum throttle leading to a movement is derived. On state four the object enters when its objective position has been achieved. On state five, the object reaches to the target position. States 10 and 11 correspond to erroneous states, such when an actuation is not detected when its expected or when the sensor value reads values close to its physical values. The applicable bounds can be moreover persisted so these do not have to be re-resolved when booting the Agrofelis vehicle. |
+|Interpolate | Class for interpolating a value based on an input/output mapping pairs. The interpolation object enables to map an input non linearly across an input range and linearly within its sub bounds. The class is employed by initializing it with measurement mappings such that the Ackerman geometry is followed based on the physical orientation, and the raw potentiometer values by performing incremental movement to both wheel of the vehicle |
 |SteeringDriver | The class holds the linear actuator references, their Ackerman mappings steps and the means to interpolate their ratios from a -100 to 100 positioning. The object moreover enables to change the state of the system to seek its movement bounds and minimum voltage leading to a movement. The class moreover can dynamically derive and apply more voltage if the expected movement hasn't been observed as well as fade in or fade out depending on the time that has passed, the progress of the distance asked to accomplish, and its difference with its counterpart. |
 |SerialCommandParser | Base class for monitoring and parsing the serial interface. It parses compact commands, of the form <1|1> where the first parameter corresponds to the update action to apply and the next an int value used by the related function. |
 |SteeringController | The steeringController extends the SerialCommandParser and defines the applicable commands driving the actuators. The class moreover, reflects the internal state of the brakes and linear actuators so other external modules of the system are aware of their state |
 
-The repository moreover, holds supportive files used while measuring and adapting the left and right linear actuators such that an end to end Ackerman geometry is met, accounting for the non linearity of the potentiometer and subtle construction deviation, stored in the following folder :
+The repository moreover, holds supportive files used while measuring and adapting the left and right linear actuators such that an end to end Ackerman geometry is met, accounting for the non linearities of the potentiometer, the DAC, the linear actuator as well as subtle construction accumulative deviations, are stored in the following folder :
 
 - [src/linearSteer/data.modeling](src/linearSteer/data.modeling)
 
@@ -304,7 +304,7 @@ The following plot, visualizes the raw values sensor difference needed between t
 
 The steering application runtime information and its modules can be also accessed and controlled via the Agrofelis Unificator software able to unify multiple Agrofelis module connected from different interfaces (Serial, Wifi, Websockets, USB). Lightweight single page web applications can easily map and bind and monitor the internal state of the steering actuators and their sensors as seen by the following figure. 
 
-![Steering Agrofelis Unificator](_figures/vehicle-steering-26-AgrofelisUnificator-snapshot.jpg)
+![Steering - Agrofelis Unificator](_figures/vehicle-steering-26-AgrofelisUnificator-snapshot.jpg)
 
 The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
 
