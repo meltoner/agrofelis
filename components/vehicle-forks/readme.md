@@ -1,4 +1,4 @@
-# Agrofelis Robot Wheels Forks Design and Fabrication
+# Agrofelis robot wheels forks design and fabrication
 
 # Abstract
 
@@ -116,7 +116,7 @@ A bottom side focused view of the related mechanism after it has been painted is
 ![Hinge mount fabricated view d](_figures/vehicle-forks-14-hinge-mount-actual.jpg)
 
 
-# Forks Components and Indicative Suppliers
+# Forks components and indicative Suppliers
 
 The following table lists the individual components employed for manufacturing the four Agrofelis forks and their mounting mechanism. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
 
@@ -135,10 +135,8 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
  
-
 # Summary
 
 The development process, component details, essential dimensions and Numerical Control source files for reproducing the Agrofelis wheels forks has been documented in a progressive manner. A photograph of the vehicle focusing on its front and back forks, is presented in the closing image below.
-
 
 ![Vehicle with focus on the forks ](_figures/vehicle-forks-15.jpg)
