@@ -6,59 +6,60 @@ Energy dense, multipurpose agile agricultural robot design plans and system sour
 
 ## The Problem 
 
-The declining demographics in the West, economic disparity, energy cost inflation, supply chain disruptions and climate change have created a dangerous mix of factors for the world and particular for agriculture and public safety.  
+The convergence of declining demographics, economic disparities, rising energy costs, supply chain disruptions and the looming specter of climate change in the West has created a perilous confluence of issues for the world, particularly impacting agriculture and public safety.
 
-Farmers are having increasing difficulties finding seasonal farm workers while also having to deal with considerable increases on the cultivation cost, which results in marginal profits, unpicked produce even to abandoned farms. The need of increasing a farm worker's productivity with an affordable platform that is between a tractor and handheld tools is essential for small farmers in order to maintain existing plant capital. 
+In the agricultural sector, farmers are experiencing growing difficulty finding seasonal farm workers while also having to deal with the escalating costs of cultivation, which results in marginal profits, unharvested crops, and even abandoned farms. To combat these hurdles, there is an urgent need for an affordable and efficient platform that bridges the gap between traditional tractors and handheld tools. This imperative solution is crucial for small-scale farmers, enabling them to enhance productivity and safeguard their existing agricultural investments.
 
-Climate change though has also increased the probability of fires and floods. Fire services face more frequent fires, the need of an affordable vehicle that can serve in an integrated role with firefighting units in non-urban environments that reduces the work load and offers standoff safety from heat exposure is also essential. 
+Moreover, the repercussions of climate change have increased the likelihood of wildfires and flooding. As fire departments confront more frequent fires, the necessity for an affordable vehicle that can serve in an integrated role with firefighting units in non-urban areas to reduce workloads and provide standoff safety from heat exposure is critical.
 
-Existing vehicles in the market that could serve as a platform for various tools are too expensive or just not available. The ability to manufacture a low-cost base vehicle at a local machine shop in single units or small volumes that has a small footprint is energy dense and agile can address local problems in agriculture and public safety. The robotic vehicle system that is proposed, prototyped and open sourced, aims to offer an answer to those needs for the variety of applications in those fields and could be utilized by individual farmers, farmers Co-ops, fire departments, municipalities etc.
+Existing vehicles on the market that can serve as adaptable platforms for various tasks are either prohibitively expensive or just not available. The ability to manufacture a low-cost base vehicle within local machine shops, in single units or small volumes, that has a small footprint, is energy dense and agile, holds the potential to tackle localized challenges in agriculture and public safety sectors. The proposed, prototyped and open-sourced robotic vehicle system attempts to address those needs or the variety of applications in those fields and could be utilized by individual farmers, agricultural cooperatives, fire departments, municipalities, and beyond.
+
 
 ## The Technology Considerations
 
-The majority of technical solutions proposed for agricultural robotic systems aim at high level of autonomy through the use of satellite positioning systems like RTK GNSS, Cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), and supplementary systems like Radars Odometers and Inertial Systems.  
+The majority of technical solutions proposed for agricultural robotic systems aim for high levels of autonomy by using satellite positioning systems such as RTK GNSS (Real-Time Kinematic Global Navigation Satellite System), cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), as well as supplementary systems like radars, odometers and inertial systems.
 
-In the case of RTK GNSS signal interruption due to foliage, weather or lack of ground stations makes it of limited use. However LIDAR that can be combined with Odometers Cameras and IMUs has a considerably lower cost and potential robustness. On top of that repairing a vehicle of high technological complexity can be a challenge for the average user across the world. The choice of LiFePO4 batteries offers endurance in high temperatures, incombustibility, nontoxic
-materials, they can work unevenly charged and have a slow rate of self dishcharge.
+In the case of RTK GNSS, signal interruption caused by factors like foliage, weather conditions, or a lack of ground stations limits its usefulness. LIDAR, on the other hand, which can be combined with odometers, cameras and IMUs, has a considerably lower cost and potential robustness. Additionally, repairing a vehicle of high technological complexity can be a challenge for the average user across the world. The strategic selection of LiFePO4 batteries offers endurance in high temperatures, incombustibility, utilization of non-toxic materials, the ability to work unevenly charged and a slow rate of self-discharge.
 
-The purpose here is to offer a technology accessible to non highly technical users like a farmer or a volunteer fire fighter. A remote control system with the ability of automating certain functions through recording and replaying can offer a cheaper alternative suitable for smaller platforms, while having a wider applicability and offering a considerably cheaper increase in productivity.
+The purpose here is to provide a solution that is accessible to users who may lack extensive technical proficiency like farmers or volunteer firefighters. Introducing a remote control system capable of automating certain operations through recording and replaying can offer a less expensive alternative suitable for smaller platforms, while also having a broader applicability and offering a considerably affordable boost in overall productivity.
+
 
 ## The Potential
 
-The technologies that could be incorporated on an Agricultural Vehicle could include implements such as:
-- Grass Cutter/lawn mower a frequent and necessary application in Orchards
-- Turbine Sprayers useful both in orchards and vegetable cultivation for either pesticide or water soluble fertilizer
-- Fog Sprayers for greater reach in dense foliage and also antifreeze protection with glycerin oil
-- Fertilizer Casting, a copious job that must be done in both orchards and vegetables
-- Sensor Suite for Plant Data collection , e.g. Plant disease diagnosis
-- Mechanical , Laser or Microwave weed killing platform 
-- Robotic Picking Arm Base & Power Hub, for low plant cultivation and also Green houses
-- Power Hub, fruit picking for trees (see Tevel)
- 
-The technologies that could be incorporated on a Public Safety Vehicle could include applications like:
-- Fire fighting Gear Carrier
-- Standoff Water Cannon Base
-- Tethered Drone Base for situational awareness (see Elistair)
-- Sensor Suite for patrolling and surveillance
+Within the scope of an agricultural vehicle, a variety of technologies could be integrated, encompassing implements such as:
+- Grass Cutter/Lawn Mower: A frequent and necessary application in orchards.
+- Turbine Sprayers: Beneficial across orchards and vegetable cultivation for dispensing pesticides or water-soluble fertilizers.
+- Fog Sprayers: Enabling extended reach amidst dense foliage and providing antifreeze protection through glycerin oil.
+- Fertilizer Casting: A copious job essential for both orchards and vegetable crops.
+- Sensor Suite for Plant Data Collection: Facilitating comprehensive plant data acquisition, including diagnoses of plant diseases.
+- Mechanized Weed Elimination: Using mechanical, laser or microwave mechanisms for weed control.
+- Robotic Picking Arm Base & Power Hub: Applicable for low-lying plant cultivation and greenhouse environments.
+- Power Hub for Fruit Picking from Trees (e.g. similar to Tevel technology).
 
-The potential of having the ability to produce an open sourced Base Robotic Vehicle for a variety of applications and tools offers significant versatility.
+Similarly, the technologies that could be incorporated on a public safety vehicle could include applications like:
+- Firefighting Gear Carrier.
+- Standoff Water Cannon Base.
+- Tethered Drone Base for Enhanced Situational Awareness (akin to Elistair technology).
+- Sensor Suite for Patrolling and Surveillance.
+
+The potential of having the ability to create an open-source base robotic vehicle, adaptable across a wide range of applications and tools offers significant versatility.
 
 ## The Project 
 
-The chassis of the vehicle should be designed according to the specifications of the job at hand, carrying capacity, choice of suspension and wheels, and 
-of course size is expected to vary, so the project proposes the particular chassis as a baseline since it is assumed that there will be different designs. The Project core is the open source programmable system that can migrate in various mechanical platforms either for motion control or for implement control while having programmable capability for automation and retaining the capability for precision applications and AI readiness. 
+The chassis of the vehicle should be designed according to the specifications of the job at hand, encompassing carrying capacity, suspension and wheel choices and of course size is expected to vary. To accommodate these variations, the project recommends the particular chassis as a baseline since it is assumed that there will be different designs. The *project core* is an open-source programmable system that can migrate in various mechanical platforms either for motion control or for implement control, while also having programmable automation capability and retaining the capability for precision applications and AI readiness.
 
-The chassis implemented for the project is an iron bar welded chassis with detachable components, with a maximum carrying capacity of 250 kilos of payload with no suspension for cost reduction. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically controlled using feedback sensors in real time. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
+The chassis implemented for the project is a carrying bar welded chassis with detachable components. It boasts a maximum carrying capacity of 250 kilograms of payload and for cost efficiency, eschews suspension. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically regulated through real-time feedback sensors. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
 
-The power system has energy autonomy of 8.8 Kwh and fits within an 1 sqm.  It is composed of 8 element LiFePO4 batteries of 320 amps, paired with an intelligent Battery Management System at 300 Amp max discharge rate capacity and a data link enabling the utilization of energy related indicators. 
+The power system boasts an energy autonomy of 8.8 kWh, conveniently fitting within a 1-square-meter space. It is composed of 8-element LiFePO4 batteries rated at 320 amps, paired with an intelligent battery management system at 300 amps maximum discharge rate capacity and a data link enabling the utilization of energy-related indicators.
 
-The processing elements of the system are modularised systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real time adaptations while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and Web Sockets allowing implementation for interconnecting existing and future components. A high speed camera connected to the Jetso Nano enables the vision modality that is supported by a Coral AI accelerator, enabling machine vision tasks on edge. A high throughput disk (250 MB/s read/write) equips the system with 128GB of storage, enabling the robot to record and recall a sufficient amount of offline and online data. 
+The processing elements of the system are modularized systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real-time adaptations, while being orchestrated via a Jetson Nano GPU running on Linux and using the ROS2 protocols and Web Sockets to allow implementation for interconnecting current and future components. A high-speed camera connected to the Jetson Nano enables the vision modality, augmented by a Coral AI accelerator, allowing machine vision tasks to be performed on the edge. A high-throughput drive (with read/write speeds of 250 MB/s) equips the system with 128GB of storage, enabling the robot to record and recall a substantial amount of offline and online data.
 
-The project implements moreover a two degrees of freedom actuator rotating base, for attaching a thermal pulse jet fogger, attached on top of the robotic vehicle.
+Furthermore, the project implements a two-degrees-of-freedom actuator rotating base, for attaching a thermal pulse jet fogger to the top of the robotic vehicle.
 
-The system, in addition to its wire-full infrastructure, supports bluetooth connectivity for closeby wireless attachments, Wi-Fi for nearby controllers, mobile phones and/or modules, as well as a 2km digital wireless transceiver. A long range digital remote control/transceiver is also developed powered by an ESP32, a TFT monitor, joysticks and a lipo rechargeable battery. 
+In addition to its wired infrastructure, the system supports a range of connectivity options, including Bluetooth for local wireless attachments, Wi-Fi for nearby controllers, mobile phones and/or modules, as well as a 2-kilometer digital wireless transceiver. A long-range digital remote control/transceiver, powered by an ESP32, a TFT monitor, joysticks and a rechargeable lipo battery, has also been developed.
 
-Additional sensors employed by the system include GPS, accelerator, compass, temperature, distance, current, voltage, sensors as well as servos, stepper drivers and power modules. An underlying IOT service allows the deployment of new firmware for the system's individual components and its behavioral functions, access to its real time and recorded data.
+An underlying IoT service allows the deployment of new firmware for the system's individual components and its behavioral functions as well as access to real-time and recorded data.
+
 
 # Documentation
 
@@ -108,13 +109,13 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 The [wheels forks design and fabrication](components/vehicle-forks), present the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks serve the function of securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling their steering and for installing their feedback rotating mechanisms. Two types of forks are being employed, these installed in the front and these in the back. Most of the fork design is common and their differentiating factor is their mounting mechanism aimed fixed or for steering. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels via the motors hub shaft. The design schematics, the plasma cut patterns, as well as images of the fabrication progression are documented. The document concludes with a list of indicative suppliers where the raw materials where acquired, enriched with bill and material information.
 
-The complete documentation of the Agrofelis chassis frame is provided below.
+The complete documentation of the Agrofelis wheels forks is provided below.
 
-- [Chassis frame design and fabrication](components/vehicle-forks)
+- [Wheels forks design and fabrication](components/vehicle-forks)
 
 An indicative selection of figures from the Agrofelis forks design and fabrication document, is provided by the consequent image. 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
+![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
 
 
 ## Cost estimation overview
