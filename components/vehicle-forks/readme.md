@@ -2,12 +2,12 @@
 
 # Abstract
 
-The document, present the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks serve the function of securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling their steering and for installing their feedback rotating mechanisms. Two types of forks are being employed, these installed in the front and these in the back. Most of the fork design is common and their differentiating factor is their mounting mechanism aimed fixed or for steering. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels via the motors hub shaft. The design schematics, the plasma cut patterns, as well as images of the fabrication progression are documented. The document concludes with a list of indicative suppliers where the raw materials where acquired, enriched with bill and material information.
+This document presents the fabrication details of the forks mounting the four wheels of the vehicle. The forks were designed to be detachable in order to be able to remove or replace the wheels with different ones. The forks secure the active wheels of the vehicle, incorporate servo actuated brakes, enable steering and also carry the feedback rotating mechanisms. Two types of forks are being employed, the front forks that are fixed and the back forks that steer. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed using regular iron T shaped rods, which are cut and welded. Additional sub-components elaborated, are the vehicle's fork mounting mechanisms and the parrot like (drop out) elements securing the wheels via the motors hub shaft. The design schematics, the plasma cut patterns, as well as images of the fabrication process are documented. The document concludes with a list of indicative suppliers where the raw materials where acquired, followed by costs and material information.
 
 
 # Introduction
 
-In order to minimize the footprint of the vehicle, to have a sturdier front structure where mechanisms could be mounted, to minimize the fabrication complexity and manufacturing costs, the front wheels were designed with a fixed function in mind while the back wheels with a dynamic function implementing the steering of the vehicle. The forks utilised existing profile characteristics found in the bicycle industry and more specifically for the fork drop out and brakes mounting points, so disk brakes could be employed. The forks and their mounting mechanism are fabricated using regular 25 mm T shaped rods, two plasma cut elements, which are cut, drilled and MIG welded. All forks were designed so they are detachable in order to support future revisions or variations of the forks.
+In order to minimize the footprint of the vehicle, to have a sturdier front structure where mechanisms could be mounted, and also minimize the fabrication complexity and cost, the front wheels were designed with a fixed function in mind while the back wheels with a dynamic function implementing the steering of the vehicle. The forks utilised existing profile characteristics found in the bicycle industry and more specifically for the fork drop out and brakes mounting points, so disk brakes could be employed. The forks and their mounting mechanism are fabricated using regular 25 mm T shaped rods, two plasma cut elements, which are cut, drilled and MIG welded. All forks were designed so they are detachable in order to support future revisions or variations of the forks.
 
 In the following sections the Agrofelis forks are being decomposed into their sub elements, showcasing their fabrication details.
 
@@ -21,13 +21,13 @@ The following figure depicts the forks mirrored arrangement.
 
 ![Forks projections](_figures/vehicle-forks-02-forks.png)
 
-The two types of forks, front and back are focused by the following image.
+The two types of forks, front and back are shown in the following image.
 
 ![Forks right side](_figures/vehicle-forks-03-forks-side.png)
 
 ## Front forks
 
-All fours forks share a common structure and differentiate at their end of the fabrication depending on their end use. 
+All fours forks share a common structure and differentiate at the end of the fabrication depending on their end use. 
 The profile characteristics and dimensions of a front fork are encoded in the following diagram.
 
 ![Front fork dimensions](_figures/vehicle-forks-03-front-fork-dimensions.png)
@@ -41,11 +41,11 @@ The front fork sub parts are indexed by the following exploded view diagram.
 
 ![Front fork exploded view](_figures/vehicle-forks-05-front-fork-exploded.png)
 
-The following part designed and fabricated, has a vertical socket allowing to slide within the T shaped rod as seen by the following schematic. 
+The following part designed and fabricated, has a vertical socket allowing it to slide within the T shaped rod as seen by the following schematic. 
 
 ![Fork drop out component plasma cut](_figures/vehicle-forks-06-drop-out.png)
 
-Two of these elements are fabricated per fork and are welded in each of its bottom sides. The component accommodates for mounting the wheels as well as for mounting disk brakes mechanism. The NC files used to fabricated them are provided in the following directory in the open source repository.
+Two of these elements are fabricated per fork and are welded in each of its bottom sides. The component accommodates the mounting of the wheels as well as the disk brakes mechanism. The NC files used to fabricated them are provided in the following directory in the open source repository.
 
 - [assets/forks_dropout](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-forks/assets/forks_dropout)
 
@@ -64,7 +64,7 @@ The SVG to NC conversion was accomplished by the [Laser GRBL](https://lasergrbl.
 
 ## Back forks
 
-The back forks of the Agrofelis vehicle share a great percentage with the front forks. They differentiate by welding the half part of a hinge on their side as well as welding a lever where a liner actuator can push rotate the wheels at the desired degree. The back fork schematic and dimensions are encoded by the following diagram.
+The back forks of the Agrofelis vehicle are almost the same with the front forks. They differentiate by welding the half part of a hinge on their side as well as welding a lever where a linear actuator can push-rotate the wheels at the desired degree. The back fork schematic and dimensions are encoded by the following diagram.
 
 ![Back fork dimensions](_figures/vehicle-forks-07-back-fork-dimensions.png)
 
@@ -76,7 +76,7 @@ A more detailed schematic of the related level element is encoded by the consequ
 
 ![Back fork lever](_figures/vehicle-forks-09-back-fork-lever.png)
 
-Within the lever at the depicted distance a hole is drilled and a extended nut is installed via a bolt to accommodate the end of a linear actuator, rotating the wheel. This detail is elaborated further at the Agrofelis steering design and fabrication document.
+Within the lever at the depicted distance a hole is drilled and an extended nut is installed via a bolt to accommodate the end of a linear actuator that push-rotates the wheel. This detail is elaborated further at the Agrofelis steering design and fabrication document.
 
 The back fork, is connected with the frame using a custom plasma cut part and a hinge. The half part of the hinge is welded into this component and the other half to the fork. The schematic of the custom cut part is presented by the following figure. 
 
@@ -139,7 +139,7 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
 
-The total cost to manufacture four Agrofelis forks excluding shipping, excluding shipping and assembly charges, sums to approximately **50.5** euros.
+The total cost to manufacture four Agrofelis forks excluding shipping and labor cost, sums up to approximately **50.5** euros.
 
  
 # Summary
