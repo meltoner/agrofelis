@@ -239,6 +239,7 @@ The following table lists the components employed for manufacturing the Agrofeli
 | **Total** |      |    |     |      |     |  **103.72**  | | 
 
 The total cost to manufacture the Agrofelis steering structural and actuators elements excluding shipping and assembly charges, sums to approximately **104** euros.
+
 The total cost to fabricate the Agrofelis steering structural, actuators and electronics sums to approximately **136** euros.
 
 
@@ -295,7 +296,7 @@ The repository moreover, contains supportive files used while measuring and adap
 
 - [src/linearSteer/data.modeling](src/linearSteer/data.modeling)
 
-The file data.modeling.R was developed in the R language, to study and reflect the end to end differences between the left and right sensors and actuators. 
+The file *data.modeling.R* was developed in the R language, to study and reflect the end to end differences between the left and right sensors and actuators. 
 
 The following plot, visualizes the raw values sensor differences applying between the left and right sensors in order to meet the Ackerman geometry physically, when steering from hard left to hard right in constant steps.
 
