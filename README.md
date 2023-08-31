@@ -6,13 +6,13 @@ Energy dense, multipurpose agile agricultural robot design plans and system sour
 
 ## The Problem 
 
-The convergence of declining demographics, economic disparities, rising energy costs, supply chain disruptions and the looming specter of climate change in the West has created a perilous confluence of issues for the world, particularly impacting agriculture and public safety.
+The convergence of declining demographics, economic disparities, rising energy costs, supply chain disruptions and the looming specter of climate change in the West has created a perilous confluence of issues particularly impacting agriculture and public safety.
 
-In the agricultural sector, farmers are experiencing growing difficulty finding seasonal farm workers while also having to deal with the escalating costs of cultivation, which results in marginal profits, unharvested crops, and even abandoned farms. To combat these hurdles, there is an urgent need for an affordable and efficient platform that bridges the gap between traditional tractors and handheld tools. This imperative solution is crucial for small-scale farmers, enabling them to enhance productivity and safeguard their existing agricultural investments.
+In the agricultural sector, farmers are experiencing growing difficulty finding seasonal farm workers while also having to deal with the escalating costs of cultivation, which results in marginal profits, unharvested crops, and even abandoned farms. To combat these hurdles, there is an urgent need for an affordable and efficient platform that bridges the gap between traditional tractors and handheld tools. This imperative solution is crucial for small-scale farmers, enabling them to enhance productivity and safeguard their existing agricultural capital.
 
 Moreover, the repercussions of climate change have increased the likelihood of wildfires and flooding. As fire departments confront more frequent fires, the necessity for an affordable vehicle that can serve in an integrated role with firefighting units in non-urban areas to reduce workloads and provide standoff safety from heat exposure is critical.
 
-Existing vehicles on the market that can serve as adaptable platforms for various tasks are either prohibitively expensive or just not available. The ability to manufacture a low-cost base vehicle within local machine shops, in single units or small volumes, that has a small footprint, is energy dense and agile, holds the potential to tackle localized challenges in agriculture and public safety sectors. The proposed, prototyped and open-sourced robotic vehicle system attempts to address those needs or the variety of applications in those fields and could be utilized by individual farmers, agricultural cooperatives, fire departments, municipalities, and beyond.
+Existing vehicles on the market that can serve as adaptable platforms for various tasks are either prohibitively expensive or just not available. So it is essential to offer the ability to manufacture a low-cost base vehicle within local machine shops, in single units or small volumes, that has a small footprint, is energy dense and agile and holds the potential to tackle localized challenges in agriculture and public safety sectors. The proposed, prototyped and open-sourced robotic vehicle system attempts to address those needs through the variety of applications in those fields and could be utilized by individual farmers, agricultural cooperatives, fire departments, municipalities, and beyond.
 
 
 ## The Technology Considerations
@@ -29,7 +29,7 @@ The purpose here is to provide a solution that is accessible to users who may la
 Within the scope of an agricultural vehicle, a variety of technologies could be integrated, encompassing implements such as:
 - Grass Cutter/Lawn Mower: A frequent and necessary application in orchards.
 - Turbine Sprayers: Beneficial across orchards and vegetable cultivation for dispensing pesticides or water-soluble fertilizers.
-- Fog Sprayers: Enabling extended reach amidst dense foliage and providing antifreeze protection through glycerin oil.
+- Fog Sprayers: Enabling extended reach amidst dense foliage and providing antifreeze protection with glycerin oil.
 - Fertilizer Casting: A copious job essential for both orchards and vegetable crops.
 - Sensor Suite for Plant Data Collection: Facilitating comprehensive plant data acquisition, including diagnoses of plant diseases.
 - Mechanized Weed Elimination: Using mechanical, laser or microwave mechanisms for weed control.
@@ -46,9 +46,9 @@ The potential of having the ability to create an open-source base robotic vehicl
 
 ## The Project 
 
-The chassis of the vehicle should be designed according to the specifications of the job at hand, encompassing carrying capacity, suspension and wheel choices and of course size is expected to vary. To accommodate these variations, the project recommends the particular chassis as a baseline since it is assumed that there will be different designs. The *project core* is an open-source programmable system that can migrate in various mechanical platforms either for motion control or for implement control, while also having programmable automation capability and retaining the capability for precision applications and AI readiness.
+The chassis of the vehicle should be designed according to the specifications of the job at hand, those being carrying capacity, suspension and wheel choices and steering radius so size is expected to vary. The project recommends the particular chassis as a baseline since it is assumed that there will be different designs. The *project core* is an open-source programmable system that can migrate in various mechanical platforms either for motion control or for implement control, while also having programmable automation capability and retaining the capability for precision applications and AI readiness.
 
-The chassis implemented for the project is a carrying bar welded chassis with detachable components. It boasts a maximum carrying capacity of 250 kilograms of payload and for cost efficiency, eschews suspension. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically regulated through real-time feedback sensors. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
+The chassis implemented for the project is a carrying bar welded chassis with detachable components. It boasts a maximum carrying capacity of 250 kilograms of payload and for cost efficiency eschews suspension. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically regulated through real-time feedback sensors. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
 
 The power system boasts an energy autonomy of 8.8 kWh, conveniently fitting within a 1-square-meter space. It is composed of 8-element LiFePO4 batteries rated at 320 amps, paired with an intelligent battery management system at 300 amps maximum discharge rate capacity and a data link enabling the utilization of energy-related indicators.
 
