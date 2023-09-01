@@ -147,8 +147,8 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
-| [Wheel forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
-| [Steering system](components/vehicle-steering#steering-pcb-components)   | 132.88  |
+| [Wheel Forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
+| [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 |          |          |
 | **Total Cost**   | **1,006.18**   |
 
