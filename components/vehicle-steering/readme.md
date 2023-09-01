@@ -7,7 +7,7 @@ This document delves into the intricacies of the Agrofelis vehicle's steering sy
 
 # Introduction
 
-The key design factors of the Agrofelis vehicle's steering system were space minimization, sufficient torque to steer the wheels on uneven terrains, sufficient turning speed, feedback motion sensors for precise wheel movement and monitoring capacities to observe the current drawn by each wheel while turning. While conventional passive systems employ the [Ackerman steering geometry](https://en.wikipedia.org/wiki/Ackermann_steering_geometry), the Agrofelis steering system implements the ratios dynamically via software and two independent linear actuators. This approach, although more difficult to implement, results in a more compact footprint, promotes the modular mentality and potentially allows for a wider range of wheel alignment options worth researching.
+The key design factors of the Agrofelis vehicle's steering system were space minimization, sufficient torque to steer the wheels on uneven terrains, sufficient turning speed, feedback motion sensors for precise wheel movement and monitoring capacities to observe the current drawn by each wheel while turning. While conventional passive systems employ a mechanical solution for the [Ackerman steering geometry](https://en.wikipedia.org/wiki/Ackermann_steering_geometry), the Agrofelis steering system implements the ratios dynamically via software and two independent linear actuators. This approach, although more difficult to implement, results in a more compact footprint, promotes the modular mentality and potentially allows for a wider range of wheel alignment options worth researching.
 
 In the following sections, the various sub-modules utilized within the Agrofelis robot's steering system, are meticulously documented. In particular, the overall schematic is presented and decomposed into the steering plates, linear actuators and their protective covers, the feedback mechanism, custom gears developed using a laser cutter, 3D printed protection covers for the feedback mechanism, the Agrofelis linear actuators steering driver PCB and its associated software.
 
@@ -32,7 +32,7 @@ More specifically, the diagram illustrates the following elements:
 
 ## Steering Plates
 
-The steering plates consist of two detachable 2 mm horizontal plates with welded nuts that are mounted onto the vehicle frame through relevant holes made in the frame. The steering plates provide sufficient headroom to enclose the two linear actuators and provide fixed push points via two 6 mm rods piercing vertically the plates. Furthermore, the steering plates create three compartments within the vehicle's frame. The bottom compartment hosting the [Agrofelis motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver), the middle one hosting the steering linear actuators and the top compartment hosting the steering micro-controller and the Jetson Nano embedded computer.
+The steering plates consist of two detachable 2 mm horizontal plates with welded nuts that are mounted onto the vehicle frame through relevant holes made in the frame. The steering plates provide sufficient headroom to enclose the two linear actuators and provide fixed push points via two 6 mm rods piercing the plates vertically. Furthermore, the steering plates create three compartments within the vehicle's frame. The bottom compartment hosting the [Agrofelis motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver), the middle one hosting the steering linear actuators and the top compartment hosting the steering micro-controller and the Jetson Nano embedded computer.
 
 The following diagram depicts the described steering plates, annotated with key dimension metrics.
 
@@ -152,7 +152,7 @@ The end mechanism with the protective covers can be compared via the following i
 
 ## Steering PCB Driver
 
-Facilitating the operation of linear actuators, assessing how much they have moved in relation to the applied voltage and friction of the wheel with the ground, as well as monitoring current consumption to detect high or no resistance, a customized board was devised. This board serves the dual purpose of organizing the various electronic components and tidying the cables per actuator and sensor. The shield was designed to be independent of the microcontroller, allowing and for example instead of an Arduino Mega be able to employ an Arduino Mega Pro or an ESP32. Remarkably, the PCB was designed in such a way that it can be cut in half, enabling it to drive two separate linear actuators or similar components within the system.
+Facilitating the operation of linear actuators, assessing how much they have moved in relation to the applied voltage and friction of the wheel with the ground, as well as monitoring current consumption to detect high or no resistance, a customized board was devised. This board serves the dual purpose of organizing the various electronic components and tidying the cables per actuator and sensor. The shield was designed to be independent of the microcontroller, allowing for example instead of an Arduino Mega an Arduino Mega Pro or an ESP32. Remarkably, the PCB was designed in such a way that it can be cut in half, enabling it to drive two separate linear actuators or similar components within the system.
 
 The designed PCB, outlining the hosted components, input and output pins and their respective functions, is presented below.
 
@@ -194,7 +194,7 @@ The following image highlights the positioning of the PCB shield next to its mic
 
 ## Steering PCB Components
 
-The following table lists the individual components employed for manufacturing the Agrofelis steering controller. The index table includes moreover the product URLs, the indicative suppliers, as well as the total unit price amounts.
+The following table lists the individual components employed for manufacturing the Agrofelis steering controller. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and sum totals.
 
 
 <div align="center">
@@ -216,11 +216,11 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
 
-The total cost to manufacture the Agrofelis steering driver shield, exclusive of shipping and assembly expenses, totals approximately **32** euros.
+The total cost to manufacture the Agrofelis steering driver shield, exclusive of shipping and labor cost, totals approximately **32** euros.
 
 ## Steering Actuators and Structural Components
 
-The following table enumerates the components utilized in the fabrication of Agrofelis steering structural elements. The index table encompasses the product URLs, indicative suppliers, as well as the total unit price amounts.
+The following table enumerates the components utilized in the fabrication of Agrofelis steering structural elements. The index table encompasses the product URLs, indicative suppliers, as well as unit prices and sum totals.
 
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
@@ -236,7 +236,7 @@ The following table enumerates the components utilized in the fabrication of Agr
 | #9 | 6 mm rod | [6 mm rod](https://www.amazon.co.uk/Glarks-Stainless-Straight-Helicopter-Airplane/dp/B07KJ4NWNG/) | [QOOP Metalworks](https://www.qoop.gr)  | 2 | 2.00 | 4.00 | - |
 | **Total** |      |    |     |      |     |  **100.82**  | | 
 
-The total cost to manufacture the Agrofelis steering structural and actuators components, excluding shipping and assembly costs, amounts to approximately **101** euros.
+The total cost to manufacture the Agrofelis steering structural and actuators components, excluding shipping and labor cost, amounts to approximately **101** euros.
 
 The combined total cost for fabricating the Agrofelis steering structural, actuators, and electronics components is approximately **132** euros.
 
@@ -275,7 +275,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |----|------------------|
 |linearSteer.ino | Boots the application, initialises the top classes and encodes the triggering frequencies of various functional elements. |
 |Context | Provides a common ground for sharing information and encodes the triggering frequencies, helpful functions and a unique identifier of the model. |
-|Invoker | Tracks the execution frequencies such these are called at the right time. |
+|Invoker | Tracks the execution frequencies so these are called at the right time. |
 |Brake | Object representing a wheel brake actuating a servo motor. The object can be initialised with a limited target range, as much as to lift the brake. The class was used with a *TIANKONGRC RDS-8120 20KG ROBOT DIGITAL SERVO*. The class can be instantiated by providing the connected GPIO, the desired range to actuate from the applicable (0-180), which is then mapped to a convenient range of 0 to 100. |
 |Brakes | The class can drive two or more brakes objects simultaneously. |
 |Sensor | Base class wrapping the functions conveying a sensor. The class reads an analogue port when the apply function is being triggered. The class maintains a gated smoothing read out of the sensor by comparing the previous mean with the current read value. Moreover, when a movement is detected based on the absolute difference of the first derivative, a boolean flag is maintained. Lastly, it prints out the object's internal state on print(), reflecting the sensor's port, smoothed value,  un-smoothed sensor value and whether or not the sensor is detecting a movement. |
@@ -283,7 +283,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |LinearActuator | The class implements an object to control a linear actuator via a [DRV8871 H-Bridge Brushed DC Motor Driver] component. The class is instantiated with the board port mappings, enabling its re-usability. The first two constructor parameters map the control pins for the direction and the speed of the [DRV8871 H-Bridge Brushed DC Motor Driver] using two pulse width modulation (PWM) ports. Next, the GPIO of the analogue [LinearActuator Potentiometer B10K Ohm] and the analogue [ACS712 5A Range Hall Current Sensor Module] sensors are provided. The module operates based on eight states dictating its function, starting with state zero. In states one and two, the minimum and maximum potentiometer bounds are identified. In state three, the minimum throttle leading to a movement is derived. State four is entered when the module reaches its objective position. In state five, the object seeks to reach the target requested position. States six and seven correspond to erroneous states, such when an actuation is expected but not detected or when the sensor value reads values close to its physical limits. Furthermore, the applicable bounds can be persisted, so these do not have to be re-resolved when booting the Agrofelis vehicle. |
 |Interpolate | Class for interpolating a value based on an input/output mapping pair of values. The interpolation object enables to map an input non-linearly across an input range and linearly within its sub-bounds. The class is employed by initializing it with measurement mapping references such that the Ackerman geometry is followed based on the physical orientation, and raw potentiometer values are recorded by performing incremental movement to both wheels of the vehicle. |
 |SteeringDriver | The class contains the linear actuator references, their Ackerman mapping steps and the means to interpolate their ratios from a -100 to 100 positioning range. The object enables to change the state of the system to seek its movement bounds and minimum voltage leading to a movement. Furthermore, the class can dynamically derive and apply more voltage if the expected movement has not been observed, as well as fade in or fade out the voltage depending on the elapsed time, the progress of the distance requested to accomplish and its difference with its counterpart actuator. |
-|SerialCommandParser | Base class for monitoring and parsing the serial interface data. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the action number to apply and the second is an integer value used by the related action. |
+|SerialCommandParser | Base class for monitoring and parsing the serial interface data. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
 |SteeringController | The *steeringController* extends the *SerialCommandParser* and defines the applicable commands that drive the actuators. Furthermore, the class reflects the internal state of the brakes, the linear actuators and their sensors, so that other nodes in the system are aware of their status. |
 
 Furthermore, the repository includes supporting files that were used while measuring and adjusting the left and right linear actuators to achieve an end-to-end Ackerman geometry. The process studies and accounts for the non-linearity characteristics of potentiometers, digital-to-analog converters (DAC), linear actuators and subtle construction accumulative variations in the following directory:
