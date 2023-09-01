@@ -202,16 +202,16 @@ The following table lists the individual components employed for manufacturing t
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
 | #1 | Copper board |      [PCB board](https://grobotronics.com/prototyping-copper-board-420x297mm-2-layer.html)   | [GRobotronics](https://grobotronics.com/)    |    0.25  | 9.90 | 2.48 | Shared Resource |
-| #2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [Cableworks](https://www.cableworks.gr) | 2 | 6 | 12 | - |
-| #3 | Linear Potentiometer B10K Ohm | [Metal potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/rotary-potentiometer-10k-ohm-linear-com-09939/) | [hellasdigital](https://www.hellasdigital.gr) | 2 | 1.24 | 2.48 | - |
-| #4 | ACS712 5A Range Hall Current Sensor Module | [5A Current sensor](https://www.aliexpress.com/item/32348760733.html) | [Ali express](https://www.aliexpress.com) | 2 | 1.10 | 2.20 | - |
-| #5 |6-wire ribbon cable 120 mm  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.25  | 1.00 | 0.3| Shared Resource |
-| #6 | 3 wire cable 350 mm connecting the potentiometer | [3 wire cable](https://www.hellasdigital.gr/computers/cables/sound-cables/roline-3-5mm-audio-cable-m-m-2m-11-09-4502/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 2.6 | 2.6 | - |
+| #2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [Cableworks](https://www.cableworks.gr) | 2 | 6.00 | 12.00 | - |
+| #3 | Linear Potentiometer B10K Ohm | [Metal potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/rotary-potentiometer-10k-ohm-linear-com-09939/) | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 1.24 | 2.48 | - |
+| #4 | ACS712 5A Range Hall Current Sensor Module | [5A Current sensor](https://www.aliexpress.com/item/32348760733.html) | [Ali Express](https://www.aliexpress.com) | 2 | 1.10 | 2.20 | - |
+| #5 |6-wire ribbon cable 120 mm  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.25  | 1.00 | 0.30 | Shared Resource |
+| #6 | 3 wire cable 350 mm connecting the potentiometer | [3 wire cable](https://www.hellasdigital.gr/computers/cables/sound-cables/roline-3-5mm-audio-cable-m-m-2m-11-09-4502/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 2.60 | 2.60 | - |
 | #7 | 6-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #8 | 3-pin header female  | [Female Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #9 | 3-pin header male  | [Male Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
 | #10 | 3-pin header male  | [Male Pin Header Kit](https://www.nettop.gr/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=1592)   | [Nettop](https://www.nettop.gr/)  | 1  | 0.00 | 0.00 | Shared Resource |
-| #11 | Arduino Mega | [Arduino Mega](https://www.aliexpress.com/item/32823481047.html) | [Ali Express](https://www.aliexpress.com) | 1 | 10 | 10 | - |
+| #11 | Arduino Mega | [Arduino Mega](https://www.aliexpress.com/item/32823481047.html) | [Ali Express](https://www.aliexpress.com) | 1 | 10.00 | 10.00 | - |
 | **Total** |      |    |     |      |     |  **32.06**  | | 
 
 </div>
@@ -225,18 +225,18 @@ The following table enumerates the components utilized in the fabrication of Agr
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | Black iron metal sheet 1000x2000x2mm  | [2mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x2mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0.25 | 50 | 15 | - |
-| #2 | 8 Nuts 5mm | [Nut 5mm](https://www.kantarzoglou.gr/pegasus/products01/show00.php) |  [QOOP Metalworks](https://www.qoop.gr) | 8 | 0.1 | 0.8 | - |
-| #3 | 10 Allen bolts 5mm  | [Bolt 8mm](https://ironhorses.gr/product/m5-x-40mm-allen-bolt-25-pack/) | [QOOP Metalworks](https://www.qoop.gr) | 10 | 0.2 | 2 | - |
-| #4 | Mini Plane Axial Thrust Ball Bearing  F7-17M 7 x 17 x 6mm | [ball bearing](https://www.aliexpress.com/item/1005005502256552.html) | [Ali Express](www.aliexpress.com) | 2 | 1.31 | 2.62 | - |
-| #5 | Linear actuator 24V 500N 20mm/s, Stroke 100mm | [Linear Actuator](https://www.aliexpress.com/item/1005003897869232.html) | [Ali Express](https://www.aliexpress.com) | 2 | 36.7 | 73.6 | - |
-| #6 | Powerful Round Magnets 5x3mm | [Round Magnets](https://www.hellasdigital.gr/electronics/magnets/powerful-round-magnets-5x3mm/) | [Hellas Digital](https://www.hellasdigital.gr) | 4 | 0.1 | 0.4 | - |
-| #7 | Powerful Magnets Block 20X5X3mm | [block magnet](https://www.hellasdigital.gr/electronics/magnets/powerful-magnets-block-20x5x3mm/)  | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 0.15 | 0.3 | - |
-| #8 | Waterproof fabric 1 sqm | [waterproof fabric](https://www.yfasmatakesidis.gr/adiavroxo-sea-150cm-mayro-p-4905.html) | [Yfasmatakesidis](www.yfasmatakesidis.gr) | 1 | 5 | 5 | - |
-| #9 | 6 mm rod | [6 mm rod](https://www.amazon.co.uk/Glarks-Stainless-Straight-Helicopter-Airplane/dp/B07KJ4NWNG/) | [QOOP Metalworks](https://www.qoop.gr)  | 2 | 2 | 4 | - |
-| **Total** |      |    |     |      |     |  **103.72**  | | 
+| #1 | Black iron metal sheet 1000x2000x2mm  | [2mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x2mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0.25 | 49.23 | 12.30 | - |
+| #2 | 8 Nuts 5mm | [Nut 5mm](https://www.kantarzoglou.gr/pegasus/products01/show00.php) |  [QOOP Metalworks](https://www.qoop.gr) | 8 | 0.10 | 0.80 | - |
+| #3 | 10 Allen bolts 5mm  | [Bolt 8mm](https://ironhorses.gr/product/m5-x-40mm-allen-bolt-25-pack/) | [QOOP Metalworks](https://www.qoop.gr) | 10 | 0.20 | 2.00 | - |
+| #4 | Mini Plane Axial Thrust Ball Bearing  F7-17M 7 x 17 x 6mm | [Ball bearing](https://www.aliexpress.com/item/1005005502256552.html) | [Ali Express](https://www.aliexpress.com) | 2 | 1.31 | 2.62 | - |
+| #5 | Linear actuator 24V 500N 20mm/s, Stroke 100mm | [Linear Actuator](https://www.aliexpress.com/item/1005003897869232.html) | [Ali Express](https://www.aliexpress.com) | 2 | 36.70 | 73.40 | - |
+| #6 | Powerful Round Magnets 5x3mm | [Round Magnets](https://www.hellasdigital.gr/electronics/magnets/powerful-round-magnets-5x3mm/) | [Hellas Digital](https://www.hellasdigital.gr) | 4 | 0.10 | 0.40 | - |
+| #7 | Powerful Magnets Block 20X5X3mm | [Block magnet](https://www.hellasdigital.gr/electronics/magnets/powerful-magnets-block-20x5x3mm/)  | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 0.15 | 0.30 | - |
+| #8 | Waterproof fabric 1 sqm | [Waterproof fabric](https://www.yfasmatakesidis.gr/adiavroxo-sea-150cm-mayro-p-4905.html) | [Yfasmatakesidis](https://www.yfasmatakesidis.gr/) | 1 | 5.00 | 5.00 | - |
+| #9 | 6 mm rod | [6 mm rod](https://www.amazon.co.uk/Glarks-Stainless-Straight-Helicopter-Airplane/dp/B07KJ4NWNG/) | [QOOP Metalworks](https://www.qoop.gr)  | 2 | 2.00 | 4.00 | - |
+| **Total** |      |    |     |      |     |  **100.82**  | | 
 
-The total cost to manufacture the Agrofelis steering structural and actuators components, excluding shipping and assembly costs, amounts to approximately **104** euros.
+The total cost to manufacture the Agrofelis steering structural and actuators components, excluding shipping and assembly costs, amounts to approximately **101** euros.
 
 The total cost for fabricating the Agrofelis steering structural, actuators, and electronics components totals approximately **136** euros.
 
