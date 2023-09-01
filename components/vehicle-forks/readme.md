@@ -134,11 +134,11 @@ The following table lists the individual components employed for manufacturing t
 | #4 | Bolt 12mm X 50mm | [Bolt 12mm X 50mm ](https://www.vida.gr/exagones-vides-olopasses-m8-galvanize-metrikes-din-933/) | [Vida](https://www.vida.gr) | 4 | 0.70 | 2.80 | - |
 | #5 | 30 Nuts pack 12mm | [Nuts 12mm](https://www.flextools.gr/index.php?route=product/product&path=260&product_id=1077) | [flextools](https://www.flextools.gr) | 1 | 1.50 | 1.50 | - |
 | #6 | Welded Hinge with 3 winds | [Hinge](https://www.schmiedekult.de/Hinges-for-welding-with-3-wings-and-removable-pin) |[QOOP Metalworks](https://www.qoop.gr) | 2 | 5.00 | 10.00 | - |
-| **Total** |      |    |     |      |     |  **50.5**  | | 
+| **Total** |      |    |     |      |     |  **53.30**  | | 
 
 </div>
 
-The total cost to manufacture four Agrofelis forks, exclusive of shipping and assembly expenses, totals approximately **53.30** euros.
+The total cost to manufacture four Agrofelis forks, exclusive of shipping and assembly expenses, totals approximately **53** euros.
 
  
 # Summary
