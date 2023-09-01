@@ -147,13 +147,13 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
-| [Wheel forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 50.5 |
-| [Steering system](components/vehicle-steering#steering-pcb-components)   | 136  |
+| [Wheel forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
+| [Steering system](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 |          |          |
-| **Total Cost**   | **1,006.5**   |
+| **Total Cost**   | **1,006.18**   |
 
 </div>
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **1,006.5** euros, exclusive of shipping and assembly costs.
+Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **1,006** euros, exclusive of shipping and assembly costs.
