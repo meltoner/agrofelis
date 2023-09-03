@@ -83,7 +83,7 @@ A more detailed schematic of the related level element is encoded by the consequ
 
 Within the lever at the depicted distance a hole is drilled and an extended nut is installed via a bolt to accommodate the end of a linear actuator, rotating the wheel. Further details about this detail are covered in the Agrofelis steering design and fabrication document.
 
-The sub-components of the forks laid out, ready to be welded have been photographed by the next image.
+Sub-components of the forks laid out, ready to be welded have been photographed by the next image.
 
 ![Multiple components of the forks](_figures/vehicle-forks-09-components.jpg)
 
