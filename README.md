@@ -116,7 +116,7 @@ The complete documentation of the protective covers is provided below.
 
 An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarised by the following figure. 
 
-![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-cover.jpg)
+![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-covers.jpg)
 
 
 ## Agrofelis robot wheels forks design and fabrication
