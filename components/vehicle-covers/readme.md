@@ -2,17 +2,17 @@
 
 # Abstract 
 
-The document builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material during the fabrication, detail further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
+The document builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material details further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for metal sheets, is documented. 
 
 # Introduction
 
-To protect the robot from the harsh environment found in the agriculture, where dust, dirt, rocks and rain are expected, covers were designed and fabricated from black iron sheet of 2 mm and 3 mm thickness. The rigid detachable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers, attach to the vehicle using 8 mm bolts to its front, back, top, bottom, left and right sides. While the side covers are quantised by smaller parts, the top and bottom parts where designed with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts, were fabricated using a grinder and the rest using our small DIY plasma cutter. 
+To protect the robot from the harsh environment found in the fields, where dust, dirt, rocks and rain are expected, covers were designed and fabricated from black iron sheet of 2 mm and 3 mm thickness. The rigid detachable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers, attach to the vehicle using 8 mm bolts to its front, back, top, bottom, left and right sides. While the side covers are quantised by smaller parts, the top and bottom parts where manufactured with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts, were fabricated using a grinder and the rest using our small DIY plasma cutter. 
 
 In the following sections the details for fabricating the Agrofelis Robot protective covers are documented.
 
 # Protective covers
 
-The vehicles detectable covers are compromised of 25 items. Most items of the left and right sides are symmetric except two having additional cavities to accommodate the vehicle's main power switch and its charging socket. The following diagram visualizes the vehicle's protective covers. 
+The vehicle's detouchable covers sum up to 25 items. Most items of the left and right sides are symmetric, except two that have additional cavities to accommodate the vehicle's main power switch and its charging socket. The following diagram visualizes the vehicle's protective covers. 
 
 ![Covers overview](_figures/01_cover_overview.png)
 
@@ -39,22 +39,22 @@ The consequent table, following the depicted enumeration, lists the item part th
 | 12 | [cover_front_normalised.svg](assets/frame-covers/SVG/cover_front_normalised.svg) | [cover_front_normalised.nc](assets/frame-covers/NC/cover_front_normalised.nc) |
 | 13 | [cover_back_normalised.svg](assets/frame-covers/SVG/cover_back_normalised.svg) | [cover_back_normalised.nc](assets/frame-covers/NC/cover_back_normalised.nc) |
 
-The non symmetric parts 1 and 2 are provided for both left and the right side. The symmetric parts 3-9 are provided just for the right side since these are the same with their left side. 
+The non symmetric parts 1 and 2 are provided for both the left and right side. The symmetric parts 3-9 are provided just for the right side since these are the same with their left counterparts. 
 
 
 Part 2 of the right side contains also the design plan to fabricate a side door with its sealing cover as seen in the following diagram. The side door is used to provide access to the charging socket of the vehicle.
 
 ![Cover side door](_figures/06.charching-door.png)
 
-The fabricated side door as seen from within the vehicle can be viewed, via the following photo.
+The fabricated side door as seen from within the vehicle can be viewed in the following photo.
 
 ![Door photo internal](_figures/07-door_in.jpg)
 
-Likewise, the next photo snapshots the door from its outer side.
+Likewise, the next photo shows the door from its outer side.
 
 ![Door photo external](_figures/08-door_outside.jpg)
 
-The following diagram layouts all covers made out of a 2 mm thickness iron sheet. The diagram also indicates the approximate area these covers occupy within a standard metal sheet profile of 1 by 2 meters.
+The following diagram lays out all covers made out of a 2 mm thickness iron sheet. The diagram also indicates the approximate area these covers occupy within a standard metal sheet profile of 1 by 2 meters.
 
 ![Metal sheet 2 mm covers](_figures/03_2mm_covers.png)
 
@@ -63,7 +63,7 @@ The following photo shows the plasma cutter fabricating the left side part 2 cov
 
 ![Plasma cut photo a](_figures/03_plasma_cut_a.jpg)
 
-To provide additional protection, a 3 mm black iron sheet was employed overlaying completely the battery compartment. The following schematic encodes the dimensions of the silhouette of the cover fabricated manually because it was too big for our DIY plasma cutter. 
+To provide additional protection, a 3 mm black iron sheet was employed overlaying completely the battery compartment. The following schematic encodes the dimensions of the cover's silhouette fabricated manually because it was too big for our DIY plasma cutter. 
 
 ![Battery cover 3 mm schematic](_figures/04-battery-cover-3mm.png)
 
@@ -108,10 +108,10 @@ The following table lists the individual components employed for manufacturing t
 | **Total** |      |    |     |      |     |  **82.53**  | | 
 </div>
 
-The total cost to manufacture the Agrofelis protective covers excluding shipping, cutting, welding and painting costs, sums to approximately **82.53** euros.
+The total manufacturing cost of the Agrofelis protective covers excluding shipping, cutting, welding and painting costs, sums to approximately **82.53** euros.
 
 # Summary
 
-All covers of the vehicle were illustrated and enumerated. The cover parts design plans and plasma cut source files were organized and indexed. The raw material needed to fabricated the vehicles protected covers where documented and linked to indicative suppliers. The vehicle oriented in a vertical position, mounted in a transferring platform with most of its covers attached is presented in the closing image below.
+All covers of the vehicle were illustrated and enumerated. The cover parts design plans and plasma cut source files were organized and indexed. The raw material needed to fabricate the vehicle's protected covers where documented and linked to indicative suppliers. The vehicle set in a vertical position, on a transferring platform with most of its covers attached is presented in the closing image below.
 
 ![Covers established](_figures/13_covers-placed_overview.jpg)
