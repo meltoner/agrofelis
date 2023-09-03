@@ -67,7 +67,7 @@ To provide additional protection, a 3 mm black iron sheet was employed overlayin
 
 ![Battery cover 3 mm schematic](_figures/04-battery-cover-3mm.png)
 
-Also too big to fabricate in our DIY plasma cutter, the back top and back bottom covers silhouette dimensions are annotated in the following schematic.
+Also too big to fabricate in our DIY plasma cutter, the back top and back bottom covers. The silhouette dimensions are annotated in the following schematic.
 
 ![Top bottom back cover](_figures/05.top-bottom_back_covers.png)
 
