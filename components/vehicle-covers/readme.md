@@ -2,7 +2,7 @@
 
 # Abstract 
 
-The document builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material details further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for metal sheets, is documented. 
+The document builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material details further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for the metal sheets, is documented. 
 
 # Introduction
 
