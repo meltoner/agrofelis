@@ -105,6 +105,23 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 ![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
 
+
+## Agrofelis protective covers design and fabrication
+
+The [protective covers design and fabrication](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material during the fabrication, detail further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
+
+
+The complete documentation of the protective covers is provided below.
+
+- [Chassis frame design and fabrication](components/vehicle-covers)
+
+An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarised by the following figure. 
+
+![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-cover.jpg)
+
+
+
+
 ## Agrofelis robot wheels forks design and fabrication
 
 The [wheels forks design and fabrication](components/vehicle-forks) document presents a comprehensive overview of the fabrication process for the forks mounting the four wheels of the Agrofelis vehicle. These forks are intentionally designed to be detachable, so that the wheels could be removed or replaced with alternative ones. The forks are responsible for securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling steering and installing feedback rotating mechanisms. Two types of forks are being employed, those installed in the front and those installed in the back. The majority of fork designs are similar, with the only differentiating factor being the mounting mechanism aimed for fixed or steering purposes. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed from regular iron T-shaped rods that have been cut and welded. Additional sub-components elaborated are the vehicle's fork mounting mechanisms and the parrot-like (drop out) elements securing the wheels via the motor's hub shaft. The design schematics, plasma cut patterns, as well as images of the fabrication progression are all documented. The document concludes by providing a list of indicative suppliers from whom the raw materials were acquired, further enriched with bill and material details.
