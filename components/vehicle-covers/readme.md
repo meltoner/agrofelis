@@ -6,7 +6,7 @@ The document builds on the Agrofelis frame design and fabrication documentation 
 
 # Introduction
 
-To protect the robot from the harsh environment found in the fields, where dust, dirt, rocks and rain are expected, covers were designed and fabricated from black iron sheet of 2 mm and 3 mm thickness. The rigid detachable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers, attach to the vehicle using 8 mm bolts to its front, back, top, bottom, left and right sides. While the side covers are quantised by smaller parts, the top and bottom parts where manufactured with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts, were fabricated using a grinder and the rest using our small DIY plasma cutter. 
+To protect the robot from the harsh environment found in the fields, where dust, dirt, rocks and rain are expected, covers were designed and fabricated from black iron sheet of 2 mm and 3 mm thickness. The rigid detouchable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers, attach to the vehicle using 8 mm bolts to its front, back, top, bottom, left and right sides. While the side covers are quantised by smaller parts, the top and bottom parts where manufactured with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts, were fabricated using a grinder and the rest using our small DIY plasma cutter. 
 
 In the following sections the details for fabricating the Agrofelis Robot protective covers are documented.
 
