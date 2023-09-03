@@ -105,7 +105,6 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 ![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
 
-
 ## Agrofelis protective covers design and fabrication
 
 The [protective covers design and fabrication](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material during the fabrication, detail further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
@@ -113,13 +112,11 @@ The [protective covers design and fabrication](components/vehicle-covers) builds
 
 The complete documentation of the protective covers is provided below.
 
-- [Chassis frame design and fabrication](components/vehicle-covers)
+- [Chassis protective covers design and fabrication](components/vehicle-covers)
 
 An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarised by the following figure. 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-cover.jpg)
-
-
+![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-cover.jpg)
 
 
 ## Agrofelis robot wheels forks design and fabrication
@@ -146,7 +143,7 @@ The complete documentation of the Agrofelis steering system design is provided b
 
 A cherry picked selection of figures from the Agrofelis steering system design and fabrication documentation, is presented by the following figure. 
 
-![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
+![Agrofelis steering system design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
 
 
 ## Cost estimation overview
@@ -164,10 +161,11 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
+| [Protective covers](components/vehicle-covers#covers-material-and-indicative-suppliers)   | 82.00 |
 | [Wheel Forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
 | [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 |          |          |
-| **Total Cost**   | **1,006.18**   |
+| **Total Cost**   | **1,092.18**   |
 
 </div>
 
