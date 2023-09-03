@@ -59,7 +59,7 @@ The following diagram layouts all covers made out of a 2 mm thickness iron sheet
 ![Metal sheet 2 mm covers](_figures/03_2mm_covers.png)
 
 
-The following photo, showcases the plasma cutter fabricating part 2 of the left side.
+The following photo shows the plasma cutter fabricating the left side part 2 cover.
 
 ![Plasma cut photo a](_figures/03_plasma_cut_a.jpg)
 
@@ -110,6 +110,6 @@ The total cost to manufacture the Agrofelis protective covers excluding shipping
 
 # Summary
 
-All covers of the vehicle were illustrated and enumerated. The cover parts design plans and plasma cut source files were organized and indexed. The raw material needed to fabricated the vehicles protected covers where documented and linked to indicative suppliers provided. The vehicle mounted in a vertical position in a transferring platform with most of its covers mounted is presented in the closing image below.
+All covers of the vehicle were illustrated and enumerated. The cover parts design plans and plasma cut source files were organized and indexed. The raw material needed to fabricated the vehicles protected covers where documented and linked to indicative suppliers. The vehicle oriented in a vertical position, mounted in a transferring platform with most of its covers attached is presented in the closing image below.
 
 ![Covers established](_figures/13_covers-placed_overview.jpg)
