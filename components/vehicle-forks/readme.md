@@ -61,6 +61,12 @@ The SVG to NC conversion was accomplished by the Laser GRBL free laser engraving
 - [https://github.com/meltoner/g-code-plasma-cutting](https://github.com/meltoner/g-code-plasma-cutting)
 
 
+The fabricated plasma cut drop out component can be seen by the following image.
+
+![Fabricated drop out element](_figures/vehicle-forks-06-drop-out-a.jpg)
+
+
+
 ## Back Forks
 
 The back forks of the Agrofelis vehicle closely resemble to the front forks. They differentiate by welding the half part of a hinge on their side, as well as welding a lever where a liner actuator can push rotate the wheels at the desired degree. The back fork schematic and dimensions are encoded by the following diagram.
@@ -76,6 +82,11 @@ A more detailed schematic of the related level element is encoded by the consequ
 ![Back fork lever](_figures/vehicle-forks-09-back-fork-lever.png)
 
 Within the lever at the depicted distance a hole is drilled and an extended nut is installed via a bolt to accommodate the end of a linear actuator, rotating the wheel. Further details about this detail are covered in the Agrofelis steering design and fabrication document.
+
+The sub-components of the forks laid out, ready to be welded have been photographed by the next image.
+
+![Multiple components of the forks](_figures/vehicle-forks-09-components.jpg)
+
 
 The back fork, is connected with the frame using a custom plasma cut part and a hinge. The half part of the hinge is welded into this component and the other half to the fork. The schematic of the custom cut part is presented by the following figure.
 
