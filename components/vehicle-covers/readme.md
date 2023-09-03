@@ -23,7 +23,7 @@ More specifically, the following schematic enumerates all plasma cut covers. The
 The consequent table, following the depicted enumeration, lists the item part the Scalable Vector Graphic (SVG) design file and its derivative Numerical Control (NC) file driving the CNC plasma cutter.
 
 | Part | SVG file | NC file |
-|--|-------|---------|
+|--|-------------------------|----------------------------|
 | 1 | [cover_r1_normalised.svg](assets/frame-covers/SVG/cover_r1_normalised.svg) | [cover_r1_normalised.nc](assets/frame-covers/NC/cover_r1_normalised.nc) |
 | 2 | [cover_r2_normalised.svg](assets/frame-covers/SVG/cover_r2_normalised.svg) | [cover_r2_normalised.nc](assets/frame-covers/NC/cover_r2_normalised.nc) |
 | 2 | [cover_r2_side_door_normalised.svg](assets/frame-covers/SVG/side_door_normalised.svg) | [cover_r2_side_door_normalised.nc](assets/frame-covers/NC/side_door_normalised.nc) |
@@ -39,7 +39,7 @@ The consequent table, following the depicted enumeration, lists the item part th
 | 12 | [cover_front_normalised.svg](assets/frame-covers/SVG/cover_front_normalised.svg) | [cover_front_normalised.nc](assets/frame-covers/NC/cover_front_normalised.nc) |
 | 13 | [cover_back_normalised.svg](assets/frame-covers/SVG/cover_back_normalised.svg) | [cover_back_normalised.nc](assets/frame-covers/NC/cover_back_normalised.nc) |
 
-The non symmetric parts 1 and 2 are provided for both left and the right side. The symmetric parts 3-9 are provided just for the right side since these are the same with thei left side. 
+The non symmetric parts 1 and 2 are provided for both left and the right side. The symmetric parts 3-9 are provided just for the right side since these are the same with their left side. 
 
 
 Part 2 of the right side contains also the design plan to fabricate a side door with its sealing cover as seen in the following diagram. The side door is used to provide access to the charging socket of the vehicle.
