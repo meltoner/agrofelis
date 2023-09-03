@@ -1,4 +1,4 @@
-# Agrofelis frame protective covers
+# Agrofelis protective covers design and fabrication
 
 # Abstract 
 
@@ -10,7 +10,6 @@ To protect the robot from the harsh environment found in the agriculture, where 
 
 In the following sections the details for fabricating the Agrofelis Robot protective covers are documented.
 
-
 # Protective covers
 
 The vehicles detectable covers are compromised of 25 items. Most items of the left and right sides are symmetric except two having additional cavities to accommodate the vehicle's main power switch and its charging socket. The following diagram visualizes the vehicle's protective covers. 
@@ -21,9 +20,9 @@ More specifically, the following schematic enumerates all plasma cut covers. The
 
 ![Covers enumeration](_figures/02_covers_enumerate.png)
 
-
 The consequent table, following the depicted enumeration, lists the item part the Scalable Vector Graphic (SVG) design file and its derivative Numerical Control (NC) file driving the CNC plasma cutter.
-| part | SVG | NC |
+
+| Part | SVG file | NC file |
 |--|-------|---------|
 | 1 | [cover_r1_normalised.svg](assets/frame-covers/SVG/cover_r1_normalised.svg) | [cover_r1_normalised.nc](assets/frame-covers/NC/cover_r1_normalised.nc) |
 | 2 | [cover_r2_normalised.svg](assets/frame-covers/SVG/cover_r2_normalised.svg) | [cover_r2_normalised.nc](assets/frame-covers/NC/cover_r2_normalised.nc) |
