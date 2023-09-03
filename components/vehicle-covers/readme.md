@@ -1,0 +1,16 @@
+
+![Covers overview](_figures/01_cover_overview.png)
+![Covers enumeration](_figures/02_covers_enumerate.png)
+![Metal sheet 2mm covers](_figures/03_2mm_covers.png)
+![Plasma cut photo a](_figures/03_plasma_cut_a.jpg)
+![Battery cover 3mm schematic](_figures/04-battery-cover-3mm.png)
+![Battery cover actual](_figures/05-battery-cover-actual.jpg)
+![Top bottom backcover](_figures/05.top-bottom_back_covers.png)
+![Cover side door](_figures/06.charching-door.png)
+![Door photo internal](_figures/07-door_in.jpg)
+![Door photo external](_figures/08-door_outside.jpg)
+![Covers photo a](_figures/09-covers-placed-a.jpg)
+![Cover photo b](_figures/10_covers-placed-b.jpg)
+![Covers painted](_figures/12_covers_painted.jpg)
+![Covers established](_figures/13_covers-placed_overview.jpg)
+
