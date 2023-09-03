@@ -176,6 +176,10 @@ The following figure snapshots the underside (copper side) of the manufactured P
 
 ![PCB Driver copper side](_figures/vehicle-steering-24-pcbdriver-1.jpg)
 
+The consequent figure snapshots the top side of the manufactured PCB board with its components.
+
+![PCB Driver top side](_figures/vehicle-steering-24-pcbdriver-2.jpg)
+
 It is noteworthy that although later stages of the project revealed better ways for fabricating PCBs, this particular board was produced using a method involving spray-painting the copper surface of the board, burning the designed pattern using a laser engraver and etching the board in acid. Other PCBs found in the Agrofelis project, have improved this process by curving the board and drilling the holes in a completely computerized manner.
 
 The following figure illustrates a supportive file prepared for cable management and more specifically by printing the related labels, cutting them and gluing them using transparent tape, denoting the cables functionality and/or voltage level.
