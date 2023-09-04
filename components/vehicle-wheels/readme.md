@@ -1,4 +1,4 @@
-# Agrofelis robot wheel fabrication
+# Agrofelis Robot Wheel Fabrication
 
 # Abstract
 
@@ -10,7 +10,7 @@ Finding an elegant solution for the mobility requirements of a low speed robotic
 
 After researching various solutions and vendors, for the uncommon case of low rpm, high torque, small footprint and low cost, we concluded that a solution composed of geared in-wheel motor hubs, equipped with hall sensors, providing at least 120 total Newton meter (NM), operable at 24v with less than 1000 watt total power consumption and ability to withstand 350 kilos of weight, as well as fit within a 16 inch wheel, would be the appropriate characteristics of the designed solution. In order to maximise traction, steering, and load distribution, a 4WD active system rather than a 2WD drive was deemed necessary. In the following sections the details of the active wheels, their components and the indicative sub-component suppliers are documented.
 
-## Agrofelis wheels
+## Agrofelis Wheels
 
 The requirements study resulted in an optimal solution employing four geared in-wheel hub motors of 250 Watt (0.33 HP) and 38 NM of torque each, summing up to 152 NM of torque and 1 KW (1.32 HP) of power, meeting all field requirements set for the Agrofelis robot. The wheel is assembled from individual parts allowing to variate according to the problem focused on. In the following sections the particular composition evaluated and employed is presented.
 
@@ -30,7 +30,7 @@ The four wheels supporting the vehicle, are arranged in a nearly square layout, 
 
 ![Wheels dimensions](_figures/vehicle-wheels-04-arrangement-dimensions.png)
 
-### Wheel compilation
+### Wheel Compilation
 
 To optimize costs, and despite the fact that knitting the wheels by hand was quite laborious, the motor hubs were purchased without their rims so that they could reserve less volume, around 1/4, resulting in significantly lower shipping costs. Along with the motors, their respective motor drivers, the wheel spokes, the disc brakes and the fork brakes, were purchased from a foreign supplier. The 16-inch aluminium rims, the inner tubes and tires, were purchased from local suppliers.  
 
@@ -90,7 +90,7 @@ The four fully completed wheels are captured in the following photograph.
 
 The motor hubs are connected to their motor drivers via a cable supplied with the motors. Consequently, the active wheels of the vehicle interface with the [Agrofelis Motors hub driver](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver) modules, which enhances their functionality by enabling to digitally monitor and control the motors to perform precise and adaptive coordinated movements at near constant low RPM, regardless of ground slope.
 
-## Wheel components and indicative suppliers
+## Wheel Components and Indicative Suppliers
 
 The following table lists the individual components used for manufacturing four Agrofelis wheels. The index table also includes the product URL, the indicative supplier, as well as the unit price total amount.
 <div align="center">
