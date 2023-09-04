@@ -1,6 +1,7 @@
 # Agrofelis Robot
 
-Energy dense, multipurpose agile agricultural robot design plans and system source code repository. www.agrofelis.com
+Energy dense, multipurpose agile agricultural robot design plans and system source code repository.
+Visit our website www.agrofelis.com.
 
 ![Robotic Vehicle](introduction/figures/figureA.jpg)
 
