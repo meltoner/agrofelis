@@ -1,4 +1,4 @@
-# Agrofelis robot
+# Agrofelis Robot
 
 Energy dense, multipurpose agile agricultural robot design plans and system source code repository. www.agrofelis.com
 
@@ -65,7 +65,7 @@ An underlying IoT service allows the deployment of new firmware for the system's
 
 In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being overviewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative supliers and total cost estimations.
 
-## Agrofelis motors hub driver
+## Agrofelis Motors Hub Driver
 
 This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
@@ -80,7 +80,7 @@ A representative depiction of the progression in crafting the motor hub driver i
 
 ![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
 
-## Agrofelis robot wheels fabrication
+## Agrofelis Robot Wheels Fabrication
 
 This [Agrofelis robot wheels fabrication document](components/vehicle-wheels) presents a comprehensive overview of the manufacturing process behind the four-wheel drive (4WD) system of the Agrofelis robotic vehicle. It begins by detailing the specific requirements and then progresses to the completed fabricated solution. The design plans, compilation procedures, assistance assets and images taken throughout development are presented in a step-by-step manner. The sub-components composing four Agrofelis wheels are indexed with their unit prices and overall cost, along with references to indicative suppliers.
 
@@ -92,7 +92,7 @@ In the figure below, we showcase a condensed compilation of the four most illust
 
 ![Agrofelis robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
 
-## Agrofelis chassis frame design and fabrication
+## Agrofelis Chassis Frame Design and Fabrication
 
 The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
 
@@ -105,7 +105,7 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 ![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
 
-## Agrofelis protective covers design and fabrication
+## Agrofelis Protective Covers Design and Fabrication
 
 The [protective covers design and fabrication](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material during the fabrication, detail further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
 
@@ -119,7 +119,7 @@ An indicative selection of figures from the Agrofelis protective covers design a
 ![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-covers.jpg)
 
 
-## Agrofelis robot wheels forks design and fabrication
+## Agrofelis Robot Wheels Forks Design and Fabrication
 
 The [wheels forks design and fabrication](components/vehicle-forks) document presents a comprehensive overview of the fabrication process for the forks mounting the four wheels of the Agrofelis vehicle. These forks are intentionally designed to be detachable, so that the wheels could be removed or replaced with alternative ones. The forks are responsible for securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling steering and installing feedback rotating mechanisms. Two types of forks are being employed, those installed in the front and those installed in the back. The majority of fork designs are similar, with the only differentiating factor being the mounting mechanism aimed for fixed or steering purposes. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed from regular iron T-shaped rods that have been cut and welded. Additional sub-components elaborated are the vehicle's fork mounting mechanisms and the parrot-like (drop out) elements securing the wheels via the motor's hub shaft. The design schematics, plasma cut patterns, as well as images of the fabrication progression are all documented. The document concludes by providing a list of indicative suppliers from whom the raw materials were acquired, further enriched with bill and material details.
 
@@ -132,7 +132,7 @@ An indicative selection of figures from the Agrofelis forks design and fabricati
 ![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
 
 
-## Agrofelis steering system design and fabrication
+## Agrofelis Steering System Design and Fabrication
 
 The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the intricacies of the Agrofelis vehicle's steering system. The design rationale, structural elements, feedback mechanisms and the custom PCB board are all presented and documented in detail. The document encompasses source code files, key design metrics, schematics, 3D printed assets, laser-cut NC files and photographs, offering a view of the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight 1-meter turn radius and its design minimizes the overall footprint of the vehicle. The document also contains a list of components and indicative suppliers that comprise the bill and material information of the steering module. Finally, the documentation provides an overview of the implemented driver software, its classes, and their relations.
 
@@ -146,7 +146,7 @@ A cherry picked selection of figures from the Agrofelis steering system design a
 ![Agrofelis steering system design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
 
 
-## Cost estimation overview
+## Cost Estimation Overview
 
 This sub-section outlines the indicative costs associated with constructing the Agrofelis robot. These figures are derived from estimated costs per item discussed in the relevant *indicative suppliers section* within each of the aforementioned documents, encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the presented cost estimation incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
 
