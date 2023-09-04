@@ -108,12 +108,12 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 ## Agrofelis Protective Covers Design and Fabrication
 
-The [protective covers design and fabrication](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material during the fabrication, detail further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
+The [protective covers design and fabrication document](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by detailing the protective covers of the vehicle, including their schematics and the source code files utilized for a CNC plasma cutter. Additionally, photographic material offers insights into the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
 
 
 The complete documentation of the protective covers is provided below.
 
-- [Chassis protective covers design and fabrication](components/vehicle-covers)
+- [Agrofelis protective covers design and fabrication](components/vehicle-covers)
 
 An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarised by the following figure. 
 
