@@ -21,7 +21,7 @@ An overview of the vehicle its batteries and their compartment can be seen via t
 
 ## Batteries
 
-The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long cycle life, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. 
+The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long life span, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. 
 
 Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the batteries can effectively deliver constantly 150 amps and peak safely up to their nominal amp power (302Ah+). 
 
@@ -48,11 +48,11 @@ The pieces of wood fit tightly and allow to gently impose compressing forces int
 
 [^LiFePOCompress]: https://www.currentconnected.com/learning-center/lc-stor/llfp-comp/ "LiFePO4 Cell Compression" 
 
-The consequent figure illustrates the batteries along with their wooden covers.
+The consequent figure illustrates the batteries along with their wooden separators. On the right side of the structure a route is created to pass the high current battery outlet cables.
 
 ![Batteries wood covers](_figures/vehicle-power-03-bateries-wood-covers.png)
 
-The following diagram illustrates and enumerates the 10 plywood pieces filling the gap created by the batteries and the frame compartment. 
+The following diagram illustrates and enumerates the 10 plywood pieces filling the designed gap created by the batteries and the frame compartment. 
 
 ![04-covers-exploded](_figures/vehicle-power-04-covers-exploded.png)
 
@@ -66,55 +66,63 @@ The 11th part, made out of plexiglass dimensions is encoded be the following dia
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
 
-A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
+A hole in the plexiglass's top center position, just under the the frame bar, is drilled to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
 
 The following photograph showcases the aforementioned details of the implemented battery module.
-The cables passing through part 11 can seen as well as the voltage sensor cables, the temperature sensor, the power and data cord connecting to the front section of the vehicle as well as the B8 and B0 outlets corresponding to the positive and negative outlet of the battery. The photo moreover, shows the painted wooden pieces enriched with a film of Kapton tape making them waterproof and resistant to an extreme temperature range (−269 to +400 °C). [^Kapton].
+The cables passing through part 11 can be seen as well as the voltage sensor cables, the temperature sensor, the power and data cord connecting to the front section of the vehicle as well as the B8 and B0 battery poles corresponding to the positive and negative outlet of the battery pack. The photo moreover, shows the painted wooden pieces enriched with a film of Kapton tape making them waterproof and resistant to an extreme temperature range (−269 to +400 °C). [^Kapton].
 
 ![02-batteries-enclosed-actual](_figures/vehicle-power-02-batteries-enclosed-actual.jpg)
 
 [^Kapton]: https://en.wikipedia.org/wiki/Kapton "Kapton - Wikipedia" 
 
 
-
-Batter management system BMS 250 ah
+The following photo snapshots the large battery management system BMS responsible for monitoring and controlling the charging and discharging processes, in a balanced manner. Maintaining voltage balance across the battery pack protects and prolongs the lifetime and stability of the battery pack. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
 
 ![05-bms-close](_figures/vehicle-power-05-bms-close.jpg)
 
-as packed with the voltage cable, temperature sensors and ..
+The following zoomed out view of the BMS snapshots additionally, the UART module, the Bluetooth module as well as the voltage sensor cable. On the top and bottom right side the main connection outlets of the BMS with the battery. The BMS intercepts the negative outlet of battery pack with the B- annotated cable (blue) and connects the rest of the circuit using the P- black annotated cable.
 
 ![05-bms-peripherals](_figures/vehicle-power-05-bms-peripherals.jpg)
 
-Note the B- and P- outlets of the bms are re-mantled and repositioned so these face the sensors outlets as seen by fig
+In order to have the B- and P- outlet facing the opposite face so these conveniently face on the same direction as BMS sensors sockets leading to smaller connection cable within the vehicle, these were unscrewed and re-mantled on their opposite side. The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
 
+The following diagram reflects the BMS outlet re-arrangement modification as well as the various high current elements of the power system.
 
 ![06-components](_figures/vehicle-power-06-components.png)
-1 high current swicth
-2 250 amp mechanical relay fuse
-3 positive voltage
-4 negative voltage
-5 bms 
 
-B0 - outlets
-B8 + outlet
+More specifically the enumerated parts correspond to the following elements.
+
+1. 275 Ah Battery disconnect switch | SLO-BDS-1
+2. Circuit breaker 250a
+3. Positive Voltage Copper bar terminal power distribution
+4. Negative Voltage Copper bar terminal power distribution
+5. Battery Management System
+ 
+
+The modules of the system operate either on 5v employed on most of the electronics and servos, or on 12v used in high current relays and fans or on the battery pack voltage level, energizing the motors and actuators of the robot. Three step down voltage regulators are installed to power these modules one of which is dedicated to just the energy demanding servos employed in for the wheel disc brakes actuation. Two of these converters are installed behind the BMS and one is mounted using a small piece of acrylic with magnets on the the right side bars as seen in the following schematic.
 
 
 ![07-step-down-converters](_figures/vehicle-power-07-step-down-converters.png)
 
-
-
-5v step down power module 
-12v step down power module
-5v step down power module dedicated to the brake servos
-
-The figure depicts the related power modules, electronics and actuators 
+The following drawing illustrates most of electrical modules energized by the Agrofelis power system.
 
 ![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
+
+
+
+https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
+https://www.aliexpress.com/item/1005005122147376.html
+https://www.aliexpress.com/item/1005005565776871.html
+https://www.aliexpress.com/item/1005004769462897.htm
+
+
 
 
 Making the power distributor for the mobility drivers and the steering
 
 two of these are fabricated one for the back wheels and another for the front wheels
+
+
 
 ![15-relay-fuse-1](_figures/vehicle-power-15-relay-fuse-1.jpg)
 ![15-relay-fuse-2](_figures/vehicle-power-15-relay-fuse-2.jpg)
