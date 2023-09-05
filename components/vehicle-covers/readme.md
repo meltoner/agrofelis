@@ -22,22 +22,22 @@ More specifically, the following schematic enumerates all plasma-cut covers. For
 
 The consequent table, following the depicted enumeration, lists the item part, the Scalable Vector Graphic (SVG) design file and its derived Numerical Control (NC) file driving the CNC plasma cutter.
 
-| Part | SVG file | NC file |
-|--|-------------------------|----------------------------|
-| 1 | [cover_r1_normalised.svg](assets/frame-covers/SVG/cover_r1_normalised.svg) | [cover_r1_normalised.nc](assets/frame-covers/NC/cover_r1_normalised.nc) |
-| 2 | [cover_r2_normalised.svg](assets/frame-covers/SVG/cover_r2_normalised.svg) | [cover_r2_normalised.nc](assets/frame-covers/NC/cover_r2_normalised.nc) |
-| 2 | [cover_r2_side_door_normalised.svg](assets/frame-covers/SVG/side_door_normalised.svg) | [cover_r2_side_door_normalised.nc](assets/frame-covers/NC/side_door_normalised.nc) |
-| 3 | [cover_r3_normalised.svg](assets/frame-covers/SVG/cover_r3_normalised.svg) | [cover_r3_normalised.nc](assets/frame-covers/NC/cover_r3_normalised.nc) |
-| 4 | [cover_r4_normalised.svg](assets/frame-covers/SVG/cover_r4_normalised.svg) | [cover_r4_normalised.nc](assets/frame-covers/NC/cover_r4_normalised.nc) |
-| 5,6 | [cover_r56_normalised.svg](assets/frame-covers/SVG/cover_r56_normalised.svg) | [cover_r56_normalised.nc](assets/frame-covers/NC/cover_r56_normalised.nc) |
-| 7,8 | [cover_r78_normalised.svg](assets/frame-covers/SVG/cover_r78_normalised.svg) | [cover_r78_normalised.nc](assets/frame-covers/NC/cover_r78_normalised.nc) |
-| 9 | [cover_r9_normalised.svg](assets/frame-covers/SVG/cover_r9_normalised.svg) | [cover_r9_normalised.nc](assets/frame-covers/NC/cover_r9_normalised.nc) |
-| 1 (Left) | [cover_l1_normalised.svg](assets/frame-covers/SVG/cover_l1_normalised.svg) | [cover_l1_normalised.nc](assets/frame-covers/NC/cover_l1_normalised.nc) |
-| 2 (Left) | [cover_l2_normalised.svg](assets/frame-covers/SVG/cover_l2_normalised.svg) | [cover_l2_normalised.nc](assets/frame-covers/NC/cover_l2_normalised.nc) |
-| 10 | [bottom_front_normalised.svg](assets/frame-covers/SVG/bottom_front_normalised.svg) | [bottom_front_normalised.nc](assets/frame-covers/NC/bottom_front_normalised.nc) |
-| 11 | [top_front_normalised.svg](assets/frame-covers/SVG/top_front_normalised.svg) | [top_front_normalised.nc](assets/frame-covers/NC/top_front_normalised.nc) |
-| 12 | [cover_front_normalised.svg](assets/frame-covers/SVG/cover_front_normalised.svg) | [cover_front_normalised.nc](assets/frame-covers/NC/cover_front_normalised.nc) |
-| 13 | [cover_back_normalised.svg](assets/frame-covers/SVG/cover_back_normalised.svg) | [cover_back_normalised.nc](assets/frame-covers/NC/cover_back_normalised.nc) |
+| Part | Symmetrical | Side | SVG file | NC file |
+|--|------------|---------|----------------------------|----------------------------|
+| 1 | No | Right | [cover_r1_normalised.svg](assets/frame-covers/SVG/cover_r1_normalised.svg) | [cover_r1_normalised.nc](assets/frame-covers/NC/cover_r1_normalised.nc) |
+| 1 | No | Left | [cover_l1_normalised.svg](assets/frame-covers/SVG/cover_l1_normalised.svg) | [cover_l1_normalised.nc](assets/frame-covers/NC/cover_l1_normalised.nc) |
+| 2 | No | Right | [cover_r2_normalised.svg](assets/frame-covers/SVG/cover_r2_normalised.svg) | [cover_r2_normalised.nc](assets/frame-covers/NC/cover_r2_normalised.nc) |
+| 2 | No | Left | [cover_l2_normalised.svg](assets/frame-covers/SVG/cover_l2_normalised.svg) | [cover_l2_normalised.nc](assets/frame-covers/NC/cover_l2_normalised.nc) |
+| 2 | Yes | Right | [cover_r2_side_door_normalised.svg](assets/frame-covers/SVG/cover_r2_side_door_normalised.svg) | [cover_r2_side_door_normalised.nc](assets/frame-covers/NC/cover_r2_side_door_normalised.nc) |
+| 3 | Yes | Right | [cover_r3_normalised.svg](assets/frame-covers/SVG/cover_r3_normalised.svg) | [cover_r3_normalised.nc](assets/frame-covers/NC/cover_r3_normalised.nc) |
+| 4 | Yes | Right | [cover_r4_normalised.svg](assets/frame-covers/SVG/cover_r4_normalised.svg) | [cover_r4_normalised.nc](assets/frame-covers/NC/cover_r4_normalised.nc) |
+| 5, 6 | Yes | Right | [cover_r56_normalised.svg](assets/frame-covers/SVG/cover_r56_normalised.svg) | [cover_r56_normalised.nc](assets/frame-covers/NC/cover_r56_normalised.nc) |
+| 7, 8 | Yes | Right | [cover_r78_normalised.svg](assets/frame-covers/SVG/cover_r78_normalised.svg) | [cover_r78_normalised.nc](assets/frame-covers/NC/cover_r78_normalised.nc) |
+| 9 | Yes | Right | [cover_r9_normalised.svg](assets/frame-covers/SVG/cover_r9_normalised.svg) | [cover_r9_normalised.nc](assets/frame-covers/NC/cover_r9_normalised.nc) |
+| 10 | Yes | Right | [bottom_front_normalised.svg](assets/frame-covers/SVG/bottom_front_normalised.svg) | [bottom_front_normalised.nc](assets/frame-covers/NC/bottom_front_normalised.nc) |
+| 11 | Yes | Right | [top_front_normalised.svg](assets/frame-covers/SVG/top_front_normalised.svg) | [top_front_normalised.nc](assets/frame-covers/NC/top_front_normalised.nc) |
+| 12 | Yes | Right | [cover_front_normalised.svg](assets/frame-covers/SVG/cover_front_normalised.svg) | [cover_front_normalised.nc](assets/frame-covers/NC/cover_front_normalised.nc) |
+| 13 | Yes | Right | [cover_back_normalised.svg](assets/frame-covers/SVG/cover_back_normalised.svg) | [cover_back_normalised.nc](assets/frame-covers/NC/cover_back_normalised.nc) |
 
 Non-symmetrical parts 1 and 2 are provided for both the left and right sides, while symmetrical parts 3-9 are provided just for the right side since they are identical to their left counterparts.
 
