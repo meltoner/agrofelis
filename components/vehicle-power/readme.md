@@ -33,7 +33,7 @@ The typical dimension of a 302Ah battery cell are visualised by the following im
 ![battery cell](_figures/vehicle-power-01.png)
 
 
-The following perhaps peculiar battery arrangment, enables to minimise the overall footprint of the vehicle.
+The following perhaps peculiar battery arrangment, enables to minimise the overall footprint of the vehicle by aproximately 20 cm.
 
 ![02-batteries-arrangment](_figures/vehicle-power-02-batteries-arrangment.png)
 
