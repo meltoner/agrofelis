@@ -23,7 +23,7 @@ An overview of the vehicle its batteries and their compartment can be seen via t
 
 The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long cycle life, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. 
 
-Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2v, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the system can effectively deliver constantly 150 amps and peak safely up to 300 amps of power. 
+Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the batteries can effectively deliver constantly 150 amps and peak safely up to their nominal amp power (302Ah+). 
 
 
 [^LiFePO]: https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery "Wikipedia - LiFePO4" 
@@ -34,42 +34,48 @@ The typical dimensions of a 302Ah battery cell are encoded by the following imag
 
 The following diagram illustrates the unusual battery arrangement, achieving a vehicle width footprint reduction by approximately 20 cm.
 
+The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B0 correspond to positive pole of the last power. 
+
 ![02-batteries-arrangement](_figures/vehicle-power-02-batteries-arrangment.png)
 
-A photo of the batteries while evaluating their arrangement is provided below.
+A photo of the batteries while considering their arrangement is shown below.
 
 ![02-batteries-arrangement-actual](_figures/vehicle-power-02-batteries-arrangment-actual.jpg)
 
-In order to shield the batteries from external temperature differences, to compensate for minor accumulative dimensions differences either in the batteries or in the fabrication of the frame, and to have a softer material than metal that can also serve as subtle shock absorber, pieces of plywood wood were employed in between the frame and the batteries.
+In order to shield the batteries from external temperature differences, to compensate for minor accumulative dimensions differences either in the batteries or in the fabrication of the frame, to have a softer material than metal touching the batteries which can also serve as a subtle shock absorber, pieces of wood (plywood) were utilised to enclose the batteries within the frame.
 
-The pieces of wood allow to gently impose compressing forces into the batteries preventing them from expanding during their charging and discharging cycles which prolongs even further their lifetime. 
+The pieces of wood fit tightly and allow to gently impose compressing forces into the batteries preventing them from expanding during their charging and discharging cycles, which prolongs even further their lifetime. Lack of compression leads to damage of the cells, as indicated by swelling and premature battery failure [^LiFePOCompress].
 
+[^LiFePOCompress]: https://www.currentconnected.com/learning-center/lc-stor/llfp-comp/ "LiFePO4 Cell Compression" 
 
+The consequent figure illustrates the batteries along with their wooden covers.
 
 ![Batteries wood covers](_figures/vehicle-power-03-bateries-wood-covers.png)
 
-The following diagram illustrates and enumerates the 10 plywood pieces filling the gap created by the batteries and the frame compartment.
-The 10th piece inserted last, secures the batteries when in place and helps dismantling the batteries when its removed. 
-
-
-The following diagram illustrates and enumerates the wooden pieces via an exploded view. 
+The following diagram illustrates and enumerates the 10 plywood pieces filling the gap created by the batteries and the frame compartment. 
 
 ![04-covers-exploded](_figures/vehicle-power-04-covers-exploded.png)
 
-Their dimensions and thickness
+The 10th piece inserted last, secures the batteries when in place and helps dismantling the batteries when its removed. The backside of the battery compartment neighboring with the back compartment of the vehicle is isolated using a plexiglass piece (part 11) because of its flexibility and durability.
+
+The enumerated wooden pieces with their dimensions and thickness are documented by the following schematic.
 
 ![04-covers-dimensions](_figures/vehicle-power-04-covers-dimensions.png)
 
-The backside of the battery compartment negbouring with the back compartment of the vehicle is isolated using a plexiglass piece (part 11) in the dimension shown following figure..
+The 11th part, made out of plexiglass dimensions is encoded be the following diagram.
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
 
 A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
 
-
-The figure showcases the actual implementation details of the battery. 
+The following photograph showcases the aforementioned details of the implemented battery module.
+The cables passing through part 11 can seen as well as the the voltage sensor cables, the temperature sensor, the power and data cord connecting to the front section of the vehicle as well as the B8 and B0 outlets corresponding to the positive and negative outlet of the battery. The photo moreover, shows the painted wooden pieces enriched with a film of Kapton tape making them waterproof and resistant to an extreme temperature range (−269 to +400 °C). [^Kapton].
 
 ![02-batteries-enclosed-actual](_figures/vehicle-power-02-batteries-enclosed-actual.jpg)
+
+[^Kapton]: https://en.wikipedia.org/wiki/Kapton "Kapton - Wikipedia" 
+
+
 
 Batter management system BMS 250 ah
 
