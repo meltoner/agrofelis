@@ -1,26 +1,26 @@
-# Agrofelis protective covers design and fabrication
+# Agrofelis Protective Covers Design and Fabrication
 
 # Abstract 
 
-The document builds on the Agrofelis frame design and fabrication documentation by indexing the vehicle's protective covers, their schematics and their source code files driving a CNC Plasma cutter. Photographic material details further the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for the metal sheets, is documented. 
+The document builds on the Agrofelis frame design and fabrication documentation by detailing the protective covers of the vehicle, including their schematics and the source code files utilized for a CNC plasma cutter. Additionally, photographic material offers insights into the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
 
 # Introduction
 
-To protect the robot from the harsh environment found in the fields, where dust, dirt, rocks and rain are expected, covers were designed and fabricated from black iron sheet of 2 mm and 3 mm thickness. The rigid detachable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers, attach to the vehicle using 8 mm bolts to its front, back, top, bottom, left and right sides. While the side covers are quantised by smaller parts, the top and bottom parts where manufactured with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts, were fabricated using a grinder and the rest using our small DIY plasma cutter. 
+To protect the robot from the harsh environment prevalent in agricultural fields, where dust, dirt, rocks and rain are expected, protective covers were designed and fabricated from black iron sheet of 2mm and 3mm thickness. The rigid detachable cover parts, conveniently provide access to the compartments of the robotic vehicle. The covers are secured to the vehicle using 8mm bolts, attaching to its front, back, top, bottom, left, and right sides. While the side covers are quantised by smaller parts, the top and bottom parts were manufactured with fewer and larger parts to provide additional protection by minimizing the number of intersections. The larger parts were fabricated using a grinder, while the remainder were produced with our small DIY plasma cutter.
 
-In the following sections the details for fabricating the Agrofelis Robot protective covers are documented.
+In the following sections, the details for fabricating the Agrofelis Robot protective covers are documented.
 
-# Protective covers
+# Protective Covers
 
-The vehicle's detachable covers sum up to 25 items. Most items of the left and right sides are symmetric, except two that have additional cavities to accommodate the vehicle's main power switch and its charging socket. The following diagram visualizes the vehicle's protective covers. 
+The vehicle's detachable covers amount to a total of 25 items. Most items of the left and right sides are symmetrical, with two exceptions that feature additional cavities to accommodate the vehicle's main power switch and charging socket. The following diagram visualizes the vehicle's protective covers. 
 
 ![Covers overview](_figures/01_cover_overview.png)
 
-More specifically, the following schematic enumerates all plasma cut covers. The symmetric left side items were omitted, for simplicity.
+More specifically, the following schematic enumerates all plasma-cut covers. For the sake of simplicity, the symmetric left side items were omitted.
 
 ![Covers enumeration](_figures/02_covers_enumerate.png)
 
-The consequent table, following the depicted enumeration, lists the item part the Scalable Vector Graphic (SVG) design file and its derivative Numerical Control (NC) file driving the CNC plasma cutter.
+The consequent table, following the depicted enumeration, lists the item part, the Scalable Vector Graphic (SVG) design file and its derived Numerical Control (NC) file driving the CNC plasma cutter.
 
 | Part | SVG file | NC file |
 |--|-------------------------|----------------------------|
@@ -39,35 +39,34 @@ The consequent table, following the depicted enumeration, lists the item part th
 | 12 | [cover_front_normalised.svg](assets/frame-covers/SVG/cover_front_normalised.svg) | [cover_front_normalised.nc](assets/frame-covers/NC/cover_front_normalised.nc) |
 | 13 | [cover_back_normalised.svg](assets/frame-covers/SVG/cover_back_normalised.svg) | [cover_back_normalised.nc](assets/frame-covers/NC/cover_back_normalised.nc) |
 
-The non symmetric parts 1 and 2 are provided for both the left and right side. The symmetric parts 3-9 are provided just for the right side since these are the same with their left counterparts. 
+Non-symmetrical parts 1 and 2 are provided for both the left and right sides, while symmetrical parts 3-9 are provided just for the right side since they are identical to their left counterparts.
 
-
-Part 2 of the right side contains also the design plan to fabricate a side door with its sealing cover as seen in the following diagram. The side door is used to provide access to the charging socket of the vehicle.
+Part 2 on the right side also includes the design blueprint for fabricating a side door with its sealing cover, as depicted in the following diagram. The side door is used to provide access to the charging socket of the vehicle.
 
 ![Cover side door](_figures/06.charching-door.png)
 
-The fabricated side door as seen from within the vehicle can be viewed in the following photo.
+The fabricated side door, as seen from within the vehicle, can be viewed in the following photograph.
 
 ![Door photo internal](_figures/07-door_in.jpg)
 
-Likewise, the next photo shows the door from its outer side.
+Likewise, the next photograph displays the door from its outer side.
 
 ![Door photo external](_figures/08-door_outside.jpg)
 
-The following diagram lays out all covers made out of a 2 mm thickness iron sheet. The diagram also indicates the approximate area these covers occupy within a standard metal sheet profile of 1 by 2 meters.
+The following diagram lays out all covers made out of a 2mm thickness iron sheet. It also outlines the approximate area these covers occupy within a standard metal sheet profile of 1 by 2 meters.
 
-![Metal sheet 2 mm covers](_figures/03_2mm_covers.png)
+![Metal sheet 2mm covers](_figures/03_2mm_covers.png)
 
 
-The following photo shows the plasma cutter fabricating the left side part 2 cover.
+The following photograph shows the plasma cutter fabricating the left-side part 2 cover.
 
 ![Plasma cut photo a](_figures/03_plasma_cut_a.jpg)
 
-To provide additional protection, a 3 mm black iron sheet was employed overlaying completely the battery compartment. The following schematic encodes the dimensions of the cover's silhouette fabricated manually because it was too big for our DIY plasma cutter. 
+To provide additional protection, a 3mm black iron sheet was employed to completely overlay the battery compartment. The following schematic encodes the dimensions for the cover's silhouette, which had to be fabricated manually due to its size exceeding the capacity of our DIY plasma cutter. 
 
-![Battery cover 3 mm schematic](_figures/04-battery-cover-3mm.png)
+![Battery cover 3mm schematic](_figures/04-battery-cover-3mm.png)
 
-Also too big to fabricate in our DIY plasma cutter, the back top and back bottom covers. The silhouette dimensions are annotated in the following schematic.
+The top back and bottom back covers were also too large to be produced by our DIY plasma cutter. The silhouette dimensions are annotated in the following schematic.
 
 ![Top bottom back cover](_figures/05.top-bottom_back_covers.png)
 
@@ -76,21 +75,21 @@ The fabricated details of the battery cover and the top back cover as these are 
 
 ![Battery cover actual](_figures/05-battery-cover-actual.jpg)
 
-The fabricated left side part 1,2 covers, mounted in the vehicle are showcased by the following photo.
+The fabricated left-side part 1 and 2 covers mounted in the vehicle, are showcased by the following photo.
 
 ![Covers photo a](_figures/09-covers-placed-a.jpg)
 
-The next photograph depicts the detail of the back left side covers as these change into the battery compartment, parts 1-6.
+The next photograph depicts the detail of the back left-side covers. as these change into the battery compartment, specifically parts 1-6.
 
 ![Cover photo b](_figures/10_covers-placed-b.jpg)
 
-The following photo snapshots the covers drying after painted with a primer and orange oil paint.
+The following photo snapshots the covers in the process of drying after being coated with primer and orange oil paint.
 
 ![Covers painted](_figures/12_covers_painted.jpg)
 
-## Covers material and indicative suppliers
+## Covers Material and Indicative Suppliers
  
-The following table lists the individual components employed for manufacturing the Agrofelis frame protective covers. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
+The following table lists the individual components employed for manufacturing the Agrofelis frame's protective covers. The index table includes moreover the product URLs, the indicative suppliers, as well as the unit price total amount.
 
 <div align="center">
 
@@ -103,14 +102,14 @@ The following table lists the individual components employed for manufacturing t
 | #5 | Brushes| [Brush](https://nova-ceramica.gr/products/morris-39253) | [Nova Ceramica](https://nova-ceramica.gr/) | 3 | 1.00 | 3.00 | - |
 | #6 | White spirit| [White spirit](https://www.rigatos-shop.gr/dialytika-diavrwtika-spray/2381-white-spirit-%CE%B4%CE%B9%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C-500ml.html)  | [Rigatos Shop](https://www.rigatos-shop.gr/) | 1 | 1.50 | 1.50 | - |
 | #7 | Paper sheet | [Paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | [Xromagora](https://xromagora.gr/) | 0 | 0.80 | 0.00 | Reused from frame material|
-| #8 | 40mm x 40 mm hinge | [Door hinge](https://zalonis.eu/menteses-plake-siderenios-40x40-galvanize-italy) | [zalonis](zalonis.eu) | 1 | 0.60 | 0.60 | - |
+| #8 | 40mm x 40mm hinge | [Door hinge](https://zalonis.eu/menteses-plake-siderenios-40x40-galvanize-italy) | [zalonis](zalonis.eu) | 1 | 0.60 | 0.60 | - |
 | **Total** |      |    |     |      |     |  **82.53**  | | 
 </div>
 
-The total manufacturing cost of the Agrofelis protective covers excluding shipping, cutting, welding and painting costs, sums to approximately **82.53** euros.
+Consequently, we observe that the total manufacturing cost of the Agrofelis protective covers, excluding expenses for shipping, cutting, welding and painting, is approximately  **83** euros.
 
 # Summary
 
-All covers of the vehicle were illustrated and enumerated. The cover parts design plans and plasma cut source files were organized and indexed. The raw material needed to fabricate the vehicle's protected covers where documented and linked to indicative suppliers. The vehicle set in a vertical position, on a transferring platform with most of its covers attached is presented in the closing image below.
+This document has provided a comprehensive illustration and enumeration of all the vehicle's covers. The design blueprints for the cover parts as well as the plasma-cut source files were organized and indexed. Additionally, the raw materials needed to fabricate the vehicle's protective covers were documented and linked to indicative suppliers. To conclude, an image of the vehicle, positioned vertically on a transferring platform with most of its covers attached, is presented below.
 
 ![Covers established](_figures/13_covers-placed_overview.jpg)
