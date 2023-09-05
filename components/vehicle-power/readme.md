@@ -56,10 +56,11 @@ Their dimensions and thickness
 
 ![04-covers-dimensions](_figures/vehicle-power-04-covers-dimensions.png)
 
-The backside of the battery compartment negbouring with the back compartment of the vehicle is isolated using a plexiglass piece in the dimension shown ..
-A hole is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transfering power to the front section of the vehicle.
+The backside of the battery compartment negbouring with the back compartment of the vehicle is isolated using a plexiglass piece (part 11) in the dimension shown following figure..
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
+
+A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transfering power to the front section of the vehicle.
 
 
 The figure showcases the actual implementation details of the battery. 
