@@ -14,41 +14,45 @@ Passive systems usually employed in the car industry as well as active systems w
 
 In the following sections the overall energy system is being decomposed to its layers, its elements and their details.
 
-An overview of the vehicle its batteries and their compartment can ..
+An overview of the vehicle its batteries and their compartment can be seen via the following schematic.
 
 ![00-overview](_figures/vehicle-power-00-overview.png)
 
 
 ## Batteries
 
-The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long cycle life, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight CATL 302Ah LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2v, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the system can effectively deliver constantly 150 amps and peak safely up to 300 amps of power. 
+The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long cycle life, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. 
 
-[CATL_302A](assets/CATL_302Ah.pdf)
+Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2v, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the system can effectively deliver constantly 150 amps and peak safely up to 300 amps of power. 
 
 
 [^LiFePO]: https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery "Wikipedia - LiFePO4" 
 
-The typical dimension of a 302Ah battery cell are visualised by the following image.
+The typical dimensions of a 302Ah battery cell are encoded by the following image.
 
 ![battery cell](_figures/vehicle-power-01.png)
 
+The following diagram illustrates the unusual battery arrangement, achieving a vehicle width footprint reduction by approximately 20 cm.
 
-The following perhaps peculiar battery arrangment, enables to minimise the overall footprint of the vehicle by aproximately 20 cm.
+![02-batteries-arrangement](_figures/vehicle-power-02-batteries-arrangment.png)
 
-![02-batteries-arrangment](_figures/vehicle-power-02-batteries-arrangment.png)
+A photo of the batteries while evaluating their arrangement is provided below.
 
-The batteries photo ...
+![02-batteries-arrangement-actual](_figures/vehicle-power-02-batteries-arrangment-actual.jpg)
 
-![02-batteries-arrangment-actual](_figures/vehicle-power-02-batteries-arrangment-actual.jpg)
+In order to shield the batteries from external temperature differences, to compensate for minor accumulative dimensions differences either in the batteries or in the fabrication of the frame, and to have a softer material than metal that can also serve as subtle shock absorber, pieces of plywood wood were employed in between the frame and the batteries.
 
-In order to isolate the batteries from external temperature differnces pieaces as well as compensate for minor acumuliative dimensions differences either in the batteries or in the frame, as well facilitate as shock abosorbers, pieces of plywood wood are cut and inserted in between the frame and the bateries.
-The pieces of wood allow to gently impose compressing forces into the batteries preventing them from expanding during their charchring and discharcging cycles prolonging ther lifetime. 
+The pieces of wood allow to gently impose compressing forces into the batteries preventing them from expanding during their charging and discharging cycles which prolongs even further their lifetime. 
 
-The foll fig  ill 
 
-![03-bateries-wood-covers](_figures/vehicle-power-03-bateries-wood-covers.png)
 
-the in an exploded view and enumrated 
+![Batteries wood covers](_figures/vehicle-power-03-bateries-wood-covers.png)
+
+The following diagram illustrates and enumerates the 10 plywood pieces filling the gap created by the batteries and the frame compartment.
+The 10th piece inserted last, secures the batteries when in place and helps dismantling the batteries when its removed. 
+
+
+The following diagram illustrates and enumerates the wooden pieces via an exploded view. 
 
 ![04-covers-exploded](_figures/vehicle-power-04-covers-exploded.png)
 
@@ -60,7 +64,7 @@ The backside of the battery compartment negbouring with the back compartment of 
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
 
-A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transfering power to the front section of the vehicle.
+A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
 
 
 The figure showcases the actual implementation details of the battery. 
@@ -124,3 +128,7 @@ add wifi relay fix applied
 
 
 https://www.alibaba.com/product-detail/4PCS-US-STOCK-CATL-3-2V_1600209660693.html
+
+
+8S 29.2V lifepo4, 40A
+https://www.aliexpress.com/item/1005002718132948.html
