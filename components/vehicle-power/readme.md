@@ -99,12 +99,13 @@ More specifically the enumerated parts correspond to the following elements.
 5. Battery Management System
  
 
-The modules of the system operate either on 5v employed on most of the electronics and servos, or on 12v used in high current relays and fans or on the battery pack voltage level, energizing the motors and actuators of the robot. Three step down voltage regulators are installed to power these modules one of which is dedicated to just the energy demanding servos employed in for the wheel disc brakes actuation. Two of these converters are installed behind the BMS and one is mounted using a small piece of acrylic with magnets on the the right side bars as seen in the following schematic.
+The modules of the system operate either on 5v employed on most of the electronics and servos, or on 12v used in high current relays and fans or on the battery pack voltage level, energizing the motors and other actuators of the robot. 
 
+Three step down voltage regulators are installed to power these modules. The first two are installed on the back side of the acrylic used to mount the BMS and the third using a small piece of acrylic with magnets facing the BMS. The 1st regulator steps down the voltage to 5v, the second to 12 and the 3d dedicated for the servos actuating the disc brakes to 5v. The step down regulators position can be seen in the following diagram.
 
 ![07-step-down-converters](_figures/vehicle-power-07-step-down-converters.png)
 
-The following drawing illustrates most of electrical modules energized by the Agrofelis power system.
+The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system.
 
 ![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
 
