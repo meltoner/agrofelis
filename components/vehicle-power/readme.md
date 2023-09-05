@@ -88,7 +88,9 @@ The cables passing through part 11 can be seen, the voltage sensor cables, the t
 [^Kapton]: https://en.wikipedia.org/wiki/Kapton "Kapton - Wikipedia" 
 
 
-The following photo snapshots the heavy duty battery management system BMS responsible for monitoring and controlling the charging and discharging processes per battery in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging each individual the battery cell. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
+## Battery Management System
+
+The following photo snapshots the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging each individual the battery cell. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
 
 ![05-bms-close](_figures/vehicle-power-05-bms-close.jpg)
 
@@ -97,6 +99,10 @@ The following zoomed out view of the BMS snapshots additionally, the UART module
 ![05-bms-peripherals](_figures/vehicle-power-05-bms-peripherals.jpg)
 
 In order to have the B- and P- outlet facing the opposite side than that being shipped with, and so these conveniently face on the same direction as BMS sensors sockets which leads to shorter cable and losses within the vehicle, these were unscrewed and re-mantled on their opposite side. The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
+
+
+## High current components
+
 
 The following diagram reflects the BMS outlet re-arrangement modification as well as the various high current elements of the power system.
 
@@ -109,7 +115,24 @@ More specifically the enumerated parts correspond to the following elements.
 3. Positive Voltage Copper bar terminal power distribution
 4. Negative Voltage Copper bar terminal power distribution
 5. Battery Management System
- 
+
+
+## Charging 
+
+Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high current cable are attached with the terminal and an Anderson [^Anderson] connector. The Anderson is attached in the inner side of the door allowing to easily access the socket for charging or connect external anticipated implements. A moderate 29.2V lifepo4, battery charger of 40A was chosen due to its lower cost and having a relatively acceptable theoretical charging time of less than 6h. Provided a larger battery charger of 150 amp matching the maximum charging capacity of the system would complete a complete charging cycle within 1.5 hours. 
+
+[^Anderson]: https://en.wikipedia.org/wiki/Anderson_Powerpole "Anderson Powerpole - wikipedia" 
+
+The following photo showcases the 40 amp lifepo4 29.2V battery charger.
+
+![Battery charger](_figures/vehicle-power--08-charger.png)
+
+The charging point and how the Anderson connector is attached in the side door panel can be observed by the following figure.
+
+![Anderson](_figures/vehicle-power--08-anderson.jpg)
+
+
+## Voltage levels
 
 The modules of the system operate either on 5v employed on most of the electronics and servos, or on 12v used in high current relays and fans or on the battery pack voltage level, energizing the motors and other actuators of the robot. 
 
@@ -117,18 +140,20 @@ Three step down voltage regulators are installed to power these modules. The fir
 
 ![07-step-down-converters](_figures/vehicle-power-07-step-down-converters.png)
 
-The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system.
+The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system. More specifically the motors, the motor hub drivers, the Jetson nano, the Arduino mega, the steering driver, the USB hub, and the linear actuators are  visualised. 
 
 ![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
 
 
+
+## Components
 
 https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
 https://www.aliexpress.com/item/1005005122147376.html
 https://www.aliexpress.com/item/1005005565776871.html
 https://www.aliexpress.com/item/1005004769462897.htm
 https://www.aliexpress.com/item/4000241950870.html
-
+8S 29.2V lifepo4, 40A https://www.aliexpress.com/item/1005002718132948.html
 
 
 Making the power distributor for the mobility drivers and the steering
@@ -157,5 +182,3 @@ add wifi relay fix applied
 https://www.alibaba.com/product-detail/4PCS-US-STOCK-CATL-3-2V_1600209660693.html
 
 
-8S 29.2V lifepo4, 40A
-https://www.aliexpress.com/item/1005002718132948.html
