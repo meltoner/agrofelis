@@ -38,7 +38,7 @@ The typical dimensions of a 302Ah battery cell are encoded by the following imag
 
 The following diagram illustrates the unusual battery arrangement, achieving a vehicle width footprint reduction by approximately 20 cm.
 
-The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B8 correspond to positive pole of the last power. 
+The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B8 correspond to positive pole of the battery cell in the sequence. Its battery cell is connected in series where the positive pole of one battery meets the negative pole of the consequent and vice versa. Connecting the batteries in series, accumulates their voltage and maintains the amperage constant.
 
 ![02-batteries-arrangement](_figures/vehicle-power-02-batteries-arrangment.png)
 
