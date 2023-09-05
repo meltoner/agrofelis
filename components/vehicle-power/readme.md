@@ -34,7 +34,7 @@ The typical dimensions of a 302Ah battery cell are encoded by the following imag
 
 The following diagram illustrates the unusual battery arrangement, achieving a vehicle width footprint reduction by approximately 20 cm.
 
-The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B0 correspond to positive pole of the last power. 
+The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B8 correspond to positive pole of the last power. 
 
 ![02-batteries-arrangement](_figures/vehicle-power-02-batteries-arrangment.png)
 
@@ -69,7 +69,7 @@ The 11th part, made out of plexiglass dimensions is encoded be the following dia
 A hole in the plexiglass just under the the frame bar, is created to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
 
 The following photograph showcases the aforementioned details of the implemented battery module.
-The cables passing through part 11 can seen as well as the the voltage sensor cables, the temperature sensor, the power and data cord connecting to the front section of the vehicle as well as the B8 and B0 outlets corresponding to the positive and negative outlet of the battery. The photo moreover, shows the painted wooden pieces enriched with a film of Kapton tape making them waterproof and resistant to an extreme temperature range (−269 to +400 °C). [^Kapton].
+The cables passing through part 11 can seen as well as the voltage sensor cables, the temperature sensor, the power and data cord connecting to the front section of the vehicle as well as the B8 and B0 outlets corresponding to the positive and negative outlet of the battery. The photo moreover, shows the painted wooden pieces enriched with a film of Kapton tape making them waterproof and resistant to an extreme temperature range (−269 to +400 °C). [^Kapton].
 
 ![02-batteries-enclosed-actual](_figures/vehicle-power-02-batteries-enclosed-actual.jpg)
 
