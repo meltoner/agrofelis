@@ -199,21 +199,19 @@ The following folder contains the ESP8266 source code utilizing the gpio pin 3 a
 
 
 ## List of components 
-zzz
-https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
-https://www.aliexpress.com/item/1005005122147376.html
-https://www.aliexpress.com/item/1005005565776871.html
-https://www.aliexpress.com/item/1005004769462897.htm
-https://www.aliexpress.com/item/4000241950870.html
-8S 29.2V lifepo4, 40A https://www.aliexpress.com/item/1005002718132948.html 
-https://www.alibaba.com/product-detail/4PCS-US-STOCK-CATL-3-2V_1600209660693.html
-https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html
 
-https://www.aliexpress.com/item/4000603152552.html
-https://www.aliexpress.com/item/1005003122151710.html
-https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/
- 
-
-https://www.aliexpress.com/item/4000348370586.html
+- https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
+- https://www.aliexpress.com/item/1005005122147376.html
+- https://www.aliexpress.com/item/1005005565776871.html
+- https://www.aliexpress.com/item/1005004769462897.htm
+- https://www.aliexpress.com/item/4000241950870.html
+- 8S 29.2V lifepo4, 40A https://www.aliexpress.com/item/1005002718132948.html 
+- https://www.alibaba.com/product-detail/4PCS-US-STOCK-CATL-3-2V_1600209660693.html
+- https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html
+- https://www.aliexpress.com/item/4000603152552.html
+- https://www.aliexpress.com/item/1005003122151710.html
+- https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/
+- https://www.aliexpress.com/item/4000348370586.html
 
 
+# conclusion
