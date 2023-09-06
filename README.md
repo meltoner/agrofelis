@@ -109,7 +109,6 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 The [protective covers design and fabrication document](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by detailing the protective covers of the vehicle, including their schematics and the source code files utilized for a CNC plasma cutter. Additionally, photographic material offers insights into the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
 
-
 The complete documentation of the protective covers is provided below.
 
 - [Agrofelis protective covers design and fabrication](components/vehicle-covers)
@@ -136,7 +135,6 @@ An indicative selection of figures from the Agrofelis forks design and fabricati
 
 The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the intricacies of the Agrofelis vehicle's steering system. The design rationale, structural elements, feedback mechanisms and the custom PCB board are all presented and documented in detail. The document encompasses source code files, key design metrics, schematics, 3D printed assets, laser-cut NC files and photographs, offering a view of the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight 1-meter turn radius and its design minimizes the overall footprint of the vehicle. The document also contains a list of components and indicative suppliers that comprise the bill and material information of the steering module. Finally, the documentation provides an overview of the implemented driver software, its classes, and their relations.
 
-
 The complete documentation of the Agrofelis steering system design is provided below.
 
 - [Steering system design and fabrication](components/vehicle-steering)
@@ -144,6 +142,19 @@ The complete documentation of the Agrofelis steering system design is provided b
 A cherry picked selection of figures from the Agrofelis steering system design and fabrication documentation, is presented by the following figure. 
 
 ![Agrofelis steering system design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
+
+
+## Agrofelis Power System Design and Fabrication
+
+The [Power System Design and Fabrication](components/vehicle-power) presents the Power related elements classifying the Agrofelis robot as an energy dense solution. The battery technology employed and the choice of their capacity, management, monitoring and charging is elaborated. The batteries arrangement for minimizing the vehicle's footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms are documented. Moreover the document describes the WiFi relays and how to make them more robust. The documentation also lists all the utilised components, their price along with indicative suppliers facilitating the reproducibility of the system. 
+
+The complete documentation of the Agrofelis Power System is provided below.
+
+- [Power System Design and Fabrication document](components/vehicle-power)
+
+A selection of figures from the Agrofelis Power System documentation, is presented by the following figure. 
+
+![Agrofelis steering system design and fabrication figures highlights](components/vehicle-power/_figures/highlights-vehicle-power.jpg)
 
 
 ## Cost Estimation Overview
