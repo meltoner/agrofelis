@@ -241,4 +241,4 @@ The total cost to manufacture the Agrofelis power system, exclusive of shipping 
 
 The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent components of the BMS and its connection details and charging apparatus have been described as well as the function and set up of Fuses, Diodes and Relays have also been showcased.  To conclude, an image depicting the vehicle's back compartment hosting the BMS and other electronics, is presented below.
 
-[Close up view of the back compartment](_figures/vehicle-power-09-overview.jpg)
+![Close up view of the back compartment](_figures/vehicle-power-09-overview.jpg)
