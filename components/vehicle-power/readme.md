@@ -205,24 +205,6 @@ The following table lists the individual components employed for manufacturing t
 
 <div align="center">
 
-| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
-|----|--------------|------------|-----|---|---|---|---|
-| #1 | 302A LiFePO4 CATL battery cells | [LiFePO4](https://www.alibaba.com/product-detail//Dongguan-Lightning-Grade-A-3-2V_1600863448967.html) | [Dongguan](https://shandian.en.alibaba.com/minisiteentrance.html) | 8 | 113 | 904 | - |
-| #2 | Daly BMS LiFePo 8S 250A Smart| [BMS]( https://www.aliexpress.com/item/1005003399024799.html) | [aliexpress](https://www.aliexpress.com/) | 1 |160.27 |160.27 | - |
-| #3 | Lifepo4 8S 40A battery charger | [battery charger](https://www.aliexpress.com/item/1005002718132948.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 130.43 | 130.43 | - |
-| #4 | 250Ah Circuit Breaker Power | [Circuit Breaker Power](https://www.aliexpress.com/item/1005005122147376.html) | [aliexpress](https://www.aliexpress.com/) | 1 |  5.39 | 5.39 | - |
-| #5 | Battery disconnect switch SLO-BDS-1 | [battery switch](https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/) | [aenaoshop](https://aenaoshop.gr) | 1 | 39.73 | 39.73 | - | 
-| #6 | 80 amp relay | [80 amp relay](https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html) | 2 | 8.23 | 16.46 | - | 
-| #7 | Row Copper Bar Terminal Power Distribution 8 Hole, With Base | [Bar
-Power Distribution]https://www.aliexpress.com/item/1005004769462897.html | [aliexpress](https://www.aliexpress.com/) | 2 | 7.19 | 14.38 | - |
-| #8 | 70mm 10 Meter Battery Insulation | [Battery Insulation](https://www.aliexpress.com/item/4000241950870.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 14.06 | 14.06 | - |
-| #9 | 80mm Kapton Thermal Insulation Adhesive Tape | [Kapton tape](https://www.aliexpress.com/item/1005005565776871.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 16.35 | 16.35 | - | 
-| #10 | 50M, 8mm Insulated Braided Sleeving Data line protection | [cable protection](https://www.aliexpress.com/item/4000603152552.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 16.16 | 16.16 | - |
-| #11 | Copper tape 50mm, 20M, One roll | [Copper tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
-| #12 | LTC3780 DC-DC 5-32V to 1V-30V 10A Automatic Step Up Down | [Step down](https://www.aliexpress.com/item/1005004908577986.html) | [aliexpress](https://www.aliexpress.com/) | 3 | 7.23 | 21.69 | - | 
-| #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 1 | 2 | - |
-| #14 | 1N5819 5819 1A 40V Schottky Diode | [Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/) | [hellasdigital](https://www.hellasdigital.gr)| 2 | 0.10 | 0.20 | - | 
-| **Total** |      |    |     |      |     |  **32.06**  | 39.73| 
 
 </div>
 The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **32** euros.
