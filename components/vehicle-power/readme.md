@@ -6,7 +6,7 @@ The document presents the Power related elements classifying the Agrofelis robot
 
 # Introduction
 
-The power module and its sub-elements is the most expensive module of the Agrofelis robot. A hefty 8 KW battery system was chosen in order to have the ability of an 8 hour shift on a moderate energy demand with work load peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panel systems were chosen, called LifePo4. The type of technology was chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, and their thermal and chemical stability. 
+The power module and its sub-elements is the most expensive module of the Agrofelis robot. A hefty 8 KW battery system was chosen in order to have the ability of an 8 hour shift on a moderate energy demand with work load peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panel systems were chosen, called LifePO4. The type of technology was chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, and their thermal and chemical stability. 
 
 A wide range of sensors were employed in the Agrofelis robot enabling the monitoring of the total discharge rate of the system as well as the power consumption of the individual components and actuators. Using various energy feedback sensors allows intelligent management of the system within the range of its highest efficiency thus prolonging its lifetime and the runtime of the robot. 
 
