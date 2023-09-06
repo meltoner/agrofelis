@@ -2,13 +2,13 @@
 
 # Abstract
 
-The document presents the power related elements classifying the Agrofelis robot an energy dense solution. The choice of the batteries technology employed, their magnitude, their management, monitoring and charging systems are elaborated. The batteries arrangement, designed to minimize the vehicle footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms established are documented. The document moreover describes WIFI relays employed and adaptation applied to make them more robust. The documentation moreover list all the utilised components, their price along with indicative suppliers easening the reproducibility of the system. 
+The document presents the Power related elements classifying the Agrofelis robot as an energy dense solution. The battery technology employed and the choice of their capacity, management, monitoring and charging is elaborated. The batteries arrangement for minimizing the vehicle's footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms established are documented. Moreover the document  describes the WIFI relays and how to make them more robust. The documentation also lists all the utilised components, their price along with indicative suppliers facilitating the reproducibility of the system. 
 
 # Introduction
 
-The power module and its sub-elements is the most expensive module of the Agrofelis robot. A staggering 8 KW battery system was chosen in view of being able to perform an 8 hour shift while on a relatively moderate energy demanding work peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panels systems were chosen, called LifePo4. The type of technology was furthermore chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, [^LiFePOA] their thermal and chemical stability characteristics. 
+The power module and its sub-elements is the most expensive module of the Agrofelis robot. A hefty 8 KW battery system was chosen in order to have the ability of an 8 hour shift on a moderate energy demand with work load peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panels systems were chosen, called LifePo4. The type of technology was chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, and their thermal and chemical stability. 
 
-A wide range of sensors were established in the Agrofelis robot enabling to monitor the total discharge rate of the system as well as power consumption of the individual components and actuators. Employing various energy feedback sensors, enables of being able to discover and intelligently drive the different elements to their most efficient range prolonging their lifetime and the runtime of the robot. 
+A wide range of sensors were employed in the Agrofelis robot enabling the monitoring of the total discharge rate of the system as well as the power consumption of the individual components and actuators. Using various energy feedback sensors allows intelligent management of the system within the range of its highest efficiency thus prolonging its lifetime and the runtime of the robot. 
 
 Passive systems usually employed in the car industry as well as active systems were installed in energy demanding routes of the system, protecting the rest of the electronics and modules in case a component fails unexpectedly. 
 
@@ -21,9 +21,9 @@ An overview of the vehicle its batteries and their compartment can be seen via t
 
 ## Batteries
 
-The battery technology chosen for the Agrofelis robot is called lithium iron phosphate battery (LiFePO 4 battery). Because of their, high safety, low toxicity, long life span, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery module of the vehicle. 
+The battery technology chosen for the Agrofelis robot is called Lithium Iron Phosphate battery (LiFePO4 ). Because of their safe operation, low toxicity, long life span, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery stack of the vehicle. 
 
-Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2, while is able operate between -35 and 65 ℃. Their life cycle exceeds 4000 charge discharge cycles corresponding to nearly 11 years, if the robot is operated on a daily basis. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the batteries can effectively deliver constantly 150 amps and peak safely up to their nominal amp power (302Ah+). 
+Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2, while able to operate between -35 and 65 Celsius. Their life cycle exceeds 4000 charge/discharge cycles corresponding to nearly 11 years, if the robot is operated once a day. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the batteries can effectively deliver constantly 150 amps and peak safely up to their nominal amp power (302Ah+). 
 
 
 [^LiFePOA]:https://www.anker.com/blogs/battery/lifepo4-battery-benefits-and-uses-you-should-know "Benefits and Uses You Should Know"
@@ -36,9 +36,9 @@ The typical dimensions of a 302Ah battery cell are encoded by the following imag
 
 ## Batteries arrangement
 
-The following diagram illustrates the unusual battery arrangement, achieving a vehicle width footprint reduction by approximately 20 cm.
+The following diagram illustrates the unusual battery arrangement, allowing a width reduction for the frame by approximately 20 cm.
 
-The battery poles connected with the the BMS voltage sensor cables have been number as B0 to B8. B0 corresponds to the negative pole of the first battery and B8 correspond to positive pole of the battery cell in the sequence. Its battery cell is connected in series where the positive pole of one battery meets the negative pole of the consequent and vice versa. Connecting the batteries in series, accumulates their voltage and maintains the amperage constant.
+The battery poles connected with the the BMS voltage sensor cables are numbered as B0 to B8. B0 corresponds to the negative pole of the first battery and B8 correspond to positive pole of the battery cell in the sequence. Each battery cell is connected in series where the positive pole of one cell meets the negative pole of the consequent cell and vice versa. Connecting the batteries in series, accumulates their voltage and maintains the amperage constant.
 
 ![02-batteries-arrangement](_figures/vehicle-power-02-batteries-arrangment.png)
 
@@ -48,18 +48,18 @@ A photo of the batteries while drafting their arrangement is shown below.
 
 ## Batteries hardening and protection
 
-Most of the batteries especially those facing on the outer side of the structure where moreover dressed with 1.5 mm battery insulation barley paper hardening their outer shell even further.
+Most of the batteries especially those facing the outer side of the structure were dressed with 1.5 mm battery insulation barley paper hardening their outer shell even further.
 
 
 ### Batteries fitting and isolation 
 
-In order to shield the batteries from external temperature differences, to compensate for minor accumulative dimensions differences either in the batteries or in the fabrication of the frame, to have a softer material than metal touching the batteries which can also serve as a subtle shock absorber, pieces of wood (plywood) were utilised to enclose the batteries within the frame.
+Pieces of wood (plywood) were utilised to enclose the batteries within the frame, those shield the batteries from external temperature differences, compensate for minor accumulative dimension differences either in the batteries or in the fabrication of the frame and also have a softer material than metal touching the batteries which can also serve as a subtle shock absorber.
 
-The pieces of wood fit tightly and allow to gently impose compressing forces into the batteries preventing them from expanding during their charging and discharging cycles, which prolongs even further their lifetime. Lack of compression leads to damage of the cells, as indicated by swelling and premature battery failure [^LiFePOCompress].
+The wood boards fit tightly and gently allow compressing forces onto the batteries preventing them from expanding during their charging and discharging cycles, which prolongs even further their lifetime. Lack of compression leads to damage of the cells, as indicated by swelling and premature battery failure [^LiFePOCompress].
 
 [^LiFePOCompress]: https://www.currentconnected.com/learning-center/lc-stor/llfp-comp/ "LiFePO4 Cell Compression" 
 
-The consequent figure illustrates the batteries along with their wooden separators. On the right side of the structure a route is created to pass the high current battery outlet cables.
+The consequent figure illustrates the batteries along with their wooden separators. On the right side of the structure a route is created to pass the high current outlet cables.
 
 ![Batteries wood covers](_figures/vehicle-power-03-bateries-wood-covers.png)
 
@@ -77,7 +77,7 @@ The 11th part, made out of plexiglass dimensions is encoded by the following dia
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
 
-A hole in the plexiglass's top center position, just under the the frame bar, is drilled to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
+A hole in the plexiglass's top center position, just under the frame bar, is drilled to pass the battery temperature sensor, the battery cells voltage regulators, as well as the power cord transferring power to the front section of the vehicle.
 
 The following photograph showcases the aforementioned details of the implemented battery module.
 
@@ -90,17 +90,17 @@ The cables passing through part 11 can be seen, the voltage sensor cables, the t
 
 ## Battery Management System
 
-The following photo snapshots the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery cell in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging each individual the battery cell. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
+The following photo shows the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery cell in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging  individual battery cells. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
 
 ![05-bms-close](_figures/vehicle-power-05-bms-close.jpg)
 
-The following zoomed out view of the BMS snapshots additionally, the UART module, the Bluetooth module as well as the voltage sensor cable. On the top and bottom right side we can also see the main connection outlets of the BMS connected with the negative pole of the battery pack. The BMS intercepts the negative outlet of battery pack with the B- annotated cable (blue) and connects the rest of the circuit using the P- black annotated cable.
+The following zoomed out view of the BMS snapshots the UART module, the Bluetooth module as well as the voltage sensor cable. On the top and bottom right side we can also see the main connection outlets of the BMS connected with the negative pole of the battery pack. The BMS intercepts the negative outlet of battery pack with the B- annotated cable (blue) and connects the rest of the circuit using the P- black annotated cable.
 
 ![05-bms-peripherals](_figures/vehicle-power-05-bms-peripherals.jpg)
 
-In order to have the B- and P- outlet facing the opposite side than that being shipped with, and so these conveniently face on the same direction as BMS sensors sockets which leads to shorter cable and losses within the vehicle, these were unscrewed and re-mantled on their opposite side. The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
+In order to have the B- and P- outlet facing the opposite side than its original orientation, they were unscrewed and re-mantled on their opposite side so now they conveniently face on the same direction as the BMS sensor sockets which leads to shorter cable and less losses within the vehicle, The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
 
-Although the Battery module can discharge at maximum rate between 300 and 320 amps, as the intended use of the robot is not to operate at these rates, to lower the cost and space needed by the BMS a slightly lighter though still staggering 250 Amp BMS, was chosen instead.
+Although the Battery module can discharge at maximum rate between 300 and 320 amps, as the intended use of the robot is not to operate at these currents, to lower the cost and space needed by the BMS a slightly lighter though still hefty 250 Amp BMS, was chosen instead.
 
 
 ## High current components
@@ -121,7 +121,7 @@ Although various protection mechanism are incorporated downstream and by the BMS
 
 ## Charging 
 
-Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high current cable are attached with the terminal and an Anderson [^Anderson] connector. The Anderson is attached in the inner side of the door allowing to easily access the socket for charging or connect external anticipated implements. A moderate 29.2V lifepo4, battery charger of 40A was chosen due to its lower cost and having a relatively acceptable theoretical charging time of less than 6h. Provided a larger battery charger of 150 amp matching the maximum charging capacity of the system would complete a complete charging cycle within 1.5 hours. 
+Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high current cable are attached with the terminal and an Anderson [^Anderson] connector. The Anderson is attached in the inner side of the door allowing easy access to the socket for charging or connecting external implements. A moderate 29.2V lifepo4, battery charger of 40A was chosen due to its lower cost and having a relatively acceptable theoretical charging time of less than 6h. Provided a larger battery charger of 150 amp matching the maximum charging capacity of the system would complete a charging cycle within 1.5 hours. 
 
 [^Anderson]: https://en.wikipedia.org/wiki/Anderson_Powerpole "Anderson Powerpole - wikipedia" 
 
@@ -138,22 +138,22 @@ The charging point and how the Anderson connector is attached in the side door p
 
 The modules of the system operate either on 5v employed on most of the electronics and servos, or on 12v used in high current relays and fans or on the battery pack voltage level, energizing the motors and other actuators of the robot. 
 
-Three step down voltage regulators are installed to power these modules. The first two are installed on the back side of the acrylic used to mount the BMS and the third using a small piece of acrylic with magnets facing the BMS. The 1st regulator steps down the voltage to 5v, the second to 12 and the 3d dedicated for the servos actuating the disc brakes to 5v. The step down regulators position can be seen in the following diagram.
+Three step down voltage regulators are installed to power these modules. The first two are installed on the back side of the BMS's acrylic mount and the third uses a small piece of acrylic with magnets facing the BMS. The 1st regulator steps down the voltage to 5v, the second to 12 and the 3d dedicated for the servos actuating the disc brakes to 5v. The step down regulators position can be seen in the following diagram.
 
 ![07-step-down-converters](_figures/vehicle-power-07-step-down-converters.png)
 
-The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system. More specifically the motors, the motor hub drivers, the Jetson nano, the Arduino mega, the steering driver, the USB hub, and the linear actuators are visualised. Additional components not shown in the image is the wifi adapter, the wifi access point, the servos, the 3d Lidar mounted in the front sensors as well as 2 degrees of freedom turntable mount implement. 
+The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system. More specifically the motors, the motor hub drivers, the Jetson nano, the Arduino mega, the steering driver, the USB hub, and the linear actuators are visualised. Additional components not shown in the image is the WiFi adapter, the WiFi access point, the servos, the 3d Lidar mounted in the front sensors as well as 2 degrees of freedom turntable implement mount. 
 
 ![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
 
 ### Power cord
 
-A power cord composed of 2 high current cables (battery voltage), 4 low current cable (5v, 12v) as well as a an 8 pin ribbon cable distribute power and provide a data link between the back and front compartment of the vehicle. The composite power cord is wrapped with Copper Foil Tape for EMI shielding and last with a Flame-retardant PET tube Cable Sleeve. Although wrapping the data cables with a copper tape may be unnecessary, the cables obtain a stronger structure and after troubleshooting the DIY plasma cutter because of EMI interference, we felt safer to employ it in the power cord which passes through the battery compartment. 
+A power cord composed of 2 high current cables (battery voltage), 4 low current cable (5v, 12v) as well as a an 8 pin ribbon cable distribute power and provide a data link between the back and front compartment of the vehicle. The composite power cord is wrapped with Copper Foil Tape for EMI shielding and last with a Flame-retardant PET tube Cable Sleeve. Although wrapping the data cables with a copper tape may be somewhat unnecessary, the cables obtain a stronger structure and after troubleshooting the DIY plasma cutter because of EMI interference, we felt safer to employ it in the power cord which passes through the battery compartment. 
 
 ## Switchable power points
 
 Although adding more protection mechanism adds more complexity and materials at the same time enables to compartmentalize the propagation of a point of failure and protect the internal components of the Agrofelis Robot. Two composite modules were created and installed for the front and the back actuators of the vehicle. 
-The module employed sockets supporting burnable fuses employed in the car industry. Fuses were chosen of about double the maximum amperage of each actuator. The module was moreover equipped with a high current car relay (80 Amp) which is driven by an ESP8266 wifi relay. Last a diode was employed to minimize the ripple back voltage effect caused by the coils of the relays when these change state. The module allows to energize to connected actuators on demand. Moreover allows to energize them in a delayed sequence and minimize the spikes created in the system when all components power up simultaneously. The module, enables to cut the actuators power in case of an emergency and minimizes the power consumption while the robot is on stasis. The agility however comes with a small cost of consuming additionally 1.5 watts of power to keep the relays coil in on status.  
+The module employed sockets supporting burnable fuses employed in the car industry. Fuses were chosen of about double the maximum amperage of each actuator. The module was moreover equipped with a high current car relay (80 Amp) which is driven by an ESP8266 WiFi relay. Lastly a diode was employed to minimize the ripple back voltage effect caused by the coils of the relays when these change state. The module allows to energize connected actuators on demand. Moreover it allows to energize them in a delayed sequence and minimize the spikes created in the system when all components power up simultaneously. The module, enables to cut the actuator's power in case of an emergency and minimizes the power consumption while the robot is on stasis. The agility however comes with a small cost of consuming additionally 1.5 watts of power to keep the relays coil in "on" status.  
 
 In the following figures the assembly of the power points module is presented. 
 
@@ -188,7 +188,7 @@ A side view of the completed module attaching also a flyback [^flyback] diode in
 
 ## WiFi Relay Module
 
-The ESP8266 ESP-01/01S 5V WiFi Relay Module includes a problematic factor in its design. The problem is that when its powered up it momentarily switches its relay creating an unintended flow of energy. The problem occurs because of the pin used by the shield which turns on, on ESP8266 boot. To fix this, problem the board route to that pin must be cut using a cutting tool or small Dremel and remapped to another pin such as GPIO3 that doesn't have this inherent issue. Last the micro controller must be reprogrammed to utilise the new pin intended. 
+The ESP8266 ESP-01/01S 5V WiFi Relay Module includes a problematic factor in its design. The problem is that when it is powered up it momentarily switches its relay creating an unintended flow of energy. The problem occurs because of the pin used by the shield which turns on ESP8266 boot. To fix this problem the board route to that pin must be cut using a cutting tool or small Dremel and remapped to another pin such as GPIO3 that doesn't have this inherent issue. Finnaly the micro controller must be reprogrammed to utilise the new pin intended. 
 
 The following solution described here was employed https://github.com/IOT-MCU/ESP-01S-Relay-v4.0/issues/1#issuecomment-808784642
 
