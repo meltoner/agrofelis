@@ -218,4 +218,6 @@ convert to table
 
 # conclusion
 
-add 
+The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent component details of the BMS and its connection details and charging apparatus have been described as well as the function of Fuses, Diodes and Relays have also been showcased.
+
+
