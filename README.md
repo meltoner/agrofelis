@@ -175,8 +175,8 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Protective Covers](components/vehicle-covers#covers-material-and-indicative-suppliers)   | 82.53 |
 | [Wheel Forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
 | [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
-|          |          |
-| **Total Cost**   | **1,092.71**   |
+| [Power System](components/vehicle-power#power-system-components)   | 1,509.28  |
+| **Total Cost**   | *2,607.99**   |
 
 </div>
 
