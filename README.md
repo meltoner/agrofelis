@@ -1,9 +1,19 @@
 # Agrofelis Robot
 
-Energy dense, multipurpose agile agricultural robot design plans and system source code repository.
-Visit our website www.agrofelis.com.
+> A Multipurpose Energy Dense, Implement Carrier Agricultural Robot.
+> A Programmable, AI ready, Precision Agriculture base vehicle.
 
-![Robotic Vehicle](introduction/figures/figureA.jpg)
+Design plans and system source code repository.
+
+www.agrofelis.com
+
+
+![Agrofelis Robot schematics](introduction/_figures/01_agrofelis-robot-schematics.png)
+![Agrofelis Robot render](introduction/_figures/02_agrofelis-robot-render.jpg)
+![Agrofelis Robot implement mount with fogger diagram](introduction/_figures/03_agrofelis-robot-implement-mount-schematic.png)
+![Agrofelis Robot in the vineyard with a pulse jet fogger](introduction/_figures/04_agrofelis-robot-in-the-field-vineyard.jpg)
+![Agrofelis Robot in the vineyard downhill with a pulse jet fogger](introduction/_figures/05_agrofelis-robot-in-the-field-vineyard.jpg)
+
 
 ## The Problem 
 
@@ -63,7 +73,7 @@ An underlying IoT service allows the deployment of new firmware for the system's
 
 # Documentation
 
-In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being overviewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative supliers and total cost estimations.
+In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being over-viewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative suppliers and total cost estimations.
 
 ## Agrofelis Motors Hub Driver
 
@@ -100,7 +110,7 @@ The complete documentation of the Agrofelis chassis frame is provided below.
 
 - [Chassis frame design and fabrication](components/vehicle-frame)
 
-An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarised by the following figure. 
+An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarized by the following figure. 
 
 ![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
 
@@ -113,7 +123,7 @@ The complete documentation of the protective covers is provided below.
 
 - [Agrofelis protective covers design and fabrication](components/vehicle-covers)
 
-An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarised by the following figure. 
+An indicative selection of figures from the Agrofelis protective covers design and fabrication document, is summarized by the following figure. 
 
 ![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-covers.jpg)
 
@@ -183,3 +193,4 @@ The table showcased below provides a breakdown of the necessary construction com
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
 Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **1,092** euros, exclusive of shipping and assembly costs.
+
