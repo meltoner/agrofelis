@@ -73,7 +73,7 @@ The enumerated wooden pieces with their dimensions and thickness are documented 
 
 ![04-covers-dimensions](_figures/vehicle-power-04-covers-dimensions.png)
 
-The 11th part, made out of plexiglass dimensions is encoded be the following diagram.
+The 11th part, made out of plexiglass dimensions is encoded by the following diagram.
 
 ![plexiglass](_figures/vehicle-power-04-plexiglass-dimensions.png)
 
@@ -90,7 +90,7 @@ The cables passing through part 11 can be seen, the voltage sensor cables, the t
 
 ## Battery Management System
 
-The following photo snapshots the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging each individual the battery cell. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
+The following photo snapshots the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery cell in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging each individual the battery cell. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
 
 ![05-bms-close](_figures/vehicle-power-05-bms-close.jpg)
 
@@ -100,9 +100,10 @@ The following zoomed out view of the BMS snapshots additionally, the UART module
 
 In order to have the B- and P- outlet facing the opposite side than that being shipped with, and so these conveniently face on the same direction as BMS sensors sockets which leads to shorter cable and losses within the vehicle, these were unscrewed and re-mantled on their opposite side. The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
 
+Although the Battery module can discharge at maximum rate between 300 and 320 amps, as the intended use of the robot is not to operate at these rates, to lower the cost and space needed by the BMS a slightly lighter though still staggering 250 Amp BMS, was chosen instead.
+
 
 ## High current components
-
 
 The following diagram reflects the BMS outlet re-arrangement modification as well as the various high current elements of the power system.
 
@@ -116,6 +117,7 @@ More specifically the enumerated parts correspond to the following elements.
 4. Negative Voltage Copper bar terminal power distribution
 5. Battery Management System
 
+Although various protection mechanism are incorporated downstream and by the BMS the circuit breaker provides a mechanical fail safe protection mechanism at the nominal maximum levels of the energy module.
 
 ## Charging 
 
@@ -140,45 +142,78 @@ Three step down voltage regulators are installed to power these modules. The fir
 
 ![07-step-down-converters](_figures/vehicle-power-07-step-down-converters.png)
 
-The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system. More specifically the motors, the motor hub drivers, the Jetson nano, the Arduino mega, the steering driver, the USB hub, and the linear actuators are  visualised. 
+The following drawing illustrates most of the base electrical modules energized by the Agrofelis power system. More specifically the motors, the motor hub drivers, the Jetson nano, the Arduino mega, the steering driver, the USB hub, and the linear actuators are visualised. Additional components not shown in the image is the wifi adapter, the wifi access point, the servos, the 3d Lidar mounted in the front sensors as well as 2 degrees of freedom turntable mount implement. 
 
 ![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
 
+### Power cord
+
+A power cord composed of 2 high current cables (battery voltage), 4 low current cable (5v, 12v) as well as a an 8 pin ribbon cable distribute power and provide a data link between the back and front compartment of the vehicle. The composite power cord is wrapped with Copper Foil Tape for EMI shielding and last with a Flame-retardant PET tube Cable Sleeve. Although wrapping the data cables with a copper tape may be unnecessary, the cables obtain a stronger structure and after troubleshooting the DIY plasma cutter because of EMI interference, we felt safer to employ it in the power cord which passes through the battery compartment. 
+
+## Switchable power points
+
+Although adding more protection mechanism adds more complexity and materials at the same time enables to compartmentalize the propagation of a point of failure and protect the internal components of the Agrofelis Robot. Two composite modules were created and installed for the front and the back actuators of the vehicle. 
+The module employed sockets supporting burnable fuses employed in the car industry. Fuses were chosen of about double the maximum amperage of each actuator. The module was moreover equipped with a high current car relay (80 Amp) which is driven by an ESP8266 wifi relay. Last a diode was employed to minimize the ripple back voltage effect caused by the coils of the relays when these change state. The module allows to energize to connected actuators on demand. Moreover allows to energize them in a delayed sequence and minimize the spikes created in the system when all components power up simultaneously. The module, enables to cut the actuators power in case of an emergency and minimizes the power consumption while the robot is on stasis. The agility however comes with a small cost of consuming additionally 1.5 watts of power to keep the relays coil in on status.  
+
+In the following figures the assembly of the power points module is presented. 
+
+The following figure illustrates the key component making the switchable main power point module.
+
+![15-relay-fuse-1](_figures/vehicle-power-15-relay-fuse-1.jpg)
+
+1. ESP8266 ESP-01/01S 5V WiFi Relay Module
+2. SPDT Ucoil 80A 1.8W car relay AM3-12P 
+3. 3x blade fuse holder
+5. 2x 20amp and 1 30 amp fuse
+6. 1N5819 5819 1A 40V Schottky Diode
+
+A close up view of the high current car relay is captured by the following photo.
+
+![15-relay-fuse-2](_figures/vehicle-power-15-relay-fuse-2.jpg)
+
+The relay glued and connected with the three blade fuse holder, their fuses and their connectors is captured by the following photo.
+
+![15-relay-fuse-3](_figures/vehicle-power-15-relay-fuse-3.jpg)
+
+The module with the WiFi Relay Module hot glued also on the side of the relay is snapshot by the next photograph.
+
+![15-relay-fuse-4](_figures/vehicle-power-15-relay-fuse-4.jpg)
+
+A side view of the completed module attaching also a flyback [^flyback] diode in the high current relay as well as the connection cable can be seen in the following photo.
+
+![15-relay-fuse-5](_figures/vehicle-power-15-relay-fuse-5.jpg)
+
+[^flyback]: https://resources.altium.com/p/using-flyback-diodes-relays-prevents-electrical-noise-your-circuits "Using Flyback Diodes in Relays Prevents Electrical Noise in Your Circuits" 
 
 
-## Components
+## WiFi Relay Module
 
+The ESP8266 ESP-01/01S 5V WiFi Relay Module includes a problematic factor in its design. The problem is that when its powered up it momentarily switches its relay creating an unintended flow of energy. The problem occurs because of the pin used by the shield which turns on, on ESP8266 boot. To fix this, problem the board route to that pin must be cut using a cutting tool or small Dremel and remapped to another pin such as GPIO3 that doesn't have this inherent issue. Last the micro controller must be reprogrammed to utilise the new pin intended. 
+
+The following solution described here was employed https://github.com/IOT-MCU/ESP-01S-Relay-v4.0/issues/1#issuecomment-808784642
+
+
+The following folder contains the ESP8266 source code utilizing the gpio pin 3 as well as connecting to the Agrofelis robot default Wifi network. 
+
+- [src/ESP8266Relay/](src/ESP8266Relay/)
+
+
+## List of components 
+zzz
 https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
 https://www.aliexpress.com/item/1005005122147376.html
 https://www.aliexpress.com/item/1005005565776871.html
 https://www.aliexpress.com/item/1005004769462897.htm
 https://www.aliexpress.com/item/4000241950870.html
-8S 29.2V lifepo4, 40A https://www.aliexpress.com/item/1005002718132948.html
-
-
-Making the power distributor for the mobility drivers and the steering
-
-two of these are fabricated one for the back wheels and another for the front wheels
-
-
-
-![15-relay-fuse-1](_figures/vehicle-power-15-relay-fuse-1.jpg)
-![15-relay-fuse-2](_figures/vehicle-power-15-relay-fuse-2.jpg)
-![15-relay-fuse-3](_figures/vehicle-power-15-relay-fuse-3.jpg)
-![15-relay-fuse-4](_figures/vehicle-power-15-relay-fuse-4.jpg)
-![15-relay-fuse-5](_figures/vehicle-power-15-relay-fuse-5.jpg)
-
-
-### Arrangement
-
-## BMS
-## Charging
-
-add changer photo 
-
-add wifi relay fix applied
-
-
+8S 29.2V lifepo4, 40A https://www.aliexpress.com/item/1005002718132948.html 
 https://www.alibaba.com/product-detail/4PCS-US-STOCK-CATL-3-2V_1600209660693.html
+https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html
+
+https://www.aliexpress.com/item/4000603152552.html
+https://www.aliexpress.com/item/1005003122151710.html
+https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/
+ 
+
+https://www.aliexpress.com/item/4000348370586.html
 
 
