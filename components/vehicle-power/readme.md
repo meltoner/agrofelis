@@ -223,7 +223,7 @@ The following table lists the individual components employed for manufacturing t
 | #15 | 1m black and red 2 awg cable | [2 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 44.10 | 44.10 | - |
 | #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.10 | - |
 | #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
-| #18 | 2pcs 50A Quick Plug Battery Charging Connector | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
+| #18 | 2pcs 50A Quick Plug Battery Charging Connector | [aliexpress](https://www.aliexpress.com/) | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
 
 | **Total** |      |    |     |      |     |  **32.06**  | 39.73| 
 </div>
@@ -231,10 +231,8 @@ The following table lists the individual components employed for manufacturing t
 The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **32** euros.
 convert to table 
 
- 
-
 # Conclusion
 
-The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent components of the BMS and its connection details and charging apparatus have been described as well as the function and set up of Fuses, Diodes and Relays have also been showcased.
+The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent components of the BMS and its connection details and charging apparatus have been described as well as the function and set up of Fuses, Diodes and Relays have also been showcased. To conclude, an image depicting the vehicle's back compartment hosting the BMS and other electronics is presented below.
 
-
+[Close up view of the back compartment](_figures/vehicle-power-09-overview.jpg)
