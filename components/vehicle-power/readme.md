@@ -202,7 +202,6 @@ The following folder contains the ESP8266 source code utilizing the GPIO pin 3 a
 
 The following table lists the individual components employed for manufacturing the Agrofelis power system. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and sum totals.
 
-
 <div align="center">
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
@@ -225,10 +224,11 @@ Power Distribution]https://www.aliexpress.com/item/1005004769462897.html | [alie
 | #15 | 1m black and red 2 awg cable | [2 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 44.10 | 44.10 | - |
 | #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.10 | - |
 | #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
-
+| #18 | 2pcs 50A Quick Plug Battery Charging Connector | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
 
 | **Total** |      |    |     |      |     |  **32.06**  | 39.73| 
 </div>
+
 The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **32** euros.
 convert to table 
 
