@@ -193,7 +193,7 @@ The ESP8266 ESP-01/01S 5V WiFi Relay Module includes a problematic factor in its
 The following solution described here was employed https://github.com/IOT-MCU/ESP-01S-Relay-v4.0/issues/1#issuecomment-808784642
 
 
-The following folder contains the ESP8266 source code utilizing the gpio pin 3 as well as connecting to the Agrofelis robot default Wifi network. 
+The following folder contains the ESP8266 source code utilizing the GPIO pin 3 as well as connecting to the Agrofelis robot default Wifi network. 
 
 - [src/ESP8266Relay/](src/ESP8266Relay/)
 
