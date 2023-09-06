@@ -6,7 +6,7 @@ This document delves into the manufacturing and functional intricacies of a comp
 
 The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
-## Motors Hub Driver
+# Motors Hub Driver
 
 The Agrofelis Motors Hub Driver module purpose is to digitally control over the air, a pair of motors via two drivers, to monitor their thermal, current and positional indicators as well as to guide the air flow cooling the electronic components, to actuate their power, speed and direction. The module is composed by structural elements, PCB boards separating the different functionalities into simpler standalone sub modules and the software running on the micro controller. 
 
@@ -20,7 +20,7 @@ Find below a photo of the implemented module, positioned within the front and th
 
 In the following sections the structural and electronics sub-component of the unit, are documented.
 
-### Structural component
+## Structural component
 
 This component of the Agrofelis Motors hub driver, deals with the structural elements of the composite module.
 The structural component is formed by two parts enclosing and mounting the related sub elements. Moreover the structural component  serves for guiding the air flow to efficiently cool down the electronics during their operation. 
@@ -65,7 +65,7 @@ The schematics and source files to cut and 3d print the *parts 1* and *2* are lo
 
 More specifically, the *laser cut* folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The *3d print* folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
 
-### Electronic sub-modules
+## Electronic sub-modules
 
 The electronics sub-modules of the Agrofelis Motors hub driver, sum into four PCB sub-modules namely the:
 
@@ -80,7 +80,7 @@ Their compilation is illustrated by the following diagram.
 
 In the following sections the three type of modules are documented in further detail.
 
-### Motors hub controller
+## Motors hub controller
 
 This sub-module of the Motors Hub Driver integrates all electronics components of the overall module. The controller decomposes the functionality of processing the signals, of broadcasting the sensors impulses and for controlling the actuators via wireless means. The module digitally drives the two motor hubs via an ESP32 and reads and intercepts the hall sensors of the analog drivers using the ADAC module. The module senses the current drawn by the motors, reads the individual temperature of the analog drivers and controls the power, the speed and spin direction of the motors. 
 
@@ -174,7 +174,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-controller.png)
 
 
-### Motor hub power module
+## Motor hub power module
 
 This sub-module of the Motors Hub Driver decomposes the functionality of powering, sensing the current and reversing the direction of a motor hub driver. 
 
@@ -276,7 +276,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-power_driver.png)
 
-### Motors hub ADAC
+## Motors hub ADAC
 
 This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP32, operating at 3.3v via a bidirectional logic level conditioner.
 Moreover, using an external ADAC the module can handle additionally 4 analog channels, enough so an ESP32 can operate and sense two motor drivers simultaneously.
@@ -357,17 +357,28 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
-### Software 
+## Software 
 
 The software of the module is contained within [src folder](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src). The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. The software is elaborated in further detail in a dedicated chapter of the documentation. [add]
 
-### Power distribution module
 
-The module receives power from the Power distribution module, documented in the related chapter of the documentation. [add]
 
-### Motors Hub Components and Indicative Suppliers
+
+
+
+
+
+
+## Power distribution module
+
+The module receives power from the Power distribution module, documented in the related chapter of the documentation. [https://github.com/meltoner/agrofelis/tree/main/components/vehicle-power#switchable-power-points]
+
+
+## Motors Hub Components and Indicative Suppliers
 
 In the pursuit of crafting a resilient and high-performing robot, the selection of reliable suppliers for essential components holds profound significance. We present a comprehensive overview of the suppliers who have contributed to our robot-building endeavor. This compilation of essential supplier information not only showcases the parts acquired and supplier names but also includes product types and URLs for direct reference, along with pertinent notes where necessary. Furthermore, the table presents information about quantities, VAT-inclusive prices, and subtotals, all denominated in euros (€), allowing for a detailed financial analysis. Keep in mind that this list of suppliers serves as an illustrative guide, aimed primarily at providing details about the requisite components essential for the construction of each module.
+
+### Motors hub controller module
 
 The following table provides an overview of indicative suppliers associated with various parts described in the [motors hub controller module](#motors-hub-controller-components).
 
@@ -390,8 +401,6 @@ The following table provides an overview of indicative suppliers associated with
 | #13 | DS18B20 temperature sensors  | [DS18B20 Temperature Sensor](https://nettop.gr/index.php/eksartimata/aisthitires/humidity-temperature/ds18b20-temperature-sensor-module.html)   | [Nettop](https://www.nettop.gr/)  | 2  | 2.20 | 4.40 | - |
 | #14 | Wire pieces for PCB bridges  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0.05  | 1.00 | 0.05 | Shared Resource |
 | #15 | 8 cm case cooler  | [Case Cooler](https://www.mgmanager.gr/anavathmisi-ypologisti-2/koutia-ypologiston/axesouar-cases/logilink-logilink-pc-case-cooler-80mm-black-fan101-_237833/)   | [MG Manager](https://www.mgmanager.gr/) | 1  | 2.83 | 2.83 | - |
-| #16 | Agrofelis Motor Hub Power Driver modules| [Driver modules](#motor-hub-power-module) | Agrofelis | 1  | TBD | TBD | - |
-|  | Agrofelis Motors Hub ADAC module | [ADAC module](#motors-hub-adac) | Agrofelis | 1  | TBD | TBD | - |
 | #17 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 8.00 | Base Component |
 |  | Green screw terminal 2P | [Screw Terminal](https://grobotronics.com/screw-terminal-2p-2.54mm.html?sl=en)   | [GRobotronics](https://grobotronics.com/) | 2  | 0.30 | 0.60 | - |
 |  | Connectors | [Standoff, Bolts & Nuts Kit](https://grobotronics.com/standoff-bolts-and-nuts-assortment-kit-m2-brass-270pcs.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 4.90 | 4.90 | - |
@@ -402,6 +411,8 @@ The following table provides an overview of indicative suppliers associated with
 </div>
 
 So, the cost for manufacturing the motors hub controller, excluding expenses related to shipping and assembly, amounts to approximately **56** euros.
+
+### Motors hub power module
 
 The subsequent table presents indicative suppliers for the necessary components detailed within the [motors hub power module](#motors-hub-power-components).
 
@@ -423,6 +434,8 @@ The subsequent table presents indicative suppliers for the necessary components 
 | **Total** |      |    |     |      |     |  **14.24**  |   |
 
 In terms of fabricating the motor hub power driver, the overall cost, excluding shipping and assembly expenses, sums to around **14** euros.
+
+### Motors hub ADAC module
 
 Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
 

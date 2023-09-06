@@ -187,8 +187,9 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Power System](components/vehicle-power#power-system-components)   | 1,509.28  |
 | [Protective Covers](components/vehicle-covers#covers-material-and-indicative-suppliers)   | 82.53 |
 | [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
-| [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
-| **Total Cost**   | **2,607.99**   |
+| [Motors Hub Driver A](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
+| [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
+| **Total Cost**   | **2,697.32**   |
 
 </div>
 
