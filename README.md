@@ -8,11 +8,9 @@ Design plans and system source code repository.
 www.agrofelis.com
 
 
-![Agrofelis Robot in the vineyard with a pulse jet fogger](introduction/_figures/04_agrofelis-robot-in-the-field-vineyard.jpg)
-![Agrofelis Robot schematics](introduction/_figures/01_agrofelis-robot-schematics.png)
-![Agrofelis Robot render](introduction/_figures/02_agrofelis-robot-render.jpg)
-![Agrofelis Robot implement mount with fogger diagram](introduction/_figures/03_agrofelis-robot-implement-mount-schematic.png)
-![Agrofelis Robot in the vineyard downhill with a pulse jet fogger](introduction/_figures/05_agrofelis-robot-in-the-field-vineyard.jpg)
+![Agrofelis Robot in the vineyard with a pulse jet fogger](introduction/_figures/01_agrofelis-robot-in-the-field-vineyard)
+![Agrofelis Robot schematics](introduction/_figures/02_agrofelis_desing.jpg)
+![Agrofelis Robot in the vineyard downhill with a pulse jet fogger](introduction/_figures/03_agrofelis-robot-in-the-field-vineyard.jpg)
 
 
 ## The Problem 
