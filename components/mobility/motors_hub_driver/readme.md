@@ -483,4 +483,3 @@ Consequently, we observe that the total manufacturing cost for the motor hub con
 The rationale of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process are provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis motors hub driver module have been documented.
 
 ![motors_hub_driver_real2.jpg](_figures/motors_hub_driver_real2.jpg)
-

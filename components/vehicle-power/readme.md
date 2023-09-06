@@ -218,27 +218,27 @@ The following table lists the individual components employed for manufacturing t
 | #10 | 50M, 8mm Insulated Braided Sleeving Data line protection | [cable protection](https://www.aliexpress.com/item/4000603152552.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 16.16 | 16.16 | - |
 | #11 | Copper tape 50mm, 20M, One roll | [Copper tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
 | #12 | LTC3780 DC-DC 5-32V to 1V-30V 10A Automatic Step Up Down | [Step down](https://www.aliexpress.com/item/1005004908577986.html) | [aliexpress](https://www.aliexpress.com/) | 3 | 7.23 | 21.69 | - | 
-| #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 1 | 2 | - |
+| #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 1.0 | 2.0 | - |
 | #14 | 1N5819 5819 1A 40V Schottky Diode | [Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/) | [hellasdigital](https://www.hellasdigital.gr)| 2 | 0.10 | 0.20 | - | 
 | #15 | 1m black and red 2 awg cable | [2 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 44.10 | 44.10 | - |
-| #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.10 | - |
+| #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.20 | - |
 | #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
 | #18 | 2pcs 50A Quick Plug Battery Charging Connector | [aliexpress](https://www.aliexpress.com/) | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
 | #19 | 328pcs Heat Shrink Tube Assortment| [Heat Shrink Tube](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/328pcs-heat-shrink-tube-assortment/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.47 | 3.47 | Shared resource | 
 | #20 | 10 pcs Adhesive Hot Melt | [Hot Glue](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 4.96 | 4.96 | Shared resource |
 | #21 | 100g 0.8mm Welding Line Solder Wire | [Solder](https://www.hellasdigital.gr/electronics/tools-and-peripherals/100g-0.8mm-welding-line-solder-wire/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 5.46 | 5.46 | Shared resource |
-| #22 | Wago 5 Way Electrical Wire Connector | [Wire Connector](https://www.hellasdigital.gr/electronics/components/wago-5-way-electrical-wire-connector-insulating-spring-lever-reusable-connector-pct-215/) | [hellasdigital](https://www.hellasdigital.gr) | 4 | 1 | 4 | | - |
-| #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3 | 3 | programs the wifi relay |
-| **Total** |      |    |     |      |     |  **32.06**  | 39.73| 
+| #22 | Wago 5 Way Electrical Wire Connector | [Wire Connector](https://www.hellasdigital.gr/electronics/components/wago-5-way-electrical-wire-connector-insulating-spring-lever-reusable-connector-pct-215/) | [hellasdigital](https://www.hellasdigital.gr) | 4 | 1.0 | 4.0 | | - |
+| #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.0 | 3.0 | programs the wifi relay |
+| **Total** |      |    |     |      |     |  **1,509.28**  | | 
 
 
 </div>
 
-The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **32** euros.
-convert to table 
+The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **1,509** euros.
+
 
 # Conclusion
 
-The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent components of the BMS and its connection details and charging apparatus have been described as well as the function and set up of Fuses, Diodes and Relays have also been showcased. To conclude, an image depicting the vehicle's back compartment hosting the BMS and other electronics is presented below.
+The technology characteristics of LiFePO4 and their arrangement and wrapping in the Agrofelis frame has been presented. The subsequent components of the BMS and its connection details and charging apparatus have been described as well as the function and set up of Fuses, Diodes and Relays have also been showcased.  To conclude, an image depicting the vehicle's back compartment hosting the BMS and other electronics, is presented below.
 
 [Close up view of the back compartment](_figures/vehicle-power-09-overview.jpg)
