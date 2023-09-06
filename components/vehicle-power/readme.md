@@ -121,11 +121,11 @@ Although various protection mechanism are incorporated downstream and by the BMS
 
 ## Charging 
 
-Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high current cable are attached with the terminal and an Anderson [^Anderson] connector. The Anderson is attached in the inner side of the door allowing easy access to the socket for charging or connecting external implements. A moderate 29.2V lifepo4, battery charger of 40A was chosen due to its lower cost and having a relatively acceptable theoretical charging time of less than 6h. Provided a larger battery charger of 150 amp matching the maximum charging capacity of the system would complete a charging cycle within 1.5 hours. 
+Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high current cable are attached with the terminal and an Anderson [^Anderson] connector. The Anderson is attached in the inner side of the door allowing easy access to the socket for charging or connecting external implements. A moderate 40A, 29.2V LiFePO4, battery charger was chosen due to its lower cost and having a relatively acceptable theoretical charging time of less than 6h. Provided a larger battery charger of 150 amp matching the maximum charging capacity of the system would complete a charging cycle within 1.5 hours. 
 
 [^Anderson]: https://en.wikipedia.org/wiki/Anderson_Powerpole "Anderson Powerpole - wikipedia" 
 
-The following photo showcases the 40 amp lifepo4 29.2V battery charger.
+The following photo showcases the 40amp/29.2Volt LiFePO4 battery charger.
 
 ![Battery charger](_figures/vehicle-power--08-charger.png)
 
