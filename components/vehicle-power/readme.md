@@ -206,7 +206,7 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|-----------------|------------|-----|---|---|---|---|
-| #1 | 302A LiFePO4 CATL battery cells | [LiFePO4](https://www.alibaba.com/product-detail//Dongguan-Lightning-Grade-A-3-2V_1600863448967.html) | [Dongguan](https://shandian.en.alibaba.com/minisiteentrance.html) | 8 | 113 | 904 | - |
+| #1 | 302A LiFePO4 CATL battery cells | [LiFePO4](https://www.alibaba.com/product-detail//Dongguan-Lightning-Grade-A-3-2V_1600863448967.html) | [Dongguan](https://shandian.en.alibaba.com/minisiteentrance.html) | 8 | 113.0 | 904.0 | - |
 | #2 | Daly BMS LiFePo 8S 250A Smart| [BMS]( https://www.aliexpress.com/item/1005003399024799.html) | [aliexpress](https://www.aliexpress.com/) | 1 |160.27 |160.27 | - |
 | #3 | Lifepo4 8S 40A battery charger | [battery charger](https://www.aliexpress.com/item/1005002718132948.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 130.43 | 130.43 | - |
 | #4 | 250Ah Circuit Breaker Power | [Circuit Breaker Power](https://www.aliexpress.com/item/1005005122147376.html) | [aliexpress](https://www.aliexpress.com/) | 1 |  5.39 | 5.39 | - |
@@ -225,7 +225,7 @@ The following table lists the individual components employed for manufacturing t
 | #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
 | #18 | 2pcs 50A Quick Plug Battery Charging Connector | [aliexpress](https://www.aliexpress.com/) | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
 | #19 | 328pcs Heat Shrink Tube Assortment| [Heat Shrink Tube](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/328pcs-heat-shrink-tube-assortment/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.47 | 3.47 | Shared resource | 
-| #20 | 10 pcs Adhesive Hot Melt | (Hot Glue)[https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/] | [hellasdigital](https://www.hellasdigital.gr) | 1 | 4.96 | 4.96 | Shared resource |
+| #20 | 10 pcs Adhesive Hot Melt | [Hot Glue](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 4.96 | 4.96 | Shared resource |
 | #21 | 100g 0.8mm Welding Line Solder Wire | [Solder](https://www.hellasdigital.gr/electronics/tools-and-peripherals/100g-0.8mm-welding-line-solder-wire/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 5.46 | 5.46 | Shared resource |
 | #22 | Wago 5 Way Electrical Wire Connector | [Wire Connector](https://www.hellasdigital.gr/electronics/components/wago-5-way-electrical-wire-connector-insulating-spring-lever-reusable-connector-pct-215/) | [hellasdigital](https://www.hellasdigital.gr) | 4 | 1 | 4 | | - |
 | #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3 | 3 | programs the wifi relay |
