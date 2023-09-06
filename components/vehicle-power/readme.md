@@ -200,6 +200,8 @@ The following folder contains the ESP8266 source code utilizing the gpio pin 3 a
 
 ## List of components 
 
+convert to table 
+
 - https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/ 
 - https://www.aliexpress.com/item/1005005122147376.html
 - https://www.aliexpress.com/item/1005005565776871.html
@@ -215,3 +217,5 @@ The following folder contains the ESP8266 source code utilizing the gpio pin 3 a
 
 
 # conclusion
+
+add 
