@@ -181,13 +181,13 @@ The table showcased below provides a breakdown of the necessary construction com
 
 | Construction Component   | Sub-Total (€) |
 |---------------------|---------------|
-| [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
-| [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
-| [Protective Covers](components/vehicle-covers#covers-material-and-indicative-suppliers)   | 82.53 |
+| [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Wheel Forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
-| [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 | [Power System](components/vehicle-power#power-system-components)   | 1,509.28  |
+| [Protective Covers](components/vehicle-covers#covers-material-and-indicative-suppliers)   | 82.53 |
+| [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
+| [Motors Hub Driver](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | **Total Cost**   | **2,607.99**   |
 
 </div>
