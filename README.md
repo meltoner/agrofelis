@@ -74,20 +74,19 @@ An underlying IoT service allows the deployment of new firmware for the system's
 
 In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being over-viewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative suppliers and total cost estimations.
 
-## Agrofelis Motors Hub Driver
 
-This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
+## Agrofelis Chassis Frame Design and Fabrication
 
-The complete documentation for the motors hub driver module is provided below.
+The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
 
-- [Motors hub driver document](components/mobility/motors_hub_driver)
+The complete documentation of the Agrofelis chassis frame is provided below.
 
-In a nutshell, the *Motors Hub Driver module* goes over the electronic sub-modules, which include the motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
-The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
+- [Chassis frame design and fabrication](components/vehicle-frame)
 
-A representative depiction of the progression in crafting the motor hub driver is showcased by the following highlights figure.
+An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarized by the following figure. 
 
-![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
+![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
+
 
 ## Agrofelis Robot Wheels Fabrication
 
@@ -101,17 +100,31 @@ In the figure below, we showcase a condensed compilation of the four most illust
 
 ![Agrofelis robot wheels fabrication figures highlights](components/vehicle-wheels/_figures/highlights_vehicle-wheels.jpg)
 
-## Agrofelis Chassis Frame Design and Fabrication
+## Agrofelis Robot Wheels Forks Design and Fabrication
 
-The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
+The [wheels forks design and fabrication](components/vehicle-forks) document presents a comprehensive overview of the fabrication process for the forks mounting the four wheels of the Agrofelis vehicle. These forks are intentionally designed to be detachable, so that the wheels could be removed or replaced with alternative ones. The forks are responsible for securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling steering and installing feedback rotating mechanisms. Two types of forks are being employed, those installed in the front and those installed in the back. The majority of fork designs are similar, with the only differentiating factor being the mounting mechanism aimed for fixed or steering purposes. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed from regular iron T-shaped rods that have been cut and welded. Additional sub-components elaborated are the vehicle's fork mounting mechanisms and the parrot-like (drop out) elements securing the wheels via the motor's hub shaft. The design schematics, plasma cut patterns, as well as images of the fabrication progression are all documented. The document concludes by providing a list of indicative suppliers from whom the raw materials were acquired, further enriched with bill and material details.
 
-The complete documentation of the Agrofelis chassis frame is provided below.
+The complete documentation of the Agrofelis wheels forks is provided below.
 
-- [Chassis frame design and fabrication](components/vehicle-frame)
+- [Wheels forks design and fabrication](components/vehicle-forks)
 
-An indicative selection of figures from the Agrofelis chassis frame design and fabrication document, is summarized by the following figure. 
+An indicative selection of figures from the Agrofelis forks design and fabrication document, is provided by the consequent image. 
 
-![Agrofelis chassis frame design and fabrication figures highlights](components/vehicle-frame/_figures/highlights_vehicle-frame.jpg)
+![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
+
+
+
+## Agrofelis Power System Design and Fabrication
+
+The [Power System Design and Fabrication](components/vehicle-power) presents the Power related elements classifying the Agrofelis robot as an energy dense solution. The battery technology employed and the choice of their capacity, management, monitoring and charging is elaborated. The batteries arrangement for minimizing the vehicle's footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms are documented. Moreover the document describes the WiFi relays and how to make them more robust. The documentation also lists all the utilised components, their price along with indicative suppliers facilitating the reproducibility of the system. 
+
+The complete documentation of the Agrofelis Power System is provided below.
+
+- [Power System Design and Fabrication document](components/vehicle-power)
+
+A selection of figures from the Agrofelis Power System documentation, is presented by the following figure. 
+
+![Agrofelis steering system design and fabrication figures highlights](components/vehicle-power/_figures/highlights-vehicle-power.jpg)
 
 
 ## Agrofelis Protective Covers Design and Fabrication
@@ -127,19 +140,6 @@ An indicative selection of figures from the Agrofelis protective covers design a
 ![Agrofelis protective covers design and fabrication figures highlights](components/vehicle-covers/_figures/highlights_vehicle-covers.jpg)
 
 
-## Agrofelis Robot Wheels Forks Design and Fabrication
-
-The [wheels forks design and fabrication](components/vehicle-forks) document presents a comprehensive overview of the fabrication process for the forks mounting the four wheels of the Agrofelis vehicle. These forks are intentionally designed to be detachable, so that the wheels could be removed or replaced with alternative ones. The forks are responsible for securing the active wheels of the vehicle, establishing active brakes actuated via servos, enabling steering and installing feedback rotating mechanisms. Two types of forks are being employed, those installed in the front and those installed in the back. The majority of fork designs are similar, with the only differentiating factor being the mounting mechanism aimed for fixed or steering purposes. The forks installed on the left and right sides are arranged in a mirrored fashion. The forks are constructed from regular iron T-shaped rods that have been cut and welded. Additional sub-components elaborated are the vehicle's fork mounting mechanisms and the parrot-like (drop out) elements securing the wheels via the motor's hub shaft. The design schematics, plasma cut patterns, as well as images of the fabrication progression are all documented. The document concludes by providing a list of indicative suppliers from whom the raw materials were acquired, further enriched with bill and material details.
-
-The complete documentation of the Agrofelis wheels forks is provided below.
-
-- [Wheels forks design and fabrication](components/vehicle-forks)
-
-An indicative selection of figures from the Agrofelis forks design and fabrication document, is provided by the consequent image. 
-
-![Agrofelis wheels forks design and fabrication figures highlights](components/vehicle-forks/_figures/highlights_vehicle-forks.jpg)
-
-
 ## Agrofelis Steering System Design and Fabrication
 
 The [Agrofelis steering system design and fabrication](components/vehicle-steering) document delves into the intricacies of the Agrofelis vehicle's steering system. The design rationale, structural elements, feedback mechanisms and the custom PCB board are all presented and documented in detail. The document encompasses source code files, key design metrics, schematics, 3D printed assets, laser-cut NC files and photographs, offering a view of the fabricated components and manufacturing steps in a progressive manner. The steering module of Agrofelis enables it to make a tight 1-meter turn radius and its design minimizes the overall footprint of the vehicle. The document also contains a list of components and indicative suppliers that comprise the bill and material information of the steering module. Finally, the documentation provides an overview of the implemented driver software, its classes, and their relations.
@@ -153,17 +153,20 @@ A cherry picked selection of figures from the Agrofelis steering system design a
 ![Agrofelis steering system design and fabrication figures highlights](components/vehicle-steering/_figures/highlights-vehicle-steering.jpg)
 
 
-## Agrofelis Power System Design and Fabrication
+## Agrofelis Motors Hub Driver Design and Fabrication
 
-The [Power System Design and Fabrication](components/vehicle-power) presents the Power related elements classifying the Agrofelis robot as an energy dense solution. The battery technology employed and the choice of their capacity, management, monitoring and charging is elaborated. The batteries arrangement for minimizing the vehicle's footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms are documented. Moreover the document describes the WiFi relays and how to make them more robust. The documentation also lists all the utilised components, their price along with indicative suppliers facilitating the reproducibility of the system. 
+This [Motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
-The complete documentation of the Agrofelis Power System is provided below.
+The complete documentation for the motors hub driver module is provided below.
 
-- [Power System Design and Fabrication document](components/vehicle-power)
+- [Motors hub driver document](components/mobility/motors_hub_driver)
 
-A selection of figures from the Agrofelis Power System documentation, is presented by the following figure. 
+In a nutshell, the *Motors Hub Driver module* goes over the electronic sub-modules, which include the motors hub controller, power, and ADAC modules. The motors hub controller module processes signals, wirelessly controls actuators, and manages motor hubs through ESP32. It reads analog driver hall sensors via an ADAC module, senses motor conditions, and regulates power, speed, and direction.
+The motors hub power module handle motor hub drivers, incorporating relays, current sensors, and logic level converters, while the motors hub ADAC module facilitates sensor interfacing and uses external ADC for analog channel expansion.
 
-![Agrofelis steering system design and fabrication figures highlights](components/vehicle-power/_figures/highlights-vehicle-power.jpg)
+A representative depiction of the progression in crafting the motor hub driver is showcased by the following highlights figure.
+
+![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
 
 
 ## Cost Estimation Overview

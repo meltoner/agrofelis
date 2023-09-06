@@ -18,13 +18,11 @@ An overview of the vehicle its batteries and their compartment can be seen via t
 
 ![00-overview](_figures/vehicle-power-00-overview.png)
 
-
 ## Batteries
 
 The battery technology chosen for the Agrofelis robot is called Lithium Iron Phosphate battery (LiFePO4 ). Because of their safe operation, low toxicity, long life span, LFP batteries are finding a number of roles in vehicle use, utility-scale stationary applications, and backup power systems [^LiFePO]. Eight [CATL 302Ah](assets/CATL_302Ah.pdf)  LiFePO 4 battery cells (LEP71H3L7-01) connected in series, make up the battery stack of the vehicle. 
 
 Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V and 3.65V with a nominal voltage of 3.2, while able to operate between -35 and 65 Celsius. Their life cycle exceeds 4000 charge/discharge cycles corresponding to nearly 11 years, if the robot is operated once a day. The battery lifespan can also be expanded if the depth of charge and discharge rates are bounded to lower levels than their maximum. The batteries nominal discharge rate is at 0.5C and the maximum continues rate is 1.0 C. This means that the batteries can effectively deliver constantly 150 amps and peak safely up to their nominal amp power (302Ah+). 
-
 
 [^LiFePOA]:https://www.anker.com/blogs/battery/lifepo4-battery-benefits-and-uses-you-should-know "Benefits and Uses You Should Know"
 [^LiFePO]: https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery "Wikipedia - LiFePO4" 
@@ -32,7 +30,6 @@ Each cell approximately weights 5.5 kg, can have a voltage range between 2.0V an
 The typical dimensions of a 302Ah battery cell are encoded by the following image.
 
 ![battery cell](_figures/vehicle-power-01.png)
-
 
 ## Batteries arrangement
 
@@ -49,7 +46,6 @@ A photo of the batteries while drafting their arrangement is shown below.
 ## Batteries hardening and protection
 
 Most of the batteries especially those facing the outer side of the structure were dressed with 1.5 mm battery insulation barley paper hardening their outer shell even further.
-
 
 ### Batteries fitting and isolation 
 
@@ -87,7 +83,6 @@ The cables passing through part 11 can be seen, the voltage sensor cables, the t
 
 [^Kapton]: https://en.wikipedia.org/wiki/Kapton "Kapton - Wikipedia" 
 
-
 ## Battery Management System
 
 The following photo shows the heavy duty Battery Management System (BMS) responsible for monitoring and controlling the charging and discharging processes per battery cell in a balanced manner. Maintaining a voltage balance across the battery cells protects and prolongs the lifetime and stability of the battery pack. The BMS can moreover detect a short circuit, detect a faulty battery cell, prevent over charging or over discharging  individual battery cells. The BMS thresholds can be altered and the monitoring data can be accessed either via Bluetooth or serial interface. On the left side of the figure we can see the voltage sensing cables. On the bottom left side we can see the temperature sensor cable being next to the Bluetooth and serial interface sockets of the BMS. 
@@ -101,7 +96,6 @@ The following zoomed out view of the BMS snapshots the UART module, the Bluetoot
 In order to have the B- and P- outlet facing the opposite side than its original orientation, they were unscrewed and re-mantled on their opposite side so now they conveniently face on the same direction as the BMS sensor sockets which leads to shorter cable and less losses within the vehicle, The BMS is established using the piece of acrylic mounted on the left side frame bars of the back compartment of the vehicle.
 
 Although the Battery module can discharge at maximum rate between 300 and 320 amps, as the intended use of the robot is not to operate at these currents, to lower the cost and space needed by the BMS a slightly lighter though still hefty 250 Amp BMS, was chosen instead.
-
 
 ## High current components
 
@@ -132,7 +126,6 @@ The following photo showcases the 40amp/29.2Volt LiFePO4 battery charger.
 The charging point and how the Anderson connector is attached in the side door panel can be observed by the following figure.
 
 ![Anderson](_figures/vehicle-power--08-anderson.jpg)
-
 
 ## Voltage levels
 
@@ -190,13 +183,11 @@ A side view of the completed module attaching also a flyback [^flyback] diode in
 
 The ESP8266 ESP-01/01S 5V WiFi Relay Module includes a problematic factor in its design. The problem is that when it is powered up it momentarily switches its relay creating an unintended flow of energy. The problem occurs because of the pin used by the shield which turns on ESP8266 boot. To fix this problem the board route to that pin must be cut using a cutting tool or small Dremel and remapped to another pin such as GPIO3 that doesn't have this inherent issue. Finnaly the micro controller must be reprogrammed to utilise the new pin intended. 
 
-The following solution described here was employed https://github.com/IOT-MCU/ESP-01S-Relay-v4.0/issues/1#issuecomment-808784642
-
+The solution described here was employed https://github.com/IOT-MCU/ESP-01S-Relay-v4.0/issues/1#issuecomment-808784642
 
 The following folder contains the ESP8266 source code utilizing the GPIO pin 3 as well as connecting to the Agrofelis robot default Wifi network. 
 
 - [src/ESP8266Relay/](src/ESP8266Relay/)
-
 
 ## Power system components 
 
@@ -231,11 +222,9 @@ The following table lists the individual components employed for manufacturing t
 | #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.0 | 3.0 | programs the wifi relay |
 | **Total** |      |    |     |      |     |  **1,509.28**  | | 
 
-
 </div>
 
 The total cost to manufacture the Agrofelis power system, exclusive of shipping and labor cost, totals approximately **1,509** euros.
-
 
 # Conclusion
 

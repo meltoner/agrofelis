@@ -1,4 +1,5 @@
-# Agrofelis Motors Hub Driver
+# Agrofelis Motors Hub Driver Design and Fabrication
+
 # Abstract
 
 This document delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. 
@@ -16,7 +17,6 @@ Two such modules are employed in the Agrofelis robot, to achieve four wheel driv
 Find below a photo of the implemented module, positioned within the front and the back enclosures of the vehicle.
 
 ![Actual implementation of the motors hub driver module](_figures/motors_hub_driver_1_real.jpg)
-
 
 In the following sections the structural and electronics sub-component of the unit, are documented.
 
@@ -64,7 +64,6 @@ The schematics and source files to cut and 3d print the *parts 1* and *2* are lo
 - [structural/box_fins/3d_print](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/structural/box_fins/3d_print)
 
 More specifically, the *laser cut* folder documents the procedure for exporting and transforming the Rhino diagrams into five SVG (scalable vector graphics) files and consequently to five NC (Numerical Control) instructions, used to cut the related parts. The *3d print* folder contains two STL (stereolithography) files and two Gcode (geometry code) instruction files for the inner and outer fins structural elements.
-
 
 ### Electronic sub-modules
 
@@ -135,7 +134,6 @@ The temperature sensors as positioned and secured using capton tape in the top p
 After the functionality of the board has been verified, the copper side of the PCB is shielded using hot glue to prevent corrosion and improve its longevity.
 
 ![The copper side of the PCB, shielded using hot glue](_figures/pcb-controller_hotglue.jpg)
-
 
 The schematics and source files to manufacture *part 1* using a regular CNC equipped with a drill, are located within the following folder:
 
@@ -228,9 +226,7 @@ Below, the module and details for establishing its components, are provided.
 
 ![Close up of the 20 amp Relay mounted on the PCB by interfacing with the triggering pins and the 30V power channel](_figures/pcb-powe_parts_details2.jpg)
 
-
 ![Close up photo of the current sensor, mounted on the PCB](_figures/pcb-powe_parts_details3.jpg)
-
 
 The bottom/copper side of the assembled module, is captured below.
 
@@ -242,14 +238,11 @@ The assembled module with its counterpart, are captured by the following photos.
 
 ![The two motor hub power modules ready to be mounted into the sides of the structural component](_figures/pcb-powe_parts_assembled2.jpg)
 
-
 After the functionality of the board was verified, the copper side of the PCB was shielded using hot glue to prevent corrosion and improve its longevity.
-
 
 The schematics and source files to manufacture *part 1* using a regular CNC equipped with a drill, are located within the following folder:
 
 - [pcb/PCB.CNC.power](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.power)
-
 
 More specifically. the folder documents the procedures for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
@@ -277,7 +270,6 @@ The first pattern indicating the paths visiting each hole to make and the second
 
 ![The PCB’s drilling and curving patterns](_figures/pcb-power_NC.png)
 
-
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover nine PCBs, is stored in the following folder:
 
 - [PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.PRINT.Stickers/motors_hub_driver-sticker-pcb-power_driver.pdf)
@@ -290,7 +282,6 @@ This sub-module of the Motors Hub Driver allows to interface 5v sensors with ESP
 Moreover, using an external ADAC the module can handle additionally 4 analog channels, enough so an ESP32 can operate and sense two motor drivers simultaneously.
 
 The module interfaces with the two current sensors signals of the power modules as well as with the six hall sensors, tracking the rotation of the motors hubs.
-
 
 The PCB is illustrated by the following figure.
 
@@ -334,7 +325,6 @@ The schematics and source files to manufacture *part 1* using a regular CNC equi
 
 - [pcb/PCB.CNC.adac](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac)
 
-
 More specifically the folder, documents the procedure for exporting and transforming the Rhino diagrams into two SVG files and consequently to two NC instructions files, enhanced using two custom JavaScript applications. 
 
 - [PCB.CNC.adac/readme.md](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/readme.md)
@@ -360,7 +350,6 @@ The end instructions to reproduce the board, are the:
 The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route, are illustrated by the following figure.
 
 ![The PCB’s drilling and curving patterns](_figures/pcb-adac_NC.png)
-
 
 The top non conductive cover of the PCB is enriched with a diagram printed in photographic paper, glued and punctured using a needle. The related PDF containing more than one diagram to cover, eight PCBs, is stored in the following folder:
 
