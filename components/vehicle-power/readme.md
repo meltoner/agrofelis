@@ -6,7 +6,7 @@ The document presents the Power related elements classifying the Agrofelis robot
 
 # Introduction
 
-The power module and its sub-elements is the most expensive module of the Agrofelis robot. A hefty 8 KW battery system was chosen in order to have the ability of an 8 hour shift on a moderate energy demand with work load peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panel systems were chosen, called LifePO4. The type of technology was chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, and their thermal and chemical stability. 
+The power module and its sub-elements is the most expensive module of the Agrofelis robot. A hefty 8 KW battery system was chosen in order to have the ability of an 8 hour shift on a moderate energy demand with work load peaking between 500 watt and 1000 watt. The latest most widely used type of batteries employed in off the grid solar panel systems were chosen, called LiFePO4. The type of technology was chosen for their unusual lifespan, high discharge rate, environmental friendliness high safety, low toxicity, their stable performance at fluctuating environmental temperatures, and their thermal and chemical stability. 
 
 A wide range of sensors were employed in the Agrofelis robot enabling the monitoring of the total discharge rate of the system as well as the power consumption of the individual components and actuators. Using various energy feedback sensors allows intelligent management of the system within the range of its highest efficiency thus prolonging its lifetime and the runtime of the robot. 
 
@@ -53,9 +53,9 @@ Most of the batteries especially those facing the outer side of the structure we
 
 ### Batteries fitting and isolation 
 
-Pieces of wood (plywood) were utilised to enclose the batteries within the frame, those shield the batteries from external temperature differences, compensate for minor accumulative dimension differences either in the batteries or in the fabrication of the frame and also have a softer material than metal touching the batteries which can also serve as a subtle shock absorber.
+Pieces of wood (plywood) were utilised to enclose the batteries within the frame, those shield the batteries from external temperature differences, compensate for minor accumulative dimension differences either in the batteries or in the fabrication of the frame and also having a softer material than metal touching the batteries is better which can also serve as a subtle shock absorber.
 
-The wood boards fit tightly and gently allow compressing forces onto the batteries preventing them from expanding during their charging and discharging cycles, which prolongs even further their lifetime. Lack of compression leads to damage of the cells, as indicated by swelling and premature battery failure [^LiFePOCompress].
+The wood boards fit tightly and gently so to allow compressing forces on the batteries preventing them from expanding during their charging and discharging cycles, which prolongs even further their lifetime. Lack of compression leads to damage of the cells, as indicated by swelling and premature battery failure [^LiFePOCompress].
 
 [^LiFePOCompress]: https://www.currentconnected.com/learning-center/lc-stor/llfp-comp/ "LiFePO4 Cell Compression" 
 
@@ -67,7 +67,7 @@ The following diagram illustrates and enumerates the 10 plywood pieces filling t
 
 ![04-covers-exploded](_figures/vehicle-power-04-covers-exploded.png)
 
-The 10th piece inserted last, secures the batteries when in place and helps dismantling the batteries when its removed. The backside of the battery compartment neighboring with the back compartment of the vehicle is isolated using a plexiglass piece (part 11) because of its flexibility and durability.
+The 10th piece inserted last, secures the batteries when in place and helps removing the batteries when its removed. The backside of the battery compartment neighboring with the back compartment of the vehicle is isolated using a plexiglass piece (part 11) because of its flexibility and durability.
 
 The enumerated wooden pieces with their dimensions and thickness are documented by the following schematic.
 
