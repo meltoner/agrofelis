@@ -211,7 +211,7 @@ Hercules Metaxas
 Anastasios Pliatsikas
 
 
-Special Thanks to
+Special Thanks to:
 
 Dimitris Kouzis Lukas, for his support and electronics knowledge
 Christos Spetseris, from Qoop Metalworks for his design and 3d CAD training support
