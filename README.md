@@ -174,6 +174,8 @@ A representative depiction of the progression in crafting the motor hub driver i
 
 ## Orchestration software
 
+## Two degree rotating implement mount
+
 
 ## Cost Estimation Overview
 
@@ -201,5 +203,5 @@ The table showcased below provides a breakdown of the necessary construction com
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **1,092** euros, exclusive of shipping and assembly costs.
+Consequently, we observe that the total manufacturing cost for the Agrofelis robot is approximately **2,697.32** euros, exclusive of shipping and assembly costs.
 
