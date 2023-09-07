@@ -220,7 +220,7 @@ Consequently the total manufacturing cost for the Agrofelis robot is **2,697.32*
 - Pantelis Nasikas, for his technical advice in C++ programming. 
 - Petros Morfiris, for his R shiny app Lidar analysis prototype implementation.
 - Elias Farlekas, for sharing his expertise in farming operations & cultivation practices. 
-- Luka Drašak, for his photographic and video recording support during the fields tests.
+- Luka Drašak, for his photographic and video recording support during the field tests.
 - The crew of the Myrtia Fire Station in Southern Greece for sharing fire fighting tactics. 
 - Hellas Digital, for their excitement and discussions about the robotic vehicle.
 
