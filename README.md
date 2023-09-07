@@ -67,7 +67,6 @@ Furthermore, the project implements a two-degrees-of-freedom actuator rotating b
 
 In addition to its wired infrastructure, the system supports a range of connectivity options, including Bluetooth for local wireless attachments, Wi-Fi for nearby controllers, mobile phones and/or modules.
 
-An underlying IoT service allows the deployment of new firmware for the system's individual components and its behavioral functions as well as access to real-time and recorded data.
 
 [![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/embed/DgkQkJUQ_kc)
 
