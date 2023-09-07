@@ -168,6 +168,12 @@ A representative depiction of the progression in crafting the motor hub driver i
 
 ![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
 
+## Lidar Front sensors
+
+## Micro controllers
+
+## Orchestration software
+
 
 ## Cost Estimation Overview
 
