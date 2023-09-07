@@ -1,8 +1,8 @@
 # Agrofelis Robot
 
-### A Multipurpose Energy Dense, Implement Carrier Agricultural Robot.
+## Multipurpose Energy-Dense, Implement Carrier Agricultural Robot.
 
-### A Programmable, AI ready, Precision Agriculture base vehicle.
+### A Programmable, AI-Ready Precision Agriculture Base Vehicle.
 
 Design plans and system source code repository.
 
