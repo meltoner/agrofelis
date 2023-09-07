@@ -70,6 +70,11 @@ In addition to its wired infrastructure, the system supports a range of connecti
 An underlying IoT service allows the deployment of new firmware for the system's individual components and its behavioral functions as well as access to real-time and recorded data.
 
 
+<div class="video_container">
+	<iframe src="https://www.youtube-nocookie.com/embed/DgkQkJUQ_kc" frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+
+
 # Documentation
 
 In the following sections, the detailed documentation of all developed modules constituting the Agrofelis robot, are referenced along with their abstracts and figures highlights, are being over-viewed. The documents present the rational of each module, how they are decomposed into sub parts and sub-components, how to reproduce them by following step wise procedures using schematics and photos taken during their fabrication. The documents moreover provide indicative suppliers and total cost estimations.
