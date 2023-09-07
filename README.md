@@ -222,3 +222,7 @@ Consequently the total manufacturing cost for the Agrofelis robot is **2,697.32*
 - Elias Farlekas, for sharing his expertise in farming operations & cultivation practices. 
 - The crew of the Myrtia Fire Station in Southern Greece for sharing fire fighting tactics. 
 - Hellas Digital, for their excitement and discussions about the robotic vehicle.
+
+## Contact us
+
+Contact us at info at agrofelis dot com
