@@ -347,7 +347,7 @@ The end instructions to reproduce the board, are the:
 - [1_DRILL.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/1_DRILL.normalised.enhanced.nc)
 - [2_CURVE.normalised.enhanced.nc](https://github.com/meltoner/agrofelis/blob/main/components/mobility/motors_hub_driver/pcb/PCB.CNC.adac/2_CURVE.normalised.enhanced.nc)
 
-The first pattern indicating the paths visiting each drill to make and the second pattern indicating the curves to route, are illustrated by the following figure.
+The first pattern indicating the paths each drill follows and the second pattern indicating the curves to route, are illustrated by the following figure.
 
 ![The PCB’s drilling and curving patterns](_figures/pcb-adac_NC.png)
 
@@ -369,7 +369,7 @@ The repository contains two instances of the C++ software, corresponding to the 
 
 ### Driver structure
 
-This Agrofelis Motors Hubs driver software adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline establishes a context class that is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger functionalities at the desired intervals. A gyroscope, or in our case the hall sensors, for example, need to be triggered far more frequently than a GPS or potentiometer sensor. As a bootstrap template, the software provide 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
+This Agrofelis Motors Hubs driver software adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline establishes a context class that is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger functionalities at the desired intervals. A gyroscope, or in our case the hall sensors, for example, need to be triggered far more frequently than a GPS or potentiometer sensor. As a bootstrap template, the software provides 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
 
 The software encodes easy to follow concrete implementations such as current sensors and motor(s), resulting in a one-to-one mapping between the physical element and its respective software counterpart.
 
@@ -389,14 +389,14 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |ADAC|Class establishing the unctions for utilizing the MCP3008 8 channel 10 bit analog ADAC paired with a level shifter connected using the SPI interface|
 |Sensor | Base class wrapping the functions conveying a sensor. The class reads an analogue port when the apply function is being triggered. The class maintains a gated smoothing read out of the sensor by comparing the previous mean with the current read value. Moreover, when a movement is detected based on the absolute difference of the first derivative, a boolean flag is maintained. Lastly, it prints out the object's internal state on print(), reflecting the sensor's port, smoothed value, un-smoothed sensor value and whether or not the sensor is detecting a movement. |
 |SensorADACCurrent | Class extending the *Sensor class* reading the date over the ADAC and implementing the specialties of a current sensor. The class translates raw sensor values to amperage. Moreover, because the current sensor reads rapid current spikes that can be missed, the class maintains a decaying max read value that is renewed based on the maximum observed value within a time window. |
-|SensorHalls| The class reads and decodes the 3 hall sensor values in high frequency and derives the rotational change in positive or negative rotation. The class can detect a problem in the ADAC interface, detect that there is power as well as if the sensors have missed a step. Last the class tracks the cumulative rotation of the wheel, corresponding to an odometer as well as an absolute position. The class is utilised by the Motor class. |
-|Motor| The class implements the control and sensing of the motor by utilizing the SensorADACCurrent, the SensorHalls and the temperature sensor. The class tracks the motor's state, current, projected and desired rotational speed to adapt accordingly the voltage input driving the motor. The class implements the function to rotate the motor either forward or backwards or to maintain a particular rotational speed via the feedback mechanism accounting for external factors, such as resistance. The class tracks the temperature and current and cuts off the power to the module if excessive heat or current is detected. The class moreover allows for an external actor to set a positive or negative impulse in the computation for example to synchronize it with its counterpart motor. The class is instantiated with the board port mappings, enabling its re-usability. |
-|MotorsHubController| The class implements the control code to actuate two motors in an adaptive synchronized way.  It extends the *CommandParser* and defines the applicable commands that drive the actuators. Furthermore, the class publishes the internal state of the Motors, their sensors and their states. The class cam monitor the rotational speed difference of the motors and adapts them in order to maintain the desired synchronized or differential motion of the left and right in-wheel motor hubs. |
+|SensorHalls| The class reads and decodes the 3 hall sensor values in high frequency and derives the rotational change in positive or negative rotation. The class can detect a problem in the ADAC interface, detect if there is power and also detect if the sensors have missed a step. Lastly the class tracks the cumulative wheel rotation, functioning as an odometer as well as an absolute position. The class is utilised by the Motor class. |
+|Motor| The class implements the control and sensing of the motor by utilizing the SensorADACCurrent, the SensorHalls and the temperature sensor. The class tracks the motor's state, current, projected and desired rotational speed and adapts the voltage driving the motor accordingly. The class implements the function to rotate the motor either forward or backwards or to maintain a particular rotational speed via the feedback mechanism accounting for external factors, such as resistance. The class tracks the temperature and current and cuts off the power to the module if excessive heat or current is detected. The class moreover allows for an external actor to set a positive or negative impulse in the computation, for example to synchronize it with its counterpart motor. The class is instantiated with the board port mappings, enabling its re-usability. |
+|MotorsHubController| The class implements the control code to actuate two motors in an adaptive synchronized way. It extends the *CommandParser* and defines the applicable commands that drive the actuators. Furthermore, the class publishes the internal state of the Motors, their sensors and their states. The class cam monitor the rotational speed difference of the motors and adapts them in order to maintain the desired synchronized or differential motion of the left and right in-wheel motor hubs. |
 
 
 ### Single Page Web Application
 
-The Agrofelis motor hub driver establishes a websocket server implementing a message protocol reflecting in a standardised way the indicator data of the module as well to control its exposed commands. Consequently, multiple agents can tap into this channel and operate its functionality. One such "agent" has been implemented in the form of a client side web application. The html web application follows a simple pattern where html element encode that for example this input corresponds to command 3 which corresponds to speed. Moreover, by simply setting the class of an input element, to sensor it will automatically reflect the value received by the Motor hub. A common js file reads the structure of the html and using very few annotations reflects the sensor values of the motors hub driver in the html. Likewise listens for input modifications and submits the related command to the module. 
+The Agrofelis motor hub driver establishes a websocket server implementing a message protocol reflecting in a standardised way the indicator data of the module as well to control its exposed commands. Consequently, multiple agents can tap into this channel and operate its functionality. One such "agent" has been implemented in the form of a client side web application. The html web application follows a simple pattern where an html element encodes that for example X input corresponds to Y command which corresponds to speed. Moreover, by simply setting the class of an input element, to sensor it will automatically reflect the value received by the Motor hub. A common js file reads the structure of the html and using very few annotations reflects the sensor values of the motors hub driver in the html. Likewise listens for input modifications and submits the related command to the module. 
 
 Each of the Motor hub drivers can be accessed also via lightweight standalone web applications enabling to review the internal state of the module as well as to control it.
 The two respective applications, differentiating mostly to specify which Sensor identifiers they should tap to, are available in the following paths 
@@ -491,7 +491,7 @@ In terms of fabricating the motor hub power driver, the overall cost, excluding 
 
 ### Motors hub ADAC module
 
-Finally, the ensuing table outlines the constituents comprising the components of the [motors hub ADAC module](#motors-hub-adac-components).
+Finally, the ensuing table outlines the components and coresponding vendors of the [motors hub ADAC module](#motors-hub-adac-components).
 
 <div align="center">
 
@@ -510,7 +510,7 @@ Finally, the ensuing table outlines the constituents comprising the components o
 
 </div>
 
-So, we observe that the estimated cost for producing the motor hub ADAC amounts to approximately **18** euros, excluding shipping and assembly charges.
+So, the estimated cost for producing the motor hub ADAC amounts to approximately **18** euros, excluding shipping and assembly charges.
 
 ### Cost estimation overview
 
