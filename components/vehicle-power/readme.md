@@ -117,7 +117,7 @@ Despite the fact that various protection mechanisms are incorporated downstream 
 
 Charging the battery is accomplished by tapping into the positive and negative copper bar terminal power distributors. Two high-current cable are attached with the terminal and an Anderson[^Anderson] connector. The Anderson connector is conveniently located on the inner side of the door, allowing easy access to the socket for charging or connecting external implements. A moderate 40A, 29.2V LiFePO4 battery charger was chosen for its cost-effectiveness and relatively acceptable theoretical charging time of less than 6 hours. Provided a larger battery charger of 150 amps, matching the maximum charging capacity of the system, would complete a charging cycle within 1.5 hours. 
 
-[^Anderson]: https://en.wikipedia.org/wiki/Anderson_Powerpole "Anderson Powerpole - wikipedia" 
+[^Anderson]: https://en.wikipedia.org/wiki/Anderson_Powerpole "Anderson Powerpole - Wikipedia" 
 
 The following photo showcases the 40amp/29.2Volt LiFePO4 battery charger.
 
@@ -198,29 +198,29 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|-----------------|------------|-----|---|---|---|---|
-| #1 | 302A LiFePO4 CATL battery cells | [LiFePO4](https://www.alibaba.com/product-detail//Dongguan-Lightning-Grade-A-3-2V_1600863448967.html) | [Dongguan](https://shandian.en.alibaba.com/minisiteentrance.html) | 8 | 113.0 | 904.0 | - |
-| #2 | Daly BMS LiFePo 8S 250A Smart| [BMS]( https://www.aliexpress.com/item/1005003399024799.html) | [aliexpress](https://www.aliexpress.com/) | 1 |160.27 |160.27 | - |
-| #3 | Lifepo4 8S 40A battery charger | [battery charger](https://www.aliexpress.com/item/1005002718132948.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 130.43 | 130.43 | - |
-| #4 | 250Ah Circuit Breaker Power | [Circuit Breaker Power](https://www.aliexpress.com/item/1005005122147376.html) | [aliexpress](https://www.aliexpress.com/) | 1 |  5.39 | 5.39 | - |
-| #5 | Battery disconnect switch SLO-BDS-1 | [battery switch](https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/) | [aenaoshop](https://aenaoshop.gr) | 1 | 39.73 | 39.73 | - | 
-| #6 | 80 amp relay | [80 amp relay](https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html) |[electronio](https://www.electronio.gr) | 2 | 8.23 | 16.46 | - | 
-| #7 | Row Copper Bar Terminal Power Distribution 8 Hole, With Base | [Bar Power Distribution](https://www.aliexpress.com/item/1005004769462897.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 7.19 | 14.38 | - |
-| #8 | 70mm 10 Meter Battery Insulation | [Battery Insulation](https://www.aliexpress.com/item/4000241950870.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 14.06 | 14.06 | - |
-| #9 | 80mm Kapton Thermal Insulation Adhesive Tape | [Kapton tape](https://www.aliexpress.com/item/1005005565776871.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 16.35 | 16.35 | - | 
-| #10 | 50M, 8mm Insulated Braided Sleeving Data line protection | [cable protection](https://www.aliexpress.com/item/4000603152552.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 16.16 | 16.16 | - |
-| #11 | Copper tape 50mm, 20M, One roll | [Copper tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
-| #12 | LTC3780 DC-DC 5-32V to 1V-30V 10A Automatic Step Up Down | [Step down](https://www.aliexpress.com/item/1005004908577986.html) | [aliexpress](https://www.aliexpress.com/) | 3 | 7.23 | 21.69 | - | 
-| #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 1.0 | 2.0 | - |
-| #14 | 1N5819 5819 1A 40V Schottky Diode | [Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/) | [hellasdigital](https://www.hellasdigital.gr)| 2 | 0.10 | 0.20 | - | 
-| #15 | 1m black and red 2 awg cable | [2 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 44.10 | 44.10 | - |
-| #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.20 | - |
-| #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [aliexpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
-| #18 | 2pcs 50A Quick Plug Battery Charging Connector | [aliexpress](https://www.aliexpress.com/) | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | 1 | 3.80 | 3.80 | - |
-| #19 | 328pcs Heat Shrink Tube Assortment| [Heat Shrink Tube](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/328pcs-heat-shrink-tube-assortment/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.47 | 3.47 | Shared resource | 
-| #20 | 10 pcs Adhesive Hot Melt | [Hot Glue](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 4.96 | 4.96 | Shared resource |
-| #21 | 100g 0.8mm Welding Line Solder Wire | [Solder](https://www.hellasdigital.gr/electronics/tools-and-peripherals/100g-0.8mm-welding-line-solder-wire/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 5.46 | 5.46 | Shared resource |
-| #22 | Wago 5 Way Electrical Wire Connector | [Wire Connector](https://www.hellasdigital.gr/electronics/components/wago-5-way-electrical-wire-connector-insulating-spring-lever-reusable-connector-pct-215/) | [hellasdigital](https://www.hellasdigital.gr) | 4 | 1.0 | 4.0 | | - |
-| #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [hellasdigital](https://www.hellasdigital.gr) | 1 | 3.0 | 3.0 | programs the wifi relay |
+| #1 | 302A LiFePO4 CATL battery cells | [LiFePO4](https://www.alibaba.com/product-detail//Dongguan-Lightning-Grade-A-3-2V_1600863448967.html) | [Dongguan](https://shandian.en.alibaba.com/minisiteentrance.html) | 8 | 113.00 | 904.00 | - |
+| #2 | Daly BMS LiFePO4 8S 250A Smart| [BMS]( https://www.aliexpress.com/item/1005003399024799.html) | [AliExpress](https://www.aliexpress.com/) | 1 |160.27 |160.27 | - |
+| #3 | LiFePO4 8S 40A battery charger | [battery charger](https://www.aliexpress.com/item/1005002718132948.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 130.43 | 130.43 | - |
+| #4 | 250Ah Circuit Breaker Power | [Circuit Breaker Power](https://www.aliexpress.com/item/1005005122147376.html) | [AliExpress](https://www.aliexpress.com/) | 1 |  5.39 | 5.39 | - |
+| #5 | Battery disconnect switch SLO-BDS-1 | [battery switch](https://aenaoshop.gr/product/battery-disconnect-switch-slo-bds-1/) | [AenaoShop](https://aenaoshop.gr) | 1 | 39.73 | 39.73 | - | 
+| #6 | 80-amp relay | [80 amp relay](https://www.electronio.gr/rele-relay-autokinitou-spdt-ucoil-12v-dc-80a-1.8w-am3-12p-5-epafes.html) |[Electronio](https://www.electronio.gr) | 2 | 8.23 | 16.46 | - | 
+| #7 | Row Copper Bar Terminal Power Distribution 8 Hole, With Base | [Bar Power Distribution](https://www.aliexpress.com/item/1005004769462897.html) | [AliExpress](https://www.aliexpress.com/) | 2 | 7.19 | 14.38 | - |
+| #8 | 70mm 10 Meter Battery Insulation | [Battery Insulation](https://www.aliexpress.com/item/4000241950870.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 14.06 | 14.06 | - |
+| #9 | 80mm Kapton Thermal Insulation Adhesive Tape | [Kapton tape](https://www.aliexpress.com/item/1005005565776871.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 16.35 | 16.35 | - | 
+| #10 | 50M, 8mm Insulated Braided Sleeving Data line protection | [cable protection](https://www.aliexpress.com/item/4000603152552.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 16.16 | 16.16 | - |
+| #11 | Copper tape 50mm, 20M, One roll | [Copper tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
+| #12 | LTC3780 DC-DC 5-32V to 1V-30V 10A Automatic Step Up Down | [Step down](https://www.aliexpress.com/item/1005004908577986.html) | [AliExpress](https://www.aliexpress.com/) | 3 | 7.23 | 21.69 | - | 
+| #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [AliExpress](https://www.aliexpress.com/) | 2 | 1.00 | 2.00 | - |
+| #14 | 1N5819 5819 1A 40V Schottky Diode | [Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/) | [Hellas Digital](https://www.hellasdigital.gr)| 2 | 0.10 | 0.20 | - | 
+| #15 | 1m black and red 2 awg cable | [2 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 44.10 | 44.10 | - |
+| #16 | 2m black, red 6 awg cable | [6 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [AliExpress](https://www.aliexpress.com/) | 2 | 22.10 | 44.20 | - |
+| #17 | 5m black and red 10 awg cable | [10 awg cable](https://www.aliexpress.com/item/1005002911374376.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 35.10 | 35.10 | - |
+| #18 | 2pcs 50A Quick Plug Battery Charging Connector | [50A Anderson Connector](https://www.aliexpress.com/item/1005004917902305.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 3.80 | 3.80 | - |
+| #19 | 328pcs Heat Shrink Tube Assortment| [Heat Shrink Tube](https://www.hellasdigital.gr/electronics/prototyping/cables-pins/328pcs-heat-shrink-tube-assortment/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 3.47 | 3.47 | Shared resource | 
+| #20 | 10 pcs Adhesive Hot Melt | [Hot Glue](https://www.hellasdigital.gr/electronics/tools-and-peripherals/10-pcs-7mm-x-19cm-adhesive-hot-melt-glue-sticks-for-trigger-electric-gun-hobby-craft-white/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 4.96 | 4.96 | Shared resource |
+| #21 | 100g 0.8mm Welding Line Solder Wire | [Solder](https://www.hellasdigital.gr/electronics/tools-and-peripherals/100g-0.8mm-welding-line-solder-wire/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 5.46 | 5.46 | Shared resource |
+| #22 | Wago 5 Way Electrical Wire Connector | [Wire Connector](https://www.hellasdigital.gr/electronics/components/wago-5-way-electrical-wire-connector-insulating-spring-lever-reusable-connector-pct-215/) | [Hellas Digital](https://www.hellasdigital.gr) | 4 | 1.00 | 4.00 | - |
+| #23 | USB To RS232 TTL | [USB To RS232 TTL](https://www.hellasdigital.gr/electronics/prototyping/adapters/usb-to-rs232-ttl-ch340g-converter-module/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 3.00 | 3.00 | Programs the wifi relay |
 | **Total** |      |    |     |      |     |  **1,509.28**  | | 
 
 </div>
