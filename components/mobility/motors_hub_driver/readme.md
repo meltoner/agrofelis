@@ -380,11 +380,10 @@ The software monitors all sensors, detects hardware errors, allows to remotely a
 
 The following table indexes and summarizes the implemented classes of the Agrofelis Motors hub driver software.
 
-
 | Class | Description | 
 |----|------------------|
 |DualMotorDriverBack.ino and DualMotorDriverFront.ino | Boots the application, initialises the top classes and encodes the triggering frequencies of various functional elements. |
-|Context | Provides a common ground for sharing information and encodes the triggering frequencies, helpful functions and a unique identifier of the model. The object more over hosts the two DallasTemperature sensors reading facilities by tapping to the Onewire interface. |
+|Context | Provides a common ground for sharing information and encodes the triggering frequencies, helpful functions and a unique identifier of the model. The object more over hosts the two DallasTemperature sensors reading facilities by tapping to the Onewire interface. The class also encodes the identifier of the module, annotating the reflected indicator data.|
 |Invoker | Tracks the execution frequencies so these are called at the right time. |
 |CommandParser | Base class for monitoring and parsing the web socket interface. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
 |ADAC|Class establishing the unctions for utilizing the MCP3008 8 channel 10 bit analog ADAC paired with a level shifter connected using the SPI interface|
@@ -414,7 +413,7 @@ Both of the html files utilise the following [assets](assets/) :
 |agrofelis_logo_white_web.svg|The scalable vector graphic logo of the project |
 |jquery.min.js|minified js library dependency [JQuery](https://jquery.com/) |
 
-Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable assisting the rapid prototyping.
+Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable, assisting the rapid prototyping.
 
 ### Unificator
 
