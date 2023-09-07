@@ -208,7 +208,7 @@ The following table lists the individual components employed for manufacturing t
 | #8 | 70mm 10 Meter Battery Insulation | [Battery Insulation](https://www.aliexpress.com/item/4000241950870.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 14.06 | 14.06 | - |
 | #9 | 80mm Kapton Thermal Insulation Adhesive Tape | [Kapton Tape](https://www.aliexpress.com/item/1005005565776871.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 16.35 | 16.35 | - | 
 | #10 | 50M, 8mm Insulated Braided Sleeving Data line protection | [Cable Protection](https://www.aliexpress.com/item/4000603152552.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 16.16 | 16.16 | - |
-| #11 | Copper tape 50mm, 20M, One roll | [Copper tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
+| #11 | Copper tape 50mm, 20M, One roll | [Copper Tape 50mm](https://www.aliexpress.com/item/1005003122151710.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 20.07 | 20.07 | - |
 | #12 | LTC3780 DC-DC 5-32V to 1V-30V 10A Automatic Step Up Down | [Step Down](https://www.aliexpress.com/item/1005004908577986.html) | [AliExpress](https://www.aliexpress.com/) | 3 | 7.23 | 21.69 | - | 
 | #13 | ESP8266 ESP-01/01S 5V WiFi Relay Module | [WiFi Relay](https://www.aliexpress.com/item/4000348370586.html) | [AliExpress](https://www.aliexpress.com/) | 2 | 1.00 | 2.00 | - |
 | #14 | 1N5819 5819 1A 40V Schottky Diode | [Diode](https://www.hellasdigital.gr/electronics/components/diode/1n5819-5819-1a-40v-schottky-diode/) | [Hellas Digital](https://www.hellasdigital.gr)| 2 | 0.10 | 0.20 | - | 
