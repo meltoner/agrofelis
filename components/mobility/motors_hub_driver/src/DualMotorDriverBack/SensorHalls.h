@@ -15,7 +15,7 @@ class SensorHalls{
     void setup(Context &_context, byte pin5, byte pin6, byte pin7, bool _opositeSpin );
 
     /*
-    * Reads the SensorHalls 3 read values calls the process function computing a change of degree positive or regular.
+    * Reads the SensorHalls 3 read values calls the process function computing a change of degree positive or negative.
     */
     void apply();
 
