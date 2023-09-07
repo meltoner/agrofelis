@@ -116,11 +116,11 @@ An indicative selection of figures from the Agrofelis forks design and fabricati
 
 ## Agrofelis Power System Design and Fabrication
 
-The [Power System Design and Fabrication](components/vehicle-power) presents the Power related elements classifying the Agrofelis robot as an energy dense solution. The battery technology employed and the choice of their capacity, management, monitoring and charging is elaborated. The batteries arrangement for minimizing the vehicle's footprint, their protective enclosure and their cable connectivity schematics are documented. The power distribution, the different voltages energizing the various electronics along with the protective mechanisms are documented. Moreover the document describes the WiFi relays and how to make them more robust. The documentation also lists all the utilised components, their price along with indicative suppliers facilitating the reproducibility of the system. 
+The [power system design and fabrication](components/vehicle-power) document delves into the power-related components that classify the Agrofelis robot as an energy-dense solution. The battery technology employed, as well as the capacity, management, monitoring, and charging options, are elaborated. The battery arrangement for minimizing the vehicle's footprint, as well as its protective enclosure and cable connectivity schematics, are all documented. In addition, the power distribution, the different voltages energizing the various electronics, along with the protective mechanisms are documented. Furthermore, the document describes the WiFi relays and how to make them more robust. The documentation also lists all the utilised components, their prices, along with indicative suppliers facilitating the reproducibility of the system.
 
 The complete documentation of the Agrofelis Power System is provided below.
 
-- [Power System Design and Fabrication document](components/vehicle-power)
+- [Power system design and fabrication](components/vehicle-power)
 
 A selection of figures from the Agrofelis Power System documentation, is presented by the following figure. 
 
