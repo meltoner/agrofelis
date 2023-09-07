@@ -357,7 +357,7 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
-## Software 
+## Agrofelis Motors Hubs Software 
 
 The software of the modules is contained within [src folder](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src). The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. 
 
@@ -367,8 +367,7 @@ The repository contains two instances of the C++ software, corresponding to the 
 - [DualMotorDriverBack](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriverBack)
 
 
-### Agrofelis Motors Hubs driver Application Structure
-
+### Driver structure
 
 This Agrofelis Motors Hubs driver software adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline establishes a context class that is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger functionalities at the desired intervals. A gyroscope, or in our case the hall sensors, for example, need to be triggered far more frequently than a GPS or potentiometer sensor. As a bootstrap template, the software provide 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
 
@@ -396,7 +395,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |MotorsHubController| The class implements the control code to actuate two motors in an adaptive synchronized way.  It extends the *CommandParser* and defines the applicable commands that drive the actuators. Furthermore, the class publishes the internal state of the Motors, their sensors and their states. The class cam monitor the rotational speed difference of the motors and adapts them in order to maintain the desired synchronized or differential motion of the left and right in-wheel motor hubs. |
 
 
-### Single Page Applications
+### Single Page Web Application
 
 The Agrofelis motor hub driver establishes a websocket server implementing a message protocol reflecting in a standardised way the indicator data of the module as well to control its exposed commands. Consequently, multiple agents can tap into this channel and operate its functionality. One such "agent" has been implemented in the form of a client side web application. The html web application follows a simple pattern where html element encode that for example this input corresponds to command 3 which corresponds to speed. Moreover, by simply setting the class of an input element, to sensor it will automatically reflect the value received by the Motor hub. A common js file reads the structure of the html and using very few annotations reflects the sensor values of the motors hub driver in the html. Likewise listens for input modifications and submits the related command to the module. 
 
@@ -405,7 +404,6 @@ The two respective applications, differentiating mostly to specify which Sensor 
 
 - [MotorsHubControllerBack.html](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/web-app/MotorsHubControllerBack.html)
 - [MotorsHubControllerFront.html](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/web-app/MotorsHubControllerFront.html)
-
 
 Both of the html files utilise the following [assets](assets/) :
 
@@ -425,8 +423,6 @@ The motors hub driver application runtime information and its modules can also b
 ![Agrofelis Unificator](_figures/AgrofelisUnificator-snapshot.png)
 
 The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
-
-
 
 ## Power distribution module
 
