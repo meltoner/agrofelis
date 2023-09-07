@@ -414,7 +414,7 @@ Both of the html files utilise the following [assets](assets/) :
 |agrofelis_logo_white_web.svg|The scalable vector graphic logo of the project |
 |jquery.min.js|minified js library dependency [JQuery](https://jquery.com/) |
 
-Special care has been devoted so the setup and code is very lightweight, clean and straightforward to in order to be easily modifiable assisting the rapid prototyping.
+Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable assisting the rapid prototyping.
 
 ### Unificator
 
