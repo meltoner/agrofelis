@@ -69,7 +69,7 @@ In addition to its wired infrastructure, the system supports a range of connecti
 
 An underlying IoT service allows the deployment of new firmware for the system's individual components and its behavioral functions as well as access to real-time and recorded data.
 
-[![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg](https://www.youtube.com/embed/DgkQkJUQ_kc)
+[![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/embed/DgkQkJUQ_kc)
 
 # Documentation
 
