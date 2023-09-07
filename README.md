@@ -37,7 +37,7 @@ Introducing a remote control system capable of automating certain operations thr
 
 Within the scope of an agricultural vehicle, a variety of technologies could be integrated, encompassing implements such as:
 - Grass Cutter/Lawn Mower: A frequent and necessary application in orchards.
-- Turbine Sprayers: Beneficial across orchards and vegetable cultivation for dispensing pesticides or water-soluble fertilizers.
+- Turbine Sprayers: Beneficial across orchards and vegetable cultivations for dispensing pesticides or water-soluble fertilizers.
 - Fog Sprayers: Enabling extended reach amidst dense foliage and providing antifreeze protection with glycerin oil.
 - Fertilizer Casting: A copious job essential for both orchards and vegetable crops.
 - Sensor Suite for Plant Data Collection: Facilitating comprehensive plant data acquisition, including diagnoses of plant diseases.
@@ -59,7 +59,7 @@ The chassis of the vehicle was designed with field agility, cost reduction and m
 
 The chassis implemented for the project is a carrying bar welded chassis with detachable components. It boasts a maximum carrying capacity of 250 kilograms of payload and for cost efficiency eschews suspension. A four wheel drive system is employed with energy efficient in-hub motors that are dynamically regulated through real-time feedback sensors. The steering system is composed of two independent linear actuators driven with mechanical and energy monitoring sensors.
 
-The power system boasts an energy autonomy of 8.8 kWh, conveniently fitting within a 1-square-meter space. It is composed of 8-element LiFePO4 batteries rated at 320 amps, paired with an intelligent battery management system at 250 amps discharge rate capacity and a data link enabling the utilization of energy-related indicators.
+The power system boasts an energy autonomy of 8.0 kWh, conveniently fitting within a 1-square-meter space. It is composed of 8-element LiFePO4 batteries rated at 302 amps, paired with an intelligent battery management system at 250 amps discharge rate capacity and a data link enabling the utilization of energy-related indicators.
 
 The processing elements of the system are modularized systems composed of Arduino or ESP32 modules connected with their relevant sensors and actuators acting on real-time adaptations, while being orchestrated via a Jetson Nano GPU running on Linux and using Web Sockets to allow implementation for interconnecting current and future components. A high-speed camera connected to the Jetson Nano enables the vision modality, augmented by a Coral AI accelerator, allowing machine vision tasks to be performed on the edge. A high-throughput drive (with read/write speeds of 250 MB/s) equips the system with 128GB of storage, enabling the robot to record and recall a substantial amount of offline and online data.
 
