@@ -214,6 +214,6 @@ Anastasios Pliatsikas
 Special Thanks to:
 
 Dimitris Kouzis Lukas, for his support and electronics knowledge. Christos Spetseris, from Qoop Metalworks for his design and 3d CAD training support.
-Giannis Vapelas, from Qoop Metalworks for letting us use the machine shop during weekends and supporting the DIY plasma cutter. Pantelis Nasikas, for his technical advice in C++ programming. Petros Morfiris, for his R shiny app Lidar analysis prototype implementation. Elias Farlekas, for sharing his expertise in farming operations & cultivation practices. Hellas Digital, for their excitement and discussions about the robotic vehicle.
+Giannis Vapelas, from Qoop Metalworks for letting us use the machine shop during weekends and supporting the DIY plasma cutter. Pantelis Nasikas, for his technical advice in C++ programming. Petros Morfiris, for his R shiny app Lidar analysis prototype implementation. Elias Farlekas, for sharing his expertise in farming operations & cultivation practices. The crue of the Myrtia Fire Station in Southern Greece for sharing fire fighting tactics. Hellas Digital, for their excitement and discussions about the robotic vehicle.
 
 
