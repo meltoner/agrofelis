@@ -129,7 +129,7 @@ The data provided by the UART interface are decoded by the library and are conve
 
 The following screenshot provide a peek at the data being transmitted and recorded by the Unficator server, for the Lidar and the mobility modules.
 
-[data peek](_figures/vehicle-lidar-20-data.jpg)
+![data peek](_figures/vehicle-lidar-20-data.jpg)
 
  
 
