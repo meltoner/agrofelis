@@ -201,7 +201,7 @@ The table showcased below provides a breakdown of the necessary construction com
 <div align="center">
 
 | Construction Component   | Sub-Total (€) |
-|---------------------|---------------|
+|---------------------|-------------------:|
 | [Chassis Frame](components/vehicle-frame/readme.md#chassis-components-and-indicative-suppliers)   | 155.47 |
 | [Wheels](components/vehicle-wheels/readme.md#wheel-components-and-indicative-suppliers)   | 575.20 |
 | [Wheel Forks](components/vehicle-forks#forks-components-and-indicative-suppliers)   | 53.30 |
