@@ -210,7 +210,7 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 | [Motors Hub Driver A](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
-| [3d Lidar sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
+| [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
 | **Total Cost**   | **2,856.14**   |
 
 </div>
