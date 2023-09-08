@@ -357,28 +357,27 @@ The top non conductive cover of the PCB is enriched with a diagram printed in ph
 
 ![Multiple layout covers of the PCB, printed on an A4 page, cut and glued on the top side of controller](_figures/motors_hub_driver-sticker-pcb-adac.png)
 
-## Agrofelis Motors Hubs Software 
+## Agrofelis Motors Hubs Software
 
-The software of the modules is contained within [src folder](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src). The software is composed of a C++ application and web application developed to reflect and control the internal state of the micro controller. 
+The software of the modules is contained within the [src folder](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src). The software is composed of a C++ application and web application developed to reflect and control the internal state of the microcontroller. 
 
-The repository contains two instances of the C++ software, corresponding to the front or the back motors hub drivers controlling in total 4 wheels persisted in the following paths. The software primarily differentiates in declaring the identifier of the module.
+The repository contains two instances of the C++ software, corresponding to the front or the back motor hub drivers, controlling a total of four wheels persisted in the following paths. The software primarily differentiates in declaring the identifier of the module.
 
 - [DualMotorDriverFront](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriverFront)
 - [DualMotorDriverBack](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/DualMotorDriverBack)
 
 
-### Driver structure
+### Driver Structure
 
-This Agrofelis Motors Hubs driver software adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline establishes a context class that is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger functionalities at the desired intervals. A gyroscope, or in our case the hall sensors, for example, need to be triggered far more frequently than a GPS or a potentiometer sensor. As a bootstrap template, the software provides 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
+This *Agrofelis Motors Hubs Driver Software* adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline pattern introduces a "context" class, which is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger specific functionalities at desired intervals. This design consideration accommodates components like the gyroscope, or in our case the hall sensors, which require much more frequent updates compared to components such as GPS or potentiometer sensors. As a bootstrap template, the software provides six different execution frequencies, ranging from 50 milliseconds to 5-second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
 
 The software encodes easy to follow concrete implementations such as current sensors and motor(s), resulting in a one-to-one mapping between the physical element and its respective software counterpart.
 
-The project uses an esp32 and various components to sense and control two motor hub drivers of 250w each. The module utilises web sockets to share the 
-internal state of the components as well as to control it. Via this method a solid interface with a compact protocol allows for multiple actors to view, control or relay the information of the module. The software initialises a web and a websocket server allowing furthermore, over the air firmware updates. The module consist of an esp32, a logic level shifter, two current sensors, six relays, two of which are connected in series with high (20 amp) amperage relay. 
+The core of the project revolves around an ESP32 microcontroller and various components used to sense and control two motor hub drivers, each capable of delivering 250 watts of power. The module leverages web sockets to share the internal state of the components as well as to control it. This approach provides a robust interface with a compact communication protocol, enabling multiple actors to view, control or relay information from the module. The software initializes both a web and a WebSocket server, facilitating over-the-air firmware updates. The module itself comprises an ESP32, a logic-level shifter, two current sensors and six relays, two of which are connected in series with a high-amperage relay (rated at 20 amps).
 
-The software monitors all sensors, detects hardware errors, allows to remotely action commands operating the module, adapts the voltages dynamically to reach and maintain the desired actuation across the two motors.
+The software monitors all sensors, detects hardware errors, allows to remotely action commands operating the module and adapts the voltages dynamically to reach and maintain the desired actuation across the two motors.
 
-The following table indexes and summarizes the implemented classes of the Agrofelis Motors hub driver software.
+The following table indexes and summarizes the implemented classes of the Agrofelis motors hub driver software.
 
 | Class | Description | 
 |----|------------------|
@@ -396,36 +395,36 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 
 ### Single Page Web Application
 
-The Agrofelis motor hub driver establishes a websocket server implementing a message protocol reflecting in a standardised way the indicator data of the module as well to control its exposed commands. Consequently, multiple agents can tap into this channel and operate its functionality. One such "agent" has been implemented in the form of a client side web application. The html web application follows a simple pattern where an html element encodes that for example X input corresponds to Y command which corresponds to speed. Moreover, by simply setting the class of an input element, to sensor it will automatically reflect the value received by the Motor hub. A common js file reads the structure of the html and using very few annotations reflects the sensor values of the motors hub driver in the html. Likewise listens for input modifications and submits the related command to the module. 
+The Agrofelis motor hub driver establishes a WebSocket server that implements a message protocol for reflecting in a standardized way the indicator data of the module and controlling its exposed commands. Consequently, multiple agents can tap into this channel and operate its functionality. One such "agent" has been implemented in the form of a client side web application. The HTML-based web application follows a simple pattern where HTML elements are tagged to correspond with specific commands. For instance, an input element might correspond to command 3, which controls speed. Moreover, by simply setting the class of an input element to “sensor”, it will automatically reflect the value received from the motor hub. A common JavaScript file parses the HTML structure and, with very few annotations, reflects motor hub sensor values in the HTML. Likewise, it listens for input modifications and submits the related command to the module.
 
-Each of the Motor hub drivers can be accessed also via lightweight standalone web applications enabling to review the internal state of the module as well as to control it.
-The two respective applications, differentiating mostly to specify which Sensor identifiers they should tap to, are available in the following paths 
+Each of the motor hub drivers can be accessed also via lightweight standalone web applications, enabling to review the internal state of the module as well as to control it.
+The two respective applications, differentiating mostly to specify which sensor identifiers they should tap into, are available in the following paths:
 
 - [MotorsHubControllerBack.html](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/web-app/MotorsHubControllerBack.html)
 - [MotorsHubControllerFront.html](https://github.com/meltoner/agrofelis/tree/main/components/mobility/motors_hub_driver/src/web-app/MotorsHubControllerFront.html)
 
-Both of the html files utilise the following [assets](assets/) :
+Both of the HTML files utilise the following [assets](assets/):
 
 |File | Description |
 |------|-----------------|
-|styles.css|Defines the css styles of the web application|
+|styles.css|Defines the css styles of the web application.|
 |motorsHubController.js|Establishes a web socket connection with the related IP of the module. Parses the HTML to identify the related sensors and actuators. Listens for interface changes as well as for websocket messages and according reflects or submits the related information. |
-|agrofelis_logo_white_web.svg|The scalable vector graphic logo of the project |
-|jquery.min.js|minified js library dependency [JQuery](https://jquery.com/) |
+|agrofelis_logo_white_web.svg|The scalable vector graphic logo of the project. |
+|jquery.min.js|minified js library dependency [JQuery](https://jquery.com/). |
 
 Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable, assisting the rapid prototyping.
 
 ### Unificator
 
-The motors hub driver application runtime information and its modules can also be accessed and controlled via the Agrofelis Unificator software, which is able to unify multiple Agrofelis modules connected from different interfaces (Serial, WiFi, Websockets, USB). Lightweight single page web applications can easily map, bind and monitor the internal state of two motor hub drivers and their sensors, as well as other modules as seen by the following screenshot.
+The motors hub driver application runtime information and its modules can also be accessed and controlled via the Agrofelis Unificator software, which is able to unify multiple Agrofelis modules connected via various interfaces, including Serial, WiFi, Websockets, and USB. Lightweight single-page web applications can easily map, bind and monitor the internal state of two motor hub drivers and their sensors, as well as other modules as seen by the following screenshot.
 
 ![Agrofelis Unificator](_figures/AgrofelisUnificator-snapshot.png)
 
-The [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software is documented in the related chapter of the Agrofelis documentation.
+For further details on the [Agrofelis Unificator](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) software, please refer to the related chapter in the Agrofelis documentation.
 
-## Power distribution module
+## Power Distribution Module
 
-The module receives power from the Power distribution module, documented in the related chapter of the documentation. [https://github.com/meltoner/agrofelis/tree/main/components/vehicle-power#switchable-power-points]
+The module receives power from the *power distribution module*, which is documented in the relevant chapter of the documentation. [https://github.com/meltoner/agrofelis/tree/main/components/vehicle-power#switchable-power-points]
 
 
 ## Motors Hub Components and Indicative Suppliers
