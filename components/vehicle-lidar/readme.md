@@ -150,7 +150,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |Invoker | Tracks the execution frequencies so these are called at the right time. |
 |SerialCommandParser | Base class for monitoring and parsing the serial interface data. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
 | Servo | Object representing a the tilt mechanism  actuating a servo motor. The object can be initialised with a limited target range, as much as scan the field without exceeding the physical limits of the mechanism. The class was used with a *TIANKONGRC RDS-8120 20KG ROBOT DIGITAL SERVO*. The class can be instantiated by providing the connected GPIO, the desired range to actuate from the applicable (0-180), which is then mapped to a the range of 0 to 100. |
-|CommandParser | Base class for monitoring and parsing the web socket interface. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
+|CommandParser | Base class for monitoring and parsing the Serial interface. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
 | LD06forArduino.ino | see Lidar_LD06_for_Arduino external dependency on github |
 |FrontSensorsController| The class extends the CommandParser allowing to externally control the tilt servo and the rotational speed of the Lidar |
 
