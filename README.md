@@ -6,9 +6,6 @@
 
 Design plans and system source code repository.
 
-www.agrofelis.com
-
-
 ![Agrofelis Robot in the vineyard with a pulse jet fogger](introduction/_figures/01_agrofelis-robot-in-the-field-vineyard.jpg)
 ![Agrofelis Robot schematics](introduction/_figures/02_agrofelis_desing.jpg)
 ![Agrofelis Robot in the vineyard downhill with a pulse jet fogger](introduction/_figures/03_agrofelis-robot-in-the-field-vineyard.jpg)
