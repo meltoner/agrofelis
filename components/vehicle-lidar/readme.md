@@ -160,7 +160,7 @@ An exploratory data analysis application was rapid prototype as a Shiny R applic
 
 The source code for the Shiny application can be accessed at the following path:
 
-[Shiny Lidar Analysis](src/shiny_lidar_analysis)
+- [Shiny Lidar Analysis](src/shiny_lidar_analysis)
 
 The application's source code comprises four files:
 
