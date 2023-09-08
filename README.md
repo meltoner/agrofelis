@@ -169,7 +169,7 @@ A representative depiction of the progression in crafting the motor hub driver i
 ![Agrofelis motors hub driver figures highlights](components/mobility/motors_hub_driver/_figures/hghlights_motors_hub_driver.jpg)
 
 
-## Agrofelis 3D Lidar front sensors design and fabrication
+## Agrofelis 3D Lidar Front Sensors Design and Fabrication
 
 The [3D Lidar front sensors design and fabrication](components/vehicle-lidar) document presents the front sensors module, used for implementing a 3d Lidar mount on the Agrofelis robot, enabling it to become aware of its surroundings. The module is composed of an ESP32, an ESP32 terminal adapter, a servo a Lidar, an MPU and a GPS sensor. The ESP32's main role is to process the Lidar serial data, read the motion sensor data, the GPS data and reflect their information over the USB bus. The module tilts the 2D Lidar capturing multiple 360 degree distance planes, accumulating a spherical 3D view of its surroundings. The rational of the module, its schematics, manufacturing steps, the software controlling the module and reflecting its information, as well as a Lidar data analysis tool developed, are presented. The document closes with the list of concluded components and indicative suppliers, assisting the repeatability of the module. 
 
@@ -183,11 +183,11 @@ A cherry picked selection of figures from the Agrofelis 3D Lidar front sensors d
 
 
 
-## Micro controllers
+## Microcontrollers
 
-## Orchestration software
+## Orchestration Software
 
-## Two degree rotating implement mount
+## Two Degree Rotating Implement Mount
 
 
 ## Cost Estimation Overview
