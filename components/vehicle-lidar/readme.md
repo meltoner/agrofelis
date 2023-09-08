@@ -123,7 +123,7 @@ In order to read the data from the ESP32 micro-controller the following open sou
 Although its reported to support the LD06 model, its functionality was verified for the LD19 as well. 
 The Lidar's cable was cut and connected to the Serial2 interface of ESP32 and a pwm capable GPUIO using the following correspondence.
 
-[Lidar pin cable correspondence](_figures/vehicle-lidar-cable-pins.png)
+![Lidar pin cable correspondence](_figures/vehicle-lidar-cable-pins.png)
 
 The data provided by the UART interface are decoded by the library and are converted to degrees, distances and confidence. The Afrofelis software of the module transmits the first two variables in real-time batches of arcs, and less frequently the applied tilt, the three orientations, the magnetic orientation, the GPS longitude, latitude and number of satellites locked on to.
 
