@@ -10,7 +10,7 @@ Equipping a robot with the ability to sense its surroundings enables a profound 
 
 The generated 3D maps can be indexed and recalled based on GPS truncated coordinates, compared to known maps, or set by the user. The motion processing unit (MPU) is attached directly beneath the Lidar and tilts with it. Its data can be used to derive the absolute orientation of the vehicle and the true point cloud when navigating on an uneven terrain.
 
-The following figure depicts how different tilting (azimouth) adjustments and the internal rotation of the lidar (polar), translate to x, y, and z coordinates.
+The following figure depicts how different tilting azimouths and the internal polar rotation of the Lidar translate to x, y, and z coordinates.
 
 ![planes](_figures/vehicle-lidar-00-planes.jpg)
 
@@ -19,13 +19,13 @@ In the subsequent sections, the Agrofelis front sensors 3D Lidar module design a
 
 ## Front Sensors Module
 
-The purpose of this module is to create a reusable module that can be installed on the front and/or back of the robot to provide complete coverage of its surroundings. Even though the module is not essential for the operation of the Agrofelis robot, this module renders it capable to navigate through the world and perform autonomous functions, as well as adapt its motors dynamic ranges better due to the additional data modalities that can be utilised. The module's prototype utilizes a terminal shield, making it easy to extend its functionality with other sensors like CO2 or humidity sensors without altering its core structure. Although the selected Lidar's internals are already enclosed in a dust and waterproof casing, further work should focus on extending the prototype to provide additional structural protection to its elements.
+The purpose of this module is to create a reusable module that can be installed on the front and/or back of the robot to provide complete coverage of its surroundings. Although the module is not neccessary for the operation of the Agrofelis robot, it renders it capable to navigate through the world and perform autonomous functions, as well as adapt its motor's dynamic ranges efficiently due to the additional data modalities that can be utilised. The module's prototype utilizes a terminal shield, making it easy to extend its functionality with other sensors like CO2 or humidity sensors without altering its core structure. Although the selected Lidar's internals are already enclosed in a dust and waterproof casing, further work could focus on extending the prototype to provide additional structural protection.
 
 The following figure depicts an overview of the vehicle with the relevant module installed on the front side. 
  
 ![lidar overview](_figures/vehicle-lidar-01-lidar-overview.png)
 
-To construct this module, a plate is attached to the frame cover's sockets using long bolts with nuts adjusting its height and securing the frame covers. Within the enclosure formed by the two iron plates, the electronics and power/data connection socket are established. On the top side of the plate, a GPS antenna is installed, along with a servo actuator positioned in the middle. A 70mm x 70mm piece of plywood is affixed to the top bracket of the servo. On top side of the plywood plate, the MPU (gyroscope and magnetometer) is installed. Finally, the Lidar is attached on top of the MPU using PCB standoffs and the plate is secured to the servo bracket.
+To construct this module, a plate is attached to the frame cover's sockets using long bolts with nuts adjusting its height and securing the frame covers. Within the enclosure formed by the two iron plates, the electronics and power/data connection socket are established. On the top side of the plate, a GPS antenna is installed, along with a servo actuator positioned in the middle. A 70mm x 70mm piece of plywood is affixed to the top bracket of the servo. On top side of the plywood plate, the MPU (gyroscope and magnetometer) is installed. Finally, the Lidar is attached on top of the MPU using PCB standoffs and the plate is secured to the servo bracket. 
 
 ## Schematics and Fabrication
 
