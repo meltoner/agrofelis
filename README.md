@@ -175,7 +175,7 @@ The [3D Lidar front sensors design and fabrication](components/vehicle-lidar) do
 
 The complete documentation of the 3D Lidar front sensors module design is provided below.
 
-- [3D Lidar front sensors](components/vehicle-steering)
+- [3D Lidar front sensors documentation](components/vehicle-lidar)
 
 A cherry picked selection of figures from the Agrofelis 3D Lidar front sensors design and fabrication documentation, is presented by the following figure. 
 
@@ -210,6 +210,7 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Steering System](components/vehicle-steering#steering-pcb-components)   | 132.88  |
 | [Motors Hub Driver A](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
+| [3d Lidar sensors](components/vehicle-lidar#steering-pcb-components)   | 132.88  |
 | **Total Cost**   | **2,697.32**   |
 
 </div>

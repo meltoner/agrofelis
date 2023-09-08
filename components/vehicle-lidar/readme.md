@@ -176,7 +176,7 @@ The application source code, consists of four files :
  
 
 
-## Front sensor components
+## 3D Lidar front sensors components
 
 The following table lists the individual components employed for manufacturing the Agrofelis Front sensors Lidar controller. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and sum totals.
 
