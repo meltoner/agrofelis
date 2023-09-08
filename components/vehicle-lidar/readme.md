@@ -93,18 +93,114 @@ The second type taps into the USB connection of the esp32. By cutting in half a 
 
 ![cables](_figures/vehicle-lidar-13-cables.jpg)
 
+The consequent photo snapshots the fabricated underside of the prototype, illustrating the installed electronics, sensor cable, USB cable hack, sockets the two type of cables connected to them.
+
 ![electronics](_figures/vehicle-lidar-14-electronics.jpg)
+
+The next photo snapshots the fabricated top side of the prototype presenting the tilting mechanism and the Lidar.
+
 ![front-view](_figures/vehicle-lidar-15-front-view.jpg)
+
+The following schematic illustrates the designed module attached on the vehicle along side the 2 degrees of freedom rotating implement mount.
+
 ![with-rotating-implement](_figures/vehicle-lidar-16-with-rotating-implement.png)
+
+The next photograph shows the energized fabricated module mounted on the Agrofelis Robot.
+
 ![actual-front-view](_figures/vehicle-lidar-17-actual-front-view.jpg)
+
+A close up view of the module attached on the vehicle is provided below.
+
 ![front-view-closeup](_figures/vehicle-lidar-18-front-view-closeup.jpg)
+
+
+## Lidar data 
+
+In order to read the data from the ESP32 micro-controller the following open source repository was utilised.
+
+- Lidar_LD06_for_Arduino - https://github.com/henjin0/Lidar_LD06_for_Arduino
+
+Although its reported to support the LD06 model, its functionality was verified for the LD19 as well. 
+The Lidar's cable was cut and connected to the Serial2 interface of ESP32 and a pwm capable GPUIO using the following correspondence.
+
+[Lidar pin cable correspondence](_figures/vehicle-lidar-cable-pins.png)
+
+The data provided by the UART interface are decoded by the library and are converted to degrees, distances and confidence. The Afrofelis software of the module transmits the first two variables in real-time batches of arcs, and less frequently the applied tilt, the three orientations, the magnetic orientation, the GPS longitude, latitude and number of satellites locked on to.
+
+The following screenshot provide a peek at the data being transmitted and recorded by the Unficator server, for the Lidar and the mobility modules.
+
+[data peek](_figures/vehicle-lidar-20-data.jpg)
+
+ 
+
+## Agrofelis Front sensors software 
+
+The software of the module is contained within [src folder](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-lidar/src/FrontSenseA). The software is composed of a C++ application developed to reflect and control the internal state of the micro controller over the USB serial interface. 
+ 
+This Agrofelis Front sensors software adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline establishes a context class that is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger functionalities at the desired intervals. A idar, or a gyroscope for example, need to be triggered far more frequently than a GPS or a potentiometer sensor. As a bootstrap template, the software provides 6 different frequencies ranging from 50 milliseconds to 5 second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
+
+The software encodes easy to follow concrete implementations such as Servo, GPS or Lidar, resulting in a one-to-one mapping between the physical element and its respective software counterpart.
+
+The following table indexes and summarizes the implemented classes of the Agrofelis Front sensors driver software.
+
+| Class | Description | 
+|----|------------------|
+|FrontSenseA.ino | Boots the application, initialises the top classes and encodes the triggering frequencies of various functional elements. |
+|Context | Provides a common ground for sharing information and encodes the triggering frequencies, helpful functions and a unique identifier of the model.|
+|Invoker | Tracks the execution frequencies so these are called at the right time. |
+|SerialCommandParser | Base class for monitoring and parsing the serial interface data. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
+| Servo | Object representing a the tilt mechanism  actuating a servo motor. The object can be initialised with a limited target range, as much as scan the field without exceeding the physical limits of the mechanism. The class was used with a *TIANKONGRC RDS-8120 20KG ROBOT DIGITAL SERVO*. The class can be instantiated by providing the connected GPIO, the desired range to actuate from the applicable (0-180), which is then mapped to a the range of 0 to 100. |
+|CommandParser | Base class for monitoring and parsing the web socket interface. The class defines the function parsing compact commands of the form &lt;1&#124;1&gt;, where the first parameter corresponds to the applicable action number and the second is an integer value used by the related action. |
+| LD06forArduino.ino | see Lidar_LD06_for_Arduino external dependency on github |
+|FrontSensorsController| The class extends the CommandParser allowing to externally control the tilt servo and the rotational speed of the Lidar |
+
+
+## Lidar data analysis and visualisation software
+
+An exploratory data analysis application was rapid prototype as a Shinny R application allowing to upload the log data captured and packaged by Unificator server. The application software parses the packages maintains the lidar information extract the tilt degree and parses the polar coordinate arcs into a data table. The parsed lidar data are being visualised in two scalable vector graphics graphs. The first graph reflects the data as if these were cartesian coordinates and consequent projects them using the related polar to cartesian coordinates transformation. The application can filter the data as using a sliding window of 500ms intervals (chunks) as well as maintain the maintain the 80th percentile of the data to keep focusing on the closer surroundings. Find below a snapshot of analysis application.
+
 ![rshiny-app](_figures/vehicle-lidar-19-rshiny-app.jpg)
-![data](_figures/vehicle-lidar-20-data.jpg)
+
+The shiny application source code can be found at the following path :
+
+[Shiny Lidar Analysis](src/shiny_lidar_analysis)
+
+The application source code, consists of four files :
+
+| File | Description | 
+| ----- | --------- |
+| global.R | The file loads the R packages used by the program as well as loads the helpers.R file |
+| helpers.R | The helper file implements file manipulation, lidar data parsing and data visualisation functions |
+| ui.R | The source code define the layout of the web interface and its inputs |
+| server.R| The files boots up the server and define the reactivity of the application. |
+ 
+
+
+## Front sensor components
+
+The following table lists the individual components employed for manufacturing the Agrofelis Front sensors Lidar controller. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and sum totals.
+
+
+<div align="center">
+
+| No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
+|----|--------------|------------|-----|---|---|---|---|
+| #1 | LD06 12m Range | [Lidar](https://www.aliexpress.com/item/1005003788925347.html) | [aliexpress](https://www.aliexpress.com) | 1 | 119.45 | 119.45  | - |
+| #2 | RDS3218 20KG 270 Degree | [servo](https://nem.gr/RDS3518-Servo-Robot-DIY-Digital-Metal-Gear-Brushed-Arduino) | 1 | 19.84 |  19.84 | - |
+| #3 | MPU-9250 9DOF 9-axis | [MPU](https://www.hellasdigital.gr/electronics/sensors/gyro-acceleration-magnetic/mpu-9250-9dof-9-axis-altitudegyroacceleratormagnetometer-spi-iic/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 10.48 | 10.48 | - | 
+| #4 | NEO-6M GPS Module | [gps](https://www.aliexpress.com/item/1005001635722164.html) | [aliexpress](https://www.aliexpress.com)  | 1 | 2.69 | 2.69 | - | 
+| #5 | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [aliexpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
+| #6 | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [aliexpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
+ | **Total** |      |    |     |      |     |  **158.82**  | | 
+
+</div>
+
+The total cost to manufacture the Agrofelis Front sensors Lidar controller, exclusive of shipping and labor cost, totals approximately **159** euros.
+
+
+# Conclusion
+
+The document presented the front sensors module, used for implementing a 3d Lidar mount on the Agrofelis robot. The rational of the module its design plans and fabrication steps were documented in a progressive manner.
+The Lidar data were explained, the software developed for the microcontroller and for Analysing the polar data were summarized. The list of most crucial components, their product links, the price  along with indicative suppliers for acquiring them to reproduce the module were documented. A closing view of the fabricated attachment is presented below.
+
 ![actual-side-view-cables](_figures/vehicle-lidar-21-actual-side-view-cables.jpg)
-
-
-https://www.hellasdigital.gr/electronics/sensors/gyro-acceleration-magnetic/mpu-9250-9dof-9-axis-altitudegyroacceleratormagnetometer-spi-iic/
-https://www.aliexpress.com/item/1005003788925347.html?spm=a2g0o.order_list.order_list_main.73.706c1802bV0ipB
-https://www.aliexpress.com/item/1005001635722164.html?spm=a2g0o.order_list.order_list_main.103.706c1802bV0ipB
-https://www.aliexpress.com/item/1005001636295529.html?spm=a2g0o.order_list.order_list_main.107.39cc1802TzNeML
-https://nem.gr/RDS3518-Servo-Robot-DIY-Digital-Metal-Gear-Brushed-Arduino
