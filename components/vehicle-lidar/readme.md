@@ -121,11 +121,11 @@ In order to read the data from the ESP32 micro-controller the following open sou
 - Lidar_LD06_for_Arduino - https://github.com/henjin0/Lidar_LD06_for_Arduino
 
 Although its reported to support the LD06 model, its functionality was verified for the LD19 as well. 
-The Lidar's cable was cut and connected to the Serial2 interface of ESP32 and a pwm capable GPUIO using the following correspondence.
+The Lidar's cable was cut and connected to the Serial2 interface of ESP32 and a pwm capable GPIO using the following correspondence.
 
 ![Lidar pin cable correspondence](_figures/vehicle-lidar-cable-pins.png)
 
-The data provided by the UART interface are decoded by the library and are converted to degrees, distances and confidence. The Afrofelis software of the module transmits the first two variables in real-time batches of arcs, and less frequently the applied tilt, the three orientations, the magnetic orientation, the GPS longitude, latitude and number of satellites locked on to.
+The data provided by the UART interface are decoded by the library and are converted to degrees, distances and confidence. The Agrofelis software of the module transmits the first two variables in real-time batches of arcs, and less frequently the applied tilt, the three orientations, the magnetic orientation, the GPS longitude, latitude and number of satellites locked on to.
 
 The following screenshot provide a peek at the data being transmitted and recorded by the Unficator server, for the Lidar and the mobility modules.
 
