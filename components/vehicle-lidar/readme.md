@@ -64,7 +64,7 @@ The servo is then mounted on the installed bracket, as shown by the next photogr
 
 ![servo](_figures/vehicle-lidar-06-servo.jpg)
 
-The top bracket of the servo is installed on a 70 mm X 70 mm 4 mm plywood plate, as seen in the image below.
+The top bracket of the servo is installed on a 70 mm X 70 mm 4mm plywood plate, as seen in the image below.
 
 ![top-plate](_figures/vehicle-lidar-07-top-plate.jpg)
 
@@ -154,7 +154,7 @@ The following table indexes and summarizes the implemented classes of the *Agrof
 
 ## Lidar Data Analysis and Visualization Software
 
-An exploratory data analysis application was rapid prototype as a Shiny R application, facilitating the uploading and analysis of log data captured and packaged by the Unificator server. The application software parses the packages, maintains the Lidar information, extracts the tilt degree and parses the polar coordinate arcs into a data table. The parsed Lidar data are being visualised in two scalable vector graphics (SVG) graphs. The first graph reflects the data as if they were Cartesian coordinates and subsequently projects them using a polar-to-Cartesian coordinate transformation. The application offers the functionality to filter data using a sliding window of 500ms intervals (chunks) and to maintain the 80th percentile of the data, ensuring a focus on nearby surroundings. A screenshot showcasing the Shiny R application for Lidar data analysis, is provided below.
+An exploratory data analysis application was rapidly prototyped as a Shiny R application, facilitating the uploading and analysis of log data captured and packaged by the Unificator server. The application software parses the packages, maintains the Lidar information, extracts the tilt degree and parses the polar coordinate arcs into a data table. The parsed Lidar data are being visualised in two scalable vector graphics (SVG) graphs. The first graph reflects the data as if they were Cartesian coordinates and subsequently projects them using a polar-to-Cartesian coordinate transformation. The application offers the functionality to filter data using a sliding window of 500ms intervals (chunks) and to maintain the 80th percentile of the data, ensuring a focus on nearby surroundings. A screenshot showcasing the Shiny R application for Lidar data analysis, is provided below.
 
 ![rshiny-app](_figures/vehicle-lidar-19-rshiny-app.jpg)
 
@@ -191,7 +191,7 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
 
-The total cost to manufacture the Agrofelis front sensors Lidar controller, exclusive of shipping and labor cost, amounts to approximately **159** euros.
+The total cost to manufacture the Agrofelis front sensors Lidar controller, excluding shipping and labor cost, amounts to approximately **159** euros.
 
 
 # Conclusion
