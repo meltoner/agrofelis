@@ -181,12 +181,12 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | LD06 12m Range | [Lidar](https://www.aliexpress.com/item/1005003788925347.html) | [aliexpress](https://www.aliexpress.com) | 1 | 119.45 | 119.45  | - |
-| #2 | RDS3218 20KG 270 Degree | [servo](https://nem.gr/RDS3518-Servo-Robot-DIY-Digital-Metal-Gear-Brushed-Arduino) | [NEM](https://nem.gr) |1 | 19.84 |  19.84 | - |
+| #1 | LD06 12m Range | [Lidar](https://www.aliexpress.com/item/1005003788925347.html) | [AliExpress](https://www.aliexpress.com) | 1 | 119.45 | 119.45  | - |
+| #2 | RDS3218 20KG 270 Degree | [Servo](https://nem.gr/RDS3518-Servo-Robot-DIY-Digital-Metal-Gear-Brushed-Arduino) | [NEM](https://nem.gr) |1 | 19.84 |  19.84 | - |
 | #3 | MPU-9250 9DOF 9-axis | [MPU](https://www.hellasdigital.gr/electronics/sensors/gyro-acceleration-magnetic/mpu-9250-9dof-9-axis-altitudegyroacceleratormagnetometer-spi-iic/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 10.48 | 10.48 | - | 
-| #4 | NEO-6M GPS Module | [gps](https://www.aliexpress.com/item/1005001635722164.html) | [aliexpress](https://www.aliexpress.com)  | 1 | 2.69 | 2.69 | - | 
-| #5 | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [aliexpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
-| #6 | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [aliexpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
+| #4 | NEO-6M GPS Module | [GPS](https://www.aliexpress.com/item/1005001635722164.html) | [AliExpress](https://www.aliexpress.com)  | 1 | 2.69 | 2.69 | - | 
+| #5 | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
+| #6 | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
  | **Total** |      |    |     |      |     |  **158.82**  | | 
 
 </div>
