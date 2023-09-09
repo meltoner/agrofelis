@@ -62,7 +62,7 @@ A preview of the design source file containing the horizontal disk gear and four
 
 ### Gear 
 
-3 layers, grinded 
+3 layers stacked , grinded 
 
 ![gear view](_figures/implement-2-degrees-rotating-mount-16-gear-view.jpg)
 ![gear](_figures/implement-2-degrees-rotating-mount-17-gear.jpg)
