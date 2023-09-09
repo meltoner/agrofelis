@@ -147,6 +147,6 @@ The total cost to manufacture the Agrofelis two degrees of freedom rotating impl
 
 # Conclusion
 
-add
+The design rationale, component details with essential dimensions for reproducing the Rotating Implement Mount (RIM) of the Agrofelis Robot has been documented in a progressive manner. A photograph of the vehicle with the RIM employing a thermal fogger is presented in the closing image below.
 
 ![Agrofelis with the implement mount in a vineyard](_figures/implement-2-degrees-rotating-mount-28-fabricated.jpg)
