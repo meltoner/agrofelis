@@ -26,7 +26,7 @@ The controller uses an indirect way to control the speed based on the amount of 
 
 The software implements a smooth acceleration and a fast deceleration control of the vehicle enabling the safe maneuverability of the module. The speed of the vehicle can be set to four speed states ranging from zero to the maximum programmed. Consequently on a slope or on flat ground the brakes can be adapted to consume less energy when actuated. The remote controller was programmed and adapted in the field, in order to optimise its responsiveness such that the corresponding vehicle movements were smooth, safe and forgiving by providing sufficient time to the user to observe the outcomes of their movements. 
 
-The following diagram depicts the remote controller module, encoding moreover distances of the component from the outer rim of the controller's body.
+The following diagram depicts the remote controller module, encoding distances from the component to the outer rim of the controller's body.
 
 ![Module schematics](_figures/remote-control-01-module-schematics.png)
 
@@ -34,7 +34,7 @@ The module's components are enumerated by the consequent exploded view schematic
 
 ![Module exploded view](_figures/remote-control-02-module-exploded.png)
 
-The figure indexed the following components making up the remote controller :
+The figure indexes the following components making up the remote controller :
 
 1. ESP32 38 pin on an ESP32 terminal adapter
 2. 5v Step down converter
