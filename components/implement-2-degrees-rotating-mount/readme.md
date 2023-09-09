@@ -120,6 +120,8 @@ A schematic with the dimensions and photos of a plasma cut and welded fabricated
 
 ### Top mount base
 
+The details of the metal sheet of the top base is shown below
+
 ![part 10](_figures/implement-2-degrees-rotating-mount-22-part-10.png)
 ![part 10-actual](_figures/implement-2-degrees-rotating-mount-23-part-10-actual.jpg)
 
