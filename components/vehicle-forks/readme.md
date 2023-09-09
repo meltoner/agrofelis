@@ -139,9 +139,9 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | 4 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [Sitsianis](https://sitsianis.gr/) | 1 | 24.00 | 24.00 | - |
-| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [E-Metalshop](https://www.e-metalshop.gr/)  | 0 | 73.85 | 0.00 | Already accounted in the chassis frame bill and material  |
-| #3 | Black iron metal sheet 600x400x4mm  | [4mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x4mm) | [E-Metalshop](https://www.e-metalshop.gr/) | 1 | 15.00 | 15.00 | - |
+| #1 | 4 meter black iron T bar 25 x 3 | [T bar](https://sitsianis.gr/%CF%80%CF%81%CE%BF%CE%B9%CE%BF%CE%BD%CF%84%CE%B1-%CF%83%CE%B9%CE%B4%CE%B7%CF%81%CE%BF%CF%85-%CE%BC%CE%B5%CF%84%CE%B1%CE%BB%CE%BB%CE%BF%CF%85/%CF%84%CE%B1%CF%86/) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 24.00 | 24.00 | - |
+| #2 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0 | 73.85 | 0.00 | Already accounted in the chassis frame bill and material  |
+| #3 | Black iron metal sheet 600x400x4mm  | [4mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x4mm) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 15.00 | 15.00 | - |
 | #4 | Bolt 12mm X 50mm | [Bolt 12mm X 50mm ](https://www.vida.gr/exagones-vides-olopasses-m8-galvanize-metrikes-din-933/) | [Vida](https://www.vida.gr) | 4 | 0.70 | 2.80 | - |
 | #5 | 30 Nuts pack 12mm | [Nuts 12mm](https://www.flextools.gr/index.php?route=product/product&path=260&product_id=1077) | [Flextools](https://www.flextools.gr) | 1 | 1.50 | 1.50 | - |
 | #6 | Welded Hinge with 3 winds | [Hinge](https://www.schmiedekult.de/Hinges-for-welding-with-3-wings-and-removable-pin) |[Schmiedekult](https://www.schmiedekult.de/Schmiedekult-EN) | 2 | 5.00 | 10.00 | - |
