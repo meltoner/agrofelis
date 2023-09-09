@@ -86,7 +86,7 @@ have holes, fiiitings to pass four side screwss.. support...
 
 The source code design plans implementing the side walls, are persisted in the following path.
 
-- [Supporting side walls](assets/RotationTableWalls/walls.stl)
+- [Supporting side walls](assets/RotationTableWalls/3d-print/walls.stl)
 
 ### Mid base
 
