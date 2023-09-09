@@ -46,15 +46,15 @@ The figure indexes the following components making up the remote controller :
 
 ### Structure
 
-To prototype the body of the remote controller, the module utilised pieces of wood due to their lightweight density and because they can be easily drilled and machined. The structure is composed of four pieces of wood glued together to form a solid structure, components are attached to.
+To prototype the body of the remote controller, the module utilised pieces of wood due to their light weight  and because they can be easily drilled and machined. The structure is composed of four pieces of wood glued together to form a solid structure, the rest of the components are attached to it.
 Although the body and finishing is not the envisaged end look and feel of the remote controller, the rapid prototype implement confirmed the module's approximate size, the components arrangement, connectivity and established a functional remote controller.
 
-The following diagram encodes the dimensions of the wooden pieces, assembling the structure of the module. The figure moreover encodes on the top left side of the structure two holes to pass the potentiometer cables and three smaller holes matching the pins of the limit switches layout. Another two holes can be seen in center of the top side of the structure, used to secure the battery of the remote controller, using a strap or a tape. 
+The following diagram depoicts the dimensions of the wooden pieces, assembling the structure of the module. The figure moreover shows two holes on the top left side of the structure for passing the potentiometer cables and three smaller holes matching the pins of the limit switches layout. Another two holes can be seen in the center of the top side of the structure, for securing the battery of the remote controller, using a strap or a tape. 
 
 
 ![Structure schematics](_figures/remote-control-03-structure-schematics.png)
 
-The following photo, shows the fabricated structure underside, hosting the ESP32 terminal adapter using two screws. 
+The following photo, shows the fabricated structure's underside, hosting the ESP32 terminal adapter using two screws. 
 
 ![Structure actual](_figures/remote-control-04-frame.jpg)
 
