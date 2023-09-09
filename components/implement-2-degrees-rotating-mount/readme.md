@@ -29,10 +29,10 @@ and two 3D printed plastic arcs supporting the overstructure.
 4. Supporting Plastic Arcs
 5. Stepper Motor with Gear
 6. Linear Actuator
-7. Mid Base with vertical rotation shaft 
-8. 
-9.
-10.
+7. Mid Base  
+8. Linear shaft support bracket
+9. Linear shaft 
+10.Top Metal Sheet Base
 
 
 ## Fabrication parts
