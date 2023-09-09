@@ -6,7 +6,7 @@ This document describes the construction of the Rotating Implement Mount (RIM) p
 
 # Introduction
 
-Implements that will be mounted at the front of the vehicle (e.g. grass cutter) will have to follow the vehicle's orientation, in contrast, implements on the Rotating Implement Mount (RIM) will be placed on top and be able to orientate independently, this will be usefull for various spraying techniques. The RIM is a relatively simple 2DF mechanism allowing the use of such tools at a low cost. 
+Implements that will be mounted at the front of the vehicle (e.g. grass cutter) will have to follow the vehicle's orientation, in contrast, implements on the Rotating Implement Mount (RIM) will be placed on top and be able to orientate independently, this will be usefull for various spraying techniques. The RIM is a relatively simple 2DF mechanism allowing the use of such tools at a low cost.
 
 
 ![overal-view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
