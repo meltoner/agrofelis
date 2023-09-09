@@ -31,8 +31,8 @@ and two 3D printed plastic arcs supporting the overstructure.
 6. Linear Actuator
 7. Mid Base  
 8. Linear shaft support bracket
-9. Linear shaft 
-10.Top Metal Sheet Base
+9. Linear shaft
+10. Top Metal Sheet Base
 
 
 ## Fabrication parts
