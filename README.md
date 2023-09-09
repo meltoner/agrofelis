@@ -179,6 +179,18 @@ A cherry picked selection of figures from the Agrofelis 3D Lidar front sensors d
 ![Agrofelis steering system design and fabrication figures highlights](components/vehicle-lidar/_figures/highlights-vehicle-lidar.jpg)
 
 
+## Two degrees of freedom rotating implement mount design and fabrication
+
+The [two degrees of freedom rotating implement mount](components/implement-2-degrees-rotating-mount) document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+
+The complete documentation of the RIM module design, is provided below.
+
+- [Two degrees of freedom rotating implement mount documentation](components/implement-2-degrees-rotating-mount)
+
+A cherry picked selection of figures from the Agrofelis RIM design and fabrication documentation, is presented by the following figure. 
+
+![Agrofelis two degrees of freedom rotating implement mount figures highlights](components/implement-2-degrees-rotating-mount/_figures/highlights-implement-2-degrees-rotating-mount.jpg)
+
 
 ## Microcontrollers
 
@@ -208,13 +220,14 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver A](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
-| **Total Cost**   | **2,856.14**   |
+| [Rotating implement mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
+| **Total Cost**   | **3,178.72**   |
 
 </div>
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently the total manufacturing cost for the Agrofelis robot is **2,856.14** euros, excluding shipping and assembly costs.
+Consequently the total manufacturing cost for the Agrofelis robot is **3,178.72** euros, excluding shipping and assembly costs.
 
 ## Authors
  
