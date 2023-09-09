@@ -40,7 +40,7 @@ Within the scope of an agricultural vehicle, a variety of technologies could be 
 - Sensor Suite for Plant Data Collection: Facilitating comprehensive plant data acquisition, including diagnoses of plant diseases.
 - Mechanized Weed Elimination: Using mechanical, laser or microwave mechanisms for weed control.
 - Robotic Picking Arm Base & Power Hub: Applicable for low-lying plant cultivations and greenhouse environments.
-- Power Hub for Fruit Picking from Trees (e.g. similar to Tevel technology).
+- Power Hub for Fruit Picking Drones (e.g. similar to Tevel technology).
 
 Similarly, the technologies that could be incorporated on a public safety vehicle could include applications like:
 - Firefighting Gear Carrier.
