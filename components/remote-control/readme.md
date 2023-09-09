@@ -134,7 +134,7 @@ The following table lists the individual components employed for manufacturing t
 
 </div>
 
-The total cost to manufacture the Agrofelis remote controller prototype controller, excluding shipping and labor cost, amounts to approximately **159** euros.
+The total cost to manufacture the Agrofelis remote controller prototype controller, excluding shipping and labor cost, amounts to approximately **65.52** euros.
 
 
 # Conclusion
