@@ -2,37 +2,39 @@
 
 # Abstract
 
-The document, presents the details of fabricating a basic remote controller for actuating the wheels, the steering, the breaks and the power of the Agrofelis Robot. Accounting for ergonomics, low cost and readily available components a simple extendable design is presented, rapidly prototyping the minimum number of sensors and components needed for booting and controlling the mobility functions of the vehicle. The module is de-compiled using design plans annotated with crucial metrics and is re-compiled using photos taken during the fabrication process. The software source code running on the micro-controller is presented following alike approaches implemented in other Agrofelis modules. The document concludes with a list of components used and assorted with indicative suppliers, aiding in the replication of the module.
+The document, presents the details of fabricating a baseline remote controller for actuating the wheels, the steering, the breaks and the power of the Agrofelis Robot. Accounting for ergonomics, low cost and readily available components a simple extendable design is presented, rapidly prototyping the minimum number of sensors and components needed for booting and controlling the mobility functions of the vehicle. The module is de-compiled using design plans annotated with crucial metrics and is re-compiled using photos taken during the fabrication process. The software source code running on the micro-controller is presented following alike approaches implemented in other Agrofelis modules. The document concludes with a list of components used and assorted with indicative suppliers, aiding in the replication of the module.
 
 # Introduction
 
-The scope of this module was to implement a minimum viable remote controller of the Agrofelis Robot. Serving its purpose to conduct the first round of on the field testings, the module acts as a baseline remote controller, that can be extended with additional modules such as a TFT monitor, additional sensors and interface indicators. The following photo depicts the remote controller operating the Agrofelis Robot in a vineyard. 
+The scope of this module was to implement a minimum viable remote controller for the Agrofelis Robot. Fulfilling its purpose to conduct the first round of on the field testings, the module acts as a baseline remote controller, that can be extended with additional modules such as a TFT monitor, additional sensors and or / range extenders. The following photo depicts the remote controller and the Agrofelis Robot being operated in a vineyard. 
 
 ![Remote control and vehicle](_figures/remote-control-00-view-using.jpg)
 
-In the following sections the Agrofelis Robot basic remote controller prototype, is documented.
+In the following sections the Agrofelis Robot remote controller prototype, is documented.
 
 ## Agrofelis Remote Controller
 
-Although the Agrofelis unificator software combining all Agrofelis modules stream of data with its corresponding web application, allows the system to be controlled through regular mobile phones and computers, the need to have a dedicated physical interface operated with your hands offers a more robust interface. A dedicated physical interface bypasses problems compared to mobile phones, that are prune to program interruption in case someone calls, or the need to have bare / clean hand to touch it or their accessibility is be influenced based on the ambient luminosity levels of the environment. 
+Although the Agrofelis unificator software combining all Agrofelis modules stream of data with its corresponding web application, allows the system to be controlled through regular mobile phones and computers, the need to have a dedicated physical interface operated with your hands, offers a more natural and robust interface. A dedicated physical module moreover bypasses problems when compared with mobile phones, which are prune to program interruption in case someone calls, or have the need to have bare and clean hands, pose the necessity to look at the module instead of the vehicle, or their usability is be influenced based on the ambient luminosity levels of the environment. 
 
-The Remote controller implemented is composed of a reversed drawer like structure, about the size of usual person chest span promoting a more comfortable user experience. Moreover, the holding sides of the structure fit conveniently within the palm of the user offering a firm grip to the module. The controller's input sensors are arranged within thumb distance allowing to easily access and engage the controls. The controller employs an ESP32, a battery, a 5v step down converter, a joystick with an embedded switch, two potentiometers, two switches, attached on the sides of wooden structure. 
+The Remote controller designed and implemented is composed of a reversed drawer like structure, about the size of usual person chest span offering a more comfortable user experience. Moreover, the holding sides of the structure fit conveniently within the palm of the user providing a firm grip with the module. The controller's input sensors are located within thumb distance enabling to easily reach and engage the input controls. The controller employs an ESP32, a battery, a 5v step down converter, a joystick with an embedded switch, two potentiometers, two switches, attached on the sides of wooden structure. 
 
-Although controllers used in game engines are often employed in such projects, prototyping from the ground up leads to important know how enabling to consequently extend the baseline modules, based the acquainted experience. The implementation reuses established patterns and practices employed in the Agrogelis Motors Hub Driver and Front Sensors Lidar modules, testing even further the decisions made, leading to more robust software. The key difference between other Agrofelis modules and the baseline remote controller, is that the latter is composed of simple input sensors, only.
+Although controllers found in game engines are often employed in such projects, their decisions eventually limit the flexibility one can employ. Moreover, prototyping from the ground up builds know how enabling to consequently extend the baseline modules based the acquainted experience. The implementation reuses established patterns and practices employed in the Agrogelis Motors Hub Driver and Front Sensors Lidar modules, testing further the decisions made which leads to more robust software. The key difference between other Agrofelis modules and the baseline remote controller, is that the latter is composed of input sensors, only.
 
-The controller detects momentary button presses, prolonged presses, combinations of presses. Moreover, the controller quantizes the sensors outputs ranges suppressing noise or accidental movements. The software listens for changes in the joystick's internal potentiometers, mapping the forward and backward movement with its y axis while the steering with the x axis. The controller uses an indirect way to control the speed based on how much time the stick is lifted or is left at rest. The controller fades-in the y axis input values slower when actuated and fades-out them faster when un-engaged. The first potentiometer limits the speed signal sent to the robot via the joystic vehicle. The second potentiometer controls the maximum degree sent to the disk brakes controlling how hard or soft they will be actuated. The first switch powers up or down the Agrofelis robot mobility system when its pressed prolonged. The second switch actuates the brakes. The joystick's button when pressed prolonged switched on or off, the maximum steering radius of the vehicle.
+The controller detects momentary button presses, prolonged presses, combinations of presses. Moreover, the controller quantizes the sensors signal ranges suppressing noise or accidental movements. The software listens for changes in the joystick's internal potentiometers, mapping the forward and backward movement with its y axis input sensor and the steering with its X axis. 
 
-The software features developed implement a smooth start and a fast slow down control of the vehicle promoting safer maneuverability of the module. The speed of the vehicle limits can be set to four speed states ranging from zero to the maximum programmed. Likewise when on an slope or not the brakes can be adapted to consume less energy. The remote controller was programmed and adapted on the field, in order to optimise its responsiveness such that the corresponding vehicle movements are smooth, safe as well as forgiving. 
+The controller uses an indirect way to control the speed based on the amount of time a sensor is excited or is at rest. The controller fades-in the y axis input values slower when actuated (acceleration) and fades-out them faster when un-engaged (deceleration). The first potentiometer located on the left side, limits the speed signal sent to the robot via the joystick. The second potentiometer controls the maximum rotation degree sent to the disk brakes servos, controlling how hard or soft they will be actuated. The first switch powers up or down the Agrofelis robot mobility system, when its pressed for a prolonged time. The second switch actuates the brakes based on the aforementioned second potentiometer signal. The joystick's button when pressed for a prolonged time, switches on or off the maximum or regular steering radius of the vehicle.
 
-The following diagram depicts the Remote controller module.
+The software features developed implement a smooth acceleration and a fast deceleration control of the vehicle enabling the safe maneuverability of the module. The speed of the vehicle can be set to four speed states ranging from zero to the maximum programmed. Likewise when on an slope or not the brakes can be adapted to consume less energy when actuated. The remote controller was programmed and adapted on the field, in order to optimise its responsiveness such that the corresponding vehicle movements were smooth, safe and forgiving by providing sufficient time to the user to observe the outcomes of their movements. 
+
+The following diagram depicts the remote controller module, encoding moreover distances of the component from the outer rim of the controller's body.
 
 ![Module schematics](_figures/remote-control-01-module-schematics.png)
 
-The module component are enumerated by the consequent schematic.
+The module's components are enumerated by the consequent exploded view schematic.
 
 ![Module exploded view](_figures/remote-control-02-module-exploded.png)
 
-The figure indexes the following components composing the remote controller module :
+The figure indexed the following components making up the remote controller :
 
 1. ESP32 38 pin on an ESP32 terminal adapter
 2. 5v Step down converter
@@ -44,26 +46,26 @@ The figure indexes the following components composing the remote controller modu
 
 ### Structure
 
-To prototype the body of the remote controller the module utilised pieces of wood due to their lightweight density and because they can be easily drilled and machined. The structure is composed of four pieces of wood glued together to form a solid structure all components are attached to.
-Although the body and finishing is not the envisaged end look and feel of the remote controller, the rapid prototype implement confirmed the module's approximate size, the components arrangement, their connectivity and establishing a functional remote controller.
+To prototype the body of the remote controller, the module utilised pieces of wood due to their lightweight density and because they can be easily drilled and machined. The structure is composed of four pieces of wood glued together to form a solid structure, components are attached to.
+Although the body and finishing is not the envisaged end look and feel of the remote controller, the rapid prototype implement confirmed the module's approximate size, the components arrangement, connectivity and established a functional remote controller.
 
-The following diagram encodes the dimensions of the wooden pieces assembling the structure of the module. 
+The following diagram encodes the dimensions of the wooden pieces, assembling the structure of the module. 
 
 ![Structure schematics](_figures/remote-control-03-structure-schematics.png)
 
-The figure moreover encodes on the top left side of the diagram two holes to pass the potentiometer cables and three smaller holes matching the pins of the limit switches layout. Another two holes can be seen in center of the top side, used to secure the battery of the remote controller using a strap. The following photo, shows the fabricated structure underside hosting the ESP32 terminal adapter attached using two screws. 
+The figure moreover encoded on the top left side two holes to pass the potentiometer cables and three smaller holes matching the pins of the limit switches layout. Another two holes can be seen in center of the top side, used to secure the battery of the remote controller using a strap or a tape. The following photo, shows the fabricated structure underside, hosting the ESP32 terminal adapter using two screws. 
 
 ![Structure actual](_figures/remote-control-04-frame.jpg)
 
-The subsequent photo depicts the top side of the structure hosting the joystick, the battery positioned in the top middle, above the ESP32 terminal adapter pinned on the underside of the structure.
+The subsequent photo depicts the top side of the structure facilitating the joystick, the battery positioned in the top middle side, above the ESP32 terminal adapter located on the underside of the module's body.
 
 ![Structure battery and joystick](_figures/remote-control-05-frame-battery-joystic.jpg)
 
-The following photo provides a side view of the module, at the same fabrication step as of the previous figure.
+The following photo provides a side view of the controller, at the same fabrication step shown in the previous figure.
 
 ![Module side](_figures/remote-control-06-side.jpg)
 
-The consequent photo, focuses on the left side of the remote controller where two limit switches and two potentiometers have been attached using hot glue. The cables of the input sensors pass through the structure, on the electronics side, using holes made following the layout of the components. The four input sensors, connect with the ESP32 GPIO using a four pin and a two pin ribbon cable, used for their signals pins as well as for powering them. 
+The consequent photo, focuses on the left side of the remote controller where the two limit switches and the two potentiometers have been attached using hot glue. The cables of the input sensors pass through the structure towards the electronics, using related holes following the layout of the components. The four input sensors, connect with the ESP32 GPIO ports using a four pin and a two pin ribbon cables, used to link their signals and supply them with power. 
 
 ![Switches and potentiometers](_figures/remote-control-07-switch-potetiometer.jpg)
 
@@ -83,11 +85,11 @@ The following photo snapshots the underside of the module, its electronics and t
 ![Underside view of electronics](_figures/remote-control-10-under-electronics.jpg)
 
 The consequent photograph focuses the left underside of the controller where the limit switches and the potentiometer are linked with the ESP32. 
-All sensors input pin are connected with the 3.3v output of the controller, their output pins connected to the digital or analogue respective ESP32 ports and the potentiometer are additionally linked with the ground.
+All sensors input pins are connected with the 3.3v output of the controller, their output pins connected to the digital or analogue respective ESP32 ports and the potentiometers are additionally linked with the ground.
 
 ![Under left side view of electronics](_figures/remote-control-11-imder-left-side.jpg)
 
-The following image depicts the right underside of the structure where the 5v step down converter and the right side of the ESP32 terminal pin connections can be seen.
+The following image depicts the right underside of the structure where the 5v step down converter and the right side of the ESP32 terminal pin connections, can be observed.
 
 ![Under right side view of electronics](_figures/remote-control-12-uner-right-side.jpg)
 
@@ -111,9 +113,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
  
 ## Remote controller components
 
-
-The following table lists the individual components employed for manufacturing the Agrofelis front sensors Lidar controller. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and total cost estimates.
-
+The following table lists the individual components employed for prototyping the Agrofelis remote controller. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and total cost estimates.
 
 <div align="center">
 
@@ -138,6 +138,6 @@ The total cost to manufacture the Agrofelis remote controller prototype controll
 
 # Conclusion
 
-The rationale of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process were provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis basic remote controller  have been documented. The document closes with a photo of the remote controller being held by the Robot's operator. 
+The rationale of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process were provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis basic remote controller, have been documented. The document closes with a photo of the remote controller being held by the Robot's operator. 
 
 ![Remote control being held](_figures/remote-control-13-held.jpg)
