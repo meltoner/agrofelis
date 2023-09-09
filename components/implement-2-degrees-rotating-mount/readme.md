@@ -106,6 +106,7 @@ unpainted
 
 ![fabricated a](_figures/implement-2-degrees-rotating-mount-24-fabricated-a.jpg)
 ![fabricated b](_figures/implement-2-degrees-rotating-mount-25-fabricated-b.jpg)
+![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
 
  
 ## Implement mount components and indicative suppliers
@@ -146,4 +147,4 @@ The total cost to manufacture the Agrofelis two degrees of freedom rotating impl
 
 add
 
-![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
+![Agrofelis with the implement mount in a vineyard](_figures/implement-2-degrees-rotating-mount-28-fabricated.jpg)
