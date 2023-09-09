@@ -119,22 +119,27 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| # | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
-| # | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
-| # | 100 X 80 X 8 mm ply-wood | [plywood](https://www.skroutz.gr/mp/162035068/Kontra-Plake-THalassis-Okoume-100CH80-cm-Pachos-8mm.html) | [Skroutz](https://www.skroutz.gr) | 1 | 16.02 | 16.02 | - |
-| # | Gravity: Joystick Module V2 (DFR0061) | [Joystick](https://www.hellasdigital.gr/electronics/sensors/keypad-and-joystick/gravity-joystick-module-v2-dfr0061/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 6.20 | 6.20 | - |
-| # | 10K Ohm Linear Potentiometer B10K 15mm | [Potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/10k-ohm-linear-potentiometer-b10k-15mm/) | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 0.50 | 1 | - |
-| # | 5v step down converter | [step down converter](https://grobotronics.com/dc-dc-step-down-1.3-35v-3a.html) | [Grobotronics](https://grobotronics.com) | 1 | 2.90 | 2.90 | - |
-| # | Micro limit switch | [limit switch](https://grobotronics.com/microswitch-micro-spdt-on-on-roller-lever.html) | [Grobotronics](https://grobotronics.com) | 2 | 0.20 | 0.40 | - | 
-| #10 | 5 wire, 4-wire and 2-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 1 | 1 | - |
-| # | NEM Li-PO 7.4v/ 1500mAh/ 20C | [battery](http://nemhobby.com/nem-li-po-7-4v-1500mah-20c-500-charges-p31130.html) | [NEM hobby](http://nemhobby.com) | 1 | 15.00 | 15.00 | - |
-| # | Connector T-Plug Gold Plated -Male | [T-plug](http://nemhobby.com/connector-t-plug-gold-plated-male-p34785.html) | [NEM hobby](http://nemhobby.com) | 1 | 0.62  | 0.62 | - |
-| # | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 8.00 | Base Component |
- | **Total** |      |    |     |      |     |  **158.82**  | | 
+| #1 | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
+| #2 | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
+| #3 | 100 X 80 X 8 mm ply-wood | [plywood](https://www.skroutz.gr/mp/162035068/Kontra-Plake-THalassis-Okoume-100CH80-cm-Pachos-8mm.html) | [Skroutz](https://www.skroutz.gr) | 1 | 16.02 | 16.02 | - |
+| #4 | Gravity: Joystick Module V2 (DFR0061) | [Joystick](https://www.hellasdigital.gr/electronics/sensors/keypad-and-joystick/gravity-joystick-module-v2-dfr0061/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 6.20 | 6.20 | - |
+| #5 | 10K Ohm Linear Potentiometer B10K 15mm | [Potentiometer](https://www.hellasdigital.gr/electronics/components/potentiometer/10k-ohm-linear-potentiometer-b10k-15mm/) | [Hellas Digital](https://www.hellasdigital.gr) | 2 | 0.50 | 1 | - |
+| #6 | 5v step down converter | [step down converter](https://grobotronics.com/dc-dc-step-down-1.3-35v-3a.html) | [Grobotronics](https://grobotronics.com) | 1 | 2.90 | 2.90 | - |
+| #7 | Micro limit switch | [limit switch](https://grobotronics.com/microswitch-micro-spdt-on-on-roller-lever.html) | [Grobotronics](https://grobotronics.com) | 2 | 0.20 | 0.40 | - | 
+| #8 | 5 wire, 4-wire and 2-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 1  | 1 | 1 | - |
+| #9 | NEM Li-PO 7.4v/ 1500mAh/ 20C | [battery](http://nemhobby.com/nem-li-po-7-4v-1500mah-20c-500-charges-p31130.html) | [NEM hobby](http://nemhobby.com) | 1 | 15.00 | 15.00 | - |
+| #10 | Connector T-Plug Gold Plated -Male | [T-plug](http://nemhobby.com/connector-t-plug-gold-plated-male-p34785.html) | [NEM hobby](http://nemhobby.com) | 1 | 0.62  | 0.62 | - |
+| #11 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 1  | 8.00 | 0.00 | shared Component |
+ | **Total** |      |    |     |      |     |  **65.52**  | - | 
 
 </div>
 
+The total cost to manufacture the Agrofelis remote controller prototype controller, excluding shipping and labor cost, amounts to approximately **159** euros.
+
+
 # Conclusion
+
 The rationale of the module, its sub components and their elements were elaborated. Photos outlining details of the different phases of the manufacturing process were provided. Source code files, schematics, instructions and printouts to reconstruct the Agrofelis basic remote controller  have been documented. The document closes with a photo of the remote controller being held by the Robot's operator. 
 
 ![Remote control being held](_figures/remote-control-13-held.jpg)
+
