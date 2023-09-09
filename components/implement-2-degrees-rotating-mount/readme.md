@@ -101,6 +101,9 @@ The Plastic Arcs incorporate holes that fit exactly the 4 long screws. The Arcs 
 screws primarily support the horizontal forces produced by the rotation. The whole assemply is quite sturdy. 
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
+
+The full assemply including the Plastic Arcs is shown below
+
 ![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
 
 The source code design plans implementing the side walls, are persisted in the following path.
