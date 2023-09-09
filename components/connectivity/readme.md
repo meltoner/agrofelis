@@ -1,3 +1,16 @@
+# Infrastructure provisioning, computing elements and data fusion
+
+## Abstract
+
+The document presents the procedure to provision the main computing element of the robot and initiate its services. The peripheral elements establishing and attaching to the local Agrofelis WIFI network and its USB hub are enumerated. The GPU component and the neural network accelerator tapping to the USB3 interface of the Jetson Nano are presented. The Agrofelis Unificator software, connecting all Agrofelis modules is introduced and its source code and features presented. Lightweight structural elements 3d printed to compensate for the additional space needed by the USB cables as well as designed to secure the components and the USB hub in their compartment, are provided. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the of the Agrofelis computing systems.
+
+## Introduction
+
+
+
+
+
+
 This folder accommodates the development of a networking server running on docker 
 upon which all modules are connected to broadcast their data and receive their commands. 
 The server uses the Serial interface the HTTP and the web sockets interfaces and is able to 

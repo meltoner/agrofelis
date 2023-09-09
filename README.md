@@ -205,7 +205,7 @@ A cherry picked selection of figures from the Agrofelis remote controller design
 ![Agrofelis Remote Controller Design and Fabrication figures highlights](components/remote-control/_figures/highlights-remote-control.jpg)
 
 
-## Computing modules, data fusion and system provisioning
+## Infrastructure provisioning, computing elements and data fusion
 
 
 
