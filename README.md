@@ -192,11 +192,22 @@ A cherry picked selection of figures from the Agrofelis RIM design and fabricati
 ![Agrofelis two degrees of freedom rotating implement mount figures highlights](components/implement-2-degrees-rotating-mount/_figures/highlights-implement-2-degrees-rotating-mount.jpg)
 
 
-## Microcontrollers
+## Agrofelis Remote Controller Design and Fabrication
 
-## Orchestration Software
+The [Remote Controller Design and Fabrication](components/remote-control) document, presents the details of fabricating a baseline remote controller for actuating the wheels, the steering, the breaks and the power of the Agrofelis Robot. Accounting for ergonomics, low cost and readily available components a simple extendable design is presented, rapidly prototyping the minimum number of sensors and components needed for booting and controlling the mobility functions of the vehicle. The module is de-compiled using design plans annotated with crucial metrics and is re-compiled using photos taken during the fabrication process. The software source code running on the micro-controller is presented following alike approaches implemented in other Agrofelis modules. The document concludes with a list of components used and assorted with indicative suppliers, aiding in the replication of the module.
 
-## Two Degree Rotating Implement Mount
+The complete documentation of the remote controller module, is provided below.
+
+- [Agrofelis Remote Controller Design and Fabrication documentation](components/remote-control)
+
+A cherry picked selection of figures from the Agrofelis remote controller design and fabrication documentation, is presented by the following figure. 
+
+![Agrofelis Remote Controller Design and Fabrication figures highlights](components/remote-control/_figures/highlights-remote-control.jpg)
+
+
+## Infrastructure provisioning and computing components
+
+
 
 
 ## Cost Estimation Overview
