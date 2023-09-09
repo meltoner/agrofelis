@@ -2,10 +2,11 @@
 
 # Abstract
 
-This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the presentation video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of implements such as the thermal fogger depicted in the presentation video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
 
 # Introduction
 
+Implements that will be mounted at the front of the vehicle (e.g. grass cutter) will have to follow the vehicle's orientation in contrast with those the Rotating Implement Mount (RIM) is placed on top of the vehicle and allows directional implements to orientate independently from the vehicle. 
 
 
 ![overal-view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
