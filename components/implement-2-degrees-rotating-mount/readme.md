@@ -102,7 +102,7 @@ screws primarily support the horizontal forces produced by the rotation. The who
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
 
-The full assemply including the Plastic Arcs is shown below
+The assemply including the Plastic Arcs is shown below
 
 ![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
 
@@ -127,11 +127,12 @@ The details of the metal sheet of the top base is shown below
 
 ### End module 
 
-unpainted
-
+The full assemply of the Rotating Implement Mount (RIM) before the paint job can be seen in the following photos
 
 ![fabricated a](_figures/implement-2-degrees-rotating-mount-24-fabricated-a.jpg)
+
 ![fabricated b](_figures/implement-2-degrees-rotating-mount-25-fabricated-b.jpg)
+
 ![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
 
  
@@ -165,7 +166,7 @@ The following table lists the individual components employed for manufacturing t
 | **Total** |      |    |     |      |     |  **322.58**  | | 
 </div>
 
-The total cost to manufacture the Agrofelis two degrees of freedom rotating implement mount, excluding shipping, cutting, welding and painting costs, sums to approximately **322.58** euros.
+The total cost to manufacture the Agrofelis two degrees of freedom rotating implement mount, excluding shipping, cutting, welding and painting costs, sums up to approximately **322.58** euros.
 
 ## Summary
 
