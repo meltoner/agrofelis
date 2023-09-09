@@ -21,10 +21,16 @@ The parts of the Rotating assemply alongside with the supporting Plastic Arcs an
 
 ![components](_figures/implement-2-degrees-rotating-mount-03-components.jpg)
 
-An exploded view of the whole mechanism and its functional design details can be seen in the following photo.
+An exploded view of the whole mechanism and its functional design details can be seen in the following schematic.
 
 ![exploded](_figures/implement-2-degrees-rotating-mount-04-exploded.png)
+
+A line up of the assemply parts of a decomposed mechanism can be seen in the following schematic.
+
 ![decomposed](_figures/implement-2-degrees-rotating-mount-05-decomposed.png)
+
+A list of the parts of the Rotating Implement Mount is presented down below 
+
 ![enumerated](_figures/implement-2-degrees-rotating-mount-06-enumerated.png)
 
 1. Bottom Metal Sheet Base
