@@ -65,6 +65,9 @@ A preview of the design source file containing the horizontal disk gear and four
 3 layers stacked , grinded 
 
 ![gear view](_figures/implement-2-degrees-rotating-mount-16-gear-view.jpg)
+
+edge rounding using a Dremel
+
 ![gear](_figures/implement-2-degrees-rotating-mount-17-gear.jpg)
 ![gear-edge](_figures/implement-2-degrees-rotating-mount-18-gear-edge.jpg)
 
@@ -76,10 +79,10 @@ A preview of the design source file containing the horizontal disk gear and four
 
 ### Supporting side walls
 
-have holes, fiiting to pass four side screwss.. support...
+have holes, fiiitings to pass four side screwss.. support...
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
-![assempled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
+![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
 
 The source code design plans implementing the side walls, are persisted in the following path.
 
