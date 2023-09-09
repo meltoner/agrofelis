@@ -90,6 +90,9 @@ Here we can see the rounded edges that was done using a Dremel
 The Servo motor on its mount and with its attached gear producing a 0.3NM of torque is shown below.
 
 ![part 5](_figures/implement-2-degrees-rotating-mount-12-part-5.png)
+
+The full rotating mechanism with its Horizontal Gear Disk, Motor & Gear and 4 long screws is shown below
+
 ![part 5 actual](_figures/implement-2-degrees-rotating-mount-13-part-5-actal.jpg)
 
 ### Supporting Plastic Arcs 
