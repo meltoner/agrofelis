@@ -58,7 +58,7 @@ The following photo, shows the fabricated structure's underside, hosting the ESP
 
 ![Structure actual](_figures/remote-control-04-frame.jpg)
 
-The subsequent photo depicts the top side of the structure facilitating the joystick, the battery positioned in the top middle side, above the ESP32 terminal adapter located on the underside of the module's body.
+The subsequent photo depicts the top side of the structure facilitating the joystick, the battery positioned in the top middle side, above the ESP32 terminal adapter which is located on the underside of the module's body.
 
 ![Structure battery and joystick](_figures/remote-control-05-frame-battery-joystic.jpg)
 
@@ -66,7 +66,7 @@ The following photo provides a side view of the controller, at the same fabricat
 
 ![Module side](_figures/remote-control-06-side.jpg)
 
-The consequent photo, focuses on the left side of the remote controller where the two limit switches and the two potentiometers have been attached using hot glue. The cables of the input sensors pass through the structure towards the electronics, using related holes following the layout of the components. The four input sensors, connect with the ESP32 GPIO ports using a four pin and a two pin ribbon cables, used to link their signals and supply them with power. 
+The consequent photo, focuses on the left side of the remote controller where the two limit switches and the two potentiometers have been attached using hot glue. The cables of the input sensors pass through the structure towards the electronics, using related holes following the layout of the components. The four input sensors, connect with the ESP32 GPIO ports using a four pin and a two pin ribbon cables, for linking their signals and supply them with power. 
 
 ![Switches and potentiometers](_figures/remote-control-07-switch-potetiometer.jpg)
 
@@ -94,7 +94,7 @@ The following image depicts the right underside of the structure where the 5v st
 
 ![Under right side view of electronics](_figures/remote-control-12-uner-right-side.jpg)
 
-The Joystick X and Y axis sensors are connected to the 34th and 39th GPIO ports, while its tactile switch on port 36. The left side potentiometers are connected to ports 35 and 32. Last, the two limit switches are linked with ports 16 and 33. 
+The Joystick's X and Y axis sensors are connected to the 34th and 39th GPIO ports, while its tactile switch on port 36. The left side potentiometers are connected to ports 35 and 32. Last, the two limit switches are linked with ports 16 and 33. 
  
  
 ## Software
@@ -110,7 +110,7 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 |esp32RemoteController.ino | Boots the application, initialises the top classes and encodes the triggering frequencies of the functional elements. |
 |Context | Provides a common ground for sharing information and encodes the triggering frequencies, helpful functions and a unique identifier of the model. |
 |Invoker | Tracks the execution frequencies so these are called at the right time. |
-|Sensors | The class defines the pin ports of all input sensors. The software reads all input sensors based on their type in one step and a second step evaluates their conbinatorial state and and amount of time being actuated, triggering accordingly a respective command action to be sent to the Agrofelis Robot. |
+|Sensors | The class defines the pin ports of all input sensors. The software reads all input sensors based on their type in one step and in a second step evaluates their conbinatorial state and and amount of time being actuated, triggering accordingly a respective command action to be sent to the Agrofelis Robot. |
  
 ## Remote controller components
 
