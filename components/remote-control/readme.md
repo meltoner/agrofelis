@@ -86,7 +86,7 @@ The following photo snapshots the underside of the module, its electronics and t
 ![Underside view of electronics](_figures/remote-control-10-under-electronics.jpg)
 
 The consequent photograph focuses the left underside of the controller where the limit switches and the potentiometer are linked with the ESP32. 
-All sensors input pins are connected with the 3.3v output of the controller, their output pins connected to the digital or analogue respective ESP32 ports and the potentiometers are additionally linked with the ground.
+All sensors input pins are connected with the 3.3v output of the controller. Their output pins are connected to the digital or analogue ESP32 GPIO ports and the potentiometers are additionally linked with the ground.
 
 ![Under left side view of electronics](_figures/remote-control-11-imder-left-side.jpg)
 
@@ -94,9 +94,9 @@ The following image depicts the right underside of the structure where the 5v st
 
 ![Under right side view of electronics](_figures/remote-control-12-uner-right-side.jpg)
 
-The Joystick X and Y axis sensors are connected to 34 and 39 GPIO ports, while its tactile switch on port 36. The left side potentiometers are connected to ports 35 and 32. Last the two limit switches are linked with ports 16 and 33. 
-
-
+The Joystick X and Y axis sensors are connected to the 34th and 39th GPIO ports, while its tactile switch on port 36. The left side potentiometers are connected to ports 35 and 32. Last, the two limit switches are linked with ports 16 and 33. 
+ 
+ 
 ## Software
 
 This *Agrofelis Base remote controller Software* adheres to a common baseline pattern that has been established in nearly all Agrofelis modules. This baseline pattern introduces a "context" class, which is passed to practically all classes as a common ground, enabling instances to exchange information when necessary. The second baseline pattern established refers to the frequency of execution, providing the facilities to trigger specific functionalities at desired intervals. This design consideration accommodates for components such as an MPU or a magnetometer sensors, which require much more frequent updates compared to components such as potentiometer sensors. As a bootstrap template, the software provides six different execution frequencies, ranging from 50 milliseconds to 5-second intervals. Using this approach, delays blocking the execution are avoided and the different calls can be organized based on their responsiveness requirements.
