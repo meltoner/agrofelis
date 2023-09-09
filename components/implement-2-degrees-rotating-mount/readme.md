@@ -116,8 +116,8 @@ The following table lists the individual components employed for manufacturing t
 | #15 | Brushes| [Brush](https://nova-ceramica.gr/products/morris-39253) | [Nova Ceramica](https://nova-ceramica.gr/) | 3 | 1.00 | 3.00 | - |
 | #16 | White spirit| [White spirit](https://www.rigatos-shop.gr/dialytika-diavrwtika-spray/2381-white-spirit-%CE%B4%CE%B9%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C-500ml.html)  | [Rigatos Shop](https://www.rigatos-shop.gr/) | 1 | 1.50 | 1.50 | - |
 | #17 | Paper sheet | [Paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | [Xromagora](https://xromagora.gr/) | 0 | 0.80 | 0.00 | Reused from frame material|
-| #18 | Laser cut gears out of stainless steel sheet 2 mm as of design | [see design plans](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 85 | 85 | - |
-| #19 | 3d Printed side walls as of gcode  | [Side walls](https://www.3dhub.gr/upload-3d-file/) | [3dhub](https://www.3dhub.gr/) | 1 | 55 | 55 | - |
+| #18 | Laser cut gears out of stainless steel sheet 2 mm as of design | [See dwg design file](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 85 | 85 | - |
+| #19 | 3d Printed side walls as of gcode  [See gcode design file](assets/3d-print/RotationTableWalls/walls.stl) | [3d printing services](https://www.3dhub.gr/upload-3d-file/) | [3dhub](https://www.3dhub.gr/) | 1 | 55 | 55 | - |
 | **Total** |      |    |     |      |     |  **155.47**  | | 
 </div>
 
