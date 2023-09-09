@@ -7,6 +7,50 @@ The document presents the procedure to provision the main computing element of t
 ## Introduction
 
 
+## Jetson nano operating system provisioning
+
+The main computing element of the Agrofelis Robot is a relatively low cost fully fledged GPU capable computer, optimised for small footprint, energy consumption aimed for AI applications. 
+
+
+To initialise the computer one needs the same components needed for a regular computer. That is keyboard a mouse, a monitor and a hard disk (sd). An operating system can be written to the sd card by using a turnkey Ubuntu based image configured by Nvidia conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with embedded computer and boot-strap it. 
+
+Following NVdia's documentation the 6.4 GB compressed operating system image, can be downloaded from the following link.
+
+- [https://developer.nvidia.com/jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image)
+
+Because the file is rather large, we recommend downloading it from a fast, stable internet connection. To write the image to the sd card, a windows or a Linux computer can be utilised with the [balenaEtcher](https://etcher.balena.io/#download-etcher) as recommended by the Nvida documentation. Once the sd card is written it can be slotted in its placeholder and the computer can be connected with a 5v power supply. 
+
+Upon system initialization the USB WiFi adapter or a network cable can be attached and used to connect with an internet in order to get the latest available updates, using the following commands.
+
+	apt-get update
+	apt-get get upgrade
+	apt-get autoremove
+	apt-get dist-upgrade
+
+Using the following commands two handy tools, one for monitoring the hardware resource of the computer and the second for multiplexing multiple command terminals, can be installed using the following command.
+
+	apt-get install htop screen
+
+Once the Jetson nano has been connected into the network the monitor, keyboard and mouse and be removed and the computer can be operated using and ssh terminal. Although not crucial, the computer can also be setup-ed to stream its monitor using the VNC open source software by issuing the following commands. 
+
+	mkdir -p ~/.config/autostart
+	cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
+	gsettings set org.gnome.Vino prompt-enabled false
+	gsettings set org.gnome.Vino require-encryption false
+	gsettings set org.gnome.Vino authentication-methods "['vnc']"
+	gsettings set org.gnome.Vino vnc-password $(echo -n 'agrofelis'|base64)
+
+The commands initialise a remote desktop server which can be handy when debugging for the first time the video camera, or alter the WiFi network settings or other setting provided by the graphical user interface of the operating system. 
+
+## Agrofelis services
+
+As observed, the operating system can be setup-ed with just a handful commands, primarily because all common requirements have already been provisioned by Nvida in the aforementioned image. Another very useful software already pre-installed in the system is the Nvida Docker. Docker allows to containerize arbitrary computing environments, instantiate multiple instance of them as well revert, reuse or extend their definitions. Employing the Docker technology in the Agrofelis software stack means that its systems are easily reproducible, their definitions are transparent and their execution is somewhat isolated from the main operating system. Employing Docker moreover, allows the operating system to remain clean of the applications dependencies and new technologies can be evaluated without the fear of "polluting" the system. The NVdia Docker variation installed, can interface with the GPU hardware of the embedded computer, which enables to containerize also AI applications. 
+
+
+
+
+
+
 
 
 
