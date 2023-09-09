@@ -47,7 +47,7 @@ A list of the parts of the Rotating Implement Mount is presented down below
 
 ## Fabrication parts
 
-### Base
+### Bottom Base
 
 The dimensions followed by a fabricated Metal Sheet Base are shown down below.
 
@@ -118,7 +118,7 @@ A schematic with the dimensions and photos of a plasma cut and welded fabricated
 ![part 7-plasma-cut](_figures/implement-2-degrees-rotating-mount-20-part-7-plasma-cut.jpg)
 ![part 7-actual](_figures/implement-2-degrees-rotating-mount-21-part-7-actual.jpg)
 
-### Top mount base
+### Top base
 
 The details of the metal sheet of the top base is shown below
 
