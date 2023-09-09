@@ -16,6 +16,7 @@ Implements that will be mounted at the front of the vehicle (e.g. grass cutter) 
 The module's bottom part is a 360-degree ball-bearing turntable with an attached inner circle of 70 laser cut rectangular holes in which a 13-teeth gear runs and provides the horizontal tilt, the mid part with a depression angle of -5 degrees and elevation angle of +40 degrees leveraged by the linear actuator provides the vertical tilt and the top part is the actual mount surface. The suspension of the mid part onto the turntable is achieved using four long screws and two 3D printed plastic arcs supporting the overstructure.  
 
 ![module](_figures/implement-2-degrees-rotating-mount-02-module.png)
+The parts of the Rotating assemply alongside with the supporting Plastic Arcs and the 4 long screws that link the bottom and mid part can be clearly seen in the following photo. 
 ![components](_figures/implement-2-degrees-rotating-mount-03-components.jpg)
 
 ![exploded](_figures/implement-2-degrees-rotating-mount-04-exploded.png)
