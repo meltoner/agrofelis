@@ -132,8 +132,8 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|--------------|------------|-----|---|---|---|---|
-| #1 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [E-Metalshop](https://www.e-metalshop.gr/)  | 0.2 | 73.85 | 14.77 | - |
-| #2 | Black iron metal sheet 1000x2000x2mm  | [2mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x2mm) | [E-Metalshop](https://www.e-metalshop.gr/)  | 0.3 | 49.23 | 14.76 | - |
+| #1 | Black iron metal sheet 1000x2000x3mm  | [3mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x3mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0.2 | 73.85 | 14.77 | - |
+| #2 | Black iron metal sheet 1000x2000x2mm  | [2mm metal sheet](https://www.e-metalshop.gr/sidera/lamarynes/lamarina-sidhroy-mayrh-1000x2000x2mm) | [QOOP Metalworks](https://www.qoop.gr)  | 0.3 | 49.23 | 14.76 | - |
  #3 | 100 pack Allen screws DIN 912 8.8 M 8 x 25 | [Screws M8X25](http://www.sinter-hellas.gr/index.php/products/eidh-vidopoiias/vides-me-speirwma-gia-perikoxlio/93-allen/din912-88-mavr)  |[Sinter Hellas](http://www.sinter-hellas.gr/) | 0 | 18.62 | 0 | 4 scews reused from frame material |
 | #4 | 300mm Aluminium Rotating Bearing Turntable | [Turntable](https://www.aliexpress.com/item/1005002246256122.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 29.53 | 29.53 | - |
 | #5 | Linear Actuator 50 mm 24V 200N 45 mm/s| [Linear Actuator](https://www.aliexpress.com/item/32687100164.html) |  [AliExpress](https://www.aliexpress.com/) | 1 | 21.93 | 21.93 | - |
