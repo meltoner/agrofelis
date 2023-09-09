@@ -97,8 +97,8 @@ The full rotating mechanism with its Horizontal Gear Disk, Motor & Gear and 4 lo
 
 ### Supporting Plastic Arcs 
 
-
-
+The Plastic Arcs incorporate holes that fit exactly the 4 long screws. The Arcs support the weight of the overstructure where as the
+screws primarily support the horizontal forces produced by the rotation. The whole assemply is quite sturdy. 
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
 ![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
