@@ -41,26 +41,24 @@ add
 ![part 1 actual](_figures/implement-2-degrees-rotating-mount-08-part-1-actual.jpg)
 ![part 1 actual-painted](_figures/implement-2-degrees-rotating-mount-09-part-1-actual-painted.jpg)
 
-### Vertical gear
+### Stainless steel gears
 
-2mm laser cut outsource 
+
+The following figure illustrates the schematics of the horizontal gear disk.
 
 ![part 3](_figures/implement-2-degrees-rotating-mount-10-part-3.png)
+
+The part was fabricated using a 2 mm stainless steel sheet which was laser cut by an external service, because it was too detailed for our DIY plasma cutter. 
+
 ![part 1 2 3](_figures/implement-2-degrees-rotating-mount-11-part-1-2-3.jpg)
 
-to add cnc code
+The design source code file sent to the service is provided bellow.
 
-### Servo Motor
+- [Horizontal disk gear and vertical gears file](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg)
 
-![part 5](_figures/implement-2-degrees-rotating-mount-12-part-5.png)
-![part 5 actual](_figures/implement-2-degrees-rotating-mount-13-part-5-actal.jpg)
+A preview of the design source file containing the horizontal disk gear and four gears to employ 3 of them stacked together, is provided bellow.
 
-### Supporting walls
-
-![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
-![assempled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
-
-to add 3d print gcode
+[Laser cut drawing](_figures/laser-cut_stainless_gear_disk_motor_gear_order_preview.png)
 
 ### Gear 
 
@@ -69,6 +67,23 @@ to add 3d print gcode
 ![gear view](_figures/implement-2-degrees-rotating-mount-16-gear-view.jpg)
 ![gear](_figures/implement-2-degrees-rotating-mount-17-gear.jpg)
 ![gear-edge](_figures/implement-2-degrees-rotating-mount-18-gear-edge.jpg)
+
+
+### Servo Motor
+
+![part 5](_figures/implement-2-degrees-rotating-mount-12-part-5.png)
+![part 5 actual](_figures/implement-2-degrees-rotating-mount-13-part-5-actal.jpg)
+
+### Supporting side walls
+
+have holes, fiiting to pass four side screwss.. support...
+
+![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
+![assempled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
+
+The source code design plans implementing the side walls, are persisted in the following path.
+
+- [Supporting side walls](assets/RotationTableWalls/walls.stl)
 
 ### Mid base
 
