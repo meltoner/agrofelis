@@ -27,9 +27,9 @@ and two 3D printed plastic arcs supporting the overstructure.
 2. Ball Bearing Turntable
 3. Inner Circle with rectangular holes
 4. Supporting Plastic Arcs
-5. 
-6.
-7.
+5. Stepper Motor with Gear
+6. Linear Actuator
+7. 
 8.
 9.
 10.
