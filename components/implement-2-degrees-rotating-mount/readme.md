@@ -87,6 +87,8 @@ Here we can see the rounded edges that was done using a Dremel
 
 ### Servo Motor
 
+The Servo motor producing a 0.3NM of torque is shown below.
+
 ![part 5](_figures/implement-2-degrees-rotating-mount-12-part-5.png)
 ![part 5 actual](_figures/implement-2-degrees-rotating-mount-13-part-5-actal.jpg)
 
