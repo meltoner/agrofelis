@@ -8,7 +8,6 @@ This document describes the construction of the Rotating Implement Mount (RIM) p
 
 
 
-
 ![overal-view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
 
 ## Implement mount module 
