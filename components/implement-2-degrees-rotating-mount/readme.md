@@ -6,13 +6,14 @@ This document describes the construction of the Rotating Implement Mount (RIM) p
 
 # Introduction
 
-The module comprises of the bottom part which is a 360-degree turntable with an inner circle of cut in rectangular holes in which the gear teeth run, the mid part that moves vertically with a depression angle of -5 degrees and elevation angle of +40 degrees leveraged by the linear actuator and the top part which is the actual mount surface.
+
+
 
 ![overal-view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
 
 ## Implement mount module 
 
-add
+The module's bottom part which is a 360-degree ball-bearing turntable with an attached inner circle of 69 cut-in rectangular holes in which the gear teeth run provides the horizontal tilt, the mid part with a depression angle of -5 degrees and elevation angle of +40 degrees leveraged by the linear actuator provides the vertical tilt and the top part is the actual mount surface.
 
 ![module](_figures/implement-2-degrees-rotating-mount-02-module.png)
 ![components](_figures/implement-2-degrees-rotating-mount-03-components.jpg)
