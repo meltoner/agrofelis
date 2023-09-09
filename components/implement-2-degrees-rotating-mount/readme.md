@@ -67,7 +67,7 @@ The design source code file sent to the service is provided bellow.
 
 - [Horizontal disk gear and vertical gears file](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg)
 
-A preview of the design source file containing the horizontal disk gear and four gears to employ 3 of them stacked together, is provided bellow.
+A preview of the design source file containing the horizontal gear disk and four gears to employ 3 of them stacked together, is provided bellow.
 
 ![Laser cut drawing](_figures/laser-cut_stainless_gear_disk_motor_gear_order_preview.png)
 
