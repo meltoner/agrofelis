@@ -17,7 +17,9 @@ The module's bottom part is a 360-degree ball-bearing turntable with an attached
 
 ![module](_figures/implement-2-degrees-rotating-mount-02-module.png)
 The parts of the Rotating assemply alongside with the supporting Plastic Arcs and the 4 long screws that link the bottom and mid part can be clearly seen in the following photo. 
+
 ![components](_figures/implement-2-degrees-rotating-mount-03-components.jpg)
+An exploded view of the whole mechanism and its functional design details can be seen in the following photo.
 
 ![exploded](_figures/implement-2-degrees-rotating-mount-04-exploded.png)
 ![decomposed](_figures/implement-2-degrees-rotating-mount-05-decomposed.png)
