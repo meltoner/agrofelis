@@ -49,6 +49,8 @@ A list of the parts of the Rotating Implement Mount is presented down below
 
 ### Base
 
+The dimensions followed by a fabricated Sheet Metal Base are shown down below.
+
 ![part 1](_figures/implement-2-degrees-rotating-mount-07-part-1.png)
 ![part 1 actual](_figures/implement-2-degrees-rotating-mount-08-part-1-actual.jpg)
 ![part 1 actual-painted](_figures/implement-2-degrees-rotating-mount-09-part-1-actual-painted.jpg)
