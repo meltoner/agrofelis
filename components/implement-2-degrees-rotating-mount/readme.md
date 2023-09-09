@@ -74,11 +74,11 @@ A preview of the design source file containing the horizontal disk gear and four
 
 ### Gear 
 
-3 layers stacked , grinded 
+The gear is comprised of 3 layers that are stacked & screwed together then grinded 
 
 ![gear view](_figures/implement-2-degrees-rotating-mount-16-gear-view.jpg)
 
-edge rounding using a Dremel
+Here we can see the rounded edges that was done using a Dremel
 
 ![gear](_figures/implement-2-degrees-rotating-mount-17-gear.jpg)
 ![gear-edge](_figures/implement-2-degrees-rotating-mount-18-gear-edge.jpg)
