@@ -33,7 +33,7 @@ A list of the parts of the Rotating Implement Mount is presented down below
 
 ![enumerated](_figures/implement-2-degrees-rotating-mount-06-enumerated.png)
 
-1. Bottom Metal Sheet Base
+1. Bottom Base
 2. Ball Bearing Turntable
 3. Horizontal Gear Disk with rectangular holes
 4. Supporting Plastic Arcs
@@ -42,14 +42,14 @@ A list of the parts of the Rotating Implement Mount is presented down below
 7. Mid Base  
 8. Linear shaft support bracket
 9. Linear shaft
-10. Top Metal Sheet Base
+10. Top Base
 
 
 ## Fabrication parts
 
 ### Base
 
-The dimensions followed by a fabricated Sheet Metal Base are shown down below.
+The dimensions followed by a fabricated Metal Sheet Base are shown down below.
 
 ![part 1](_figures/implement-2-degrees-rotating-mount-07-part-1.png)
 ![part 1 actual](_figures/implement-2-degrees-rotating-mount-08-part-1-actual.jpg)
@@ -112,6 +112,8 @@ The source code design plans implementing the side walls, are persisted in the f
 
 ### Mid base
 
+A schematic with the dimensions and photos of a plasma cut and welded fabricated mid base is shown down below
+
 ![part 7](_figures/implement-2-degrees-rotating-mount-19-part-7.png)
 ![part 7-plasma-cut](_figures/implement-2-degrees-rotating-mount-20-part-7-plasma-cut.jpg)
 ![part 7-actual](_figures/implement-2-degrees-rotating-mount-21-part-7-actual.jpg)
@@ -164,8 +166,6 @@ The following table lists the individual components employed for manufacturing t
 The total cost to manufacture the Agrofelis two degrees of freedom rotating implement mount, excluding shipping, cutting, welding and painting costs, sums to approximately **322.58** euros.
 
 ## Summary
-
-# Conclusion
 
 The design rationale, component details with essential dimensions for reproducing the Rotating Implement Mount (RIM) of the Agrofelis Robot has been documented in a progressive manner. A photograph of the vehicle with the RIM employing a thermal fogger is presented in the closing image below.
 
