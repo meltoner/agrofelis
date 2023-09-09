@@ -2,11 +2,11 @@
 
 # Abstract
 
-This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The module comprises of the bottom part which is a 360-degree turntable the mid part that moves vertically with a depression angle of -5 degrees and elevation angle of +40 degrees and the top part which is the actual mount surface. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the video. The rotation is acheived through the use of a stepper motor turning a gear that runs on the turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mid part, thus the module facilitates a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics and the manufacturing process is covered. The document concludes with a list of the components used and indicative suppliers, aiding in the replication of the module.
+This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
 
 # Introduction
 
-add
+The module comprises of the bottom part which is a 360-degree turntable with an inner circle of cut in rectangular holes in which the gear teeth run, the mid part that moves vertically with a depression angle of -5 degrees and elevation angle of +40 degrees leveraged by the linear actuator and the top part which is the actual mount surface.
 
 ![overal-view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
 
