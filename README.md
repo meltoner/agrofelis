@@ -205,8 +205,7 @@ A cherry picked selection of figures from the Agrofelis remote controller design
 ![Agrofelis Remote Controller Design and Fabrication figures highlights](components/remote-control/_figures/highlights-remote-control.jpg)
 
 
-## Infrastructure provisioning and computing components
-
+## Computing modules, data fusion and system provisioning
 
 
 
@@ -232,13 +231,14 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
 | [Rotating implement mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
-| **Total Cost**   | **3,178.72**   |
+| [Remote controller](components/components/remote-control#remote-controller-components) | 65.52  |
+| **Total Cost**   | **3,244.24**   |
 
 </div>
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently the total manufacturing cost for the Agrofelis robot is **3,178.72** euros, excluding shipping and assembly costs.
+Consequently the total manufacturing cost for the Agrofelis robot is **3,244.24** euros, excluding shipping and assembly costs.
 
 ## Authors
  
