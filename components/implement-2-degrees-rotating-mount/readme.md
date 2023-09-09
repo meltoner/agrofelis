@@ -105,7 +105,7 @@ The following table lists the individual components employed for manufacturing t
 | #4 | 300mm Aluminium Rotating Bearing Turntable | [Turntable](https://www.aliexpress.com/item/1005002246256122.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 29.53 | 29.53 | - |
 | #5 | Linear Actuator 50 mm 24V 200N 45 mm/s| [Linear Actuator](https://www.aliexpress.com/item/32687100164.html) |  [AliExpress](https://www.aliexpress.com/) | 1 | 21.93 | 21.93 | - |
 | #6 2 | H-Bridge Brushed DC Motor Driver | [Motor Driver](https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/motors/drivers/drv8871-h-bridge-brushed-dc-motor-driver-breakout-board-for-arduino/) | [Cableworks](https://www.cableworks.gr) | 2 | 6.00 | 12.00 | - |
-| #7 | NEMA23 single shaft 8mm, 4.2A | [NEMA23](https://www.aliexpress.com/item/32868067877.html) | 1 | 18.44 | 18.44 | - |
+| #7 | NEMA23 single shaft 8mm, 4.2A | [NEMA23](https://www.aliexpress.com/item/32868067877.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 18.44 | 18.44 | - |
 | #8 | Closed loop Nema 23 driver | [closed loop stepper driver](https://www.aliexpress.com/item/1005005446035245.html) | [AliExpress](https://www.aliexpress.com/) | 1 | 21.82 | 21.82  | - |
 | #9 | Nema 23 L bracket | [Stepper Bracket](https://isac.gr/product/goniaki-vasi-nema-23-motor/) | [Isac](https://isac.gr) | 1 | 6 | 6 | - |
 | #10 | Linear motion shaft OD 12mm 500mm length | [Linear shaft](https://isac.gr/product/axonas-grammikis-kinisis-od-12mm/?attribute_pa_size=500mm) | [Isac](https://isac.gr) | 1 | 8.3 | 8.3 | - |
@@ -118,10 +118,10 @@ The following table lists the individual components employed for manufacturing t
 | #17 | Paper sheet | [Paint paper](https://xromagora.gr/%CF%83%CF%85%CE%BD%CE%B1%CF%86%CE%AE-%CF%87%CF%81%CF%89%CE%BC%CE%AC%CF%84%CF%89%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%AD-%CE%BD%CE%AC%CF%85%CE%BB%CE%BF%CE%BD/%CF%87%CE%B1%CF%81%CF%84%CE%AF-%CE%B3%CE%BA%CE%BF%CF%86%CF%81%CE%B5-%CE%BF%CE%BD%CF%84%CE%BF%CF%85%CE%BB%CE%B5.) | [Xromagora](https://xromagora.gr/) | 0 | 0.80 | 0.00 | Reused from frame material|
 | #18 | Laser cut gears out of stainless steel sheet 2 mm as of design | [See dwg design file](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg) | [QOOP Metalworks](https://www.qoop.gr) | 1 | 85 | 85 | - |
 | #19 | 3d Printed side walls as of gcode  [See gcode design file](assets/3d-print/RotationTableWalls/walls.stl) | [3d printing services](https://www.3dhub.gr/upload-3d-file/) | [3dhub](https://www.3dhub.gr/) | 1 | 55 | 55 | - |
-| **Total** |      |    |     |      |     |  **155.47**  | | 
+| **Total** |      |    |     |      |     |  **322.58**  | | 
 </div>
 
-The total cost to manufacture the Agrofelis frame excluding shipping, cutting, welding and painting costs, sums to approximately **155** euros.
+The total cost to manufacture the Agrofelis two degrees of freedom rotating implement mount, excluding shipping, cutting, welding and painting costs, sums to approximately **322.58** euros.
 
 ## Summary
 
