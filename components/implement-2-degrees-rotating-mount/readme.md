@@ -94,7 +94,8 @@ The Servo motor on its mount and with its attached gear producing a 0.3NM of tor
 
 ### Supporting Plastic Arcs 
 
-have holes, fiiitings to pass four side screwss.. support...
+
+
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
 ![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
