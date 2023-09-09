@@ -2,7 +2,7 @@
 
 # Abstract
 
-The document, presents the details of fabricating a basic remote controller for actuating the wheels, the steering, the breaks and the power of the Agrofelis Robot. Accounting for ergonomics, low cost and readily available components a simple extendable design is presented, rapidly prototyping the minimum number of sensors and components needed for booting and controlling the mobility functions of the vehicle. The module is decomposed to its  using design plans encoded with crucial metrics and is recompiled using photos taken during the fabrication process. The software source code running on the remote micro-controller is presented following approaches implemented in other Agrofelis modules. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+The document, presents the details of fabricating a basic remote controller for actuating the wheels, the steering, the breaks and the power of the Agrofelis Robot. Accounting for ergonomics, low cost and readily available components a simple extendable design is presented, rapidly prototyping the minimum number of sensors and components needed for booting and controlling the mobility functions of the vehicle. The module is de-compiled using design plans annotated with crucial metrics and is re-compiled using photos taken during the fabrication process. The software source code running on the micro-controller is presented following alike approaches implemented in other Agrofelis modules. The document concludes with a list of components used and assorted with indicative suppliers, aiding in the replication of the module.
 
 # Introduction
 
