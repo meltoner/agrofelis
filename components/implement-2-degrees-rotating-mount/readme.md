@@ -2,7 +2,7 @@
 
 # Abstract
 
-This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of directional implements such as the thermal fogger depicted in the video. The rotation is acheived through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 Degrees of freedom capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
 
 # Introduction
 
@@ -106,7 +106,6 @@ unpainted
 
 ![fabricated a](_figures/implement-2-degrees-rotating-mount-24-fabricated-a.jpg)
 ![fabricated b](_figures/implement-2-degrees-rotating-mount-25-fabricated-b.jpg)
-![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
 
  
 ## Implement mount components and indicative suppliers
@@ -146,3 +145,5 @@ The total cost to manufacture the Agrofelis two degrees of freedom rotating impl
 # Conclusion
 
 add
+
+![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
