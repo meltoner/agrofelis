@@ -27,7 +27,7 @@ and two 3D printed plastic arcs supporting the overstructure.
 2. Ball Bearing Turntable
 3. Inner Circle with rectangular holes
 4. Supporting Plastic Arcs
-5.
+5. 
 6.
 7.
 8.
