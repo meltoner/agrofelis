@@ -187,7 +187,9 @@ The following table lists the individual components employed for manufacturing t
 | #4 | NEO-6M GPS Module | [GPS](https://www.aliexpress.com/item/1005001635722164.html) | [AliExpress](https://www.aliexpress.com)  | 1 | 2.69 | 2.69 | - | 
 | #5 | ESP32 38 pin | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 3.67 | 3.67 | - | 
 | #6 | ESP32 38 pin terminal adapter | [ESP32](https://www.aliexpress.com/item/1005001636295529.html) | [AliExpress](https://www.aliexpress.com) | 1 | 2.69 | 2.69 | - | 
- | **Total** |      |    |     |      |     |  **158.82**  | | 
+| #7 | Black and red wire| [Black-red wire](https://grobotronics.com/wire-2x0.5mm-stranded-black-red-10m.html)   | [GRobotronics](https://grobotronics.com/)  | 0  | 8.00 | 0 | Shared Component |
+| #8 | 4-wire ribbon cable  | [Ribbon cable 28AWG](https://grobotronics.com/ribbon-cable-28awg-0.081mm2-20-wire.html)   | [GRobotronics](https://grobotronics.com/) | 0 | 1.00 | 0 | Shared Resource |
+| **Total** |      |    |     |      |     |  **158.82**  | | 
 
 </div>
 
