@@ -23,14 +23,14 @@ and two 3D printed plastic arcs supporting the overstructure.
 ![decomposed](_figures/implement-2-degrees-rotating-mount-05-decomposed.png)
 ![enumerated](_figures/implement-2-degrees-rotating-mount-06-enumerated.png)
 
-1. Metal Sheet Base
+1. Bottom Metal Sheet Base
 2. Ball Bearing Turntable
 3. Inner Circle with rectangular holes
 4. Supporting Plastic Arcs
 5. Stepper Motor with Gear
 6. Linear Actuator
-7. 
-8.
+7. Mid Base with vertical rotation shaft 
+8. 
 9.
 10.
 
