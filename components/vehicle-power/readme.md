@@ -111,6 +111,14 @@ More specifically, the enumerated parts correspond to the following elements.
 4. Negative voltage copper bar terminal power distribution
 5. Battery management system
 
+The following photo snapshots the copper bar terminal power distributurs and the 250A circuit breaker.
+
+![Breaker and bar terminals image](_figures/vehicle-power-b.jpg)
+
+The subsequent photograph captures the baterry disconnect switch, the BMS and some of the step down converters.
+
+![Battery switch image](_figures/vehicle-power-a.jpg)
+
 Despite the fact that various protection mechanisms are incorporated downstream and by the BMS, the circuit breaker provides a mechanical fail safe protection mechanism at the nominal maximum levels of the energy module.
 
 ## Charging 
@@ -137,11 +145,15 @@ Three step-down voltage regulators are installed to power these modules. The fir
 
 A power cord composed of two high-current cables (carrying battery voltage), four low-current cables (5V, 12V) as well as an 8-pin ribbon cable distributes power and establish a data link between the back and front compartment of the vehicle. To enhance its performance and safety, the composite power cord is wrapped with Copper Foil Tape to shield against electromagnetic interference (EMI) and then encased in a Flame-retardant PET tube Cable Sleeve. While wrapping the data cables with copper tape may seem somewhat excessive, the cables obtain a stronger structure and after troubleshooting the DIY plasma cutter due to EMI interference, we felt safer to employ it in the power cord which passes through the battery compartment. 
 
-![-07-electrical-components](_figures/vehicle-power--07-electrical-components.jpg)
+![Electrical components](_figures/vehicle-power--07-electrical-components.jpg)
 
 ### Power Cord
 
 A power cord composed of 2 high current cables (battery voltage), 4 low current cable (5v, 12v) as well as a an 8 pin ribbon cable distribute power and provide a data link between the back and front compartment of the vehicle. The composite power cord is wrapped with Copper Foil Tape for EMI shielding and last with a Flame-retardant PET tube Cable Sleeve. Although wrapping the data cables with a copper tape may be somewhat unnecessary, the cables obtain a stronger structure and after troubleshooting the DIY plasma cutter because of EMI interference, we felt safer to employ it in the power cord which passes through the battery compartment. 
+
+The consequent image photographs the external insulation employed to the power cord.
+
+![-07-electrical-components](_figures/vehicle-power-c.jpg)
 
 ## Switchable Power Points
 
