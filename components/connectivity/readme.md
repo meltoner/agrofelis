@@ -197,7 +197,7 @@ Special care has been devoted so the setup and code is very lightweight, clean a
 
 ### Archived data
 
-The following image screenshots the data log files archived by the Unificator server along with their size. 
+The following screenshot shows the data log files archived by the Unificator server along with their size. 
 
 ![Archived Log DataImage](_figures/computing-13-archiveLogDataImage.png)
 
