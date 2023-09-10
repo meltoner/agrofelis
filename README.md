@@ -207,9 +207,18 @@ A cherry picked selection of figures from the Agrofelis remote controller design
 
 ## Infrastructure provisioning, computing elements and data fusion
 
+The [infrastructure provisioning, computing elements and data fusion document](components/connectivity) presents the provision of the main computing elements of the robot and initiation of its services. The peripheral elements established and attached to the local Agrofelis WIFI network and its USB hub are enumerated. The GPU component and the neural network accelerator tapping to the USB3 interface of the Jetson Nano are presented. The Agrofelis Unificator Software, connecting all Agrofelis modules is introduced and its source code and features presented. Also provided are lightweight 3D printed structural elements that fit in the limited space available for the USB cables and secure the components and the USB hub in their compartment. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the Agrofelis computing and networking systems.
+
+The complete documentation of the infrastructure provisioning, computing elements and data fusion, is referenced below.
+
+- [Infrastructure provisioning, computing elements and data fusion documentation](components/connectivity)
+
+A cherry picked selection of figures from the computing modules documentation, is compiled by the following figure. 
+
+![Infrastructure provisioning, computing elements and data fusion figures highlights](components/connectivity/_figures/highlights-connectivity.jpg)
 
 
-## Cost Estimation Overview
+# Cost Estimation Overview
 
 This sub-section outlines the indicative costs associated with constructing the Agrofelis robot. These figures are derived from estimated costs per item discussed in the relevant *indicative suppliers section* within each of the aforementioned documents, encompassing a diverse array of components crucial to the robot's assembly. It is important to note that the presented cost estimation incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
 
@@ -240,14 +249,14 @@ Detail breakdowns of cost estimations for the manufacturing of each component ca
 
 Consequently the total manufacturing cost for the Agrofelis robot is **3,244.24** euros, excluding shipping and assembly costs.
 
-## Authors
+# Authors
  
 - Konstantinos L. Papageorgiou
 - Hercules Metaxas
 - Anastasios Pliatsikas 
 
 
-## Special Thanks
+# Special Thanks
 
 - Dimitris Kouzis Lukas, for his support and electronics knowledge. 
 - Christos Spetseris, from [QOOP Metalworks](https://www.qoop.gr) for his design and 3D CAD training support.
@@ -259,8 +268,8 @@ Consequently the total manufacturing cost for the Agrofelis robot is **3,244.24*
 - The crew of the Myrtia Fire Station in Southern Greece for sharing fire fighting tactics. 
 - Hellas Digital, for their excitement and discussions about the robotic vehicle.
 
-## Contact us
+# Contact us
 
-Contact us at info at agrofelis dot com
+Contact us: info at Agrofelis dot com
 
 ![Agrofelis Robot Logo](introduction/_figures/agrofelis_logo.svg)
