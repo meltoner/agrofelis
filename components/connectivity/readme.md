@@ -255,13 +255,13 @@ A compact 5v USB hub is employed, enabling multiple devices to be connected with
 
 ## Computing modules structural support.
 
-One aspect often missed while arranging components, is that their connection cables can even occupy about 50% more of their size. Although various connection cables can be made compact that is not an option for USB cables which would otherwise obscure the neighboring components. The solution designed to mitigate the identified problem, was four 3d printed compact tilted mounts, allowing to pass the cables above the neighboring elements and to pass the cables through the space created  underneath. 
+One aspect often missed while arranging components, is that their connection cables can occupy up to 50% more of their size. Although various connection cables can be made compact that is not an option for USB cables which would otherwise obscure the neighboring components. The solution designed to mitigate the identified problem, was four 3d printed compact tilted mounts, allowing to pass the cables above the neighboring elements and to pass the cables through the space created  underneath. 
 
 The following schematic illustrates the location of the computing modules, their extensions, the USB hub and the 3d printed tilted mounts positioned above the steering plates in the back section of the robot.
 
 ![computing elements schematic](_figures/computing-06-0-schematic.png)
 
-Two type of structure where designed and 3d printed twice. The brackets and their arrangement on the steering plate can be seen in the following diagram.
+Two types of structure where designed and 3d printed twice. The brackets and their arrangement on the steering plate can be seen in the following diagram.
 
 ![3d printed brackets](_figures/computing-06-1-3d-print-brackets.png)
 
@@ -273,12 +273,12 @@ The 3D printing source code files for manufacturing the related brackets, are li
 |USB hub titled brackets|[STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usb_holder.stl)|(Gcode)[https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usbholder.gcode]|
 
 
-The following image photograph the computing modules supportive structure and how the Jetson Nano is being attached to it.
+The following image shows the computing modules supportive structure and how the Jetson Nano is being attached to it.
 
 ![3d print brackets-a](_figures/computing-06-3d-print-brackets-a.jpg)
 
 
-The use of magnets located on their bottom side, enables the structure to snap into place when in contact with the Iron steering plate. The use of magnets also provides the ability to slightly relocate the modules if necessary. Although the magnets are not strong enough to completely secure all components in place, because multiple cables interconnect the modules with the frame additional forces created keep the modules well in place. 
+The use of magnets located on their bottom side, enables the structure to snap into place when in contact with the Iron steering plate. The use of magnets also provides the ability to slightly relocate the modules if necessary. Despite the magnets not being strong enough to completely secure all components in place, the additional forces of multiple cables interconnecting the modules with the frame keep the modules in place. 
 
 ![3d print brackets-b](_figures/computing-07-3d-print-brackets-b.jpg)
 
