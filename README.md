@@ -24,9 +24,9 @@ Existing vehicles on the market that can serve as adaptable platforms for variou
 
 ## The Technology Considerations
 
-The majority of technical solutions proposed for agricultural robotic systems aim for high levels of autonomy by using satellite positioning systems such as RTK GNSS (Real-Time Kinematic Global Navigation Satellite Systems), cameras and LIDAR sensors for achieving Simultaneous Localisation And Mapping (SLAM), as well as supplementary systems like radars, odometers and inertial systems.
+The majority of technical solutions proposed for agricultural robotic systems aim for high levels of autonomy by using satellite positioning systems such as RTK GNSS (Real-Time Kinematic Global Navigation Satellite Systems), cameras and LIDAR sensors for achieving Simultaneous Localization And Mapping (SLAM), as well as supplementary systems like radars, odometers and inertial systems.
 
-In the case of RTK GNSS, signal interruption due to foliage, weather conditions, or a lack of ground stations limits its usefulness. LIDAR, on the other hand, can be combined with odometers, cameras and IMUs, with no reliance on external signals. Additionally, the use of cheaper 2D LIDAR on a tilting mechanism allows 3D coverage with considerably lower cost. The strategic selection of LiFePO4 batteries offers endurance in high temperatures, incombustibility, utilization of non-toxic materials, the ability to work unevenly charged and a slow rate of self-discharge.
+In the case of RTK GNSS, signal interruption due to foliage, weather conditions, or a lack of ground stations limits its usefulness. LIDAR, on the other hand, can be combined with odometers, cameras and IMUs, with no reliance on external signals. Additionally, the use of cheaper 2D LIDAR on a tilting mechanism allows 3D coverage with considerably lower cost. The strategic selection of LiFePO4 batteries offers endurance in high temperatures, in-combustibility, utilization of non-toxic materials, the ability to work unevenly charged and a slow rate of self-discharge.
 Introducing a remote control system capable of automating certain operations through recording and replaying can offer an affordable alternative suitable for smaller platforms, while also having a broader applicability and offering a considerable boost in overall productivity.
 
 
@@ -62,7 +62,7 @@ The processing elements of the system are modularized systems composed of Arduin
 
 Furthermore, the project implements a two-degrees-of-freedom actuator rotating base, for attaching a thermal pulse jet fogger to the top of the robotic vehicle.
 
-In addition to its wired infrastructure, the system supports a range of connectivity options, including Bluetooth for local wireless attachments, Wi-Fi for nearby controllers, mobile phones and/or modules.
+In addition to its wired infrastructure, the system supports a range of connectivity options, including Bluetooth for local wireless attachments, WiFi for nearby controllers, mobile phones and/or modules.
 
 
 [![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/embed/DgkQkJUQ_kc)
@@ -74,7 +74,7 @@ In the following sections, the detailed documentation of all developed modules c
 
 ## Agrofelis Chassis Frame Design and Fabrication
 
-The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
+The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8 kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
 
 The complete documentation of the Agrofelis chassis frame is provided below.
 
