@@ -67,12 +67,12 @@ The file system of the Agrofelis software is organized within the root path of t
 
 - /web-pub
 
-The file system can be populated by exporting the [connectivity/](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) folder from the github repository and positioning it within the /web-pub folder of the Jetson nano. Following the filesystem installment and to have web applications folder in a more prominent position the **www** folder contained within the **connectivity** folder just established, is relocated within the **/web-pub/** folder. Last, to also test the steering source code compilation and firmware upload functionality, the [source code of the steering module](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-steering/src/linearSteer) is exported and located at the **/web-pub/arduino/2023** folder. 
+The file system can be populated by exporting the [connectivity/](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) folder from the github repository and positioning it within the /web-pub folder of the Jetson nano. Following the filesystem installment and to have web applications folder in a more prominent position the **www** folder contained within the **connectivity** folder just established, is relocated within the **/web-pub/** folder. Lastly for testing the steering source code compilation and firmware upload functionality, the [source code of the steering module](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-steering/src/linearSteer) is exported and located at the **/web-pub/arduino/2023** folder. 
 
 
 ## Docker images provisioning
 
-The docker images definitions are contained within [images folder](https://github.com/meltoner/agrofelis/tree/main/components/connectivity/src/agrofelis-unificator/docker/images) established in the previous section. Respective folders named after the name of the aforementioned Agrofelis images contain a **Dockerfile** encoding the exact commands extending and adapting their related base image. The images folder provides one-line commands to easily provision the environments from scratch. The following example build the previously presented images.
+The docker images definitions are contained within [images folder](https://github.com/meltoner/agrofelis/tree/main/components/connectivity/src/agrofelis-unificator/docker/images) established in the previous section. Respective folders named after the name of the aforementioned Agrofelis images contain a **Dockerfile** encoding the exact commands extending and adapting their related base image. The images folder provides one-line commands to easily provision the environments from scratch. The following example builds on the previously presented images.
 
 	cd /web-pub/connectivity/src/agrofelis-unificator/docker/images
 
@@ -97,7 +97,7 @@ Once the service is initiated it will automatically start on systems boot or res
 
 ### Unificator 
 
-The following command will initiate the container running the Unificator software. The instantiation command, apart from mounting the Agrofelis Unificator Node JS application source code, moreover mounts privileged hardware resources namely the Arduino Mega steering system as well as of the Front Sensors Lidar's USB connections. The command moreover exposes and links the port 8080 of the host machine with that of container's. Last it initiates the Unificator application using the NodeJs technology and opens a [Websocket](https://en.wikipedia.org/wiki/WebSocket) server on port 8080. 
+The following command will initiate the container running the Unificator Software. The instantiation command, apart from mounting the Agrofelis Unificator Node JS application source code, moreover mounts privileged hardware resources namely the Arduino Mega steering system as well as that of the Front Sensors Lidar's USB connections. The command also exposes and links the port 8080 of the host machine with that of container's. Lastly it initiates the Unificator application using the NodeJs technology and opens a [Websocket](https://en.wikipedia.org/wiki/WebSocket) server on port 8080. 
 
 	./01.init.agrofelis.unificator.sh
 
@@ -120,7 +120,7 @@ In order to upload the firmware to the micro controller the USB connection must 
 
 	docker rm -f agrofelis.unificator1
 
-All docker instance runing on the host machine can be listed using the following command
+All docker instances runing on the host machine can be listed using the following command
 
 	docker ps
 
@@ -131,15 +131,15 @@ The consequent command can be used to observe the hardware resources occupied by
 
 ## Agrofelis Unificator
 
-The Agrofelis Unificator software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application build on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilising the USB interface such as the Steering/Bracking modules and the Front sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Last, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
+The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilising the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
 
-The Agrofelis Unificator software is located in the following path :
+The Agrofelis Unificator Software is located in the following path :
 
 - [/web-pub/connectivity/src/agrofelis-unificator/server](https://github.com/meltoner/agrofelis/tree/main/components/connectivity/src/agrofelis-unificator/server)
 
-The software depends on few javascript libraries used for accesting the http protocol, the Serial bus the web sockets and for performing asynchronous web requests. These dependencies are downloaded once using the following commands.
+The software depends on few javascript libraries used for accessing the http protocol, the Serial bus the web sockets and for performing asynchronous web requests. These dependencies are downloaded using the following commands.
 
 
 	apt-get update;
@@ -151,7 +151,7 @@ The software depends on few javascript libraries used for accesting the http pro
 
 In order to interconnect the various Wifi capable modules of the robot, a compact access point module was employed. More specifically the TP-LINK TL-WR802N v4 wireless Router  supporting up to 300Mbps bandwidth. The module was chosen due to its compact size, its capacity to operate in multiple modes as well as its 5v compatibility. 
 
-The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associated the different modules with a static IP based on their unique MAC address. The WiFi network created is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
+The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associate the different modules with a static IP based on their unique MAC address. The WiFi network is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
 
 The default Wifi password followed by all modules in this repository is
 
@@ -185,7 +185,7 @@ The attached configuration files also encode the IP association each wifi module
 
 ## Agrofelis USB hub
 
-A compact 5v usb hub is employed, enabling multiple devices to be connected with the Jetson nano. More specifically the following modules are connected into the hub which consequently connects with the usb-2 port of the computer.
+A compact 5v usb hub is employed, enabling multiple devices to be connected with the Jetson Nano. More specifically the following modules are connected into the hub which consequently connects with the usb-2 port of the computer.
 
 - Wifi usb
 - BMS usb sensor cable
@@ -195,7 +195,7 @@ A compact 5v usb hub is employed, enabling multiple devices to be connected with
 
 Custom brackets were designed with magnets on their bottom fixing leniently the location of the USB hub.
 
-- The 3d printed design plans of the bracket 
+- The 3d printed design plans of the brackets 
 
 ## USB 3d printed brackets 
 ## Jetson nano 3d printed base
