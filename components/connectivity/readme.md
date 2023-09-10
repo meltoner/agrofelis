@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The document presents the provision of the main computing elements of the robot and initiation of its services. The peripheral elements established and attached to the local Agrofelis WIFI network and its USB hub are enumerated. The GPU component and the neural network accelerator tapping to the USB3 interface of the Jetson Nano are presented. The Agrofelis Unificator Software, connecting all Agrofelis modules is introduced and its source code and features presented. Also provided are lightweight 3D printed structural elements that fit in the limited space available for the USB cables and secure the components and the USB hub in their compartment. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the the Agrofelis computing and networking systems.
+The document presents the provision of the main computing elements of the robot and initiation of its services. The peripheral elements established and attached to the local Agrofelis WIFI network and its USB hub are enumerated. The GPU component and the neural network accelerator tapping to the USB3 interface of the Jetson Nano are presented. The Agrofelis Unificator Software, connecting all Agrofelis modules is introduced and its source code and features presented. Also provided are lightweight 3D printed structural elements that fit in the limited space available for the USB cables and secure the components and the USB hub in their compartment. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the Agrofelis computing and networking systems.
 
 ## Introduction
 
@@ -14,11 +14,11 @@ A relatively low cost fully fledged GPU capable computer, optimised for small fo
 
 ![Jetson Nano](_figures/computing-01-jetson.jpg)
 
-The Computer is equipped with a high speed 128 GB sd card with read and write access of 290 and 260 Megabytes per second to remedy one of the key bottle necks of the Jetson nano computer. 
+The Computer is equipped with a high speed 128 GB SD card with read and write access of 290 and 260 Megabytes per second to remedy one of the key bottle necks of the Jetson nano computer. 
 
 ![high speed sd card](_figures/computing-02-sd.jpg)
 
-The Jetson Nano moreover, is equipped with an AI accelerator module connecting in its USBv3 port extending its capacity for parallel processing and neural networks inference.
+Moreover the Jetson Nano, is equipped with an AI accelerator module connecting in the USBv3 port extending its capacity for parallel processing and neural networks inference.
 
 ![Coral accelerator](_figures/computing-04-coral.jpg)
 
