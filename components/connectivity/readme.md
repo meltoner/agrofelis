@@ -324,3 +324,4 @@ The total cost to manufacture the Agrofelis computing modules and network, exclu
 # Summary
 
 The document presented the computing elements of the robot. The developed services conterised via Docker were described and indexed. The Agrofelis Unificator Software, connecting all Agrofelis modules was introduced and its source code and features presented. The lightweight 3D printed structural elements designed for organising the components and their cables source code files were provided. The document concluded with a list of the components used and indicative suppliers, aiding the replication of the Agrofelis computing and networking systems.
+ 
