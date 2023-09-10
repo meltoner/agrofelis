@@ -36,7 +36,7 @@ Within the scope of an agricultural vehicle, a variety of technologies could be 
 - Grass Cutter/Lawn Mower: A frequent and necessary application in orchards.
 - Turbine Sprayers: Beneficial across orchards and vegetable cultivations for dispensing pesticides or water-soluble fertilizers.
 - Fog Sprayers: Enabling extended reach amidst dense foliage and providing antifreeze protection with glycerin oil.
-- Fertilizer Casting: A copious job essential for both orchards and vegetable crops.
+- Fertilizer Spreader: A copious job essential for both orchards and vegetable crops.
 - Sensor Suite for Plant Data Collection: Facilitating comprehensive plant data acquisition, including diagnoses of plant diseases.
 - Mechanized Weed Elimination: Using mechanical, laser or microwave mechanisms for weed control.
 - Robotic Picking Arm Base & Power Hub: Applicable for low-lying plant cultivations and greenhouse environments.
