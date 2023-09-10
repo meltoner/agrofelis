@@ -6,11 +6,29 @@ The document presents the provision of the main computing elements of the robot 
 
 ## Introduction
 
+The main computing elements of the Agrofelis Robot are located in its back section on top of the steering plates. The following figure depicts their locations.
+
+![Overview](_figures/computing-00-overview.png)
+
+A relatively low cost fully fledged GPU capable computer, optimised for small footprint, energy consumption aimed for AI applications, is being employed. 
+
+![Jetson Nano](_figures/computing-01-jetson.jpg)
+
+The Computer is equipped with a high speed 128 GB sd card with read and write access of 290 and 260 Megabytes per second to remedy one of the key bottle necks of the Jetson nano computer. 
+
+![high speed sd card](_figures/computing-02-sd.jpg)
+
+The Jetson Nano moreover, is equipped with an AI accelerator module connecting in its USBv3 port extending its capacity for parallel processing and neural networks inference.
+
+![Coral accelerator](_figures/computing-04-coral.jpg)
+
+Jetson nano is machine vision ready supporting high speed high resolution camera inputs. The following photograph snapshots the camera of the Agrofelis robot along with its 1m cable extension, connecting the computer with the front section of the vehicle.
+
+![Camera and 1m cable](_figures/computing-03-camera.jpg)
+
+In the consequent sections, details for provisioning Jetson Nano computing modules and its services are being documented.
 
 ## Jetson nano operating system provisioning
-
-The main computing element of the Agrofelis Robot is a relatively low cost fully fledged GPU capable computer, optimised for small footprint, energy consumption aimed for AI applications. 
-
 
 To initialise the computer one needs the same components needed for a regular computer. That is a keyboard a mouse, a monitor and a hard disk (SD). An operating system can be written to the sd card by using a turnkey Ubuntu based image configured by NVIDIA conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with embedded computer and boot-strap it. 
 
@@ -101,7 +119,6 @@ The following command will initiate the container running the Unificator Softwar
 
 	./01.init.agrofelis.unificator.sh
 
-
 ### Supportive 
 
 To instantiate an ephemeral Ubuntu server as an evaluation environment the following command can be issued.
@@ -128,28 +145,69 @@ The consequent command can be used to observe the hardware resources occupied by
 
 	docker stats
 
+## GPU and TPU Computing modules
+
+The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing [^Coralcom]. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with additional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port [^Coral]. The addition becomes highly efficient because Jetson Nano has one USB version 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
+ 
+[^Coral]: https://coral.ai/products/accelerator "Coral USB Accelerator" 
+[^CoralEX]: https://coral.ai/examples/ "Coral application examples" 
+[^Coralcom]: https://www.raccoons.be/resources/insights/performance-comparison-:-coral-edge-tpu-vs-jetson-nano "Performance comparison : Coral Edge TPU vs Jetson Nano"
+
 
 ## Agrofelis Unificator
 
-The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
+The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. 
 
+
+The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. 
+
+The following image showcases the archived data log files and their size. 
+
+![Archived Log DataImage](_figures/computing-13-archiveLogDataImage.png)
+
+The next image showcases the content of the files archived in each package.
+
+![UnificatorAndLidarData](_figures/computing-14-UnificatorAndLidarData.png)
+
+The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
 
 The Agrofelis Unificator Software is located in the following path :
 
 - [/web-pub/connectivity/src/agrofelis-unificator/server](https://github.com/meltoner/agrofelis/tree/main/components/connectivity/src/agrofelis-unificator/server)
 
-The software depends on few javascript libraries used for accessing the http protocol, the Serial bus the web sockets and for performing asynchronous web requests. These dependencies are downloaded using the following commands.
-
+The software depends on few java script libraries used for accessing the HTTP protocol, the Serial bus and the WebSockets interface as well as for performing asynchronous web requests. These dependencies are downloaded using the following commands.
 
 	apt-get update;
 	apt-get install python3;
 	npm install http serialport websocket axios
 
- 
+Multiple agents can connect to the Agrofelis Unificator server, to observe, control or supplement the operation. For example the Remote controller can connect to the server at the same time user with a user observing the data via the Unificator client based web application. The following screenshot showcases the web application view in the aforementioned scenario.
+
+![AgrofelisUnificator-snapshot](_figures/computing-12-AgrofelisUnificator-snapshot.png)
+
+The Unificator web application, following the pattern established by the Motors Hub Controllers enables to combine multiple individual modules into one web application providing a complete overview of the totality of system. The application source code can be accessed from the following path.
+
+- [AgrofelisUnificator.html](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/www/AgrofelisUnificator.html)
+
+The HTML file utilises moreover the following [assets](assets/) 
+
+|File | Description |
+|------|-----------------|
+|styles.css|Defines the css styles of the web application.|
+|motorsHubController.js|Establishes a web socket connection with the related IP of the module. Parses the HTML to identify the related sensors and actuators. Listens for interface changes as well as for websocket messages and according reflects or submits the related information. |
+|agrofelis_logo_white_web.svg|The scalable vector graphic logo of the project. |
+|jquery.min.js|minified js library dependency [JQuery](https://jquery.com/). |
+
+Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable, assisting the rapid prototyping.
+
+
+
  ## Agrofelis network
 
 In order to interconnect the various WiFi capable modules of the robot, a compact access point module was employed. More specifically the TP-LINK TL-WR802N v4 wireless Router  supporting up to 300Mbps bandwidth. The module was chosen due to its compact size, its capacity to operate in multiple modes as well as its 5v compatibility. 
+
+![Wifi router](_figures/computing-05-router.jpg)
 
 The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associate the different modules with a static IP based on their unique MAC address. The WiFi network is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
 
@@ -193,6 +251,26 @@ A compact 5v USB hub is employed, enabling multiple devices to be connected with
 - Agrofelis steering module
 - Agrofelis Front Lidar sensors
 
+## Computing modules structural support.
+
+One aspect often missed while arranging components, is that their connection cables can even occupy about 50% more of their size. Although various connection cables can be made compact that is not an option for USB cables which would otherwise obscure the neighboring components. The solution designed to mitigate the identified problem, was four 3d printed compact tilted mounts, allowing to pass the cables above the neighboring elements and to pass the cables through the space created  underneath. 
+
+The following schematic illustrates the location of the computing modules, their extensions, the USB hub and the 3d printed tilted mounts positioned above the steering plates in the back section of the robot.
+
+![computing elements schematic](_figures/computing-06-0-schematic.png)
+
+Two type of structure where designed and 3d printed twice. The brackets and their arrangment on the steering plate can be seen in the following diagram.
+
+![3d printed brackets](_figures/computing-06-1-3d-print-brackets.png)
+
+
+
+![3d print brackets-a](_figures/computing-06-3d-print-brackets-a.jpg)
+![3d print brackets-b](_figures/computing-07-3d-print-brackets-b.jpg)
+![3d printbrackets-c](_figures/computing-08-3d-print-brackets-c.jpg)
+![3d print brackets-d](_figures/computing-09-3d-print-brackets-d.jpg)
+
+
 Custom brackets were designed with magnets on their bottom fixing leniently the location of the USB hub.
 
 - The 3d printed design plans of the brackets 
@@ -201,16 +279,7 @@ Custom brackets were designed with magnets on their bottom fixing leniently the 
 ## Jetson nano 3d printed base
 
 
-## GPU Computing modules and accelerator
-
-The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with aditional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port [^Coral]. The adition becomes highly efficient because Jetson Nano has one USB verion 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
  
-
-[^Coral]: https://coral.ai/products/accelerator "Coral USB Accelerator" 
-[^CoralEX]: https://coral.ai/examples/ "Coral application examples" 
-
-
-Coral web accelerator
 
 
 # Components
@@ -220,3 +289,10 @@ https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.h
 
 
 # Summary
+
+
+
+
+
+![elements view-a](_figures/computing-10-elements-view-a.jpg)
+![elements view-b](_figures/computing-11-elements-view-b.jpg)
