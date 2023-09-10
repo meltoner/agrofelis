@@ -198,7 +198,7 @@ The [remote controller design and fabrication](components/remote-control) docume
 
 The complete documentation of the remote controller module, is provided below.
 
-- [Agrofelis Remote Controller Design and Fabrication documentation](components/remote-control)
+- [Agrofelis remote controller design and fabrication documentation](components/remote-control)
 
 A cherry picked selection of figures from the Agrofelis remote controller design and fabrication documentation, is presented by the following figure. 
 
