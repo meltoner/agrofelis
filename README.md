@@ -215,7 +215,7 @@ The complete documentation of the infrastructure provisioning, computing element
 
 A cherry picked selection of figures from the computing modules documentation, is compiled by the following figure. 
 
-![Infrastructure provisioning, computing elements and data fusion figures highlights](components/connectivity/_figures/highlights-connectivity.jpg)
+![Infrastructure provisioning, computing elements and data fusion figures highlights](components/connectivity/_figures/highlights-computing.jpg)
 
 
 # Cost Estimation Overview
@@ -240,7 +240,8 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
 | [Rotating Implement Mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
-| [Remote Controller](components/remote-control#remote-controller-components) | 65.52  |
+| [Remote Controller](components/remote-control#remote-controller-components) | 65.52 |
+| [Computing and networking] | | 
 | **Total Cost**   | **3,244.24**   |
 
 </div>
