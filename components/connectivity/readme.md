@@ -298,7 +298,7 @@ A front view photo of the compartment with its elements is provided below.
 
 ![elements view-b](_figures/computing-11-elements-view-b.jpg)
 
-## Components
+## Computing and network components
 
 The following table lists the individual components employed for manufacturing the Agrofelis computing modules and networking system. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and sum totals.
 
@@ -307,7 +307,7 @@ The following table lists the individual components employed for manufacturing t
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|-----------------|------------|-----|---|---|---|---|
 | # | NVIDIA Jetson Nano Developer Kit | [Jetson Nano](https://www.hellasdigital.gr/go-create/nvidia-ai/nvidia-jetson-nano-4gb-developer-kit/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 199.00 | 199.00 | - |
-| # | High speed ADATA premier one 128gb | [Hard disk](https://www.skroutz.gr/s/12980090/Adata-Premier-One-SDXC-128GB-Class-10-U3-V90-UHS-II.html] | [Skroutz](https://www.skroutz.gr) | 1 | 81.09 | 81.09 | - |
+| # | High speed ADATA premier one 128gb | [Hard disk](https://www.skroutz.gr/s/12980090/Adata-Premier-One-SDXC-128GB-Class-10-U3-V90-UHS-II.html) | [Skroutz](https://www.skroutz.gr) | 1 | 81.09 | 81.09 | - |
 | # | Jetson nano fan | [CPU fan](https://www.hellasdigital.gr/go-create/nvidia-ai/waveshare-fan-4020-pwm-5v/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 8.00 | 8.00 | - |
 | # | Jetson nano case | [jetson nano case](https://grobotronics.com/waveshare-metal-case-for-jetson-nano-c.html) | [Grobotronics](https://grobotronics) | 1 | 15.80 | 15.80 | Keeping latching buttons and camera mount |
 | # | Coral USB Accelerator| [Coral](https://nettop.gr/index.php/raspberry-pi/prostheta/coral-usb-accelerator.html) | [Nettop](https://nettop.gr) | 1 | 87.90 | 87.90 | - |
