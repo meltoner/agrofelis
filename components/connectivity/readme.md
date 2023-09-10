@@ -293,9 +293,12 @@ A side view of the compilation shows the degree of tilt, how a USB cable can be 
 The following photos snapshot the computing modules' structure installed in the Agrofelis Robot relevant compartment.
 
 ![elements view-a](_figures/computing-10-elements-view-a.jpg)
+
+A front view photo of the compartment with its elements is provided below.
+
 ![elements view-b](_figures/computing-11-elements-view-b.jpg)
 
-# Components
+## Components
 
 https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT
 https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html
