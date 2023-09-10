@@ -163,13 +163,6 @@ The Agrofelis Unificator Software purpose, as implied by its named, is to unify 
 
 The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. 
 
-The following image showcases the archived data log files and their size. 
-
-![Archived Log DataImage](_figures/computing-13-archiveLogDataImage.png)
-
-The next image showcases the content of the files archived in each package.
-
-![UnificatorAndLidarData](_figures/computing-14-UnificatorAndLidarData.png)
 
 The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
@@ -203,7 +196,15 @@ The HTML file utilises moreover the following [assets](assets/)
 
 Special care has been devoted so the setup and code is very lightweight, clean and straightforward in order to be easily modifiable, assisting the rapid prototyping.
 
+### Archived data
 
+The following image screenshots the data log files archived by the Unificator server along with their size. 
+
+![Archived Log DataImage](_figures/computing-13-archiveLogDataImage.png)
+
+The next screenshot showcases the content of the two files contained in each archive, one for the Lidar data and one for all other modules.
+
+![UnificatorAndLidarData](_figures/computing-14-UnificatorAndLidarData.png)
 
  ## Agrofelis network
 
