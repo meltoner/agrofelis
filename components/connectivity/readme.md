@@ -49,7 +49,7 @@ Two handy tools, one for monitoring the hardware resource of the computer and th
 
 	apt-get install htop screen
 
-Once the Jetson Nano has been connected into the network, the monitor, keyboard and mouse can be removed and the computer can be operated using and ssh terminal. Although not crucial, the computer can also be set up to stream its monitor using the VNC open source software by issuing the following commands. 
+Once the Jetson Nano has been connected into the network, the monitor, keyboard and mouse can be removed and the computer can be operated using an ssh terminal. Although not crucial, the computer can also be set up to stream its monitor using the VNC open source software by issuing the following commands. 
 
 	mkdir -p ~/.config/autostart
 	cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
@@ -58,7 +58,7 @@ Once the Jetson Nano has been connected into the network, the monitor, keyboard 
 	gsettings set org.gnome.Vino authentication-methods "['vnc']"
 	gsettings set org.gnome.Vino vnc-password $(echo -n 'agrofelis'|base64)
 
-The commands initialise a remote desktop server which can be handy when debugging for the first time the video camera, or alter the WiFi network settings or other setting provided by the graphical user interface of the operating system. The computer's monitor feed can be accessed using another computer via the freely available [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/) software.
+The commands initialise a remote desktop server which can be handy when debugging for the first time the video camera, or alter the WiFi network settings or other settings provided by the graphical user interface of the operating system. The computer's monitor feed can be accessed using another computer via the freely available [VNC viewer](https://www.realvnc.com/en/connect/download/viewer/) software.
 
 ## Agrofelis containerized services
 
@@ -85,7 +85,7 @@ The file system of the Agrofelis software is organized within the root path of t
 
 - /web-pub
 
-The file system can be populated by exporting the [connectivity/](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) folder from the github repository and positioning it within the /web-pub folder of the Jetson nano. Following the filesystem installment and to have web applications folder in a more prominent position the **www** folder contained within the **connectivity** folder just established, is relocated within the **/web-pub/** folder. Lastly for testing the steering source code compilation and firmware upload functionality, the [source code of the steering module](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-steering/src/linearSteer) is exported and located at the **/web-pub/arduino/2023** folder. 
+The file system can be populated by exporting the [connectivity/](https://github.com/meltoner/agrofelis/tree/main/components/connectivity) folder from the github repository and positioning it within the /web-pub folder of the Jetson nano. Following the filesystem installment and to have the web applications folder in a more prominent position, the **www** folder contained within the **connectivity** folder just established, is relocated within the **/web-pub/** folder. Lastly for testing the steering source code compilation and firmware upload functionality, the [source code of the steering module](https://github.com/meltoner/agrofelis/tree/main/components/vehicle-steering/src/linearSteer) is exported and located at the **/web-pub/arduino/2023** folder. 
 
 
 ## Docker images provisioning
