@@ -203,13 +203,12 @@ Custom brackets were designed with magnets on their bottom fixing leniently the 
 
 ## GPU Computing modules and accelerator
 
-The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with aditional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port. The adition becomes highly efficient because Jetson Nano has one USB verion 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner. Find below examples were the Coral accelerator can be utilised to free resources from main computer.
+The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with aditional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port [^Coral]. The adition becomes highly efficient because Jetson Nano has one USB verion 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
+ 
 
-- [https://coral.ai/examples/](https://coral.ai/examples/)
+[^Coral]: https://coral.ai/products/accelerator "Coral USB Accelerator" 
+[^CoralEX]: https://coral.ai/examples/ "Coral application examples" 
 
-
-
-https://coral.ai/products/accelerator
 
 Coral web accelerator
 
