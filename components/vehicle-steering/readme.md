@@ -116,6 +116,11 @@ Finally, the following NC file contains both gears in a single file for convenie
 
 - [feedback-gear-A-and-B.nc](assets/laser-cut-feedback-gears/feedback-gear-A-and-B.nc)
 
+Photos of the fabricated feedback sensors's top and bottom sides, follow.
+
+![Feadback sensor bottom](_figures/vehicle-steering-a.jpg)
+![Feadback sensor top](_figures/vehicle-steering-b.jpg)
+
 
 ## Feedback Mechanism Covers
 
@@ -190,8 +195,12 @@ The editable vector file can be accessed here:
 
 - [driver-board/STEERING_DRIVER_CABLES_LABELS.pdf](driver-board/STEERING_DRIVER_CABLES_LABELS.pdf)
 
+A photo illustrating how these labels have been used to assist the fabrication process is provided.
 
-The following image highlights the positioning of the PCB shield next to its microcontroller, on the upper side of the steering plate, on the back side of the Agrofelis vehicle frame.
+![cable labels](_figures/vehicle-steering-c.jpg)
+
+
+The following image highlights the positioning of the PCB shield next to its micro-controller, on the upper side of the steering plate, on the back side of the Agrofelis vehicle frame.
 
 ![pcb-driver-2](_figures/vehicle-steering-25-pcb-driver-2.jpg)
 
@@ -263,7 +272,6 @@ The module provides an interface to make both linear actuators seek and reach th
 
 Additionally, the software establishes the braking system of the vehicle by driving two servos linked to the disc brakes.
 
-
 ### Application Structure
 
 
@@ -293,6 +301,10 @@ The following table indexes and summarizes the implemented classes of the Agrofe
 Furthermore, the repository includes supporting files that were used while measuring and adjusting the left and right linear actuators to achieve an end-to-end Ackerman geometry. The process studies and accounts for the non-linearity characteristics of potentiometers, digital-to-analog converters (DAC), linear actuators and subtle construction accumulative variations in the following directory:
 
 - [src/linearSteer/data.modeling](src/linearSteer/data.modeling)
+
+Each steering wheel was rotated to find how much deviation the other wheel requires, for all wheels directions to converge to the same point, in order to match the Ackerman geometry. The following photo depicts how this was performed, for each side of the vehicle and for various rotational degrees increments, using a three strings.
+
+![Ackerman and wheels manual adjustment](_figures/vehicle-steering-d.jpg)
 
 The file *data.modeling.R* was developed in the R language to study and reflect the end-to-end differences between the left and right sensors and actuators.
 

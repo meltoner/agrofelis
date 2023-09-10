@@ -153,7 +153,7 @@ In order to interconnect the various WiFi capable modules of the robot, a compac
 
 The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associate the different modules with a static IP based on their unique MAC address. The WiFi network is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
 
-The default WiFi password followed by all modules in this repository is
+The default WiFi password followed by all WiFi modules of this repository is :
 
 	felisagrofelistobor_
 
@@ -203,8 +203,13 @@ Custom brackets were designed with magnets on their bottom fixing leniently the 
 
 ## GPU Computing modules and accelerator
 
+The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with aditional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port. The adition becomes highly efficient because Jetson Nano has one USB verion 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner. Find below examples were the Coral accelerator can be utilised to free resources from main computer.
 
-The Jetson nano apart of having a multi core processor, also has a GPU module capable of implementing machine learning and machine vision tasks using . 
+- [https://coral.ai/examples/](https://coral.ai/examples/)
+
+
+
+https://coral.ai/products/accelerator
 
 Coral web accelerator
 
@@ -215,4 +220,4 @@ https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DS
 https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html
 
 
-# summary
+# Summary
