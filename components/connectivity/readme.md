@@ -197,7 +197,8 @@ Custom brackets were designed with magnets on their bottom fixing leniently the 
 
 - The 3d printed design plans of the bracket 
 
-## 3d printed brackets 
+## USB 3d printed brackets 
+## Jetson nano 3d printed base
 
 
 ## GPU Computing modules and accelerator
@@ -205,6 +206,13 @@ Custom brackets were designed with magnets on their bottom fixing leniently the 
 
 The Jetson nano apart of having a multi core processor, also has a GPU module capable of implementing machine learning and machine vision tasks using . 
 
+Coral web accelerator
+
+
+# Components
+
 https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT
 https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html
 
+
+# summary
