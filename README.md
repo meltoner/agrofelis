@@ -241,21 +241,20 @@ The table showcased below provides a breakdown of the necessary construction com
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
 | [Rotating Implement Mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
 | [Remote Controller](components/remote-control#remote-controller-components) | 65.52 |
-| [Computing modules] | | 
-| **Total Cost**   | **3,244.24**   |
+| [Computing and network components](https://github.com/meltoner/agrofelis/tree/main/components/connectivity#computing-and-network-components) | 485.34 | 
+| **Total Cost**   | **3,729.58**   |
 
 </div>
 
 Detail breakdowns of cost estimations for the manufacturing of each component can be accessed via the hyperlinked components, offering the ability to explore comprehensive analyses of the cost determination for each individual component.
 
-Consequently the total manufacturing cost for the Agrofelis robot is **3,244.24** euros, excluding shipping and assembly costs.
+Consequently the total manufacturing cost for the Agrofelis robot is **3,729.58** euros, excluding shipping and assembly costs.
 
 # Authors
  
 - Konstantinos L. Papageorgiou
 - Hercules Metaxas
 - Anastasios Pliatsikas 
-
 
 # Special Thanks
 
