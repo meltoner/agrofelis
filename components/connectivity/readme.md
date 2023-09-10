@@ -27,11 +27,11 @@ Upon system initialization the USB WiFi adapter or a network cable can be attach
 	apt-get autoremove
 	apt-get dist-upgrade
 
-Using the following commands two handy tools, one for monitoring the hardware resource of the computer and the second for multiplexing multiple command terminals, can be installed using the following command.
+Two handy tools, one for monitoring the hardware resource of the computer and the second for multiplexing multiple command terminals, can be installed using the following command.
 
 	apt-get install htop screen
 
-Once the Jetson nano has been connected into the network the monitor, keyboard and mouse and be removed and the computer can be operated using and ssh terminal. Although not crucial, the computer can also be setup-ed to stream its monitor using the VNC open source software by issuing the following commands. 
+Once the Jetson Nano has been connected into the network, the monitor, keyboard and mouse can be removed and the computer can be operated using and ssh terminal. Although not crucial, the computer can also be set up to stream its monitor using the VNC open source software by issuing the following commands. 
 
 	mkdir -p ~/.config/autostart
 	cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
@@ -44,7 +44,7 @@ The commands initialise a remote desktop server which can be handy when debuggin
 
 ## Agrofelis containerized services
 
-As observed, the operating system can be setup-ed with just a handful commands, primarily because all common requirements have already been provisioned by Nvida in the aforementioned image. Another very useful software already pre-installed in the system is the NVIDIA Docker. Docker allows to containerize arbitrary computing environments, instantiate multiple instance of them as well revert, reuse or extend their definitions. Employing the Docker technology in the Agrofelis software stack means that its systems are easily reproducible, their definitions are transparent and their execution is somewhat isolated from the main operating system. Employing Docker moreover, allows the operating system to remain clean of the applications dependencies and new technologies can be evaluated without the fear of "polluting" the system. The NVdia Docker variation installed, can interface with the GPU hardware of the embedded computer, which enables to containerize also AI applications. 
+As observed, the operating system can be setup with just a handful commands, primarily because all common requirements have already been provisioned by Nvida in the aforementioned image. Another very useful software already pre-installed in the system is the NVIDIA Docker. Docker allows to containerize arbitrary computing environments, instantiate multiple instances of them and also revert, reuse or extend their definitions. Employing the Docker technology in the Agrofelis software stack means that its systems are easily reproducible, their definitions are transparent and their execution is somewhat isolated from the main operating system. Employing Docker moreover, allows the operating system to remain clean of the application's dependencies and new technologies can be evaluated without the fear of "polluting" the system. The installed NVdia Docker variation can interface with the GPU hardware of the embedded computer which enables it to containerize AI applications. 
 
 
 ## Agrofelis containerized services
