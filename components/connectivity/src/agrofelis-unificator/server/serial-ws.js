@@ -1,19 +1,9 @@
-// 
-//  Agrofelis unificator. The node js software server unifies all modules coming from usb / serial and wifi. There are two usb modules the software integrates the arduino mega running the linear steer
-//  module controlling the brakes and the steering of the vehicle and the Front sensors module controlling the lidar data and its tilt mechanism.
-//  The unficator software moreover integrates modules via wifi and the http protocol employing in the two wifi power relay modules as via websockets the two dual motor hub driver modules.
-//  The unificator software is responsible for routing appropriately the data across the different modules as well as records and rotates the data received from all modules.
-//
-//  The application will rotate and compress the lidar and module data and maintain the last 50 compressed data logs corresponding to approximately 50 minutes and 125 mb of data.
-// 
+//  see https://github.com/meltoner/agrofelis/tree/main/components/connectivity#agrofelis-unificator
 //  Author : Konstantinos L. Papageorgiou mail kp at rei.gr
 //  Agrofelis 2023
 // 
 // Dependencies of the server // apt-get update;apt-get install python3;npm install http serialport websocket axios
 // 
-
-
-// Logs and rotation start
 
 "use strict";
 process.title = 'node-serial-ws';
@@ -26,19 +16,13 @@ var log_file = -1;
 var log_fileLidar = -1;
 var logsCreated = false;
 
-    
-
 function rotateLogs(){
-
     exec("cp /data/*.log /data/archive/;")
-
     if( logsCreated ){
         log_file.close()
         log_fileLidar.close()
     }
-
     exec("echo '' /data/unificator.log;echo '' /data/lidar.log; DATE=$(date +%Y-%m-%d--%H-%M-%S); tar -zcvf /data/archive/data.$DATE.log.tar.gz /data/archive/*.log;rm /data/archive/*.log;ls -d -1tr /data/archive/*.gz | head -n -50 | xargs -d '\\n' rm -f");
-
     log_file = fs.createWriteStream('/data/unificator.log', {flags : 'w'});
     log_fileLidar = fs.createWriteStream('/data/lidar.log', {flags : 'w'});
     logsCreated = true;
@@ -67,17 +51,13 @@ console.log = function(d) {
   log_stdout.write(util.format(d) + '\n');
 };
 
-// Logs and rotation end
 
 var vocabulary = ["exit", "powerOn", "powerOff"]
-var nodes = [
-    ["Motors Hub back", "192.168.0.55", -1] , ["Motors Hub Front", "192.168.0.56", -1], ["Remote Controller", "192.168.0.60", -1]
-]
-
+var nodes = [["Motors Hub back", "192.168.0.55", -1] , ["Motors Hub Front", "192.168.0.56", -1], ["Remote Controller", "192.168.0.60", -1]]
 var powerRelays = ["192.168.0.51", "192.168.0.52"];
 
 const axios = require('axios');
-// Websocket
+
 var webSocketsServerPort = 8080;
 var webSocketServer = require('websocket').server;
 var http = require('http');
@@ -106,7 +86,6 @@ function isMessageActionable(msg){
 }
 
 function onReceive(msg){    
-
     if(isMessageActionable(msg)){
         switch(vocabulary.indexOf(msg.utf8Data)){
             case -1: break;
@@ -120,9 +99,7 @@ function onReceive(msg){
                 setTimeout(function(){axios.get("http://"+powerRelays[1]+"/RELAY=OFF")}, 4000)
                 return;
         }
-
         var command = parseInt(msg.utf8Data.substring(1, msg.utf8Data.indexOf("|")))
-        
         if( command <= 20 ){   
             for(var i = 0; i < 2;i++)
               if(nodes[i][2] != -1){
@@ -142,7 +119,6 @@ function onSerial(msg){
   console.log(msg);
   // broadcast uart message to ws clients
   // is this necessary ? only if clients need to know the steering mechanism
-
   for (var i = 0; i < clients.length; i++) 
     clients[i].sendUTF(msg);
 }
@@ -162,13 +138,8 @@ steerSerialPort.on("open", function () {
   });  
 });
 
-///////////////////////////////////////////
-
 function onFrontSensorsSerial(msg){
   lidarLog(msg);  
-  //broadcast uart messate to ws clients
-  //for (var i = 0; i < clients.length; i++) 
-  //  clients[i].sendUTF(msg);
 }
 
 var frontSensorsSerialPort = new SerialPort({ path: '/dev/ttyUSB1', baudRate: 115200 })
@@ -184,14 +155,12 @@ frontSensorsSerialPort.on("open", function () {
   });  
 });
 
-
 function createNewConnection(index){
     var ip = nodes[index][1]
     const WebSocketClient = require('websocket').client;
     var client = new WebSocketClient();
 
     client.on('connectFailed', function(error) {
-        console.log("EEEEEEEEEEEEEEEEEERRRRRRRRRRRRORRRR")
         console.log('Connect Error: ' + error.toString());
     });
 
@@ -202,10 +171,8 @@ function createNewConnection(index){
         nodes[index][2] = connection;
             
         connection.on('error', function(error) {
-            console.log("EEEEEEEEEEEEEEEEEERRRRRRRRRRRRORRRR")
             nodes[index][2] = -1;
         });
-        
  
         connection.on('close', function(reasonCode, description) {
             console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
@@ -219,7 +186,6 @@ function createNewConnection(index){
 
             if(isMessageActionable(msg))
                 onReceive(msg);
-
         });
     });
 
