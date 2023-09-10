@@ -173,14 +173,14 @@ The two modes can be swiftly interchanged by uploading the respective configurat
 The attached configuration files also encode the IP association each wifi module according to its Mac address which is unique for any network device in the world. Consequently these mappings should be changed accordingly after observing the mac address of the employed Wifi modules. Bellow the association map used as an indicative example is provided bellow.
 
 
-|MAC Address|     IP Address  | Name |
+|MAC Address|IP Address | Name |
 |------|-------|-------|
-|48:B0:2D:2F:25:FA|   192.168.0.50| Jetson Nano |
-|A0:20:A6:2E:C8:8C|   192.168.0.51| Power module A | 
-|60:01:94:7D:1C:BF|   192.168.0.52| Power module B |
-|A0:B7:65:61:53:84|   192.168.0.55| Motors hub back |
-|A0:B7:65:61:7D:7C|   192.168.0.56| Motors hub Front |
-|24:0A:C4:1F:CF:50|   192.168.0.60| Remote controller |
+| 48:B0:2D:2F:25:FA | 192.168.0.50| Jetson Nano |
+| A0:20:A6:2E:C8:8C | 192.168.0.51| Power module A | 
+| 60:01:94:7D:1C:BF | 192.168.0.52| Power module B |
+| A0:B7:65:61:53:84 | 192.168.0.55| Motors hub back |
+| A0:B7:65:61:7D:7C | 192.168.0.56| Motors hub Front |
+| 24:0A:C4:1F:CF:50 | 192.168.0.60| Remote controller |
 
 
 ## Agrofelis USB hub
