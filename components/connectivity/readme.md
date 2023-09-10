@@ -18,7 +18,7 @@ The Computer is equipped with a high speed 128 GB SD card with read and write ac
 
 ![high speed sd card](_figures/computing-02-sd.jpg)
 
-Moreover the Jetson Nano, is equipped with an AI accelerator module connecting in the USBv3 port extending its capacity for parallel processing and neural networks inference.
+Moreover the Jetson Nano, is equipped with an AI accelerator module connected in the USBv3 port extending its capacity for parallel processing and neural networks inference.
 
 ![Coral accelerator](_figures/computing-04-coral.jpg)
 
@@ -30,7 +30,7 @@ In the following sections, the details for provisioning Jetson Nano computing mo
 
 ## Jetson nano operating system provisioning
 
-To initialise the computing module one needs the same components as for regular computer. That is a keyboard a mouse, a monitor and a hard disk (SD). An operating system can be written to the sd card by using a turnkey Ubuntu based image configured by NVIDIA conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with the embedded computer and boot-strap it. 
+To initialise the computing module one needs the same components as for a regular computer. That is a keyboard a mouse, a monitor and a hard disk (SD). An operating system can be written to the SD card by using a turnkey Ubuntu based image configured by NVIDIA conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with the embedded computer and boot-strap it. 
 
 Following NVdia's documentation, the 6.4 GB compressed operating system image can be downloaded from the following link.
 
@@ -49,7 +49,7 @@ Two handy tools, one for monitoring the hardware resource of the computer and th
 
 	apt-get install htop screen
 
-Once the Jetson Nano has been connected into the network, the monitor, keyboard and mouse can be removed and the computer can be operated using an ssh terminal. Although not crucial, the computer can also be set up to stream its monitor using the VNC open source software by issuing the following commands. 
+Once the Jetson Nano has been connected into the network, the monitor, keyboard and mouse can be removed and the computer can be operated using an SSH terminal. Although not crucial, the computer can also be set up to stream its monitor using the VNC open source software by issuing the following commands. 
 
 	mkdir -p ~/.config/autostart
 	cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
@@ -62,7 +62,7 @@ The commands initialise a remote desktop server which can be handy when debuggin
 
 ## Agrofelis containerized services
 
-As observed, the operating system can be setup with just a handful commands, primarily because all common requirements have already been provisioned by Nvida in the aforementioned image. Another very useful software already pre-installed in the system is the NVIDIA Docker. Docker allows to containerize arbitrary computing environments, instantiate multiple instances of them and also revert, reuse or extend their definitions. Employing the Docker technology in the Agrofelis software stack means that its systems are easily reproducible, their definitions are transparent and their execution is somewhat isolated from the main operating system. Employing Docker moreover, allows the operating system to remain clean of the application's dependencies and new technologies can be evaluated without the fear of "polluting" the system. The installed NVdia Docker variation can interface with the GPU hardware of the embedded computer which enables it to containerize AI applications. 
+As observed, the operating system can be setup with just a handful commands, primarily because all common requirements have already been provisioned by Nvida in the aforementioned image. Another very useful software already pre-installed in the system is the NVIDIA Docker. Docker allows to containerize arbitrary computing environments, instantiate multiple instances of them and also revert, reuse or extend their definitions. Employing the Docker technology in the Agrofelis software stack means that its systems are easily reproducible, their definitions are transparent and their execution is somewhat isolated from the main operating system. Employing Docker, allows the operating system to remain clean of the application's dependencies and new technologies can be evaluated without the fear of "polluting" the system. The installed NVdia Docker variation can interface with the GPU hardware of the embedded computer which enables it to containerize AI applications. 
 
 
 ## Agrofelis containerized services
@@ -115,7 +115,7 @@ Once the service is initiated it will automatically start on systems boot or res
 
 ### Unificator 
 
-The following command will initiate the container running the Unificator Software. The instantiation command, apart from mounting the Agrofelis Unificator Node JS application source code, moreover mounts privileged hardware resources namely the Arduino Mega steering system as well as that of the Front Sensors Lidar's USB connections. The command also exposes and links the port 8080 of the host machine with that of container's. Lastly it initiates the Unificator application using the NodeJs technology and opens a [Websocket](https://en.wikipedia.org/wiki/WebSocket) server on port 8080. 
+The following command will initiate the container running the Unificator Software. The instantiation command, apart from mounting the Agrofelis Unificator Node JS application source code, mounts privileged hardware resources namely the Arduino Mega steering system as well as that of the Front Sensors Lidar's USB connections. The command also exposes and links the port 8080 of the host machine with that of container's. Lastly it initiates the Unificator application using the NodeJs technology and opens a [Websocket](https://en.wikipedia.org/wiki/WebSocket) server on port 8080. 
 
 	./01.init.agrofelis.unificator.sh
 
@@ -147,7 +147,7 @@ The consequent command can be used to observe the hardware resources occupied by
 
 ## GPU and TPU Computing modules
 
-The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing [^Coralcom]. 
+The Jetson nano apart from having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing [^Coralcom]. 
 
 Another remedy equips the Agrofelis Robot with additional Machine learning capabilities, by employing the Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing [^Coral]. The addition becomes highly efficient because Jetson Nano has one USB version 3 which can utilise the high speed throughput of the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
  
