@@ -159,9 +159,9 @@ Being able to perform machine vision tasks on the edge, creates a robust system 
 
 ## Agrofelis Unificator
 
-The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. 
+The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote Controller. The software moreover relays the information and routes commands to the appropriate module. 
 
-The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. 
+The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space. 
 
 The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
@@ -176,7 +176,7 @@ The software depends on few java script libraries used for accessing the HTTP pr
 	apt-get install python3;
 	npm install http serialport websocket axios
 
-Multiple agents can connect to the Agrofelis Unificator server, to observe, control or supplement the operation. For example the Remote controller can connect to the server at the same time user with a user observing the data via the Unificator client based web application. The following screenshot showcases the web application view in the aforementioned scenario.
+Multiple agents can connect to the Agrofelis Unificator server, to observe, control or supplement the operation. For example the Remote Controller can connect to the server at the same time with another user observing the data via the Unificator client based web application. The following screenshot showcases the web application view in the aforementioned scenario.
 
 ![AgrofelisUnificator-snapshot](_figures/computing-12-AgrofelisUnificator-snapshot.png)
 
