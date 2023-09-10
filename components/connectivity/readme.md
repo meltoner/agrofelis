@@ -121,11 +121,11 @@ The following command will initiate the container running the Unificator Softwar
 
 ### Supportive 
 
-To instantiate an ephemeral Ubuntu server as an evaluation environment the following command can be issued.
+To instantiate an ephemeral Ubuntu server as an evaluation environment, the following command can be issued.
 
 	./02.init.agrofelis.os.sh
 
-To instantiate an ephemeral Ubuntu server to conduct data manipulation experiments the consequent command can be issued likewise.
+To instantiate an ephemeral Ubuntu server to conduct data manipulation experiments, the consequent command can be issued likewise.
 
 	./04.init.agrofelis.os.R.sh
 
@@ -147,7 +147,9 @@ The consequent command can be used to observe the hardware resources occupied by
 
 ## GPU and TPU Computing modules
 
-The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing [^Coralcom]. Along the GPU capabilities of the computer another remedy equips the Agrofelis Robot with additional Machine learning capabilities by employing Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing on a wide range of systems, simply by connecting it to a USB port [^Coral]. The addition becomes highly efficient because Jetson Nano has one USB version 3 that can support the high speed bandwidth support by the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
+The Jetson nano apart of having a multi core processor, also has an 128-core Maxwell GPU module capable of implementing machine learning and machine vision tasks. The computer lets you run multiple neural networks in parallel for applications like image classification, object detection, segmentation, and speech processing [^Coralcom]. 
+
+Another remedy equips the Agrofelis Robot with additional Machine learning capabilities, by employing the Coral Accelerator which adds an Edge TPU coprocessor to the system, enabling high-speed machine learning inferencing [^Coral]. The addition becomes highly efficient because Jetson Nano has one USB version 3 which can utilise the high speed throughput of the Coral Accelerator. The on-board Coral Edge TPU coprocessor is capable of performing 4 trillion operations (tera-operations) per second (TOPS), using 0.5 watts for each TOPS (2 TOPS per watt). For example, it can execute state-of-the-art mobile vision models such as MobileNet v2 at almost 400 FPS, in a power efficient manner [^CoralEX].  
  
 [^Coral]: https://coral.ai/products/accelerator "Coral USB Accelerator" 
 [^CoralEX]: https://coral.ai/examples/ "Coral application examples" 
