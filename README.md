@@ -241,7 +241,7 @@ The table showcased below provides a breakdown of the necessary construction com
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
 | [Rotating Implement Mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
 | [Remote Controller](components/remote-control#remote-controller-components) | 65.52 |
-| [Computing and networking] | | 
+| [Computing modules] | | 
 | **Total Cost**   | **3,244.24**   |
 
 </div>

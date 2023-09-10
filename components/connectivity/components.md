@@ -14,10 +14,11 @@ The following table lists the individual components employed for manufacturing t
 | # | 8 MP night vision camera | [camera](https://www.hellasdigital.gr/electronics/sensors/cameras/waveshare-imx219-160-8mp-ir-cut-camera-162-fov/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 31.99 | 31.99 | - |
 | # | TP-LINK TL-WR802N v4 Wireless Router | [Wireless Router](https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html) | [Skroutz](https://www.skroutz.gr) | 1 | 24.30 | 24.30 | - |
 | # | 15 Pin Ribbon Flex CSI Cable 100cm | [Flex CSI Cable](https://www.aliexpress.com/i/32955287044.html) | [Aliexpress](https://www.aliexpress.com) | 1 | 0.67 | 0.67 | - |
-| **Total** |      |    |     |      |     |  **448.75**  | | 
+| # | 7 port USB v3.1 HUB | [USB HUB](https://www.skroutz.gr/s/17545835/LogiLink-USB-3-1-Hub-7-THyron-me-syndesi-USB-C-Asimi-UA0310.html) | [Skroutz](https://www.skroutz.gr) | 1 | 36.59 | 36.59 | - |
+| **Total** |      |    |     |      |     |  **485.34**  | | 
 
 </div>
 
-The total cost to manufacture the Agrofelis computing modules and network, exclusive of shipping and labor cost, totals approximately **448.75** euros.
+The total cost to manufacture the Agrofelis computing modules and network, exclusive of shipping and labor cost, totals approximately **485.34** euros.
 
  
