@@ -179,9 +179,9 @@ A cherry picked selection of figures from the Agrofelis 3D Lidar front sensors d
 ![Agrofelis steering system design and fabrication figures highlights](components/vehicle-lidar/_figures/highlights-vehicle-lidar.jpg)
 
 
-## Two degrees of freedom Rotating Implement Mount (RIM) Design and Fabrication
+## Two Degrees of Freedom Rotating Implement Mount (RIM) Design and Fabrication
 
-The [two degrees of freedom rotating implement mount](components/implement-2-degrees-rotating-mount) describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of implements such as the thermal fogger featured in the presentation video. The rotation is achieved through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 degrees of freedom (2DF) capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+The [two degrees of freedom rotating implement mount](components/implement-2-degrees-rotating-mount) document outlines the construction of the Rotating Implement Mount (RIM), a crucial component positioned atop the Agrofelis robot. The RIM's primary function is to enable the use of various implements, such as the thermal fogger featured in the presentation video. The rotation is achieved through the use of a stepper motor that powers the rotation by turning a gear on a turntable, while elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus granting the RIM a two degrees of freedom (2DF) capability for any implement mounted on it. This report covers the rationale behind the module, its schematics, source code files and details of the manufacturing process. The document concludes with a list of the components used and assorted with indicative suppliers, facilitating the replication of the module.
 
 The complete documentation of the RIM module design, is provided below.
 
