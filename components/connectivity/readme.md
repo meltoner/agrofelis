@@ -30,9 +30,9 @@ In the following sections, the details for provisioning Jetson Nano computing mo
 
 ## Jetson nano operating system provisioning
 
-To initialise the computing module one needs the same components as for regular computer. That is a keyboard a mouse, a monitor and a hard disk (SD). An operating system can be written to the sd card by using a turnkey Ubuntu based image configured by NVIDIA conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with embedded computer and boot-strap it. 
+To initialise the computing module one needs the same components as for regular computer. That is a keyboard a mouse, a monitor and a hard disk (SD). An operating system can be written to the sd card by using a turnkey Ubuntu based image configured by NVIDIA conveniently having installed most of the needed software. The official [getting started document](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit) can be followed to get acquainted with the embedded computer and boot-strap it. 
 
-Following NVdia's documentation the 6.4 GB compressed operating system image, can be downloaded from the following link.
+Following NVdia's documentation, the 6.4 GB compressed operating system image can be downloaded from the following link.
 
 - [https://developer.nvidia.com/jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image)
 
