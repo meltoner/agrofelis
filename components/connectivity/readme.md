@@ -131,7 +131,7 @@ The consequent command can be used to observe the hardware resources occupied by
 
 ## Agrofelis Unificator
 
-The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilising the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
+The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
 
@@ -149,28 +149,28 @@ The software depends on few javascript libraries used for accessing the http pro
  
  ## Agrofelis network
 
-In order to interconnect the various Wifi capable modules of the robot, a compact access point module was employed. More specifically the TP-LINK TL-WR802N v4 wireless Router  supporting up to 300Mbps bandwidth. The module was chosen due to its compact size, its capacity to operate in multiple modes as well as its 5v compatibility. 
+In order to interconnect the various WiFi capable modules of the robot, a compact access point module was employed. More specifically the TP-LINK TL-WR802N v4 wireless Router  supporting up to 300Mbps bandwidth. The module was chosen due to its compact size, its capacity to operate in multiple modes as well as its 5v compatibility. 
 
 The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associate the different modules with a static IP based on their unique MAC address. The WiFi network is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
 
-The default Wifi password followed by all modules in this repository is
+The default WiFi password followed by all modules in this repository is
 
 	felisagrofelistobor_
 
-The complete configuration of the wifi router as exported by its web application, has been persisted in the following path.
+The complete configuration of the WiFi router as exported by its web application, has been persisted in the following path.
 
 - [tplinkWR802N_conf_wirelss_Router.bin](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/nodes-ip_tp_link/tplinkWR802N_conf_wirelss_Router.bin)
 
-The module was evaluated also in wisp mode allowing to relay the wifi of a mobile phone hot-spot, to the Agrofelis Network. In wisp mode, the network was depended on the stability of the internet connection and was avoided during field missions. Instead the mode was used to provide internet access to the system when in maintenance.
+The module was evaluated also in wisp mode allowing to relay the WiFi of a mobile phone hot-spot, to the Agrofelis Network. In wisp mode, the network was depended on the stability of the internet connection and was avoided during field missions. Instead the mode was used to provide internet access to the system when in maintenance.
 
-The complete configuration of the wifi router in Wisp mode, as exported by its web application, has been persisted in the following path :
+The complete configuration of the WiFi router in Wisp mode, as exported by its web application, has been persisted in the following path :
 
 - [tplinkWR802N_conf_wisp.bin](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/nodes-ip_tp_link/tplinkWR802N_conf_wisp.bin)
 
 The two modes can be swiftly interchanged by uploading the respective configuration file on the wireless router web interface.
 
 
-The attached configuration files also encode the IP association each wifi module according to its Mac address which is unique for any network device in the world. Consequently these mappings should be changed accordingly after observing the mac address of the employed Wifi modules. Bellow the association map used as an indicative example is provided bellow.
+The attached configuration files also encode the IP association each WiFi module according to its Mac address which is unique for any network device in the world. Consequently these mappings should be changed accordingly after observing the mac address of the employed WiFi modules. Bellow the association map used as an indicative example is provided bellow.
 
 
 |MAC Address|IP Address | Name |
@@ -185,11 +185,11 @@ The attached configuration files also encode the IP association each wifi module
 
 ## Agrofelis USB hub
 
-A compact 5v usb hub is employed, enabling multiple devices to be connected with the Jetson Nano. More specifically the following modules are connected into the hub which consequently connects with the usb-2 port of the computer.
+A compact 5v USB hub is employed, enabling multiple devices to be connected with the Jetson Nano. More specifically the following modules are connected into the hub which consequently connects with the USBv2 port of the computer.
 
-- Wifi usb
-- BMS usb sensor cable
-- Wifi router
+- WiFi USB
+- BMS USB sensor cable
+- WiFi router
 - Agrofelis steering module
 - Agrofelis Front Lidar sensors
 
