@@ -34,7 +34,7 @@ The module's components are enumerated by the consequent exploded view schematic
 
 ![Module exploded view](_figures/remote-control-02-module-exploded.png)
 
-The components comprising the remote controller are the following:
+The list below enumerates the components comprising the remote controller:
 
 1. ESP32 38 pin on an ESP32 terminal adapter
 2. 5V step-down converter
