@@ -155,14 +155,13 @@ Another remedy equips the Agrofelis Robot with additional Machine learning capab
 [^CoralEX]: https://coral.ai/examples/ "Coral application examples" 
 [^Coralcom]: https://www.raccoons.be/resources/insights/performance-comparison-:-coral-edge-tpu-vs-jetson-nano "Performance comparison : Coral Edge TPU vs Jetson Nano"
 
+Being able to perform machine vision tasks on the edge, creates a robust system that is not depended on internet connectivity in order to function.
 
 ## Agrofelis Unificator
 
 The Agrofelis Unificator Software purpose, as implied by its named, is to unify arbitrary number of modules independent of their data streams, protocols and type of buses. The lightweight Agrofelis application was built on the NodeJS technology, due to its high Performance and non-blocking I/O characteristics. The Unificator establishes connection modules utilizing the USB interface such as the Steering/Bracking modules and the Front Sensors Lidar. The application contacts the two WiFi power relay modules, utilizing the http protocol. Lastly, the Unificator application establishes a connection with three modules utilizing the Websockets interface, namely the two MotorHubDrivers as well as the Remote controller. The software moreover relays the information and routes commands to the appropriate module. 
 
-
 The Agrofelis Unificator server records the unified data streams while rotates and archives in compressed assets the data once these reach about 1 MB in their raw form. The Lidar log data are kept in a separate file from the rest of the modules because its data rate is significantly higher than all other modules combined. The application also tracks how far in time the archive folder has data for and erases older data batches to prevent occupying the entire disk space eminently. 
-
 
 The application has been implemented within 200 lines of code, rendering the server easily maintainable. 
 Using the overall recopy allows the Agrofelis modules to be operated as individual modules but also as a part of collection. The technologies employed and the design, allows arbitrary hardware and software modules within the Agrofelis network become unified with the rest of the modules expanding the capabilities of the Agrofelis robot.
@@ -231,7 +230,7 @@ The complete configuration of the WiFi router in Wisp mode, as exported by its w
 The two modes can be swiftly interchanged by uploading the respective configuration file on the wireless router web interface.
 
 
-The attached configuration files also encode the IP association each WiFi module according to its Mac address which is unique for any network device in the world. Consequently these mappings should be changed accordingly after observing the mac address of the employed WiFi modules. Bellow the association map used as an indicative example is provided bellow.
+The attached configuration files also encode the IP association of each WiFi module, according to its MAC address which is unique in the world. Consequently these mappings should be changed accordingly after observing the MAC address of the employed WiFi capable modules. Bellow the association map defined for our devices, is provided as an example.
 
 
 |MAC Address|IP Address | Name |
@@ -262,28 +261,39 @@ The following schematic illustrates the location of the computing modules, their
 
 ![computing elements schematic](_figures/computing-06-0-schematic.png)
 
-Two type of structure where designed and 3d printed twice. The brackets and their arrangment on the steering plate can be seen in the following diagram.
+Two type of structure where designed and 3d printed twice. The brackets and their arrangement on the steering plate can be seen in the following diagram.
 
 ![3d printed brackets](_figures/computing-06-1-3d-print-brackets.png)
 
+The 3D printing source code files for manufacturing the related brackets, are listed by the following table.
 
+|Name|Standard Triangle Language file|Geometric Code|
+|----|----|----|
+|Computing modules tilted brackets| [STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/JetsonElectronicsBase/export_electronics_base.gcode) | [Gcode](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/JetsonElectronicsBase/export_electronics_base.stl) |
+|USB hub titled brackets|[STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usb_holder.stl)|(Gcode)[https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usbholder.gcode]|
+
+
+The following image photograph the computing modules supportive structure and how the Jetson Nano is being attached to it.
 
 ![3d print brackets-a](_figures/computing-06-3d-print-brackets-a.jpg)
+
+
+The use of magnets located on their bottom side, enables the structure to snap into place when in contact with the Iron steering plate. The use of magnets also provides the ability to slightly relocate the modules if necessary. Although the magnets are not strong enough to completely secure all components in place, because multiple cables interconnect the modules with the frame additional forces created keep the modules well in place. 
+
 ![3d print brackets-b](_figures/computing-07-3d-print-brackets-b.jpg)
+
+The following module showcases the Jetson nano and the Arduino Mega being attached to the related 3D printed brackets.
+
 ![3d printbrackets-c](_figures/computing-08-3d-print-brackets-c.jpg)
+
+A side view of the compilation shows the degree of tilt, how a USB cable can be freely plugged into the Jetson nano without being prevented by the presence of the Arduino Mega. Also the figure illustrates the space created to pass cables under the components towards the USB hub, and the minimum amount of material used to fabricate the brackets.
+
 ![3d print brackets-d](_figures/computing-09-3d-print-brackets-d.jpg)
 
+The following photos snapshot the computing modules' structure installed in the Agrofelis Robot relevant compartment.
 
-Custom brackets were designed with magnets on their bottom fixing leniently the location of the USB hub.
-
-- The 3d printed design plans of the brackets 
-
-## USB 3d printed brackets 
-## Jetson nano 3d printed base
-
-
- 
-
+![elements view-a](_figures/computing-10-elements-view-a.jpg)
+![elements view-b](_figures/computing-11-elements-view-b.jpg)
 
 # Components
 
@@ -293,9 +303,4 @@ https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.h
 
 # Summary
 
-
-
-
-
-![elements view-a](_figures/computing-10-elements-view-a.jpg)
-![elements view-b](_figures/computing-11-elements-view-b.jpg)
+ 
