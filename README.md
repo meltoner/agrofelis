@@ -65,7 +65,7 @@ Furthermore, the project implements a two-degrees-of-freedom actuator rotating b
 In addition to its wired infrastructure, the system supports a range of connectivity options, including Bluetooth for local wireless attachments, WiFi for nearby controllers, mobile phones and/or modules.
 
 
-[![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/embed/DgkQkJUQ_kc)
+[![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/watch?v=DgkQkJUQ_kc)
 
 # Documentation
 
