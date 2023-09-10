@@ -1,35 +1,35 @@
-# Two degrees of freedom rotating implement mount
+# Two Degrees of Freedom Rotating Implement Mount
 
 # Abstract
 
-This document describes the construction of the Rotating Implement Mount (RIM) positioned on the top part of the Agrofelis robot. The RIM's primary role is to allow the use of implements such as the thermal fogger featured in the presentation video. The rotation is achieved through the use of a stepper motor turning a gear that runs on a turntable, and elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus facilitating a 2 degrees of freedom (2DF) capability for any implement mounted on it. The rationale behind the module, its schematics, source code files and the manufacturing process is covered. The document concludes with a list of the components used and assorted with indicative suppliers, aiding in the replication of the module.
+This document outlines the construction of the Rotating Implement Mount (RIM), a crucial component positioned atop the Agrofelis robot. The RIM's primary function is to enable the use of various implements, such as the thermal fogger featured in the presentation video. The rotation is achieved through the use of a stepper motor that powers the rotation by turning a gear on a turntable, while elevation/depression is achieved with the use of a linear actuator leveraging the mount, thus granting the RIM a two degrees of freedom (2DF) capability for any implement mounted on it. This report covers the rationale behind the module, its schematics, source code files and details of the manufacturing process. The document concludes with a list of the components used and assorted with indicative suppliers, facilitating the replication of the module.
 
 # Introduction
 
-Implements that will be mounted at the front of the vehicle (e.g. grass cutter) will have to follow the vehicle's orientation, in contrast, implements on the Rotating Implement Mount (RIM) will be placed on top and be able to orientate independently, this will be useful for various spraying techniques. The RIM is a relatively simple 2DF mechanism allowing the use of such tools at a low cost.
+Implements that need to be mounted at the front of the vehicle, such as a grass cutter, must follow the vehicle's orientation. However, for implements placed on the Rotating Implement Mount (RIM), which is located on the top of the vehicle, they are able to orient independently. This feature proves especially useful for various spraying techniques. The RIM is a relatively simple 2DF mechanism, offering the flexibility to use such tools at a low cost.
 
 
 ![overall view](_figures/implement-2-degrees-rotating-mount-01-overal-view.png)
 
-## Implement mount module 
+## Implement Mount Module
 
-The module's bottom part is a 360-degree ball-bearing turntable with an attached horizontal gear disk of 70 laser cut rectangular holes in which a 13-teeth gear runs and provides the horizontal tilt, the mid part with a depression angle of -5 degrees and elevation angle of +40 degrees leveraged by the linear actuator provides the vertical tilt and the top part is the actual mount surface. The suspension of the mid part onto the turntable is achieved using four long screws and two 3D printed plastic arcs supporting the over-structure.  
+The bottom part of the module features a 360-degree ball-bearing turntable with an attached horizontal gear disc of 70 laser-cut rectangular holes in which a 13-teeth gear runs and provides the horizontal tilt. The middle part possesses a depression angle of -5 degrees and an elevation angle of +40 degrees, which can be leveraged using the linear actuator, and it enables the vertical tilt. The top part serves as the actual mount surface for attaching implements. Note that the suspension of the mid-part onto the turntable is achieved by using four long screws and two 3D printed plastic arcs supporting the over-structure. 
 
 ![module](_figures/implement-2-degrees-rotating-mount-02-module.png)
 
-The parts of the Rotating assembly alongside with the supporting Plastic Arcs and the 4 long screws that link the bottom and mid part can be clearly seen in the following photo. 
+The parts of the rotating assembly, alongside with the supporting plastic arcs and the four long screws that link the bottom and mid parts, are visible in the following photo.
 
 ![components](_figures/implement-2-degrees-rotating-mount-03-components.jpg)
 
-An exploded view of the whole mechanism and its functional design details can be seen in the following schematic.
+An exploded view of the entire mechanism and its functional design details, is presented in the schematic below.
 
 ![exploded](_figures/implement-2-degrees-rotating-mount-04-exploded.png)
 
-A line up of the assembly parts of a decomposed mechanism can be seen in the following schematic.
+Furthermore, a lineup of the assembly parts of a decomposed mechanism can be seen in the following schematic.
 
 ![decomposed](_figures/implement-2-degrees-rotating-mount-05-decomposed.png)
 
-A list of the parts of the Rotating Implement Mount is presented down below 
+The list below enumerates the components of the Rotating Implement Mount (RIM).
 
 ![enumerated](_figures/implement-2-degrees-rotating-mount-06-enumerated.png)
 
@@ -39,47 +39,47 @@ A list of the parts of the Rotating Implement Mount is presented down below
 4. Supporting Plastic Arcs
 5. Stepper Motor with Gear
 6. Linear Actuator
-7. Mid Base  
-8. Linear shaft support bracket
-9. Linear shaft
+7. Mid Base
+8. Linear Shaft Support Bracket
+9. Linear Shaft
 10. Top Base
 
 
-## Fabrication parts
+## Fabrication Parts
 
 ### Bottom Base
 
-The dimensions followed by a fabricated Metal Sheet Base are shown down below.
+The dimensions, followed by a fabricated metal sheet base, are presented below.
 
 ![part 1](_figures/implement-2-degrees-rotating-mount-07-part-1.png)
 ![part 1 actual](_figures/implement-2-degrees-rotating-mount-08-part-1-actual.jpg)
 ![part 1 actual-painted](_figures/implement-2-degrees-rotating-mount-09-part-1-actual-painted.jpg)
 
-### Stainless steel Horizontal Gear Disk 
+### Stainless Steel Horizontal Gear Disk
 
 The following figure illustrates the schematics of the horizontal gear disk.
 
 ![part 3](_figures/implement-2-degrees-rotating-mount-10-part-3.png)
 
-The part was fabricated using a 2 mm stainless steel sheet which was laser cut by an external service, because it was too detailed for our DIY plasma cutter. 
+The horizontal gear disk was fabricated using a 2 mm stainless steel sheet, which was laser-cut by an external service, because it was too detailed for our DIY plasma cutter. 
 
 ![part 1 2 3](_figures/implement-2-degrees-rotating-mount-11-part-1-2-3.jpg)
 
-The design source code file sent to the service is provided bellow.
+The design source code file that was sent to the service is available below.
 
 - [Horizontal disk gear and vertical gears file](assets/stainless-steel-laser-cut/laser-cut_stainless_gear_disk_motor_gear_order.dwg)
 
-A preview of the design source file containing the horizontal gear disk and four gears to employ 3 of them stacked together, is provided bellow.
+A preview of the design source file containing the horizontal gear disk and four gears for use with three of them stacked together, is provided below.
 
 ![Laser cut drawing](_figures/laser-cut_stainless_gear_disk_motor_gear_order_preview.png)
 
 ### Gear 
 
-The gear is comprised of 3 layers that are stacked & screwed together then grinded.
+The gear is comprised of three layers that are stacked and screwed together before being ground.
 
 ![gear view](_figures/implement-2-degrees-rotating-mount-16-gear-view.jpg)
 
-Here we can see the rounded edges that was done using a Dremel.
+In the images below, the rounded edges created using a Dremel tool can be seen.
 
 ![gear](_figures/implement-2-degrees-rotating-mount-17-gear.jpg)
 ![gear-edge](_figures/implement-2-degrees-rotating-mount-18-gear-edge.jpg)
@@ -87,47 +87,46 @@ Here we can see the rounded edges that was done using a Dremel.
 
 ### Servo Motor
 
-The Servo motor on its mount and with its attached gear producing a 0.3NM of torque is shown below.
+The servo motor on its mount, with its attached gear producing 0.3NM of torque, is shown below.
 
 ![part 5](_figures/implement-2-degrees-rotating-mount-12-part-5.png)
 
-The full rotating mechanism with its Horizontal Gear Disk, Motor & Gear and 4 long screws is shown below
+The complete rotating mechanism, including the horizontal gear disk, motor and gear, and four long screws, is displayed below.
 
 ![part 5 actual](_figures/implement-2-degrees-rotating-mount-13-part-5-actal.jpg)
 
 ### Supporting Plastic Arcs 
 
-The Plastic Arcs incorporate holes that fit exactly the 4 long screws. The Arcs support the weight of the over-structure where as the
-screws primarily support the horizontal forces produced by the rotation. The whole assembly is quite sturdy. 
+The plastic arcs incorporate holes that precisely fit the four long screws. These arcs provide support for the over-structure, whereas the screws primarily support the horizontal forces generated by the rotation. The entire assembly is quite sturdy.
 
 ![part 4](_figures/implement-2-degrees-rotating-mount-14-part-4.png)
 
-The assembly including the Plastic Arcs is shown below
+The assembly, including the plastic arcs, is depicted below.
 
 ![assembled](_figures/implement-2-degrees-rotating-mount-15-assempled.jpg)
 
-The source code design plans implementing the side walls, are persisted in the following path.
+The source code design plans for implementing the side walls are persisted in the following path.
 
 - [Supporting side walls](assets/RotationTableWalls/3d-print/walls.stl)
 
-### Mid base
+### Mid Base
 
-A schematic with the dimensions and photos of a plasma cut and welded fabricated mid base is shown down below.
+A schematic with dimensions and photos of a plasma-cut and welded fabricated mid base is shown below.
 
 ![part 7](_figures/implement-2-degrees-rotating-mount-19-part-7.png)
 ![part 7-plasma-cut](_figures/implement-2-degrees-rotating-mount-20-part-7-plasma-cut.jpg)
 ![part 7-actual](_figures/implement-2-degrees-rotating-mount-21-part-7-actual.jpg)
 
-### Top base
+### Top Base
 
-The details of the metal sheet of the top base is shown below.
+Details of the metal sheet used for the top base are shown below.
 
 ![part 10](_figures/implement-2-degrees-rotating-mount-22-part-10.png)
 ![part 10-actual](_figures/implement-2-degrees-rotating-mount-23-part-10-actual.jpg)
 
-### End module 
+### End Module
 
-The full assembly of the Rotating Implement Mount (RIM) before the paint job can be seen in the following photos
+The complete assembly of the Rotating Implement Mount (RIM), before being painted, can be seen in the following photographs.
 
 ![fabricated a](_figures/implement-2-degrees-rotating-mount-24-fabricated-a.jpg)
 
@@ -136,9 +135,9 @@ The full assembly of the Rotating Implement Mount (RIM) before the paint job can
 ![fabricated c](_figures/implement-2-degrees-rotating-mount-26-fabricated-c.jpg)
 
  
-## Implement mount components and indicative suppliers
+## Implement Mount Components and Indicative Suppliers
  
-The following table lists the individual components employed for manufacturing the Agrofelis two degrees of freedom rotating implement mount. The index table includes moreover the product URL, the indicative supplier, as well as the unit price total Amount.
+The following table lists the individual components employed for manufacturing the Agrofelis two degrees of freedom rotating implement mount. The index table includes moreover the product URLs, the indicative suppliers, as well as unit prices and total cost estimates.
 
 <div align="center">
 
@@ -166,10 +165,10 @@ The following table lists the individual components employed for manufacturing t
 | **Total** |      |    |     |      |     |  **322.58**  | | 
 </div>
 
-The total cost to manufacture the Agrofelis two degrees of freedom rotating implement mount, excluding shipping, cutting, welding and painting costs, sums up to approximately **322.58** euros.
+The total cost for manufacturing the Agrofelis two degrees of freedom rotating implement mount, excluding expenses for shipping, cutting, welding, and painting, amounts to approximately **322.58** euros.
 
 ## Summary
 
-The design rationale, component details with essential dimensions for reproducing the Rotating Implement Mount (RIM) of the Agrofelis Robot has been documented in a progressive manner. A photograph of the vehicle with the RIM employing a thermal fogger is presented in the closing image below.
+The design rationale, component specifications, and essential dimensions for replicating the Rotating Implement Mount (RIM) of the Agrofelis robot has been documented in a progressive manner. To conclude, the photograph below showcases the vehicle equipped with the RIM, featuring a thermal fogger.
 
 ![Agrofelis with the implement mount in a vineyard](_figures/implement-2-degrees-rotating-mount-28-fabricated.jpg)
