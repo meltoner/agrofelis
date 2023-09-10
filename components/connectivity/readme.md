@@ -306,15 +306,15 @@ The following table lists the individual components employed for manufacturing t
 
 | No. |  Product | Product URL | Supplier | Used Quantity | VAT Price (€) | Subtotal (€)  | Note |
 |----|-----------------|------------|-----|---|---|---|---|
-| # | NVIDIA Jetson Nano Developer Kit | [Jetson Nano](https://www.hellasdigital.gr/go-create/nvidia-ai/nvidia-jetson-nano-4gb-developer-kit/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 199.00 | 199.00 | - |
-| # | High speed ADATA premier one 128gb | [Hard disk](https://www.skroutz.gr/s/12980090/Adata-Premier-One-SDXC-128GB-Class-10-U3-V90-UHS-II.html) | [Skroutz](https://www.skroutz.gr) | 1 | 81.09 | 81.09 | - |
-| # | Jetson nano fan | [CPU fan](https://www.hellasdigital.gr/go-create/nvidia-ai/waveshare-fan-4020-pwm-5v/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 8.00 | 8.00 | - |
-| # | Jetson nano case | [jetson nano case](https://grobotronics.com/waveshare-metal-case-for-jetson-nano-c.html) | [Grobotronics](https://grobotronics) | 1 | 15.80 | 15.80 | Keeping latching buttons and camera mount |
-| # | Coral USB Accelerator| [Coral](https://nettop.gr/index.php/raspberry-pi/prostheta/coral-usb-accelerator.html) | [Nettop](https://nettop.gr) | 1 | 87.90 | 87.90 | - |
-| # | 8 MP night vision camera | [camera](https://www.hellasdigital.gr/electronics/sensors/cameras/waveshare-imx219-160-8mp-ir-cut-camera-162-fov/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 31.99 | 31.99 | - |
-| # | TP-LINK TL-WR802N v4 Wireless Router | [Wireless Router](https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html) | [Skroutz](https://www.skroutz.gr) | 1 | 24.30 | 24.30 | - |
-| # | 15 Pin Ribbon Flex CSI Cable 100cm | [Flex CSI Cable](https://www.aliexpress.com/i/32955287044.html) | [Aliexpress](https://www.aliexpress.com) | 1 | 0.67 | 0.67 | - |
-| # | 7 port USB v3.1 HUB | [USB HUB](https://www.skroutz.gr/s/17545835/LogiLink-USB-3-1-Hub-7-THyron-me-syndesi-USB-C-Asimi-UA0310.html) | [Skroutz](https://www.skroutz.gr) | 1 | 36.59 | 36.59 | - |
+| #1 | NVIDIA Jetson Nano Developer Kit | [Jetson Nano](https://www.hellasdigital.gr/go-create/nvidia-ai/nvidia-jetson-nano-4gb-developer-kit/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 199.00 | 199.00 | - |
+| #2 | High speed ADATA premier one 128gb | [Hard disk](https://www.skroutz.gr/s/12980090/Adata-Premier-One-SDXC-128GB-Class-10-U3-V90-UHS-II.html) | [Skroutz](https://www.skroutz.gr) | 1 | 81.09 | 81.09 | - |
+| #3 | Jetson nano fan | [CPU fan](https://www.hellasdigital.gr/go-create/nvidia-ai/waveshare-fan-4020-pwm-5v/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 8.00 | 8.00 | - |
+| #4 | Jetson nano case | [jetson nano case](https://grobotronics.com/waveshare-metal-case-for-jetson-nano-c.html) | [Grobotronics](https://grobotronics) | 1 | 15.80 | 15.80 | Keeping latching buttons and camera mount |
+| #5 | Coral USB Accelerator| [Coral](https://nettop.gr/index.php/raspberry-pi/prostheta/coral-usb-accelerator.html) | [Nettop](https://nettop.gr) | 1 | 87.90 | 87.90 | - |
+| #6 | 8 MP night vision camera | [camera](https://www.hellasdigital.gr/electronics/sensors/cameras/waveshare-imx219-160-8mp-ir-cut-camera-162-fov/) | [Hellas Digital](https://www.hellasdigital.gr) | 1 | 31.99 | 31.99 | - |
+| #7 | TP-LINK TL-WR802N v4 Wireless Router | [Wireless Router](https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html) | [Skroutz](https://www.skroutz.gr) | 1 | 24.30 | 24.30 | - |
+| #8 | 15 Pin Ribbon Flex CSI Cable 100cm | [Flex CSI Cable](https://www.aliexpress.com/i/32955287044.html) | [Aliexpress](https://www.aliexpress.com) | 1 | 0.67 | 0.67 | - |
+| #9 | 7 port USB v3.1 HUB | [USB HUB](https://www.skroutz.gr/s/17545835/LogiLink-USB-3-1-Hub-7-THyron-me-syndesi-USB-C-Asimi-UA0310.html) | [Skroutz](https://www.skroutz.gr) | 1 | 36.59 | 36.59 | - |
 | **Total** |      |    |     |      |     |  **485.34**  | | 
 
 </div>
