@@ -230,8 +230,8 @@ The table showcased below provides a breakdown of the necessary construction com
 | [Motors Hub Driver A](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [Motors Hub Driver B](components/mobility/motors_hub_driver/readme.md#motors-hub-components-and-indicative-suppliers)   | 89.33 |
 | [3D Lidar Sensors](components/vehicle-lidar#3d-lidar-front-sensors-components)   | 158.82  |
-| [Rotating implement mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
-| [Remote controller](components/components/remote-control#remote-controller-components) | 65.52  |
+| [Rotating Implement Mount](components/implement-2-degrees-rotating-mount#implement-mount-components-and-indicative-suppliers)   | 322.58  |
+| [Remote Controller](components/remote-control#remote-controller-components) | 65.52  |
 | **Total Cost**   | **3,244.24**   |
 
 </div>
