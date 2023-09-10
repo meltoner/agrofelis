@@ -149,6 +149,62 @@ The software depends on few javascript libraries used for accesting the http pro
  
  ## Agrofelis network
 
- 
+In order to interconnect the various Wifi capable modules of the robot, a compact access point module was employed. More specifically the TP-LINK TL-WR802N v4 wireless Router  supporting up to 300Mbps bandwidth. The module was chosen due to its compact size, its capacity to operate in multiple modes as well as its 5v compatibility. 
 
+The wireless router is configured as a wireless router leading to a stable WiFi network and is used to associated the different modules with a static IP based on their unique MAC address. The WiFi network created is secured with a password which is also set to the modules wishing to connect to the Agrofelis Network.
+
+The default Wifi password followed by all modules in this repository is
+
+	felisagrofelistobor_
+
+The complete configuration of the wifi router as exported by its web application, has been persisted in the following path.
+
+- [tplinkWR802N_conf_wirelss_Router.bin](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/nodes-ip_tp_link/tplinkWR802N_conf_wirelss_Router.bin)
+
+The module was evaluated also in wisp mode allowing to relay the wifi of a mobile phone hot-spot, to the Agrofelis Network. In wisp mode, the network was depended on the stability of the internet connection and was avoided during field missions. Instead the mode was used to provide internet access to the system when in maintenance.
+
+The complete configuration of the wifi router in Wisp mode, as exported by its web application, has been persisted in the following path :
+
+- [tplinkWR802N_conf_wisp.bin](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/nodes-ip_tp_link/tplinkWR802N_conf_wisp.bin)
+
+The two modes can be swiftly interchanged by uploading the respective configuration file on the wireless router web interface.
+
+
+The attached configuration files also encode the IP association each wifi module according to its Mac address which is unique for any network device in the world. Consequently these mappings should be changed accordingly after observing the mac address of the employed Wifi modules. Bellow the association map used as an indicative example is provided bellow.
+
+
+|MAC Address|     IP Address  | Name |
+|------|-------|-------|
+|48:B0:2D:2F:25:FA|   192.168.0.50| Jetson Nano |
+|A0:20:A6:2E:C8:8C|   192.168.0.51| Power module A | 
+|60:01:94:7D:1C:BF|   192.168.0.52| Power module B |
+|A0:B7:65:61:53:84|   192.168.0.55| Motors hub back |
+|A0:B7:65:61:7D:7C|   192.168.0.56| Motors hub Front |
+|24:0A:C4:1F:CF:50|   192.168.0.60| Remote controller |
+
+
+## Agrofelis USB hub
+
+A compact 5v usb hub is employed, enabling multiple devices to be connected with the Jetson nano. More specifically the following modules are connected into the hub which consequently connects with the usb-2 port of the computer.
+
+- Wifi usb
+- BMS usb sensor cable
+- Wifi router
+- Agrofelis steering module
+- Agrofelis Front Lidar sensors
+
+Custom brackets were designed with magnets on their bottom fixing leniently the location of the USB hub.
+
+- The 3d printed design plans of the bracket 
+
+## 3d printed brackets 
+
+
+## GPU Computing modules and accelerator
+
+
+The Jetson nano apart of having a multi core processor, also has a GPU module capable of implementing machine learning and machine vision tasks using . 
+
+https://www.amazon.com/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT
+https://www.skroutz.gr/s/14227605/TP-LINK-TL-WR802N-v4-Asyrmato-Router-Wi-Fi-4.html
 
