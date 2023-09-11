@@ -74,7 +74,7 @@ In the following sections, the detailed documentation of all developed modules c
 
 ## Agrofelis Chassis Frame Design and Fabrication
 
-The [chassis frame design and fabrication document](components/vehicle-frame) focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8 kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
+The [chassis frame design and fabrication](components/vehicle-frame) document focuses on the manufacturing details of the vehicle's frame. The frame houses and protects the 8 kw power module with its LiFePO4 batteries, the electronics, the sensors and actuators of the unmanned vehicle. The frame was implemented using a total of 7.35 meters of 20X20 mm regular square iron bars, it establishes key placeholders for mounting the detachable wheels, the protective covers and via its grid-like attachment points enables mounting anticipated tools, as well as future ones. The primary design considerations were footprint minimization, battery compartment protection, chassis rigidity, and ease of manufacture utilizing low-budget tools and readily available materials. 
 
 The complete documentation of the Agrofelis chassis frame is provided below.
 
@@ -87,7 +87,7 @@ An indicative selection of figures from the Agrofelis chassis frame design and f
 
 ## Agrofelis Robot Wheels Fabrication
 
-This [Agrofelis robot wheels fabrication document](components/vehicle-wheels) presents a comprehensive overview of the manufacturing process behind the four-wheel drive (4WD) system of the Agrofelis robotic vehicle. It begins by detailing the specific requirements and then progresses to the completed fabricated solution. The design plans, compilation procedures, assistance assets and images taken throughout development are presented in a step-by-step manner. The sub-components composing four Agrofelis wheels are indexed with their unit prices and overall cost, along with references to indicative suppliers.
+This [Agrofelis robot wheels fabrication](components/vehicle-wheels) document presents a comprehensive overview of the manufacturing process behind the four-wheel drive (4WD) system of the Agrofelis robotic vehicle. It begins by detailing the specific requirements and then progresses to the completed fabricated solution. The design plans, compilation procedures, assistance assets and images taken throughout development are presented in a step-by-step manner. The sub-components composing four Agrofelis wheels are indexed with their unit prices and overall cost, along with references to indicative suppliers.
 
 The complete documentation of the Agrofelis robot wheels fabrication is referenced below.
 
@@ -126,7 +126,7 @@ A selection of figures from the Agrofelis Power System documentation, is present
 
 ## Agrofelis Protective Covers Design and Fabrication
 
-The [protective covers design and fabrication document](components/vehicle-covers) builds on the Agrofelis frame design and fabrication documentation by detailing the protective covers of the vehicle, including their schematics and the source code files utilized for a CNC plasma cutter. Additionally, photographic material offers insights into the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
+The [protective covers design and fabrication](components/vehicle-covers) document builds on the Agrofelis frame design and fabrication documentation by detailing the protective covers of the vehicle, including their schematics and the source code files utilized for a CNC plasma cutter. Additionally, photographic material offers insights into the manufactured parts. A list of components and indicative suppliers that comprise the bill and material information for isolating the robot from its external environment, is documented. 
 
 The complete documentation of the protective covers is provided below.
 
@@ -152,7 +152,7 @@ A cherry picked selection of figures from the Agrofelis steering system design a
 
 ## Agrofelis Motors Hub Driver Design and Fabrication
 
-This [motors hub driver document](components/mobility/motors_hub_driver) delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
+This [motors hub driver](components/mobility/motors_hub_driver) document delves into the manufacturing and functional intricacies of a composite module tailored for controlling and sensing a pair of in-wheel motor hubs digitally, over the air. The documentation decomposes the different elements involved into sub-modules, into their sub elements in an organized and progressive manner. A detailed exposition of each component's rationale and its seamless integration with counterparts is provided, bolstered by design plans and photographic evidence of the actual implementation. The document offers a roadmap through the Agrofelis repository, elucidating the source file locations and the production processes underpinning the manufacturing of the Agrofelis Motors Hub Driver. The document presents the structural elements of the unit, the three type of PCB sub-components, the software running on the micro-controller, key tools employed in the manufacturing process and ends with a compendium of indicative suppliers to purchase the different parts.
 
 The complete documentation for the motors hub driver module is provided below.
 
@@ -205,9 +205,9 @@ A cherry picked selection of figures from the Agrofelis remote controller design
 ![Agrofelis Remote Controller Design and Fabrication figures highlights](components/remote-control/_figures/highlights-remote-control.jpg)
 
 
-## Infrastructure provisioning, computing elements and data fusion
+## Infrastructure Provisioning, Computing Elements and Data Fusion
 
-The [infrastructure provisioning, computing elements and data fusion document](components/connectivity) presents the provision of the main computing elements of the robot and initiation of its services. The peripheral elements established and attached to the local Agrofelis WIFI network and its USB hub are enumerated. The GPU component and the neural network accelerator tapping to the USB3 interface of the Jetson Nano are presented. The Agrofelis Unificator Software, connecting all Agrofelis modules is introduced and its source code and features presented. Also provided are lightweight 3D printed structural elements that organize the components in the limited space available for their USB cables and secure the components and the USB hub in their compartment. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the Agrofelis computing and networking systems.
+The [infrastructure provisioning, computing elements and data fusion](components/connectivity) document presents the provisioning of the main computing elements for the Agrofelis robot and the initiation of its services. The peripheral elements established and attached to the local Agrofelis WiFi network and its USB hub are enumerated. In addition, the GPU component and the neural network accelerator tapping to the USBv3 interface of the Jetson Nano are presented. The Agrofelis Unificator Software, which connects all Agrofelis modules, is introduced along with its source code and features. The document also provides information on lightweight 3D printed structural elements that fit in the limited space available for the USB cables and secure the components and the USB hub in their compartment. The document concludes with a list of the components used and indicative suppliers, aiding the replication of the Agrofelis computing and networking systems.
 
 The complete documentation of the infrastructure provisioning, computing elements and data fusion, is referenced below.
 
