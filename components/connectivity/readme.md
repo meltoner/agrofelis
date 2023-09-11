@@ -1,4 +1,4 @@
-# Infrastructure Provisioning, Computing Elements, and Data Fusion
+# Infrastructure Provisioning, Computing Elements and Data Fusion
 
 ## Abstract
 
