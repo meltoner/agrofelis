@@ -272,4 +272,6 @@ Consequently the total manufacturing cost for the Agrofelis robot is **3,729.58*
 
 Contact us: info at Agrofelis dot com
 
+Hack a day project page: https://hackaday.io/project/192733-agrofelis-robot
+
 ![Agrofelis Robot Logo](introduction/_figures/agrofelis_logo.svg)
