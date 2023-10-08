@@ -513,7 +513,7 @@ So, the estimated cost for producing the motor hub ADAC amounts to approximately
 
 ### Cost estimation overview
 
-This section outlines the indicative costs associated with constructing the Agrofelis motors hub driver module. These figures are derived from estimated costs per item discussed in the [indicative suppliers section](#indicative-suppliers), encompassing a diverse array of components crucial to the motor hub driver's assembly. It is important to note that the cost estimation provided in this section incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
+This section outlines the indicative costs associated with constructing the Agrofelis motors hub driver module. These figures are derived from estimated costs per item discussed in the [indicative suppliers section](#motors-hub-components-and-indicative-suppliers), encompassing a diverse array of components crucial to the motor hub driver's assembly. It is important to note that the cost estimation provided in this section incorporates applicable taxes. However, it is crucial to acknowledge that this estimation serves as a preliminary assessment and is subject to potential variations. 
 
 The values provided here are based on information gathered from indicative suppliers and are intended to provide a rough estimate of the project's financial requirements. In this estimation, we have focused solely on the intrinsic value of each component and have excluded supplementary expenses such as transportation, customs clearance, and unforeseen charges. These figures are the initial step in budget assessment and lay the foundation for more detailed financial planning. 
 
