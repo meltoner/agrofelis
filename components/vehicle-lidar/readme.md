@@ -118,7 +118,7 @@ In order to retrieve data from the ESP32 micro-controller, we harnessed the capa
 
 - [Lidar_LD06_for_Arduino Repository](https://github.com/henjin0/Lidar_LD06_for_Arduino)
 
-Although this repository was initially designed to support the LD06 model, its functionality was verified for the LD19 model as well. 
+Although this repository was initially designed to support the [LD06](https://www.inno-maker.com/wp-content/uploads/2020/11/LDROBOT_LD06_Datasheet.pdf) model, its functionality was verified for the LD19 model as well. 
 The Lidar's cable was cut and connected to the Serial2 interface of ESP32 and a pulse-width modulation (PWM) capable GPIO, using the following correspondence.
 
 ![Lidar pin cable correspondence](_figures/vehicle-lidar-cable-pins.png)
