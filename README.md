@@ -80,7 +80,7 @@ The Agrofelis Robot has been designed with narrow fields in mind.
 The purpose is to navigate in narrow rows as well as under low tree canopy. 
 
 | Sizes | Value |
-|++++++++|++++++|
+|--------------|--------|
 | Width | 785 mm |
 | Length | 992 mm |
 | Height | 497 mm |
@@ -92,7 +92,7 @@ The purpose is to navigate in narrow rows as well as under low tree canopy.
 With the Rotating Implement Mount module and the thermal Fogger, the dimensions differentiate as follows.
 
 | Sizes with Fogger | Value |
-|++++++++|++++++|
+|--------------|--------|
 | Length | 1615 mm |
 | Height | 1044 mm |
 
@@ -103,7 +103,7 @@ The robot has adequate mobility to tackle most of the terrain in the agricultura
 The loads that it can handle supersede what one would expect for its small size. 
 
 | Type | Value |
-|++++++++|++++++|
+|--------------|--------|
 | Ascension | 30 % grade |
 | Descension | 40 % grade |
 | Towing capacity | 1,225 kg |
@@ -121,7 +121,7 @@ The loads that it can handle supersede what one would expect for its small size.
 The thermal operating range that manufacturers give for each component of the robot is quite wide. Here are the numbers.
 
 | Component | Min temperature Celsius | Max temperature Celsius |
-|++++++++|++++++|++++++|
+|--------------|--------|-------|
 | Batteries | -35 | 65 | 
 | BMS | -20 | 70 |
 | Motors | -20 | 70 |
@@ -138,7 +138,7 @@ The thermal operating range that manufacturers give for each component of the ro
 Here are the capacities and consumption of the full electrical system.
 
 | Component | Type | Value | 
-|++++++++++|++++++|++++++|
+|--------------|--------|-------|
 | Battery | Min volt | 20 | 
 | Battery | Max volt | 29.2 |
 | Battery | Amp | 302  |
