@@ -146,12 +146,12 @@ Here are the capacities and consumption of the full electrical system.
 | Battery | Charge | 0.5 C |
 | Battery | Charge | 1 C |
 | BMS | Discharge | 250 Ah |
-| Motors | Consumption | 4 X 250 Watt |
-| Steering System | 20 Watt |
-| Servo breaks | 30 Watt |
-| Jetson Nano | 17 Watt |
-| Google Coral | 3 Watt | 
-| Relays | 8 Watt |
+| Motors | Consumption | 1000 Watt |
+| Steering System |Consumption | 20 Watt |
+| Servo breaks | Consumption | 30 Watt |
+| Jetson Nano | Consumption | 17 Watt |
+| Google Coral | Consumption | 3 Watt | 
+| Relays | Consumption | 8 Watt |
 
 # Documentation
 
