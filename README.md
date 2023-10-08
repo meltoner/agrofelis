@@ -79,7 +79,7 @@ The Agrofelis robot operation specs are described below.
 The Agrofelis Robot has been designed with narrow fields in mind.
 The purpose is to navigate in narrow rows as well as under low tree canopy. 
 
-| Sizes | Value |
+| Vehicle size | Value |
 |--------------|--------|
 | Width | 785 mm |
 | Length | 992 mm |
@@ -102,7 +102,7 @@ With the Rotating Implement Mount module and the thermal Fogger, the dimensions 
 The robot has adequate mobility to tackle most of the terrain in the agricultural fields. 
 The loads that it can handle supersede what one would expect for its small size. 
 
-| Type | Value |
+| Mobility type | Value |
 |--------------|--------|
 | Ascension | 30 % grade |
 | Descension | 40 % grade |
@@ -127,8 +127,8 @@ The thermal operating range that manufacturers give for each component of the ro
 | Motors | -20 | 70 |
 | Esp32 Wroom | -40 | 105 |
 | Arduino Mega | -40 | 85 |
-| Jetson nano | -25 | 80 |
-| Coral Coral | -40 | 85 |
+| Jetson Nano | -25 | 80 |
+| Google Coral | -40 | 85 |
 | Lidar | -10 | 40 |
 | Tires | -20 | 65 | 
 
@@ -147,9 +147,9 @@ Here are the capacities and consumption of the full electrical system.
 | Battery | Charge | 1 C |
 | BMS | Discharge | 250 Ah |
 | Motors | Consumption | 4 X 250 Watt |
-| Linear Actuators | 5 Ah |
+| Steering System | 20 Watt |
 | Servo breaks | 30 Watt |
-| Jetson nano | 17 Watt |
+| Jetson Nano | 17 Watt |
 | Google Coral | 3 Watt | 
 | Relays | 8 Watt |
 
