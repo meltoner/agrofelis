@@ -110,7 +110,7 @@ The following files contain respectively the two gear SVG design patterns offset
 Furthermore, the associated numerical control NC files for driving the CNC machinery are included:
 
 - [feedback-gear-A-Offset.nc](assets/laser-cut-feedback-gears/feedback-gear-A-Offset.nc)
-- [feedback-gear-A-Offset.nc](assets/laser-cut-feedback-gears/feedback-gear-A-Offset.nc)
+- [feedback-gear-B-Offset.nc](assets/laser-cut-feedback-gears/feedback-gear-B-Offset.nc)
 
 Finally, the following NC file contains both gears in a single file for convenience:
 
