@@ -304,7 +304,7 @@ Lines in green, indicate a connection between two points in the board. Lines in 
 Remarks:
 
 - The first and second channels of the MPC3004 ADAC are connected to the current sensors of the power module.
-- The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with the ground,
+- The remaining channels of the ADAC are connected with the hall sensors of the motor. The Hall sensors signals connected between the motor and the analog motor drivers are intercepted following the yellow, green, blue, yellow, green, blue and closing with the ground.
 - The ground of the halls sensors outlet, is connected with the ground pin of the Motors hub ADAC module.
 - One pin from the 8-pin female header, is trimmed off to match the 7 input pins of the module.
 
