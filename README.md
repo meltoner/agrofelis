@@ -96,10 +96,12 @@ The purpose is to navigate in narrow rows as well as under low tree canopy.
 With the Rotating Implement Mount module and the thermal Fogger, the dimensions differentiate as follows.
 
 <div align="center">
+
 | Sizes with Fogger | Value |
 |--------------|--------|
 | Length | 1615 mm |
 | Height | 1044 mm |
+
 </div>
 
 ## Mobility
