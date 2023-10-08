@@ -267,7 +267,7 @@ The 3D printing source code files for manufacturing the related brackets, are li
 |Name|Standard Triangle Language file|Geometric Code|
 |----|----|----|
 |Computing modules tilted brackets| [STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/JetsonElectronicsBase/export_electronics_base.gcode) | [Gcode](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/JetsonElectronicsBase/export_electronics_base.stl) |
-|USB hub titled brackets|[STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usb_holder.stl) [Gcode](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usbholder.gcode)|
+|USB hub titled brackets|[STL](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usb_holder.stl) | [Gcode](https://github.com/meltoner/agrofelis/blob/main/components/connectivity/assets/3d-print/usbHolder/usbholder.gcode)|
 
 
 The following image shows the computing modules supportive structure and how the Jetson Nano is attached to it.
