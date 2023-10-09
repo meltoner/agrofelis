@@ -111,11 +111,11 @@ More specifically, the enumerated parts correspond to the following elements.
 4. Negative voltage copper bar terminal power distribution
 5. Battery management system
 
-The following photo snapshots the copper bar terminal power distributurs and the 250A circuit breaker.
+The following photo snapshots the copper bar terminal power distributors and the 250A circuit breaker.
 
 ![Breaker and bar terminals image](_figures/vehicle-power-b.jpg)
 
-The subsequent photograph captures the baterry disconnect switch, the BMS and some of the step down converters.
+The subsequent photograph captures the battery disconnect switch, the BMS and some of the step down converters.
 
 ![Battery switch image](_figures/vehicle-power-a.jpg)
 
