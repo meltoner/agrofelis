@@ -66,7 +66,6 @@ In addition to its wired infrastructure, the system supports a range of connecti
 
 # Presentation video
 
-
 [![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/watch?v=DgkQkJUQ_kc)
 
 # Specifications
@@ -170,6 +169,11 @@ Here are the capacities and consumption of the full electrical system.
 | Relays | Consumption | 8 Watt |
 
 </div>
+
+# Mobility tests video
+
+[![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=T1fGnAvp78o)
+
 
 # Documentation
 
