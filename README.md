@@ -115,7 +115,7 @@ The loads that it can handle supersede what one would expect for its small size.
 | Ascension | 30 % grade |
 | Descension | 40 % grade |
 | Towing capacity | 1,225 kg |
-| Carrying capacity | 250 kg |
+| Carrying capacity | 250 kg max , 185 kg reccomended |
 | Maximum tilt | 32 degrees |
 | Minimum speed | 0.2 km/h |
 | Maximum speed | 5 km/h | 
