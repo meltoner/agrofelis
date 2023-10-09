@@ -115,7 +115,7 @@ The loads that it can handle supersede what one would expect for its small size.
 | Ascension | 30 % grade |
 | Descension | 40 % grade |
 | Towing capacity | 1,225 kg |
-| Carrying capacity | 250 kg |
+| Carrying capacity | 250 kg max, 185 kg reccomended |
 | Maximum tilt | 32 degrees |
 | Minimum speed | 0.2 km/h |
 | Maximum speed | 5 km/h | 
@@ -172,7 +172,7 @@ Here are the capacities and consumption of the full electrical system.
 
 # Mobility tests video
 
-[![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=T1fGnAvp78o)
+[![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=9aoBx75ze0E)
 
 
 # Documentation
