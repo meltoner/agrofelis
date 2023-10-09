@@ -172,7 +172,7 @@ Here are the capacities and consumption of the full electrical system.
 
 # Mobility tests video
 
-[![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=T1fGnAvp78o)
+[![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=9aoBx75ze0E)
 
 
 # Documentation
