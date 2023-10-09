@@ -66,6 +66,9 @@ In addition to its wired infrastructure, the system supports a range of connecti
 
 # Presentation video
 
+This video presents Agrofelis Agricultural Robot. A Multipurpose Energy Dense, Implement Carrier. A Programmable, AI ready,
+Precision Agriculture base vehicle.
+
 [![Presenting the Agrofelis Robot video](introduction/_figures/presenting-the-agrofelis-robot-video.jpg)](https://www.youtube.com/watch?v=DgkQkJUQ_kc)
 
 # Specifications
@@ -171,6 +174,9 @@ Here are the capacities and consumption of the full electrical system.
 </div>
 
 # Mobility tests video
+
+The Agrofelis Robot is evaluated on Extreme Mobility Events, including towing and carrying high load, as well as acceding a high
+degree slope. Get ready to be surprised with its performance !
 
 [![Mobility tests](introduction/_figures/mobility_tests.png)](https://www.youtube.com/watch?v=9aoBx75ze0E)
 
