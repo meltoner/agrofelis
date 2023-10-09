@@ -107,7 +107,7 @@ The assembly, including the plastic arcs, is depicted below.
 
 The source code design plans for implementing the side walls are persisted in the following path.
 
-- [Supporting side walls](assets/RotationTableWalls/3d-print/walls.stl)
+- [Supporting side walls](assets/3d-print/RotationTableWalls/walls.stl)
 
 ### Mid Base
 
