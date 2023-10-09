@@ -363,10 +363,10 @@ Consequently the total manufacturing cost for the Agrofelis robot is **3,729.58*
 - Konstantinos L. Papageorgiou
 - Hercules Metaxas
 - Anastasios Pliatsikas 
+- Dimitris Kouzis Lukas
 
 # Special Thanks
 
-- Dimitris Kouzis Lukas, for his support and electronics knowledge. 
 - Christos Spetseris, from [QOOP Metalworks](https://www.qoop.gr) for his design and 3D CAD training support.
 - Giannis Vapelas, from [QOOP Metalworks](https://www.qoop.gr) for letting us use the machine shop during weekends and supporting the DIY plasma cutter. 
 - Petros Morfiris, for his R shiny app Lidar analysis prototype implementation.
