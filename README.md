@@ -162,7 +162,7 @@ Here are the capacities and consumption of the full electrical system.
 | Battery | Amp | 302  |
 | Battery | Amp | 302 |
 | Battery | Charge | 0.5 C |
-| Battery | Charge | 1 C |
+| Battery | Discharge | 1 C |
 | BMS | Discharge | 250 Ah |
 | Motors | Consumption | 1000 Watt |
 | Steering System |Consumption | 20 Watt |
