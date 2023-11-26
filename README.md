@@ -123,7 +123,7 @@ The loads that it can handle supersede what one would expect for its small size.
 | Minimum speed | 0.2 km/h |
 | Maximum speed | 5 km/h | 
 | Torque | 144 NM |
-| Weight | 152 kg |
+| Weight | 121 kg |
 | Breaking | E-breaking and disc-brakes |
 | Turning radius | 1.04 meters | 
 
