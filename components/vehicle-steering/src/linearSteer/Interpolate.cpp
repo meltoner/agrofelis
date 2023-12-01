@@ -23,5 +23,5 @@ int Interpolate::interpolate(float input, int index){
 }
 
 int Interpolate::interpolate(float input){
-  interpolate(input, findInputIndex(input));
+  return interpolate(input, findInputIndex(input));
 }
